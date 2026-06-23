@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-# 同步指定月份的 md 与 html 到 iCloud
+# 同步指定月份的 md 与 html 到 iCloud，并更新索引页
 # 用法：sync-to-icloud.sh YYYY-MM
 
 YEAR_MONTH="${1:-}"
@@ -26,5 +26,8 @@ cp "$REPORT" "$ICLOUD_DIR/$YEAR_MONTH.md"
 if [ -f "$HTML" ]; then
   cp "$HTML" "$ICLOUD_DIR/$YEAR_MONTH.html"
 fi
+
+# 更新索引页
+"$PROJECT_DIR/.venv/bin/python3" "$PROJECT_DIR/scripts/update-icloud-index.py"
 
 echo "Synced $YEAR_MONTH to iCloud: $ICLOUD_DIR"

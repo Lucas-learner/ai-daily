@@ -63,6 +63,11 @@
 
 必要时使用 WebSearch 补充重要突发新闻。
 
+**来源可信度要求：**
+- 优先使用原始媒体或官方博客（TechCrunch、The Verge、机器之心、OpenAI Blog 等）。
+- AI 聚合网站（如 buildfastwithai.com、aitoolsrecap.com）只能作为线索，关键事实需追溯到原始来源。
+- 若无法验证真实性，标记为"据报道称"或降级为"其他要闻"。
+
 ### 第三步：去重筛选（关键）
 
 **严格规则：**
@@ -147,10 +152,12 @@
 bash /Users/macmini/projects/cron/ai-daily/scripts/sync-to-icloud.sh YYYY-MM
 ```
 
-脚本会复制 `reports/YYYY-MM.md` 和 `reports/YYYY-MM.html` 到：
-```
-~/Library/Mobile Documents/com~apple~CloudDocs/数据同步/ai daily/
-```
+脚本会：
+1. 复制 `reports/YYYY-MM.md` 和 `reports/YYYY-MM.html` 到：
+   ```
+   ~/Library/Mobile Documents/com~apple~CloudDocs/数据同步/ai daily/
+   ```
+2. 更新 `index.html` 索引页。
 
 ### 第八步：更新追踪器
 
@@ -205,6 +212,18 @@ bash /Users/macmini/projects/cron/ai-daily/scripts/sync-to-icloud.sh YYYY-MM
 | 去重 | 与 30 天内已报主题重合度 < 20% |
 | 主题格式 | 公司-关键词-核心事实 |
 | Token优化 | 跟踪文件只存主题不存详情 |
+
+## 错误处理
+
+若任何步骤失败：
+1. **不要写入半成品文件**到 `reports/` 或 `memory/`。
+2. 将错误信息写入 `logs/error-YYYYMMDD.log`：
+   ```
+   [YYYY-MM-DD HH:MM:SS] ERROR: 失败步骤描述
+   [YYYY-MM-DD HH:MM:SS] 原因：...
+   ```
+3. 如脚本返回非零退出码，立即停止后续步骤。
+4. 向用户返回简洁的失败说明，不要伪造日报内容。
 
 ## 文件位置
 
