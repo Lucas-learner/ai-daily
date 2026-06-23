@@ -6,7 +6,7 @@
 
 ## 关键路径
 
-1. **工作目录**：`/Users/macmini/projects/cron/ai-daily`
+1. **工作目录**：`/Users/macmini/projects/skills/ai-daily`
 2. **去重追踪器**：`memory/ai-news-tracker.md`
 3. **日报存储**：`reports/YYYY-MM.md`（每月一个文件，日期区块逆序）
 4. **日志**：`logs/ai-daily-YYYYMMDD.log`

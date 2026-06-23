@@ -1,4 +1,4 @@
-#!/Users/macmini/projects/cron/ai-daily/.venv/bin/python3
+#!/Users/macmini/projects/skills/ai-daily/.venv/bin/python3
 """
 生成 iCloud ai daily 目录的 index.html 索引页。
 """

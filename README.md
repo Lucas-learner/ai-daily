@@ -65,7 +65,7 @@ git commit -m "描述"
 项目级 skill 是单一事实来源：
 
 ```
-/Users/macmini/projects/cron/ai-daily/.kimi-code/skills/ai-daily/SKILL.md
+/Users/macmini/projects/skills/ai-daily/.kimi-code/skills/ai-daily/SKILL.md
 ```
 
 用户级 skill 是符号链接：

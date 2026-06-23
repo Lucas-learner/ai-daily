@@ -13,7 +13,7 @@
 
 ## 前置检查
 
-1. **工作目录**：`/Users/macmini/projects/cron/ai-daily`
+1. **工作目录**：`/Users/macmini/projects/skills/ai-daily`
 2. **检查日期**：若今天是当月 1 日，先执行**月度归档流程**（见下方），再生成当日日报。
 3. **读取去重追踪器**：`memory/ai-news-tracker.md`，获取最近 30 天已报道主题。
 
@@ -29,7 +29,7 @@
 4. 将总结写入临时文件 `/tmp/ai-daily-summary-YYYY-MM-prev.md`。
 5. 调用脚本归档：
    ```bash
-   bash /Users/macmini/projects/cron/ai-daily/scripts/archive-month.sh YYYY-MM-prev /tmp/ai-daily-summary-YYYY-MM-prev.md
+   bash /Users/macmini/projects/skills/ai-daily/scripts/archive-month.sh YYYY-MM-prev /tmp/ai-daily-summary-YYYY-MM-prev.md
    ```
 6. 脚本会自动：
    - 将总结插入到 `reports/YYYY-MM-prev.md` 最顶部
@@ -40,7 +40,7 @@
 
 ### 第一步：读取已报道主题
 
-读取 `/Users/macmini/projects/cron/ai-daily/memory/ai-news-tracker.md`，获取最近 30 天已报道的主题列表。
+读取 `/Users/macmini/projects/skills/ai-daily/memory/ai-news-tracker.md`，获取最近 30 天已报道的主题列表。
 
 ### 第二步：数据采集
 
@@ -149,7 +149,7 @@
 1. 将生成的日报内容（不含日期标题）写入临时文件，例如 `/tmp/ai-daily-YYYY-MM-DD-body.md`。
 2. 调用脚本追加到月报顶部：
    ```bash
-   bash /Users/macmini/projects/cron/ai-daily/scripts/add-daily-entry.sh YYYY-MM-DD /tmp/ai-daily-YYYY-MM-DD-body.md
+   bash /Users/macmini/projects/skills/ai-daily/scripts/add-daily-entry.sh YYYY-MM-DD /tmp/ai-daily-YYYY-MM-DD-body.md
    ```
 3. 脚本会自动：
    - 若 `reports/YYYY-MM.md` 不存在则创建
@@ -160,7 +160,7 @@
 
 调用脚本：
 ```bash
-bash /Users/macmini/projects/cron/ai-daily/scripts/sync-to-icloud.sh YYYY-MM
+bash /Users/macmini/projects/skills/ai-daily/scripts/sync-to-icloud.sh YYYY-MM
 ```
 
 脚本会：
@@ -238,8 +238,8 @@ bash /Users/macmini/projects/cron/ai-daily/scripts/sync-to-icloud.sh YYYY-MM
 
 ## 文件位置
 
-- 跟踪文件：`/Users/macmini/projects/cron/ai-daily/memory/ai-news-tracker.md`
-- 月报文件：`/Users/macmini/projects/cron/ai-daily/reports/YYYY-MM.md`
-- 可视化文件：`/Users/macmini/projects/cron/ai-daily/reports/YYYY-MM.html`
+- 跟踪文件：`/Users/macmini/projects/skills/ai-daily/memory/ai-news-tracker.md`
+- 月报文件：`/Users/macmini/projects/skills/ai-daily/reports/YYYY-MM.md`
+- 可视化文件：`/Users/macmini/projects/skills/ai-daily/reports/YYYY-MM.html`
 - iCloud 同步：`~/Library/Mobile Documents/com~apple~CloudDocs/数据同步/ai daily/`
-- 执行日志：`/Users/macmini/projects/cron/ai-daily/logs/ai-daily-YYYYMMDD.log`
+- 执行日志：`/Users/macmini/projects/skills/ai-daily/logs/ai-daily-YYYYMMDD.log`

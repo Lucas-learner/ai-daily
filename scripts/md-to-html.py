@@ -11,7 +11,7 @@ import html
 def get_markdown_module():
     """优先使用项目 venv 中的 markdown 模块。"""
     import importlib.util
-    venv_markdown = "/Users/macmini/projects/cron/ai-daily/.venv/lib/python3.9/site-packages"
+    venv_markdown = "/Users/macmini/projects/skills/ai-daily/.venv/lib/python3.9/site-packages"
     if importlib.util.find_spec("markdown") is None and venv_markdown not in sys.path:
         sys.path.insert(0, venv_markdown)
     import markdown
