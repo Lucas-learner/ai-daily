@@ -1,0 +1,15 @@
+# Python venv
+.venv/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Backups and generated artifacts
+backups/
+reports/*.html
+logs/*.log
+
+# Temporary files
+*.tmp
