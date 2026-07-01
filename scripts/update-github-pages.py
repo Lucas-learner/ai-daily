@@ -127,7 +127,6 @@ def main():
 <body>
 <h1>📰 AI日报</h1>
 <p class="meta">每日自动生成的 AI 行业日报归档，按月汇总，逆序排列。</p>
-<p class="meta"><span class="badge">auto-updated</span> 本站点由 cron + kimi-code 自动维护并推送至 GitHub Pages。</p>
 {summary_card}<table>
   <thead>
     <tr><th>月份</th><th>更新时间</th><th>查看</th></tr>
