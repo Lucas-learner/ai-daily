@@ -8,6 +8,7 @@ PROJECT_DIR="/Users/macmini/projects/skills/ai-daily"
 KIMI_BIN="/Users/macmini/.kimi-code/bin/kimi"
 LOG_DIR="$PROJECT_DIR/logs"
 DATE="$(date +%Y-%m-%d)"
+YEAR_MONTH="$(date +%Y-%m)"
 LOG_FILE="$LOG_DIR/ai-daily-$(date +%Y%m%d).log"
 LOCK_FILE="$PROJECT_DIR/.ai-daily-cron.lock"
 
@@ -35,7 +36,7 @@ touch "$LOCK_FILE"
   }
 
   # 同步到 GitHub Pages（与 iCloud 解耦，避免 iCloud 阻塞影响网页发布）
-  "$PROJECT_DIR/scripts/sync-to-github.sh" "$DATE" 2>&1 || {
+  "$PROJECT_DIR/scripts/sync-to-github.sh" "$YEAR_MONTH" 2>&1 || {
     rc=$?
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] WARN: GitHub Pages 同步退出码 $rc"
   }
