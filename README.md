@@ -1,8 +1,25 @@
 # AI日报（cron + kimi-code 版）
 
-使用 kimi-code 的 `CronCreate` 定时生成 AI 行业日报。
-
 > 🌐 **公开日报站点**：https://lucas-learner.github.io/ai-daily/
+
+本项目是一个自动化的 AI 行业日报工作流。每天由系统 cron 定时触发，调用 kimi-code 搜索当日 AI 新闻、去重整理、生成结构化日报，并同时发布到 iCloud（个人可视化同步）和 GitHub Pages（公开网页共享）。所有底层脚本、去重追踪器和站点源码均开源，方便他人复用或 fork 改造。
+
+## 日报生成流程
+
+```mermaid
+flowchart LR
+    A[系统 cron<br/>每天 08:07] --> B[cron-run.sh]
+    B --> C[kimi -p<br/>执行ai日报任务]
+    C --> D[搜索 AI 新闻]
+    D --> E[去重 & 结构化]
+    E --> F[追加到 reports/YYYY-MM.md]
+    F --> G[生成 HTML]
+    G --> H[更新 memory/ai-news-tracker.md]
+    H --> I[同步到 iCloud]
+    H --> J[同步到 GitHub Pages]
+    I --> K[iCloud Drive 可视化]
+    J --> L[https://lucas-learner.github.io/ai-daily/]
+```
 
 ## 目录
 
@@ -38,25 +55,43 @@
 ## 定时任务
 
 - 时间：每天 08:07（Asia/Shanghai）
-- 方式：系统级 `crontab`（生产兜底）
+- 主方式：系统级 `crontab`（生产兜底）
   - 入口脚本：`scripts/cron-run.sh`
-  - 命令：`kimi -p "执行ai日报任务"`
+  - 触发命令：`kimi -p "执行ai日报任务"`
   - 同步目标：iCloud + GitHub Pages（每日自动更新）
-- 备用方式：kimi-code 内置 `CronCreate`（仅当前 session 生效，7 天后过期）
+- 备用方式：kimi-code 内置 `CronCreate`（仅当前 session 生效，7 天后过期，仅用于临时调试）
 
-## iCloud 同步
+## 同步目标
 
-每月 `.md`、渲染后的 `.html` 以及 `index.html` 索引页会同步到：
+### iCloud 同步
+
+每日 `.md`、渲染后的 `.html` 以及 `index.html` 索引页会同步到：
 
 ```
 ~/Library/Mobile Documents/com~apple~CloudDocs/数据同步/ai daily/
 ```
+
+### GitHub Pages 同步
+
+`docs/` 目录作为 GitHub Pages 发布源，由 `scripts/sync-to-github.sh` 自动推送到仓库。推送成功后，GitHub Pages 会在几分钟内重新部署公开站点。
 
 ## 依赖
 
 ```bash
 python3 -m venv .venv
 .venv/bin/pip install markdown
+```
+
+## 手动同步
+
+如果某次 cron 的 GitHub Pages 同步失败，或需要立即发布最新日报，可手动执行：
+
+```bash
+# 同步指定月份到 GitHub Pages
+bash scripts/sync-to-github.sh 2026-07
+
+# 仅同步到 iCloud
+bash scripts/sync-to-icloud.sh 2026-07
 ```
 
 ## Git
@@ -66,6 +101,7 @@ python3 -m venv .venv
 ```bash
 git add .
 git commit -m "描述"
+git push
 ```
 
 ## Skill 维护
