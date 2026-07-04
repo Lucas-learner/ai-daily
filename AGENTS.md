@@ -11,6 +11,8 @@
 3. **日报存储**：`reports/YYYY-MM.md`（每月一个文件，日期区块逆序）
 4. **日志**：`logs/ai-daily-YYYYMMDD.log`
 5. **iCloud 可视化同步**：`~/Library/Mobile Documents/com~apple~CloudDocs/数据同步/ai daily/`
+6. **GitHub Pages 公开站点**：`https://lucas-learner.github.io/ai-daily/`
+7. **GitHub 同步兜底脚本**：`scripts/github-api-push.py`（当 `git push` 因网络/SSL 失败时，通过 GitHub Contents API 直接更新 `docs/` 文件）
 
 ## 执行原则
 

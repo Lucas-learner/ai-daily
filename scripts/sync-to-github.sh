@@ -33,6 +33,26 @@ if ! git diff --quiet -- docs/ scripts/update-github-pages.py scripts/generate-d
 fi
 
 # 3. push 到 GitHub（使用 token 避免交互式密码输入）
-git push "https://${GITHUB_API_KEY}@github.com/${REPO}.git" main
+PUSH_OK=0
+if git push "https://${GITHUB_API_KEY}@github.com/${REPO}.git" main; then
+  PUSH_OK=1
+else
+  echo "WARN: git push 失败，尝试通过 GitHub Contents API 直接更新 docs/ 文件" >&2
+  if .venv/bin/python3 "$PROJECT_DIR/scripts/github-api-push.py"; then
+    echo "INFO: GitHub Pages docs/ 已通过 API 更新" >&2
+    # 尝试同步远程变更到本地，避免下次 push 冲突
+    git fetch "https://${GITHUB_API_KEY}@github.com/${REPO}.git" main || true
+    git rebase FETCH_HEAD || git rebase --abort || true
+    # 再次尝试 git push（网络可能已恢复）
+    if git push "https://${GITHUB_API_KEY}@github.com/${REPO}.git" main; then
+      PUSH_OK=1
+    fi
+  fi
+fi
 
-echo "Synced GitHub Pages site for $YEAR_MONTH: https://${REPO%/*}.github.io/${REPO#*/}/"
+if [ "$PUSH_OK" -eq 1 ]; then
+  echo "Synced GitHub Pages site for $YEAR_MONTH: https://${REPO%/*}.github.io/${REPO#*/}/"
+else
+  echo "ERROR: GitHub 同步最终失败，请检查网络和 GITHUB_API_KEY" >&2
+  exit 1
+fi
