@@ -13,3 +13,4 @@ logs/*.log
 
 # Temporary files
 *.tmp
+.ai-daily-cron.lock

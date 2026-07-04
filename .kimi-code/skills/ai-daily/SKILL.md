@@ -101,19 +101,19 @@
 | **分类标题** | 三级标题 `###` | `### 🔥 Breaking` |
 | **新闻标题** | 加粗 `**标题**` | `**OpenAI 发布 GPT-5.5**` |
 | **正文** | 普通文本 + 列表项 | `- 支持文本、图像、视频` |
-| **来源** | 每条注明来源 | `- 来源：TechCrunch` |
+| **来源** | 每条注明来源，使用可点击链接 | `- **来源**：[TechCrunch](https://techcrunch.com/...) | **时间**：X月X日` |
 
 **内容结构：**
 ```markdown
 ### 🔥 Breaking
 
 **🌍 新闻标题**
-- **来源**：来源名 | **时间**：X月X日
+- **来源**：[来源名](https://example.com/article) | **时间**：X月X日
 - 要点 1
 - 要点 2
 
 **🌍 另一条 Breaking**
-- **来源**：来源名 | **时间**：X月X日
+- **来源**：[来源名](https://example.com/article) | **时间**：X月X日
 - 要点 1
 - 要点 2
 
@@ -141,6 +141,7 @@
 **格式要求：**
 - 每条新闻用空行分隔，**不要用 `---` 分隔同类别内的新闻条目**。
 - 不同类别之间（如 Breaking → 核心动态）可用 `---` 分隔。
+- **来源链接**：每条新闻必须提供至少一个可点击的原始来源 URL，格式为 `[来源名](URL)`；若参考了多个来源，用 `/` 分隔多个链接（如 `[TechCrunch](URL1) / [The Verge](URL2)`）。
 - 不要在条目中添加 `> 采集时间`、`> 信息来源`、`> 🔗 来源链接` 等元信息行。
 - 每日精选 5-8 条，必须有 `### 💡 今日洞察` 段落。
 
@@ -166,9 +167,10 @@ bash /Users/macmini/projects/skills/ai-daily/scripts/sync-to-icloud.sh YYYY-MM
 脚本会：
 1. 复制 `reports/YYYY-MM.md` 和 `reports/YYYY-MM.html` 到：
    ```
-   ~/Library/Mobile Documents/com~apple~CloudDocs/数据同步/ai daily/
+   ~/Library/Mobile Documents/com~apple~CloudDocs/数据同步/ai daily/reports/
    ```
-2. 更新 `index.html` 索引页。
+2. 生成/更新根目录的 `daily-summary.md` 与 `daily-summary.html`（今日摘要入口，覆盖旧文件，不保留历史归档）。
+3. 更新根目录的 `index.html` 索引页，并在顶部直接内嵌展示今日摘要内容。
 
 ### 第八步：更新追踪器
 
