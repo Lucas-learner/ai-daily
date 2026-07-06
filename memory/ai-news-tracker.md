@@ -6,6 +6,32 @@
 
 ---
 
+## 2026-07-06
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| WhiteHouse-Voluntary-AI-Release-Standards-Framework | 2026-07-06 | 白宫发布自愿性AI发布标准框架，替代Fable 5/GPT-5.6临时出口管制审批，要求前沿模型完成独立安全审计 |
+| Anthropic-ClaudeScience-DrugDiscovery-Workbench | 2026-07-06 | Anthropic推出Claude Science科学研究工作台并进军药物发现，与AlphaFold 4、LifeSciBench形成三足鼎立 |
+| UN-ADS-GTR-Global-AutonomousDriving-China-CoLead | 2026-07-06 | 联合国通过全球首个自动驾驶法规ADS GTR，中国共同主导起草，54个缔约方共享技术基准 |
+| Anthropic-Revenue-Overtakes-OpenAI-EnterpriseSubscription | 2026-07-06 | Anthropic年化收入 reportedly 达470亿美元超越OpenAI，企业订阅支出5月首次超过OpenAI |
+| OpenAI-GeneBench-Pro-ComputationalBiology | 2026-07-06 | OpenAI发布GeneBench-Pro生物学基准，回应Anthropic VirBench，强调科学不确定性下的代理判断能力 |
+| ByteDance-Seedance-2.5-AI-Video | 2026-07-06 | ByteDance发布Seedance 2.5视频生成模型，依托TikTok生态与低价策略加入AI视频竞争 |
+
+---
+
+## 2026-07-05
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| OpenAI-GPT56-Sol-GA-ChatGPT-Ultra | 2026-07-05 | OpenAI宣布GPT-5.6 Sol将于7月15日全面GA，推出200美元/月ChatGPT Ultra订阅，免费/Plus用户获有限额度 |
+| US-Congress-Anthropic-ClaudeCode-HiddenCode-Inquiry | 2026-07-05 | 美国参议院商务委员会就Claude Code隐藏代码事件致函Anthropic要求听证，Wyden要求FTC/DOJ调查 |
+| Google-AlphaFold4-API-IsomorphicEnterprise | 2026-07-05 | DeepMind开放AlphaFold 4 API并推出Isomorphic Enterprise企业药物发现平台，已与诺华/礼来/武田合作 |
+| EU-AISovereign-Fund-20B-EuropeanModels | 2026-07-05 | 欧盟启动200亿欧元AI主权基金，投资本土模型与算力，要求受助企业30%算力采购在欧盟境内 |
+| Nvidia-BlackwellUltra-DGX-SuperPOD-B200 | 2026-07-05 | Nvidia发布Blackwell Ultra GPU与DGX SuperPOD B200，推理性能提升4倍，首批客户含OpenAI/Anthropic/xAI/Microsoft/CoreWeave |
+| Meta-Compute-Cloud-First-Customers-Spotify-Shopify | 2026-07-05 | Meta Compute云服务进入试点，首批外部客户包括Spotify和Shopify，计划2026年Q4正式发布 |
+
+---
+
 ## 2026-07-04
 
 | 话题关键词 | 首次报道日期 | 简要描述 |
@@ -289,20 +315,4 @@
 | Next.js-16.2-AIAgent | 2026-06-07 | Next.js 16.2发布，新增深度适配AI智能体的开发工具 |
 | ReidHoffman-Manus-药物 | 2026-06-07 | Reid Hoffman离开微软董事会，专注AI药物发现公司Manus |
 | AI-材料实验室-硬科技 | 2026-06-07 | AI进入材料实验室，辅助高分子研发，从经验驱动走向智能协同 |
-
----
-
-## 2026-06-05
-
-| 话题关键词 | 首次报道日期 | 简要描述 |
-|-----------|-------------|---------|
-| OpenAI-ChatGPT-Dreaming-记忆系统 | 2026-06-05 | ChatGPT发布全新记忆系统Dreaming，跨对话保持上下文偏好 |
-| Meta-帐篷数据中心-算力扩张 | 2026-06-05 | Meta学习特斯拉用帐篷快速搭建数据中心，加速AI算力部署 |
-| Anthropic-470亿收入-IPO回应 | 2026-06-05 | Anthropic年化收入突破470亿美元，CEO回应AI回报质疑 |
-| Airbnb-AI实验室-BrianChesky | 2026-06-05 | Airbnb CEO宣布将成立新AI实验室，去年未签LLM因产品不成熟 |
-| OpenAI-前沿AI治理蓝图 | 2026-06-05 | OpenAI发布联邦层面前沿AI民主治理框架和公共政策议程 |
-| GPT-Rosalind-生命科学能力 | 2026-06-05 | GPT-Rosalind扩展生物推理、药物化学和基因组分析能力 |
-| 国产模型-ArtificialAnalysis-速度榜 | 2026-06-05 | 中国模型登顶Artificial Analysis输出速度评测榜首 |
-
-
 
