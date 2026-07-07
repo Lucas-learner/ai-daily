@@ -6,6 +6,19 @@
 
 ---
 
+## 2026-07-07
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| xAI-SpaceXAI-Rebrand-Integration | 2026-07-07 | xAI正式更名为SpaceXAI，将AI品牌与SpaceX航天、卫星通信业务深度绑定 |
+| Anthropic-JSpace-GlobalWorkspace-Interpretability | 2026-07-07 | Anthropic揭示语言模型"全局工作空间"J-space，可读取和操控Claude内部推理状态 |
+| Meituan-LongCat2-OpenSource-ChineseModel | 2026-07-07 | 美团LongCat-2.0正式揭晓身份并开源，国产算力训练的1.6T MoE模型SWE-bench Pro超越GPT-5.5 |
+| OpenAI-GPTRealtime-2.1-mini-VoiceLatency | 2026-07-07 | OpenAI发布GPT-Realtime-2.1-mini，实时语音延迟降低25%并支持推理与工具使用 |
+| Tencent-Hunyuan-Hy3-OpenSource-MoE | 2026-07-07 | 腾讯混元Hy3正式版开源，295B MoE架构Agent任务成功率从72%提升至90% |
+| SWE-Together-Benchmark-ClaudeOpus48 | 2026-07-07 | SWE-Together多轮编码基准发布，Claude Opus 4.8在pass@1和引导负担上领先 |
+
+---
+
 ## 2026-07-06
 
 | 话题关键词 | 首次报道日期 | 简要描述 |
