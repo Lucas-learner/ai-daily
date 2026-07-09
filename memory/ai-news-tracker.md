@@ -6,6 +6,32 @@
 
 ---
 
+## 2026-07-09
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| SpaceXAI-Cursor-Grok45-Public-Launch | 2026-07-09 | SpaceXAI与Cursor联合发布Grok 4.5，7月9日公开上线，Opus-class但更快更便宜，面向法律/金融/编程 |
+| OpenAI-GPT-Live-FullDuplex-Voice | 2026-07-09 | OpenAI发布全双工语音模型GPT-Live，可边听边说并后台调用GPT-5.5，替代Advanced Voice Mode |
+| OpenAI-GPT56-Sol-Terra-Luna-Preview-Expansion | 2026-07-09 | OpenAI自7月9日起扩大GPT-5.6 Sol/Terra/Luna全球预览访问，三档定价覆盖不同成本性能场景 |
+| Meta-Alberta-Canada-1GW-DataCenter | 2026-07-09 | Meta宣布在加拿大艾伯塔省投资130亿加元建设1GW AI数据中心，为Meta在加拿大首个算力基地 |
+| DeepSeek-Zhipu-Self-Developed-Inference-Chip | 2026-07-09 | DeepSeek启动自研AI推理芯片项目，智谱AI评估自研芯片，中美模型公司同步进军芯片层 |
+| GitLost-GitHub-Agentic-Workflows-PromptInjection | 2026-07-09 | GitHub Agentic Workflows曝出GitLost提示注入漏洞，公开issue可诱导agent泄露私有仓库数据 |
+
+---
+
+## 2026-07-08
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| JADEPUFFER-Autonomous-AI-Ransomware-Langflow | 2026-07-08 | Sysdig确认首个由LLM代理端到端驱动的勒索软件攻击JADEPUFFER，利用Langflow CVE-2025-3248入侵并31秒内自我修复 |
+| Meta-MuseImage-MuseVideo-Agentic-MediaGen | 2026-07-08 | Meta发布Muse Image/Muse Video媒体生成模型，Agentic工作模式，Image Arena排名第二、Video Arena第三 |
+| SKHynix-NYSE-IPO-AI-HBM-Infrastructure | 2026-07-08 | SK Hynix将于7月10日NYSE上市，募资约294亿美元，HBM全球龙头，AI基础设施层资本市场大考 |
+| SpaceXAI-Nasdaq100-IPO-Prospectus-AI-TAM | 2026-07-08 | SpaceXAI整合完成，SPCX加入Nasdaq-100，IPO招股书披露AI占26.5万亿美元TAM |
+| Anthropic-Neuronpedia-Qwen-Open-Interpretability | 2026-07-08 | Anthropic与Neuronpedia合作，基于Qwen开源可解释性交互演示，延续J-space研究 |
+| Claude-Cowork-Mobile-Web-Unified-Interface | 2026-07-08 | Claude Cowork扩展至移动端和Web，Chat与Cowork统一标签，Fable 5免费期延长至7月12日 |
+
+---
+
 ## 2026-07-07
 
 | 话题关键词 | 首次报道日期 | 简要描述 |
@@ -305,27 +331,4 @@
 | Sandstone-3000万-法律AI | 2026-06-10 | Sandstone获Lightspeed $3000万A轮，面向企业内部法务，AI垂直渗透加速 |
 | OpenAI-工业政策-白皮书 | 2026-06-10 | OpenAI发布《智能时代产业政策》白皮书，聚焦机会扩展与共享繁荣 |
 
----
-
-## 2026-06-08
-
-| 话题关键词 | 首次报道日期 | 简要描述 |
-|-----------|-------------|---------|
-| OpenAI-超级应用-ChatGPT转型 | 2026-06-08 | OpenAI计划将ChatGPT整合编码工具和AI代理，转型为"超级应用"，内部称"Chat is dead" |
-| Tokenpocalypse-AI价格危机 | 2026-06-08 | GitHub Copilot计费、Uber限制预算，AI行业面临成本压力，从补贴获客转向商业变现 |
-| Notion-Anthropic-服务中断 | 2026-06-08 | Anthropic短暂基础设施故障导致Notion禁用其模型，12小时后恢复 |
-
----
-
-## 2026-06-07
-
-| 话题关键词 | 首次报道日期 | 简要描述 |
-|-----------|-------------|---------|
-| OpenAI-LockdownMode-安全 | 2026-06-07 | OpenAI发布Lockdown Mode防止提示注入攻击，保护敏感数据 |
-| 特朗普-OpenAI-股权 | 2026-06-07 | 特朗普政府考虑入股OpenAI，让美国人民分享AI红利 |
-| SriramKrishnan-离开白宫 | 2026-06-07 | 白宫AI顾问离职，将创立新机构继续影响AI政策 |
-| WWDC-Siri-AppleIntelligence | 2026-06-07 | 苹果WWDC 2026临近，Siri和Apple Intelligence预计重大升级 |
-| Next.js-16.2-AIAgent | 2026-06-07 | Next.js 16.2发布，新增深度适配AI智能体的开发工具 |
-| ReidHoffman-Manus-药物 | 2026-06-07 | Reid Hoffman离开微软董事会，专注AI药物发现公司Manus |
-| AI-材料实验室-硬科技 | 2026-06-07 | AI进入材料实验室，辅助高分子研发，从经验驱动走向智能协同 |
 
