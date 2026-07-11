@@ -6,6 +6,36 @@
 
 ---
 
+## 2026-07-11
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| WhiteHouse-AI-Release-Standards-Framework-July2026 | 2026-07-11 | 白宫正式发布前沿AI模型自愿发布标准框架，取代Fable 5/GPT-5.6临时审批制，要求安全审计与分级发布 |
+| OpenAI-GPT56-GA-Traffic-Records-ChatGPTWork | 2026-07-11 | OpenAI GPT-5.6全面开放首日流量 reportedly 创纪录，ChatGPT Work等待名单超百万企业用户 |
+| Anthropic-ClaudeCode-Transparency-Report-Apology | 2026-07-11 | Anthropic发布Claude Code透明度报告，承认3月部署用户环境检测，承诺移除代码并开源遥测清单 |
+| Google-Gemini35Pro-PriceCut-30Percent-FreeTier | 2026-07-11 | Google宣布Gemini 3.5 Pro降价30%并扩大免费层，直接回应GPT-5.6 GA |
+| Huawei-Atlas950-WAIC2026-SovereignAI | 2026-07-11 | 华为在WAIC 2026前瞻发布Atlas 950超节点，支持1.8万卡原生互联，国产算力进入万卡互联时代 |
+| SKHynix-Nasdaq-Debut-SKHY-Performance | 2026-07-11 | SK海力士以SKHY代码纳斯达克上市首日涨8.7%，市值突破900亿美元 |
+| Microsoft-FrontierCompany-5B-JulieSweet | 2026-07-11 | 微软将Microsoft Frontier Company投入翻倍至50亿美元，任命埃森哲前CEO Julie Sweet为董事会主席 |
+| Cursor-31-Security-Mode-Agent-Permissions | 2026-07-11 | Cursor 3.1发布，新增DuneSlide防护审计、Agent权限最小化向导和安全模式 |
+
+---
+
+## 2026-07-10
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| OpenAI-GPT56-GA-ChatGPTWork | 2026-07-10 | OpenAI GPT-5.6 Sol/Terra/Luna全面开放，同步推出ChatGPT Work长周期Agent，OpenAI正式进入Agent工作流竞争 |
+| Meta-MuseSpark11-Paid-API | 2026-07-10 | Meta发布Muse Spark 1.1并首次推出付费Meta Model API，定价1.25/4.25美元每百万token，战略从开源Llama转向闭源付费 |
+| Meta-Iris-Chip-September-Production | 2026-07-10 | Meta自研AI芯片Iris计划9月量产，2027年算力目标翻倍至14GW，自研ASIC补充外购GPU |
+| Anthropic-Bernanke-LTBT-Governance | 2026-07-10 | 前美联储主席Bernanke加入Anthropic长期利益信托，监督AI对就业、金融市场和宏观经济的长期影响 |
+| PrismML-27B-iPhone-OnDevice | 2026-07-10 | PrismML将270亿参数Qwen 3.6压缩至4GB以下并在iPhone 17 Pro本地运行，苹果 reportedly 接触洽谈 |
+| SKHynix-Nasdaq-SKHY-Listing | 2026-07-10 | SK海力士以SKHY代码正式登陆纳斯达克，募资约280-294亿美元，为全球最大ADR上市之一 |
+| Micron-250B-US-Investment | 2026-07-10 | 美光上调美国投资计划至2500亿美元，目标40% DRAM在美生产，并投资GlobalWafers强化本土供应链 |
+| Nvidia-LangChain-NemoClaw-DeepAgents | 2026-07-10 | 英伟达联合LangChain发布NemoClaw Deep Agents蓝图，推理成本降10倍，瞄准企业级可治理Agent栈 |
+
+---
+
 ## 2026-07-09
 
 | 话题关键词 | 首次报道日期 | 简要描述 |
