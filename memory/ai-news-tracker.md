@@ -6,6 +6,19 @@
 
 ---
 
+## 2026-07-12
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| Meta-US-Government-AI-Model-Review-Refusal-July2026 | 2026-07-12 | Meta成为六家前沿AI公司中唯一拒绝向美国政府提交新模型安全评估的企业，暴露自愿性AI监管框架对开源模型的约束漏洞 |
+| Anthropic-2026-Hiring-Wave-Karpathy-Boyd-Nordeen | 2026-07-12 | Anthropic 2026年从OpenAI、Google、Microsoft、xAI大规模挖角高管，Karpathy、Eric Boyd等加盟被媒体集中盘点 |
+| WAIC-2026-Countdown-300-Debuts-Agent-Smartphone | 2026-07-12 | WAIC 2026进入5天倒计时，超300款产品全球首发，包括MiniMax M3、阶跃星辰Agent OS、全球首款AI Agent智能手机等 |
+| Alibaba-Bans-Claude-Code-Qoder-Replacement | 2026-07-12 | 阿里巴巴正式禁用Claude Code及Anthropic全系产品，推荐使用自研Qoder替代，源于Claude Code隐藏代码识别中国用户事件 |
+| GPT-56-GA-Developer-Cost-Routing-Challenges | 2026-07-12 | GPT-5.6全面开放后开发者报告成本与路由挑战，Agent模式账单上涨25%-45%，第三方路由工具兴起 |
+| China-AI-Smart-Terminals-Overtake-Non-AI-2026 | 2026-07-12 | 中国预计2026年AI智能手机和PC出货量首次超过非AI设备，AI智能终端年出货量已突破1亿台 |
+
+---
+
 ## 2026-07-11
 
 | 话题关键词 | 首次报道日期 | 简要描述 |
@@ -335,30 +348,4 @@
 | 智源大会-具身智能-AlphaGo时刻 | 2026-06-14 | 智源大会圆桌：王仲远/王鹤/李大海对谈，具身智能可能是中国弯道超车核心赛道 |
 
 ---
-
-## 2026-06-11
-
-| 话题关键词 | 首次报道日期 | 简要描述 |
-|-----------|-------------|---------|
-| xAI-工程师解雇-Grok安全 | 2026-06-11 | xAI工程师因举报Grok安全问题被解雇，SpaceX IPO前爆发诉讼 |
-| OpenAI-SEC-S1-IPO启动 | 2026-06-11 | OpenAI向SEC秘密提交S-1文件，IPO进入实质性阶段 |
-| Ramp-AI支出-7500美元 | 2026-06-11 | 重度AI企业每月每员工AI支出达$7,500，成本压力显著 |
-| Amazon-175亿借款-AI军备 | 2026-06-11 | 亚马逊为AI支出再借款$175亿，债务持续攀升 |
-| 摩尔线程-MusaCoder-国产GPU | 2026-06-11 | 开源代码模型基于国产GPU全栈训练，KernelBench超越Opus 4.7 |
-| OpenAI-Codex-Windows沙盒 | 2026-06-11 | 为Codex智能体打造Windows安全沙盒，完善企业安全部署 |
-| 华超神控-亿元天使轮-脑机接口 | 2026-06-11 | 国内AI超声脑机接口公司完成亿元天使轮融资 |
-
----
-
-## 2026-06-10
-
-| 话题关键词 | 首次报道日期 | 简要描述 |
-|-----------|-------------|---------|
-| Anthropic-Fable5-Mythos公开-安全定价 | 2026-06-10 | Anthropic发布首个公众可用的Mythos级模型Fable 5，安全护栏+高定价双重筛选，30天强制数据保留 |
-| Google-AIPlus-降价-价格战 | 2026-06-10 | Google将AI Plus降至$4.99，AI订阅价格战从美国核心市场爆发，模型层商品化预警 |
-| WWDC2026-Siri-Gemini-追赶 | 2026-06-10 | Apple发布Siri AI overhaul（基于Gemini），iOS 27，但评价为"追赶者"而非引领 |
-| Lovable-5亿ARR-vibe coding | 2026-06-10 | Vibe coding平台Lovable年化收入突破$5亿，每周100万新项目，非技术人员构建生产软件 |
-| Sandstone-3000万-法律AI | 2026-06-10 | Sandstone获Lightspeed $3000万A轮，面向企业内部法务，AI垂直渗透加速 |
-| OpenAI-工业政策-白皮书 | 2026-06-10 | OpenAI发布《智能时代产业政策》白皮书，聚焦机会扩展与共享繁荣 |
-
 
