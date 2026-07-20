@@ -30,6 +30,14 @@ def ensure_docs_reports():
             print(f"Updated docs/reports/{src.name}")
 
 
+def ensure_nojekyll():
+    """禁用 Jekyll，避免 GitHub Pages 构建时调用 github-metadata API 导致 503 失败。"""
+    marker = DOCS_DIR / ".nojekyll"
+    if not marker.exists():
+        marker.write_text("", encoding="utf-8")
+        print("Created docs/.nojekyll")
+
+
 def build_summary_card() -> str:
     """如果存在 docs/daily-summary.html，将其内容嵌入索引顶部。"""
     summary_html = DOCS_DIR / "daily-summary.html"
@@ -88,6 +96,7 @@ def generate_daily_summary():
 
 def main():
     ensure_docs_reports()
+    ensure_nojekyll()
     generate_daily_summary()
 
     months = sorted([f.stem for f in DOCS_REPORTS_DIR.glob("2*.html")], reverse=True)
