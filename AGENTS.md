@@ -13,6 +13,7 @@
 5. **iCloud 可视化同步**：`~/Library/Mobile Documents/com~apple~CloudDocs/数据同步/ai daily/`
 6. **GitHub Pages 公开站点**：`https://lucas-learner.github.io/ai-daily/`
 7. **GitHub 同步兜底脚本**：`scripts/github-api-push.py`（当 `git push` 因网络/SSL 失败时，通过 GitHub Contents API 直接更新 `docs/` 文件）
+8. **docs/ 静态发布**：`scripts/update-github-pages.py` 会确保 `docs/.nojekyll` 存在，禁用 Jekyll，避免 `jekyll-github-metadata` 调用 GitHub API 时偶发 503 导致构建失败
 
 ## 执行原则
 
