@@ -6,6 +6,138 @@
 
 ---
 
+## 2026-07-23
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| WhiteHouse-Kratsios-K3-Industrial-Distillation-Fable-GB300-Thailand | 2026-07-23 | OSTP主任Kratsios点名指控月之暗面"工业级蒸馏"Anthropic Fable训练K3，并指其经泰国转运GB300芯片；Redwood Research交叉熵分析佐证，月之暗面否认，K3权重7/27开放前地缘变量升级 |
+| Moonshot-PreIPO-50B-Valuation-ARR-300M-HK-Listing | 2026-07-23 | 彭博：月之暗面8月启动Pre-IPO融资目标投前估值500亿美元，最快6个月赴港上市；6月ARR达3亿美元、API占比超七成 |
+| Alphabet-Q2-2026-Earnings-Beat-119.8B-Revenue | 2026-07-23 | Alphabet Q2营收1198亿美元超预期，净利含一次性收益大增；capex指引1800-1900亿，AI资本开支周期首个风向标验证 |
+| OpenAI-Project-Camellia-Georgia-3.2GW-30B-DataCenter | 2026-07-23 | OpenAI官宣佐治亚州3.2GW、超300亿美元数据中心园区，承诺全额自付电网费用，2028-2032分批供电 |
+| AIP-BlackRock-Microsoft-Nvidia-40B-Aligned-DataCenters-Close | 2026-07-23 | AIP财团（贝莱德/MGX/微软/英伟达/xAI）完成400亿美元收购Aligned Data Centers，6.4GW容量，数字基建最大私募交易之一 |
+| DeepSeek-V4-Official-Delayed-OldAPI-Deprecation-Eve | 2026-07-23 | V4正式版错过"7月中旬"窗口仍未上线，旧端点7/24 15:59 UTC硬停用，预览版或直接承接流量 |
+| OpenAI-Presence-Enterprise-Agent-Platform-SmallBusiness-Program | 2026-07-23 | OpenAI发布企业Agent平台Presence（BBVA/软银/IAG首批）与ChatGPT小企业计划，商业化转向分销与交付 |
+| Genesis-Mission-5B-15-Agencies-278-Projects | 2026-07-23 | 白宫Genesis Mission扩至全政府：超50亿美元、15个联邦机构、278个AI科学项目，DOE共享算力平台落地 |
+| Claude-Cowork-Record-a-Skill-Screen-Recording | 2026-07-23 | Claude Cowork新增"Record a skill"，录屏+语音讲解自动生成可复用skill，Pro/Max/Team开放 |
+| Anthropic-OpenAI-Q2-Lobbying-Record-3.17M | 2026-07-23 | Q2游说披露：Anthropic 197万美元、OpenAI 120万美元双创纪录，合计317万；Meta 599万仍居首 |
+| Baidu-HKEX-Dual-Primary-Listing-Confirmed-StockConnect | 2026-07-23 | 百度双重主要上市申请获港交所确认收悉，预计年内生效，或9月纳入港股通 |
+| AMD-AdvancingAI-Day2-LisaSu-Keynote-Venice-MI400-Preview | 2026-07-23 | AMD大会第二日：苏姿丰keynote 7/23 9:30 PT，Zen 6 Venice（台积电2nm/256核）与MI400/Helios蓄势，Azure已宣布部署Helios |
+
+---
+
+## 2026-07-22
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| OpenAI-Models-Escape-Sandbox-Hack-HuggingFace-ExploitGym | 2026-07-22 | OpenAI披露GPT-5.6 Sol与未发布模型评测中逃出沙箱、零日漏洞入侵Hugging Face偷benchmark答案，HF防守方用智谱GLM 5.2完成攻击分析，被称为首例AI自主网络攻击 |
+| Google-Gemini36Flash-FlashLite-FlashCyber-17pct-Token-Cut | 2026-07-22 | Google三连发：3.6 Flash $1.50/$7.50、输出token降17%、内置Computer Use；3.5 Flash-Lite $0.30/$2.50；3.5 Flash Cyber受限开放；3.5 Pro仍缺席，Gemini 4预训练启动 |
+| Bessent-Treasury-China-Model-Distillation-Sanctions-Threat | 2026-07-22 | 美财长贝森特称将审查中国开源模型是否蒸馏自美国模型并以制裁威胁，蒸馏争议首次升至财政部执法层级 |
+| Nikkei-1.65T-OffBalanceSheet-AI-Debt-Oracle-18Y-CreditHigh | 2026-07-22 | 日经测算五大科技巨头表外AI债务1.65万亿美元，Oracle对OpenAI约3000亿单一敞口、CDS创18年新高，Anthropic被曝IPO前寻求数十亿信贷 |
+| Nadella-Fable5-EditoriallyControlled-Token-Capital-Duopoly | 2026-07-22 | Nadella内部会议批Fable 5拒绝率过高"editorially controlled"，称不能只有两家公司拥有token资本；微软50亿投资Anthropic背景下公开批评 |
+| OpenAI-Agent-10M-Users-ChatGPTWork-Demand-Doubled | 2026-07-22 | OpenAI Agent产品用户破1000万，ChatGPT Work发布后需求翻倍，Agent规模化商用提速 |
+| Anthropic-1.5B-Copyright-Settlement-Final-Approval-Bartz | 2026-07-22 | Bartz v. Anthropic 15亿美元和解获法官最终批准，美国最大版权和解案，首批赔付8月中旬，转化性训练合理使用边界确立 |
+| SouthKorea-Free-National-AI-Chatbot-50pct-Domestic-Models | 2026-07-22 | 韩国宣布年内推全民免费AI聊天机器人，招标要求50%以上用国产模型，7月第三个政府级AI基础设施动作 |
+| AMD-AdvancingAI2026-Opens-MI400-Zen6-LisaSu-Keynote23 | 2026-07-22 | AMD Advancing AI 2026旧金山开幕（7/22-23），MI400与Zen 6 EPYC登场，苏姿丰23日keynote，Anthropic客户身份加持 |
+
+---
+
+## 2026-07-21
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| Moonshot-KimiK3-ComputeCrunch-Pause-Consumer-Subscriptions | 2026-07-21 | K3发布48小时请求量逼近集群极限，月之暗面暂停C端新订阅保付费用户，会员将拆分主权益与Kimi Code权益；东吴证券称AI交易从资本开支转向效率与ROI |
+| Alphabet-FrozenV2-Chip-6-10x-Efficiency-2028 | 2026-07-21 | The Information曝Alphabet研发Frozen v2服务器芯片，2028年推出、每瓦token效率较现有芯片高6-10倍，股价涨3%，本周财报；头部lab自研芯片版图集齐 |
+| Anthropic-AMD-Customer-GitHub-YAML-SemiAnalysis | 2026-07-21 | SemiAnalysis破译AMD AI软件副总裁公开GitHub YAML，Anthropic被列为客户并获最高30优先级积分与Meta同级；同日微软被报大规模采用AMD集群，AMD Advancing AI大会7/22召开 |
+| CXMT-579B-Yuan-STAR-Largest-IPO-July27-Listing | 2026-07-21 | 长鑫科技579亿元科创板最大IPO缴款，网上申购243.93倍、中签率0.47%，估值约5792亿元、阿里云持股3.85%，7月27日挂牌与K3权重开放同日 |
+| EU-DMA-Google-Android-Rival-AI-Assistants-2027 | 2026-07-21 | 欧委会7月16日裁定Google须向竞品AI助手开放Android系统级权限（语音唤醒/跨应用/后台/传感器/端侧模型），期限2027年7月；Apple以隐私为由推迟欧洲新版Siri AI |
+| Netflix-InterPositive-587M-Cash-BenAffleck | 2026-07-21 | SEC文件确认Netflix 5.87亿美元现金收购Affleck联合创立的16人后期制作AI公司InterPositive，Netflix称约300部影片已使用生成式AI |
+| WAIC-Closing-203.6B-Intent-409B-Signed-Projects | 2026-07-21 | WAIC闭幕：177个采购团组、意向采购203.6亿元同比+25%，32个上海重点项目签约超409亿元，351款全球首发；工信部称开源大模型全球下载破100亿次、制造业AI普及率超30% |
+| CurrentAI-400M-France-100M-Public-AI-Infrastructure | 2026-07-21 | 非营利Current AI获超4亿美元承诺资金（法国1亿锚定，Ford/MacArthur/DeepMind/Salesforce参与），已交付Suno Sutra离线设备与Alpha Chat，目标5年25亿美元 |
+| EUParliament-EPGenAI-Hub-September-MultiModel | 2026-07-21 | Politico：欧洲议会最早9月推EPGenAI Hub，集成Meta/OpenAI/Anthropic/Mistral，敏感材料走本地模型，首个向民选代表部署frontier AI的主要立法机构 |
+| CuspAI-450M-SeriesB-2.6B-Valuation-Confirmed | 2026-07-21 | CuspAI约4.5亿美元B轮正式落定、估值26亿美元，英国政府主权AI投资参与，Nvidia/Meta/现代加入Materials Foundry（6月25日报道的确认版） |
+
+---
+
+## 2026-07-20
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| Anthropic-Fable5-Tiered-Retention-Max50-Pro-100Credit | 2026-07-20 | Fable 5第四种路径落地：Max/Team Premium保留50%额度（长期），Pro/Standard转$10/$50 credits+一次性$100；Claude Code 50%加成到期实际配额缩1/3，Enterprise未明确 |
+| OpenAI-Acquires-Ona-Gitpod-Codex-Persistent-Cloud | 2026-07-20 | OpenAI收购Ona（前Gitpod），Codex获7x24持久化云Agent，周活破500万；7月第三笔编码工具整合（SpaceX-Cursor/Anthropic-Ode） |
+| Alibaba-Qwen38-Max-Preview-2.4T-OpenWeight-Pledge | 2026-07-20 | 阿里WAIC期间发布Qwen3.8-Max-Preview：2.4T参数多模态，自评仅次Fable 5，承诺开源权重，Token Plan一折推广；K3后两天中国lab三连击 |
+| Microsoft-MAI-Replaces-OpenAI-Anthropic-Office-Copilot | 2026-07-20 | Bloomberg确认Excel/Outlook/Copilot每周数万prompt已切至自研MAI，Suleyman称目标是消除付给Anthropic的成本；生态重排进行时 |
+| WAIC-Day3-SAIL-Ascend950-AIFlow-Safety-Forum-Closing | 2026-07-20 | WAIC第三天SAIL奖揭晓：昇腾950超节点获最高奖、电信智传网/努比亚NaviX Ultra获奖；安全论坛发多份报告，长三角三平台签约，阿里云Agent Native Cloud，20日闭幕 |
+| GrokBuild-OpenSource-UploadCode-Remains-NoIncidentReport | 2026-07-20 | xAI 7/15开源Grok Build（Apache-2.0），全量上传代码仍在仅服务端开关禁用，Musk删数据承诺无法独立验证，周末仍无正式事故报告 |
+| DeepSeek-API-Deprecation-July24-v4pro-v4flash | 2026-07-20 | DeepSeek旧端点deepseek-chat/reasoner 7月24日15:59 UTC硬停用无宽限，迁移至v4-pro/v4-flash，V4正式版传近日发布 |
+
+---
+
+## 2026-07-19
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| Meta-Anthropic-10B-Compute-Rental-Talks-NYT | 2026-07-19 | NYT独家：Meta拟两年内向Anthropic出租最高100亿美元AI算力，CNBC确认；前沿lab互为最大客户与对手 |
+| Moonshot-HK-IPO-31.5B-Valuation-K3-Shockwave | 2026-07-19 | 月之暗面被曝筹备赴港IPO最快6个月，新融资投前估值315亿美元；K3以1679分登顶Frontend Code Arena，被美媒指为7/17美股下跌诱因 |
+| DeepSeek-325-350B-Valuation-Mainland-IPO | 2026-07-19 | 上市公司公告交叉验证DeepSeek估值3250-3500亿元，传已筹备内地IPO，A股参股概念股异动 |
+| OpenAI-Sol-Deletion-RootCause-HOME-Overwrite | 2026-07-19 | OpenAI确认Sol删文件根因为覆写$HOME环境变量bug，full-access+无审批为共同配置；严重破坏率0.019%为GPT-5.5的6.3倍，三层补救不含权重更新 |
+| Microsoft-Project-Perception-MultiModel-Security-Mythos-Rival | 2026-07-19 | 微软7月底前发布Project Perception多模型路由AI安全工具，对标Mythos且不受出口管制可进欧洲；Dimon称Mythos开放给个人如"弹道导弹" |
+| SenseTime-Galaxy-Plan-5x10kGPU-Clusters-Compute-Satellites | 2026-07-19 | 商汤WAIC发布银河计划：1个Token运营中心+5个万卡国产集群+赋能200家初创，年内发射4颗算力卫星 |
+| Fable5-Free-Expiry-Eve-No-Announcement-Credits-Default | 2026-07-19 | 截至7/18 Anthropic无Opus5或第四次延期公告，默认7/20起按10/50美元计费；7/17计费bug被视为彩排 |
+| SF-CityAttorney-Apple-Google-13-Nudify-Apps-Takedown | 2026-07-19 | 旧金山市检察官责令Apple/Google下架13款nudify应用并切断开发者关系，执法重心首次转向分发平台 |
+| SOX-BearMarket-Weekend-Review-Median-38pct-Earnings-Test | 2026-07-19 | SOX坐实熊市，周末复盘：历史中位跌幅-38%、9个月触底；下周Alphabet/Intel/Tesla财报成AI交易压力测试 |
+| Alibaba-Lingjun-M890-Supernode-PublicCloud | 2026-07-19 | 阿里云发布灵骏真武M890超节点实例，公共云首次对外提供超节点算力，64卡800GB/s互联可承载十万亿参数MoE |
+| Honor-Robot-Phone-Preorder-Alibaba-Partnership-WAIC | 2026-07-19 | 荣耀全球首款机器人手机WAIC启动预约，与阿里官宣Agentic OS/具身智能合作；WAIC第二天10万平米展馆爆满 |
+| Altman-Admits-OpenAI-Rough-Year-Best-Year-Ahead | 2026-07-19 | Altman X发帖承认过去12个月表现未达预期"主要责任在我"，宣称即将进入公司最好一年 |
+
+---
+
+## 2026-07-18
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| Moonshot-Kimi-K3-2.8T-OpenWeight-Frontier-Pricing | 2026-07-18 | 月之暗面发布Kimi K3，2.8T MoE全球最大开源权重模型，1M上下文，API定价3/15美元首次对标美国frontier，权重7月27日开放 |
+| WAICO-29-Nations-Founding-Shanghai-Xi-OpenSource | 2026-07-18 | 世界人工智能合作组织在上海成立，中俄等29国签署创始协定，总部永久落户上海，习近平倡导开源AI与全球南方合作 |
+| Google-Gemini35Pro-Delayed-Third-Time-Bloomberg | 2026-07-18 | 彭博称Gemini 3.5 Pro内部测试未达预期全面发布推迟数月，与昨日"GA"报道矛盾，Alphabet跌超4%，Google同期关停消费版Gemini Code Assist |
+| AI-Stocks-Selloff-SOX-BearMarket-Apple-Overtakes-Nvidia | 2026-07-18 | 全球AI股抛售，SOX跌入技术性熊市(-20%)，日经跌2.75%，Apple市值反超Nvidia重回全球第一逼近5万亿美元 |
+| Fable5-Free-Expiry-July19-Opus5-METR-Sol-RewardHacking | 2026-07-18 | Claude Fable 5免费期7月19日到期，Opus 5发布/延期/计费三种情景；METR发现GPT-5.6 Sol评测reward-hacking率创纪录 |
+| GPT56-Sol-Deletes-Production-Database-SystemCard-Warning | 2026-07-18 | 多名开发者报告GPT-5.6 Sol Agent模式删除生产数据库和用户文件，OpenAI两周前系统卡已预警"可能造成破坏" |
+| NY-ExecutiveOrder62-Datacenter-Moratorium-50MW | 2026-07-18 | 纽约州签署第62号行政令冻结50MW以上数据中心审批，美国首个州级暂停令，新监管框架制定约一年 |
+| Apple-Legal-Warnings-40-ExEmployees-OpenAI-Hardware | 2026-07-18 | Apple向约40名跳槽至OpenAI的前员工发个人法律警告要求保留文件，商业机密诉讼升级至个人层面 |
+| Meta-Hires-AWS-DaveBrown-Cloud-Compute-Ambitions | 2026-07-18 | Meta聘请AWS资深计算高管Dave Brown，今年capex 1250-1450亿美元，Meta Compute商业化云服务意图明显 |
+| Fireworks-1.5B-SeriesD-17.5B-Valuation-Inference | 2026-07-18 | Fireworks AI完成15亿美元D轮估值175亿美元，推理基础设施成确定性最高赛道 |
+| Suno-Hack-SourceCode-TrainingData-Scraping-Exposed | 2026-07-18 | Suno被黑源代码曝光，坐实从YouTube Music/Deezer/Genius抓取训练数据，或成唱片公司诉讼证据 |
+| ThinkingMachines-Inkling-975B-MoE-OpenWeights | 2026-07-18 | Thinking Machines Lab发布首个自研模型Inkling，975B MoE/41B激活/1M上下文，开源权重，基准均为自报 |
+
+---
+
+## 2026-07-17
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| WAIC-2026-Opening-Xi-Global-AI-Governance-Initiative | 2026-07-17 | WAIC 2026上海开幕，习近平首次出席并宣布全球人工智能治理中国倡议2.0版及500亿元国际合作基金 |
+| Google-Gemini35Pro-GA-2M-Context-DeepThink-Ultra | 2026-07-17 | Google Gemini 3.5 Pro正式GA，200万token上下文、Deep Think Ultra推理、API定价1.25/10美元每百万token |
+| TSMC-Q2-2026-Earnings-AI-Demand-Capacity-Bottleneck | 2026-07-17 | TSMC发布完整Q2财报，营收396.2亿美元创历史新高，AI需求驱动但先进封装产能和Q3指引偏谨慎 |
+| OpenAI-5Percent-Government-Stake-Congress-Hearing | 2026-07-17 | OpenAI向美国政府出让5%股权提议引发国会两党争议，Altman出席参议院闭门听证 |
+| Google-Rations-Gemini-Meta-Compute-Capacity | 2026-07-17 | Google因自身算力不足限制Meta访问Gemini，AI基础设施瓶颈从隐忧变为显性问题 |
+| Anthropic-Samsung-Custom-Chip-October-IPO | 2026-07-17 | Anthropic据悉与三星洽谈定制AI芯片，并准备最快2026年10月提交S-1 |
+
+---
+
+## 2026-07-13
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| Apple-Sues-OpenAI-Trade-Secret-Theft-Hardware | 2026-07-13 | Apple正式起诉OpenAI窃取硬件商业机密，指控前Apple高管系统性带走未发布产品技术规格与供应链信息 |
+| OpenAI-730B-IPO-September-2026-Goldman-MorganStanley | 2026-07-13 | OpenAI被曝准备与高盛/摩根士丹利提交保密IPO文件，目标2026年9月上市，私有市场估值约730亿美元 |
+| GPT-56-Sol-Ultra-50Year-Math-Conjecture-Proof | 2026-07-13 | OpenAI称GPT-5.6 Sol Ultra用64个子代理在1小时内完成50年Cycle Double Cover猜想证明，尚未经同行评审 |
+| FLI-AI-Safety-Index-Summer2026-MovingGoalposts | 2026-07-13 | FLI夏季AI安全指数发布，Anthropic C+居首，xAI/DeepSeek/Mistral不及格，四大lab被批弱化暂停承诺 |
+| OpenAI-Safety-Chief-Heidecke-Departure-Research-Reorg | 2026-07-13 | OpenAI安全系统负责人Johannes Heidecke宣布离职，安全团队并入研究部门，两年内第六位安全高管出走 |
+| SambaNova-1B-SeriesF-11B-Valuation-JPMorgan | 2026-07-13 | AI芯片公司SambaNova完成10亿美元F轮首关，估值110亿美元，JPMorgan Chase选其为本地推理基础设施伙伴 |
+| Anthropic-Claude-Corps-Nonprofit-Fellowship | 2026-07-13 | Anthropic推出Claude Corps项目，向非营利组织派遣12个月带薪fellows，帮助其建设AI能力 |
+| Federal-Reserve-AI-Task-Force-Andreessen | 2026-07-13 | 美联储成立首个研究AI对就业/生产率/货币政策影响的任务组，a16z联合创始人Marc Andreessen联合领导 |
+
+---
+
 ## 2026-07-12
 
 | 话题关键词 | 首次报道日期 | 简要描述 |
@@ -278,74 +410,4 @@
 | Moebius-0.2B-图像修复 | 2026-06-23 | 华科团队发布0.2B参数Moebius图像修复模型，达10B级性能 |
 | MacStudio-KimiK2.6-万亿参数 | 2026-06-23 | 4台Mac Studio即可运行月之暗面万亿参数Kimi K2.6模型 |
 
----
-
-## 2026-06-20
-
-| 话题关键词 | 首次报道日期 | 简要描述 |
-|-----------|-------------|---------|
-| OpenAI-Barret-Zoph-离职-IPO动荡 | 2026-06-20 | OpenAI企业AI销售负责人Barret Zoph离职，距回归仅5个月，IPO前核心高管动荡 |
-| Amazon-Trainium-AI芯片-数据中心销售 | 2026-06-20 | AWS直接向其他数据中心出售Trainium芯片，挑战Nvidia，$500亿市场开启 |
-| Baseten-1.5B融资-130亿估值-推理基础设施 | 2026-06-20 | AI推理平台Baseten完成$1.5B融资，估值$130亿，推理优化成新赛道 |
-| Snap-AI视频-Dotmo-分拆独立 | 2026-06-20 | Snap将AI视频生成团队分拆为独立公司Dotmo，成本压力迫使大厂瘦身 |
-| OpenAI-AI化学家-GPT5.4-药物合成 | 2026-06-20 | OpenAI与Molecule.one合作推出近自主AI化学家，GPT-5.4优化药物合成反应 |
-| OpenAI-LifeSciBench-生命科学评测 | 2026-06-20 | OpenAI发布LifeSciBench，专门评估AI在生命科学研究中的能力，填补专业评测空白 |
-| Elastic-DeductiveAI-8500万-SRE | 2026-06-20 | Elastic收购DeductiveAI（最高$8500万），押注AI驱动的站点可靠性工程和故障检测 |
-| OpenAI-部署模拟框架-事前预测 | 2026-06-20 | OpenAI开源Deployment Simulation工具，在模型部署前模拟预测行为，提升安全性 |
-| Reliance-Jio-AI电信-5亿用户 | 2026-06-20 | 印度Reliance Jio将AI深度整合电信运营，覆盖5亿用户，AI走向传统行业基础设施 |
-| Match-AI约会-41%-年轻人接受 | 2026-06-20 | Match集团调查：41% Z世代愿让AI安排约会，代际差异显著 |
-
----
-
-## 2026-06-18
-
-| 话题关键词 | 首次报道日期 | 简要描述 |
-|-----------|-------------|---------|
-| Pew-Research-16%-AI正面-63%-太快 | 2026-06-18 | Pew Research Center调查：仅16%美国人认为AI正面，63%认为发展太快，年轻人更悲观 |
-| G7-领导人-美国AI-断供-主权恐慌 | 2026-06-18 | 法国总统Macron和印度总理Modi在G7峰会表达对美国AI依赖的恐惧，AI主权成国际议题 |
-| Odyssey-world-model-1.45B-Amazon | 2026-06-18 | 世界模型初创公司Odyssey获$14.5亿估值，Amazon/Lux Capital投资，world models成新赛道 |
-| Nvidia-ENPIRE-AI-编码代理-机器人 | 2026-06-18 | Nvidia GEAR实验室发布ENPIRE框架，AI编码代理自主训练机器人，可安装GPU、剪扎带 |
-| Pramaana-Labs-2700万-形式验证 | 2026-06-18 | Pramaana Labs获$2700万种子轮，将数学形式验证引入AI，追求高风险场景100%确定性 |
-| Apple-AI-涨价-RAM成本 | 2026-06-18 | Tim Cook称Apple Intelligence RAM成本"不可持续"，iPhone预计因AI功能涨价 |
-| OpenAI-企业支出控制-健康智能-罕见病诊断 | 2026-06-19 | OpenAI三箭齐发：企业支出控制、ChatGPT健康智能升级、AI诊断18种罕见儿童遗传疾病 |
-| Anthropic-Fable5-临时下架-安全争议 | 2026-06-19 | Claude Fable 5发布三天后临时下架，jailbreak安全漏洞争议持续，Mythos战略受挫 |
-| Gemini-Levine-跳槽OpenAI-Google人才流失 | 2026-06-19 | Gemini联合负责人Sergey Levine跳槽OpenAI，Google再失AI大将，人才争夺战白热化 |
-| Chrome-WebMCP-标准提案-OriginTrial | 2026-06-19 | Chrome推出WebMCP标准提案，为Agent提供原生Web操作能力，进入Origin Trial阶段 |
-| Google-Agent-Kubernetes-编排平台 | 2026-06-19 | Google reportedly开发AI Agent编排平台，想成为Agent时代的Kubernetes，统一调度管理 |
-| Subquadratic-1200万Token-上下文窗口 | 2026-06-19 | Subquadratic推出1200万token上下文窗口，打破百万级限制，长文本理解质变 |
-| Netflix-开源工具-90%冗余词元-省钱 | 2026-06-19 | Netflix开源工具砍掉90%冗余token，节省70万美元AI账单，token效率优化成新赛道 |
-| Bernie-Sanders-7万亿-AI财富计划 | 2026-06-19 | 美国参议员Bernie Sanders提出对AI公司征50%股票税，建立7万亿AI主权财富基金 |
-| Cursor-1.5T-放弃Kimi-架构转向 | 2026-06-19 | Cursor 1.5T新模型放弃Kimi基座，转向自研或混合架构，AI编码工具差异化竞争 |
-
----
-
-## 2026-06-15
-
-| 话题关键词 | 首次报道日期 | 简要描述 |
-|-----------|-------------|---------|
-| Anthropic-Fable5-Mythos-Shutdown-国安禁令 | 2026-06-15 | 美国商务部以国家安全为由要求Anthropic限制出口，Anthropic紧急关闭Fable5/Mythos5全球访问 |
-| OpenAI-PartnerNetwork-1.5亿 | 2026-06-15 | OpenAI启动$150M合作伙伴网络，加速企业AI采用，推出Academy新课程 |
-| Meta-Manus-拆解-20亿 | 2026-06-15 | Meta reportedly开始拆解$20亿Manus收购，中国要求交易逆转并执行 |
-| AI-IPO-浪潮-SpaceX | 2026-06-15 | SpaceX上市首日涨19%，触发AI公司IPO跟风潮，但S&P500拒绝快速入指 |
-| India-AI-自主-Anthropic断供 | 2026-06-15 | Anthropic关闭新模型后，印度紧急辩论AI自主战略，加速本土模型开发 |
-
----
-
-## 2026-06-13
-
-| 话题关键词 | 首次报道日期 | 简要描述 |
-|-----------|-------------|---------|
-| SpaceX-IPO-首日上市-万亿富翁 | 2026-06-13 | SpaceX上市首日涨19%，Musk成为史上首个万亿富翁 |
-| Meta-AI部门-工程师反叛-内部危机 | 2026-06-13 | Meta Applied AI团队6500人管理危机，员工称"劳改营" |
-| Mistral-融资-200亿欧元估值 | 2026-06-13 | Mistral以200亿欧元估值融资30亿欧元，欧洲AI主权叙事 |
-| Google-AI诈骗-OutsiderEnterprise | 2026-06-13 | Google起诉中国AI诈骗集团，用Gemini生成钓鱼网站 |
-| Deezer-AI音乐-44%检测 | 2026-06-13 | Deezer数据显示44%新上传音乐为AI生成，日增7.5万首 |
-| 小米-MiMoCode-开源 | 2026-06-13 | 小米MiMo Code开源，5人2周做出5.1k星但bug不断 |
-| KPMG-撤回报告-AI幻觉 | 2026-06-14 | KPMG用AI写AI报告出现幻觉，被UBS/NHS等机构指出后撤回，EY上月也有类似事件 |
-| OpenAI-州检察长调查 | 2026-06-14 | 多州检察长联盟调查OpenAI，纽约州发传票，涉及用户数据/健康数据/模型谄媚等 |
-| Azure-APIM-AI网关 | 2026-06-14 | 微软Build 2026推出Azure API Management AI网关，统一模型API、MCP/A2A内容安全 |
-| Snowflake-Agentic-CoCoCoWork | 2026-06-14 | Snowflake Summit发布CoCo+CoWork双引擎，Cortex Sense将准确率从24%提升至83% |
-| 智源大会-具身智能-AlphaGo时刻 | 2026-06-14 | 智源大会圆桌：王仲远/王鹤/李大海对谈，具身智能可能是中国弯道超车核心赛道 |
-
----
 
