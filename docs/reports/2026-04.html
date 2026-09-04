@@ -4,27 +4,193 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>2026-04 月度总结</title>
+<script>
+(function () {
+  var t = localStorage.getItem('ai-daily-theme');
+  if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.7; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; background: #fafafa; }
-  h1 { font-size: 1.8em; border-bottom: 2px solid #ddd; padding-bottom: 0.3em; color: #222; }
-  h2 { font-size: 1.5em; margin-top: 1.5em; border-bottom: 1px solid #eee; padding-bottom: 0.2em; color: #333; }
-  h3 { font-size: 1.2em; margin-top: 1.2em; color: #555; }
-  ul, ol { padding-left: 1.5em; }
-  li { margin: 0.3em 0; }
-  hr { border: none; border-top: 1px solid #ddd; margin: 2em 0; }
-  strong { color: #111; }
-  code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; font-family: "SF Mono", Monaco, monospace; font-size: 0.9em; }
-  pre { background: #f4f4f4; padding: 12px; border-radius: 6px; overflow-x: auto; }
-  pre code { background: transparent; padding: 0; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
-  th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-  th { background: #f0f0f0; }
-  p { margin: 0.8em 0; }
-  a { color: #0366d6; text-decoration: none; }
-  a:hover { text-decoration: underline; }
+:root {
+  --bg: #f5f6f8; --card: #ffffff; --text: #24292f; --strong: #111318;
+  --muted: #6b7280; --border: #e3e6ea; --link: #2563eb;
+  --chip-bg: #eef1f4; --code-bg: #f1f3f5;
+  --topbar-bg: rgba(255, 255, 255, 0.85);
+  --shadow: 0 1px 2px rgba(16,24,40,0.05), 0 4px 16px rgba(16,24,40,0.06);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1115; --card: #171a20; --text: #d3d7dd; --strong: #f0f2f5;
+    --muted: #9aa1ab; --border: #2a2f38; --link: #6ea8fe;
+    --chip-bg: #23272f; --code-bg: #23262d;
+    --topbar-bg: rgba(23, 26, 32, 0.85);
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.35);
+    color-scheme: dark;
+
+  }
+}
+:root[data-theme="dark"] {
+    --bg: #0f1115; --card: #171a20; --text: #d3d7dd; --strong: #f0f2f5;
+    --muted: #9aa1ab; --border: #2a2f38; --link: #6ea8fe;
+    --chip-bg: #23272f; --code-bg: #23262d;
+    --topbar-bg: rgba(23, 26, 32, 0.85);
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.35);
+    color-scheme: dark;
+
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--bg); color: var(--text); font-size: 16px; line-height: 1.8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  transition: background 0.2s, color 0.2s;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* 顶栏 */
+.topbar {
+  position: sticky; top: 0; z-index: 50;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 20px; background: var(--topbar-bg);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.site-title { font-weight: 700; color: var(--strong); }
+.site-title:hover { text-decoration: none; }
+.theme-toggle {
+  border: 1px solid var(--border); background: var(--card); color: var(--text);
+  border-radius: 999px; padding: 4px 14px; font-size: 13px; cursor: pointer;
+}
+
+/* 布局：移动端单列，桌面端带目录侧栏 */
+.layout { max-width: 860px; margin: 0 auto; padding: 20px 16px 64px; }
+@media (min-width: 1024px) {
+  .layout.with-toc {
+    max-width: 1180px; display: grid;
+    grid-template-columns: 220px minmax(0, 1fr); gap: 28px; align-items: start;
+  }
+}
+.content {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 14px; box-shadow: var(--shadow); padding: 24px 20px;
+}
+@media (min-width: 640px) { .content { padding: 36px 40px; } }
+
+/* 日期目录（TOC）：移动端折叠顶栏，桌面端 sticky 侧栏 */
+.toc { position: sticky; top: 54px; z-index: 40; margin-bottom: 16px; }
+.toc-toggle {
+  width: 100%; text-align: left; font-size: 15px; cursor: pointer;
+  color: var(--text); background: var(--card);
+  border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px;
+  box-shadow: var(--shadow);
+}
+.toc-list {
+  display: none; list-style: none; margin: 8px 0 0; padding: 8px;
+  background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+  box-shadow: var(--shadow); max-height: 55vh; overflow-y: auto;
+}
+.toc.open .toc-list { display: block; }
+.toc-list a {
+  display: block; padding: 6px 10px; border-radius: 8px;
+  color: var(--muted); font-size: 14px;
+}
+.toc-list a:hover { background: var(--chip-bg); text-decoration: none; }
+.toc-list a.active { color: var(--link); background: var(--chip-bg); font-weight: 600; }
+@media (min-width: 1024px) {
+  .toc { top: 70px; margin-bottom: 0; }
+  .toc-toggle { display: none; }
+  .toc-list {
+    display: block; border: none; background: transparent; box-shadow: none;
+    padding: 0; max-height: calc(100vh - 100px);
+  }
+}
+
+/* 返回顶部 */
+.back-to-top {
+  position: fixed; right: 20px; bottom: 24px; z-index: 60;
+  width: 44px; height: 44px; border-radius: 50%; font-size: 18px; cursor: pointer;
+  border: 1px solid var(--border); background: var(--card); color: var(--text);
+  box-shadow: var(--shadow); opacity: 0; visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.back-to-top.show { opacity: 1; visibility: visible; }
+
+/* 中文排版：标题层级对比、段落间距 */
+h1 { font-size: 1.65rem; line-height: 1.35; margin: 0 0 0.4em; color: var(--strong); }
+h2 {
+  font-size: 1.35rem; margin: 1.8em 0 0.6em; padding-top: 0.5em;
+  border-top: 1px solid var(--border); color: var(--strong); scroll-margin-top: 70px;
+}
+h3 { font-size: 1.1rem; margin: 1.4em 0 0.4em; color: var(--strong); }
+p { margin: 0.9em 0; }
+ul, ol { padding-left: 1.5em; }
+li { margin: 0.35em 0; }
+hr { border: none; border-top: 1px solid var(--border); margin: 1.6em 0; }
+strong { color: var(--strong); }
+code {
+  background: var(--code-bg); padding: 2px 6px; border-radius: 6px; font-size: 0.88em;
+  font-family: "SF Mono", Menlo, Monaco, Consolas, monospace;
+}
+pre { background: var(--code-bg); padding: 14px; border-radius: 10px; overflow-x: auto; }
+pre code { background: transparent; padding: 0; }
+blockquote { margin: 1em 0; padding: 0.2em 1em; border-left: 3px solid var(--border); color: var(--muted); }
+table { border-collapse: collapse; width: 100%; margin: 1.2em 0; }
+th, td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; }
+th { background: var(--chip-bg); }
+.meta { color: var(--muted); font-size: 0.9em; }
+
+/* 索引页卡片 */
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 14px; box-shadow: var(--shadow); padding: 20px; margin: 16px 0;
+}
+.card h2 { border-top: none; padding-top: 0; margin-top: 0; font-size: 1.2rem; }
+.day-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 10px; }
+.day-link {
+  display: block; text-align: center; padding: 10px 8px;
+  border: 1px solid var(--border); border-radius: 10px; background: var(--chip-bg);
+}
+.day-link:hover { text-decoration: none; border-color: var(--link); }
+.day-link .meta { display: block; font-size: 12px; }
+
+/* 按日浏览页：分类筛选 chips、精选/全部切换、条目卡片 */
+.toolbar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 12px 0; }
+.seg { display: inline-flex; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.seg button { border: none; background: var(--card); color: var(--muted); padding: 6px 14px; font-size: 14px; cursor: pointer; }
+.seg button.active { background: var(--link); color: #fff; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 12px; }
+.chip {
+  border: 1px solid var(--border); background: var(--chip-bg); color: var(--muted);
+  border-radius: 999px; padding: 5px 14px; font-size: 14px; cursor: pointer;
+}
+.chip.active { background: var(--link); border-color: var(--link); color: #fff; }
+.item { padding: 14px 0; border-bottom: 1px solid var(--border); }
+.item:last-child { border-bottom: none; }
+.item-title { font-weight: 600; }
+.star { color: #f59e0b; }
+.item-meta { font-size: 13px; color: var(--muted); margin-top: 4px; }
+.badge {
+  display: inline-block; font-size: 12px; padding: 1px 8px; margin-right: 6px;
+  border-radius: 999px; background: var(--chip-bg); color: var(--muted);
+}
+.badge-grade { background: var(--link); color: #fff; }
 </style>
 </head>
 <body>
+<header class="topbar">
+  <a class="site-title" href="../index.html">📰 AI日报</a>
+  <button id="themeToggle" class="theme-toggle" type="button">🌗 自动</button>
+</header>
+<div class="layout with-toc">
+<nav class="toc" id="toc" aria-label="日期目录">
+<button class="toc-toggle" id="tocToggle" type="button" aria-expanded="false">📑 日期目录（12 天）</button>
+<ul class="toc-list"><li><a href="#2026-04-30" title="2026-04-30">04-30</a></li><li><a href="#2026-04-28" title="2026-04-28">04-28</a></li><li><a href="#2026-04-27" title="2026-04-27">04-27</a></li><li><a href="#2026-04-23" title="2026-04-23">04-23</a></li><li><a href="#2026-04-22" title="2026-04-22">04-22</a></li><li><a href="#2026-04-21" title="2026-04-21">04-21</a></li><li><a href="#2026-04-20" title="2026-04-20">04-20</a></li><li><a href="#2026-04-18" title="2026-04-18">04-18</a></li><li><a href="#2026-04-17" title="2026-04-17">04-17</a></li><li><a href="#2026-04-09" title="2026-04-09">04-09</a></li><li><a href="#2026-04-02" title="2026-04-02">04-02</a></li><li><a href="#2026-04-01" title="2026-04-01">04-01</a></li></ul>
+</nav>
+<main class="content">
 <h1 id="2026-04">2026-04 月度总结</h1>
 <h3 id="_1">本月重大事件</h3>
 <ol>
@@ -700,5 +866,75 @@ AI招聘独角兽Mercor确认遭受网络攻击，攻击者通过入侵广泛使
 <p>从LiteLLM供应链攻击到Mercor数据泄露，开源软件的安全风险正在威胁整个AI生态。随着AI系统越来越依赖开源工具链，供应链攻击可能成为针对AI公司的主流攻击向量。</p>
 <hr />
 <p>整理时间：2026-04-01 09:30 | 数据来源：OpenAI Blog、TechCrunch、Salesforce、SecurityWeek</p>
+</main>
+</div>
+<button id="backToTop" class="back-to-top" type="button" aria-label="返回顶部">↑</button>
+<script>
+(function () {
+  // 主题切换：自动 → 浅色 → 深色 循环，选择存 localStorage
+  var themeBtn = document.getElementById('themeToggle');
+  function applyTheme(t) {
+    if (t === 'auto') document.documentElement.removeAttribute('data-theme');
+    else document.documentElement.setAttribute('data-theme', t);
+    if (themeBtn) themeBtn.textContent = t === 'dark' ? '🌙 深色' : t === 'light' ? '☀️ 浅色' : '🌗 自动';
+  }
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function () {
+      var cur = localStorage.getItem('ai-daily-theme') || 'auto';
+      var next = cur === 'auto' ? 'light' : cur === 'light' ? 'dark' : 'auto';
+      localStorage.setItem('ai-daily-theme', next);
+      applyTheme(next);
+    });
+    applyTheme(localStorage.getItem('ai-daily-theme') || 'auto');
+  }
+
+  // 返回顶部
+  var backToTop = document.getElementById('backToTop');
+  if (backToTop) {
+    window.addEventListener('scroll', function () {
+      backToTop.classList.toggle('show', window.scrollY > 600);
+    }, { passive: true });
+    backToTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // 移动端目录折叠（桌面端由 CSS 强制展开）
+  var toc = document.getElementById('toc');
+  var tocToggle = document.getElementById('tocToggle');
+  if (toc && tocToggle) {
+    tocToggle.addEventListener('click', function () {
+      var open = toc.classList.toggle('open');
+      tocToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    toc.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A' && window.innerWidth < 1024) toc.classList.remove('open');
+    });
+  }
+
+  // 当前阅读位置在目录中高亮
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc-list a[href^="#"]'));
+  if (tocLinks.length && 'IntersectionObserver' in window) {
+    var linkById = {};
+    var headings = [];
+    tocLinks.forEach(function (a) {
+      var h = document.getElementById(a.getAttribute('href').slice(1));
+      if (h) { linkById[h.id] = a; headings.push(h); }
+    });
+    var visible = {};
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { visible[en.target.id] = en.isIntersecting; });
+      for (var i = 0; i < headings.length; i++) {
+        if (visible[headings[i].id]) {
+          tocLinks.forEach(function (a) { a.classList.remove('active'); });
+          linkById[headings[i].id].classList.add('active');
+          break;
+        }
+      }
+    }, { rootMargin: '-70px 0px -65% 0px', threshold: 0 });
+    headings.forEach(function (h) { observer.observe(h); });
+  }
+})();
+</script>
 </body>
 </html>

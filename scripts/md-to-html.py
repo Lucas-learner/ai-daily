@@ -1,11 +1,18 @@
 #!/usr/bin/env python3
 """
-将 Markdown 文件转换为带基础样式的 HTML。
+将 Markdown 文件转换为带样式的 HTML。
 使用 python-markdown 库，支持表格、代码块、TOC 等扩展。
+页面骨架与样式见 scripts/page_style.py（卡片式设计 + 暗色模式）。
 """
 import sys
 import re
 import html
+from pathlib import Path
+
+import page_style
+
+# 月报日期二级标题，如 <h2 id="2026-07-30">【2026-07-30】</h2>
+DATE_H2_RE = re.compile(r'<h2([^>]*)>【(\d{4}-\d{2}-\d{2})】([^<]*)</h2>')
 
 
 def get_markdown_module():
@@ -89,37 +96,43 @@ def fallback_md_to_html(text: str) -> str:
     return "\n".join(output)
 
 
-def wrap_html(body: str, title: str) -> str:
-    return f"""<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{html.escape(title)}</title>
-<style>
-  body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.7; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; background: #fafafa; }}
-  h1 {{ font-size: 1.8em; border-bottom: 2px solid #ddd; padding-bottom: 0.3em; color: #222; }}
-  h2 {{ font-size: 1.5em; margin-top: 1.5em; border-bottom: 1px solid #eee; padding-bottom: 0.2em; color: #333; }}
-  h3 {{ font-size: 1.2em; margin-top: 1.2em; color: #555; }}
-  ul, ol {{ padding-left: 1.5em; }}
-  li {{ margin: 0.3em 0; }}
-  hr {{ border: none; border-top: 1px solid #ddd; margin: 2em 0; }}
-  strong {{ color: #111; }}
-  code {{ background: #f4f4f4; padding: 2px 5px; border-radius: 3px; font-family: "SF Mono", Monaco, monospace; font-size: 0.9em; }}
-  pre {{ background: #f4f4f4; padding: 12px; border-radius: 6px; overflow-x: auto; }}
-  pre code {{ background: transparent; padding: 0; }}
-  table {{ border-collapse: collapse; width: 100%; margin: 1em 0; }}
-  th, td {{ border: 1px solid #ddd; padding: 8px; text-align: left; }}
-  th {{ background: #f0f0f0; }}
-  p {{ margin: 0.8em 0; }}
-  a {{ color: #0366d6; text-decoration: none; }}
-  a:hover {{ text-decoration: underline; }}
-</style>
-</head>
-<body>
-{body}
-</body>
-</html>"""
+def add_date_anchors_and_toc(body: str):
+    """为日期二级标题补齐锚点 id，并抽取日期目录。
+
+    返回 (body, toc_html)；少于 2 个日期标题时 toc_html 为空，不生成目录。
+    """
+    dates = []
+
+    def repl(m):
+        attrs, date, rest = m.group(1), m.group(2), m.group(3)
+        idm = re.search(r'id="([^"]+)"', attrs)
+        if idm:
+            anchor = idm.group(1)
+        else:
+            anchor = date
+            attrs = f' id="{anchor}"' + attrs
+        dates.append(anchor)
+        return f"<h2{attrs}>【{date}】{rest}</h2>"
+
+    body = DATE_H2_RE.sub(repl, body)
+    if len(dates) < 2:
+        return body, ""
+
+    items = "".join(
+        f'<li><a href="#{d}" title="{d}">{d[5:]}</a></li>' for d in dates
+    )
+    toc_html = (
+        f'<button class="toc-toggle" id="tocToggle" type="button" '
+        f'aria-expanded="false">📑 日期目录（{len(dates)} 天）</button>\n'
+        f'<ul class="toc-list">{items}</ul>'
+    )
+    return body, toc_html
+
+
+def wrap_html(body: str, title: str, toc_html: str = "", home_href: str = "index.html") -> str:
+    return page_style.page_shell(
+        title, body, toc_html=toc_html, home_href=home_href
+    )
 
 
 def main():
@@ -147,7 +160,12 @@ def main():
     title_match = re.search(r"^#\s+(.+)$", md_text, re.MULTILINE)
     title = title_match.group(1) if title_match else "AI日报"
 
-    html_doc = wrap_html(body, title)
+    body, toc_html = add_date_anchors_and_toc(body)
+
+    # reports/ 下的页面上级目录才有索引页，返回链接相应上调一级
+    home_href = "../index.html" if Path(html_file).parent.name == "reports" else "index.html"
+
+    html_doc = wrap_html(body, title, toc_html, home_href)
 
     with open(html_file, "w", encoding="utf-8") as f:
         f.write(html_doc)

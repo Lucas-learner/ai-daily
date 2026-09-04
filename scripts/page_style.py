@@ -1,16 +1,24 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI日报 | Lucas-learner</title>
-<script>
-(function () {
-  var t = localStorage.getItem('ai-daily-theme');
-  if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
-})();
-</script>
-<style>
+#!/usr/bin/env python3
+"""
+站点共享样式与页面骨架：供 md-to-html.py / update-github-pages.py /
+build_daily_pages.py / update-icloud-index.py 共用，保证各页面风格一致。
+
+- 纯静态、零外部依赖（GitHub Pages 离线可用）
+- 暗色模式：默认跟随系统（prefers-color-scheme），可手动切换，选择存 localStorage
+- 中文排版优化：PingFang/雅黑字体栈、1.8 行高、加大段落与标题层级对比
+"""
+
+# 暗色变量（同时用于"系统暗色 + 未手动指定"和"手动指定深色"两处）
+_DARK_VARS = """
+    --bg: #0f1115; --card: #171a20; --text: #d3d7dd; --strong: #f0f2f5;
+    --muted: #9aa1ab; --border: #2a2f38; --link: #6ea8fe;
+    --chip-bg: #23272f; --code-bg: #23262d;
+    --topbar-bg: rgba(23, 26, 32, 0.85);
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.35);
+    color-scheme: dark;
+"""
+
+BASE_CSS = """
 :root {
   --bg: #f5f6f8; --card: #ffffff; --text: #24292f; --strong: #111318;
   --muted: #6b7280; --border: #e3e6ea; --link: #2563eb;
@@ -20,24 +28,10 @@
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0f1115; --card: #171a20; --text: #d3d7dd; --strong: #f0f2f5;
-    --muted: #9aa1ab; --border: #2a2f38; --link: #6ea8fe;
-    --chip-bg: #23272f; --code-bg: #23262d;
-    --topbar-bg: rgba(23, 26, 32, 0.85);
-    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.35);
-    color-scheme: dark;
-
+  :root:not([data-theme="light"]) {""" + _DARK_VARS + """
   }
 }
-:root[data-theme="dark"] {
-    --bg: #0f1115; --card: #171a20; --text: #d3d7dd; --strong: #f0f2f5;
-    --muted: #9aa1ab; --border: #2a2f38; --link: #6ea8fe;
-    --chip-bg: #23272f; --code-bg: #23262d;
-    --topbar-bg: rgba(23, 26, 32, 0.85);
-    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.35);
-    color-scheme: dark;
-
+:root[data-theme="dark"] {""" + _DARK_VARS + """
 }
 
 * { box-sizing: border-box; }
@@ -178,78 +172,18 @@ th { background: var(--chip-bg); }
   border-radius: 999px; background: var(--chip-bg); color: var(--muted);
 }
 .badge-grade { background: var(--link); color: #fff; }
-</style>
-</head>
-<body>
-<header class="topbar">
-  <a class="site-title" href="index.html">📰 AI日报</a>
-  <button id="themeToggle" class="theme-toggle" type="button">🌗 自动</button>
-</header>
-<div class="layout">
+"""
 
-<main class="">
-<h1>📰 AI日报</h1>
-<p class="meta">每日自动生成的 AI 行业日报归档，按月汇总，逆序排列。</p>
-<div class="card">
-  <h2>📌 最新摘要（2026-09-03）</h2>
-  <div class="daily-summary-content">
-    <p><strong>门控（Gating）成为前沿 AI 的默认发布形态，而这只是一场更大重构的开端。</strong> 同一天里，OpenAI 因 Astra 触及"关键级"网络安全阈值而分阶段放行并配 10 亿美元防御者计划，Google 把网络安全能力做成仅面向受审核机构的门控 SKU（Fairwind），再往前 48 小时 Anthropic 用 Fable/Mythos 双轨把同一底座拆成两套护栏。三家的产品答案不同，但收敛到同一个判断：能力每上一个台阶，开放的默认值就往下调一档。与之对应的是另一股反向潮流：MiniMax M3 成为沙特主权 AI 的底座、英伟达 129 亿美元买下 Hugging Face、AMD 和英伟达在 IFA 把"本地万亿参数"搬上展台——当云端最强能力被关进闸门，开源权重与本地算力就成了被抬高的替代品。 gate 与 open 这两股力量不是彼此抵消，而是共同把市场分层：前沿能力走向受控分发，通用能力走向完全开放，中间地带（教育、网络安全、自动驾驶）则由监管代为划界——纽约学区禁令、NHTSA 调查和新泽西司机配额提案说明，划界工作已经启动。对从业者的实际含义：评估一个模型或产品时，"谁被允许用"已经和"有多强"同等重要。</p>
-<hr />
-<p>📄 <a href="reports/2026-09.html">查看 2026-09 完整日报</a></p>
-  </div>
-</div>
-<div class="card">
-  <h2>🗓️ 按日浏览</h2>
-  <p class="meta">按天查看采集条目池，支持分类筛选与精选/全部切换。</p>
-  <div class="day-grid">
-<a class="day-link" href="days/2026-09-03.html"><strong>09-03</strong><span class="meta">31/38 精选</span></a>
-  </div>
-</div>
-<div class="card">
-  <h2>📚 月度归档</h2>
-  <table>
-    <thead>
-      <tr><th>月份</th><th>更新时间</th><th>查看</th></tr>
-    </thead>
-    <tbody>
-<tr>
-  <td><strong>2026-09</strong></td>
-  <td>2026-09-05 00:06</td>
-  <td><a href="reports/2026-09.html">📖 可视化日报</a></td>
-</tr>
-<tr>
-  <td><strong>2026-07</strong></td>
-  <td>2026-09-05 00:06</td>
-  <td><a href="reports/2026-07.html">📖 可视化日报</a></td>
-</tr>
-<tr>
-  <td><strong>2026-06</strong></td>
-  <td>2026-09-05 00:06</td>
-  <td><a href="reports/2026-06.html">📖 可视化日报</a></td>
-</tr>
-<tr>
-  <td><strong>2026-05</strong></td>
-  <td>2026-09-05 00:06</td>
-  <td><a href="reports/2026-05.html">📖 可视化日报</a></td>
-</tr>
-<tr>
-  <td><strong>2026-04</strong></td>
-  <td>2026-09-05 00:06</td>
-  <td><a href="reports/2026-04.html">📖 可视化日报</a></td>
-</tr>
-<tr>
-  <td><strong>2026-03</strong></td>
-  <td>2026-09-05 00:06</td>
-  <td><a href="reports/2026-03.html">📖 可视化日报</a></td>
-</tr>
-    </tbody>
-  </table>
-</div>
-<p class="meta">源码仓库：<a href="https://github.com/Lucas-learner/ai-daily">Lucas-learner/ai-daily</a></p>
-</main>
-</div>
-<button id="backToTop" class="back-to-top" type="button" aria-label="返回顶部">↑</button>
-<script>
+# 防闪烁：渲染前先从 localStorage 恢复手动选择的主题
+HEAD_THEME_JS = """<script>
+(function () {
+  var t = localStorage.getItem('ai-daily-theme');
+  if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+})();
+</script>"""
+
+# 页尾交互：主题切换 / 返回顶部 / 目录折叠 / 阅读位置高亮（元素不存在时自动跳过）
+BODY_JS = """<script>
 (function () {
   // 主题切换：自动 → 浅色 → 深色 循环，选择存 localStorage
   var themeBtn = document.getElementById('themeToggle');
@@ -315,6 +249,46 @@ th { background: var(--chip-bg); }
     headings.forEach(function (h) { observer.observe(h); });
   }
 })();
-</script>
+</script>"""
+
+
+def page_shell(title, main_html, toc_html="", home_href="index.html",
+               content_class="content", extra_js=""):
+    """组装完整 HTML 页面：顶栏 + （可选）日期目录 + 主内容 + 返回顶部 + 脚本。"""
+    import html as _html
+
+    toc_block = ""
+    layout_class = "layout"
+    if toc_html:
+        toc_block = (
+            '<nav class="toc" id="toc" aria-label="日期目录">\n'
+            + toc_html + "\n</nav>"
+        )
+        layout_class = "layout with-toc"
+
+    extra = ("\n<script>\n" + extra_js + "\n</script>") if extra_js else ""
+
+    return f"""<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{_html.escape(title)}</title>
+{HEAD_THEME_JS}
+<style>{BASE_CSS}</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="site-title" href="{home_href}">📰 AI日报</a>
+  <button id="themeToggle" class="theme-toggle" type="button">🌗 自动</button>
+</header>
+<div class="{layout_class}">
+{toc_block}
+<main class="{content_class}">
+{main_html}
+</main>
+</div>
+<button id="backToTop" class="back-to-top" type="button" aria-label="返回顶部">↑</button>
+{BODY_JS}{extra}
 </body>
-</html>
+</html>"""
