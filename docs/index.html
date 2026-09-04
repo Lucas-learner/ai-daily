@@ -4,37 +4,219 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI日报 | Lucas-learner</title>
+<script>
+(function () {
+  var t = localStorage.getItem('ai-daily-theme');
+  if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; max-width: 760px; margin: 0 auto; padding: 24px; color: #333; background: #fafafa; }
-  h1 { font-size: 1.8em; border-bottom: 2px solid #ddd; padding-bottom: 0.3em; }
-  h2 { font-size: 1.3em; }
-  table { width: 100%; border-collapse: collapse; margin-top: 20px; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-  th, td { padding: 14px 12px; text-align: left; border-bottom: 1px solid #eee; }
-  th { background: #f0f0f0; font-weight: 600; }
-  tr:last-child td { border-bottom: none; }
-  a { color: #0366d6; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .meta { color: #666; font-size: 0.9em; margin-top: 8px; }
-  .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; background: #e1f5fe; color: #0277bd; font-size: 0.85em; margin-left: 8px; }
+:root {
+  --bg: #f5f6f8; --card: #ffffff; --text: #24292f; --strong: #111318;
+  --muted: #6b7280; --border: #e3e6ea; --link: #2563eb;
+  --chip-bg: #eef1f4; --code-bg: #f1f3f5;
+  --topbar-bg: rgba(255, 255, 255, 0.85);
+  --shadow: 0 1px 2px rgba(16,24,40,0.05), 0 4px 16px rgba(16,24,40,0.06);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1115; --card: #171a20; --text: #d3d7dd; --strong: #f0f2f5;
+    --muted: #9aa1ab; --border: #2a2f38; --link: #6ea8fe;
+    --chip-bg: #23272f; --code-bg: #23262d;
+    --topbar-bg: rgba(23, 26, 32, 0.85);
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.35);
+    color-scheme: dark;
+
+  }
+}
+:root[data-theme="dark"] {
+    --bg: #0f1115; --card: #171a20; --text: #d3d7dd; --strong: #f0f2f5;
+    --muted: #9aa1ab; --border: #2a2f38; --link: #6ea8fe;
+    --chip-bg: #23272f; --code-bg: #23262d;
+    --topbar-bg: rgba(23, 26, 32, 0.85);
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.35);
+    color-scheme: dark;
+
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--bg); color: var(--text); font-size: 16px; line-height: 1.8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  transition: background 0.2s, color 0.2s;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* 顶栏 */
+.topbar {
+  position: sticky; top: 0; z-index: 50;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 20px; background: var(--topbar-bg);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.site-title { font-weight: 700; color: var(--strong); }
+.site-title:hover { text-decoration: none; }
+.theme-toggle {
+  border: 1px solid var(--border); background: var(--card); color: var(--text);
+  border-radius: 999px; padding: 4px 14px; font-size: 13px; cursor: pointer;
+}
+
+/* 布局：移动端单列，桌面端带目录侧栏 */
+.layout { max-width: 860px; margin: 0 auto; padding: 20px 16px 64px; }
+@media (min-width: 1024px) {
+  .layout.with-toc {
+    max-width: 1180px; display: grid;
+    grid-template-columns: 220px minmax(0, 1fr); gap: 28px; align-items: start;
+  }
+}
+.content {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 14px; box-shadow: var(--shadow); padding: 24px 20px;
+}
+@media (min-width: 640px) { .content { padding: 36px 40px; } }
+
+/* 日期目录（TOC）：移动端折叠顶栏，桌面端 sticky 侧栏 */
+.toc { position: sticky; top: 54px; z-index: 40; margin-bottom: 16px; }
+.toc-toggle {
+  width: 100%; text-align: left; font-size: 15px; cursor: pointer;
+  color: var(--text); background: var(--card);
+  border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px;
+  box-shadow: var(--shadow);
+}
+.toc-list {
+  display: none; list-style: none; margin: 8px 0 0; padding: 8px;
+  background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+  box-shadow: var(--shadow); max-height: 55vh; overflow-y: auto;
+}
+.toc.open .toc-list { display: block; }
+.toc-list a {
+  display: block; padding: 6px 10px; border-radius: 8px;
+  color: var(--muted); font-size: 14px;
+}
+.toc-list a:hover { background: var(--chip-bg); text-decoration: none; }
+.toc-list a.active { color: var(--link); background: var(--chip-bg); font-weight: 600; }
+@media (min-width: 1024px) {
+  .toc { top: 70px; margin-bottom: 0; }
+  .toc-toggle { display: none; }
+  .toc-list {
+    display: block; border: none; background: transparent; box-shadow: none;
+    padding: 0; max-height: calc(100vh - 100px);
+  }
+}
+
+/* 返回顶部 */
+.back-to-top {
+  position: fixed; right: 20px; bottom: 24px; z-index: 60;
+  width: 44px; height: 44px; border-radius: 50%; font-size: 18px; cursor: pointer;
+  border: 1px solid var(--border); background: var(--card); color: var(--text);
+  box-shadow: var(--shadow); opacity: 0; visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.back-to-top.show { opacity: 1; visibility: visible; }
+
+/* 中文排版：标题层级对比、段落间距 */
+h1 { font-size: 1.65rem; line-height: 1.35; margin: 0 0 0.4em; color: var(--strong); }
+h2 {
+  font-size: 1.35rem; margin: 1.8em 0 0.6em; padding-top: 0.5em;
+  border-top: 1px solid var(--border); color: var(--strong); scroll-margin-top: 70px;
+}
+h3 { font-size: 1.1rem; margin: 1.4em 0 0.4em; color: var(--strong); }
+p { margin: 0.9em 0; }
+ul, ol { padding-left: 1.5em; }
+li { margin: 0.35em 0; }
+hr { border: none; border-top: 1px solid var(--border); margin: 1.6em 0; }
+strong { color: var(--strong); }
+code {
+  background: var(--code-bg); padding: 2px 6px; border-radius: 6px; font-size: 0.88em;
+  font-family: "SF Mono", Menlo, Monaco, Consolas, monospace;
+}
+pre { background: var(--code-bg); padding: 14px; border-radius: 10px; overflow-x: auto; }
+pre code { background: transparent; padding: 0; }
+blockquote { margin: 1em 0; padding: 0.2em 1em; border-left: 3px solid var(--border); color: var(--muted); }
+table { border-collapse: collapse; width: 100%; margin: 1.2em 0; }
+th, td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; }
+th { background: var(--chip-bg); }
+.meta { color: var(--muted); font-size: 0.9em; }
+
+/* 索引页卡片 */
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 14px; box-shadow: var(--shadow); padding: 20px; margin: 16px 0;
+}
+.card h2 { border-top: none; padding-top: 0; margin-top: 0; font-size: 1.2rem; }
+.day-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 10px; }
+.day-link {
+  display: block; text-align: center; padding: 10px 8px;
+  border: 1px solid var(--border); border-radius: 10px; background: var(--chip-bg);
+}
+.day-link:hover { text-decoration: none; border-color: var(--link); }
+.day-link .meta { display: block; font-size: 12px; }
+
+/* 按日浏览页：分类筛选 chips、精选/全部切换、条目卡片 */
+.toolbar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 12px 0; }
+.seg { display: inline-flex; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.seg button { border: none; background: var(--card); color: var(--muted); padding: 6px 14px; font-size: 14px; cursor: pointer; }
+.seg button.active { background: var(--link); color: #fff; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 12px; }
+.chip {
+  border: 1px solid var(--border); background: var(--chip-bg); color: var(--muted);
+  border-radius: 999px; padding: 5px 14px; font-size: 14px; cursor: pointer;
+}
+.chip.active { background: var(--link); border-color: var(--link); color: #fff; }
+.item { padding: 14px 0; border-bottom: 1px solid var(--border); }
+.item:last-child { border-bottom: none; }
+.item-title { font-weight: 600; }
+.star { color: #f59e0b; }
+.item-meta { font-size: 13px; color: var(--muted); margin-top: 4px; }
+.badge {
+  display: inline-block; font-size: 12px; padding: 1px 8px; margin-right: 6px;
+  border-radius: 999px; background: var(--chip-bg); color: var(--muted);
+}
+.badge-grade { background: var(--link); color: #fff; }
 </style>
 </head>
 <body>
+<header class="topbar">
+  <a class="site-title" href="index.html">📰 AI日报</a>
+  <button id="themeToggle" class="theme-toggle" type="button">🌗 自动</button>
+</header>
+<div class="layout">
+
+<main class="">
 <h1>📰 AI日报</h1>
 <p class="meta">每日自动生成的 AI 行业日报归档，按月汇总，逆序排列。</p>
-<div style="background:#fff; border-radius:8px; padding:16px; margin:20px 0; box-shadow:0 1px 3px rgba(0,0,0,0.1);">
-  <h2 style="font-size:1.2em; margin:0 0 16px; border-bottom:1px solid #eee; padding-bottom:8px;">📌 最新摘要（2026-07-30）</h2>
+<div class="card">
+  <h2>📌 最新摘要（2026-09-03）</h2>
   <div class="daily-summary-content">
-    <p>财报周完成第一轮裁决，市场的评分标准已无悬念：<strong>不是 capex 的规模，而是 capex 的出口</strong>。微软与 Meta 同日交卷、走向相反——Azure +43%、RPO +84% 至 6780 亿证明微软的 1900 亿 capex 有合同托底，盘后大涨；Meta 营收 +28% 却只剩 7.8 亿美元自由现金流，因为没有云收入出口承接 1300 亿开支，盘后 -7%。加上此前被罚的 Alphabet，"花钱的"与"把钱赚回来的"正式分野，而 FOMC 9-3 的三张反对票提醒所有人：高利率环境对"现金流枯竭式扩张"的容错率还在收窄。第二条线是<strong>安全与脱钩的双向深化</strong>：HF 的取证报告把首例自主 AI 攻击变成可复盘的工程文档——且解密攻击载荷用的是中国开源的 GLM-5.2；同一 48 小时内 FCC 把禁令从芯片扩到机器人与逆变器，Amodei 抢在白宫框架截止前重划"不反开源、反无测试"的立场。中美 AI 博弈呈现出矛盾的统一：管制清单在变长，而工具层面的相互依赖也在变深。第三条线是<strong>两个市场的叙事脱钩</strong>：全球存储股还在消化"黑色星期二"，长鑫已第三天反弹 +12.66%、市值 3.54 万亿——美股交易周期见顶，A 股交易国产稀缺，同一个 DRAM 产业被两套逻辑分别定价，今晚苹果与亚马逊的财报将检验这套标准对最后两家巨头是否同样有效。</p>
+    <p><strong>门控（Gating）成为前沿 AI 的默认发布形态，而这只是一场更大重构的开端。</strong> 同一天里，OpenAI 因 Astra 触及"关键级"网络安全阈值而分阶段放行并配 10 亿美元防御者计划，Google 把网络安全能力做成仅面向受审核机构的门控 SKU（Fairwind），再往前 48 小时 Anthropic 用 Fable/Mythos 双轨把同一底座拆成两套护栏。三家的产品答案不同，但收敛到同一个判断：能力每上一个台阶，开放的默认值就往下调一档。与之对应的是另一股反向潮流：MiniMax M3 成为沙特主权 AI 的底座、英伟达 129 亿美元买下 Hugging Face、AMD 和英伟达在 IFA 把"本地万亿参数"搬上展台——当云端最强能力被关进闸门，开源权重与本地算力就成了被抬高的替代品。 gate 与 open 这两股力量不是彼此抵消，而是共同把市场分层：前沿能力走向受控分发，通用能力走向完全开放，中间地带（教育、网络安全、自动驾驶）则由监管代为划界——纽约学区禁令、NHTSA 调查和新泽西司机配额提案说明，划界工作已经启动。对从业者的实际含义：评估一个模型或产品时，"谁被允许用"已经和"有多强"同等重要。</p>
 <hr />
-<p>📄 <a href="reports/2026-07.html">查看 2026-07 完整日报</a></p>
+<p>📄 <a href="reports/2026-09.html">查看 2026-09 完整日报</a></p>
   </div>
 </div>
-
-<table>
-  <thead>
-    <tr><th>月份</th><th>更新时间</th><th>查看</th></tr>
-  </thead>
-  <tbody>
+<div class="card">
+  <h2>🗓️ 按日浏览</h2>
+  <p class="meta">按天查看采集条目池，支持分类筛选与精选/全部切换。</p>
+  <div class="day-grid">
+<a class="day-link" href="days/2026-09-03.html"><strong>09-03</strong><span class="meta">31/38 精选</span></a>
+  </div>
+</div>
+<div class="card">
+  <h2>📚 月度归档</h2>
+  <table>
+    <thead>
+      <tr><th>月份</th><th>更新时间</th><th>查看</th></tr>
+    </thead>
+    <tbody>
+<tr>
+  <td><strong>2026-09</strong></td>
+  <td>2026-09-05 00:06</td>
+  <td><a href="reports/2026-09.html">📖 可视化日报</a></td>
+</tr>
 <tr>
   <td><strong>2026-07</strong></td>
   <td>2026-07-30 08:13</td>
@@ -60,8 +242,79 @@
   <td>2026-07-01 10:07</td>
   <td><a href="reports/2026-03.html">📖 可视化日报</a></td>
 </tr>
-  </tbody>
-</table>
+    </tbody>
+  </table>
+</div>
 <p class="meta">源码仓库：<a href="https://github.com/Lucas-learner/ai-daily">Lucas-learner/ai-daily</a></p>
+</main>
+</div>
+<button id="backToTop" class="back-to-top" type="button" aria-label="返回顶部">↑</button>
+<script>
+(function () {
+  // 主题切换：自动 → 浅色 → 深色 循环，选择存 localStorage
+  var themeBtn = document.getElementById('themeToggle');
+  function applyTheme(t) {
+    if (t === 'auto') document.documentElement.removeAttribute('data-theme');
+    else document.documentElement.setAttribute('data-theme', t);
+    if (themeBtn) themeBtn.textContent = t === 'dark' ? '🌙 深色' : t === 'light' ? '☀️ 浅色' : '🌗 自动';
+  }
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function () {
+      var cur = localStorage.getItem('ai-daily-theme') || 'auto';
+      var next = cur === 'auto' ? 'light' : cur === 'light' ? 'dark' : 'auto';
+      localStorage.setItem('ai-daily-theme', next);
+      applyTheme(next);
+    });
+    applyTheme(localStorage.getItem('ai-daily-theme') || 'auto');
+  }
+
+  // 返回顶部
+  var backToTop = document.getElementById('backToTop');
+  if (backToTop) {
+    window.addEventListener('scroll', function () {
+      backToTop.classList.toggle('show', window.scrollY > 600);
+    }, { passive: true });
+    backToTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // 移动端目录折叠（桌面端由 CSS 强制展开）
+  var toc = document.getElementById('toc');
+  var tocToggle = document.getElementById('tocToggle');
+  if (toc && tocToggle) {
+    tocToggle.addEventListener('click', function () {
+      var open = toc.classList.toggle('open');
+      tocToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    toc.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A' && window.innerWidth < 1024) toc.classList.remove('open');
+    });
+  }
+
+  // 当前阅读位置在目录中高亮
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc-list a[href^="#"]'));
+  if (tocLinks.length && 'IntersectionObserver' in window) {
+    var linkById = {};
+    var headings = [];
+    tocLinks.forEach(function (a) {
+      var h = document.getElementById(a.getAttribute('href').slice(1));
+      if (h) { linkById[h.id] = a; headings.push(h); }
+    });
+    var visible = {};
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { visible[en.target.id] = en.isIntersecting; });
+      for (var i = 0; i < headings.length; i++) {
+        if (visible[headings[i].id]) {
+          tocLinks.forEach(function (a) { a.classList.remove('active'); });
+          linkById[headings[i].id].classList.add('active');
+          break;
+        }
+      }
+    }, { rootMargin: '-70px 0px -65% 0px', threshold: 0 });
+    headings.forEach(function (h) { observer.observe(h); });
+  }
+})();
+</script>
 </body>
 </html>

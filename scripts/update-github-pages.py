@@ -5,12 +5,26 @@
 设计原则：
 - docs/ 目录作为 GitHub Pages 的发布根目录
 - 只发布 reports/*.html（可视化日报），不暴露 .md 源文件
-- 索引页展示月份列表 + 最新日报摘要卡片
+- 索引页展示月份列表 + 最新日报摘要卡片 + 按日浏览入口（data/items 有数据时）
+- 按日浏览页 docs/days/ 由 build_daily_pages.py 从 data/items/*.jsonl 生成
+- 页面骨架与样式见 page_style.py（卡片式设计 + 暗色模式）
 """
 from pathlib import Path
 from datetime import datetime
 import html
 import re
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import page_style
+
+# 文件名带连字符，不能直接 import，用 importlib 加载
+import importlib.util
+_spec = importlib.util.spec_from_file_location(
+    "build_daily_pages", Path(__file__).resolve().parent / "build_daily_pages.py"
+)
+build_daily_pages = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(build_daily_pages)
 
 
 PROJECT_DIR = Path("/Users/macmini/projects/skills/ai-daily")
@@ -38,6 +52,18 @@ def ensure_nojekyll():
         print("Created docs/.nojekyll")
 
 
+def extract_main_content(raw: str) -> str:
+    """从完整 HTML 中提取正文：新版页面取 <main> 内容，旧版退回 <body> 内容。"""
+    m = re.search(r"<main[^>]*>(.*)</main>", raw, re.DOTALL)
+    if m:
+        return m.group(1).strip()
+    start = raw.find("<body>")
+    end = raw.find("</body>")
+    if start != -1 and end != -1:
+        return raw[start + 6:end].strip()
+    return raw
+
+
 def build_summary_card() -> str:
     """如果存在 docs/daily-summary.html，将其内容嵌入索引顶部。"""
     summary_html = DOCS_DIR / "daily-summary.html"
@@ -52,26 +78,19 @@ def build_summary_card() -> str:
                 date_part = line.replace("## ", "").strip()
                 break
 
-    raw = summary_html.read_text(encoding="utf-8")
-    start = raw.find("<body>")
-    end = raw.find("</body>")
-    if start != -1 and end != -1:
-        body_content = raw[start + 6:end].strip()
-    else:
-        body_content = raw
+    body_content = extract_main_content(summary_html.read_text(encoding="utf-8"))
 
     body_content = re.sub(r"<h1[^>]*>.*?</h1>", "", body_content, count=1, flags=re.DOTALL)
     body_content = re.sub(r"<h2[^>]*>.*?</h2>", "", body_content, count=1, flags=re.DOTALL)
     body_content = re.sub(r"<blockquote>.*?</blockquote>", "", body_content, count=1, flags=re.DOTALL)
     body_content = body_content.strip()
 
-    return f"""<div style="background:#fff; border-radius:8px; padding:16px; margin:20px 0; box-shadow:0 1px 3px rgba(0,0,0,0.1);">
-  <h2 style="font-size:1.2em; margin:0 0 16px; border-bottom:1px solid #eee; padding-bottom:8px;">📌 最新摘要（{html.escape(date_part)}）</h2>
+    return f"""<div class="card">
+  <h2>📌 最新摘要（{html.escape(date_part)}）</h2>
   <div class="daily-summary-content">
     {body_content}
   </div>
 </div>
-
 """
 
 
@@ -94,10 +113,31 @@ def generate_daily_summary():
     print(f"Generated docs/daily-summary.html for {latest_date}")
 
 
+def build_days_section(day_entries) -> str:
+    """按日浏览入口卡片；无数据时返回空串（索引页不显示入口）。"""
+    if not day_entries:
+        return ""
+    links = ""
+    for date, total, selected in day_entries:
+        links += (
+            f'<a class="day-link" href="days/{date}.html">'
+            f'<strong>{html.escape(date[5:])}</strong>'
+            f'<span class="meta">{selected}/{total} 精选</span></a>\n'
+        )
+    return f"""<div class="card">
+  <h2>🗓️ 按日浏览</h2>
+  <p class="meta">按天查看采集条目池，支持分类筛选与精选/全部切换。</p>
+  <div class="day-grid">
+{links}  </div>
+</div>
+"""
+
+
 def main():
     ensure_docs_reports()
     ensure_nojekyll()
     generate_daily_summary()
+    day_entries = build_daily_pages.build()
 
     months = sorted([f.stem for f in DOCS_REPORTS_DIR.glob("2*.html")], reverse=True)
 
@@ -112,43 +152,28 @@ def main():
 </tr>\n"""
 
     summary_card = build_summary_card()
+    days_section = build_days_section(day_entries)
 
-    content = f"""<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI日报 | Lucas-learner</title>
-<style>
-  body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; max-width: 760px; margin: 0 auto; padding: 24px; color: #333; background: #fafafa; }}
-  h1 {{ font-size: 1.8em; border-bottom: 2px solid #ddd; padding-bottom: 0.3em; }}
-  h2 {{ font-size: 1.3em; }}
-  table {{ width: 100%; border-collapse: collapse; margin-top: 20px; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }}
-  th, td {{ padding: 14px 12px; text-align: left; border-bottom: 1px solid #eee; }}
-  th {{ background: #f0f0f0; font-weight: 600; }}
-  tr:last-child td {{ border-bottom: none; }}
-  a {{ color: #0366d6; text-decoration: none; }}
-  a:hover {{ text-decoration: underline; }}
-  .meta {{ color: #666; font-size: 0.9em; margin-top: 8px; }}
-  .badge {{ display: inline-block; padding: 2px 8px; border-radius: 12px; background: #e1f5fe; color: #0277bd; font-size: 0.85em; margin-left: 8px; }}
-</style>
-</head>
-<body>
-<h1>📰 AI日报</h1>
+    main_html = f"""<h1>📰 AI日报</h1>
 <p class="meta">每日自动生成的 AI 行业日报归档，按月汇总，逆序排列。</p>
-{summary_card}<table>
-  <thead>
-    <tr><th>月份</th><th>更新时间</th><th>查看</th></tr>
-  </thead>
-  <tbody>
-{rows}  </tbody>
-</table>
-<p class="meta">源码仓库：<a href="https://github.com/Lucas-learner/ai-daily">Lucas-learner/ai-daily</a></p>
-</body>
-</html>"""
+{summary_card}{days_section}<div class="card">
+  <h2>📚 月度归档</h2>
+  <table>
+    <thead>
+      <tr><th>月份</th><th>更新时间</th><th>查看</th></tr>
+    </thead>
+    <tbody>
+{rows}    </tbody>
+  </table>
+</div>
+<p class="meta">源码仓库：<a href="https://github.com/Lucas-learner/ai-daily">Lucas-learner/ai-daily</a></p>"""
+
+    content = page_style.page_shell(
+        "AI日报 | Lucas-learner", main_html, content_class=""
+    )
 
     (DOCS_DIR / "index.html").write_text(content, encoding="utf-8")
-    print(f"Updated {DOCS_DIR / 'index.html'} with {len(months)} months")
+    print(f"Updated {DOCS_DIR / 'index.html'} with {len(months)} months, {len(day_entries)} days")
 
 
 if __name__ == "__main__":
