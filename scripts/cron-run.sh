@@ -70,13 +70,13 @@ touch "$LOCK_FILE"
   echo "[$(date '+%Y-%m-%d %H:%M:%S')] 系统 cron AI 日报任务完成"
 
   # 成功简报（默认关闭，config.sh 中 NOTIFY_ON_SUCCESS=1 开启）
+  # 统计当月文件最新日期区块的条目数（不假设区块日期等于执行日，跨零点/补跑场景也能对上）
   if [ "$NOTIFY_ON_SUCCESS" = "1" ]; then
-    COUNT=$(awk -v d="$DATE" '
-      $0 ~ ("^## 【" d "】") { f=1; next }
-      f && /^## 【/ { exit }
+    COUNT=$(awk '
+      /^## 【/ { if (f) exit; f=1; next }
       f && /- \*\*来源\*\*/ { n++ }
       END { print n+0 }
     ' "$PROJECT_DIR/reports/$YEAR_MONTH.md" 2>/dev/null || echo "?")
-    notify "✅ AI日报 $DATE 完成，精选 ${COUNT} 条，已同步。"
+    notify "✅ AI日报 ${DATE} 完成，最新一期精选 ${COUNT} 条，已同步。"
   fi
 } >> "$LOG_FILE" 2>&1
