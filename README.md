@@ -43,8 +43,10 @@ flowchart LR
 │   ├── index.html                        # 公开日报索引页
 │   ├── daily-summary.html                # 最新日报摘要
 │   └── reports/                          # 可视化日报 HTML
+├── data/
+│   └── items/YYYY-MM-DD.jsonl           # 结构化条目池（含未入选条目，本地检索用）
 ├── memory/
-│   └── ai-news-tracker.md               # 去重追踪器
+│   └── ai-news-tracker.md               # 去重追踪器（含来源 URL 列）
 ├── reports/
 │   ├── YYYY-MM.md                       # 每月日报汇总
 │   └── YYYY-MM.html                     # 可视化版本（由脚本生成）
@@ -52,10 +54,13 @@ flowchart LR
 │   └── ai-daily-YYYYMMDD.log            # 执行日志
 └── scripts/
     ├── add-daily-entry.sh               # 将日报追加到月文件顶部
+    ├── add-daily-items.sh               # 校验并写入当日条目 JSONL
     ├── archive-month.sh                 # 月度总结 + HTML + iCloud 同步
-    ├── cron-run.sh                      # 系统 cron 入口
+    ├── config.example.sh                # 通知配置模板（复制为 config.sh，已 gitignore）
+    ├── cron-run.sh                      # 系统 cron 入口（含失败告警/昨日缺席检测）
     ├── generate-daily-summary.sh        # 生成每日摘要（支持 iCloud/GitHub 输出目录）
     ├── md-to-html.py                    # Markdown 转 HTML
+    ├── query-items.sh                   # 本地检索条目池（--q/--days/--month/--category/--all/--stats）
     ├── sync-to-icloud.sh                # 同步到 iCloud
     ├── sync-to-github.sh                # 同步到 GitHub Pages
     ├── update-icloud-index.py           # 更新 iCloud 索引页
@@ -64,11 +69,12 @@ flowchart LR
 
 ## 定时任务
 
-- 时间：每天 08:07（Asia/Shanghai）
+- 时间：每天 08:07（Asia/Shanghai）；日报时间窗为前一日 08:00 至当日 08:00
 - 主方式：系统级 `crontab`（生产兜底）
   - 入口脚本：`scripts/cron-run.sh`
   - 触发命令：`kimi -p "执行ai日报任务"`
   - 同步目标：iCloud + GitHub Pages（每日自动更新）
+  - 失败告警：kimi 失败 / GitHub 同步失败 / 昨日缺席 / 锁文件残留时会发 iMessage 通知，需在 `scripts/config.sh` 中配置 `NOTIFY_TO`（模板：`scripts/config.example.sh`；成功简报默认关闭，`NOTIFY_ON_SUCCESS=1` 开启）
 - 备用方式：kimi-code 内置 `CronCreate`（仅当前 session 生效，7 天后过期，仅用于临时调试）
 
 ## 同步目标
@@ -102,6 +108,18 @@ bash scripts/sync-to-github.sh 2026-07
 
 # 仅同步到 iCloud
 bash scripts/sync-to-icloud.sh 2026-07
+```
+
+## 本地检索
+
+日报条目（含未入选的完整采集池）以 JSONL 存于 `data/items/`，可直接本地检索，无需联网：
+
+```bash
+# 最近 3 天精选里的 OpenAI 相关条目
+bash scripts/query-items.sh --q OpenAI --days 3
+
+# 本月分类/来源/每日条数统计（月度归档用）
+bash scripts/query-items.sh --month 2026-09 --stats --all
 ```
 
 ## Git

@@ -7,20 +7,26 @@
 ## 关键路径
 
 1. **工作目录**：`/Users/macmini/projects/skills/ai-daily`
-2. **去重追踪器**：`memory/ai-news-tracker.md`
+2. **去重追踪器**：`memory/ai-news-tracker.md`（含「来源 URL」列，供 URL 级精确去重）
 3. **日报存储**：`reports/YYYY-MM.md`（每月一个文件，日期区块逆序）
-4. **日志**：`logs/ai-daily-YYYYMMDD.log`
-5. **iCloud 可视化同步**：`~/Library/Mobile Documents/com~apple~CloudDocs/数据同步/ai daily/`
-6. **GitHub Pages 公开站点**：`https://lucas-learner.github.io/ai-daily/`
-7. **GitHub 同步兜底脚本**：`scripts/github-api-push.py`（当 `git push` 因网络/SSL 失败时，通过 GitHub Contents API 直接更新 `docs/` 文件）
-8. **docs/ 静态发布**：`scripts/update-github-pages.py` 会确保 `docs/.nojekyll` 存在，禁用 Jekyll，避免 `jekyll-github-metadata` 调用 GitHub API 时偶发 503 导致构建失败
+4. **结构化条目层**：`data/items/YYYY-MM-DD.jsonl`（完整采集池，含未入选条目；`selected` 字段区分精选/全部）
+5. **日志**：`logs/ai-daily-YYYYMMDD.log`
+6. **iCloud 可视化同步**：`~/Library/Mobile Documents/com~apple~CloudDocs/数据同步/ai daily/`
+7. **GitHub Pages 公开站点**：`https://lucas-learner.github.io/ai-daily/`
+8. **GitHub 同步兜底脚本**：`scripts/github-api-push.py`（当 `git push` 因网络/SSL 失败时，通过 GitHub Contents API 直接更新 `docs/` 文件）
+9. **docs/ 静态发布**：`scripts/update-github-pages.py` 会确保 `docs/.nojekyll` 存在，禁用 Jekyll，避免 `jekyll-github-metadata` 调用 GitHub API 时偶发 503 导致构建失败
+10. **通知配置**：`scripts/config.sh`（已 gitignore，含 iMessage 接收人 `NOTIFY_TO`；模板见 `scripts/config.example.sh`）
+11. **本地检索**：`scripts/query-items.sh --q 关键词 [--days N | --month YYYY-MM] [--category 五类之一] [--all] [--stats]`
 
 ## 执行原则
 
 - 所有文件操作优先使用项目内的 helper 脚本，减少直接 Edit/Write 的出错概率。
-- 日报生成后必须更新 `memory/ai-news-tracker.md`，只保留最近 30 天主题。
-- 每月 1 日先执行上个月归档（生成月度总结 + HTML），再开始当月日报。
+- 日报生成后必须同时更新两处：`memory/ai-news-tracker.md`（只保留最近 30 天主题）和 `data/items/YYYY-MM-DD.jsonl`（经 `scripts/add-daily-items.sh` 校验写入，含未入选条目）。
+- 时间窗定义：日报的"今日"= 前一日 08:00 至当日 08:00（北京时间），与 08:07 cron 对齐；采集与筛选以此窗口为准。
+- 去重分两层：先 URL 精确去重（脚本级 grep -F 比对 data/items/ 与 tracker），再 LLM 语义去重。
+- 每月 1 日先执行上个月归档（生成月度总结 + HTML），再开始当月日报；月度统计（分类/来源分布）用 `query-items.sh --month YYYY-MM --stats` 出数，LLM 只做解读。
 - 自动化过程中遇到外部服务阻塞（如 iCloud 访问失败、GitHub push 超时、网络异常），应主动尝试多种方法解决，而不是直接跳过或放弃。常见手段包括：重试、使用备用同步路径、改用 API 直接更新、记录错误并继续后续步骤等。
+- 失败必通知：`cron-run.sh` 在 kimi 失败、GitHub 同步失败、昨日缺席、锁文件残留时会发 iMessage 告警（需配置 `scripts/config.sh` 的 `NOTIFY_TO`）；不要删除这些告警调用。
 
 ## 触发词
 

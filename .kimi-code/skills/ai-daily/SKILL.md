@@ -24,7 +24,11 @@
 3. 基于整月内容，生成月度总结，需包含：
    - 本月 Top 5-8 重大事件
    - 3 条关键趋势
-   - 高频公司/技术标签
+   - 高频公司/技术标签：**先跑统计脚本拿确定性计数，LLM 只做解读不做计数**：
+     ```bash
+     bash /Users/macmini/projects/skills/ai-daily/scripts/query-items.sh --month YYYY-MM-prev --stats
+     ```
+     （统计该月 `data/items/*.jsonl` 的分类分布、来源分布与条目总量；公司/技术标签的归纳在此数据之上进行）
    - 与上月的延续或变化
 4. 将总结写入临时文件 `/tmp/ai-daily-summary-YYYY-MM-prev.md`。
 5. 调用脚本归档：
@@ -44,7 +48,9 @@
 
 ### 第二步：数据采集
 
-从以下 RSS 源获取今日（24 小时内）文章：
+**时间窗定义（先明确，再采集）**：日报的"今日"= **前一日 08:00 至当日 08:00（北京时间）**，与 08:07 的 cron 触发时间对齐。采集、筛选、写入都以此窗口为准；窗口外但重要的内容归入最近一期日报，不跨期重复。
+
+从以下 RSS 源获取时间窗内的文章：
 
 **国内源：**
 | 来源 | URL |
@@ -71,7 +77,13 @@
 ### 第三步：去重筛选（关键）
 
 **严格规则：**
-- 如果新闻主题与 `ai-news-tracker.md` 中记录的主题高度相似（同一公司 + 同一事件线），**直接跳过**
+- **URL 精确去重（脚本级，先做）**：采集后先把候选条目的 URL 与历史数据比对，命中即排除，不进入语义判断：
+  ```bash
+  # 候选 URL 列表逐条检查（命中任一来源即视为已报道）
+  grep -RF --include='*.jsonl' -e "$URL" /Users/macmini/projects/skills/ai-daily/data/items/ \
+    || grep -F "$URL" /Users/macmini/projects/skills/ai-daily/memory/ai-news-tracker.md
+  ```
+- 如果新闻主题与 `ai-news-tracker.md` 中记录的主题高度相似（同一公司 + 同一事件线），**直接跳过**（语义去重，LLM 判断）
 - 除非是同一事件的**重大突破**（如昨天"拒绝"今天"被制裁"），可作为跟进简讯，但不占主条数
 - 优先选择**全新公司/全新产品/全新技术**的报道
 
@@ -139,11 +151,27 @@
 ```
 
 **格式要求：**
+- 日报正文开头（`### 🔥 Breaking` 之前）写一行时间窗说明：`> ⏱ 时间窗：M月D日 08:00 – M月D日 08:00（北京时间）`。
 - 每条新闻用空行分隔，**不要用 `---` 分隔同类别内的新闻条目**。
 - 不同类别之间（如 Breaking → 核心动态）可用 `---` 分隔。
 - **来源链接**：每条新闻必须提供至少一个可点击的原始来源 URL，格式为 `[来源名](URL)`；若参考了多个来源，用 `/` 分隔多个链接（如 `[TechCrunch](URL1) / [The Verge](URL2)`）。
 - 不要在条目中添加 `> 采集时间`、`> 信息来源`、`> 🔗 来源链接` 等元信息行。
 - 每日精选 5-8 条，必须有 `### 💡 今日洞察` 段落。
+
+**同时输出条目 JSONL（结构化数据层）：**
+
+除日报正文外，把**完整采集池**（含未入选条目）写成 JSONL 临时文件 `/tmp/ai-daily-YYYY-MM-DD-items.jsonl`，每行一条：
+
+```json
+{"title":"中文标题","url":"https://原文链接","source":"来源名","publishedAt":"ISO 8601 或 null","category":"ai-models","grade":"S","selected":true}
+```
+
+字段约定：
+- 必有：`title` / `url` / `source` / `selected`
+- 可空：`publishedAt` / `category`（不确定时写 `null`）
+- `category` 固定五类：`ai-models`（模型发布/更新）/ `ai-products`（产品发布/更新）/ `industry`（行业动态）/ `paper`（论文研究）/ `tip`（技巧与观点）
+- `grade`：`S` / `A` / `B`（与第四步定级一致）
+- `selected`：进入日报正文（精选 5-8 条）为 `true`，其余为 `false`——**落选条目也保留**，供本地检索与月度统计使用
 
 ### 第六步：写入月报文件
 
@@ -156,6 +184,11 @@
    - 若 `reports/YYYY-MM.md` 不存在则创建
    - 在文件顶部插入 `## 【YYYY-MM-DD】` 和内容
    - 保持整月文件逆序
+4. 写入结构化条目（JSONL 数据层）：
+   ```bash
+   bash /Users/macmini/projects/skills/ai-daily/scripts/add-daily-items.sh YYYY-MM-DD /tmp/ai-daily-YYYY-MM-DD-items.jsonl
+   ```
+   脚本会校验每行 JSON 的必填字段后追加到 `data/items/YYYY-MM-DD.jsonl`。
 
 ### 第七步：同步到 iCloud
 
@@ -179,15 +212,16 @@ bash /Users/macmini/projects/skills/ai-daily/scripts/sync-to-icloud.sh YYYY-MM
 1. 添加今日日期和已报道主题（简洁格式）
 2. 删除超过 30 天的旧记录
 3. 主题格式：`公司-关键词-核心事实`（每行不超过 50 字符）
+4. 每条必须带「来源 URL」列（取该主题最有代表性的一个原始链接），供 URL 级精确去重使用
 
 示例：
 ```markdown
 ## 2026-06-23
 
-| 话题关键词 | 首次报道日期 | 简要描述 |
-|-----------|-------------|---------|
-| OpenAI-GPT5.5-发布 | 2026-06-23 | OpenAI发布GPT-5.5多模态大模型 |
-| Google-Gemini-降价 | 2026-06-23 | Google将AI Plus降至$4.99 |
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| OpenAI-GPT5.5-发布 | 2026-06-23 | https://openai.com/news/xxx | OpenAI发布GPT-5.5多模态大模型 |
+| Google-Gemini-降价 | 2026-06-23 | https://blog.google/xxx | Google将AI Plus降至$4.99 |
 ```
 
 ### 第九步：记录日志
@@ -220,7 +254,7 @@ bash /Users/macmini/projects/skills/ai-daily/scripts/sync-to-icloud.sh YYYY-MM
 
 | 约束项 | 规则 |
 |--------|------|
-| 时间范围 | 只保留 24 小时内内容 |
+| 时间范围 | 只保留时间窗内（前一日 08:00 至当日 08:00，北京时间）内容 |
 | 数量控制 | 每日 5-8 条精华 |
 | 去重 | 与 30 天内已报主题重合度 < 20% |
 | 主题格式 | 公司-关键词-核心事实 |
@@ -241,6 +275,8 @@ bash /Users/macmini/projects/skills/ai-daily/scripts/sync-to-icloud.sh YYYY-MM
 ## 文件位置
 
 - 跟踪文件：`/Users/macmini/projects/skills/ai-daily/memory/ai-news-tracker.md`
+- 结构化条目：`/Users/macmini/projects/skills/ai-daily/data/items/YYYY-MM-DD.jsonl`（完整采集池，含未入选条目）
+- 本地检索：`scripts/query-items.sh --q 关键词 [--days N | --month YYYY-MM] [--category 五类之一] [--all] [--stats]`
 - 月报文件：`/Users/macmini/projects/skills/ai-daily/reports/YYYY-MM.md`
 - 可视化文件：`/Users/macmini/projects/skills/ai-daily/reports/YYYY-MM.html`
 - iCloud 同步：`~/Library/Mobile Documents/com~apple~CloudDocs/数据同步/ai daily/`
