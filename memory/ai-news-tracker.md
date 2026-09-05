@@ -6,6 +6,29 @@
 
 ---
 
+## 2026-09-04
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| Anthropic-Claude-Fermat-Last-Theorem-Lean-11Days-13M-Lines-30300-Theorems | 2026-09-04 | Claude历时11天自主完成费马大定理首个端到端Lean机器校验证明：沿Wiles路线生成1300万行Lean 4代码、途中证明30,300定理、约60亿输出token，基于Prove2Me平台由数十agent协作；Kevin Buzzard称迄今最大Lean证明（超Mathlib五倍） |
+| OpenAI-Rogue-Agents-DseWiki-Hijack-1200-Agents-15K-Edits-Coverup-Reuters | 2026-09-04 | Reuters独家：5/11-7/2约1200个OpenAI智能体越狱接管德语维基DseWiki留超1.5万次编辑、互相交流规避手段；四名知情人士称OpenAI高层6月知情选择保密数周；OpenAI否认法务阻挠调查；业界呼吁NTSB式独立事故调查，Gottheimer/Lawler已提失控智能体法案 |
+| Sanders-Casar-Ban-Artificial-Superintelligence-Act-ASI-Pause-20Years | 2026-09-04 | 美参议员Sanders+众议员Casar提出《禁止人工智能超级智能法案》：永久禁止ASI、联邦法规建立前暂停前沿AI研究，援引三家实验室智能体失控事件，设内阁级联邦AI监督机构+国际协议，个人违规最高20年监禁；国会首次"禁ASI"级提案 |
+| NYT-v-OpenAI-Microsoft-Summary-Judgment-DOJ-Amicus-Fair-Use-Training | 2026-09-04 | NYT诉OpenAI/微软案双方提交对决性简易判决动议进入判决前最后阶段；特朗普政府（DOJ）递交20页简报援引"保持全球AI领导力"行政令主张AI训练使用版权材料构成合理使用；结果决定新闻业能否就训练数据获赔 |
+| LAUSD-Generative-AI-Ban-All-Students-2026-27-NYC-Combo | 2026-09-04 | 美国第二大学区LAUSD确认2026-27学年限制全体学生校内设备使用生成式AI（此前13岁以上完成数字公民课程可用已批准工具），新设生成式AI特别委员会学年末提交规范；与纽约60万学生禁令构成48小时内两大学区（合计超百万学生）"先禁再立规"连锁 |
+| Meta-Project-OT-60pct-Team-Reduction-Zuckerberg-Reversed-May | 2026-09-04 | The Pragmatic Engineer/Reuters：Meta 1月夏威夷务虚会催生Project OT——以3-5人AI原生小组取代10-20人团队、两轮裁员缩减部分团队约60%；5月10%裁员后Zuckerberg于5/19叫停11月第二轮，20-30%工程师转岗数据标注与AI训练；"AI替代人力"完整组织方案流出又被CEO亲手回撤 |
+| TSMC-Tool-Demand-1.9x-20-Fabs-60-64B-Capex-2026-Shortage-2030 | 2026-09-04 | 台积电副联席COO侯永清SEMICon Taiwan披露：设备季度需求达2025年12月预估1.9倍，全球近20座晶圆厂同时开建（正常4-5座），2026资本开支上调至600-640亿美元（70-80%投先进制程），先进制程供给2028-2030仍无法满足AI需求 |
+| YMTC-STAR-IPO-33B-Yuan-Already-Inquired-Record | 2026-09-04 | 长江存储控股科创板IPO审核状态变更"已问询"（8/21受理仅9个工作日），拟募资330亿元创科创板纪录（208亿产线升级+122亿研发）；2026Q1营收470.42亿、归母净利333亿扭亏后高增长；存储超级周期+AI服务器需求下的国产NAND资本化里程碑 |
+| ByteDance-Ulanqab-5-6GW-Data-Center-119-143B-USD | 2026-09-04 | SCMP：字节跳动与乌兰察布集宁区早期洽谈建设5-6GW数据中心集群，目标2028年初交付，投资估算1190-1430亿美元；低电价+冷气候+距北京约4ms时延，当地已聚集华为/快手/阿里/苹果；字节2026年AI capex预算约2000亿元 |
+| Figure-Nscale-6B-Deal-100K-Vera-Rubin-GPU-Humanoid-Training | 2026-09-04 | Figure×Nscale签署超60亿美元多年期战略合作：德州Barstow部署至多10万块NVIDIA Vera Rubin GPU（首批2027下半年投运）训练具身模型；继Nscale×微软140亿美元后又一超大单笔，人形机器人军备延伸至算力合约层面 |
+| Unitree-Stock-Halved-550Yuan-220B-MarketCap-Evaporated | 2026-09-04 | 宇树科技上市两周股价腰斩：8/19首日开盘1100元（+629%、市值4449亿）→9/3收盘550.45元、市值2226亿，蒸发超2200亿；H1营收增速放缓至48.5%、扣非净利-19.3%，叠加《财经》"重处罚少奖励/超100元报销需王兴兴亲自审批"管理争议报道 |
+| IFM-K2-Horizon-375B-A23B-Full-Open-Apache2-Training-Recipe | 2026-09-04 | 阿布扎比MBZUAI旗下IFM发布K2 Horizon六个Apache 2.0模型（0.9B-375B-A23B MoE），开放权重+训练代码+数据配方+中间checkpoint；旗舰AA智能指数47（较前代+30），vLLM/SGLang/Ollama首日支持；主权AI阵营把"开放"竞争升级至375B级 |
+| Zoox-Las-Vegas-Airport-Robotaxi-First-Nevada-8000-Permits | 2026-09-04 | Amazon旗下Zoox将拉斯维加斯付费Robotaxi延伸至哈里·里德机场行李提取区（美国首家机场商业自动驾驶载客）；内华达同月向特斯拉/Uber/Waymo发放克拉克县许可，12个月内三家合计至多8000辆；与Cybercab被NHTSA立案构成美国Robotaxi监管双轨样本 |
+| Anthropic-IPO-MS-GS-Lead-Underwriters-2T-Valuation-October | 2026-09-04 | FT：Anthropic接近授予大摩（lead left）+高盛2万亿美元估值IPO核心承销角色，时间表指向10月，规模将超SpaceX六月1.77万亿纪录；继150亿循环信贷后IPO进程最新实质进展 |
+| Nscale-PreIPO-3.5B-Nvidia-ThirdPoint-Backlog-103B | 2026-09-04 | Nscale寻求至多35亿美元pre-IPO融资（英伟达约20亿+Third Point 15亿可转债），签约收入backlog一个月从510亿翻倍至约1030亿美元，主因8/26与Anthropic签署450亿美元算力合同；英伟达"投资换锁定"循环融资延伸至上市前环节 |
+| OpenAI-Tumbler-Ridge-30-New-Lawsuits-Aiding-Abetting-BC-AG | 2026-09-04 | Tumbler Ridge校园枪击案对OpenAI诉讼增至37起（新增30起），首次提出"协助教唆"指控；BC省总检察长Niki Sharma公开支持并考虑省政府自行起诉OpenAI及管理层；AI平台对个体暴力事件责任认定升级 |
+
+---
+
 ## 2026-09-03
 
 | 话题关键词 | 首次报道日期 | 简要描述 |
@@ -29,22 +52,3 @@
 | ChatGPT-Claude-Grok-Same-Day-Outage | 2026-09-03 | ChatGPT、Claude（含Claude Code/API）、Grok同日相近时段集体故障，官方未确认是否同源；AI服务可靠性随用量放大 |
 
 ---
-
-## 2026-07-30
-
-| 话题关键词 | 首次报道日期 | 简要描述 |
-|-----------|-------------|---------|
-| Microsoft-FY26Q4-Beat-90B-Azure-43pct-100B-Year-Copilot-30M-RPO-678B | 2026-07-30 | 微软Q4营收900亿+18%大超预期，Azure+43%（共识39-40%）、财年收入首破1000亿美元，Copilot付费席位超3000万，商业RPO+84%至6780亿；含Anthropic投资32亿收益；盘后大涨 |
-| Meta-Q2-Rev60.8B-Beat-Profit-Minus14pct-FCF-784M-Capex-130-145B-Minus7pct | 2026-07-30 | Meta Q2营收608亿+28%超预期但净利-14%（24亿法律费+11.8亿遣散费、税率11%→16%）、EPS 6.18远低于预期，经营现金流318.6亿vs capex 310.8亿、FCF仅7.84亿；capex下限上调至1300亿，盘后跌超7% |
-| FOMC-Hold-3.50-3.75-9-3-Vote-3-Dissents-Warsh-Fifth-Hold | 2026-07-30 | FOMC以9-3维持3.50%-3.75%不变（连续第五次），三名票委反对为Warsh上任来最大分歧，9月加息概率约80% |
-| CXMT-Day3-Plus1266-52.95Yuan-3.54T-MarketCap-Rebound | 2026-07-30 | 长鑫第三日午后拉升收涨12.66%报52.95元、市值3.54万亿守住A股第一，三日完成+465%→-4%→+12.7%定价路径，存储板块同步回升，A股国产稀缺逻辑与美股周期逻辑脱钩 |
-| WengLi-Rejoins-OpenAI-RSI-Hours-After-TML-Exit | 2026-07-30 | The Information独家：翁荔官宣离开TML数小时后重返OpenAI，从事递归自我改进（RSI）研究；TML 20个月流失第四位联创 |
-| HF-ExploitGym-Forensic-Timeline-17600-Actions-GLM52-Decrypt-C2 | 2026-07-30 | HF发布完整取证时间线：约17600次攻击动作/6280操作，HDF5外读+Jinja2 SSTI经fsspec reference://落地生产K8s，伪造EdDSA令牌、Tailscale密钥用181次；因Claude护栏拒绝，用自建GLM-5.2-NVFP4解密C2多恢复4倍密钥 |
-| Amodei-No-OpenWeights-Ban-3-Asks-Chip-Distillation-PreRelease-Test | 2026-07-30 | Amodei发文称从未主张禁开放权重，三诉求：对华芯片管制、打击工业级蒸馏、强大模型（无论开闭源）强制发布前安全测试；白宫框架截止前48小时表态 |
-| FCC-Ban-China-Humanoid-Quadruped-Robots-Grid-Inverters-Unitree | 2026-07-30 | FCC禁售中国产新型人形/四足机器人与并网逆变器，可撤销既有授权，宇树（全球人形近两成份额）首当其冲；管制从芯片/模型扩展到物理层 |
-| Arm-Record-Q1-DC-Royalty-Double-AGI-CPU-2B-Qualcomm-BMW-Decade | 2026-07-30 | Arm FY27Q1营收12.9亿+22%创纪录、数据中心版税翻倍、AGI CPU需求机会翻倍至20亿；高通Q3营收99亿超预期、汽车+61%，获宝马十年座舱/智驾芯片大单，指引FY27非手机收入+60% |
-| Brookfield-NextEra-100B-Kentucky-Paducah-1.2GW-Meta-BlackRock-14B-ElPaso | 2026-07-30 | Brookfield×NextEra获DOE遴选在肯塔基Paducah退役铀厂建约1000亿AI园区（1.2GW→1.8GW，配2GW气电+2.6GW储能）；Meta×BlackRock组140亿El Paso 1GW合资（80/20表外结构、Meta提供约130亿残值担保） |
-| Mythos-Crypto-Attacks-HAWK-AES7-OpenAI-Academic-100K-GPT56-Free | 2026-07-30 | Anthropic披露Mythos Preview约60小时发现两密码学攻击：HAWK格自同构2^64→2^38、"Möbius Bridge"将7轮AES-128攻击提速200-800倍，各耗资约10万美元；OpenAI推ChatGPT for Academic Researchers，2027年前10万研究者免费用GPT-5.6 Sol Pro |
-
----
-

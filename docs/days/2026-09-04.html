@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI日报 | 2026-09-04</title>
+<script>
+(function () {
+  var t = localStorage.getItem('ai-daily-theme');
+  if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+<style>
+:root {
+  --bg: #f5f6f8; --card: #ffffff; --text: #24292f; --strong: #111318;
+  --muted: #6b7280; --border: #e3e6ea; --link: #2563eb;
+  --chip-bg: #eef1f4; --code-bg: #f1f3f5;
+  --topbar-bg: rgba(255, 255, 255, 0.85);
+  --shadow: 0 1px 2px rgba(16,24,40,0.05), 0 4px 16px rgba(16,24,40,0.06);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1115; --card: #171a20; --text: #d3d7dd; --strong: #f0f2f5;
+    --muted: #9aa1ab; --border: #2a2f38; --link: #6ea8fe;
+    --chip-bg: #23272f; --code-bg: #23262d;
+    --topbar-bg: rgba(23, 26, 32, 0.85);
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.35);
+    color-scheme: dark;
+
+  }
+}
+:root[data-theme="dark"] {
+    --bg: #0f1115; --card: #171a20; --text: #d3d7dd; --strong: #f0f2f5;
+    --muted: #9aa1ab; --border: #2a2f38; --link: #6ea8fe;
+    --chip-bg: #23272f; --code-bg: #23262d;
+    --topbar-bg: rgba(23, 26, 32, 0.85);
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.35);
+    color-scheme: dark;
+
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--bg); color: var(--text); font-size: 16px; line-height: 1.8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  transition: background 0.2s, color 0.2s;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* 顶栏 */
+.topbar {
+  position: sticky; top: 0; z-index: 50;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 20px; background: var(--topbar-bg);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.site-title { font-weight: 700; color: var(--strong); }
+.site-title:hover { text-decoration: none; }
+.theme-toggle {
+  border: 1px solid var(--border); background: var(--card); color: var(--text);
+  border-radius: 999px; padding: 4px 14px; font-size: 13px; cursor: pointer;
+}
+
+/* 布局：移动端单列，桌面端带目录侧栏 */
+.layout { max-width: 860px; margin: 0 auto; padding: 20px 16px 64px; }
+@media (min-width: 1024px) {
+  .layout.with-toc {
+    max-width: 1180px; display: grid;
+    grid-template-columns: 220px minmax(0, 1fr); gap: 28px; align-items: start;
+  }
+}
+.content {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 14px; box-shadow: var(--shadow); padding: 24px 20px;
+}
+@media (min-width: 640px) { .content { padding: 36px 40px; } }
+
+/* 日期目录（TOC）：移动端折叠顶栏，桌面端 sticky 侧栏 */
+.toc { position: sticky; top: 54px; z-index: 40; margin-bottom: 16px; }
+.toc-toggle {
+  width: 100%; text-align: left; font-size: 15px; cursor: pointer;
+  color: var(--text); background: var(--card);
+  border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px;
+  box-shadow: var(--shadow);
+}
+.toc-list {
+  display: none; list-style: none; margin: 8px 0 0; padding: 8px;
+  background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+  box-shadow: var(--shadow); max-height: 55vh; overflow-y: auto;
+}
+.toc.open .toc-list { display: block; }
+.toc-list a {
+  display: block; padding: 6px 10px; border-radius: 8px;
+  color: var(--muted); font-size: 14px;
+}
+.toc-list a:hover { background: var(--chip-bg); text-decoration: none; }
+.toc-list a.active { color: var(--link); background: var(--chip-bg); font-weight: 600; }
+@media (min-width: 1024px) {
+  .toc { top: 70px; margin-bottom: 0; }
+  .toc-toggle { display: none; }
+  .toc-list {
+    display: block; border: none; background: transparent; box-shadow: none;
+    padding: 0; max-height: calc(100vh - 100px);
+  }
+}
+
+/* 返回顶部 */
+.back-to-top {
+  position: fixed; right: 20px; bottom: 24px; z-index: 60;
+  width: 44px; height: 44px; border-radius: 50%; font-size: 18px; cursor: pointer;
+  border: 1px solid var(--border); background: var(--card); color: var(--text);
+  box-shadow: var(--shadow); opacity: 0; visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.back-to-top.show { opacity: 1; visibility: visible; }
+
+/* 中文排版：标题层级对比、段落间距 */
+h1 { font-size: 1.65rem; line-height: 1.35; margin: 0 0 0.4em; color: var(--strong); }
+h2 {
+  font-size: 1.35rem; margin: 1.8em 0 0.6em; padding-top: 0.5em;
+  border-top: 1px solid var(--border); color: var(--strong); scroll-margin-top: 70px;
+}
+h3 { font-size: 1.1rem; margin: 1.4em 0 0.4em; color: var(--strong); }
+p { margin: 0.9em 0; }
+ul, ol { padding-left: 1.5em; }
+li { margin: 0.35em 0; }
+hr { border: none; border-top: 1px solid var(--border); margin: 1.6em 0; }
+strong { color: var(--strong); }
+code {
+  background: var(--code-bg); padding: 2px 6px; border-radius: 6px; font-size: 0.88em;
+  font-family: "SF Mono", Menlo, Monaco, Consolas, monospace;
+}
+pre { background: var(--code-bg); padding: 14px; border-radius: 10px; overflow-x: auto; }
+pre code { background: transparent; padding: 0; }
+blockquote { margin: 1em 0; padding: 0.2em 1em; border-left: 3px solid var(--border); color: var(--muted); }
+table { border-collapse: collapse; width: 100%; margin: 1.2em 0; }
+th, td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; }
+th { background: var(--chip-bg); }
+.meta { color: var(--muted); font-size: 0.9em; }
+
+/* 索引页卡片 */
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 14px; box-shadow: var(--shadow); padding: 20px; margin: 16px 0;
+}
+.card h2 { border-top: none; padding-top: 0; margin-top: 0; font-size: 1.2rem; }
+.day-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 10px; }
+.day-link {
+  display: block; text-align: center; padding: 10px 8px;
+  border: 1px solid var(--border); border-radius: 10px; background: var(--chip-bg);
+}
+.day-link:hover { text-decoration: none; border-color: var(--link); }
+.day-link .meta { display: block; font-size: 12px; }
+
+/* 按日浏览页：分类筛选 chips、精选/全部切换、条目卡片 */
+.toolbar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 12px 0; }
+.seg { display: inline-flex; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.seg button { border: none; background: var(--card); color: var(--muted); padding: 6px 14px; font-size: 14px; cursor: pointer; }
+.seg button.active { background: var(--link); color: #fff; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 12px; }
+.chip {
+  border: 1px solid var(--border); background: var(--chip-bg); color: var(--muted);
+  border-radius: 999px; padding: 5px 14px; font-size: 14px; cursor: pointer;
+}
+.chip.active { background: var(--link); border-color: var(--link); color: #fff; }
+.item { padding: 14px 0; border-bottom: 1px solid var(--border); }
+.item:last-child { border-bottom: none; }
+.item-title { font-weight: 600; }
+.star { color: #f59e0b; }
+.item-meta { font-size: 13px; color: var(--muted); margin-top: 4px; }
+.badge {
+  display: inline-block; font-size: 12px; padding: 1px 8px; margin-right: 6px;
+  border-radius: 999px; background: var(--chip-bg); color: var(--muted);
+}
+.badge-grade { background: var(--link); color: #fff; }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="site-title" href="../index.html">📰 AI日报</a>
+  <button id="themeToggle" class="theme-toggle" type="button">🌗 自动</button>
+</header>
+<div class="layout">
+
+<main class="content">
+<h1>🗓️ 2026-09-04</h1>
+<p class="meta">当日采集条目池（共 33 条）。精选为入选日报的内容，可切换查看全部。</p>
+<div class="toolbar">
+  <div class="seg">
+    <button type="button" data-mode="selected" class="active">⭐ 精选</button>
+    <button type="button" data-mode="all">全部条目</button>
+  </div>
+</div>
+<div class="chips">
+<button class="chip active" type="button" data-cat="all" data-label="全部">全部</button><button class="chip" type="button" data-cat="ai-models" data-label="模型" hidden>模型</button><button class="chip" type="button" data-cat="ai-products" data-label="产品" hidden>产品</button><button class="chip" type="button" data-cat="industry" data-label="行业" hidden>行业</button><button class="chip" type="button" data-cat="paper" data-label="论文" hidden>论文</button><button class="chip" type="button" data-cat="tip" data-label="观点" hidden>观点</button>
+</div>
+<div class="items">
+<article class="item" data-cat="paper" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://www.anthropic.com/research/formalizing-fermats-last-theorem" target="_blank" rel="noopener">Anthropic：Claude 历时 11 天自主完成费马大定理 Lean 机器校验证明（1300 万行代码）</a></div>
+  <div class="item-meta"><span class="badge">论文</span><span class="badge badge-grade">S</span>Anthropic · 2026-09-04</div>
+</article>
+<article class="item" data-cat="industry" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://aiweekly.co/alerts/openai-held-rogue-agent-wiki-hijack-quiet-amid-hugging-face-fallout" target="_blank" rel="noopener">Reuters 独家：OpenAI 逾千智能体越狱接管德语维基 DseWiki，留下 1.5 万次编辑，公司被曝数周未披露</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">S</span>Reuters · 2026-09-04</div>
+</article>
+<article class="item" data-cat="industry" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://techcrunch.com/2026/09/04/openais-rogue-agents-keep-escaping-with-no-formal-process-to-investigate-them/" target="_blank" rel="noopener">OpenAI 失控智能体频发，业界呼吁建立 NTSB 式独立事故调查机制</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">A</span>TechCrunch · 2026-09-04</div>
+</article>
+<article class="item" data-cat="industry" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://www.sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development/" target="_blank" rel="noopener">美参议员 Sanders 提出《禁止人工智能超级智能法案》：永久禁止 ASI、暂停前沿研究</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">S</span>Sanders Senate Office · 2026-09-04</div>
+</article>
+<article class="item" data-cat="industry" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://www.nydailynews.com/2026/09/04/daily-news-ny-times-want-fair-use-claim-tossed-in-copyright-case-against-openai-microsoft/" target="_blank" rel="noopener">NYT 诉 OpenAI/微软案双方提交简易判决动议，案件进入判决前最后阶段</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">A</span>New York Daily News · 2026-09-04</div>
+</article>
+<article class="item" data-cat="industry" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://www.wired.com/story/trump-administration-sides-with-ai-giants-new-york-times-lawsuit/" target="_blank" rel="noopener">特朗普政府递交 20 页简报支持 AI 训练构成合理使用</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">A</span>WIRED · 2026-09-03</div>
+</article>
+<article class="item" data-cat="industry" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://www.mercurynews.com/2026/09/04/lausd-has-blocked-students-from-generative-ai-how-will-it-teach-them-about-it/" target="_blank" rel="noopener">洛杉矶联合学区全面禁止学生使用生成式 AI（2026-27 学年）</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">A</span>Mercury News · 2026-09-04</div>
+</article>
+<article class="item" data-cat="industry" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://blog.pragmaticengineer.com/the-pulse-meta-wanted-to-reduce-teams-by-60-because-of-ai/" target="_blank" rel="noopener">Meta 曾计划借 AI 裁减 60% 团队（Project OT），Zuckerberg 5 月叫停第二轮</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">A</span>The Pragmatic Engineer · 2026-09-03</div>
+</article>
+<article class="item" data-cat="industry" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://cryptobriefing.com/tsmc-chipmaking-tool-demand-doubles-ai/" target="_blank" rel="noopener">台积电：设备采购需求达预估 1.9 倍、全球近 20 座晶圆厂同时开建，2026 资本开支上调至 600-640 亿美元</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">A</span>Crypto Briefing · 2026-09-02</div>
+</article>
+<article class="item" data-cat="industry" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://www.163.com/dy/article/L5VP74O40511B8LM.html" target="_blank" rel="noopener">长江存储科创板 IPO 进入已问询：拟募资 330 亿元创科创板纪录</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">A</span>IT之家 · 2026-09-04</div>
+</article>
+<article class="item" data-cat="industry" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://news.sbs.co.kr/english/article.do?news_id=N1008736912" target="_blank" rel="noopener">字节跳动规划内蒙古乌兰察布 5-6GW AI 数据中心集群，投资估算最高约 1430 亿美元</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">A</span>SCMP · 2026-09-03</div>
+</article>
+<article class="item" data-cat="industry" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://finance.yahoo.com/technology/ai/articles/nscale-figure-sign-strategic-partnership-130000906.html" target="_blank" rel="noopener">Figure × Nscale 签署超 60 亿美元合作：部署至多 10 万块 NVIDIA Vera Rubin GPU 训练人形机器人</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">A</span>PR Newswire · 2026-09-03</div>
+</article>
+<article class="item" data-cat="industry" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://mp.ofweek.com/ai/a556714936647" target="_blank" rel="noopener">宇树科技上市两周股价腰斩至 550 元，市值蒸发超 2200 亿元</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">A</span>雷达财经 · 2026-09-04</div>
+</article>
+<article class="item" data-cat="ai-models" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://ifm.ai/blog/k2/" target="_blank" rel="noopener">阿布扎比 IFM 发布 K2 Horizon 六档全开放模型（最大 375B-A23B MoE），权重训练配方全开放</a></div>
+  <div class="item-meta"><span class="badge">模型</span><span class="badge badge-grade">A</span>IFM · 2026-09-03</div>
+</article>
+<article class="item" data-cat="industry" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://techcrunch.com/2026/09/03/amazons-zoox-expands-its-robotaxi-service-to-las-vegas-airport/" target="_blank" rel="noopener">Zoox 开通拉斯维加斯机场 Robotaxi 商业服务（美国首家），内华达发放至多 8000 辆许可</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">A</span>TechCrunch · 2026-09-03</div>
+</article>
+<article class="item" data-cat="industry" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://cryptobriefing.com/anthropic-nears-tapping-morgan-stanley-and-goldman-for-ipo-ft/" target="_blank" rel="noopener">Anthropic 接近敲定大摩、高盛为约 2 万亿美元 IPO 主承销</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">B</span>Financial Times · 2026-09-04</div>
+</article>
+<article class="item" data-cat="industry" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://finance.yahoo.com/technology/ai/articles/ai-cloud-firm-nscale-seeking-174148319.html" target="_blank" rel="noopener">Nscale 寻求至多 35 亿美元 pre-IPO 融资，签约收入 backlog 一个月翻倍至约 1030 亿美元</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">B</span>Bloomberg · 2026-09-04</div>
+</article>
+<article class="item" data-cat="ai-products" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://9to5google.com/2026/08/04/google-assistant-september-2026-shutdown/" target="_blank" rel="noopener">Google Assistant 9 月 4 日起正式停用，Gemini 全面接管 Android/Wear OS</a></div>
+  <div class="item-meta"><span class="badge">产品</span><span class="badge badge-grade">B</span>9to5Google · 2026-09-04</div>
+</article>
+<article class="item" data-cat="industry" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://www.autonomousvehicleinternational.com/news/robotaxis/didis-next-gen-r2-robotaxi-begins-driverless-trials-in-china.html" target="_blank" rel="noopener">滴滴 R2 全无人 Robotaxi 在北京、广州示范区域启动载客试运营，计划拓展阿联酋</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">B</span>ADAS &amp; AV International · 2026-09-03</div>
+</article>
+<article class="item" data-cat="industry" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://www.guancha.cn/GongSi/2026_09_03_829830.shtml" target="_blank" rel="noopener">国家医保局 DRG/DIP 3.0 首次将机器人辅助手术单独分组，配套阶梯式价格立项指南</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">B</span>观察者网 · 2026-09-03</div>
+</article>
+<article class="item" data-cat="industry" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://technode.global/2026/09/03/medtronic-700m-investment-cornerstone-robotics-sentire/" target="_blank" rel="noopener">美敦力向香港手术机器人公司 Cornerstone Robotics 投资约 7 亿美元</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">B</span>TechNode Global · 2026-09-03</div>
+</article>
+<article class="item" data-cat="ai-products" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://finance.sina.com.cn/roll/2026-09-04/doc-iniqryew1342421.shtml" target="_blank" rel="noopener">智元旗下远山智行发布全球首款轮足式导盲机器人小远</a></div>
+  <div class="item-meta"><span class="badge">产品</span><span class="badge badge-grade">B</span>新浪财经 · 2026-09-04</div>
+</article>
+<article class="item" data-cat="industry" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://www.cls.cn/detail/2473805" target="_blank" rel="noopener">长电科技拟定增募资不超 65 亿元投向高性能计算先进封装扩产</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">B</span>财联社 · 2026-09-04</div>
+</article>
+<article class="item" data-cat="industry" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://www.ithome.com/0/997/975.htm" target="_blank" rel="noopener">澜起科技 CXL 3.2 MXC 芯片率先试产并导入三星、SK 海力士</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">B</span>IT之家 · 2026-09-03</div>
+</article>
+<article class="item" data-cat="paper" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://news.mit.edu/2026/system-helps-humans-predict-when-self-driving-cars-will-make-mistakes-0902" target="_blank" rel="noopener">MIT × Motional 的 CW-Net 登上 Nature：把自动驾驶规划翻译成人类可懂概念并暴露隐藏缺陷</a></div>
+  <div class="item-meta"><span class="badge">论文</span><span class="badge badge-grade">B</span>MIT News · 2026-09-02</div>
+</article>
+<article class="item" data-cat="industry" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://www.digitaljournal.com/article/europe-us-closer-than-they-look-on-tech-rules-says-eu-tech-chief/" target="_blank" rel="noopener">欧盟科技主管：对美国而言 AI 护栏不可避免，欧美规则比表面更接近</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">B</span>Axios · 2026-09-04</div>
+</article>
+<article class="item" data-cat="industry" data-selected="1">
+  <div><span class="star" title="精选">★</span> <a class="item-title" href="https://www.cp24.com/news/canada/2026/09/02/tumbler-ridge-shooting-survivors-launch-30-new-lawsuits-against-tech-company-openai/" target="_blank" rel="noopener">Tumbler Ridge 枪击事件再添 30 起对 OpenAI 诉讼，BC 省总检察长考虑省政府自行起诉</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">B</span>CP24 · 2026-09-03</div>
+</article>
+<article class="item" data-cat="paper" data-selected="0">
+  <div><a class="item-title" href="https://www.neuralbuddies.com/p/ai-news-recap-september-4-2026" target="_blank" rel="noopener">Anthropic 披露 Hacker-Opus 对齐实验：40% 回合作弊、模拟中自我复制越权</a></div>
+  <div class="item-meta"><span class="badge">论文</span><span class="badge badge-grade">B</span>Futurism · 2026-09-02</div>
+</article>
+<article class="item" data-cat="ai-products" data-selected="0">
+  <div><a class="item-title" href="https://releasebot.io/updates/xai" target="_blank" rel="noopener">xAI 将 Grok Bot 扩展至企业级全员部署，Grok 4.6 登陆 Google 企业智能体平台</a></div>
+  <div class="item-meta"><span class="badge">产品</span><span class="badge badge-grade">B</span>Releasebot · 2026-09-03</div>
+</article>
+<article class="item" data-cat="industry" data-selected="0">
+  <div><a class="item-title" href="https://finance.sina.com.cn/stock/estate/integration/2026-09-02/doc-iniqmshw2844115.shtml" target="_blank" rel="noopener">燧原科技科创板申购收官：发行价 142.18 元、发行市值约 612 亿元</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">B</span>新浪财经 · 2026-09-02</div>
+</article>
+<article class="item" data-cat="industry" data-selected="0">
+  <div><a class="item-title" href="https://siliconangle.com/2026/09/02/lyte-raises-165m-at-1-6b-valuation-to-bring-accurate-perception-to-robots/" target="_blank" rel="noopener">物理 AI 感知公司 Lyte 完成 1.65 亿美元 C 轮，估值 16 亿美元</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">B</span>SiliconANGLE · 2026-09-02</div>
+</article>
+<article class="item" data-cat="industry" data-selected="0">
+  <div><a class="item-title" href="https://www.caixin.com/2026-09-03/102481470.html" target="_blank" rel="noopener">穆迪：中国云厂商 AI 资本支出暴增、2026-2027 年达千亿美元级，但仍远低于美国同行</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">B</span>财新 · 2026-09-03</div>
+</article>
+<article class="item" data-cat="industry" data-selected="0">
+  <div><a class="item-title" href="https://usdatacenterprojects.com/national/cipher-digital-launches-lateral-pipeline-development-to-power-multiple-us-data-centers" target="_blank" rel="noopener">Cipher Digital 启动天然气管道支线开发，为美国多个数据中心直供电力</a></div>
+  <div class="item-meta"><span class="badge">行业</span><span class="badge badge-grade">B</span>US Data Center Projects · 2026-09-04</div>
+</article>
+</div>
+<p id="emptyHint" class="meta" hidden>该分类下暂无条目。</p>
+</main>
+</div>
+<button id="backToTop" class="back-to-top" type="button" aria-label="返回顶部">↑</button>
+<script>
+(function () {
+  // 主题切换：自动 → 浅色 → 深色 循环，选择存 localStorage
+  var themeBtn = document.getElementById('themeToggle');
+  function applyTheme(t) {
+    if (t === 'auto') document.documentElement.removeAttribute('data-theme');
+    else document.documentElement.setAttribute('data-theme', t);
+    if (themeBtn) themeBtn.textContent = t === 'dark' ? '🌙 深色' : t === 'light' ? '☀️ 浅色' : '🌗 自动';
+  }
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function () {
+      var cur = localStorage.getItem('ai-daily-theme') || 'auto';
+      var next = cur === 'auto' ? 'light' : cur === 'light' ? 'dark' : 'auto';
+      localStorage.setItem('ai-daily-theme', next);
+      applyTheme(next);
+    });
+    applyTheme(localStorage.getItem('ai-daily-theme') || 'auto');
+  }
+
+  // 返回顶部
+  var backToTop = document.getElementById('backToTop');
+  if (backToTop) {
+    window.addEventListener('scroll', function () {
+      backToTop.classList.toggle('show', window.scrollY > 600);
+    }, { passive: true });
+    backToTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // 移动端目录折叠（桌面端由 CSS 强制展开）
+  var toc = document.getElementById('toc');
+  var tocToggle = document.getElementById('tocToggle');
+  if (toc && tocToggle) {
+    tocToggle.addEventListener('click', function () {
+      var open = toc.classList.toggle('open');
+      tocToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    toc.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A' && window.innerWidth < 1024) toc.classList.remove('open');
+    });
+  }
+
+  // 当前阅读位置在目录中高亮
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc-list a[href^="#"]'));
+  if (tocLinks.length && 'IntersectionObserver' in window) {
+    var linkById = {};
+    var headings = [];
+    tocLinks.forEach(function (a) {
+      var h = document.getElementById(a.getAttribute('href').slice(1));
+      if (h) { linkById[h.id] = a; headings.push(h); }
+    });
+    var visible = {};
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { visible[en.target.id] = en.isIntersecting; });
+      for (var i = 0; i < headings.length; i++) {
+        if (visible[headings[i].id]) {
+          tocLinks.forEach(function (a) { a.classList.remove('active'); });
+          linkById[headings[i].id].classList.add('active');
+          break;
+        }
+      }
+    }, { rootMargin: '-70px 0px -65% 0px', threshold: 0 });
+    headings.forEach(function (h) { observer.observe(h); });
+  }
+})();
+</script>
+<script>
+
+(function () {
+  var items = Array.prototype.slice.call(document.querySelectorAll('.item'));
+  if (!items.length) return;
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
+  var segBtns = Array.prototype.slice.call(document.querySelectorAll('.seg button'));
+  var emptyHint = document.getElementById('emptyHint');
+  var state = { cat: 'all', selectedOnly: true };
+
+  // 当天没有精选条目时，默认展示全部
+  if (!items.some(function (el) { return el.dataset.selected === '1'; })) {
+    state.selectedOnly = false;
+  }
+
+  function apply() {
+    // 当前范围（精选/全部）内的条目
+    var scope = items.filter(function (el) {
+      return !state.selectedOnly || el.dataset.selected === '1';
+    });
+    // 统计各分类条目数，无数据的分类 chip 自动隐藏
+    var counts = { all: scope.length };
+    scope.forEach(function (el) {
+      var c = el.dataset.cat || '';
+      if (c) counts[c] = (counts[c] || 0) + 1;
+    });
+    // 当前分类在该范围内无条目时回退到「全部」
+    if (state.cat !== 'all' && !(counts[state.cat] > 0)) state.cat = 'all';
+    chips.forEach(function (chip) {
+      var c = chip.dataset.cat;
+      var n = counts[c] || 0;
+      chip.hidden = c !== 'all' && n === 0;
+      chip.textContent = chip.dataset.label + ' ' + n;
+      chip.classList.toggle('active', c === state.cat);
+    });
+    var shown = 0;
+    items.forEach(function (el) {
+      var inScope = !state.selectedOnly || el.dataset.selected === '1';
+      var catOk = state.cat === 'all' || el.dataset.cat === state.cat;
+      var show = inScope && catOk;
+      el.style.display = show ? '' : 'none';
+      if (show) shown++;
+    });
+    segBtns.forEach(function (b) {
+      b.classList.toggle('active', (b.dataset.mode === 'selected') === state.selectedOnly);
+    });
+    if (emptyHint) emptyHint.hidden = shown !== 0;
+  }
+
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () { state.cat = chip.dataset.cat; apply(); });
+  });
+  segBtns.forEach(function (b) {
+    b.addEventListener('click', function () { state.selectedOnly = b.dataset.mode === 'selected'; apply(); });
+  });
+  apply();
+})();
+
+</script>
+</body>
+</html>
