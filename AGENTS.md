@@ -14,7 +14,7 @@
 6. **iCloud 可视化同步**：`~/Library/Mobile Documents/com~apple~CloudDocs/数据同步/ai daily/`
 7. **GitHub Pages 公开站点**：`https://lucas-learner.github.io/ai-daily/`
 8. **GitHub 同步兜底脚本**：`scripts/github-api-push.py`（当 `git push` 因网络/SSL 失败时，通过 GitHub Contents API 直接更新 `docs/` 文件）
-9. **docs/ 静态发布**：`scripts/update-github-pages.py` 会确保 `docs/.nojekyll` 存在，禁用 Jekyll，避免 `jekyll-github-metadata` 调用 GitHub API 时偶发 503 导致构建失败；同时调用 `scripts/build_daily_pages.py` 从 `data/items/*.jsonl` 生成 `docs/days/YYYY-MM-DD.html` 按日浏览页（分类筛选 + 精选/全部切换，data/items 为空时不生成、索引页也不显示入口）
+9. **docs/ 静态发布**：`scripts/update-github-pages.py` 会确保 `docs/.nojekyll` 存在，禁用 Jekyll，避免 `jekyll-github-metadata` 调用 GitHub API 时偶发 503 导致构建失败
 10. **站点样式**：各页面共享 `scripts/page_style.py`（卡片式设计、暗色模式、月报日期 TOC/锚点）；改样式只改这个文件，不要手改 docs/ 下的生成产物
 10. **通知配置**：`scripts/config.sh`（已 gitignore，含 iMessage 接收人 `NOTIFY_TO`；模板见 `scripts/config.example.sh`）
 11. **本地检索**：`scripts/query-items.sh --q 关键词 [--days N | --month YYYY-MM] [--category 五类之一] [--all] [--stats]`

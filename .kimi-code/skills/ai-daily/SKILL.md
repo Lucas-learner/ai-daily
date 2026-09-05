@@ -202,7 +202,7 @@ bash /Users/macmini/projects/skills/ai-daily/scripts/sync-to-icloud.sh YYYY-MM
    ```
    ~/Library/Mobile Documents/com~apple~CloudDocs/数据同步/ai daily/reports/
    ```
-2. 生成/更新根目录的 `daily-summary.md` 与 `daily-summary.html`（今日摘要入口，覆盖旧文件，不保留历史归档）。
+2. 生成当日「今日洞察」摘要到临时目录（`daily-summary.md/html` 只是中间产物，内嵌后即弃，不留存）。
 3. 更新根目录的 `index.html` 索引页，并在顶部直接内嵌展示今日摘要内容。
 
 ### 第八步：更新追踪器

@@ -6,6 +6,7 @@
 from pathlib import Path
 from datetime import datetime
 import html
+import os
 import re
 import sys
 
@@ -25,10 +26,10 @@ def extract_main_content(raw: str) -> str:
     return raw
 
 
-def build_summary_card(icloud_dir: Path) -> str:
-    """如果存在 daily-summary.html，直接将其内容嵌入 index 顶部。"""
-    summary_html = icloud_dir / "daily-summary.html"
-    summary_md = icloud_dir / "daily-summary.md"
+def build_summary_card(summary_dir: Path) -> str:
+    """如果摘要目录里存在 daily-summary.html，将其内容嵌入 index 顶部。"""
+    summary_html = summary_dir / "daily-summary.html"
+    summary_md = summary_dir / "daily-summary.md"
     if not summary_html.exists():
         return ""
 
@@ -78,7 +79,10 @@ def main():
   <td><a href="reports/{ym}.md">📝 Markdown</a></td>
 </tr>\n"""
 
-    summary_card = build_summary_card(icloud_dir)
+    # 摘要来源目录：sync-to-icloud.sh 经 SUMMARY_DIR 传临时目录；
+    # 单独运行本脚本时回退到 iCloud 目录（兼容旧布局）
+    summary_dir = Path(os.environ.get("SUMMARY_DIR", str(icloud_dir)))
+    summary_card = build_summary_card(summary_dir)
 
     main_html = f"""<h1>📰 AI日报索引</h1>
 <p class="meta">按月汇总，逆序排列。HTML 为可视化版本，Markdown 为原始文本。</p>

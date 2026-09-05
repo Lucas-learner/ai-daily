@@ -5,8 +5,7 @@
 设计原则：
 - docs/ 目录作为 GitHub Pages 的发布根目录
 - 只发布 reports/*.html（可视化日报），不暴露 .md 源文件
-- 索引页展示月份列表 + 最新日报摘要卡片 + 按日浏览入口（data/items 有数据时）
-- 按日浏览页 docs/days/ 由 build_daily_pages.py 从 data/items/*.jsonl 生成
+- 索引页展示月份列表 + 最新日报摘要卡片
 - 页面骨架与样式见 page_style.py（卡片式设计 + 暗色模式）
 """
 from pathlib import Path
@@ -14,17 +13,10 @@ from datetime import datetime
 import html
 import re
 import sys
+import tempfile
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import page_style
-
-# 文件名带连字符，不能直接 import，用 importlib 加载
-import importlib.util
-_spec = importlib.util.spec_from_file_location(
-    "build_daily_pages", Path(__file__).resolve().parent / "build_daily_pages.py"
-)
-build_daily_pages = importlib.util.module_from_spec(_spec)
-_spec.loader.exec_module(build_daily_pages)
 
 
 PROJECT_DIR = Path("/Users/macmini/projects/skills/ai-daily")
@@ -64,19 +56,11 @@ def extract_main_content(raw: str) -> str:
     return raw
 
 
-def build_summary_card() -> str:
-    """如果存在 docs/daily-summary.html，将其内容嵌入索引顶部。"""
-    summary_html = DOCS_DIR / "daily-summary.html"
-    summary_md = DOCS_DIR / "daily-summary.md"
+def build_summary_card(summary_dir: Path, date_part: str) -> str:
+    """把临时目录里的 daily-summary.html 内容嵌入索引顶部（中间文件不留在 docs/）。"""
+    summary_html = summary_dir / "daily-summary.html"
     if not summary_html.exists():
         return ""
-
-    date_part = "今日"
-    if summary_md.exists():
-        for line in summary_md.read_text(encoding="utf-8").splitlines():
-            if line.startswith("## "):
-                date_part = line.replace("## ", "").strip()
-                break
 
     body_content = extract_main_content(summary_html.read_text(encoding="utf-8"))
 
@@ -94,50 +78,33 @@ def build_summary_card() -> str:
 """
 
 
-def generate_daily_summary():
-    """为 GitHub Pages 生成 docs/daily-summary.html（基于最新日报）。"""
+def generate_daily_summary(workdir: Path) -> str:
+    """把最新日报的「今日洞察」摘要生成到 workdir（临时目录），返回日报日期；无日报返回空串。"""
     md_files = sorted(REPORTS_DIR.glob("2*.md"), reverse=True)
     if not md_files:
-        return
+        return ""
     latest_md = md_files[0]
     text = latest_md.read_text(encoding="utf-8")
     match = re.search(r"^## 【(\d{4}-\d{2}-\d{2})】", text, re.MULTILINE)
     if not match:
-        return
+        return ""
     latest_date = match.group(1)
     import subprocess
     subprocess.run(
-        ["bash", str(PROJECT_DIR / "scripts/generate-daily-summary.sh"), latest_date, str(DOCS_DIR)],
+        ["bash", str(PROJECT_DIR / "scripts/generate-daily-summary.sh"), latest_date, str(workdir)],
         check=True,
     )
-    print(f"Generated docs/daily-summary.html for {latest_date}")
-
-
-def build_days_section(day_entries) -> str:
-    """按日浏览入口卡片；无数据时返回空串（索引页不显示入口）。"""
-    if not day_entries:
-        return ""
-    links = ""
-    for date, total, selected in day_entries:
-        links += (
-            f'<a class="day-link" href="days/{date}.html">'
-            f'<strong>{html.escape(date[5:])}</strong>'
-            f'<span class="meta">{selected}/{total} 精选</span></a>\n'
-        )
-    return f"""<div class="card">
-  <h2>🗓️ 按日浏览</h2>
-  <p class="meta">按天查看采集条目池，支持分类筛选与精选/全部切换。</p>
-  <div class="day-grid">
-{links}  </div>
-</div>
-"""
+    return latest_date
 
 
 def main():
     ensure_docs_reports()
     ensure_nojekyll()
-    generate_daily_summary()
-    day_entries = build_daily_pages.build()
+
+    # 摘要生成到临时目录，内嵌进索引后即弃，docs/ 不留 daily-summary 中间文件
+    with tempfile.TemporaryDirectory() as tmp:
+        latest_date = generate_daily_summary(Path(tmp))
+        summary_card = build_summary_card(Path(tmp), latest_date) if latest_date else ""
 
     months = sorted([f.stem for f in DOCS_REPORTS_DIR.glob("2*.html")], reverse=True)
 
@@ -151,12 +118,9 @@ def main():
   <td><a href="reports/{ym}.html">📖 可视化日报</a></td>
 </tr>\n"""
 
-    summary_card = build_summary_card()
-    days_section = build_days_section(day_entries)
-
     main_html = f"""<h1>📰 AI日报</h1>
 <p class="meta">每日自动生成的 AI 行业日报归档，按月汇总，逆序排列。</p>
-{summary_card}{days_section}<div class="card">
+{summary_card}<div class="card">
   <h2>📚 月度归档</h2>
   <table>
     <thead>
@@ -173,7 +137,7 @@ def main():
     )
 
     (DOCS_DIR / "index.html").write_text(content, encoding="utf-8")
-    print(f"Updated {DOCS_DIR / 'index.html'} with {len(months)} months, {len(day_entries)} days")
+    print(f"Updated {DOCS_DIR / 'index.html'} with {len(months)} months")
 
 
 if __name__ == "__main__":

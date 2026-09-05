@@ -40,9 +40,7 @@ flowchart LR
 ├── AGENTS.md                             # 项目级 Agent 指令
 ├── README.md                             # 本文件
 ├── docs/                                 # GitHub Pages 站点源文件
-│   ├── index.html                        # 公开日报索引页
-│   ├── daily-summary.html                # 最新日报摘要
-│   ├── days/YYYY-MM-DD.html             # 按日浏览页（分类筛选 + 精选/全部切换）
+│   ├── index.html                        # 公开日报索引页（顶部内嵌最新摘要）
 │   └── reports/                          # 可视化日报 HTML
 ├── data/
 │   └── items/YYYY-MM-DD.jsonl           # 结构化条目池（含未入选条目，本地检索用）
@@ -57,7 +55,6 @@ flowchart LR
     ├── add-daily-entry.sh               # 将日报追加到月文件顶部
     ├── add-daily-items.sh               # 校验并写入当日条目 JSONL
     ├── archive-month.sh                 # 月度总结 + HTML + iCloud 同步
-    ├── build_daily_pages.py             # 从 data/items/ 生成 docs/days/ 按日浏览页
     ├── config.example.sh                # 通知配置模板（复制为 config.sh，已 gitignore）
     ├── cron-run.sh                      # 系统 cron 入口（含失败告警/昨日缺席检测）
     ├── generate-daily-summary.sh        # 生成每日摘要（支持 iCloud/GitHub 输出目录）
@@ -67,7 +64,7 @@ flowchart LR
     ├── sync-to-icloud.sh                # 同步到 iCloud
     ├── sync-to-github.sh                # 同步到 GitHub Pages
     ├── update-icloud-index.py           # 更新 iCloud 索引页
-    └── update-github-pages.py           # 更新 GitHub Pages 索引页（含按日浏览入口）
+    └── update-github-pages.py           # 更新 GitHub Pages 索引页
 ```
 
 ## 定时任务

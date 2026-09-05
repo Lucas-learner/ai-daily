@@ -1,8 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 
-# 从当月日报中提取指定日期的"今日洞察"，生成 iCloud 摘要文件。
-# 用法：generate-daily-summary.sh YYYY-MM-DD
+# 从当月日报中提取指定日期的"今日洞察"，生成摘要文件（中间产物，供索引页内嵌后丢弃）。
+# 用法：generate-daily-summary.sh YYYY-MM-DD [output-dir]
+# 调用方应始终传 output-dir（临时目录）；不传时默认写到 iCloud 目录仅为兼容旧用法。
 
 DATE="${1:-}"
 OUT_DIR="${2:-}"

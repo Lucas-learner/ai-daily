@@ -52,13 +52,15 @@ if [ -f "$HTML" ]; then
   cp "$HTML" "$ICLOUD_REPORTS_DIR/$YEAR_MONTH.html"
 fi
 
-# 生成本月最新日期的摘要卡片（固定 daily-summary.md，不保留历史归档）
+# 生成本月最新日期的摘要卡片到临时目录（嵌入索引后即弃，iCloud 目录不留中间文件）
+SUMMARY_DIR="$(mktemp -d)"
+trap 'rm -rf "$SUMMARY_DIR"' EXIT
 LATEST_DATE=$(grep -m1 -oE '^## 【[0-9]{4}-[0-9]{2}-[0-9]{2}】' "$REPORT" | sed 's/## 【//;s/】//')
 if [ -n "$LATEST_DATE" ]; then
-  "$PROJECT_DIR/scripts/generate-daily-summary.sh" "$LATEST_DATE" || true
+  "$PROJECT_DIR/scripts/generate-daily-summary.sh" "$LATEST_DATE" "$SUMMARY_DIR" || true
 fi
 
 # 更新索引页
-"$PROJECT_DIR/.venv/bin/python3" "$PROJECT_DIR/scripts/update-icloud-index.py"
+SUMMARY_DIR="$SUMMARY_DIR" "$PROJECT_DIR/.venv/bin/python3" "$PROJECT_DIR/scripts/update-icloud-index.py"
 
 echo "Synced $YEAR_MONTH to iCloud: $ICLOUD_DIR"

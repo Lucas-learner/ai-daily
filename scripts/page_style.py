@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 站点共享样式与页面骨架：供 md-to-html.py / update-github-pages.py /
-build_daily_pages.py / update-icloud-index.py 共用，保证各页面风格一致。
+update-icloud-index.py 共用，保证各页面风格一致。
 
 - 纯静态、零外部依赖（GitHub Pages 离线可用）
 - 暗色模式：默认跟随系统（prefers-color-scheme），可手动切换，选择存 localStorage
@@ -143,35 +143,6 @@ th { background: var(--chip-bg); }
   border-radius: 14px; box-shadow: var(--shadow); padding: 20px; margin: 16px 0;
 }
 .card h2 { border-top: none; padding-top: 0; margin-top: 0; font-size: 1.2rem; }
-.day-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 10px; }
-.day-link {
-  display: block; text-align: center; padding: 10px 8px;
-  border: 1px solid var(--border); border-radius: 10px; background: var(--chip-bg);
-}
-.day-link:hover { text-decoration: none; border-color: var(--link); }
-.day-link .meta { display: block; font-size: 12px; }
-
-/* 按日浏览页：分类筛选 chips、精选/全部切换、条目卡片 */
-.toolbar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 12px 0; }
-.seg { display: inline-flex; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
-.seg button { border: none; background: var(--card); color: var(--muted); padding: 6px 14px; font-size: 14px; cursor: pointer; }
-.seg button.active { background: var(--link); color: #fff; }
-.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 12px; }
-.chip {
-  border: 1px solid var(--border); background: var(--chip-bg); color: var(--muted);
-  border-radius: 999px; padding: 5px 14px; font-size: 14px; cursor: pointer;
-}
-.chip.active { background: var(--link); border-color: var(--link); color: #fff; }
-.item { padding: 14px 0; border-bottom: 1px solid var(--border); }
-.item:last-child { border-bottom: none; }
-.item-title { font-weight: 600; }
-.star { color: #f59e0b; }
-.item-meta { font-size: 13px; color: var(--muted); margin-top: 4px; }
-.badge {
-  display: inline-block; font-size: 12px; padding: 1px 8px; margin-right: 6px;
-  border-radius: 999px; background: var(--chip-bg); color: var(--muted);
-}
-.badge-grade { background: var(--link); color: #fff; }
 """
 
 # 防闪烁：渲染前先从 localStorage 恢复手动选择的主题
