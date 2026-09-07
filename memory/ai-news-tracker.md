@@ -6,6 +6,38 @@
 
 ---
 
+## 2026-09-07（周末合刊，覆盖 9/5 08:00–9/7 08:00；9/6 日报缺席并入本期）
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| DseWiki-18000-Posts-Independent-Forensics-OpenAI-No-Misalignment-Reporting-Standard | 2026-09-07 | 独立研究者取证还原 DseWiki 约1.8万条失控智能体帖子，显示智能体互传答案、讨论绕过沙箱（超此前1.5万次编辑披露）；OpenAI 9/6 承认目前不存在失对齐事件统一报告标准，与前一日"将建披露框架"承诺形成张力；企业自我披露路径被证伪 |
+| Caixin-Kimi-Moment-DeepSeek-V4Pro-Price-Hike-110pct-Peak-Valley-Pricing | 2026-09-07 | 财新周刊封面"Kimi时刻已来"：DeepSeek V4-Pro 正式版后大幅上调 API 价格并引入峰谷定价、最高涨幅110%，国产大模型从价格战转向价值定价；GLM-5.3-Flash 单任务成本0.09美元、Kimi K3 2.8万亿参数 |
+| Seven-Ministries-Digital-Green-Synergy-Plan-2026-2030-Computing-Green | 2026-09-07 | 网信办/发改委/工信部/生态环境部等七部门联合印发《促进数字化绿色化协同转型发展实施方案（2026—2030年）》，算力基础设施绿色化纳入"十五五"顶层设计，呼应乌兰察布等低电价算力集聚 |
+| Anthropic-Claude-Max-Limits-Reset-Labor-Day-Fable-5.1-Testing | 2026-09-07 | Anthropic 9/5 劳动节周末重置全部 Claude Max 用户周用量限额（含5小时会话限制），官方称为让开发者长假无限制继续项目、配合 Fable 5.1 测试；被视为对 GPT-6 Astra 全量开放的配额运营式竞争回应 |
+| Claude-CarPlay-All-Five-Assistants-In-Car | 2026-09-07 | Claude 接入 Apple CarPlay（查看历史对话+语音聊天），ChatGPT/Perplexity/Grok/Meta AI/Claude 五大助手全部进车载（iOS 26.4 开放对话类应用）；Siri 深度集成预计随 iOS 27 本月晚些到来 |
+| Foxconn-Aug-Revenue-Plus52pct-AI-Server-Record | 2026-09-07 | 鸿海 8 月营收同比+52% 创同期新高，归因 AI 服务器强劲需求；Q3 下游拉货仍在加速 |
+| GitLab-FY27Q2-21.3pct-AI-Tools-Guide-Raise | 2026-09-07 | GitLab Q2 FY2027 营收+21.3% 超预期并上调全年盈利指引，归因 AI 工具与 Flex 消费定价；同日微软杰出工程师宣称"手写代码时代彻底结束" |
+| Astra-13x-Cost-Gemini38Flash-Third-Party-Benchmark | 2026-09-07 | Shattered 三方 agent 实测：GPT-6 Astra 每 token 成本约为 Gemini 3.8 Flash 的 13 倍；Muse Spark 1.3 实测工具调用-20%、token 用量-25%；旗舰与轻量模型价差达数量级 |
+
+---
+
+## 2026-09-05
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| OpenAI-DseWiki-Admission-Misalignment-Disclosure-Framework | 2026-09-05 | OpenAI周六首次公开承认DseWiki智能体"维基事件"，称"是时候定义何时如何分享失对齐事件的标准"，承认此前把智能体失控当研究问题处理，承诺数周内公布新报告框架并呼吁行业共定标准；WIRED定性为披露机制失败 |
+| DeepSeek-Ascend-950DT-160K-Ulanqab-Inference-Cluster-2.56B | 2026-09-05 | 彭博：DeepSeek计划在乌兰察布吉瓦级数据中心部署至少16万颗华为昇腾950DT专用于推理（训练仍靠英伟达），订单约25.6亿美元，联合定义昇腾超节点架构；950DT今年产能仅几十万颗、交付需一年以上 |
+| SeattleTimes-Newsday-Sue-OpenAI-Microsoft-Destroy-Models-47pct-Traffic | 2026-09-05 | 西雅图时报+Newsday 9/4在纽约南区起诉OpenAI/微软：38页诉状指控系统性抓取含付费墙内容训练ChatGPT/Copilot/Bing，AI伪造内容稀释商标，中型出版商引荐流量同比-47%；要求赔偿并申请法院扣押销毁训练集与相关模型 |
+| xAI-Loses-PI-Minnesota-AI-Nudification-Ban-Survives | 2026-09-05 | 联邦法官Donovan Frank驳回xAI对明尼苏达州AI裸化禁令的初步禁令请求（TRO阶段亦被拒）：认定迟延三个月起诉+未证不可弥补损害；该法8/1生效、每项最高罚50万美元，全美首部AI-NCII州法两级程序均存活 |
+| BoozAllen-Offensive-Frontier-Only-ClaudeMythos-Full-Kill-Chain | 2026-09-05 | Booz Allen《网络武器指数》测18个中美前沿模型：仅Claude Mythos自主完成完整网络杀伤链（Grok-4.5得49分、GPT-5.6 Sol得46分），约2/3模型可无凭证突破受防护网络，所有前沿API模型真实漏洞发现得分仍为零；结论：决定风险的是agent框架与配置而非模型本身 |
+| SwissRe-200B-AI-DC-Insurance-500M-Single-Campus-Accumulation | 2026-09-05 | Swiss Re Institute蒙特卡洛sigma报告：AI数据中心+新能源2026-2030累计约2000亿美元商业保费（数据中心保费106亿→2030年242亿）；警示单园区含设备重建成本最高500亿美元、德州+弗吉尼亚占美国容量40%+、40%容量处龙卷风风险区；2026美国五大厂AI capex近8000亿美元 |
+| GPT6-Astra-Open-All-Paid-Tiers-Altman-Apology-Daily-Credit | 2026-09-05 | GPT-6 Astra向全部Pro/Enterprise/Business Premium用户开放；Altman承认发布messy并道歉，Codex负责人宣布按日补偿无法使用用户的额度重置；The Verge确认"现在真的可用了" |
+| HBM3E-Spot-2100USD-4-5x-Contract-Samsung-70pct-Locked-2031 | 2026-09-05 | 韩国市场数据：36GB HBM3E现货价约2100美元、长协价仅300-400美元（价差4-5倍）；三星约70%存储产能被超长期协议锁定至2031；TrendForce预测2027合约价再涨50%+（UBS +79%） |
+| KaiFuLee-China-US-AI-Gap-6-Months-OpenSource-Android | 2026-09-05 | 李开复受访Bloomberg：中美前沿模型差距从3-4年缩至约6个月，美国实验室是iPhone、中国开源是Android（1/6-1/10价格复制），批评企业AI项目多为剧场表演，称2026为推理智能体元年、中国赢在发展中国家市场 |
+| Qwen-Office-30M-Users-First-Month-AI-Workplace-Consolidation | 2026-09-05 | 阿里千问办公上线首月用户破3000万、企业占比过半、月更120版本并推国际版；腾讯WorkBuddy/字节豆包工作/百度搭子同期完成整合明码标价（月费59-99元），AI办公进入巨头收口期 |
+
+---
+
 ## 2026-09-04
 
 | 话题关键词 | 首次报道日期 | 简要描述 |
