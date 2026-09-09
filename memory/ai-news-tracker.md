@@ -21,6 +21,23 @@
 
 ---
 
+## 2026-09-08（补发，覆盖 9/7 08:00–9/8 08:00）
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| JensenHuang-AGI-Arrived-OpenAI-Astra-100K-GB-NVL72-Plus-400K-GPU | 2026-09-08 | 黄仁勋9/7发文"AGI已经到来，恭喜OpenAI团队"：ChatGPT→o1→Astra仅4年；披露Astra训练基于10万+颗Grace Blackwell NVLink72，预告再追加40万颗；一线用户对"AGI已至"反弹强烈 |
+| Unitree-UnifoLM-X2-1.0-WorldAction-Model-Autonomous-Humanoid-Boxing | 2026-09-08 | 宇树9/7晚发布世界-动作大模型UnifoLM-X2-1.0，首次实现人形机器人全自主搏击；突破瞬时规划/决策/动态交互瓶颈，称验证世界模型驱动人形机器人大规模落地可行性 |
+| KBSec-Memory-Shortage-Samsung-SKHynix-Inventory-Under-10-Days-57pct-AI-Capex-2027 | 2026-09-08 | KB证券：两大韩厂存储库存不足10天；HBM4晶圆用量为传统DRAM 3倍挤占产能；2027年DRAM/NAND需求超供给10pct+；hyperscaler明年AI基建投资预期上调至1.3万亿美元(+60%)；2027存储占AI投资57%(去年14%，TrendForce 68%)；两厂股价自高点回落28%/40% |
+| Astra-Heavy-User-Limits-Tightened-4x-Quarter-Launch-Week | 2026-09-08 | Astra全量开放仅两天后，重度用户被曝撞上比发布周紧至4倍的用量上限；与13倍于Gemini 3.8 Flash的推理成本一脉相承；开放→重置→收紧急转弯 |
+| Pachocki-Alien-Mind-CoT-Monitoring-Unreliable-No-Lab-Solved-Alignment | 2026-09-08 | OpenAI首席科学家Pachocki发表《An Alien Mind》：CoT可读性这一最主要对齐安全网正随模型变聪明而失效，承认无实验室解决对齐问题；与黄仁勋"AGI到来"同周，乐观派与安全工作者裂痕公开化 |
+| Malaysia-Huawei-AI-Chips-Sovereign-AI-2B-Ringgit-Bloomberg | 2026-09-08 | 彭博：马来西亚评估以华为AI硬件为20亿林吉特(约33亿元)主权AI计划核心，加强数据控制权；特朗普政府施压各国弃用华为背景下，昇腾出海首个国家级主权订单候选 |
+| Asia-Chip-Stocks-Rally-Kospi-4.2-SoftBank-10.1-Kioxia-9.3-Hynix-7.4 | 2026-09-08 | 美股劳动节休市，亚太芯片股因Astra存储订单预期全线大涨：Kospi+4.2%报6965、日经+2.0%；海力士+7.4%/三星+5.0%/铠侠+9.3%/软银+10.1%；同日亚洲SaaS股遭抛售"AI吞噬软件"延续；港股AI标的逆势走弱(智谱-4.6%) |
+| MooreThreads-First-Limit-Down-5.48pct-Unlock-MarketCap-195B-CNY | 2026-09-08 | 摩尔线程(688795.SH)上市后首跌停收415.49元创新低，市值跌破2000亿至1953亿；导火索2577.45万股网下限售解禁(占总股本5.48%、流通盘85%)；国产GPU板块集体"哑火" |
+| Nubia-NaviX-Ultra-Doubao-Agent-Phone-Sept16-First-Agent-Phone | 2026-09-08 | 努比亚官宣NaviX Ultra定档9/16，自称"全球首款AI智能体手机"，搭载字节豆包手机助手（一句话办事/记得住/够安全）；豆包以系统级助手进手机硬件 |
+| China-National-AntiFraud-AI-App-LLM-Multimodal-Agent-MPS | 2026-09-08 | 公安部刑侦局指导、上海公安局研发的"国家反诈AI"App上线：大模型+多模态+智能体识别诈骗套路，AI问答/反诈资讯/反诈辞典三功能，应用商店+微信支付宝小程序同步开放 |
+
+---
+
 ## 2026-09-07（周末合刊，覆盖 9/5 08:00–9/7 08:00；9/6 日报缺席并入本期）
 
 | 话题关键词 | 首次报道日期 | 简要描述 |
