@@ -15,5 +15,6 @@ reports/*.html
 logs/*.log
 
 # Temporary files
+tmp/
 *.tmp
 .ai-daily-cron.lock
