@@ -6,6 +6,21 @@
 
 ---
 
+## 2026-09-09
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| Mistral-3B-EUR-SeriesD-21B-Valuation-Samsung-Lead-Largest-Europe | 2026-09-09 | Mistral AI 完成30亿欧元D轮（三星电子+欧盟Scaleup Europe Fund+PSG领投，BlackRock/卢森堡新进，NVIDIA/ASML/a16z跟投），投后估值超210亿欧元近翻倍，欧洲史上最大科技股权融资；累计融资57亿欧元；年底年化营收预计约10亿美元；CFO称美国限制Anthropic模型出口凸显欧洲须有自有AI供应商；微软未参投 |
+| DeepSeek-V41-Flash-Limited-Beta-New-Arch-Multimodal-Expires-0910-Replace-V4Pro | 2026-09-09 | DeepSeek 9/8下午无预告上线V4.1 Flash限时内测：模型名deepseek-v4.1-flash-expires-on-0910、9/10自动过期，计费同V4 Flash、限20并发；全新架构+原生多模态输入，速度更快成本更低；问卷直指"能否全面替代线上V4 Pro"——涨价110%争议后的降本替代策略 |
+| OpenAI-ChatGPT-Images-2.5-Flare-Sunburst-Speed-Precision-Split | 2026-09-09 | OpenAI发布ChatGPT Images 2.5全档位推出，API拆分双模型：GPT-Image-2.5 Flare默认快速档（延迟约为GPT Image 2一半）、Sunburst主打连续编辑精细控制；同步发系统卡；GPT-6 Astra后一周内第二次发布；图像产品首次按工作负载而非代际拆SKU |
+| Google-EU-DMA-Search-Degraded-Worst-29-Years-Travel-Local | 2026-09-09 | Google 9/8在欧盟上线按DMA重构的搜索结果（旅游/本地搜索削弱自我导流），自称"29年历史最大幅度服务质量下降"；背景为7月首张DMA罚单8.9亿欧元；Google采"合规但公开抱怨"策略把降级责任指向布鲁塞尔 |
+| ModelBest-MiniCPM5-2B-OpenSource-Edge-Agent-AA-Sub4B-Top | 2026-09-09 | 面壁智能联合OpenBMB开源MiniCPM5-2B端侧基座（含训练配方/RL框架/数据集）：AA榜23分登顶4B以下开源第一，超Qwen3.5 9B与Gemma 4 12B；Agentic Index 20分，支持工具调用/深度搜索/代码生成，端侧通用Agent雏形 |
+| Samsung-Humanoid-Hardware-AI-Merged-Under-One-CTO-CES2027 | 2026-09-09 | 三星电子任命DX部门CTO Yoon Jang-hyun统一领导机器人事业推进室硬件与AI软件团队，目标CES 2027人形机器人原型；软件负责人统管机械传动的非常规架构，押注"AI而非机械"决胜；同日三星领投Mistral 30亿欧元D轮 |
+| DeepCtrls-B-Plus-Hundreds-Millions-CATL-Aramco-Physical-AI-Energy | 2026-09-09 | 物理AI公司深度智控完成数亿元B+轮融资，宁德时代、沙特阿美战略加码；定位"物理AI时代算力与能源底座"，呼应算力×绿电顶层设计 |
+| Acer-Aug-Revenue-Plus38.4pct-AI-PC | 2026-09-09 | 宏碁8月合并营收301.8亿新台币同比+38.4%，IFA展示基于NVIDIA RTX Spark整机；继鸿海+52%后台系硬件链月度数据继续印证边缘AI放量 |
+
+---
+
 ## 2026-09-07（周末合刊，覆盖 9/5 08:00–9/7 08:00；9/6 日报缺席并入本期）
 
 | 话题关键词 | 首次报道日期 | 简要描述 |
