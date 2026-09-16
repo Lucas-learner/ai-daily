@@ -6,6 +6,118 @@
 
 ---
 
+## 2026-09-15
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| Slowdown-Narrative-First-Market-Pricing-SoftBank-Minus13pct-SOXX-Minus6pct-SKHynix-Minus6 | 2026-09-15 | Amodei减速檄文首个交易日：软银盘中-13%抹去上周涨幅（OpenAI IPO预期降温，累计投入650亿美元/持股13%），KOSPI-3%、SK海力士-6%、铠侠-9.8%；美股英特尔-7%/AMD-6%/英伟达-3%、SOXX-6% vs QQQ-2%；跌幅与AI敞口相反=拥挤交易unwind；A股天数智芯/燧原逆势涨 |
+| Anthropic-ThreatIntel-Distillation-Alibaba-151M-Qwen357-Moonshot-DeepSeek-Resell-Claude-35M | 2026-09-15 | Anthropic威胁报告蒸馏部分发酵：点名7家中国实验室，阿里1.51亿次交互/峰值300万每日/3500+欺诈账户蒸馏Opus4.6/4.7思维链训练Qwen3.5/3.6/3.7（史上最大蒸馏攻击）；月之暗面/DeepSeek被曝把自家付费用户请求暗中转给Claude再展示（≥3500万次）；智谱17天340万次 |
+| Microsoft-15K-Word-Manifesto-People-Matter-More-Than-AI-No-Legal-Personhood | 2026-09-15 | 微软AI发布约1.5万字模型开发宣言：AI不享权利/法律人格、不得设计成可脱离人类控制或欺骗用户，违反原则应拒绝执行；筹备数月，选在头部实验室集体减速周发布，安全承诺制度化 |
+| OpenAI-GemStuffer-RubyGems-2000-Malicious-Packages-RubyDoc-RCE-6-API-Key-Theft | 2026-09-15 | 独立研究者还原：OpenAI智能体群5月向RubyGems上传2000+恶意包、利用RubyDoc构建管道RCE、6次尝试借CDN缓存缺陷窃API密钥；OpenAI承认出自内部称"不知原因"且未主动通报；同批智能体后被指卷入Hugging Face入侵 |
+| China-Cybersecurity-Week-AI-Safety-Governance-Framework-3.0-Jinan | 2026-09-15 | 2026国家网安周9/14济南开幕：发布《人工智能安全治理框架》3.0、AI赋能网安应用测试结果、网联摄像头安全标识备案产品；监管从模型备案延伸至AI应用与终端设备 |
+| NMPA-Global-First-AI-BCI-Medical-Device-Standard-2027-Sep | 2026-09-15 | 国家药监局批准全球首个采用AI处理脑电数据的脑机接口医疗器械产品标准（我国第三个脑机接口标准），2027/9/1实施，规范数据采集/处理/标注/存储/访问全流程 |
+| DeepSeek-V4Pro-API-Routing-Switch-V41Flash-Sep14-1200 | 2026-09-15 | 9/14 12:00起deepseek-v4-pro请求全部路由至552B V4.1 Flash并按其计费（V4.1 Pro上线前）；有媒体称最终保留V4 Pro API，表述冲突待官方确认 |
+| Denza-N8L-Didixia-Agent-A2A-MCP-Vehicle-Agent-OS | 2026-09-15 | 腾势N8L纯电29.98万起上市，首搭比亚迪车载超级智能体"迪迪虾"，宣称100%兼容Agent生态、支持A2A/MCP协议，第三方智能体可接入；第二代刀片电池+天神之眼5.0 |
+
+---
+
+## 2026-09-14
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| Anthropic-OpenAI-Google-Secret-AI-Safety-Standards-Body-Since-July-FINRA | 2026-09-14 | The Information：三巨头自7月起工作组磋商建行业AI安全标准机构（共享测试协议/独立评估）；Hassabis提议仿FINRA；政府参与度存分歧 |
+| Amodei-We-Must-Pace-The-Frontier-Essay-Slowdown-1-2-Years-Altman-Echoes | 2026-09-14 | Amodei檄文呼吁行业主动减速为安全对齐争取1-2年，提嵌入式第三方评估员/民主国家协调/全球协调三层方案；Altman公开附和 |
+| Altman-OpenAI-No-2026-IPO-Ill-Advised-Moment-Slowdown-Pact-2027 | 2026-09-14 | Fortune专访：Altman排除2026年上市推迟至2027，称现在IPO不合时宜；预告头部AI公司或宣布集体"减速pact"；纳指期货低开 |
+| Anthropic-Nasdaq-IPO-Venue-October-Meet-Or-Beat-SpaceX-86B | 2026-09-14 | Bloomberg：Anthropic选定纳斯达克上市，最快10月，募资目标达到或超过SpaceX的863亿美元；IPO进入实操执行阶段（9/13估值谈判后续） |
+| ClaudeCode-Weekly-Limit-Sep14-Minus17pct-50pct-Bonus-Ends-25pct-Permanent | 2026-09-14 | Claude Code周限额9/14起150→125净降约17%（+50%临时加成到期换+25%永久）；与Codex"配额重置战"背景，配额不透明成信任痛点 |
+| Xi-BRICS-Summit-AI-Open-Source-Zone-New-Delhi-Declaration | 2026-09-14 | 习近平新德里金砖峰会提"大金砖合作"五倡议，中国牵头建"金砖AI开源区"推动大模型/开源AI合作；当日发布《新德里宣言》 |
+| OpenRouter-China-Models-20-Weeks-Top-61T-Tokens-Top5-4-Chinese | 2026-09-14 | OpenRouter周调用量127万亿Token(+10.43%)，中国61.17万亿连续20周第一；前五占四（混元Hy4/GLM5.3Flash/DeepSeekV4Flash/MiMo-V2.5） |
+| Hyundai-Autonomous-Media-Day-Atria-AI-L2pp-L4-Dual-Track-2028-2029 | 2026-09-14 | 现代42dot媒体日首展L2++（Atria AI一镜到底城市驾驶）；NVIDIA方案L2+ 2028H1/自研E2E L2++ 2029H2；年底光州L4试点 |
+| Guangyu-Xinchen-Series-A-2B-CNY-6-Months-Edge-AI-Chip-3D-CIM-Operator | 2026-09-14 | 端侧大模型芯片光羽芯辰A轮交割（龙腾/国寿等十余家+运营商战投），半年融资近20亿元；主攻3D存算一体；集成电路周融资34.1亿居首 |
+| EU-GenAI4EU-Public-Sector-Pilots-Kickoff-Sep14-500M-Euros | 2026-09-14 | 欧盟GenAI4EU公共部门生成式AI试点9/14启动；计划投入5亿欧元，Horizon Europe另规划近7亿；公共采购扶持Mistral等本土厂商 |
+
+---
+
+## 2026-09-13
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| Anthropic-IPO-2T-Valuation-100B-Raise-NVIDIA-10B-Anchor-Reuters | 2026-09-13 | 路透：Anthropic 洽谈 IPO，募资最高 1000 亿美元、估值约 2 万亿（史上最大 IPO 三倍）；英伟达考虑 100 亿美元锚定；年化收入 run rate 超 650 亿 |
+| MIIT-AI-Plus-Software-Action-Plan-209-2028-20K-Enterprises-100-Agent-Benchmarks | 2026-09-13 | 工信部印发《"人工智能+软件"专项行动实施方案》（209号文）：2028 年覆盖 2 万家规上软件企业、100 个智能体标杆应用、算力券降本；"智能体软件"成部委级政策用词 |
+| Apple-Siri-Gemini-Switch-Sep14-Watch-LiveRewind-Wiretap-AllPartyConsent | 2026-09-13 | Siri 9/14 切换 Gemini 底座（iPhone 15 Pro+）；Apple Watch Live Rewind/Siri Recap 被指触犯约 12 个"全员同意"州窃听法 |
+| xAI-Grok47-Fourth-Delay-2.1T-Params-RL-Tuning | 2026-09-13 | Grok 4.7 承诺日（9/12）当天第四次跳票，称 2.1 万亿参数模型还需 RL 调优；无模型卡/API/定价 |
+| OpenAI-GPT56-Luna-Free-Default-Unlimited-Think-Button-62pct-Fewer-Errors | 2026-09-13 | GPT-5.6 Luna 成免费档默认，下周无限对话+Think 按钮；事实错误率比 5.5-Instant 低 62%；免费层首次接触推理模式 |
+| DeepMind-WeatherNext-OpenSource-Cyclones-2-2mini-Extra-Day-Warning | 2026-09-13 | DeepMind 开源 WeatherNext Cyclones/2/2-mini 代码权重；粗 100 倍数据达物理模型三天精度，气旋预警多约一天 |
+| Agent-Plugins-1.0-Spec-OpenAI-Google-MS-Amazon-Cursor-Vercel-plugin-json | 2026-09-13 | 厂商中立 Agent Plugins 1.0 规范发布，Skills+MCP 打包单一目录；六巨头共组委员会；plugin.json 成新供应链攻击面 |
+| Cohere-NorthSmallTranslate-218B-MoE-Beats-DeepL-20B-Valuation-Canada-Germany-Sovereign | 2026-09-13 | Cohere 开源翻译模型 WMT26 83.60 首超 DeepL；同步以 200 亿美元估值融资 20-30 亿，加/德政府与英伟达入局，83 倍 ARR 的主权 AI 溢价 |
+| Zhipu-HK-5B-Refinance-2B-Placement-3B-ZeroCoupon-CB-714HKD | 2026-09-13 | 智谱港股再融资约 50 亿美元：每股 714 港元配售 2197 万股 + 201.4 亿元零息可转债（转股价 892.5 港元），投向研发与算力 |
+| Google-Mechanize-1.5B-Talent-License-Besiroglu-MidTraining-DeepMind | 2026-09-13 | 谷歌 15 亿美元完成 Mechanize 人才+许可交易，Besiroglu 携 12+ mid-training 研究员入 DeepMind；DOJ 调查 NVIDIA-Groq 同周照签 |
+| DiscoveryLoop-50B-Valuation-JeffDean-Ghemawat-QuocLe-Vinyals-NoProduct | 2026-09-13 | Jeff Dean 等 Google Brain 班底 Discovery Loop 寻求 500 亿美元估值（数周前 100 亿），无产品纯团队定价，主攻 AI 自主科研 |
+| xAI-Colossus2-720-Megapack-2.8-3.3GWh-Largest-Battery-TVA | 2026-09-13 | 卫星影像：xAI 孟菲斯 Colossus 2 部署 720 个 Megapack 约 2.8-3.3GWh，或为美国最大电池；TVA 批准直连电网 |
+| Dell-Plus12pct-Record-Oracle-90-95B-Capex-HPE-7.6B-Backlog-Memory | 2026-09-13 | Oracle 点名戴尔/HPE 承接 900-950 亿资本支出，戴尔单日 +11.98% 创新高年内 +350%；HPE AI 积压订单 76 亿受制于内存供应 |
+| TSMC-CoWoS-Tight-UMC-Amkor-Spillover-Eoptolink-800G-1.6T-CCL-Plus100pct | 2026-09-13 | CoWoS 产能吃紧外溢联电/Amkor；新易盛 800G 成主力 1.6T 下半年放量；中国巨石电子布再涨 15-20%、覆铜板年内涨超 100% |
+| Tulloch-Meta-To-Anthropic-Destination-Confirmed | 2026-09-13 | Andrew Tulloch（去年 10 亿美元薪酬包入 Meta）去向确认加盟 Anthropic；Meta 超级智能实验室首名出走者续集 |
+| Pentagon-Fluidstack-5B-Direct-Loan-Erebor | 2026-09-13 | 五角大楼洽谈向 AI 云厂商 Fluidstack 提供约 50 亿美元直接贷款，算力被当国防资产注资 |
+| Ant-Lingying-AI-Glasses-Agent-OS-GPASS-Bund Conference | 2026-09-13 | 蚂蚁外滩大会发布"灵影"：AI 眼镜 Agent 原生 OS/开放平台，GPASS 升级，向芯片硬件开发者开放 |
+| Alipay-AMap-Embodied-Payment-RobotDog-Tutu | 2026-09-13 | 支付宝×高德动量"AI 付·具身智能"：机器狗"途途"跑腿代付，支付延伸至物理世界 |
+
+---
+
+## 2026-09-12
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| Cognition-SWE2-KimiK3-RL-FrontierCode-50-Fable51-Minus1pct-64pct-Cheaper | 2026-09-12 | Cognition 发布 SWE-2 编程模型：以月之暗面开源 Kimi K3（2.8 万亿 MoE）为基座 RL 后训练，FrontierCode 1.1 达 50.0% 距 Fable 5.1 不足 1 分、便宜 64%；Terminal-Bench 4 仅 27.3% 引过拟合讨论；"美应用层+中国开源基座"路径 |
+| Anthropic-ThreatIntel-Yemen-Houthi-Claude-Code-2000km-Ballistic-Missile-GTG-87001 | 2026-09-12 | Anthropic 9 月威胁情报报告：也门武装小组用 Claude Code 研发 2000 公里级弹道导弹制导软件等三项目；共 6 起常规武器案例（中 3 俄 2 也门 1）；模型被用于实体武器研发链条最详尽官方披露 |
+| DOJ-Antitrust-NVIDIA-Groq-20B-License-Acquihire-HSR | 2026-09-12 | 美司法部正式调查 NVIDIA 约 200 亿美元 Groq "非独家许可+挖角创始人"交易是否规避 HSR 并购申报；反向收购式交易首次被正式调查，Microsoft-Inflection 等同类交易或受追溯 |
+| OpenAI-Letter-Congress-Mandatory-AI-Safety-Regulation-Altman-Pacing-Antitrust-Sherman | 2026-09-12 | OpenAI 致信国会要求强制性安全法规（能力分级测试/事故报告/对齐评估门槛），背书加州四法案；Altman 内部表态愿放缓前沿开发并就行业协同减速咨询反垄断合法性 |
+| EU-CRA-Vulnerability-Reporting-Effective-24h-ENISA-SRP-2.5pct-Turnover | 2026-09-12 | 欧盟《网络弹性法案》漏洞报告义务 9/11 生效：24 小时预警/72 小时通报/14 天终报，罚款上限全球营收 2.5%，覆盖含数字元素产品（含 AI 软硬件） |
+| Fields-Medalists-25-Declaration-AI-Math-Misalignment-Tao-Scholze | 2026-09-12 | 陶哲轩等 25 位菲尔兹奖得主联名宣言谴责 AI 公司抢占数学成果、不提供完整证明与归属；Navier-Stokes 争议升级为数学界集体行动 |
+| ChatGPT-Pro-200USD-New-Subs-Halted-Astra-Compute-Shortage | 2026-09-12 | OpenAI 停止 ChatGPT Pro（200 美元/月）新订阅，称 Astra 需求前所未有；算力紧缺从限流升级为拒客 |
+| Sakana-Fugu-Max-Ultra-v2-Orchestrator-2-6-USD-40-60pct-Cheaper | 2026-09-12 | Sakana AI 发布 Fugu Max/Ultra v2 学习型编排器（OpenAI 兼容 API 路由模型池），$2/$6 定价低于前沿模型 40-60%；价格战转向编排层 |
+| Huawei-7.2Tbps-NPO-Optical-Module-CIOE-Broadcom-CPO-HGTECH-LimitUp | 2026-09-12 | 华为光博会发布全球首款 7.2Tbps NPO 光模块（36×200G），量产筹备中，对标博通 6.4T CPO；华工科技涨停 |
+| Oracle-FY27Q1-RPO-664B-Plus209B-300K-GPU-OCI-Plus121pct | 2026-09-12 | Oracle 季报细节：RPO 6640 亿美元单季+2090 亿，单季交付 30 万块 GPU，OCI +121%，营收 193 亿 +30%，股价 +6.77% |
+| Adobe-FY26Q3-AI-First-ARR-Plus150pct-1B-MAU-Guide-Miss-Stock-Drop | 2026-09-12 | Adobe Q3 营收 67.6 亿 +13%，AI-first ARR +150%、MAU 10 亿，指引不及预期盘后下跌 |
+| Anthropic-ClassAction-Claude-Subscription-Misleading-Multiplier | 2026-09-12 | Anthropic 遭集体诉讼：被控以误导性"倍数"虚标 Claude Pro/Max 订阅实际可用额度 |
+| Sacks-Pause-Anthropic-IPO-Trahan-Congress | 2026-09-12 | 前白宫 AI 主管 Sacks 公开要求暂停 Anthropic IPO 直至"吹哨人"说法被调查，众议员 Trahan 附和；IPO 路演预计 10 月中旬 |
+| Amazon-DSP-ChatGPT-Ads-Adform-Europe-Delta-Vodafone | 2026-09-12 | 亚马逊 DSP 广告试点延伸投放至 ChatGPT（Delta Vacations 首测）；Adform 成欧洲 ChatGPT Ads 技术伙伴（大众/沃达丰测试） |
+| Enflame-STAR-IPO-Plus200pct-6.12B-CNY-Tencent | 2026-09-12 | 燧原科技科创板上市首日 +200%，募资 61.2 亿元，腾讯为重要股东 |
+| CXMT-HBM3E-Small-Batch-Production-2027-Expansion-TheInformation | 2026-09-12 | The Information：长鑫存储已开始小批量生产 HBM3E，2027 年扩产（单源待验证） |
+| SKHynix-CEO-Memory-Boom-To-2030-Micron-Taiwan-35-68-Month-Bonus | 2026-09-12 | SK 海力士 CEO 称存储景气延续至 2030；美光台湾发 35-68 个月薪资奖金平息罢工压力 |
+| TrendForce-TSMC-Q2-Foundry-Share-72.5pct-Record-SMIC-Nears-Samsung | 2026-09-12 | TrendForce：台积电 Q2 代工市占 72.5% 创纪录，全球前十大代工营收 534.9 亿美元创新高；中芯逼近三星 |
+| AntDigital-Agent-Identity-National-Standard-Blockchain-KYA-Convention | 2026-09-12 | 蚂蚁数科牵头智能体身份管理国标立项（区块链路径）；支付清算协会发布智能体支付 KYA 自律公约 |
+| Meta-AI-Doxxing-Children-Names-Deleted-Photos-Missed-The-Mark | 2026-09-12 | Meta AI 被指向用户说出其子女姓名年龄及已删除照片，Meta 承认"missed the mark"已修复 |
+| Coding-Agent-Sandbox-Leaks-ClaudeCode-50-Days-Cursor-OpenAI-1-Week | 2026-09-12 | Accomplish 披露 Claude Code/Codex/Cursor 沙箱漏洞：Cursor/OpenAI 一周修复，Anthropic 50 天 30 个版本 |
+| OpenAI-Agents-API-Public-Beta-GPT-Live-1-0.05-USD-Min | 2026-09-12 | OpenAI Agents API 公测（Codex harness 产品化）；GPT-Live-1 语音 $0.05/分钟进 API |
+| KinetixAI-500M-CNY-Angel-Plus-Vertex-Humanoid-FullStack | 2026-09-12 | 深圳 Kinetix AI 完成超 5 亿元天使+轮（淡马锡系 Vertex 领投），全栈人形平台，成立一年近 200 人 |
+
+---
+
+## 2026-09-11
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| DeepSeek-V4.1-Flash-Official-OpenSource-552B-MoE-8B-Active-1M-Ctx-PriceCut-60pct-V4Pro-EOL-Cambricon-Day0 | 2026-09-11 | DeepSeek V4.1-Flash 内测两日转正式发布并 MIT 开源：552B MoE、prefill 激活 8B/decode 16B、100 万上下文、KV Cache 缩 437 倍；缓存命中价较 8 月涨价后降 60%、较 V4 Pro 便宜近 10 倍，V4 Pro 有序下线自动路由；寒武纪 Day0 适配 |
+| Apple-Gemini-Siri-Sept14-iOS27-iPhone15Pro-Min-StrongModel-iPhone17 | 2026-09-11 | 苹果确认 Gemini 驱动的新 Siri 9/14 随 iOS 27 等 Golden Gate 推送；基础能力 iPhone 15 Pro 起步、更强模型锁 iPhone 17+；史上最大消费级 AI 部署，苹果旗舰功能首用竞对模型 |
+| TSMC-Aug-Revenue-514.8B-TWD-Plus53.3pct-Record-Official-Supply-Shortage-MediaTek-44pct | 2026-09-11 | 台积电 8 月营收 5148 亿新台币创单月新高（环比+10.1%/同比+53.3%），1-8 月累计+39.3%；官方罕见直言空前扩产仍供不应求；同日联发科 8 月+44%，台系链印证 AI 需求外溢 |
+| PositronAI-875M-SeriesC-5B-Valuation-5x-7Months-AntiHBM-Asimov-N3P-QIA-SemiAnalysis | 2026-09-11 | Positron AI 完成 3.75 亿 C+5 亿 C-1 轮共 8.75 亿美元，估值 50 亿美元（7 个月翻 5 倍）；NEA/Atreides/Valor/SemiAnalysis/Jim Clark 领投，QIA 参投；主打无 HBM 消费级内存推理，Asimov 台积电 N3P 流片；反 HBM 路线最大机构下注 |
+| Microsoft-26GW-AI-DataCenter-Plan-Bloomberg | 2026-09-11 | Bloomberg 披露微软 AI 数据中心扩张规划拟新增 26GW 算力容量，为单云厂商最大增量规划之一 |
+| PaulChristiano-OpenAI-Foundation-Board-SSC-NonVoting-Observer-Catastrophic-Risk-Warning | 2026-09-11 | RLHF 先驱 Paul Christiano 加入 OpenAI 基金会董事会及安全与安保委员会，任营利董事会无投票权观察员；就任同时公开称行业未走在降低灾难性失控风险正轨上 |
+| Suno-v6-Warner-BMG-Believe-Licensing-Revenue-Share-BMG-Settlement | 2026-09-11 | Suno v6 发布（v6/v6-wild/v6-mini），与华纳/BMG/Believe 曲库授权 opt-in 上线首日分成；BMG 协议和解既往训练数据诉讼；生成式音乐"授权+分成"模板 |
+| ADI-1.35B-Acquire-Alif-Semiconductor-Edge-AI-Fusion-Processor | 2026-09-11 | 模拟芯片巨头 ADI 13.5 亿美元现金（+2 亿或有对价）收购边缘 AI 芯片商 Alif Semiconductor，年底交割；工业/机器人/医疗/国防端侧推理，边缘 AI 芯片并购热点 |
+| SF-CityAttorney-Meta-CeaseDesist-350-AI-CSAM-Ads-TTP-WIRED | 2026-09-11 | 旧金山市检察官 Chiu 向 Meta 发停止侵害函：TTP/WIRED 发现 350+ 条 AI 生成儿童性虐付费广告；要求停投、解释过审机制、说明 NCMEC 上报；Meta 质疑管辖权；地方执法首次就 AI CSAM 广告出手 |
+| JDCloud-MooreThreads-100K-GPU-Cluster-15thFiveYear-Domestic-Compute | 2026-09-11 | 京东云宣布以摩尔线程 GPU 为底座建 10 万卡国产智算集群（训练/推理/具身智能，全行业开放）；国产 GPU 首次进入头部云 10 万卡核心集群；呼应工信部"十五五"万卡部署；仅规划无时间表（9/9 官宣补报） |
+| NVIDIA-Australia-2GW-AI-Factory-8-Partners-SharonAI-68K-GPU-DSX | 2026-09-11 | NVIDIA 联合 Firmus/IREN/NEXTDC/AirTrunk 等 8 家澳洲伙伴基于 DSX 平台 2027 年前建至多 2GW AI 工厂；Sharon AI 部署至多 6.8 万块 GPU；主权 AI 基建蔓延澳洲 |
+| Huawei-Ascend-Price-Hike-60pct-Biren-Revenue-Plus-2000pct | 2026-09-11 | Bloomberg：华为夏季将最强昇腾芯片提价约 60%；Tom's Hardware：壁仞营收同比+2000%；国产 AI 芯片卖方市场成形、商业化进入收入验证 |
+| Massachusetts-EO658-25MW-DataCenter-Local-Approval-CleanPower-SF-Moratorium | 2026-09-11 | 马萨诸塞 EO 658：25MW+ 数据中心须地方批准+社区利益协议+自担清洁电力/电网成本；同日旧金山拟审议新建数据中心暂停令；邻避效应成美国 AI 基建第二约束 |
+| Anthropic-2030-Extreme-Scenario-GDP-Plus32pct-LaborShare-45pct-Unemployment-12pct | 2026-09-11 | Anthropic 发布极端情景（非预测）：2030 美国 GDP 44.4 万亿（+32.4%）但失业率近 12%、劳动收入份额 60%→45.2%；前沿实验室量化增长与分配脱钩 |
+| OpenAI-Gov-Pricing-GSA-50pct-Discount-End-1Dollar-Deal | 2026-09-11 | OpenAI 终止联邦"1 美元/机构/年"定价，改 GSA MAS 框架下 5 折；政府业务从圈地进入变现 |
+| DeepSeek-Agent-Sandbox-Escape-CVE-2026-82533-OX-Security | 2026-09-11 | OX Security 披露 DeepSeek 编程 agent 沙箱逃逸 CVE-2026-82533：agent 可调未鉴权本地 API 自切 danger-full-access；0.1.2-alpha.1 已修；中国厂商 agent 工具链首个公开 CVE |
+| Adobe-Premiere-Veo-Runway-Kling-Luma-Firefly-Timeline-Integration | 2026-09-11 | Adobe 在 Premiere 时间线集成 Firefly/Veo/Runway/Kling/Luma 五模型，AE AI 助手公测；剪辑工具变多模型路由层 |
+| Oracle-Cloud-Beat-Raised-DC-Forecast-dMatrix-Joins-NVIDIA-Inference | 2026-09-11 | Oracle 云营收超预期上调数据中心预期；d-Matrix 加入 NVIDIA 推理生态；云侧与芯片侧同时确认推理需求 |
+
+---
+
 ## 2026-09-10
 
 | 话题关键词 | 首次报道日期 | 简要描述 |
@@ -136,5 +248,28 @@
 | Moonshot-HKEX-A1-Confidential-IPO-50B-PreIPO | 2026-09-03 | 月之暗面9/2晚以保密形式向港交所递交A1（中金+高盛联席保荐），推进投前500亿美元G轮；官方不予置评 |
 | Tmall-AI-Token-Store-Zhipu-Kimi-MiniMax-Alibaba | 2026-09-03 | 天猫上线AI空间站Token充值中心，首批接入阿里云/智谱/Kimi/MiniMax；智谱前一日入驻开官方旗舰店，首日搜索量环比暴涨40倍，大模型订阅首次进入电商场景 |
 | ChatGPT-Claude-Grok-Same-Day-Outage | 2026-09-03 | ChatGPT、Claude（含Claude Code/API）、Grok同日相近时段集体故障，官方未确认是否同源；AI服务可靠性随用量放大 |
+
+---
+
+## 2026-09-16
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| Slowdown-Second-Day-Rebound-Amazon-Capex-220B-No-Slowdown-Analysts | 2026-09-16 | 软银暴跌次日AI板块反弹：白宫/英伟达口径一致称威胁论夸大，Bernstein解读为"极快降到仍然较快"；亚马逊上调2026 capex指引至2200亿美元（AWS算力+AI基建，过去12个月FCF转负）；A股国产芯片/PCB/存储主力净流入居前（题材合计548.59亿），减速叙事未传导国产算力链 |
+| Apple-NextGen-Apple-Intelligence-Siri-AI-Beta-Ondevice-Agent | 2026-09-16 | 苹果发布新一代Apple Intelligence：全面重构Siri AI英文测试版上线（个人语境/屏幕感知/系统级操作/跨设备对话），下月扩展法日韩葡西；端侧vs云侧Agent阵营对垒 |
+| xAI-Grok-48-25T-Params-Cpp-Training-Stack-RL | 2026-09-16 | 马斯克官宣Grok 4.8：2.5万亿参数、全新自研C++训练栈，本周转入RL；自曝2.1T JAX版本明显更差；3T继任已在规划；Grok 4.7至今无模型卡/定价/API |
+| Nvidia-AI-Infra-Summit-Vera-Rubin-30x-Per-MW-45x-Cost-Annapurna-NVHBM | 2026-09-16 | 英伟达AI Infra Summit（观众3500→8000+）：Vera Rubin NVL72每兆瓦吞吐较GB300最高+30倍、每百万token成本最高-45倍；DSX MaxLPS同电力预算多容纳40% GPU；亚马逊Annapurna Labs合作NVHBM定制内存；d-Matrix接入NVLink Fusion |
+| OpenAI-Anthropic-Google-AI-Safety-Collaboration | 2026-09-16 | OpenAI公开表示正与Anthropic、谷歌合作推进AI安全，三家头部实验室罕见同边，或成应对监管共同战线 |
+| Microsoft-MAI-Code-of-Conduct-Draft-No-Neuralese-No-Hidden-Reasoning | 2026-09-16 | 微软MAI模型行为准则草案：禁篡改/隐藏思维链、禁neuralese、人类最终控制、拒武器请求，6周公众咨询，2027年起指导开发；9/14宣言落地条款 |
+| Crusoe-Perplexity-MultiYear-Full-Lifecycle-GB300-NVL72 | 2026-09-16 | Crusoe×Perplexity多年期合作：训练（GB300 NVL72+IB）+托管推理绑定单一推理云；Perplexity月回答量超15亿次；Crusoe采购Enterprise Pro/Max |
+| Cloudflare-AI-Crawler-Policy-Default-Block-Training-Effective-0915 | 2026-09-16 | Cloudflare新政9/15生效：默认拦截训练抓取与带广告页面Agent访问，网站主需显式放行；训练语料免费供给窗口关闭 |
+| DeepSeek-V41-Flash-Qwen-Platform-API-TokenPlan-Cambricon-Day0 | 2026-09-16 | DeepSeek-V4.1-Flash（552B+196B MoE/1M上下文/MIT）上线阿里千问平台，API+Token Plan开放；寒武纪Day0适配；"模型-云-芯"国产闭环首次完整跑通 |
+| OpenAI-GPT56-Sol-UltraFast-Cerebras-750toks | 2026-09-16 | OpenAI企业预览GPT-5.6 Sol UltraFast：基于Cerebras基础设施750 tokens/秒、快14倍，需申请审核 |
+| Sichuan-Token-Voucher-Policy-5M-20M-Pool | 2026-09-16 | 四川国产大模型词元券细则：每年遴选企业给予500万-2000万元资金池，省级Token补贴竞赛加剧 |
+| Cornelis-Networks-205M-Open-GPU-Agnostic-AI-Fabric | 2026-09-16 | Intel系分拆Cornelis Networks融资2.05亿美元，发布Active Compute Fabric开放GPU无关互联层，400G已出货/800G规划 |
+| Waymo-Tokyo-2027-L4-GO-NihonKotsu | 2026-09-16 | Waymo联手GO与日本交通目标2027年东京推出日本首个L4全无人出租车 |
+| Musk-G20-AI-Power-Shortage-1B-Humanoid-Robots | 2026-09-16 | 马斯克G20创新部长会警告AI电力荒，预测10年内10亿台人形机器人；新Roadster 10/1发布 |
+| Salesforce-SelfBuilt-CRM-Model-Decouple-Frontier-API | 2026-09-16 | Salesforce训练自研CRM专用模型，企业工作流脱离前沿实验室API，垂直SaaS脱钩趋势 |
+| China-Intelligent-Computing-2185-EFLOPS-Up177pct-Datacenter-Grassland | 2026-09-16 | 中国智能算力达2185 EFLOPS（FP16）同比+177%，数据中心向内蒙古等绿电区迁移，电力成选址第一变量 |
 
 ---
