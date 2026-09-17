@@ -53,7 +53,9 @@ touch "$LOCK_FILE"
   fi
 
   # -p: 非交互式单条 prompt，cron 环境下可直接执行
-  "$KIMI_BIN" -p "执行ai日报任务" 2>&1 || {
+  # -m: 本任务固定使用 kimi-for-coding，与全局 default_model 解耦
+  # KIMI_MODEL_THINKING_EFFORT=low: 仅本进程强制低思考强度（省配额），不影响全局配置
+  KIMI_MODEL_THINKING_EFFORT=low "$KIMI_BIN" -p "执行ai日报任务" -m "kimi-code/kimi-for-coding" 2>&1 || {
     rc=$?
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] ERROR: kimi 日报任务退出码 $rc"
     notify "❌ AI日报 ${DATE} 失败：kimi 退出码 ${rc}。最后日志：$(tail -n 3 "$LOG_FILE" | tr '\n' ' ' | cut -c1-200)"

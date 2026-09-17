@@ -6,6 +6,28 @@
 
 ---
 
+## 2026-09-17
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| ByteDance-Anew-Labs-Spinoff-290M-15B-HSG-IDG-Hillhouse | 2026-09-17 | 字节跳动分拆AI制药业务为独立公司Anew Labs，红杉中国/IDG/高瓴领投2.9亿美元、估值15亿美元，字节持股56% |
+| Intel-SKhynix-US-DRAM-Ohio-JV-IP-HBM-NAND | 2026-09-17 | 路透：英特尔与SK海力士洽谈美国本土投产DRAM（合资获内存IP或租用俄亥俄厂），覆盖常规DRAM/HBM/NAND，缓解美国供应链压力 |
+| Jensen-Huang-Trump-AI-No-Regulation-GTC-Washington | 2026-09-17 | 黄仁勋与特朗普同台：AI安全是工程挑战无需政府监管、"AI恐惧是骗局"，宣布GTC重返华盛顿；与Amodei减速檄文正面交锋 |
+| OpenAI-12T-PreIPO-Round-Valuation | 2026-09-17 | OpenAI被曝考虑以1.2万亿美元估值进行IPO前融资（推迟IPO背景下的新估值进展） |
+| Huawei-GuoPing-Compute-Goal-Be-NVIDIA-Ascend-Kunpeng | 2026-09-17 | 华为郭平内部座谈：计算业务目标是"成为英伟达"，确保全球任何大模型在昇腾/鲲鹏高效运行 |
+| Zhipu-5B-Refinance-30B-CNY-100K-P-Compute | 2026-09-17 | 智谱完成50亿美元"小股大债"再融资，300亿元算力约建10万P（40%训练/60%推理），坚定Scaling |
+| NovoNordisk-Anthropic-Claude-DrugDiscovery-Salesforce-37-Workflows | 2026-09-17 | 诺和诺德用Claude加速药物发现；Salesforce将37个销售工作流交Claude Agent执行 |
+| Apple-NVLink-Fusion-M-Series-Server-Chip-2029 | 2026-09-17 | The Information：苹果考虑借NVIDIA NVLink Fusion开发AI服务器M系列芯片，2029年推出，2011年Xserve停产后首次回归 |
+| Gemini-38-Live-Extended-Thinking-Voice-Agent | 2026-09-17 | 谷歌发布Gemini 3.8 Live与Live Extended Thinking，实时语音+扩展思考，对标OpenAI实时语音 |
+| xAI-Apple-Antitrust-Settlement-AppStore | 2026-09-17 | xAI撤回对苹果的反垄断诉讼，双方就App Store与AI分发条款和解 |
+| HelloRobotaxi-100M-3B-Valuation-Shanghai-SIG | 2026-09-17 | 上海L4公司Hello Robotaxi获约1亿美元融资、估值近30亿美元，上海国投领投（哈啰/蚂蚁/宁德时代背景） |
+| Apex-Intelligence-4B-CNY-Recursive-Self-Improvement | 2026-09-17 | 清华27岁助理教授创办Apex Intelligence，成立不到三月融资近4亿元，押注递归自我改进AI科研系统 |
+| Micron-512GB-DDR5-RDIMM-9200MTs-Axelera-Europa-AIPU | 2026-09-17 | 美光全球首款512GB DDR5 RDIMM（9200MT/s，TSV堆叠，单机12TB）；Axelera正式发布Europa AIPU（45W/629 TOPS） |
+| EU-Kids-Act-Under15-AI-Chatbot-Restriction | 2026-09-17 | 欧盟酝酿EU Kids Act：拟对15岁以下儿童使用AI聊天机器人设限，要求年龄限制与安全设计义务 |
+| OpenAI-White-House-Visit-AI-Execs-This-Week | 2026-09-17 | 美众议院议长透露OpenAI/Anthropic/谷歌等高管本周赴白宫讨论AI议题 |
+
+---
+
 ## 2026-09-15
 
 | 话题关键词 | 首次报道日期 | 简要描述 |

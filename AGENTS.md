@@ -61,7 +61,7 @@
    - 循环任务 7 天后自动过期，需定期重新创建。
 2. **系统级 crontab**（生产兜底）
    - 入口脚本：`scripts/cron-run.sh`
-   - 执行命令：`/Users/macmini/.kimi-code/bin/kimi -p "执行ai日报任务"`
+   - 执行命令：`/Users/macmini/.kimi-code/bin/kimi -p "执行ai日报任务" -m "kimi-code/kimi-for-coding"`（`-m` 固定本任务用 kimi-for-coding，不随全局 default_model 变动；实际由 cron-run.sh 以 `KIMI_MODEL_THINKING_EFFORT=low` 环境变量强制低思考强度，仅作用于本任务进程）
    - 注意：cron 环境请使用 `-p` 单条 prompt 模式；`-y`/`--yolo` 与 `-p`/`--prompt` 在 CLI 中不可同时使用
    - 默认时间：`7 8 * * *`（每天 08:07，Asia/Shanghai）
    - 日志：`logs/ai-daily-YYYYMMDD.log`
