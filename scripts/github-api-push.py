@@ -79,6 +79,8 @@ def main():
     docs_dir = os.path.join(PROJECT_DIR, "docs")
     for root, _, files in os.walk(docs_dir):
         for name in files:
+            if name.startswith("."):  # 跳过 .DS_Store 等隐藏文件
+                continue
             local_path = os.path.join(root, name)
             rel_path = os.path.relpath(local_path, docs_dir)
             repo_path = f"docs/{rel_path}"

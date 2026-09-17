@@ -23,6 +23,12 @@ YEAR_MONTH="${1:-$(date +%Y-%m)}"
 
 cd "$PROJECT_DIR"
 
+# 0. 兜底重新生成本月 HTML（日报任务可能漏掉 md-to-html 步骤，确保 docs/ 拷贝的是最新月报）
+YEAR_MONTH_REPORT="reports/$YEAR_MONTH.md"
+if [ -f "$YEAR_MONTH_REPORT" ]; then
+  python3 "$PROJECT_DIR/scripts/md-to-html.py" "$YEAR_MONTH_REPORT" "reports/$YEAR_MONTH.html"
+fi
+
 # 1. 更新 docs/ 目录（HTML 报告 + 索引 + 摘要）
 .venv/bin/python3 "$PROJECT_DIR/scripts/update-github-pages.py"
 
@@ -33,21 +39,33 @@ if ! git diff --quiet -- docs/ scripts/update-github-pages.py scripts/generate-d
 fi
 
 # 3. push 到 GitHub（使用 token 避免交互式密码输入）
+# 网络抖动（SSL_ERROR_SYSCALL 等）常见且多为瞬时，带间隔重试后再走 API 兜底
 PUSH_OK=0
-if git push "https://${GITHUB_API_KEY}@github.com/${REPO}.git" main; then
-  PUSH_OK=1
-else
-  echo "WARN: git push 失败，尝试通过 GitHub Contents API 直接更新 docs/ 文件" >&2
-  if .venv/bin/python3 "$PROJECT_DIR/scripts/github-api-push.py"; then
-    echo "INFO: GitHub Pages docs/ 已通过 API 更新" >&2
-    # 尝试同步远程变更到本地，避免下次 push 冲突
-    git fetch "https://${GITHUB_API_KEY}@github.com/${REPO}.git" main || true
-    git rebase FETCH_HEAD || git rebase --abort || true
-    # 再次尝试 git push（网络可能已恢复）
-    if git push "https://${GITHUB_API_KEY}@github.com/${REPO}.git" main; then
-      PUSH_OK=1
-    fi
+for _attempt in 1 2 3; do
+  if git push "https://${GITHUB_API_KEY}@github.com/${REPO}.git" main; then
+    PUSH_OK=1
+    break
   fi
+  echo "WARN: git push 失败（第 ${_attempt}/3 次），稍后重试..." >&2
+  [ "$_attempt" -lt 3 ] && sleep 30
+done
+if [ "$PUSH_OK" -eq 0 ]; then
+  echo "WARN: git push 重试后仍失败，尝试通过 GitHub Contents API 直接更新 docs/ 文件" >&2
+  for _attempt in 1 2; do
+    if .venv/bin/python3 "$PROJECT_DIR/scripts/github-api-push.py"; then
+      echo "INFO: GitHub Pages docs/ 已通过 API 更新" >&2
+      # 尝试同步远程变更到本地，避免下次 push 冲突
+      git fetch "https://${GITHUB_API_KEY}@github.com/${REPO}.git" main || true
+      git rebase FETCH_HEAD || git rebase --abort || true
+      # 再次尝试 git push（网络可能已恢复）
+      if git push "https://${GITHUB_API_KEY}@github.com/${REPO}.git" main; then
+        PUSH_OK=1
+      fi
+      break
+    fi
+    echo "WARN: API 兜底失败（第 ${_attempt}/2 次），稍后重试..." >&2
+    [ "$_attempt" -lt 2 ] && sleep 30
+  done
 fi
 
 if [ "$PUSH_OK" -eq 1 ]; then

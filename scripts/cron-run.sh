@@ -79,6 +79,30 @@ touch "$LOCK_FILE"
       f && /- \*\*来源\*\*/ { n++ }
       END { print n+0 }
     ' "$PROJECT_DIR/reports/$YEAR_MONTH.md" 2>/dev/null || echo "?")
-    notify "✅ AI日报 ${DATE} 完成，最新一期精选 ${COUNT} 条，已同步。"
+    # 提取最新日期区块 Breaking 小节的前 2 条标题（兼容两种格式：独立标题行 / "- **标题**" 列表行）
+    BREAKING=$(REPORT="$PROJECT_DIR/reports/$YEAR_MONTH.md" python3 - <<'PYEOF'
+import os, re
+try:
+    text = open(os.environ["REPORT"], encoding="utf-8").read()
+    block = re.split(r'^## 【', text, flags=re.M)[1]
+    sec = block.split('### 🔥 Breaking')[1].split('### ')[0]
+    titles = []
+    for line in sec.splitlines():
+        m = re.match(r'^[-•]\s*\*\*(.+?)\*\*', line) or re.match(r'^\*\*(.+?)\*\*\s*$', line.strip())
+        if m and not m.group(1).startswith(('来源', '时间')):
+            titles.append(m.group(1))
+    print('\n'.join(f"{i}. {t}" for i, t in enumerate(titles[:2], 1)))
+except Exception:
+    pass
+PYEOF
+)
+    if [ -n "$BREAKING" ]; then
+      notify "✅ AI日报 ${DATE} 完成，最新一期精选 ${COUNT} 条，已同步。
+
+今日Breaking：
+${BREAKING}"
+    else
+      notify "✅ AI日报 ${DATE} 完成，最新一期精选 ${COUNT} 条，已同步。"
+    fi
   fi
 } >> "$LOG_FILE" 2>&1

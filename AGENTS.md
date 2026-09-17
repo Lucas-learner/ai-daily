@@ -15,9 +15,10 @@
 7. **GitHub Pages 公开站点**：`https://lucas-learner.github.io/ai-daily/`
 8. **GitHub 同步兜底脚本**：`scripts/github-api-push.py`（当 `git push` 因网络/SSL 失败时，通过 GitHub Contents API 直接更新 `docs/` 文件）
 9. **docs/ 静态发布**：`scripts/update-github-pages.py` 会确保 `docs/.nojekyll` 存在，禁用 Jekyll，避免 `jekyll-github-metadata` 调用 GitHub API 时偶发 503 导致构建失败
-10. **站点样式**：各页面共享 `scripts/page_style.py`（卡片式设计、暗色模式、月报日期 TOC/锚点）；改样式只改这个文件，不要手改 docs/ 下的生成产物
-10. **通知配置**：`scripts/config.sh`（已 gitignore，含 iMessage 接收人 `NOTIFY_TO`；模板见 `scripts/config.example.sh`）
-11. **本地检索**：`scripts/query-items.sh --q 关键词 [--days N | --month YYYY-MM] [--category 五类之一] [--all] [--stats]`
+10. **月报 HTML 兜底**：`sync-to-icloud.sh` / `sync-to-github.sh` 在同步前会自动用 `md-to-html.py` 重新生成本月 `reports/YYYY-MM.html`，日报任务写稿后无需再手动执行 HTML 再生成；GitHub 推送自带重试 + API 兜底
+11. **站点样式**：各页面共享 `scripts/page_style.py`（卡片式设计、暗色模式、月报日期 TOC/锚点）；改样式只改这个文件，不要手改 docs/ 下的生成产物
+12. **通知配置**：`scripts/config.sh`（已 gitignore，含 iMessage 接收人 `NOTIFY_TO`；模板见 `scripts/config.example.sh`）
+13. **本地检索**：`scripts/query-items.sh --q 关键词 [--days N | --month YYYY-MM] [--category 五类之一] [--all] [--stats]`
 
 ## 执行原则
 
@@ -74,4 +75,6 @@
 - 分类使用三级标题：`### 🔥 Breaking`、`### 📌 核心动态`、`### 📎 其他要闻`、`### 💡 今日洞察`
 - 新闻标题加粗 `**标题**`
 - **每条新闻必须附带可点击的来源链接**：`- **来源**：[来源名](URL) | **时间**：X月X日`；多个来源时用 `/` 分隔多个链接
+- **条目格式（Breaking/核心动态）**：标题为独立加粗行并带 Emoji 前缀，下接来源行、详情段落（补充数字/背景/与往日报道的呼应）与"信号："分析行，条目间用 `---` 分隔；其他要闻为单行条目（标题内嵌来源链接+一句点评）。禁止只写一句概述的简略风格
+- 日期区块首行注明覆盖窗口：`*本期覆盖 M月D日 08:00 至 M月D日 08:00（北京时间）。*`
 - 新日期追加到当月文件最顶部（逆序）

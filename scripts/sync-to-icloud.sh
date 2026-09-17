@@ -21,6 +21,10 @@ if [ ! -f "$REPORT" ]; then
   exit 1
 fi
 
+# 重新生成本月 HTML，确保月报可视化始终包含最新日期区块
+#（日报任务由 LLM 执行，可能漏掉 md-to-html 再生成步骤，这里在同步侧兜底）
+python3 "$PROJECT_DIR/scripts/md-to-html.py" "$REPORT" "$HTML"
+
 # 检查 iCloud 目录是否可访问（避免目录阻塞时产生临时目录/残留文件）
 # 使用子进程 + 10 秒超时，touch/rm 任一环节卡住都认为不可用
 _icloud_access_ok=0
