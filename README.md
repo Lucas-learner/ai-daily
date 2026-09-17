@@ -8,7 +8,7 @@
 
 ```mermaid
 flowchart LR
-    A[系统 cron<br/>每天 08:07] --> B[cron-run.sh]
+    A[系统 cron<br/>每天 08:00] --> B[cron-run.sh]
     B --> C[kimi -p<br/>执行ai日报任务]
     C --> D[搜索 AI 新闻]
     D --> E[去重 & 结构化]
@@ -69,7 +69,7 @@ flowchart LR
 
 ## 定时任务
 
-- 时间：每天 08:07（Asia/Shanghai）；日报时间窗为前一日 08:00 至当日 08:00
+- 时间：每天 08:00（Asia/Shanghai）；日报时间窗为前一日 08:00 至当日 08:00
 - 主方式：系统级 `crontab`（生产兜底）
   - 入口脚本：`scripts/cron-run.sh`
   - 触发命令：`kimi -p "执行ai日报任务"`

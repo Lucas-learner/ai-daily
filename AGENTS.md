@@ -24,7 +24,7 @@
 
 - 所有文件操作优先使用项目内的 helper 脚本，减少直接 Edit/Write 的出错概率。
 - 日报生成后必须同时更新两处：`memory/ai-news-tracker.md`（只保留最近 30 天主题）和 `data/items/YYYY-MM-DD.jsonl`（经 `scripts/add-daily-items.sh` 校验写入，含未入选条目）。
-- 时间窗定义：日报的"今日"= 前一日 08:00 至当日 08:00（北京时间），与 08:07 cron 对齐；采集与筛选以此窗口为准。
+- 时间窗定义：日报的"今日"= 前一日 08:00 至当日 08:00（北京时间），与 08:00 cron 对齐；采集与筛选以此窗口为准。
 - 去重分两层：先 URL 精确去重（脚本级 grep -F 比对 data/items/ 与 tracker），再 LLM 语义去重。
 - 每月 1 日先执行上个月归档（生成月度总结 + HTML），再开始当月日报；月度统计（分类/来源分布）用 `query-items.sh --month YYYY-MM --stats` 出数，LLM 只做解读。
 - 自动化过程中遇到外部服务阻塞（如 iCloud 访问失败、GitHub push 超时、网络异常），应主动尝试多种方法解决，而不是直接跳过或放弃。常见手段包括：重试、使用备用同步路径、改用 API 直接更新、记录错误并继续后续步骤等。
@@ -65,7 +65,7 @@
    - 入口脚本：`scripts/cron-run.sh`
    - 执行命令：`/Users/macmini/.kimi-code/bin/kimi -p "执行ai日报任务" -m "kimi-code/kimi-for-coding"`（`-m` 固定本任务用 kimi-for-coding，不随全局 default_model 变动；实际由 cron-run.sh 以 `KIMI_MODEL_THINKING_EFFORT=low` 环境变量强制低思考强度，仅作用于本任务进程）
    - 注意：cron 环境请使用 `-p` 单条 prompt 模式；`-y`/`--yolo` 与 `-p`/`--prompt` 在 CLI 中不可同时使用
-   - 默认时间：`7 8 * * *`（每天 08:07，Asia/Shanghai）
+   - 默认时间：`0 8 * * *`（每天 08:00，Asia/Shanghai）
    - 日志：`logs/ai-daily-YYYYMMDD.log`
 
 新增或迁移机器后，优先确保系统 crontab 存在；kimi-code 内置 cron 仅用于临时调试。
