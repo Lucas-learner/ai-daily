@@ -40,9 +40,18 @@ fi
 
 # 3. push 到 GitHub（使用 token 避免交互式密码输入）
 # 网络抖动（SSL_ERROR_SYSCALL 等）常见且多为瞬时，带间隔重试后再走 API 兜底
+# 本地代理（如 Clash 7897）上游可能失效但 GitHub 直连畅通：每次先绕代理直连，失败再走默认代理环境
 PUSH_OK=0
+try_push() {
+  local url="https://${GITHUB_API_KEY}@github.com/${REPO}.git"
+  if env -u HTTP_PROXY -u HTTPS_PROXY -u ALL_PROXY -u http_proxy -u https_proxy -u all_proxy \
+     git -c http.proxy= -c https.proxy= push "$url" main; then
+    return 0
+  fi
+  git push "$url" main
+}
 for _attempt in 1 2 3; do
-  if git push "https://${GITHUB_API_KEY}@github.com/${REPO}.git" main; then
+  if try_push; then
     PUSH_OK=1
     break
   fi
@@ -52,13 +61,14 @@ done
 if [ "$PUSH_OK" -eq 0 ]; then
   echo "WARN: git push 重试后仍失败，尝试通过 GitHub Contents API 直接更新 docs/ 文件" >&2
   for _attempt in 1 2; do
-    if .venv/bin/python3 "$PROJECT_DIR/scripts/github-api-push.py"; then
+    if env -u HTTP_PROXY -u HTTPS_PROXY -u ALL_PROXY -u http_proxy -u https_proxy -u all_proxy \
+       .venv/bin/python3 "$PROJECT_DIR/scripts/github-api-push.py"; then
       echo "INFO: GitHub Pages docs/ 已通过 API 更新" >&2
       # 尝试同步远程变更到本地，避免下次 push 冲突
       git fetch "https://${GITHUB_API_KEY}@github.com/${REPO}.git" main || true
       git rebase FETCH_HEAD || git rebase --abort || true
       # 再次尝试 git push（网络可能已恢复）
-      if git push "https://${GITHUB_API_KEY}@github.com/${REPO}.git" main; then
+      if try_push; then
         PUSH_OK=1
       fi
       break

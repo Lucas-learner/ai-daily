@@ -28,6 +28,7 @@
 - 去重分两层：先 URL 精确去重（脚本级 grep -F 比对 data/items/ 与 tracker），再 LLM 语义去重。
 - 每月 1 日先执行上个月归档（生成月度总结 + HTML），再开始当月日报；月度统计（分类/来源分布）用 `query-items.sh --month YYYY-MM --stats` 出数，LLM 只做解读。
 - 自动化过程中遇到外部服务阻塞（如 iCloud 访问失败、GitHub push 超时、网络异常），应主动尝试多种方法解决，而不是直接跳过或放弃。常见手段包括：重试、使用备用同步路径、改用 API 直接更新、记录错误并继续后续步骤等。
+- 本机 shell 与系统代理（Clash 127.0.0.1:7897）上游可能失效，表现为所有 HTTPS 走代理报 `SSL_ERROR_SYSCALL` 但 `--noproxy '*'` 直连畅通。sync-to-github.sh 已内置「先绕代理直连、再走默认代理」的降级；手动排查网络时先用 `curl --noproxy '*' -I https://github.com` 判断是代理问题还是 GitHub 本身不可达。
 - 失败必通知：`cron-run.sh` 在 kimi 失败、GitHub 同步失败、昨日缺席、锁文件残留时会发 iMessage 告警（需配置 `scripts/config.sh` 的 `NOTIFY_TO`）；不要删除这些告警调用。
 
 ## 配额控制（199 套餐）
