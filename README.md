@@ -25,10 +25,10 @@ flowchart LR
 
 本日报采用**混合采集模式**：先由 `scripts/fetch-rss.py` 抓取固定 RSS 源（清单见 `scripts/rss-feeds.txt`：雷峰网、InfoQ中文、36氪、量子位、IT之家、TechCrunch、The Verge、Ars Technica、OpenAI Blog、MIT Technology Review、Hugging Face Blog）产出时间窗内候选池，再由子 agent 用 WebSearch 补充候选池未覆盖的重大突发与一手报道。在时效性与可信度之间做平衡，遵循以下原则：
 
-1. **一手优先**：优先采用科技公司官方公告、官方博客、开发者文档或官方活动页面。当官方信息存在时，不再依赖二手报道。
+1. **一手优先**：事实归属（时间、金额、名称）以科技公司官方公告、官方博客为准。但性能/效果/规模类声明仅有官方来源时视为"公司口径"，正文须带"官方称/公司披露"字样，不当作已验证事实。
 2. **权威媒体次之**：在官方信息不足或需要背景解读时，参考具有独立编辑团队和调查能力的科技/财经媒体，如 The Verge、TechCrunch、Reuters、Bloomberg、Financial Times、Axios、9to5Mac、MacRumors 等。
-3. **多源交叉验证**：重要新闻至少有两个独立信源相互印证，避免依赖单一媒体或匿名爆料。对传闻/小道消息类信息会明确标注。
-4. **排除低质来源（脚本强制）**：内容农场与 AI 聚合站域名列入 `scripts/aggregator-blacklist.txt`，其 URL 在写入 `data/items/` 时被 `add-daily-items.sh` 自动剔除；这类站点只能作为线索，必须回溯原始来源链接。
+3. **多源交叉验证**：重要新闻至少有两个**编辑上独立**的信源相互印证——官方公告加其转载只算一个信源。对传闻/小道消息类信息会明确标注。海外事件以英文原始来源为准，中文翻译稿只作佐证。
+4. **排除低质来源（脚本强制）**：内容农场与 AI 聚合站域名列入 `scripts/aggregator-blacklist.txt`，其 URL 在写入 `data/items/` 时被 `add-daily-items.sh` 自动剔除；这类站点只能作为线索，必须回溯原始来源链接。仅官方口径的重磅发布最高进入核心动态（标注"官方口径"），不进入 Breaking。
 5. **研究机构和监管文件**：涉及 AI 安全、政策影响、就业数据等主题时，会引用 METR、Anthropic 经济指数、Goldman Sachs、各国监管机构文件等可溯源的研究。
 
 ## 目录
