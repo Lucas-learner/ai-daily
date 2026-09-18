@@ -72,20 +72,22 @@ touch "$LOCK_FILE"
   echo "[$(date '+%Y-%m-%d %H:%M:%S')] 系统 cron AI 日报任务完成"
 
   # 成功简报（默认关闭，config.sh 中 NOTIFY_ON_SUCCESS=1 开启）
-  # 统计当月文件最新日期区块的条目数（不假设区块日期等于执行日，跨零点/补跑场景也能对上）
+  # 统计当月文件最新有效日期区块（第一个含 Breaking 小节的区块）的条目数，空区块自动跳过
   if [ "$NOTIFY_ON_SUCCESS" = "1" ]; then
     COUNT=$(awk '
-      /^## 【/ { if (f) exit; f=1; next }
-      f && /- \*\*来源\*\*/ { n++ }
+      /^## 【/ { if (in_target) exit; in_target=0 }
+      /### 🔥 Breaking/ { in_target=1 }
+      in_target && /- \*\*来源\*\*/ { n++ }
       END { print n+0 }
     ' "$PROJECT_DIR/reports/$YEAR_MONTH.md" 2>/dev/null || echo "?")
-    # 提取最新日期区块 Breaking 小节的前 2 条标题（兼容两种格式：独立标题行 / "- **标题**" 列表行）
+    # 提取最新有效日期区块（跳过空区块）Breaking 小节的前 2 条标题（兼容两种格式：独立标题行 / "- **标题**" 列表行）
     BREAKING=$(REPORT="$PROJECT_DIR/reports/$YEAR_MONTH.md" python3 - <<'PYEOF'
 import os, re
 try:
     text = open(os.environ["REPORT"], encoding="utf-8").read()
-    block = re.split(r'^## 【', text, flags=re.M)[1]
-    sec = block.split('### 🔥 Breaking')[1].split('### ')[0]
+    blocks = re.split(r'^## 【', text, flags=re.M)[1:]
+    sec = next(b.split('### 🔥 Breaking')[1].split('### ')[0]
+               for b in blocks if '### 🔥 Breaking' in b)
     titles = []
     for line in sec.splitlines():
         m = re.match(r'^[-•]\s*\*\*(.+?)\*\*', line) or re.match(r'^\*\*(.+?)\*\*\s*$', line.strip())

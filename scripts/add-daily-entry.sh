@@ -30,6 +30,14 @@ if [ ! -f "$REPORT" ]; then
   } > "$REPORT"
 fi
 
+# body 首行若自带日期标题（## 【...】），剥离之，避免与本脚本打印的标题重复
+STRIPPED_BODY=$(mktemp)
+awk '
+  NR==1 && /^## 【/ { skipped=1; next }
+  NR==2 && skipped && /^$/ { next }
+  { print }
+' "$BODY_FILE" > "$STRIPPED_BODY"
+
 TMP=$(mktemp)
 {
   # 输出月报标题部分（# 开头的标题、说明、第一个 ---）
@@ -41,16 +49,22 @@ TMP=$(mktemp)
 
   # 输出新的日期条目
   printf '## 【%s】\n\n' "$DATE"
-  cat "$BODY_FILE"
+  cat "$STRIPPED_BODY"
   printf '\n\n---\n\n'
 
-  # 输出已有的日期条目
-  awk '
+  # 输出已有的日期条目（跳过同日期旧条目，保证幂等：补跑/重跑不会产生重复区块）
+  awk -v date="$DATE" '
     BEGIN { in_header=1 }
-    /^## 【/ { in_header=0 }
-    !in_header { print }
+    /^## 【/ {
+      in_header=0
+      skip = ($0 == "## 【" date "】")
+      if (skip) next
+    }
+    in_header || skip { next }
+    { print }
   ' "$REPORT"
 } > "$TMP"
 
+rm -f "$STRIPPED_BODY"
 mv "$TMP" "$REPORT"
 echo "Prepended $DATE to $REPORT"

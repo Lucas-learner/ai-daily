@@ -1,0 +1,19 @@
+# AI日报 RSS 固定源清单（fetch-rss.py 读取）
+# 格式：来源名 | Feed URL（# 开头为注释，空行忽略）
+# 增删来源只改本文件，无需改代码。
+
+# 国内
+# 机器之心 RSS 已于 2026-09 失效（所有路径返回 HTML 数据服务页），如有新地址再加回
+雷峰网 | https://www.leiphone.com/feed
+InfoQ中文 | https://www.infoq.cn/feed
+36氪 | https://36kr.com/feed
+量子位 | https://www.qbitai.com/feed
+IT之家 | https://www.ithome.com/rss/
+
+# 海外
+TechCrunch | https://techcrunch.com/feed/
+The Verge | https://www.theverge.com/rss/index.xml
+Ars Technica | https://feeds.arstechnica.com/arstechnica/index
+OpenAI Blog | https://openai.com/news/rss.xml
+MIT Technology Review | https://www.technologyreview.com/feed/
+Hugging Face Blog | https://huggingface.co/blog/feed.xml

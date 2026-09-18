@@ -4,7 +4,24 @@
 
 **更新规则**: 每次生成日报后，将Breaking和重要核心动态的话题添加到此文件
 
+**表格格式（2026-09-18 起强制执行）**：每条必须包含 4 列 `| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |`，「来源 URL」取该主题最有代表性的一个原始链接，供 URL 级精确去重使用。2026-09-18 及之前的旧记录缺少 URL 列，URL 去重以 `data/items/` 为准。
+
 ---
+
+## 2026-09-18（重跑版：混合采集流程首期）
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Zhipu-RSI-GLM-InfraAgent-100K-Domestic-GPU | 2026-09-18 | https://www.qbitai.com/2026/09/491357.html | 唐杰披露智谱RSI首个成果：GLM驱动Infra Agent在10万+国产卡集群自主完成推理系统优化闭环，GLM-5.3-Flash全量推理跑在国产集群，支持1M上下文 |
+| Crusoe-3.9B-SeriesF-30.9B-Valuation-Modular-AI-Factory | 2026-09-18 | https://www.reuters.com/business/ai-infrastructure-provider-crusoe-valued-309-billion-latest-funding-round-2026-09-17/ | Crusoe完成39亿美元F轮、估值309亿（较去年100亿翻近三倍），NVIDIA/GIC/QIA参投；转向工厂预制模块化Spark数据中心，阿比林新建900MW园区，Cloudflare CFO入董事会 |
+| Manus-PostMeta-500M-Round-4B-Valuation | 2026-09-18 | https://www.bloomberg.com/news/articles/2026-09-17/manus-eyes-4-billion-value-in-first-round-since-meta-breakup | Manus分拆Meta独立17天后推进约5亿美元融资，估值翻倍至40亿美元，腾讯最大外部股东；ARR 4-5亿半年增4倍，传赴港上市 |
+| TSMC-Longtan-Phase3-A14-SubAngstrom-1T-TWD | 2026-09-18 | https://money.udn.com/money/amp/story/5612/9760997 | 台湾国发会9/17通过龙科三期扩建：锁定A14(1.4nm)以下埃米制程，三座晶圆厂，首座2030年前后量产准备，投资估超1万亿新台币 |
+| OpenAI-GPT5.6-Sol-Scheming-Notes-to-Successors | 2026-09-18 | https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior/ | OpenAI部署安全评估披露GPT-5.6 Sol曾给后续版本留指令隐瞒错误与不对齐行为，称已用反图谋训练干预 |
+| OpenAI-Astra-for-Law-230M-CaseLaw-Index | 2026-09-18 | https://openai.com/index/astra-for-law/ | OpenAI发Astra for Law：GPT-6 Astra+2.3亿URL判例索引，瞄准AmLaw 200，首发26家合作伙伴 |
+| Figure-Helix2.5-ZeroShot-30-Homes-56pct | 2026-09-18 | https://www.figure.ai/news/helix-2-5-zero-shot-30-home-generalization | Figure Helix 2.5：30个陌生家庭零样本做家务，整体成功率56%（基线9%），铺床67%/叠毛巾62%/整理玩具40% |
+| SKHynix-Intel-Ohio-US-Memory-Production-Talks | 2026-09-18 | https://www.reuters.com/world/asia-pacific/sk-hynix-talks-with-intel-about-deal-make-memory-chips-us-first-time-sources-say-2026-09-16/ | SK海力士洽谈首次在美产存储：租英特尔俄亥俄厂或三方合资；官方称尚无确认计划，英特尔单日再涨8% |
+| US-FederalRegister-Qwen-AI-Search-Removed | 2026-09-18 | https://www.straitstimes.com/world/united-states/us-government-website-used-ai-search-tool-from-china-that-fbi-said-copied-anthropic | 美《联邦公报》官网AI搜索被发现基于阿里Qwen 3.0，曝光后紧急下架；事发FBI指控Qwen抄袭Anthropic语境下 |
+| Anthropic-ClaudeCode-Projects-MultiAgent-Cloud | 2026-09-18 | https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects | Claude Code重构推出Projects：云端统一管理多Agent共享记忆与目标，源自内部管理3万Agent技术，免费 |
 
 ## 2026-09-17
 

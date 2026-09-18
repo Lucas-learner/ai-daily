@@ -48,31 +48,22 @@
 
 ### 第二步：数据采集
 
-**时间窗定义（先明确，再采集）**：日报的"今日"= **前一日 08:00 至当日 08:00（北京时间）**，与 08:07 的 cron 触发时间对齐。采集、筛选、写入都以此窗口为准；窗口外但重要的内容归入最近一期日报，不跨期重复。
+**时间窗定义（先明确，再采集）**：日报的"今日"= **前一日 08:00 至当日 08:00（北京时间）**，与 08:00 的系统 cron 触发时间对齐。采集、筛选、写入都以此窗口为准；窗口外但重要的内容归入最近一期日报，不跨期重复。
 
-从以下 RSS 源获取时间窗内的文章：
+**混合采集模式（固定源为主，搜索为辅）：**
 
-**国内源：**
-| 来源 | URL |
-|------|-----|
-| 机器之心 | https://www.jiqizhixin.com/rss |
-| InfoQ | https://www.infoq.cn/feed |
-| Seebug Paper | https://paper.seebug.org/rss |
+1. **先跑 RSS 固定源采集脚本**，产出时间窗内候选池：
+   ```bash
+   python3 /Users/macmini/projects/skills/ai-daily/scripts/fetch-rss.py --hours 25 > /tmp/ai-daily-rss-$(date +%Y%m%d).jsonl
+   ```
+   源清单在 `scripts/rss-feeds.txt`（国内：雷峰网/InfoQ中文/36氪/量子位/IT之家；海外：TechCrunch/The Verge/Ars Technica/OpenAI Blog/MIT Technology Review/Hugging Face Blog）。增删来源只改该文件，无需改代码。单源失败脚本只告警（stderr）不中断，属正常现象；候选为 0 或明显偏少时加大 WebSearch 比重。
+2. **再按 AGENTS.md「配额控制」派 4 个子 agent**：优先从 RSS 候选池挑选本方向条目（Read/Grep 读 `/tmp/ai-daily-rss-*.jsonl`，不消耗搜索预算），WebSearch 用于补充 RSS 未覆盖的重大突发与一手报道（Reuters/Bloomberg/FT/The Information 等）。
+3. **方向覆盖要求**：子 agent 1 须显式覆盖论文/研究类（`paper` 类长期缺失即视为采集遗漏）；子 agent 4 须覆盖中文垂直媒体（36氪/量子位/雷峰网/IT之家等）与国产芯片动态。
 
-**海外源：**
-| 来源 | URL |
-|------|-----|
-| TechCrunch | https://techcrunch.com/feed/ |
-| The Verge | https://www.theverge.com/rss/index.xml |
-| Ars Technica | https://feeds.arstechnica.com/arstechnica/index |
-| OpenAI Blog | https://openai.com/news/rss.xml |
-
-必要时使用 WebSearch 补充重要突发新闻。
-
-**来源可信度要求：**
-- 优先使用原始媒体或官方博客（TechCrunch、The Verge、机器之心、OpenAI Blog 等）。
-- AI 聚合网站（如 buildfastwithai.com、aitoolsrecap.com）只能作为线索，关键事实需追溯到原始来源。
-- 若无法验证真实性，标记为"据报道称"或降级为"其他要闻"。
+**来源可信度要求（硬性，写入时由脚本强制）：**
+- 优先使用原始媒体或官方博客（官方公告 > 一手报道 > 转载）。
+- **聚合站/内容农场禁止进入 jsonl 与日报正文**：`scripts/aggregator-blacklist.txt` 所列域名（killtheai、buildfastwithai、aiweekly、readaitime、aidapted、smzdm 等）的 URL 会在 `add-daily-items.sh` 校验时被直接剔除。这类站点只能作为线索，必须回溯到原始来源链接。
+- 重要新闻尽量提供两个独立信源（`/` 分隔多个链接）；无法验证真实性的，标记"据报道称"并降级为"其他要闻"。
 
 ### 第三步：去重筛选（关键）
 
@@ -117,30 +108,29 @@
 
 **内容结构：**
 ```markdown
+*本期覆盖 M月D日 08:00 至 M月D日 08:00（北京时间）。*
+
 ### 🔥 Breaking
 
-**🌍 新闻标题**
+**🌍 新闻标题（独立加粗行，带 Emoji 前缀）**
+
 - **来源**：[来源名](https://example.com/article) | **时间**：X月X日
-- 要点 1
-- 要点 2
+- 详情段落：补充数字、背景、与往日报道的呼应
+- 信号：……（一句话分析）
+
+---
 
 **🌍 另一条 Breaking**
-- **来源**：[来源名](https://example.com/article) | **时间**：X月X日
-- 要点 1
-- 要点 2
+
+- **来源**：……
 
 ### 📌 核心动态
 
-**🌍 新闻标题**
-...
-
-**🌍 新闻标题**
-...
+（同 Breaking 条目格式，条目间用 `---` 分隔）
 
 ### 📎 其他要闻
 
-**🌍 新闻标题**
-...
+- **[单行标题，内嵌来源链接](URL)**：一句点评。
 
 ### 💡 今日洞察
 
@@ -151,9 +141,9 @@
 ```
 
 **格式要求：**
-- 日报正文开头（`### 🔥 Breaking` 之前）写一行时间窗说明：`> ⏱ 时间窗：M月D日 08:00 – M月D日 08:00（北京时间）`。
-- 每条新闻用空行分隔，**不要用 `---` 分隔同类别内的新闻条目**。
-- 不同类别之间（如 Breaking → 核心动态）可用 `---` 分隔。
+- 日期区块首行写时间窗说明：`*本期覆盖 M月D日 08:00 至 M月D日 08:00（北京时间）。*`（斜体）。
+- Breaking/核心动态条目：标题为独立加粗行并带 Emoji 前缀，下接来源行、详情段落与"信号："分析行；**条目之间用 `---` 分隔**。
+- 其他要闻为单行条目（标题内嵌来源链接 + 一句点评），条目间不加 `---`。禁止只写一句概述的简略风格。
 - **来源链接**：每条新闻必须提供至少一个可点击的原始来源 URL，格式为 `[来源名](URL)`；若参考了多个来源，用 `/` 分隔多个链接（如 `[TechCrunch](URL1) / [The Verge](URL2)`）。
 - 不要在条目中添加 `> 采集时间`、`> 信息来源`、`> 🔗 来源链接` 等元信息行。
 - 每日精选 5-8 条，必须有 `### 💡 今日洞察` 段落。
@@ -188,7 +178,7 @@
    ```bash
    bash /Users/macmini/projects/skills/ai-daily/scripts/add-daily-items.sh YYYY-MM-DD /tmp/ai-daily-YYYY-MM-DD-items.jsonl
    ```
-   脚本会校验每行 JSON 的必填字段后追加到 `data/items/YYYY-MM-DD.jsonl`。
+   脚本会校验每行 JSON 的必填字段，并剔除聚合站黑名单来源与历史重复 URL（剔除只告警不阻塞，字段格式错误则整批拒绝），再追加到 `data/items/YYYY-MM-DD.jsonl`。
 
 ### 第七步：同步到 iCloud
 
@@ -256,7 +246,7 @@ bash /Users/macmini/projects/skills/ai-daily/scripts/sync-to-icloud.sh YYYY-MM
 |--------|------|
 | 时间范围 | 只保留时间窗内（前一日 08:00 至当日 08:00，北京时间）内容 |
 | 数量控制 | 每日 5-8 条精华 |
-| 去重 | 与 30 天内已报主题重合度 < 20% |
+| 去重 | URL 精确去重（add-daily-items.sh 强制，含历史库与黑名单剔除）+ 语义去重（同公司同事件线跳过，LLM 判断） |
 | 主题格式 | 公司-关键词-核心事实 |
 | Token优化 | 跟踪文件只存主题不存详情 |
 
@@ -276,6 +266,8 @@ bash /Users/macmini/projects/skills/ai-daily/scripts/sync-to-icloud.sh YYYY-MM
 
 - 跟踪文件：`/Users/macmini/projects/skills/ai-daily/memory/ai-news-tracker.md`
 - 结构化条目：`/Users/macmini/projects/skills/ai-daily/data/items/YYYY-MM-DD.jsonl`（完整采集池，含未入选条目）
+- RSS 固定源采集：`scripts/fetch-rss.py`（源清单 `scripts/rss-feeds.txt`，增删来源改清单即可）
+- 来源黑名单：`scripts/aggregator-blacklist.txt`（聚合站域名，写入 jsonl 时被剔除）
 - 本地检索：`scripts/query-items.sh --q 关键词 [--days N | --month YYYY-MM] [--category 五类之一] [--all] [--stats]`
 - 月报文件：`/Users/macmini/projects/skills/ai-daily/reports/YYYY-MM.md`
 - 可视化文件：`/Users/macmini/projects/skills/ai-daily/reports/YYYY-MM.html`

@@ -1,0 +1,10 @@
+# AI日报 聚合站/低质来源黑名单（add-daily-items.sh 校验时拒绝）
+# 每行一个域名，子域名自动匹配（如写 example.com 则 a.example.com 也命中）。
+# 这些站点只可作搜索线索，其 URL 禁止进入 data/items/ 与日报正文，必须回溯原始来源。
+killtheai.com
+buildfastwithai.com
+aiweekly.co
+readaitime.com
+aidapted.ro
+aitoolsrecap.com
+smzdm.com

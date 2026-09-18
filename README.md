@@ -23,12 +23,12 @@ flowchart LR
 
 ## 信息源策略
 
-本日报在时效性与可信度之间做平衡，遵循以下原则：
+本日报采用**混合采集模式**：先由 `scripts/fetch-rss.py` 抓取固定 RSS 源（清单见 `scripts/rss-feeds.txt`：雷峰网、InfoQ中文、36氪、量子位、IT之家、TechCrunch、The Verge、Ars Technica、OpenAI Blog、MIT Technology Review、Hugging Face Blog）产出时间窗内候选池，再由子 agent 用 WebSearch 补充候选池未覆盖的重大突发与一手报道。在时效性与可信度之间做平衡，遵循以下原则：
 
 1. **一手优先**：优先采用科技公司官方公告、官方博客、开发者文档或官方活动页面。当官方信息存在时，不再依赖二手报道。
 2. **权威媒体次之**：在官方信息不足或需要背景解读时，参考具有独立编辑团队和调查能力的科技/财经媒体，如 The Verge、TechCrunch、Reuters、Bloomberg、Financial Times、Axios、9to5Mac、MacRumors 等。
 3. **多源交叉验证**：重要新闻至少有两个独立信源相互印证，避免依赖单一媒体或匿名爆料。对传闻/小道消息类信息会明确标注。
-4. **排除低质来源**：不采用内容农场、营销号、无署名爆料账号，以及明显带有商业推广的稿件。
+4. **排除低质来源（脚本强制）**：内容农场与 AI 聚合站域名列入 `scripts/aggregator-blacklist.txt`，其 URL 在写入 `data/items/` 时被 `add-daily-items.sh` 自动剔除；这类站点只能作为线索，必须回溯原始来源链接。
 5. **研究机构和监管文件**：涉及 AI 安全、政策影响、就业数据等主题时，会引用 METR、Anthropic 经济指数、Goldman Sachs、各国监管机构文件等可溯源的研究。
 
 ## 目录
@@ -57,6 +57,9 @@ flowchart LR
     ├── archive-month.sh                 # 月度总结 + HTML + iCloud 同步
     ├── config.example.sh                # 通知配置模板（复制为 config.sh，已 gitignore）
     ├── cron-run.sh                      # 系统 cron 入口（含失败告警/昨日缺席检测）
+    ├── fetch-rss.py                     # RSS 固定源采集（curl 直连优先，输出 JSONL 候选池）
+    ├── rss-feeds.txt                    # RSS 固定源清单（增删来源只改本文件）
+    ├── aggregator-blacklist.txt         # 聚合站/内容农场域名黑名单（写入 jsonl 时剔除）
     ├── generate-daily-summary.sh        # 生成每日摘要（支持 iCloud/GitHub 输出目录）
     ├── md-to-html.py                    # Markdown 转 HTML（日期锚点 + TOC 目录）
     ├── page_style.py                    # 站点共享样式/页面骨架（卡片式 + 暗色模式）
