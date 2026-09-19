@@ -32,7 +32,14 @@ fi
 # 1. 更新 docs/ 目录（HTML 报告 + 索引 + 摘要）
 .venv/bin/python3 "$PROJECT_DIR/scripts/update-github-pages.py"
 
-# 2. 提交变更（如果有）
+# 1.5 提交源文件变更（reports/ memory/ data/），避免只推 docs/ 而源数据滞留本地
+# 注：backups/、reports/*.html 在 .gitignore 中，勿加入此列表（git add 忽略路径会报错中断）
+if [ -n "$(git status --porcelain -- reports/ memory/ data/)" ]; then
+  git add reports/ memory/ data/
+  git commit -m "daily: $(date +%Y-%m-%d) AI日报源文件（reports/memory/data）"
+fi
+
+# 2. 提交 docs/ 变更（如果有）
 if ! git diff --quiet -- docs/ scripts/update-github-pages.py scripts/generate-daily-summary.sh; then
   git add docs/ scripts/update-github-pages.py scripts/generate-daily-summary.sh
   git commit -m "chore: sync daily reports to GitHub Pages ($YEAR_MONTH)"

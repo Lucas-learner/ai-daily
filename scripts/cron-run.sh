@@ -52,15 +52,44 @@ touch "$LOCK_FILE"
     notify "⚠️ AI日报：昨日（${YESTERDAY}）未执行任务（无日志，可能机器休眠）。今日任务继续。"
   fi
 
+  # 过期文件清理：tmp/ 日报草稿保留 30 天，运行日志保留 60 天
+  find "$PROJECT_DIR/tmp" -type f -mtime +30 -delete 2>/dev/null || true
+  find "$LOG_DIR" -name "ai-daily-*.log" -mtime +60 -delete 2>/dev/null || true
+
+  # 上月归档兜底：上月报告存在但缺月度总结时，要求 kimi 先补归档再写今日日报
+  # （防止每月 1 日任务失败导致归档长期缺失，如 2026-07 拖到 9 月才手动补）
+  LAST_MONTH="$(date -v-1m +%Y-%m)"
+  PROMPT="执行ai日报任务"
+  if [ -f "$PROJECT_DIR/reports/$LAST_MONTH.md" ] && ! grep -q "# ${LAST_MONTH} 月度总结" "$PROJECT_DIR/reports/$LAST_MONTH.md"; then
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] 检测到上月（$LAST_MONTH）未归档，将在 prompt 中要求先补归档"
+    PROMPT="执行ai日报任务。注意：检测到上月（${LAST_MONTH}）尚未归档（reports/${LAST_MONTH}.md 缺少月度总结）。请先按 AGENTS.md 流程补做上月归档（用 scripts/query-items.sh --month ${LAST_MONTH} --stats 出数撰写月度总结，再用 scripts/archive-month.sh ${LAST_MONTH} 归档），然后再生成今日日报。"
+  fi
+
   # -p: 非交互式单条 prompt，cron 环境下可直接执行
   # -m: 本任务固定使用 kimi-for-coding，与全局 default_model 解耦
   # KIMI_MODEL_THINKING_EFFORT=low: 仅本进程强制低思考强度（省配额），不影响全局配置
-  KIMI_MODEL_THINKING_EFFORT=low "$KIMI_BIN" -p "执行ai日报任务" -m "kimi-code/kimi-for-coding" 2>&1 || {
-    rc=$?
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] ERROR: kimi 日报任务退出码 $rc"
-    notify "❌ AI日报 ${DATE} 失败：kimi 退出码 ${rc}。最后日志：$(tail -n 3 "$LOG_FILE" | tr '\n' ' ' | cut -c1-200)"
-    exit $rc
-  }
+  # 失败重试：网络/OAuth 瞬时故障常见（2026-08 曾因此连挂 14 天），最多 3 次、间隔 20 分钟；
+  # 配额耗尽（usage limit）重试无意义，直接判失败
+  RC=0
+  for ATTEMPT in 1 2 3; do
+    KIMI_MODEL_THINKING_EFFORT=low "$KIMI_BIN" -p "$PROMPT" -m "kimi-code/kimi-for-coding" 2>&1 && RC=0 || RC=$?
+    if [ "$RC" -eq 0 ]; then
+      break
+    fi
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] ERROR: kimi 日报任务第 ${ATTEMPT}/3 次执行失败，退出码 $RC"
+    if tail -n 20 "$LOG_FILE" | grep -qi "usage limit"; then
+      echo "[$(date '+%Y-%m-%d %H:%M:%S')] 检测到配额耗尽（usage limit），重试无意义，直接判失败"
+      break
+    fi
+    if [ "$ATTEMPT" -lt 3 ]; then
+      echo "[$(date '+%Y-%m-%d %H:%M:%S')] 20 分钟后重试（第 $((ATTEMPT+1))/3 次）..."
+      sleep 1200
+    fi
+  done
+  if [ "$RC" -ne 0 ]; then
+    notify "❌ AI日报 ${DATE} 失败：kimi 退出码 ${RC}（已重试 ${ATTEMPT} 次）。最后日志：$(tail -n 3 "$LOG_FILE" | tr '\n' ' ' | cut -c1-200)"
+    exit "$RC"
+  fi
 
   # 同步到 GitHub Pages（与 iCloud 解耦，避免 iCloud 阻塞影响网页发布）
   "$PROJECT_DIR/scripts/sync-to-github.sh" "$YEAR_MONTH" 2>&1 || {
