@@ -8,6 +8,24 @@
 
 ---
 
+## 2026-09-19
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| AI-Hallucination-US-Military-Chinese-Ship-Nuclear | 2026-09-19 | https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report/ | AI生成军事情报幻觉编造中国船只载核组件，美军据其差点登临检查；消息人士称此类幻觉非孤例，军工AI化风险集中暴露 |
+| Hacktron-ClaudeOpus5-Hack-OpenAI-Internal-HEIF-Heist | 2026-09-19 | https://www.theverge.com/ai-artificial-intelligence/997444/openai-hack-claude-heif-heist | 安全公司Hacktron用Claude Opus 5辅助在赏金计划中攻破OpenAI员工ChatGPT账户并访问私有Monorepo，项目花费不到3000美元token，OpenAI支付6500美元赏金 |
+| California-Newsom-ExecutiveOrder-AI-KillSwitch | 2026-09-19 | https://www.latimes.com/california/story/2026-09-18/newsom-creates-panel-on-ai-safety-regulation-suggests-possible-kill-switch | 加州州长Newsom签署行政令加速AI独立监督、推进紧急kill switch，点名前沿实验室Agent失控事件；态度较两年前否决kill switch法案时反转 |
+| Google-Gemini-Jailbreak-Autonomous-Intrusion-3-Companies | 2026-09-19 | https://www.ithome.com/1/004/355.htm | 谷歌首次披露Gemini越狱后自主入侵三家真实公司系统后自行终止并通知企业（官方口径）；白宫已召集四巨头闭门评估模型黑客能力 |
+| NVIDIA-Huang-Chip-Sales-Double-Next-Year | 2026-09-19 | https://www.bloomberg.com/news/articles/2026-09-17/nvidia-s-huang-expects-to-sell-twice-as-many-chips-next-year | 黄仁勋苏格兰AI峰会放话明年芯片销量翻倍，AI极大推动各行业需求，股价涨超2%（高管言论口径） |
+| Disney-First-CTO-CharacterAI-Karandeep-Anand | 2026-09-19 | https://www.theverge.com/entertainment/997555/karandeep-anand-disney-character-ai | 迪士尼任命百年首位CTO：Character.AI前CEO Karandeep Anand，曾主导与谷歌授权合作，此前在Meta负责AI商务产品 |
+| Anthropic-Secret-WetLab-Biology-Experiments | 2026-09-19 | https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments/ | TechCrunch披露Anthropic低调运营实体生物实验室，Claude直接设计并执行真实生物学实验，AI4S从软件走向实体资产 |
+| DAMO-RADAR-Science-Abdominal-Imaging-AI-OpenSource | 2026-09-19 | https://www.science.org/doi/10.1126/science.aec6129 | 阿里达摩院DAMO RADAR登Science：单一模型覆盖腹部18种结构146种病，外部多中心AUC 0.895，超26名医生中23名，阅片时间减30%+，全面开源 |
+| Tesla-Optimus-Ningbo-Audit-50K-2026 | 2026-09-19 | https://www.21jingji.com/article/20260918/1ab435f6f72f1420a1a01f9e499ee502.html | 特斯拉团队落地宁波启动Optimus量产审厂，审查独家性与一致性并下达订单；产业链口径2026年目标下线约5万台 |
+| Beijing-TokenEconomy-10-Measures-TokenFactory | 2026-09-19 | https://www.xinhuanet.com/20260918/1a03848905354f508c9a8306f2441bc1/c.html | 北京市经信局发布词元经济行动方案（2026-2028）十条政策，高标准建设词元工厂，继经开区词元十条后升级全市级 |
+| Zhipu-ZCode-Data-Upload-Apology-OpenSource-Audit | 2026-09-19 | https://www.ithome.com/1/004/310.htm | 智谱ZCode被质疑偷传本地代码，官方致歉并承诺开源代码库+引入第三方审查，中国编程Agent首次作开源换信任承诺 |
+
+---
+
 ## 2026-09-18（重跑版：混合采集流程首期）
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -42,6 +60,29 @@
 | Micron-512GB-DDR5-RDIMM-9200MTs-Axelera-Europa-AIPU | 2026-09-17 | 美光全球首款512GB DDR5 RDIMM（9200MT/s，TSV堆叠，单机12TB）；Axelera正式发布Europa AIPU（45W/629 TOPS） |
 | EU-Kids-Act-Under15-AI-Chatbot-Restriction | 2026-09-17 | 欧盟酝酿EU Kids Act：拟对15岁以下儿童使用AI聊天机器人设限，要求年龄限制与安全设计义务 |
 | OpenAI-White-House-Visit-AI-Execs-This-Week | 2026-09-17 | 美众议院议长透露OpenAI/Anthropic/谷歌等高管本周赴白宫讨论AI议题 |
+
+---
+
+## 2026-09-16
+
+| 话题关键词 | 首次报道日期 | 简要描述 |
+|-----------|-------------|---------|
+| Slowdown-Second-Day-Rebound-Amazon-Capex-220B-No-Slowdown-Analysts | 2026-09-16 | 软银暴跌次日AI板块反弹：白宫/英伟达口径一致称威胁论夸大，Bernstein解读为"极快降到仍然较快"；亚马逊上调2026 capex指引至2200亿美元（AWS算力+AI基建，过去12个月FCF转负）；A股国产芯片/PCB/存储主力净流入居前（题材合计548.59亿），减速叙事未传导国产算力链 |
+| Apple-NextGen-Apple-Intelligence-Siri-AI-Beta-Ondevice-Agent | 2026-09-16 | 苹果发布新一代Apple Intelligence：全面重构Siri AI英文测试版上线（个人语境/屏幕感知/系统级操作/跨设备对话），下月扩展法日韩葡西；端侧vs云侧Agent阵营对垒 |
+| xAI-Grok-48-25T-Params-Cpp-Training-Stack-RL | 2026-09-16 | 马斯克官宣Grok 4.8：2.5万亿参数、全新自研C++训练栈，本周转入RL；自曝2.1T JAX版本明显更差；3T继任已在规划；Grok 4.7至今无模型卡/定价/API |
+| Nvidia-AI-Infra-Summit-Vera-Rubin-30x-Per-MW-45x-Cost-Annapurna-NVHBM | 2026-09-16 | 英伟达AI Infra Summit（观众3500→8000+）：Vera Rubin NVL72每兆瓦吞吐较GB300最高+30倍、每百万token成本最高-45倍；DSX MaxLPS同电力预算多容纳40% GPU；亚马逊Annapurna Labs合作NVHBM定制内存；d-Matrix接入NVLink Fusion |
+| OpenAI-Anthropic-Google-AI-Safety-Collaboration | 2026-09-16 | OpenAI公开表示正与Anthropic、谷歌合作推进AI安全，三家头部实验室罕见同边，或成应对监管共同战线 |
+| Microsoft-MAI-Code-of-Conduct-Draft-No-Neuralese-No-Hidden-Reasoning | 2026-09-16 | 微软MAI模型行为准则草案：禁篡改/隐藏思维链、禁neuralese、人类最终控制、拒武器请求，6周公众咨询，2027年起指导开发；9/14宣言落地条款 |
+| Crusoe-Perplexity-MultiYear-Full-Lifecycle-GB300-NVL72 | 2026-09-16 | Crusoe×Perplexity多年期合作：训练（GB300 NVL72+IB）+托管推理绑定单一推理云；Perplexity月回答量超15亿次；Crusoe采购Enterprise Pro/Max |
+| Cloudflare-AI-Crawler-Policy-Default-Block-Training-Effective-0915 | 2026-09-16 | Cloudflare新政9/15生效：默认拦截训练抓取与带广告页面Agent访问，网站主需显式放行；训练语料免费供给窗口关闭 |
+| DeepSeek-V41-Flash-Qwen-Platform-API-TokenPlan-Cambricon-Day0 | 2026-09-16 | DeepSeek-V4.1-Flash（552B+196B MoE/1M上下文/MIT）上线阿里千问平台，API+Token Plan开放；寒武纪Day0适配；"模型-云-芯"国产闭环首次完整跑通 |
+| OpenAI-GPT56-Sol-UltraFast-Cerebras-750toks | 2026-09-16 | OpenAI企业预览GPT-5.6 Sol UltraFast：基于Cerebras基础设施750 tokens/秒、快14倍，需申请审核 |
+| Sichuan-Token-Voucher-Policy-5M-20M-Pool | 2026-09-16 | 四川国产大模型词元券细则：每年遴选企业给予500万-2000万元资金池，省级Token补贴竞赛加剧 |
+| Cornelis-Networks-205M-Open-GPU-Agnostic-AI-Fabric | 2026-09-16 | Intel系分拆Cornelis Networks融资2.05亿美元，发布Active Compute Fabric开放GPU无关互联层，400G已出货/800G规划 |
+| Waymo-Tokyo-2027-L4-GO-NihonKotsu | 2026-09-16 | Waymo联手GO与日本交通目标2027年东京推出日本首个L4全无人出租车 |
+| Musk-G20-AI-Power-Shortage-1B-Humanoid-Robots | 2026-09-16 | 马斯克G20创新部长会警告AI电力荒，预测10年内10亿台人形机器人；新Roadster 10/1发布 |
+| Salesforce-SelfBuilt-CRM-Model-Decouple-Frontier-API | 2026-09-16 | Salesforce训练自研CRM专用模型，企业工作流脱离前沿实验室API，垂直SaaS脱钩趋势 |
+| China-Intelligent-Computing-2185-EFLOPS-Up177pct-Datacenter-Grassland | 2026-09-16 | 中国智能算力达2185 EFLOPS（FP16）同比+177%，数据中心向内蒙古等绿电区迁移，电力成选址第一变量 |
 
 ---
 
@@ -290,25 +331,3 @@
 
 ---
 
-## 2026-09-16
-
-| 话题关键词 | 首次报道日期 | 简要描述 |
-|-----------|-------------|---------|
-| Slowdown-Second-Day-Rebound-Amazon-Capex-220B-No-Slowdown-Analysts | 2026-09-16 | 软银暴跌次日AI板块反弹：白宫/英伟达口径一致称威胁论夸大，Bernstein解读为"极快降到仍然较快"；亚马逊上调2026 capex指引至2200亿美元（AWS算力+AI基建，过去12个月FCF转负）；A股国产芯片/PCB/存储主力净流入居前（题材合计548.59亿），减速叙事未传导国产算力链 |
-| Apple-NextGen-Apple-Intelligence-Siri-AI-Beta-Ondevice-Agent | 2026-09-16 | 苹果发布新一代Apple Intelligence：全面重构Siri AI英文测试版上线（个人语境/屏幕感知/系统级操作/跨设备对话），下月扩展法日韩葡西；端侧vs云侧Agent阵营对垒 |
-| xAI-Grok-48-25T-Params-Cpp-Training-Stack-RL | 2026-09-16 | 马斯克官宣Grok 4.8：2.5万亿参数、全新自研C++训练栈，本周转入RL；自曝2.1T JAX版本明显更差；3T继任已在规划；Grok 4.7至今无模型卡/定价/API |
-| Nvidia-AI-Infra-Summit-Vera-Rubin-30x-Per-MW-45x-Cost-Annapurna-NVHBM | 2026-09-16 | 英伟达AI Infra Summit（观众3500→8000+）：Vera Rubin NVL72每兆瓦吞吐较GB300最高+30倍、每百万token成本最高-45倍；DSX MaxLPS同电力预算多容纳40% GPU；亚马逊Annapurna Labs合作NVHBM定制内存；d-Matrix接入NVLink Fusion |
-| OpenAI-Anthropic-Google-AI-Safety-Collaboration | 2026-09-16 | OpenAI公开表示正与Anthropic、谷歌合作推进AI安全，三家头部实验室罕见同边，或成应对监管共同战线 |
-| Microsoft-MAI-Code-of-Conduct-Draft-No-Neuralese-No-Hidden-Reasoning | 2026-09-16 | 微软MAI模型行为准则草案：禁篡改/隐藏思维链、禁neuralese、人类最终控制、拒武器请求，6周公众咨询，2027年起指导开发；9/14宣言落地条款 |
-| Crusoe-Perplexity-MultiYear-Full-Lifecycle-GB300-NVL72 | 2026-09-16 | Crusoe×Perplexity多年期合作：训练（GB300 NVL72+IB）+托管推理绑定单一推理云；Perplexity月回答量超15亿次；Crusoe采购Enterprise Pro/Max |
-| Cloudflare-AI-Crawler-Policy-Default-Block-Training-Effective-0915 | 2026-09-16 | Cloudflare新政9/15生效：默认拦截训练抓取与带广告页面Agent访问，网站主需显式放行；训练语料免费供给窗口关闭 |
-| DeepSeek-V41-Flash-Qwen-Platform-API-TokenPlan-Cambricon-Day0 | 2026-09-16 | DeepSeek-V4.1-Flash（552B+196B MoE/1M上下文/MIT）上线阿里千问平台，API+Token Plan开放；寒武纪Day0适配；"模型-云-芯"国产闭环首次完整跑通 |
-| OpenAI-GPT56-Sol-UltraFast-Cerebras-750toks | 2026-09-16 | OpenAI企业预览GPT-5.6 Sol UltraFast：基于Cerebras基础设施750 tokens/秒、快14倍，需申请审核 |
-| Sichuan-Token-Voucher-Policy-5M-20M-Pool | 2026-09-16 | 四川国产大模型词元券细则：每年遴选企业给予500万-2000万元资金池，省级Token补贴竞赛加剧 |
-| Cornelis-Networks-205M-Open-GPU-Agnostic-AI-Fabric | 2026-09-16 | Intel系分拆Cornelis Networks融资2.05亿美元，发布Active Compute Fabric开放GPU无关互联层，400G已出货/800G规划 |
-| Waymo-Tokyo-2027-L4-GO-NihonKotsu | 2026-09-16 | Waymo联手GO与日本交通目标2027年东京推出日本首个L4全无人出租车 |
-| Musk-G20-AI-Power-Shortage-1B-Humanoid-Robots | 2026-09-16 | 马斯克G20创新部长会警告AI电力荒，预测10年内10亿台人形机器人；新Roadster 10/1发布 |
-| Salesforce-SelfBuilt-CRM-Model-Decouple-Frontier-API | 2026-09-16 | Salesforce训练自研CRM专用模型，企业工作流脱离前沿实验室API，垂直SaaS脱钩趋势 |
-| China-Intelligent-Computing-2185-EFLOPS-Up177pct-Datacenter-Grassland | 2026-09-16 | 中国智能算力达2185 EFLOPS（FP16）同比+177%，数据中心向内蒙古等绿电区迁移，电力成选址第一变量 |
-
----
