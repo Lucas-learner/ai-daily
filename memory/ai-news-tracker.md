@@ -8,6 +8,28 @@
 
 ---
 
+## 2026-09-20
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Trump-AI-Force-AI-Czar-Accelerate | 2026-09-20 | https://www.wsj.com/tech/ai/trump-announces-an-ai-force-after-industry-sounded-alarm-7c189b8f | 特朗普宣布仿太空军组建联邦AI Force并任命AI沙皇，称AI风险警告是"骗局"，明确拒绝放缓，与加州kill switch路线对冲 |
+| Manus-500M-HongKong-IPO-Agent | 2026-09-20 | https://www.wsj.com/business/ai-startup-manus-seeks-to-raise-500-million-and-weighs-hong-kong-ipo-ef7d3ead | Manus寻求约5亿美元融资并评估赴港IPO，通用Agent赛道标志性资本事件，Agent第一股风向标 |
+| Huawei-Ascend960-SuperNode-960PR-2027Q1 | 2026-09-20 | https://www.caixin.com/2026-09-17/102486018.html | 华为HC2026发布昇腾960超节点，960PR提前三个季度至2027Q1，11款统一总线芯片，370+客户已交付1000多套 |
+| Antitrust-Lawsuit-4-AI-Slowdown-Cartel | 2026-09-20 | https://apnews.com/article/antitrust-lawsuit-ai-slowdown-anthropic-openai-spacexai-google-960af4308161eaf4ed13c383b0ce1c1b | 四名付费消费者集体诉讼指控Anthropic/OpenAI/xAI/Google在Amodei呼吁放缓后协同放慢迭代，违反谢尔曼法，"放缓"从舆论升级为法律风险 |
+| Anthropic-Accenture-2B-Embedded-Evaluators | 2026-09-20 | https://www.reuters.com/business/anthropic-accenture-invest-2-billion-ai-model-evaluation-safety-concerns-rise-2026-09-18/ | Anthropic与埃森哲至少20亿美元合作，独立评估员入驻Anthropic内部做前沿模型安全评估，迄今最大第三方评估合作 |
+| Qwen3.8-LiveTranslate-Simultaneous-Interpretation | 2026-09-20 | https://www.ithome.com/1/004/450.htm | 阿里千问发布同传大模型，60语言LAAL延迟2.8s降至2.3s，官方称评测超主流系统，API开放 |
+| Anthropic-IPO-Revenue-Sustainability-Doubt | 2026-09-20 | https://www.ft.com/content/ | FT报道投资者对Anthropic IPO后收入高增长可持续性存疑，约9650亿美元估值分歧加大 |
+| GPT-1900-Einstein-Test-Nature | 2026-09-20 | https://www.nature.com/articles/d41586-026-02804-x | 33B参数GPT-1900只用1900年前语料，在光电效应输出与爱因斯坦论文相似论述；Nature质疑其借助现代模型生成指令数据，零污染人设存疑 |
+| Suleyman-Should-Not-Create-Uncontrollable-AI | 2026-09-20 | https://www.ithome.com/1/004/507.htm | 微软AI CEO苏莱曼公开表示不应创造人类无法控制的AI，与特朗普加速令、反垄断诉讼构成"放缓vs加速"同日三重奏 |
+| Grok-Voice-Transcribe-2.0 | 2026-09-20 | https://www.ithome.com/1/004/534.htm | xAI发布Grok Voice Transcribe 2.0，官方称转写错误率降约50%、价格不变（公司口径） |
+| DeepSeek-Holiday-OffPeak-Pricing | 2026-09-20 | https://www.ithome.com/1/004/494.htm | DeepSeek调休周末与中国法定节假日全天按空闲时段计费，国产头部API首次节假日低谷定价 |
+| FAA-875M-AI-Air-Traffic-Control | 2026-09-20 | https://www.ithome.com/1/004/569.htm | 美国联邦航空管理局投8.75亿美元建设AI空管系统治理航班拥堵 |
+| ZhangYiming-105B-NetWorth-Bloomberg | 2026-09-20 | https://www.ynetnews.com/ | Bloomberg亿万富翁指数：张一鸣身家超1050亿美元，AI业务与TikTok驱动 |
+| Huang-10b5-1-Sell-46K-Nvidia-Shares | 2026-09-20 | https://36kr.com/p/3988488062630661 | 黄仁勋按10b5-1计划减持约4.6万股英伟达股票（SEC披露，例行减持） |
+| TerryTao-SAIR-Open-Math-Model | 2026-09-20 | https://terrytao.wordpress.com/2026/09/18/sairs-open-math-model-initiative/ | 陶哲轩代表SAIR启动开放数学模型计划，独立大厂的开放权重数学模型与形式化证明工具链（个人公告口径） |
+| ChinaTelecom-Xing4-29B-MoE-Muxi-Day0 | 2026-09-20 | https://www.ithome.com/1/004/530.htm | 中国电信开源星辰Xing4.0-29B-A4B全栈国产MoE，沐曦曦云C系列GPU完成Day 0适配 |
+| Apple-M6-GPU-Benchmark-Leak | 2026-09-20 | https://www.ithome.com/1/004/576.htm | 疑似苹果M6工程机Geekbench跑分流出，GPU较M5提升约20%（泄露数据未经官方证实） |
+
 ## 2026-09-19
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
