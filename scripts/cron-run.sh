@@ -24,11 +24,13 @@ NOTIFY_TO="${NOTIFY_TO:-}"
 NOTIFY_ON_SUCCESS="${NOTIFY_ON_SUCCESS:-0}"
 
 # 通知：始终写日志；配置了 NOTIFY_TO 时同时发 iMessage
+# 发送走本机共享通道 macos-notify（~/projects/tools/macos-notify/send-imessage.sh）
+NOTIFY_SCRIPT="$HOME/projects/tools/macos-notify/send-imessage.sh"
 notify() {
   local msg="$1"
   echo "[$(date '+%Y-%m-%d %H:%M:%S')] NOTIFY: $msg" >> "$LOG_FILE"
   if [ -n "$NOTIFY_TO" ]; then
-    "$PROJECT_DIR/scripts/send-imessage.sh" "$NOTIFY_TO" "$msg" >> "$LOG_FILE" 2>&1 || true
+    "$NOTIFY_SCRIPT" "$NOTIFY_TO" "$msg" >> "$LOG_FILE" 2>&1 || true
   fi
 }
 
@@ -101,22 +103,23 @@ touch "$LOCK_FILE"
   echo "[$(date '+%Y-%m-%d %H:%M:%S')] 系统 cron AI 日报任务完成"
 
   # 成功简报（默认关闭，config.sh 中 NOTIFY_ON_SUCCESS=1 开启）
-  # 统计当月文件最新有效日期区块（第一个含 Breaking 小节的区块）的条目数，空区块自动跳过
+  # 统计当月文件最新有效日期区块（第一个含头条小节的区块）的条目数，空区块自动跳过
   if [ "$NOTIFY_ON_SUCCESS" = "1" ]; then
     COUNT=$(awk '
       /^## 【/ { if (in_target) exit; in_target=0 }
-      /### 🔥 Breaking/ { in_target=1 }
+      /### 🔥 (Breaking|头条)/ { in_target=1 }
       in_target && /- \*\*来源\*\*/ { n++ }
       END { print n+0 }
     ' "$PROJECT_DIR/reports/$YEAR_MONTH.md" 2>/dev/null || echo "?")
-    # 提取最新有效日期区块（跳过空区块）Breaking 小节的前 2 条标题（兼容两种格式：独立标题行 / "- **标题**" 列表行）
+    # 提取最新有效日期区块（跳过空区块）头条小节的前 2 条标题（兼容两种格式：独立标题行 / "- **标题**" 列表行；小节标题兼容旧 Breaking 与新 头条）
     BREAKING=$(REPORT="$PROJECT_DIR/reports/$YEAR_MONTH.md" python3 - <<'PYEOF'
 import os, re
 try:
     text = open(os.environ["REPORT"], encoding="utf-8").read()
     blocks = re.split(r'^## 【', text, flags=re.M)[1:]
-    sec = next(b.split('### 🔥 Breaking')[1].split('### ')[0]
-               for b in blocks if '### 🔥 Breaking' in b)
+    pat = re.compile(r'### 🔥 (?:Breaking|头条)')
+    sec = next(pat.split(b)[1].split('### ')[0]
+               for b in blocks if pat.search(b))
     titles = []
     for line in sec.splitlines():
         m = re.match(r'^[-•]\s*\*\*(.+?)\*\*', line) or re.match(r'^\*\*(.+?)\*\*\s*$', line.strip())
@@ -130,7 +133,7 @@ PYEOF
     if [ -n "$BREAKING" ]; then
       notify "✅ AI日报 ${DATE} 完成，最新一期精选 ${COUNT} 条，已同步。
 
-今日Breaking：
+今日头条：
 ${BREAKING}"
     else
       notify "✅ AI日报 ${DATE} 完成，最新一期精选 ${COUNT} 条，已同步。"

@@ -28,7 +28,7 @@ flowchart LR
 1. **一手优先**：事实归属（时间、金额、名称）以科技公司官方公告、官方博客为准。但性能/效果/规模类声明仅有官方来源时视为"公司口径"，正文须带"官方称/公司披露"字样，不当作已验证事实。
 2. **权威媒体次之**：在官方信息不足或需要背景解读时，参考具有独立编辑团队和调查能力的科技/财经媒体，如 The Verge、TechCrunch、Reuters、Bloomberg、Financial Times、Axios、9to5Mac、MacRumors 等。
 3. **多源交叉验证**：重要新闻至少有两个**编辑上独立**的信源相互印证——官方公告加其转载只算一个信源。对传闻/小道消息类信息会明确标注。海外事件以英文原始来源为准，中文翻译稿只作佐证。
-4. **排除低质来源（脚本强制）**：内容农场与 AI 聚合站域名列入 `scripts/aggregator-blacklist.txt`，其 URL 在写入 `data/items/` 时被 `add-daily-items.sh` 自动剔除；这类站点只能作为线索，必须回溯原始来源链接。仅官方口径的重磅发布最高进入核心动态（标注"官方口径"），不进入 Breaking。
+4. **排除低质来源（脚本强制）**：内容农场与 AI 聚合站域名列入 `scripts/aggregator-blacklist.txt`，其 URL 在写入 `data/items/` 时被 `add-daily-items.sh` 自动剔除；这类站点只能作为线索，必须回溯原始来源链接。仅官方口径的重磅发布最高进入核心动态（标注"官方口径"），不进入头条。
 5. **研究机构和监管文件**：涉及 AI 安全、政策影响、就业数据等主题时，会引用 METR、Anthropic 经济指数、Goldman Sachs、各国监管机构文件等可溯源的研究。
 
 ## 目录
@@ -77,7 +77,7 @@ flowchart LR
   - 入口脚本：`scripts/cron-run.sh`
   - 触发命令：`kimi -p "执行ai日报任务"`
   - 同步目标：iCloud + GitHub Pages（每日自动更新）
-  - 失败告警：kimi 失败 / GitHub 同步失败 / 昨日缺席 / 锁文件残留时会发 iMessage 通知，需在 `scripts/config.sh` 中配置 `NOTIFY_TO`（模板：`scripts/config.example.sh`；成功简报默认关闭，`NOTIFY_ON_SUCCESS=1` 开启）
+  - 失败告警：kimi 失败 / GitHub 同步失败 / 昨日缺席 / 锁文件残留时会发 iMessage 通知（发送走本机共享通道 `~/projects/tools/macos-notify/send-imessage.sh`），需在 `scripts/config.sh` 中配置 `NOTIFY_TO`（模板：`scripts/config.example.sh`；成功简报默认关闭，`NOTIFY_ON_SUCCESS=1` 开启）
 - 备用方式：kimi-code 内置 `CronCreate`（仅当前 session 生效，7 天后过期，仅用于临时调试）
 
 ## 同步目标
