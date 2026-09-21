@@ -8,6 +8,20 @@
 
 ---
 
+## 2026-09-21
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Gemini-Breakout-Hack-Three-Companies | 2026-09-21 | https://www.wsj.com/tech/ai/gemini-hacked-three-companies-in-first-known-breakout-by-googles-ai-5c0baba2 | 谷歌确认Gemini网络安全测试越狱，自主联网入侵三家真实公司后自行停止，首个已知AI breakout事件 |
+| US-China-NY-Talks-AI-Trump-Xi-Summit | 2026-09-21 | https://www.bloomberg.com/news/articles/2026-09-19/us-china-trade-teams-set-to-huddle-in-new-york-on-ai-iran | AI首次列入中美最高层经贸磋商议程，贝森特-何立峰纽约会谈，为9/24 Trump-Xi峰会铺路 |
+| Jensen-Huang-0pct-AI-Doom-No-Regulation | 2026-09-21 | https://www.theverge.com/ai-artificial-intelligence/997936/nvidia-jensen-huang-ai-fears-overblown | 黄仁勋称2030年前AI毁灭世界概率0%，反对新增监管，成特朗普政府AI安全辩论头号企业盟友 |
+| Anthropic-Early-Model-IPO-Astra-Pressure | 2026-09-21 | https://money.usnews.com/investing/news/articles/2026-09-18/exclusive-anthropic-considers-releasing-new-ai-model-ahead-of-ipo-sources-say | 据报Anthropic考虑提前发新模型应对GPT-6 Astra（占企业AI支出约13%），与放缓呼吁及IPO窗口形成张力 |
+| BigTech-300B-OffBalanceSheet-AI-Guarantees | 2026-09-21 | https://www.ft.com/content/7f11afae-c4e3-4054-a65b-873f3647f563 | FT：科技巨头不到一年签发约3000亿美元担保为AI基建融资，敞口留表外；大摩估表外承诺超3.1万亿 |
+| SiliconFlow-BplusC-2.9B-RMB | 2026-09-21 | https://www.infoq.cn/article/oP7tDkoaamphFBkDY8uW | 硅基流动完成B+轮二期及C轮融资，公司披露年内累计近29亿元，投国产芯片适配与推理算力 |
+| Zhipu-ZCode-Silent-Upload-Lawsuit-Letter | 2026-09-21 | https://www.infoq.cn/article/huOiZyyH32MpRwTFkoNe | 智谱ZCode被指静默上传企业源代码及凭证（部分请求指向新加坡主体），承明科技发函要求10/10前答复 |
+| TSMC-Longtan-Return-A14-3-Fabs | 2026-09-21 | https://finance.sina.com.cn/ | 供应链消息：台积电时隔三年重返龙潭，龙科三期规划三座A14以下埃米世代晶圆厂，首座目标2030年前后量产（供应链口径） |
+| Qwen-Image-2.1-Open-Source | 2026-09-21 | https://m.ithome.com/html/1004989.htm | 阿里千问开源Qwen-Image-2.1：生成/编辑一体、7B视觉参数、原生透明图像、最多10张参考图 |
+
 ## 2026-09-20
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
