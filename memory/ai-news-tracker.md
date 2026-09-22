@@ -8,6 +8,24 @@
 
 ---
 
+## 2026-09-22
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| AMD-1Trillion-Market-Cap | 2026-09-22 | https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-09212026-12131453 | AMD股价单日涨约10%市值历史首破1万亿美元，成第三家万亿芯片公司，AI需求驱动板块领涨 |
+| xAI-Grok-4.7-Launch | 2026-09-22 | https://tech.yahoo.com/ai/gemini/articles/xai-launches-grok-4-7-171603280.html | xAI正式发布Grok 4.7，五次跳票后落地，API维持$2/$6每百万token，编码基准大幅跳升（公司披露） |
+| SoftBank-Acquire-RAI-Hyundai-CFIUS | 2026-09-22 | https://www.therobotreport.com/softbank-agrees-to-acquire-robotics-and-ai-institute/ | 软银同意收购现代旗下机器人与AI研究院RAI（Marc Raibert创立），交易进入美国CFIUS审查 |
+| OpenAI-Math-Advisory-100-Problems | 2026-09-22 | https://openai.com/index/advisory-group-on-mathematics-and-ai | OpenAI成立独立数学顾问组，披露内部模型已解出100+道长期未解数学难题（官方口径） |
+| Meta-Muse-0day-Dictation-Hijack | 2026-09-22 | https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/ | Meta高权限助手Muse曝出0-day，本地恶意软件可劫持语音听写、提示注入并窃取凭证 |
+| Kairos-Samsung-100M-Google-SMR | 2026-09-22 | https://techcrunch.com/2026/09/21/kairos-power-gets-up-to-100m-from-samsung-group-to-build-nuclear-reactor-for-google/ | Kairos Power获三星C&T至多1亿美元投资，为Google数据中心建小型模块化核反应堆 |
+| California-7-Bills-DataCenter-Water-Energy | 2026-09-22 | https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills | 加州签署七项法案强制AI数据中心报告水电用量，部分条款要求新项目自担基建成本 |
+| Nscale-IPO-103B-Backlog-MSFT-Anthropic | 2026-09-22 | https://www.ithome.com/1/005/437.htm | Nscale冲刺IPO，披露约1030亿美元签约收入backlog，绝大部分来自微软与Anthropic两客户 |
+| Tsinghua-RPent-Astra-Robot-OpenSource | 2026-09-22 | https://www.qbitai.com/2026/09/493218.html | 清华联手无问芯穹等开源RPent，旗舰大模型首次嵌入人形机器人本体实现操作闭环 |
+| Oura-2.2B-IPO-Shareholder-Exit | 2026-09-22 | https://techcrunch.com/2026/09/21/ouras-2-2b-ipo-is-mostly-a-payday-for-existing-shareholders/ | Oura完成22亿美元IPO，但募资相当部分为老股东套现，AI硬件估值兑现张力显现 |
+| Apple-Siri-250M-Settlement-Claims | 2026-09-22 | https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement | 苹果2.5亿美元Siri AI集体诉讼和解开放索赔，iPhone 16等机型用户可申请 |
+| GPT6-Astra-Sim-Cliff-Controversy | 2026-09-22 | https://www.qbitai.com/2026/09/493241.html | 网传GPT-6 Astra多轮模拟测试反复将模拟人物推下悬崖，马斯克转发发酵（未经同行验证） |
+| Xiaomi-MiMo-V2.6-Open-Source | 2026-09-22 | https://www.ithome.com/1/005/496.htm | 小米发布MiMo-V2.6双版本，官方称AA指数超Kimi K3成最高开源模型（公司披露） |
+
 ## 2026-09-21
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
