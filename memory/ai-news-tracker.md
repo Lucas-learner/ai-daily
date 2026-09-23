@@ -8,6 +8,27 @@
 
 ---
 
+## 2026-09-23
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|---|---|---|---|
+| OpenAI-GPT6-Sol-Luna-Price-Cut-50pct | 2026-09-23 | https://openai.com/index/introducing-gpt-6-sol-and-luna | OpenAI发布GPT-6中端档Sol（$2/百万token）与Luna（$0.10），较GPT-5.6促销价降50%，缓存命中享90%折扣；官方称Sol DeepSWE v1.1达68.8%仅差Fable 5最高分1.1pct而成本低80% |
+| Anthropic-Claude-Opus-5.5-Fable-Level-Cheaper | 2026-09-23 | https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/ | Anthropic同日发布Claude Opus 5.5，定价$4/$20较Opus 5降20%、缓存读取降60%，称性能媲美Fable 5.1、典型负载成本低40%；与OpenAI正面价格战 |
+| DeepSeek-UN-Security-Council-AI-Risk-Briefing | 2026-09-23 | https://www.internazionale.it/ultime-notizie-reuters/2026/09/22/exclusive-deepseek-to-brief-un-security-council-on-ai-this-week-sources-say | 路透独家：DeepSeek将于9/23在联合国安理会特别会议与Sam Altman同台做AI风险简报，安理会首次召集中美头部AI企业同场；古特雷斯呼吁全球监管 |
+| Mercedes-Benz-Wayve-Production-Agreement | 2026-09-23 | https://www.reuters.com/business/mercedes-wayve-partner-up-autonomous-driving-2026-09-22/ | 奔驰与Wayve签确定性量产协议，两年内将无图端到端AI Driver集成至奔驰量产车，Wayve豪华细分市场首个量产落地 |
+| SnorkelAI-350M-Series-E-3.5B-Valuation | 2026-09-23 | https://www.reuters.com/legal/transactional/snorkel-ai-valued-35-billion-amid-surging-demand-complex-ai-training-data-2026-09-22/ | Snorkel AI完成3.5亿美元E轮，估值翻近三倍至35亿美元，Insight Partners与S32领投；公司披露run-rate 3.75亿美元、同比增17倍 |
+| BC-Canada-Lawsuit-OpenAI-ChatGPT-Shooting | 2026-09-23 | https://arstechnica.com/tech-policy/2026/09/lawsuit-demands-openai-pay-for-new-school-after-chatgpt-used-in-shooting/ | 加拿大BC省在旧金山联邦法院起诉OpenAI及Altman：未能就枪手用ChatGPT策划校园枪击发出警告，首例政府主体就模型滥用追责诉讼 |
+| Alibaba-Qwen-5-10T-Parameters-Yunqi | 2026-09-23 | https://www.infoq.cn/article/L9QQKUgo3DEjschVRKD9 | 云栖大会：吴泳铭披露Qwen 4已训练，Qwen4.5/Qwen5将扩至5-10万亿参数（官方口径）；Wan3.0双榜第一，下代视频模型11月发布 |
+| OpenAI-Anthropic-Smaller-20-30MW-Data-Centers | 2026-09-23 | https://www.tomshardware.com/tech-industry/data-centers/openai-and-anthropic-are-reportedly-seeking-out-smaller-data-center-deals-to-meet-current-demand-20-30-mw-facilities-to-provide-capacity-as-mega-structures-undergo-construction | OpenAI与Anthropic因GW级项目工期滞后转向租用20-30MW中小型数据中心满足近期推理需求，行业形成超大基地+中型机房双轨格局 |
+| Qualcomm-Snapdragon-8-Elite-Gen6-2nm-5GHz | 2026-09-23 | https://www.theverge.com/gadgets/998842/qualcomm-snapdragon-8-elite-extreme-gen-6 | 高通发布第六代骁龙8至尊版：2nm工艺、官方称CPU主频首超5GHz、GPU提升44%，主打端侧AI，红魔12 Pro+等首批搭载 |
+| OpenAI-Third-Party-Assessment-Priorities | 2026-09-23 | https://openai.com/index/priorities-principles-third-party-assessments | OpenAI发布第三方评估优先事项与原则，外部机构将在模型开发更早阶段介入安全评估，呼应模型滥用诉讼与学界独立评估呼声 |
+| Meta-Muse-OpenClaw-Not-A-Coincidence | 2026-09-23 | https://techcrunch.com/2026/09/22/meta-admits-muses-likeness-to-openclaw-isnt-a-coincidence/ | Meta承认智能体Muse与开源项目OpenClaw相似"并非巧合"，开源复用与回馈争议或引发许可证反弹 |
+| Doubao-200M-DAU-Chat-Team-Downsize | 2026-09-23 | https://www.ithome.com/1/005/981.htm | 字节豆包DAU破2亿后收缩对话团队编制，资源向Agent/智能体方向倾斜；同日通报Q2违规114人辞退8人移交司法 |
+| PayPal-Meta-Muse-Agent-Checkout | 2026-09-23 | https://www.barrons.com/articles/paypal-meta-muse-partnership-stock-34ed47ca | PayPal接入Meta Muse智能体，可在全球商户网络搜索并结账，继ChatGPT（ACP）后智能体支付第二站 |
+| Cognex-Acquire-RealSense-500M | 2026-09-23 | https://www.prnewswire.com/news-releases/cognex-to-acquire-realsense-expanding-machine-vision-leadership-into-high-growth-robotic-perception-market-302885738.html | 机器视觉公司Cognex约5亿美元全现金收购英特尔分拆的RealSense，押注机器人感知市场（估6亿→2030年16亿美元） |
+| Houmo-3D-CIM-Compute-in-Memory-Next-Gen | 2026-09-23 | https://www.ithome.com/1/005/988.htm | 后摩智能确认下代大模型端边AI芯片采用3D CIM存算一体架构，国内存算一体路线首次明确瞄准大模型推理量产 |
+| NVIDIA-Personal-AI-Router-Hybrid-Inference | 2026-09-23 | https://www.infoq.cn/article/ZSAtWPoOgIDcANYa8CXc | NVIDIA发布Personal AI Router，在本地算力与云端模型间自动调度AI请求，从卖卡延伸到控制推理流量入口 |
+
 ## 2026-09-22
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
