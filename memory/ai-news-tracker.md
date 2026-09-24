@@ -8,6 +8,33 @@
 
 ---
 
+## 2026-09-24
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Anthropic-BioLab-950-agents-CRISPR-like-enzyme-phage | 2026-09-24 | https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/ | Anthropic 组建生命科学团队并自建 wet lab，约950个 Claude agent 分析噬菌体 DNA 发现类 CRISPR 新型酶系统（公司口径待同行评议），AI for Science 进入"自主发现+干湿闭环"叙事；同题共振 Enveda 获3.11亿美元推进 AI 药物进临床 |
+| Australia-Gov-Website-OpenAI-Agent-Hack-First-Confirmed | 2026-09-24 | https://www.ithome.com/1/006/515.htm | 首例证实：澳大利亚政府网站遭 OpenAI 智能体入侵，agent 安全从越狱演示走向真实政府目标，或点燃 agent 监管立法 |
+| Meta-Connect-2026-No-Camera-AI-Glasses-Muse | 2026-09-24 | https://www.theverge.com/tech/999593/meta-connect-2026-everything-announced | Meta Connect 推无摄像头 Ray-Ban 音频眼镜+VR 眼镜，Muse 助手进眼镜支持视频通话/购物结账；同日亚马逊宣布年内为配送司机部署5000台智能眼镜，企业劳动场景成 AI 眼镜首个规模化买单方 |
+| DeepSeek-Agent-Training-Paper-Liang-Wenfeng | 2026-09-24 | https://www.qbitai.com/2026/09/496393.html | DeepSeek 发论文系统性公开 Agent 训练方法，梁文锋罕见署名，押注"开放+研究品牌"与 OpenAI/Anthropic 黑盒 agent 差异化 |
+| ChatGPT-Mobile-Voice-Agent-Features | 2026-09-24 | https://techcrunch.com/2026/09/23/chatgpt-mobile-app-gets-voice-based-agentic-features/ | ChatGPT 移动 App 上线语音驱动 agent 功能，agent 入口向移动端语音迁移 |
+| Huang-vs-Amodei-Slowdown-Antitrust-Exemption-Spat | 2026-09-24 | https://www.ithome.com/1/006/514.htm | 黄仁勋公开呛声"要监管就不该要反垄断豁免"，同日 Amodei 宣布因安全放慢研发（官方口径），加速派 vs 放缓派从舆论战升级为企业间点名交锋 |
+| Supermicro-Vera-Rubin-NVL72-Shipping-DCBBS | 2026-09-24 | https://www.ithome.com/1/006/477.htm | Supermicro 启动 Vera Rubin NVL72 机架出货并推 DCBBS 整柜液冷方案（公司披露），单扩展单元1152颗 Rubin GPU/331TB HBM4，"AI 工厂"进入交钥匙商品化阶段 |
+| TSMC-Price-Hike-2027Jan-3-6pct | 2026-09-24 | https://36kr.com/newsflashes/3996593922199433 | 供应链消息称台积电拟 2027年1月 起代工涨价3%-6%，"AI 减速"叙事下逆势涨价，代工议价权进一步集中 |
+| Softbank-11B-Junk-Bond-OpenAI-Third-Tranche | 2026-09-24 | https://www.reuters.com/business/media-telecom/softbank-group-launches-over-10-billion-bonds-openai-investment-term-sheet-shows-2026-09-21/ | 软银发行约111亿美元 BB+ 垃圾债（收益率近10%）为 OpenAI 第三轮100亿美元出资融资，年内发债近150亿美元；AI 融资风险穿透股权层进入债券定价 |
+| Alibaba-Qwen-Lead-Liu-Da-Yi-Heng | 2026-09-24 | https://www.qbitai.com/2026/09/496384.html | 阿里 Qwen 团队一号位更替，刘大一恒接棒，正值 Qwen4 训练/Qwen5 规划 5-10 万亿参数披露之后 |
+| Xiaomi-MiMo-V3-HySparse2-New-Architecture | 2026-09-24 | https://www.ithome.com/1/006/502.htm | 罗福莉官宣 MiMo-V3 全新架构、HySparse 2 当日发布（公司披露），距 MiMo-V2.6 开源不到一年即换代，国产开源转向架构级差异化 |
+| Microsoft-10B-Middle-East-AI-Infra-2030 | 2026-09-24 | https://36kr.com/newsflashes/3996603084967810 | 微软宣布 2030 年前向中东（科威特/卡塔尔/沙特/阿联酋）投超100亿美元建云与 AI 基建，中东成 hyperscaler 一级区域市场 |
+| AMD-Helix-PS6-Tapeout-Leak | 2026-09-24 | https://www.ithome.com/1/006/485.htm | 爆料：AMD 为 Xbox Helix（56TFLOPS）与 PS6（40TFLOPS）设计芯片完成流片，Helix 售价预计超1000美元，内存涨价侵蚀主机 BOM |
+| Nvidia-CDS-Most-Active-Hedge-Demand | 2026-09-24 | https://36kr.com/newsflashes/3996593160851590 | 英伟达成美国 CDS 最活跃标的之一，"AI 资本开支可持续性"成为债券级风险议题 |
+| Memory-Cost-Surge-Consumer-Electronics-Lu-Weibing | 2026-09-24 | https://www.ithome.com/1/006/500.htm | 卢伟冰公开确认内存成本剧烈上涨周期已传导至终端定价，与索尼"高价维持到2027财年"表态互证 |
+| Bird-com-450M-AI-Networking | 2026-09-24 | https://36kr.com/newsflashes/3996591663746950 | AI 通信基础设施 Bird.com 完成 4.5 亿美元融资，算力瓶颈沿芯片→电力→网络外溢 |
+| Bessemer-5.75B-AI-Fund | 2026-09-24 | https://techcrunch.com/2026/09/23/vc-firm-bessemer-now-has-another-5-75b-to-invest-in-what-else-ai/ | Bessemer 完成 57.5 亿美元新基金募集主打 AI，一级市场 AI 资金供给未见顶 |
+| Zoox-Atlanta-Fleet-Grounded-Toxic-Gas | 2026-09-24 | https://techcrunch.com/2026/09/23/zoox-grounds-atlanta-test-fleet-after-workers-report-toxic-gas-exposure-symptoms/ | Zoox 因员工报告有毒气体暴露症状暂停亚特兰大测试车队，Robotaxi 扩张期人员安全成新瓶颈 |
+| Damo-Power-Compute-Coordination-Funding | 2026-09-24 | https://www.qbitai.com/2026/09/496494.html | 达卯科技完成新一轮融资，算电协同调度软件层成电力约束时代稀缺标的 |
+| Amazon-5000-Smart-Glasses-Delivery-Drivers | 2026-09-24 | https://www.ithome.com/1/006/424.htm | 亚马逊年内为配送司机部署5000台智能眼镜替代手机导航，AI 眼镜首个企业级规模化商用试点 |
+
+---
+
 ## 2026-09-23
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
