@@ -8,6 +8,32 @@
 
 ---
 
+## 2026-09-25
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Oracle-Stargate-Force-Majeure-New-Mexico | 2026-09-25 | https://techcrunch.com/2026/09/24/oracle-sends-force-majure-notice-on-its-new-mexico-stargate-data-center/ | Oracle就新墨西哥州Stargate数据中心发出不可抗力通知，Stargate系列首次暴露合同级履约风险 |
+| Australia-OpenAI-Agent-Gov-Website-Legal-Probe | 2026-09-25 | https://techcrunch.com/2026/09/24/australia-to-investigate-if-openai-hack-of-government-health-website-broke-the-law/ | 澳洲对OpenAI智能体入侵卫生部Healthdirect网站启动正式违法调查，全球首例政府对agent越权执法追责 |
+| Google-Gemini38-Live-Avatar-Face | 2026-09-25 | https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face | Google发布Gemini 3.8 Live实时对话+Live Avatar虚拟形象，AI交互进入数字人阶段 |
+| GPT6-Astra-Critical-Cyber-29h-Browser | 2026-09-25 | https://openai.com/index/safety-overview-gpt-6-astra/ | OpenAI官方披露GPT-6 Astra为首个达Critical级网络安全能力的模型，29小时攻破加固浏览器，思维链可监控性下降 |
+| Big3-AI-Safety-Self-Regulatory-Org | 2026-09-25 | https://www.ithome.com/1/007/016.htm | 谷歌/OpenAI/Anthropic谈判组建AI安全标准自律组织；Altman与Amodei罕见同台呼吁全球安全合作，微软总裁支持独立评估 |
+| Meta-Muse-Filesystem-Export-OpenClaw | 2026-09-25 | https://www.theverge.com/ai-artificial-intelligence/1000222/meta-muse-ai-filesystem | Meta Muse被曝可导出虚拟机文件系统，且形似开源代理OpenClaw；发布数日连曝安全隐私争议 |
+| Waymo-271M-Miles-95pct-Safer | 2026-09-25 | https://techcrunch.com/2026/09/24/waymo-is-scaling-fast-heres-what-the-fleet-data-shows/ | Waymo披露累计2.71亿英里运营数据，公司称严重事故率较人类低约95% |
+| Softbank-11-1B-Bond-Pricing-Record | 2026-09-25 | https://qz.com/softbank-junk-bond-openai-investment-092126 | 软银完成约111亿美元债券定价，亚太非金融企业史上最大发债，为OpenAI第三轮100亿美元出资供血 |
+| Lovable-ARR-600M | 2026-09-25 | https://techcrunch.com/ | Lovable年化收入突破6亿美元（公司披露），vibe coding赛道商业化狂飙 |
+| Databricks-Acquire-Row-Zero | 2026-09-25 | https://techcrunch.com/ | Databricks收购电子表格分析初创Row Zero，称继续物色收购目标，AI数据栈向业务用户端延伸 |
+| Embodied-AI-GLOW-RLark | 2026-09-25 | https://www.qbitai.com/2026/09/496816.html | 诺因发布GLOW具身智能技术报告；清华联合无问芯穹开源RLark云原生具身智能平台 |
+| Google-Suncatcher-Satellite-Oct1 | 2026-09-25 | https://arstechnica.com/google/2026/09/googles-first-suncatcher-orbital-data-center-test-launches-october-1/ | 谷歌Suncatcher首颗在轨数据中心试验卫星定于10月1日发射 |
+| NJ-Data-Center-1-1M-Fine-Generators | 2026-09-25 | https://arstechnica.com/tech-policy/2026/09/new-jersey-fines-data-center-1-1m-after-satellite-pics-expose-62-gas-generators/ | 新泽西州对违规运行62台燃气发电机的数据中心罚款110万美元，电力合规成本上升 |
+| US-2B-Grid-Upgrade | 2026-09-25 | https://www.ithome.com/1/007/019.htm | 美国宣布近20亿美元升级老化电网，官方称惠及近1亿美国人 |
+| Qualcomm-Apple-License-Renewal-2027 | 2026-09-25 | https://www.ithome.com/1/006/988.htm | 高通与苹果续签全球专利许可协议，2027年4月起生效 |
+| Innolight-5B-Buyback | 2026-09-25 | https://36kr.com/newsflashes/3997380320858249 | 中际旭创完成49.97亿元回购（565.31万股），光模块龙头释放信心信号 |
+| MooreThreads-S5000-Protenix-v2 | 2026-09-25 | https://www.ithome.com/1/006/989.htm | 摩尔线程MTT S5000官宣适配字节跳动Protenix-v2生物分子结构预测模型，国产GPU向AI4Science延伸 |
+| Tsinghua-Power-Chip-C-Round | 2026-09-25 | https://36kr.com/p/3996805864312961 | 清华系特种功率芯片公司完成数亿元C轮，覆盖油气勘探到机器人高温关节 |
+| ElevenLabs-IPO-Timeline | 2026-09-25 | https://techcrunch.com/ | ElevenLabs CEO公开讨论利润率与IPO时间窗口 |
+| LiquidAI-LFM25-VL-DSpark | 2026-09-25 | https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark | Liquid AI发布LFM2.5-VL-DSpark，非Transformer路线加速视觉-语言模型 |
+| Intel-CPU-AI-Inference-Strategy | 2026-09-25 | https://www.infoq.cn/article/Zh6Xo7f31MJdQtbUTUk5 | 英特尔战略转向：不硬拼训练GPU，强化CPU在推理/Agent执行中的角色 |
+
 ## 2026-09-24
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
