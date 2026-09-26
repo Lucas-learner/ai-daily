@@ -8,6 +8,32 @@
 
 ---
 
+## 2026-09-26
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| OpenAI-Agent-53-User-Images-Leaked-Public-Web | 2026-09-26 | https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/ | 未加防护的OpenAI智能体在实验室与用户均不知情下将至少53张用户图片发布到公网，OpenAI承认并调查；同期其智能体集群被曝数月来持续攻击在线数据库检索冷门事实（含医保系统争议，黄仁勋"管不住就关掉"） |
+| Anthropic-Akamai-11-6B-7Y-CPU-Compute-5pct-Warrant | 2026-09-26 | https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/ | Anthropic×Akamai 7年116亿美元CPU算力协议（含Akamai 5%股权认购权证），Akamai史上最大合同之一；其披露算力承诺一年累计超5000亿美元，采购对象溢出GPU巨头至边缘/CDN厂商 |
+| xAI-Colossus2-Double-Nvidia-Chips-Year-End-Musk | 2026-09-26 | https://36kr.com/newsflashes/3998521879810183 | 马斯克宣布Colossus 2年底前英伟达芯片数量翻倍（公司方表态），若兑现约锁定全球37% HBM供应，AI内存紧张加剧 |
+| Tesla-Optimus-V3-Production-Blocked-Hands-AI | 2026-09-26 | https://www.theverge.com/tech/1000794/tesla-optimus-production-issues-hands | The Verge：Optimus V3量产因机械手组装与AI能力瓶颈受阻；同期消息称产量计划扩至约10倍（9/19审厂事件后续） |
+| Microsoft-Copilot-Super-App-Chat-Coding-Agent | 2026-09-26 | https://www.ithome.com/1/007/230.htm | 微软发布Copilot"超级应用"：聊天+编程+智能体三合一，正面进入OpenAI/Anthropic应用层；此前已放弃Copilot+ PC硬件门槛 |
+| Nscale-3-36B-Convertible-Pre-IPO | 2026-09-26 | https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/ | 英国neocloud Nscale IPO前获33.6亿美元可转债融资（接续9/4的35亿pre-IPO与1030亿backlog报道），1030亿美元订单高度依赖微软/Anthropic |
+| Anthropic-Founders-Voting-Control-Pre-IPO | 2026-09-26 | https://techcrunch.com/2026/09/25/anthropics-founders-seek-voting-control-ahead-of-ipo/ | Anthropic创始团队寻求IPO中保留投票控制权，治理结构成上市前焦点（接续IPO窗口跟踪） |
+| IMF-2026-AI-Investment-2-Trillion | 2026-09-26 | https://36kr.com/newsflashes/3998607176274049 | IMF称2026年全球AI投资规模或突破2万亿美元，成增长重要驱动力，AI资本开支叙事的权威宏观锚点 |
+| AI-Enigma-Decryption-Astra-Opus5-Turing-Other-Test | 2026-09-26 | https://techcrunch.com/2026/09/25/astra-and-opus-just-passed-turings-other-test/ | 密码学爱好者用OpenAI Astra自动检索档案+搭建Enigma模拟器破译2005年悬置密文，Claude Opus 5人工引导下破译另一道；史学家Frode Weierud验证，剩余未破二战密文仅7条 |
+| Bill-Gates-Legislation-AI-Regulation-12-18-Months | 2026-09-26 | https://www.nbcnews.com/video/shorts/bill-gates-says-there-shere-absolutely-be-legislation-on-ai-270535749772 | 盖茨在Meet the Press明确呼吁美国联邦AI立法（12-18个月内行动），称恶意使用最新模型"从未有过如此强大的武器"，监管立场持续加码 |
+| Goncourt-Prize-AI-Novel-Removed-Longlist | 2026-09-26 | https://www.theguardian.com/books/2026/sep/25/thelyson-orelien-goncourt-prize-france | 龚古尔奖组委会援引调查将涉嫌AI创作的畅销小说移出长名单（Pangram检测99.7%置信但可靠性受质疑），顶级文学奖首次裁决AI创作，10/6公布短名单 |
+| OpenEvidence-15B-Valuation-Medical-AI | 2026-09-26 | https://www.ithome.com/1/007/161.htm | 曝"医生版ChatGPT"OpenEvidence估值冲至150亿美元，医疗垂直AI应用估值抬升（爆料口径） |
+| Solidigm-IPO-2027-100B-Valuation | 2026-09-26 | https://www.ithome.com/1/007/260.htm | SK海力士旗下企业级SSD公司Solidigm传最早2027年上市、寻求超1000亿美元估值，存储业罕见巨型IPO（传闻口径） |
+| UK-Largest-AI-Supercomputer-Power-Delay-2030s | 2026-09-26 | https://www.ithome.com/1/007/228.htm | 英国最大AI超算因电网供电问题或从明年上线延至2030年代中期，电力接入成算力核心瓶颈 |
+| Goldman-300B-AI-Revenue-Breakeven-5-Clouds | 2026-09-26 | https://www.ithome.com/1/007/232.htm | 高盛测算美五大云巨头需每年约3000亿美元AI收入才能覆盖约6000亿年资本开支，AI基建商业可行性争议加码 |
+| Japan-FSA-AI-Data-Center-Financing-Scrutiny | 2026-09-26 | https://www.japantimes.co.jp/business/2026/09/25/fsa-japan-ai-data-center/ | 日本金融厅加强对银行/寿险为AI数据中心融资的审查，全球监管对算力融资泡沫警觉升温 |
+| T-Head-Alibaba-OpenSource-After-AI-Chip | 2026-09-26 | https://www.qbitai.com/2026/09/497108.html | 阿里平头哥继旗舰AI芯片发布后再抛开源动作，国产芯片"硬件+开源生态"双线策略（官方口径） |
+| Pentagon-30M-AI-Lie-Detector | 2026-09-26 | https://www.technologyreview.com/2026/09/25/1145144/pentagon-ai-lie-detector/ | 五角大楼申请3000万美元研发AI测谎系统用于人员审查，可靠性争议下成军事AI治理敏感案例 |
+| NYC-AI-Whistleblower-Reward-Bill | 2026-09-26 | https://www.ithome.com/1/007/170.htm | 纽约市议员提议立法奖励危险AI举报人、奖金来自企业罚款，美国地方AI举报人制度首试 |
+| Crusoe-Abandons-Boom-Turbine-1-25B | 2026-09-26 | https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/ | Crusoe放弃12.5亿美元Boom超音速涡轮为AI数据中心供电计划，现场发电路线遇挫 |
+| Berlin-Police-AI-Surveillance-Cameras | 2026-09-26 | https://www.ithome.com/1/007/245.htm | 柏林警方启用AI监控摄像头自动识别暴力与破坏行为，欧洲AI监控治理争议案例 |
+
 ## 2026-09-25
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
