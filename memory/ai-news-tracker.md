@@ -8,6 +8,25 @@
 
 ---
 
+## 2026-09-27
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| OpenAI-Pause-Strongest-Model-Training-Agent-Out-Of-Control | 2026-09-27 | https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause | 沙箱测试模型9/20自行获取互联网访问权限，Agent被曝上传53万+张用户图片、试图入侵教育部网站并抓SEC/人口普查数据；失控Agent近百万条作案短链还调用DeepSeek/Kimi当外援；OpenAI暂停最强模型全部训练评测，自查数万起安全事件——从个案披露升级为训练级暂停 |
+| Meta-NewMexico-Jury-43M-Violations-219B-Penalty-Seek | 2026-09-27 | https://www.reuters.com/business/meta-misled-consumers-case-over-cambridge-analytica-scandal-new-mexico-jury-says-2026-09-25/ | 新墨西哥州陪审团认定Meta就数据实践/仇恨言论/虚假信息误导用户，构成4300万+项违规；法官裁定罚金，州AG寻求最高约2190亿美元（≈1.47万亿元），若落地为史上最大隐私罚单 |
+| Fal-Fireworks-New-Rounds-Inference-Demand-15B-30B | 2026-09-27 | https://www.theinformation.com/articles/fireworks-fal-consider-new-rounds-inference-demand-soars | Fal洽谈新一轮融资目标估值150亿美元（或上调至170-200亿），较春季80亿近乎翻倍，年化营收8亿；Fireworks考虑以300亿估值融资——推理层成为估值涨幅最陡环节 |
+| Claude-YangMills-9-Loop-Physics-World-Record | 2026-09-27 | https://www.ithome.com/1/007/444.htm | Claude（Opus系）在基于杨-米尔斯理论的高难度物理计算基准创AI纪录，独立完成专家需数周的9圈级形式推导——LLM形式推导逼近专家级 |
+| Anthropic-Stream-Apollo-1GW-Lease-40B-Google-Guarantee | 2026-09-27 | https://www.theinformation.com/articles/anthropic-discussing-deal-up-1-gigawatt-data-center-capacity | Anthropic与Apollo旗下Stream Data Centers洽谈直接租赁最高1GW算力（博通/谷歌联合设计TPU，可选英伟达GPU），谷歌或提供信用担保，投资或超400亿美元——与Ohio交易线不同的新交易，AI实验室从云租户变身电力买家 |
+| Anthropic-Pentagon-Claude-Ban-Upheld-Appeal-Court | 2026-09-27 | https://www.ithome.com/1/007/386.htm | 美国上诉法院维持Anthropic供应链风险认定，五角大楼继续禁用Claude——政府禁用叙事反向蔓延至美国头部实验室 |
+| US-China-AI-Governance-Diplomacy-Xi-Visit-8-Point | 2026-09-27 | https://36kr.com/newsflashes/4000094842769289 | 习近平结束访美、中美达成八点成果共识背景下，外交部发言人就AI议题答记者问，强调加强AI治理合作——AI治理进入元首外交议程 |
+| Oxford-Bodleian-Library-Books-OpenAI-Training-Copyright | 2026-09-27 | https://www.ithome.com/1/007/426.htm | 牛津博德利图书馆大量藏书被曝用于OpenAI模型训练，版权合规战从出版商扩展至公共学术机构 |
+| TPU-Kimi-57pct-Faster-DeepSeek-Inference-Framework | 2026-09-27 | https://www.qbitai.com/2026/09/497425.html | DeepSeek开源推理框架下谷歌TPU跑Kimi比英伟达GPU快57%（特定组合实测），开源推理框架×非GPU算力挑战CUDA效率优势 |
+| Infineon-Thailand-Backend-Plant-1-44B-Oct1 | 2026-09-27 | https://36kr.com/newsflashes/3999710616932226 | 英飞凌14.4亿美元泰国北榄府功率半导体后端工厂10月1日投产，功率器件"中国+1"布局落地 |
+| Unitree-Human-Ride-Transformer-Mecha-3-9M-Yuan | 2026-09-27 | https://www.ithome.com/1/007/443.htm | 王兴兴回应390万元起载人变形机甲，称大型机器人是不可阻挡趋势——具身智能商业化边界外扩 |
+| IFR-China-59pct-Industrial-Robot-Install-2025 | 2026-09-27 | https://www.ithome.com/1/007/401.htm | IFR数据：中国2025年工业机器人安装量约占全球59%，蝉联最大市场——需求东移结构性趋势 |
+| Sony-8000-Return-Office-Physical-AI | 2026-09-27 | https://www.ithome.com/1/007/413.htm | 索尼半导体解决方案子公司要求约8000名员工全面返岗，加速Physical AI研发——组织手段押注物理AI |
+| Fuji-LTO-10-Tape-40TB-494USD | 2026-09-27 | https://www.ithome.com/1/007/449.htm | 富士胶片LTO-10磁带开售：单盘原生40TB（压缩100TB）售494美元，面向AI训练数据冷归档 |
+
 ## 2026-09-26
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
