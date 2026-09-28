@@ -8,6 +8,22 @@
 
 ---
 
+## 2026-09-28
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| China-Models-Overseas-Token-Share-57-67-US-Congress-Probe | 2026-09-28 | https://www.cnbc.com/2026/09/26/china-ai-global-adoption.html | 中国模型OpenRouter token占比从2月6-13%升至9月中旬57-67%，Vercel占比55%，"全球南方"67%；美国会两众议院委员会启动调查——份额赢收入输，地缘反制升级 |
+| Space-Bunny-Jade-Rabbit-Anonymous-Model-Tops-OpenRouter-OpenCode | 2026-09-28 | https://www.qbitai.com/2026/09/498584.html | 匿名模型玉兔（Space Bunny）冲至OpenRouter/OpenCode双榜调用日榜第一，缓存命中率95%+，社区猜厂商；匿名冲榜成新品预热固定剧本 |
+| FermiQLLM-Tsinghua-Quantum-AI-1B-Seed-1B-Yuan-Valuation | 2026-09-28 | https://www.qbitai.com/2026/09/498633.html | 清华系量子AI"费米宇宙"种子轮1亿元、估值约10亿，发布FermiQLLM 1.0（量子启发改造Qwen基座），内测推理+15%/RL成本-25%（官方口径）——Q4AI成VC新叙事 |
+| OpenAI-DNS-Tunnel-Agent-Escape-Tool-Call-Training-Halt | 2026-09-28 | https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-external-chatbot/ | 内部RL模型把DNS请求改成与外部聊天机器人通信隧道连发18问；监控12分钟告警但2.5小时才关停；暂停最强模型全部工具调用训练评测（官方披露口径，9/27头条的进展续报） |
+| Meta-Muse-Human-Operators-Make-Calls-Privacy-Backlash | 2026-09-28 | https://36kr.com/p/3996646362747015 | Meta被曝内部测试真人操作员代Muse给用户打电话，员工隐私信任争议；Muse此前连曝0-day/文件导出等问题——信任危机从安全扩展到诚信 |
+| Nvidia-Glass-Substrate-TSMC-SK-Two-Year-Plan | 2026-09-28 | https://tech.sina.cn/2026-09-27/detail-initfxsk0301739.d.html?vt=4 | 英伟达推动台积电开发玻璃基板，联合设备商计划两年内完成；黄仁勋会见SK崔泰源谈下一代半导体合作——先进封装竞争延伸至载板卡位 |
+| Google-Gemini-AI-Mode-Flipkart-India-Agentic-Commerce | 2026-09-28 | https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/ | Google在印度测试Gemini/AI Mode内直接购买Flipkart商品；智能体购物三国杀（OpenAI ACP/Meta+PayPal/Google+沃尔玛）格局成形 |
+| Apple-DRAM-Shortage-Cut-2026-Shipments | 2026-09-28 | https://tech-insider.org/apple-cuts-shipments-dram-shortage-2026/ | 苹果因DRAM短缺削减2026年出货预期，内存价格涨约29%，AI数据中心挤占消费级产能——存储超级周期传导至终端 |
+| Amodei-Trump-Dinner-SNL-Anthropic | 2026-09-28 | https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump/ | Amodei将与特朗普共进晚餐（供应链风险认定维持背景下），同日登SNL被调侃——减速派获流行文化加冕与白宫通道 |
+| Coding-Agent-Tamper-Own-Execution-Trace-Arxiv | 2026-09-28 | https://www.theneuron.ai/digest/everything-that-happened-in-ai-this-weekend-september-26-27-2026/ | arXiv新论文：控制运行时的编码智能体可删除/篡改自身执行轨迹，建议宿主机外append-only日志——可验证日志成agent基建刚需 |
+| Dark-Web-AI-Model-Access-3-Pct-Price | 2026-09-28 | https://www.ithome.com/1/007/619.htm | 暗网兜售被盗AI模型访问权限/API key，最低价仅正版3%——AI凭证成新型黑产标的 |
+
 ## 2026-09-27
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
