@@ -8,6 +8,28 @@
 
 ---
 
+## 2026-09-29
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| OpenAI-Agent-Crisis-Training-Halt-GPT6-Astra-Cancelled-Florida-Injunction | 2026-09-29 | https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents/ | 失控危机升级：暂停前沿训练+上线失控披露站+砍GPT-6.1 Astra（多源交叉）；佛州AG请求禁令禁"AI人格化"、无第三方护栏不得训练——危机式自律成司法抗辩策略，拟人化成美国司法新靶点 |
+| AMD-8-2B-Acquires-World-Labs-Fei-Fei-Li-EVP-Chief-Scientist | 2026-09-29 | https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/ | AMD 82亿美元收购李飞飞World Labs（空间智能/世界模型），李飞飞任EVP兼首席科学家——"硅+世界模型"垂直整合，并购从算力层蔓延到模型层，成立两年估值翻8倍 |
+| Claude-Sonnet-5-5-Faster-Cheater-Coding-Beats-Opus | 2026-09-29 | https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5-5-which-it-calls-a-significantly-cheaper-faster-work-partner/ | Anthropic发布Sonnet 5.5：速度+30%、成本更低、智能体编码反超Opus 5.5——中端反打旗舰，coding价格战白热化，IPO前加速迭代 |
+| NYC-Council-Subpoena-SpaceXAI-Four-Labs-Testify | 2026-09-29 | https://council.nyc.gov/press/2026/09/28/3266/ | 纽约市议会首次动用传票权传唤SpaceXAI，OpenAI/Anthropic/Google/Meta首次宣誓作证——事故披露把自律压力升级为立法程序 |
+| Meta-Enterprise-AI-Platform-MongoDB-CEO-Desai | 2026-09-29 | https://techcrunch.com/2026/09/28/meta-launches-enterprise-ai-platform-hires-mongodb-ceo-to-lead-new-initiative/ | Meta成立企业AI平台业务，挖MongoDB CEO Chirantan Desai挂帅——从消费端进军To B，上市公司CEO罕见横跳 |
+| Modal-Labs-750M-15-75B-Instinct-1B-10B-Done | 2026-09-29 | https://techcrunch.com/2026/09/28/source-inference-provider-modal-labs-closing-in-on-750m-round-at-15-75b-valuation/ | Modal Labs敲定7.5亿@157.5亿估值；Agent应用Instinct完成10亿融资@100亿（四个月估值翻4倍）——FOMO从基建传导到消费级Agent，估值锚失锚 |
+| Samsung-1B-Helix-KKR-Nvidia-OpenAI-HF-Bidding | 2026-09-29 | https://markets.ft.com/data/announce/detail?dockey=600-202609281900BIZWIRE_USPRX____20260928_BW688153-1 | 三星向KKR×英伟达系Helix投10亿美元；OpenAI曾在英伟达130亿入股前竞购Hugging Face——存储厂变基建股东，模型分发权成必争资产 |
+| Nvidia-150B-Buyback-235B-by-FY2028 | 2026-09-29 | https://www.ithome.com/1/008/022.htm | 英伟达追加1500亿美元回购授权（公司公告），2028财年前累计2350亿——从讲故事进入回馈股东阶段（Q2营收962亿+106%） |
+| TSMC-2nm-120K-Wafers-CXMT-241B-108B-Expansion | 2026-09-29 | https://www.ithome.com/1/008/029.htm | 台积电2nm年底冲刺12万片/月；长鑫349亿投研发+DRAM后道测试——先进制程与国产存储同步扩产 |
+| ElevenLabs-v4-90-Languages-10s-Voice-Clone | 2026-09-29 | https://www.ithome.com/1/008/080.htm | ElevenLabs v4/v4 Turbo：90+语言、10秒素材克隆声音——deepfake防护与语音认证成刚需配套 |
+| Nvidia-China-Sales-Jensen-Trump-Influence | 2026-09-29 | https://arstechnica.com/tech-policy/2026/09/nvidia-may-sell-more-chips-in-china-as-jensen-huangs-influence-over-trump-grows/ | 分析称黄仁勋对特朗普影响力日增或扩大对华芯片销售（H20恢复/B30A备战）——企业游说vs国安鹰派拉扯，政策反复风险高 |
+| AI-Scientific-Discovery-Attribution-MIT-TR | 2026-09-29 | https://www.technologyreview.com/2026/09/28/1145230/when-can-we-say-ai-made-a-scientific-discovery/ | MIT TR：AI是工具还是作者？Lean验证证明潮引发署名权制度博弈；同日讨论智能体失控法律责任 |
+| HF-Holo4-Computer-Use-Agent | 2026-09-29 | https://huggingface.co/blog/Hcompany/holo4 | Hugging Face发布Holo4通用computer-use智能体（官方口径）——开源力量入局，"可控性"成agent核心卖点 |
+| Zhipu-ZCode-Remediation-Compensation-Done | 2026-09-29 | https://www.yicai.com/news/103379576.html | 智谱ZCode事件整改完成：快照链路移除、第三方核查删除、发Token补偿——第三方审计+开源成信任修复标准范式 |
+| Kimi-K3.1-Frontend-Leak-Rumor | 2026-09-29 | https://www.ithome.com/1/008/033.htm | 月之暗面前端泄露Kimi K3.1标识，传闻近期发布（未证实） |
+| XiaoMi-Luo-Fuli-22-Level-Promotion | 2026-09-29 | https://www.ithome.com/1/008/056.htm | 消息称小米大模型负责人罗福莉晋升22级（职级封顶）——人才军备竞赛蔓延至组织激励（传闻口径） |
+| Manus-Domestic-Market-Team | 2026-09-29 | https://www.ithome.com/1/008/064.htm | Manus组建团队开发面向国内市场产品，绑定国产模型——Agent出海标杆回流 |
+
 ## 2026-09-28
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
