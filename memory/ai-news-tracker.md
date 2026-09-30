@@ -8,6 +8,20 @@
 
 ---
 
+## 2026-09-30
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| OpenAI-DevDay-GPT6-1-Sol-PriceWar-ChatGPT-Workspace | 2026-09-30 | https://openai.com/index/introducing-gpt-6-1-sol | DevDay密集反攻：GPT-6.1 Sol成本约1/5打价格战+Astra Ultrafast 300tok/s+ChatGPT办公套件/插件商店化——agent成本曲线下移，平台化野心摊牌；周活12亿 |
+| Trump-Voluntary-AI-Safety-Agreement-Superintelligence-EO | 2026-09-30 | https://www.reuters.com/legal/government/trump-host-zuckerberg-anthropics-amodei-other-ai-titans-tuesday-2026-09-29/ | 特朗普与Anthropic/Google/Meta/英伟达/OpenAI签自愿AI安全协议（"道德约束"）+行政令统一称"超级智能"——自愿自律换基建绿灯成正式框架 |
+| Anthropic-IPO-Human-Extinction-Risk-Prospectus | 2026-09-30 | https://arstechnica.com/ai/2026/09/anthropics-ipo-pitch-includes-a-warning-about-human-extinction/ | Anthropic招股书罕见写入人类灭绝风险警告——安全话语进入证券披露层 |
+| OpenAI-30B-PreIPO-1-4T-Valuation-70B-ARR | 2026-09-30 | https://techcrunch.com/2026/09/29/openai-repotedly-in-talks-to-raise-30b-round-at-1-4t-valuation/ | 据报道OpenAI洽谈IPO前再融资300亿美元@1.4万亿估值，ARR近700亿（据报道口径） |
+| Nvidia-Open-Agent-Safety-Platform-BlueField4-OpenAI-Absent | 2026-09-30 | https://techcrunch.com/2026/09/29/heres-why-openai-is-absent-from-nvidias-industry-wide-effort-to-end-rogue-ai-agents/ | 英伟达推OpenShell+BlueField-4 DPU Sentry管控失控agent，OpenAI缺席——从卖算力扩展到卖Agent管控基础设施 |
+| AMD-EPYC-9006-Venice-256-Core | 2026-09-30 | https://www.ithome.com/1/008/502.htm | AMD霄龙9006发布，旗舰256核EPYC 9996标价14904美元——CPU为GPU集群配货策略强化 |
+| OpenAI-Dots-Agent-Avatar-xAI-Domain-Troll | 2026-09-30 | https://openai.com/index/introducing-dots | OpenAI发布全天候智能体dots（Astra驱动），演示卡壳+xAI抢注dots.ai域名嘲讽——消费级agent人格化入口之争 |
+| AWS-MiddleEast-AZ-Permanent-Data-Loss | 2026-09-30 | https://www.infoq.cn/article/YWXyACETW4aRchQbSJE0 | AWS承认受损中东可用区部分客户数据永久无法恢复——单可用区数据丢失冲击被放大 |
+| Tesla-30B-Credit-Cybercab-Optimus-FSD-Croatia | 2026-09-30 | https://techcrunch.com/2026/09/29/tesla-secures-30b-in-new-credit-lines-as-it-looks-to-scale-cybercab-optimus/ | 特斯拉签300亿美元信贷加码Cybercab/Optimus+FSD获批克罗地亚（欧洲八国）——算力/机器人资本开支债务化 |
+
 ## 2026-09-29
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
