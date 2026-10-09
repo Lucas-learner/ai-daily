@@ -8,6 +8,27 @@
 
 ---
 
+## 2026-10-09
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Claude-Haiku-5-5-API-90pct-Price-Cut | 2026-10-09 | https://www.qbitai.com/2026/10/501832.html | Anthropic 16天内第三款Claude 5.5：Haiku 5.5 API价格较4.5低约90%（$0.10/$0.50档），对齐GPT-6 Luna定价——价格战蔓延小模型档，agent高频调用场景成新定价锚点（跑分为公司披露口径） |
+| OpenAI-ARR-50B-20B-Miss-Revenue-Downgrade | 2026-10-09 | https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/ | 据报OpenAI年化营收接近500亿美元，较约700亿预期低200亿（据报口径）——龙头收入预期首次百亿美元级下修，高估值+收入兑现放缓叙事裂缝显现 |
+| TSMC-Q3-Record-Revenue-39pct-Sept-54-6pct | 2026-10-09 | https://qz.com/tsmc-third-quarter-revenue-record-ai-chip-demand-100826 | 台积电Q3营收创纪录同比+39%，9月单月+54.6%——AI减速论未传导至代工最上游，10/15法说会盯2027资本开支与CoWoS指引 |
+| GlobalFoundries-TSMC-2B-US-Interposer-CoWoS | 2026-10-09 | https://www.stocktitan.net/news/GFS/global-foundries-reaches-agreement-to-establish-u-s-based-supply-of-7qwxjvp41ohm.html | 格芯×台积电五年20亿美元协议，纽约Malta厂扩产硅中介层——CoWoS关键部件首次美国本土生产，先进封装从独家产能演变为美日分工 |
+| OpenAI-719-Math-Proofs-Lean-Translation-Failure | 2026-10-09 | https://techcrunch.com/2026/10/08/openais-math-solutions-arent-meeting-the-fields-standards-yet/ | OpenAI发布719篇数学证明遭AGMAI/剑桥质疑：仅10篇公开思维链、42%未Lean形式化、证明与代码不一致；Tao批评无人负责——AI数学成果的形式化验证+责任归属成硬门槛 |
+| Google-Gemini-Agent-Enterprise-Workspace | 2026-10-09 | https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/ | Google向企业首推Gemini Agent（通用工作智能体），内置Workspace——agentic进入平台默认化阶段，分发入口对位ChatGPT插件商店 |
+| Waymo-5B-Blackstone-PIMCO-Robotaxi-Debt | 2026-10-09 | https://techcrunch.com/2026/10/08/waymo-locks-in-5b-loan-from-blackstone-pimco-to-fuel-robotaxi-expansion/ | Waymo获Blackstone/PIMCO 50亿美元贷款（赛道最大债务融资），扩张车队并进欧洲/日本——评估框架从技术里程碑切换到单位经济模型 |
+| Anthropic-Usage-Policy-No-Abusing-Claude-Election | 2026-10-09 | https://techcrunch.com/2026/10/08/anthropic-changes-usage-policy-to-ban-model-abuse-and-election-interference/ | Anthropic修订使用政策首次禁止"虐待Claude"及选举干预+开源项目免费安全扫描——AI人格化争议进入商业合同文本，IPO前合规加码 |
+| OpenAI-Fired-Safety-Researchers-Open-Letter-Chilling | 2026-10-09 | https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/ | 3名被解雇安全研究员发公开信反驳指控警告寒蝉效应——OpenAI内部安全监督张力公开化，与Anthropic同日安全动作形成对照 |
+| Manus-500M-Funding-Beijing-Office | 2026-10-09 | https://techxplore.com/news/2026-10-ai-startup-manus-million-meta.pdf | Manus获超5亿美元融资（博裕/IDG领投，估值目标40亿）并重启北京办公室大举招聘——Meta收购被中方叫停后"独立融资+回流国内"成出海Agent新路径 |
+| US-GreenCard-FastTrack-Excludes-MSFT-Adobe | 2026-10-09 | https://techcrunch.com/2026/10/08/us-bars-microsoft-adobe-and-major-it-firms-from-green-card-program-for-skilled-foreign-workers/ | 美国将微软/Adobe等大厂移出高技能外劳绿卡快速通道——AI人才移民杠杆收紧，或加速人才向非美雇主流动 |
+| LMArena-3-1B-Valuation-Double | 2026-10-09 | https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/ | LMArena估值10个月近翻倍至31亿美元——众测榜单成独立资本资产，评测入口争夺加剧 |
+| SpaceX-Mobile-Carrier-Spectrum-Acquisition | 2026-10-09 | https://www.theverge.com/science/1008467/spacex-announces-plan-to-become-a-major-mobile-carrier | SpaceX宣布收购低频段频谱转型主要移动运营商，三大电信股盘后跌超5%——星链从补网升级为直接竞争，频谱价值边界重定义 |
+| Trump-National-Medal-BigTech-Donors | 2026-10-09 | https://techcrunch.com/2026/10/08/president-trump-awards-big-tech-donors-with-nations-highest-sciences-prizes/ | 特朗普向科技巨头高管/捐款人颁发国家最高科学奖——科技资本与白宫绑定从政策协议升级到荣誉授予，自愿自律换绿灯的对价特征更明显 |
+| NY-AG-TikTok-Placebo-Safety-Feature | 2026-10-09 | https://techcrunch.com/2026/10/08/new-york-alleges-tiktok-gave-teens-children-a-placebo-safety-feature-instead-of-a-real-one/ | 纽约州AG起诉TikTok青少年安全功能是安慰剂——"说了但没做"的安全承诺成新诉讼靶点，AI功能合规进入实效验证阶段 |
+| Tsai-AI-Internet-In-5-Years-Alibaba | 2026-10-09 | https://www.ithome.com/1/010/763.htm | 蔡崇信：五年后AI将如互联网融入社会各环节——国庆后开工日定调基础设施化，为阿里AI资本开支做舆论铺垫 |
+
 ## 2026-09-30
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
