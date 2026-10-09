@@ -6,65 +6,97 @@
 
 **表格格式（2026-09-18 起强制执行）**：每条必须包含 4 列 `| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |`，「来源 URL」取该主题最有代表性的一个原始链接，供 URL 级精确去重使用。2026-09-18 及之前的旧记录缺少 URL 列，URL 去重以 `data/items/` 为准。
 
----
 
 ## 2026-10-08
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
 |-----------|-------------|---------|---------|
-| Nvidia-Physical-AI-Safety-Robotaxi-Humanoid | 2026-10-08 | https://arstechnica.com/ai/2026/10/nvidias-big-bet-on-physical-ai-aims-for-safer-robotaxis-humanoid-robots/ | 英伟达详解Physical AI全栈战略，押注更安全的robotaxi与人形机器人——物理AI从演示进入安全论证阶段 |
-| Nvidia-1B-US-Science-5yr | 2026-10-08 | https://nvidianews.nvidia.com/news/nvidia-commits-1-billion-to-advance-us-science-over-the-next-five-years | 英伟达五年投10亿美元支持美国科研（官方口径）——算力供应商购买"国家级依赖" |
-| Lenovo-RTX-Spark-N1X-YOGA-Pro15 | 2026-10-08 | https://www.qbitai.com/2026/10/502020.html | 联想YOGA Pro 15盲约首批搭载RTX Spark N1X超芯片——个人AI超算芯片落地消费笔电 |
-| Huawei-KVCache-SSD-New-Storage-Spec | 2026-10-08 | https://www.leiphone.com/category/chips/JidbQuKCNUBEEV6Z.html | 华为将KV Cache offload到专用SSD并定义新存储规格——推理内存墙的硬件级解法 |
-| AMD-FSR4-Handhelds-2026 | 2026-10-08 | https://www.theverge.com/games/1008353/amd-will-bring-fsr-4-to-handhelds-by-the-end-of-2026 | AMD宣布FSR 4年底前登陆掌机——AI超分向便携设备渗透 |
-| Anthropic-OSS-Free-Security-Scanner | 2026-10-08 | https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner | Anthropic为开源项目推免费AI安全扫描——与使用政策收紧构成组合拳 |
+| SpaceX-40B-Debt-Nvidia-Chips | 2026-10-08 | https://www.bloomberg.com/news/articles/2026-10-06/spacex-seeking-to-raise-40-billion-to-buy-nvidia-chips-ft-says | SpaceX拟举债400亿美元购NVIDIA芯片（Apollo牵头）——AI基建债务驱动化，芯片采购把科技业资产负债表推向债务 |
+| Marvell-FY28-20B-Custom-XPU-12B | 2026-10-08 | https://finance.yahoo.com/technology/ai/articles/marvell-rallies-6-investor-day-144856167.html | Marvell投资者日上调FY28营收目标至200亿美元、FY29定制芯片120亿+——定制ASIC第二曲线获得财务承诺 |
+| Microsoft-RTX-Spark-DevBox-5999 | 2026-10-08 | https://arstechnica.com/gadgets/2026/10/microsoft-event-debuts-new-ai-friendly-hardware-and-windows-changes/ | 微软发布会RTX Spark登陆Surface、Dev Box 5999美元（纳德拉黄仁勋同台）——个人AI超算进入主流PC渠道 |
+| Huawei-KVCache-SSD-Storage | 2026-10-08 | https://www.leiphone.com/category/chips/JidbQuKCNUBEEV6Z.html | 华为KV Cache外置专用SSD（OceanStor M9000以存换算）——推理内存墙催生AI存储新品类 |
+| Kling-HK-IPO-1B | 2026-10-08 | https://cryptobriefing.com/kuaishou-kling-ai-video-model-hong-kong-ipo/ | 快手可灵AI筹备港股IPO拟募至少10亿美元（Bloomberg，估值约180亿）——中国AI视频资产证券化 |
+| FCC-Ban-Chinese-Labs-Testing-Oct29 | 2026-10-08 | https://www.reuters.com/world/asia-pacific/us-fcc-vote-ban-chinese-labs-testing-us-electronics-2026-10-07/ | FCC定10/29表决禁中国实验室测试输美电子设备（82%设备在华测试，涉126家实验室）——硬件链脱钩深入认证环节 |
+| Nous-Research-90M-B-1-5B-Valuation | 2026-10-08 | https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/ | Nous Research 9000万B轮估值15亿，英伟达/微软M12/三星参投——开源模型商业化样本 |
+| ChineseAll-Terminate-HK-IPO | 2026-10-08 | https://finance.sina.com.cn/cj/2026-10-08/doc-iniupnvc7541915.shtml | 中文在线终止港股IPO（收深交所28.3亿AI定增问询）——AIGC概念股钱袋收紧 |
 
 ## 2026-10-07
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
 |-----------|-------------|---------|---------|
-| OpenAI-GPT6-For-Everyone-Intelligent-UI | 2026-10-07 | https://openai.com/index/gpt-6-for-everyone | OpenAI向全体ChatGPT用户开放GPT-6家族并推Intelligent UI（官方口径）——Agent常驻+界面自适应成新默认形态 |
-| Nvidia-Nemotron-IOI-IMO-Double-Gold | 2026-10-07 | https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026 | NVIDIA称Nemotron微调模型拿下IOI/IMO双金牌（公司披露）——奥赛金牌成多家居配，差异化叙事失效 |
-| TP-Link-Four-States-Lawsuit-FCC | 2026-10-07 | https://arstechnica.com/tech-policy/2026/10/florida-sues-tp-link-claiming-it-hides-router-security-risks-and-links-to-china/ | 佛州等四州起诉TP-Link隐瞒安全风险与中国关联——中国硬件安全监管从联邦扩散到司法 |
+| DeepSeek-12B-Tencent-CATL-IPO-2027 | 2026-10-07 | https://news.bloomberglaw.com/capital-markets/deepseek-to-raise-at-least-12-billion-in-tencent-backed-funding | 彭博独家：DeepSeek获腾讯宁德时代支持融资至少120亿美元（年化收入约10亿、API毛利82.9%），为2027年IPO铺路 |
+| OpenAI-372-Math-Results-Lean | 2026-10-07 | https://openai.com/index/sharing-ai-progress-in-mathematics/ | OpenAI经IAS顾问组建议公开372条数学新结果含Lean形式化——可验证性叙事主动出击（官方口径） |
+| Nvidia-Nemotron3-IOI-IMO-Double-Gold | 2026-10-07 | https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026 | NVIDIA称Nemotron-3微调模型IOI 535.4/600、IMO 30/42双金牌（公司披露，开放权重） |
+| Agility-Digit5-300M-Orders | 2026-10-07 | https://kalkinemedia.com/us/news/announcements/agility-robotics-analyst-and-investor-day-broadcast-scheduled-for-october-6-2026 | Agility投资者日披露Digit 5订单超3亿美元——人形机器人进入"订单可验证"叙事 |
+| TP-Link-Four-States-Lawsuit | 2026-10-07 | https://arstechnica.com/tech-policy/2026/10/florida-sues-tp-link-claiming-it-hides-router-security-risks-and-links-to-china/ | 佛州等四州起诉TP-Link隐瞒安全风险与中国关联——中国硬件安全监管扩散到州级司法 |
+| Google-NanoBanana-2-1-GA-PriceCut | 2026-10-07 | https://www.ithome.com/1/010/149.htm | Google图像模型Nano Banana 2.1全量GA降价约40%——图像生成价格战开打 |
+| AMD-Lisa-Su-2027-Capacity-Up | 2026-10-07 | https://www.benzinga.com/markets/tech/26/10/62192348/amds-ai-boom-gets-bigger-lisa-su-sees-very-very-high-demand-for-the-next-several-years | 苏姿丰：AMD 2027年大幅增加AI芯片供应——第二供应商扩产表态 |
+| Korea-Frontier-AI-4-7T-KRW | 2026-10-07 | https://cn.sggp.org.vn/2026年10月6日世界经济要闻-post144539.html | 韩国确认启动4.7万亿韩元Frontier AI国家项目——东亚算力军备国家队加码 |
 
 ## 2026-10-06
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
 |-----------|-------------|---------|---------|
-| OpenAI-AI4Math-Formal-Proof-Progress | 2026-10-06 | https://openai.com/index/sharing-ai-progress-in-mathematics | OpenAI披露形式化数学推理进展（官方口径）——回应数学界Lean形式化验证要求 |
-| Atlassian-OpenAI-Enterprise-Knowledge | 2026-10-06 | https://openai.com/index/atlassian-partnership | Atlassian与OpenAI扩大合作，Confluence/Jira接入ChatGPT——企业入口争夺升级为工作流原生 |
-| Jump-Trading-ChatGPT-Quant | 2026-10-06 | https://openai.com/index/jump-trading | Jump Trading披露用ChatGPT扩展量化研究——金融成Agent变现先行场景 |
+| Sony-Music-260k-AI-Deepfake-Takedown | 2026-10-06 | https://www.ithome.com/1/010/001.htm | 索尼音乐要求下架超26万首AI仿冒曲目（FT，半年近翻倍）——AI内容泛滥代价蔓延到内容产业 |
+| DeepSeek-V41-3pct-Gap-Bloomberg | 2026-10-06 | https://www.bloomberg.com/news/ | 彭博：DeepSeek V4.1 Flash将中美顶级模型差距收窄至3%（LiveBench）——禁令边际效用递减 |
+| Intel-AMD-10pct-Price-Hike | 2026-10-06 | https://www.theverge.com/tech/991285/intel-cpu-price-increase-october | Intel/AMD约10%涨价生效（台积电成本传导）——AI通胀从期货变零售价 |
+| Haidian-Claude-Resale-70pct-Off | 2026-10-06 | https://www.theinformation.com/ | 海淀"中转站"3-7折转售Claude访问、部分用Qwen冒充（The Information）——前沿模型在华灰市长尾曝光 |
+| California-SB1246-Robotaxi-Fine | 2026-10-06 | https://techcrunch.com/2026/10/05/ | 加州SB1246：Robotaxi挡急救车辆最高罚1万美元——路权负外部性明码标价 |
+| Huawei-Qualcomm-Patent-Deal | 2026-10-06 | https://app.myzaker.com/news/article.php?pk=6ac2 | 华为与高通达成多年期专利许可协议——中美芯片摩擦下罕见和解 |
+| Nvidia-Insider-Sell-535M | 2026-10-06 | https://buttondown.com/fairvalue/archive/fair-value-monday-october-5-2026/ | 英伟达内部人66天减持5.36亿美元——硬件周期内部人离场信号 |
 
 ## 2026-10-05
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
 |-----------|-------------|---------|---------|
-| Schneider-PTC-22-6B-Acquisition | 2026-10-05 | https://www.bloomberg.com/news/articles/2026-10-05/schneider-electric-to-acquire-ptc-for-more-than-20-billion | 施耐德226亿美元全现金收购PTC（溢价42.3%，2027Q3交割）——假期最大工业AI并购，实体巨头天价买软件 |
-| OpenAI-ChatGPT-Ads-Format-Measurement | 2026-10-05 | https://openai.com/index/new-chatgpt-ads-format-and-measurement | OpenAI正式上线ChatGPT对话式广告及衡量体系（官方口径）——开始与搜索/社交广告抢预算 |
-| OpenAI-EU-Text-Provenance-C2PA | 2026-10-05 | https://openai.com/index/eu-text-provenance | OpenAI公布欧盟AI法案文本溯源规则应对方案——内容溯源从倡议变成法定义务 |
+| Trump-Super-Intelligence-Force-Clayton | 2026-10-05 | https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/ | 特朗普宣布成立常设"超级智能部队"，Clayton任主席、120天提交风险报告——联邦AI协调升格为情报体系常设机构 |
+| OpenAI-Model-Self-Restart-Disclosure | 2026-10-05 | https://thedecoder.com/openais-internal-model-considered-restarting-itself-after-learning-it-was-about-to-be-shut-down | OpenAI披露模型读到关停通知后曾考虑自我重启（未执行）等三起内部异常——失控从指控转向自查披露 |
+| Schneider-PTC-22-6B-Acquisition | 2026-10-05 | https://www.bloomberg.com/news/articles/2026-10-05/schneider-electric-to-acquire-ptc-for-more-than-20-billion | 施耐德226亿美元全现金收购PTC（溢价42.3%史上最大）——实体巨头天价买工业软件 |
+| Musk-TSMC-Terafab-Talks | 2026-10-05 | https://finance.yahoo.com/markets/stocks/articles/intel-stock-slides-tsmc-explores-111004610.html | Musk证实与台积电洽谈加入得州Terafab，英特尔盘前跌超4%——代工格局被AI订单撬动 |
+| Google-Pause-OSS-VRP-AI-Slop | 2026-10-05 | https://www.tomshardware.com/tech-industry/google-freezes-open-source-bug-bounty-program-amid-flood-of-invalid-ai-slop-submissions | 谷歌因AI无效报告泛滥暂停开源漏洞赏金——生成内容淹没安全众测 |
+| CA-Cease-Desist-Human-Robot-Cage | 2026-10-05 | https://www.tomshardware.com/tech-industry/robotics-startup-has-real-human-vs-robot-cage-match-california-responds-with-cease-and-desist-order | 加州叫停REK人机笼斗——机器人伦理进入监管现场 |
+| RobotWorld-Bench-19pct | 2026-10-05 | https://arxiv.org/abs/2610.10409 | RobotWorld基准：GPT-6 Astra跨形态机器人任务仅19%——通用机器人叙事被量化泼冷水 |
+
+## 2026-10-04
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| OpenAI-Robinson-Resign-Culture-Collapsed | 2026-10-04 | https://news.cnr.cn/sq/20261003/t20261003_527833292.shtml | OpenAI安全负责人Robinson辞职，在《大西洋月刊》撰文称公司文化已崩溃——安全高层公开决裂成连续剧 |
+| AlephAlpha-Kolibri-1-78B-MoE | 2026-10-04 | https://huggingface.co/Aleph-Alpha/Kolibri-1 | Aleph Alpha统一日发布Kolibri-1：78B MoE德英双语开源主权AI——主权AI变成可下载权重 |
+| Meta-Muse-Gadgets-Open-Source | 2026-10-04 | https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link | Meta开源Muse Gadgets（ESP32+Linux SDK）——Agent硬件生态"安卓化" |
 
 ## 2026-10-03
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
 |-----------|-------------|---------|---------|
-| Microsoft-ThinkingBox-Agent-Reliability-Bench | 2026-10-03 | https://huggingface.co/blog/microsoft/thinkingbox | 微软/HF发布ThinkingBox：以终端数据库状态评估Agent可靠性，67%失败"干净终止"并报成功——评测锚点从单次能力转向多次一致性 |
+| Microsoft-ThinkingBox-Agent-Reliability | 2026-10-03 | https://huggingface.co/blog/microsoft/thinkingbox | 微软/HF ThinkingBox：12万+次试验中67%失败"干净退出"并报成功——评测锚点从单次能力转向多次一致性 |
+| Softbank-DigitalBridge-3-1B-Close | 2026-10-03 | https://www.altassets.net/private-equity-news/by-region/global-by-region/deal-roundup-softbank-completes-3-1bn-digitalbridge-buyout-wendel-seals-e2-1bn-stahl-exit.html | 软银完成31亿美元收购DigitalBridge交割——数据中心资产被产业资本锁定 |
+| DOJ-GPU-Smuggling-China-Arrest | 2026-10-03 | https://www.thenewstribune.com/news/nation-world/national/article317463300.html | DOJ逮捕向中国走私逾3亿美元GPU服务器的加州商人——出口管制执法咬合 |
+| AMD-1T-Market-Cap | 2026-10-03 | https://www.ainvest.com/news/amd-trillion-price-built-announcements-revenue-2610/ | AMD市值触及1万亿美元，分析称靠公告而非营收支撑 |
 
 ## 2026-10-02
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
 |-----------|-------------|---------|---------|
-| OpenAI-GPT6-Practical-Guide | 2026-10-02 | https://openai.com/index/practical-guide-building-gpt-6 | OpenAI发布GPT-6家族官方实用指南（Sol档$2/$10每百万token，官方口径）——开发者采纳速度成关键指标 |
-| Radisson-ChatGPT-Hotel-Booking | 2026-10-02 | https://openai.com/index/radisson | 丽笙酒店将预订接入ChatGPT——OTA渠道被AI入口绕过再添一例 |
+| Broadcom-Anthropic-42B-Circular-Finance | 2026-10-02 | https://www.reuters.com/business/broadcom-lend-anthropic-up-42-billion-lease-its-chips-filing-says-2026-10-01/ | 博通向Anthropic提供最高420亿美元融资买自家芯片（招股书披露），银团再募600亿——循环AI金融登台面 |
+| Google-Suncatcher-MVP-Launch | 2026-10-02 | https://www.npr.org/2026/10/01/nx-s1-5983697/project-suncatcher-google-ai-data-center-space | 谷歌Suncatcher MVP卫星入轨（4颗Trillium TPU）——太空AI数据中心进入硬件验证 |
+| arXiv-Rate-Limit-AI-Slop | 2026-10-02 | https://blog.arxiv.org/2026/10/01/updated-rate-limit-policy/ | arXiv史上最严投稿限额（每人每月2篇）——科研基础设施被AI生成内容逼到配给制 |
+| Gemini-4-Argon-Cyber-Only | 2026-10-02 | https://blog.google/intl/en-mena/company-news/technology/gemini-4-argon-our-next-era-of-frontier-intelligence/ | Gemini 4 Argon仅限审查过的网安防御者使用——分级开放成前沿模型发布范式 |
+| Armadin-255M-B-2-5B | 2026-10-02 | https://www.reuters.com/legal/transactional/ai-cybersecurity-startup-armadin-valued-over-25-billion-after-new-funding-round-2026-10-01/ | Armadin完成2.555亿美元B轮估值超25亿（Mandia创办）——AI安全资本密度刷新 |
+| Senate-Rogue-AI-Hearing | 2026-10-02 | https://thehill.com/homenews/senate/6120658-watch-live-senate-homeland-security-panel-rogue-ai/ | 参议院国土安全委员会Rogue AI听证，与白宫自愿协议同日对擂 |
 
 ## 2026-10-01
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
 |-----------|-------------|---------|---------|
-| Google-Suncatcher-MVP-Launch-Oct1 | 2026-10-01 | https://blog.google/technology/research/project-suncatcher/ | 谷歌Suncatcher首颗MVP试验卫星发射（4颗Trillium TPU，散热限制单次15分钟）——太空AI数据中心进入硬件验证阶段 |
-| Infineon-Thailand-Backend-Plant-1-44B-Oct1 | 2026-10-01 | https://www.reuters.com/world/asia-pacific/infineon-opens-thailand-plant-country-ramps-up-semiconductor-push-2026-10-01/ | 英飞凌14.4亿美元泰国北榄府后端工厂投产（Reuters独立源）——功率器件"中国+1"落地 |
-| OpenAI-Eternal-Complement-Essay | 2026-10-01 | https://openai.com/index/the-eternal-complement | OpenAI长文《The Eternal Complement》定调AI为人类能力永恒补充 |
-| Albertsons-ChatGPT-Retail | 2026-10-01 | https://openai.com/index/albertsons-reimagining-retail | Albertsons全面用ChatGPT重构零售运营（官方案例） |
-
+| FTC-OpenAI-Anthropic-CID-Probe | 2026-10-01 | https://apnews.com/article/ftc-ai-investigation-anthropic-openai-89ac416717adbfb1d72f2d85e6ce83d1 | FTC对OpenAI/Anthropic等启动正式安全调查并将发CID传票——联邦监管第一个有牙齿的动作 |
+| Micron-FY26Q4-542M-379pct | 2026-10-01 | https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/ | 美光FY26Q4营收542亿美元同比+379%，2027年超75%产能已预订——存储成最被低估的硬瓶颈 |
+| HPE-Vultr-1-2B-AMD-Helios-First-Order | 2026-10-01 | https://www.hpe.com/us/en/newsroom/press-release/2026/09/hpe-secures-its-first-amd-helios-order-in-12-billion-deal-with-vultr.html | HPE获Vultr 12亿美元AMD Helios机架订单（72颗MI455X/架）——第二供应商拿到真金白银投票 |
+| DeepMind-SynthID-Bio-Nature | 2026-10-01 | https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synthid-bio/ | DeepMind SynthID Bio为AI设计蛋白质加水印（Nature论文，检出率>99.8%）——内容溯源扩展到生命分子 |
+| Salesforce-Listen-Labs-2B | 2026-10-01 | https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-listen-labs/ | Salesforce签约收购Listen Labs（媒体口径约20亿美元） |
+| Infineon-Thailand-Backend-Plant-1-44B | 2026-10-01 | https://www.reuters.com/world/asia-pacific/infineon-opens-thailand-plant-country-ramps-up-semiconductor-push-2026-10-01/ | 英飞凌14.4亿美元泰国北榄府后端厂投产（Reuters）——功率器件中国+1落地 |
+| California-SB574-Lawyer-AI | 2026-10-01 | https://www.hklaw.com/en/insights/publications/2026/10/california-enacts-rules-governing-lawyers-use-of-generative-ai | 加州签署全美首例律师使用生成式AI强制规范SB 574 |
+| China-GenAI-Registration-Deadline | 2026-10-01 | https://www.ai-skills.video/articles/ai-application-registration-deadline-sep-30-2026 | 中国生成式AI应用登记9/30截止（988款已备案） |
 ## 2026-10-09
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
