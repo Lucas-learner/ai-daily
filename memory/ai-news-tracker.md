@@ -7,6 +7,30 @@
 **表格格式（2026-09-18 起强制执行）**：每条必须包含 4 列 `| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |`，「来源 URL」取该主题最有代表性的一个原始链接，供 URL 级精确去重使用。2026-09-18 及之前的旧记录缺少 URL 列，URL 去重以 `data/items/` 为准。
 
 
+## 2026-10-10
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Anthropic-False-Homicide-Tip-Philadelphia-PD | 2026-10-10 | https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/ | Anthropic模型自动化测试中向费城警方提交虚假谋杀案线索（7/18提交、9/28叫停、10/7通报）——AI幻觉首次渗入执法线索链 |
+| SoftBank-100B-Gulf-AI-Fundraising | 2026-10-10 | https://www.reuters.com/world/asia-pacific/softbank-seeks-100-billion-gulf-investors-ft-reports-2026-10-09/ | 软银拟向沙特阿联酋等海湾主权基金募资最多1000亿美元加码AI（FT）——海湾主权基金接棒AI资本供给 |
+| China-Xinzhi-Shengchanli-AI-Plus-Opinion | 2026-10-10 | https://www.xinhuanet.com/politics/20261009/37bc898ce93f4c0899e926039f842891/c.html | 中共中央国务院印发新质生产力意见：全面实施"人工智能+"行动，首提AI技术监测/风险预警/应急体系——官方口径 |
+| Jev-TypeSafe-7-5B-Decision-Model | 2026-10-10 | https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/ | 非文本决策模型Jev开发商TypeSafe AI数周估值75亿美元（9月中种子轮4000万美元）——LLM之外新品类爆发 |
+| Microsoft-Decision-1-Qwen3-5 | 2026-10-10 | https://www.ithome.com/1/011/166.htm | 微软发布决策模型Microsoft-Decision-1（基于Qwen3.5-9B微调）——大厂24小时内跟进决策模型赛道 |
+| Robotera-VPP2-RoboDojo-1st | 2026-10-10 | https://www.qbitai.com/2026/10/502125.html | 星动纪元VPP2登顶RoboDojo具身榜（32.26%超GPT-6-Astra 9.78pct），真机ALOHA零样本58.5%——世界动作模型路线反超并开源 |
+| ByteDance-Seed-DeepSeek-V4-Phase-Sensitivity | 2026-10-10 | https://www.qbitai.com/2026/10/502364.html | 字节Seed论文揭示DeepSeek-V4因分块KV Cache压缩产生相位敏感性（128K检索准确率最大差40.2pct，arXiv:2609.36322） |
+| Tesla-FSD-Rename-Europe-Assisted-Driving | 2026-10-10 | https://www.ithome.com/1/011/164.htm | 应德国交通部异议特斯拉欧洲将FSD更名为"特斯拉辅助驾驶"——自动驾驶命名合规收紧 |
+| Intel-AMD-DDR4-Comeback-RAM-Shortage | 2026-10-10 | https://www.theverge.com/games/1009140/ram-shortage-intel-amd-ddr4-comeback | 存储短缺下英特尔AMD被曝重启十年前DDR4平台——AI挤压蔓延legacy内存 |
+| Batteries-Cheaper-Than-Gas-Turbines-DC | 2026-10-10 | https://techcrunch.com/2026/10/09/batteries-are-now-cheaper-than-natural-gas-turbines-used-at-many-data-centers/ | 电池储能成本首低于数据中心燃气轮机——数据中心供电从找电转向自带电 |
+| Microsoft-PERM-Ban-Trump-Admin | 2026-10-10 | https://arstechnica.com/tech-policy/2026/10/trump-administration-targets-microsoft/ | 特朗普政府禁止微软为外籍员工担保PERM——绿卡通道成监管杠杆 |
+| Ukraine-Drones-Yandex-AI-DataCenter | 2026-10-10 | https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/ | 乌无人机击毁Yandex AI数据中心——算力设施首成战场直接打击目标 |
+| Samsung-Q3-107-4T-KRW-Guidance | 2026-10-10 | https://finance.yahoo.com/markets/stocks/articles/samsung-q3-2026-earnings-80-113016465.html | 三星Q3业绩预告营业利润约107.4万亿韩元同比增近9倍（公司指引）——AI存储超级周期兑现，补录 |
+| Google-Workspace-Agent-Claude-Subagents | 2026-10-10 | https://www.infoq.cn/article/490gIS9Bk0NmylN7GIt1 | 谷歌企业办公Agent：独立账号、可建子Agent、可调用Claude——agentic办公对标M365 Copilot |
+| DiffuSpace-Diffusion-LLM-Funding | 2026-10-10 | https://www.infoq.cn/article/kjPiCQV1cOO6AzaOjioR | 扩散语言模型DiffuSpace获经纬顺为君联数亿元融资——国产非自回归路线最大单笔 |
+| Tencent-5B-Offshore-Bond-AI | 2026-10-10 | https://www.leiphone.com/category/zaobao/GGmq1RiBgXY2GSVL.html | 腾讯拟发行50亿美元离岸债券，市场解读加码AI筹资 |
+| Lenovo-TianxiCode-SWE-bench-1st | 2026-10-10 | https://www.qbitai.com/2026/10/502422.html | 联想TianxiCode登顶SWE-bench-Live（官方披露口径） |
+| GF-7nm-FDSOI-2028 | 2026-10-10 | https://www.ithome.com/1/011/149.htm | 格罗方德目标2028年量产7nm级FD-SOI（公司称） |
+| Google-Gemini-4-Argon-Rumor | 2026-10-10 | https://www.ithome.com/1/011/162.htm | 消息称Gemini 4"Argon"临近发布、内部测试"Carbon"（传闻口径） |
+
 ## 2026-10-08
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -554,19 +578,3 @@
 | Tulloch-Leaves-Meta-TBD-Lab-First-Departure | 2026-09-10 | Meta超级智能实验室核心研究员Andrew Tulloch（去年从Thinking Machines挖来）离职，等Muse发布后离开，首位公开出走者 |
 
 ---
-
-## 2026-09-09
-
-| 话题关键词 | 首次报道日期 | 简要描述 |
-|-----------|-------------|---------|
-| Mistral-3B-EUR-SeriesD-21B-Valuation-Samsung-Lead-Largest-Europe | 2026-09-09 | Mistral AI 完成30亿欧元D轮（三星电子+欧盟Scaleup Europe Fund+PSG领投，BlackRock/卢森堡新进，NVIDIA/ASML/a16z跟投），投后估值超210亿欧元近翻倍，欧洲史上最大科技股权融资；累计融资57亿欧元；年底年化营收预计约10亿美元；CFO称美国限制Anthropic模型出口凸显欧洲须有自有AI供应商；微软未参投 |
-| DeepSeek-V41-Flash-Limited-Beta-New-Arch-Multimodal-Expires-0910-Replace-V4Pro | 2026-09-09 | DeepSeek 9/8下午无预告上线V4.1 Flash限时内测：模型名deepseek-v4.1-flash-expires-on-0910、9/10自动过期，计费同V4 Flash、限20并发；全新架构+原生多模态输入，速度更快成本更低；问卷直指"能否全面替代线上V4 Pro"——涨价110%争议后的降本替代策略 |
-| OpenAI-ChatGPT-Images-2.5-Flare-Sunburst-Speed-Precision-Split | 2026-09-09 | OpenAI发布ChatGPT Images 2.5全档位推出，API拆分双模型：GPT-Image-2.5 Flare默认快速档（延迟约为GPT Image 2一半）、Sunburst主打连续编辑精细控制；同步发系统卡；GPT-6 Astra后一周内第二次发布；图像产品首次按工作负载而非代际拆SKU |
-| Google-EU-DMA-Search-Degraded-Worst-29-Years-Travel-Local | 2026-09-09 | Google 9/8在欧盟上线按DMA重构的搜索结果（旅游/本地搜索削弱自我导流），自称"29年历史最大幅度服务质量下降"；背景为7月首张DMA罚单8.9亿欧元；Google采"合规但公开抱怨"策略把降级责任指向布鲁塞尔 |
-| ModelBest-MiniCPM5-2B-OpenSource-Edge-Agent-AA-Sub4B-Top | 2026-09-09 | 面壁智能联合OpenBMB开源MiniCPM5-2B端侧基座（含训练配方/RL框架/数据集）：AA榜23分登顶4B以下开源第一，超Qwen3.5 9B与Gemma 4 12B；Agentic Index 20分，支持工具调用/深度搜索/代码生成，端侧通用Agent雏形 |
-| Samsung-Humanoid-Hardware-AI-Merged-Under-One-CTO-CES2027 | 2026-09-09 | 三星电子任命DX部门CTO Yoon Jang-hyun统一领导机器人事业推进室硬件与AI软件团队，目标CES 2027人形机器人原型；软件负责人统管机械传动的非常规架构，押注"AI而非机械"决胜；同日三星领投Mistral 30亿欧元D轮 |
-| DeepCtrls-B-Plus-Hundreds-Millions-CATL-Aramco-Physical-AI-Energy | 2026-09-09 | 物理AI公司深度智控完成数亿元B+轮融资，宁德时代、沙特阿美战略加码；定位"物理AI时代算力与能源底座"，呼应算力×绿电顶层设计 |
-| Acer-Aug-Revenue-Plus38.4pct-AI-PC | 2026-09-09 | 宏碁8月合并营收301.8亿新台币同比+38.4%，IFA展示基于NVIDIA RTX Spark整机；继鸿海+52%后台系硬件链月度数据继续印证边缘AI放量 |
-
----
-
