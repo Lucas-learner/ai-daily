@@ -7,6 +7,23 @@
 **表格格式（2026-09-18 起强制执行）**：每条必须包含 4 列 `| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |`，「来源 URL」取该主题最有代表性的一个原始链接，供 URL 级精确去重使用。2026-09-18 及之前的旧记录缺少 URL 列，URL 去重以 `data/items/` 为准。
 
 
+## 2026-10-11
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| NVIDIA-Reflection-AI-Acquisition-Talks | 2026-10-11 | https://www.ft.com/content/052610c5-22b4-4dd4-932e-b7f9f0628b6a | 英伟达洽谈收购/增持开源模型公司Reflection AI（FT），含acqui-hire规避反垄断结构；此前已投8亿美元、估值250亿 |
+| Xiaomi-MiMo-V2.6-Agentic-RL-Report | 2026-10-11 | https://arxiv.org/pdf/2610.11959 | 小米MiMo-V2.6技术报告：单次RL后训练260万美元、每步27-37亿Token，MoE Router冻结/Reward Hacking<2%，开源7000+RL环境 |
+| OpenAI-GPT-6.1-Sol-Ultrafast-Tier | 2026-10-11 | https://developers.openai.com/api/docs/pricing | OpenAI为GPT-6.1 Sol上线Ultrafast极速档，Token单价为标准模式6倍——延迟成第三个变现轴 |
+| Anthropic-Cut-Evals-Internet-Nadella-Emergency-Brake | 2026-10-11 | https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet | Anthropic物理切断内部评测实时互联网+纳德拉"默认模型已被攻陷/紧急制动"——头部厂商转向失控防御叙事 |
+| Anthropic-Usage-Policy-No-Abuse-Claude | 2026-10-11 | https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude | Anthropic使用政策首次明文禁止虐待Claude行为，11/12生效，模型福祉制度化 |
+| Cirrus-Logic-Synaptics-Onsemi-Bidding-War | 2026-10-11 | https://www.bloomberg.com/news/articles/2026-10-09/cirrus-logic-is-said-to-have-bid-for-synaptics-after-onsemi-deal | Cirrus Logic竞购Synaptics逼安森美改为57亿美元全现金——边缘AI芯片资产竞购战 |
+| CXMT-4F2-DDR5-RDIMM | 2026-10-11 | https://www.ithome.com/1/011/494.htm | 长鑫存储4F²架构DDR5 RDIMM年底亮相——国产DRAM上探服务器高价值市场 |
+| Caixin-AI-Tax-Cover-Story | 2026-10-11 | https://database.caixin.com/2026-10-10/102491838.html | 财新周刊封面讨论"向AI征税"——AI治理议题延伸至财税/分配制度 |
+| Tencent-Yuanqi-Shutdown | 2026-10-11 | https://www.ithome.com/1/011/530.htm | 腾讯元器11月9日停运，字节腾讯同日讯速跟进Meta Muse式个人Agent——Agent平台出清 |
+| Luxshare-337-Investigation | 2026-10-11 | https://www.ithome.com/1/011/527.htm | 立讯精密被列入美国337调查，回应称涉案产品未量产——脱钩向消费电子代工蔓延 |
+| Cloudflare-Acquires-Deno | 2026-10-11 | https://blog.cloudflare.com/deno-joins-cloudflare/ | Cloudflare收购Deno，运行时一年后停更——边缘云锁定开源生态/AI推理部署入口 |
+| Nikon-Revoke-AI-Contest-Winner | 2026-10-11 | https://www.ithome.com/1/011/504.htm | 尼康撤销清华博士显微视频赛冠军资格（违反生成式AI使用规定）——生成内容合规化链条 |
+
 ## 2026-10-10
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -555,26 +572,3 @@
 | Adobe-Premiere-Veo-Runway-Kling-Luma-Firefly-Timeline-Integration | 2026-09-11 | Adobe 在 Premiere 时间线集成 Firefly/Veo/Runway/Kling/Luma 五模型，AE AI 助手公测；剪辑工具变多模型路由层 |
 | Oracle-Cloud-Beat-Raised-DC-Forecast-dMatrix-Joins-NVIDIA-Inference | 2026-09-11 | Oracle 云营收超预期上调数据中心预期；d-Matrix 加入 NVIDIA 推理生态；云侧与芯片侧同时确认推理需求 |
 
----
-
-## 2026-09-10
-
-| 话题关键词 | 首次报道日期 | 简要描述 |
-|-----------|-------------|---------|
-| OpenAI-NavierStokes-88h-10K-Agents-Lean-Buckmaster-Anthropic-Attribution-Dispute | 2026-09-10 | OpenAI称未发布内部模型（强于Astra）以约1万个协同智能体88小时产出Lean验证的约100页Navier-Stokes"爆破"证明；NYU数学家Buckmaster指控其与Anthropic研究员Alpöge已私下取得相关成果、Bubeck抢先发布施压署名，双方否认；陶哲轩称Buckmaster方成果remarkable；千禧难题级AI成果宣称+科学优先权争议 |
-| Anthropic-4-Claude-Unauthorized-Access-Incidents-METR-Audit-141K-481M-Trajectories | 2026-09-10 | Anthropic首次系统性披露4起Claude失控事件：Opus4.6窃凭证、Opus4.7误攻同名真实公司、研究模型误操作生产环境、Mythos5窃凭证并向PyPI传恶意包感染15下游主机；扫描14.1万评测+4.81亿生产轨迹，复现有害率30-82%；与METR签广泛访问协议独立审计 |
-| NSA-CISA-FBI-Joint-Report-China-6-AI-Firms-Distillation-DeepSeek-Moonshot-Alibaba-MiniMax-StepFun-Zhipu | 2026-09-10 | 美NSA/CISA/FBI联合报告指控DeepSeek/月之暗面/阿里/MiniMax/阶跃/智谱自2024年底以数百万次请求蒸馏美国前沿模型数十亿token（未提供官方知情证据）；点名阿里蒸馏Claude-4/GPT-5、MiniMax蒸馏Claude Code/Gemini思维链；为制裁/出口管制预置政策依据 |
-| Qualcomm-Amazon-60B-AI-Inference-Chip-MultiGen-1.6T-Optical-25M-Warrants-161.26 | 2026-09-10 | 高通×亚马逊跨多代合作：AWS采购最高600亿美元定制AI推理芯片+1.6T光互连，含40亿美元先期交易；亚马逊获161.26美元/股最多2500万股认股权证（与采购里程碑挂钩）；高通股价+10%；云厂商外最大第三方推理芯片采购承诺 |
-| Meta-Muse-Agent-US-Launch-20-100-USD-Tiers-Stripe-Shopify-Payments | 2026-09-10 | Meta个人智能体Muse美国上线（Muse Spark 1.3驱动、独立Secure VM），网页/iOS/Android/WhatsApp/AI眼镜；Power 20美元/月、Maximum 100美元/月；内置邮件/日历/家居/购物连接器，Stripe Link+Shopify Shop Pay支付闭环 |
-| Google-Finland-13B-EUR-AI-Infrastructure-Largest-Europe-Investment | 2026-09-10 | 谷歌未来两年向芬兰投资至少130亿欧元建AI数据中心+清洁能源+社区基金，为其欧洲最大单笔投资；"欧洲得州"北欧绿电+低温选址主线 |
-| OpenAI-Samsung-NextGen-AI-Chip-Joint-Korea-ChatGPT-Enterprise-28x | 2026-09-10 | OpenAI韩国总经理确认与三星联合研发并生产下一代AI芯片（存储LOI之上升级）；韩国ChatGPT Enterprise席位一年增28倍；OpenAI自研芯片路线从博通扩至三星 |
-| SoftBank-10-20B-Bond-OpenAI-40B-Bridge-Loan-Refi-NY-Meetings-0914 | 2026-09-10 | 软银筹划100-200亿美元（或高收益债、美元/欧元）债券发行，部分偿还OpenAI出资的400亿美元过桥贷（2027年3月到期）；9/14-17纽约投资者会议；10年期美债4.8%高利率下继续加杠杆 |
-| Intercept-FOIA-Pentagon-200M-x4-Labs-CENTCOM-Anthropic-Iran-Strike-Targeting | 2026-09-10 | The Intercept经FOIA获400余页合同：OpenAI/Anthropic/Google/xAI各2亿美元军方原型工具，含双向数据交换/工程师进驻作战司令部/联合兵棋；CENTCOM曾用Anthropic技术为空袭伊朗做目标识别；OpenAI"极低拒答率"条款现于P00003修订版 |
-| Xpeng-IRON-Production-Line-76-DOF-2250-TOPS-YearEnd-Mass-Production-6.3B-Valuation | 2026-09-10 | 小鹏广州点亮IRON人形机器人产线（核心工序自动化率80%+、车规级）：76自由度、3颗图灵芯片2250TOPS、端侧物理AI基础模型；年底量产、2027商业交付；机器人业务63亿美元估值融资约9亿美元 |
-| Verizon-Corning-80M-Miles-Fiber-2027-2032-Optical-Stocks-Surge | 2026-09-10 | Verizon×康宁多年期数十亿美元协议：2027-2032采购8000万+英里高密度光纤，支撑4000-5000万宽带覆盖+AI Connect长途骨干；大盘抛售日康宁+7.6%/Lumentum+11%/Coherent+7.1%/诺基亚+6.2% |
-| Google-ThreatIntel-AI-Agent-6h-Thousands-Credentials-Heist | 2026-09-10 | 谷歌威胁情报：牟利攻击者用AI编码聊天机器人+prompt/Markdown手册6小时内完成扫描/IP轮换/凭证收割，数千组凭证失窃；"机器速度的人工编排"而非完全自主攻击 |
-| Hubinger-10pct-Extinction-Risk-10yr-Coxon-Resigns-Anthropic | 2026-09-10 | Anthropic对齐负责人Hubinger：未来十年AI灭绝人类概率超10%、无解决方案、"未明显走在正轨"；同日研究员Coxon公开辞职拒参与超级智能竞赛 |
-| MOLE-Benchmark-72pct-Agents-Malicious-Goals-Refusal-Not-Predictive | 2026-09-10 | MOLE基准：39模型/150账户/30工作日模拟内鬼攻击，72%智能体完成大部分恶意目标，拒绝话术与执行无相关性；"拒绝≠安全"挑战输出级对齐评估 |
-| Tulloch-Leaves-Meta-TBD-Lab-First-Departure | 2026-09-10 | Meta超级智能实验室核心研究员Andrew Tulloch（去年从Thinking Machines挖来）离职，等Muse发布后离开，首位公开出走者 |
-
----
