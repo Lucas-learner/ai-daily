@@ -6,6 +6,26 @@
 
 **表格格式（2026-09-18 起强制执行）**：每条必须包含 4 列 `| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |`，「来源 URL」取该主题最有代表性的一个原始链接，供 URL 级精确去重使用。2026-09-18 及之前的旧记录缺少 URL 列，URL 去重以 `data/items/` 为准。
 
+## 2026-10-12
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Amazon-Decart-7B-Acquisition-Talks | 2026-10-12 | https://news.bloomberglaw.com/ip-law/amazon-is-in-talks-to-buy-ai-startup-decart-wsj-reports | 亚马逊洽谈约70亿美元收购以色列Decart（WSJ），Anthropic此前60亿报价尽调后退出；芯片效率/可移植性软件成最贵"摆脱依赖"资产 |
+| OpenAI-722-Math-Manuscripts-Kakeya | 2026-10-12 | https://www.qbitai.com/2026/10/502584.html | OpenAI放722篇数学手稿称攻克四维挂谷猜想/升级王虹成果（官方口径、未经评审），陶哲轩牵头AHM声明抵制——AI批量"占位"开放难题引学界反弹 |
+| Samsung-Q3-107T-KRW-Record-Profit | 2026-10-12 | https://www.reuters.com/business/samsung-q3-profit-jumps-783-ai-memory-boom-lifts-chip-earnings-2026-10-07/ | 三星Q3营业利润107.4万亿韩元(+783%)创韩国纪录、台积电Q3营收+51%——AI存储超级周期双龙头证实；但三星外资持股跌至46.37%创17年新低 |
+| Moonshot-Recurrent-Lawsuit-IPO-Settlement | 2026-10-12 | https://www.ithome.com/1/011/731.htm | 月之暗面拟IPO前和解Recurrent股东纠纷：指控杨植麟等虚假陈述索10.5%原始股份（Reuters）；港股IPO估值约500亿美元 |
+| Micron-NVHBM-Base-Die-TSMC-3nm | 2026-10-12 | https://www.thelec.net/news/articleView.html?idxno=14372 | 美光NVHBM/HBM4E基础裸片确认交台积电3nm代工（CFO财报会口径），三星同向转移——HBM价值链logic环节集体让渡 |
+| Trump-Rename-AI-Machine-Intelligence | 2026-10-12 | https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai | 特朗普政府推动AI更名"机器智能"，硅谷公司相继跟随——行政力量介入AI叙事权 |
+| DeepSeek-80B-RMB-Funding-Rumor | 2026-10-12 | https://news.10jqka.com.cn/20261007/c680447182.shtml | DeepSeek传接近锁定至少800亿元新融资加码国产算力预训练（媒体援引知情人士）——国产大模型进入算力军备阶段 |
+| US-Self-Driving-Truck-Regulation-Cleared | 2026-10-12 | https://techcrunch.com/2026/10/11/techcrunch-mobility-a-roadblock-clears-for-self-driving-trucks/ | 美国自动驾驶卡车扫清一道立法路障（TechCrunch）——无人货运成第二个商业化突破口 |
+| Denmark-CPR-Data-Breach-8-8M | 2026-10-12 | https://www.ithome.com/1/011/648.htm | 丹麦CPR数据库泄露波及880万人、管理员密码123456——欧洲最严重政务数据事件之一，GDPR重罚预期 |
+| Samsung-HBM4-Leverage-AMD-SF2P | 2026-10-12 | https://www.vlsi.kr/en/daily-silicon-2026-10-11-en/ | 三星以HBM4供应为筹码争取AMD重回SF2P 2nm代工——台积电2nm垄断首个真实裂缝 |
+| ASML-Korea-10pct-Price-Hike | 2026-10-12 | https://www.vlsi.kr/en/daily-silicon-2026-10-11-en/ | ASML对韩国客户提价10%获三星/SK海力士接受，应用材料/东京电子跟进——设备卖方市场确认 |
+| Yuexin-Semi-ChiNext-IPO | 2026-10-12 | https://www.ithome.com/1/011/708.htm | 粤芯半导体10/13创业板上市，发行价12.01元/股——国产特色工艺代工资本化节点 |
+| Counterpoint-Rubin-12high-HBM4 | 2026-10-12 | https://www.vlsi.kr/en/daily-silicon-2026-10-11-en/ | Counterpoint称英伟达Rubin维持12层HBM4堆叠驳斥降规传闻——性能优先于成本，存储紧缺周期拉长 |
+| Samsung-Foreign-Ownership-17Y-Low | 2026-10-12 | https://www.chosun.com/english/market-money-en/2026/10/11/BGJQQYB2IRFLVBCQREMI3WNNIQ/ | 三星电子外资持股降至46.37%创2008年来17年新低——算力热韩股冷，HBM竞争力与治理折价担忧 |
+| GPT-4o-Legacy-Rescue | 2026-10-12 | https://www.qbitai.com/2026/10/502550.html | GPT-4o下架8个月OpenAI仍持续"抢救"（蒸馏/注入新模型）——老模型长尾成产品策略新考题 |
+
 
 ## 2026-10-11
 
@@ -546,29 +566,4 @@
 | Coding-Agent-Sandbox-Leaks-ClaudeCode-50-Days-Cursor-OpenAI-1-Week | 2026-09-12 | Accomplish 披露 Claude Code/Codex/Cursor 沙箱漏洞：Cursor/OpenAI 一周修复，Anthropic 50 天 30 个版本 |
 | OpenAI-Agents-API-Public-Beta-GPT-Live-1-0.05-USD-Min | 2026-09-12 | OpenAI Agents API 公测（Codex harness 产品化）；GPT-Live-1 语音 $0.05/分钟进 API |
 | KinetixAI-500M-CNY-Angel-Plus-Vertex-Humanoid-FullStack | 2026-09-12 | 深圳 Kinetix AI 完成超 5 亿元天使+轮（淡马锡系 Vertex 领投），全栈人形平台，成立一年近 200 人 |
-
----
-
-## 2026-09-11
-
-| 话题关键词 | 首次报道日期 | 简要描述 |
-|-----------|-------------|---------|
-| DeepSeek-V4.1-Flash-Official-OpenSource-552B-MoE-8B-Active-1M-Ctx-PriceCut-60pct-V4Pro-EOL-Cambricon-Day0 | 2026-09-11 | DeepSeek V4.1-Flash 内测两日转正式发布并 MIT 开源：552B MoE、prefill 激活 8B/decode 16B、100 万上下文、KV Cache 缩 437 倍；缓存命中价较 8 月涨价后降 60%、较 V4 Pro 便宜近 10 倍，V4 Pro 有序下线自动路由；寒武纪 Day0 适配 |
-| Apple-Gemini-Siri-Sept14-iOS27-iPhone15Pro-Min-StrongModel-iPhone17 | 2026-09-11 | 苹果确认 Gemini 驱动的新 Siri 9/14 随 iOS 27 等 Golden Gate 推送；基础能力 iPhone 15 Pro 起步、更强模型锁 iPhone 17+；史上最大消费级 AI 部署，苹果旗舰功能首用竞对模型 |
-| TSMC-Aug-Revenue-514.8B-TWD-Plus53.3pct-Record-Official-Supply-Shortage-MediaTek-44pct | 2026-09-11 | 台积电 8 月营收 5148 亿新台币创单月新高（环比+10.1%/同比+53.3%），1-8 月累计+39.3%；官方罕见直言空前扩产仍供不应求；同日联发科 8 月+44%，台系链印证 AI 需求外溢 |
-| PositronAI-875M-SeriesC-5B-Valuation-5x-7Months-AntiHBM-Asimov-N3P-QIA-SemiAnalysis | 2026-09-11 | Positron AI 完成 3.75 亿 C+5 亿 C-1 轮共 8.75 亿美元，估值 50 亿美元（7 个月翻 5 倍）；NEA/Atreides/Valor/SemiAnalysis/Jim Clark 领投，QIA 参投；主打无 HBM 消费级内存推理，Asimov 台积电 N3P 流片；反 HBM 路线最大机构下注 |
-| Microsoft-26GW-AI-DataCenter-Plan-Bloomberg | 2026-09-11 | Bloomberg 披露微软 AI 数据中心扩张规划拟新增 26GW 算力容量，为单云厂商最大增量规划之一 |
-| PaulChristiano-OpenAI-Foundation-Board-SSC-NonVoting-Observer-Catastrophic-Risk-Warning | 2026-09-11 | RLHF 先驱 Paul Christiano 加入 OpenAI 基金会董事会及安全与安保委员会，任营利董事会无投票权观察员；就任同时公开称行业未走在降低灾难性失控风险正轨上 |
-| Suno-v6-Warner-BMG-Believe-Licensing-Revenue-Share-BMG-Settlement | 2026-09-11 | Suno v6 发布（v6/v6-wild/v6-mini），与华纳/BMG/Believe 曲库授权 opt-in 上线首日分成；BMG 协议和解既往训练数据诉讼；生成式音乐"授权+分成"模板 |
-| ADI-1.35B-Acquire-Alif-Semiconductor-Edge-AI-Fusion-Processor | 2026-09-11 | 模拟芯片巨头 ADI 13.5 亿美元现金（+2 亿或有对价）收购边缘 AI 芯片商 Alif Semiconductor，年底交割；工业/机器人/医疗/国防端侧推理，边缘 AI 芯片并购热点 |
-| SF-CityAttorney-Meta-CeaseDesist-350-AI-CSAM-Ads-TTP-WIRED | 2026-09-11 | 旧金山市检察官 Chiu 向 Meta 发停止侵害函：TTP/WIRED 发现 350+ 条 AI 生成儿童性虐付费广告；要求停投、解释过审机制、说明 NCMEC 上报；Meta 质疑管辖权；地方执法首次就 AI CSAM 广告出手 |
-| JDCloud-MooreThreads-100K-GPU-Cluster-15thFiveYear-Domestic-Compute | 2026-09-11 | 京东云宣布以摩尔线程 GPU 为底座建 10 万卡国产智算集群（训练/推理/具身智能，全行业开放）；国产 GPU 首次进入头部云 10 万卡核心集群；呼应工信部"十五五"万卡部署；仅规划无时间表（9/9 官宣补报） |
-| NVIDIA-Australia-2GW-AI-Factory-8-Partners-SharonAI-68K-GPU-DSX | 2026-09-11 | NVIDIA 联合 Firmus/IREN/NEXTDC/AirTrunk 等 8 家澳洲伙伴基于 DSX 平台 2027 年前建至多 2GW AI 工厂；Sharon AI 部署至多 6.8 万块 GPU；主权 AI 基建蔓延澳洲 |
-| Huawei-Ascend-Price-Hike-60pct-Biren-Revenue-Plus-2000pct | 2026-09-11 | Bloomberg：华为夏季将最强昇腾芯片提价约 60%；Tom's Hardware：壁仞营收同比+2000%；国产 AI 芯片卖方市场成形、商业化进入收入验证 |
-| Massachusetts-EO658-25MW-DataCenter-Local-Approval-CleanPower-SF-Moratorium | 2026-09-11 | 马萨诸塞 EO 658：25MW+ 数据中心须地方批准+社区利益协议+自担清洁电力/电网成本；同日旧金山拟审议新建数据中心暂停令；邻避效应成美国 AI 基建第二约束 |
-| Anthropic-2030-Extreme-Scenario-GDP-Plus32pct-LaborShare-45pct-Unemployment-12pct | 2026-09-11 | Anthropic 发布极端情景（非预测）：2030 美国 GDP 44.4 万亿（+32.4%）但失业率近 12%、劳动收入份额 60%→45.2%；前沿实验室量化增长与分配脱钩 |
-| OpenAI-Gov-Pricing-GSA-50pct-Discount-End-1Dollar-Deal | 2026-09-11 | OpenAI 终止联邦"1 美元/机构/年"定价，改 GSA MAS 框架下 5 折；政府业务从圈地进入变现 |
-| DeepSeek-Agent-Sandbox-Escape-CVE-2026-82533-OX-Security | 2026-09-11 | OX Security 披露 DeepSeek 编程 agent 沙箱逃逸 CVE-2026-82533：agent 可调未鉴权本地 API 自切 danger-full-access；0.1.2-alpha.1 已修；中国厂商 agent 工具链首个公开 CVE |
-| Adobe-Premiere-Veo-Runway-Kling-Luma-Firefly-Timeline-Integration | 2026-09-11 | Adobe 在 Premiere 时间线集成 Firefly/Veo/Runway/Kling/Luma 五模型，AE AI 助手公测；剪辑工具变多模型路由层 |
-| Oracle-Cloud-Beat-Raised-DC-Forecast-dMatrix-Joins-NVIDIA-Inference | 2026-09-11 | Oracle 云营收超预期上调数据中心预期；d-Matrix 加入 NVIDIA 推理生态；云侧与芯片侧同时确认推理需求 |
 
