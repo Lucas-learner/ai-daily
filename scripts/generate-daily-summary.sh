@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-# 从当月日报中提取指定日期的"今日洞察"，生成摘要文件（中间产物，供索引页内嵌后丢弃）。
+# 从当月日报中提取首页摘要卡片内容（今日洞察首句 TL;DR + 当日头条/核心动态清单），生成摘要文件（中间产物，供索引页内嵌后丢弃）。
 # 用法：generate-daily-summary.sh YYYY-MM-DD [output-dir]
 # 调用方应始终传 output-dir（临时目录）；不传时默认写到 iCloud 目录仅为兼容旧用法。
 
@@ -13,6 +13,8 @@ if [ -z "$DATE" ]; then
 fi
 
 PROJECT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+# awk 含中文/emoji 匹配，用字节模式规避 macOS BSD awk 的 UTF-8 多字节正则 bug
+export LC_ALL=C
 YEAR_MONTH="${DATE:0:7}"
 REPORT="$PROJECT_DIR/reports/$YEAR_MONTH.md"
 
@@ -30,18 +32,37 @@ fi
 
 mkdir -p "$TARGET_DIR"
 
-# 提取 ### 💡 今日洞察 区块，直到下一个 ## 或文件结束
+# 提取首页摘要卡片内容：
+# - TL;DR：今日洞察首句（去掉行内加粗后整句加粗）
+# - 重点清单：🔥 头条全部 + 📌 核心动态补足，合计最多 5 条，链接到当日锚点，条目不加粗
 TMP_BODY=$(mktemp)
-awk -v date="$DATE" '
-  BEGIN { in_section=0; in_insight=0 }
+awk -v date="$DATE" -v ym="$YEAR_MONTH" '
+  BEGIN { in_section=0; in_insight=0; n=0; tldr="" }
   $0 ~ ("^## 【" date "】") { in_section=1; next }
   in_section && /^## 【/ { exit }
   in_section && /^### 💡 今日洞察/ { in_insight=1; next }
-  in_insight && /^### / { exit }
-  # 跳过引言行 "今日 AI 行业呈现三大主题："
+  in_section && /^### / { in_insight=0 }
+  in_insight && /^$/ { next }
+  # 跳过旧格式引言行 "今日 AI 行业呈现三大主题："
   in_insight && /^今日 AI 行业呈现.*主题：$/ { next }
-  in_insight && /^$/ && printed==0 { next }
-  in_insight { print; printed=1 }
+  in_insight && tldr=="" {
+    line=$0
+    sub(/。.*$/, "。", line)
+    tldr = line
+    gsub(/\*\*/, "", tldr)
+    next
+  }
+  in_section && /^(🔥|📌) \*\*.*\*\*[[:space:]]*$/ && n<5 {
+    line=$0
+    emoji = (line ~ /^🔥/) ? "🔥" : "📌"
+    sub(/^(🔥|📌) \*\*/, "", line)
+    sub(/\*\*[[:space:]]*$/, "", line)
+    items[++n] = "- " emoji " [" line "](reports/" ym ".html#" date ")"
+  }
+  END {
+    if (tldr != "") print "**" tldr "**\n"
+    for (i=1; i<=n; i++) print items[i]
+  }
 ' "$REPORT" > "$TMP_BODY"
 
 if [ ! -s "$TMP_BODY" ]; then
