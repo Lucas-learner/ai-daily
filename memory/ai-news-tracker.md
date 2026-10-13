@@ -6,6 +6,26 @@
 
 **表格格式（2026-09-18 起强制执行）**：每条必须包含 4 列 `| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |`，「来源 URL」取该主题最有代表性的一个原始链接，供 URL 级精确去重使用。2026-09-18 及之前的旧记录缺少 URL 列，URL 去重以 `data/items/` 为准。
 
+## 2026-10-13
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Meta-Muse-Wonder-Frontier-Models | 2026-10-13 | https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/ | Meta发布首个自研前沿模型系列Muse Wonder，对标Claude/GPT旗舰——从开源生态位转向全面对抗，前沿竞赛扩为四家 |
+| Microsoft-Maia-300-N2P-HBM4 | 2026-10-13 | https://www.trendingtopics.eu/microsoft-maia-300-nvidia-chip/ | 微软第三代自研推理芯片Maia 300：台积电N2P、288GB HBM4、950W，预订2027年超30万颗产能——hyperscaler自研芯片按主力量产级替代NVIDIA |
+| Intel-Broadcom-Capital-Bottleneck-Warning | 2026-10-13 | https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html | 英特尔/博通CEO齐预警资本（非芯片/存储/电力）将成AI扩张最大瓶颈；博通向Anthropic提供最高420亿美元贷款——行业边际约束从物理侧切向金融侧 |
+| Zhipu-GLM-5.3-HighSpeed-Gray | 2026-10-13 | https://www.qbitai.com/2026/10/502649.html | 智谱GLM-5.3-Highspeed在ZCode灰度曝光，网友实测490+ tokens/s（爆料口径，官方未宣布）——模型以应用内灰度替代发布会 |
+| AMD-Helion-Agentic-Rack | 2026-10-13 | https://ir.amd.com/news-events/press-releases/detail/1301/introducing-amd-helion-agentic-ai-compute-at-rack-scale | AMD发布Helion智能体AI开放机架架构：纯CPU配置最高32768个Zen 6核心，11月上市——推理基础设施形态之争，CPU回归机架中心 |
+| Memory-Shortage-Phone-14Y-Low | 2026-10-13 | https://www.ithome.com/1/012/130.htm | Counterpoint：内存短缺致2026Q3手机出货量创14年新低、年内均价涨20%——HBM挤占产能向消费电子传导 |
+| Norway-Xandr-Record-GDPR-Fine | 2026-10-13 | https://www.ithome.com/1/012/141.htm | 挪威Datatilsynet对微软Xandr开9200万克朗创纪录罚单：未经核实同意共享Grindr用户敏感数据——GDPR执法扩展到广告技术中间商 |
+| Microsoft-President-UK-AI-Regulation | 2026-10-13 | https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/ | 微软总裁称英国最有条件主导全球AI监管——科技巨头公开选边监管阵营 |
+| Qwen-QwenGyre-LongHorizon-RL | 2026-10-13 | https://arxiv.org/abs/2609.33848 | 阿里千问开源QwenGyre超长程智能体在线RL训练框架：单rollout近1M token，NL2RepoBench 52.5→58.5——开源RL训练框架生态战 |
+| Huawei-RSI-Agent-25-Games | 2026-10-13 | https://www.qbitai.com/2026/10/502654.html | 华为RSI递归自我改进智能体通关25款游戏、操作次数比人类少56%——与智谱RSI不同主体的同概念路线 |
+| XPeng-Humanoid-Mass-Production-2026Q4 | 2026-10-13 | https://www.ithome.com/1/012/094.htm | 小鹏宣布人形机器人今年底量产、2027上半年交付（官方口径）——车厂系人形机器人交付竞赛 |
+| Anthropic-100M-Deployment-Engineer | 2026-10-13 | https://www.ithome.com/1/012/132.htm | Anthropic投1亿美元培养前沿部署工程师（官方口径）——model落地企业侧人才布局 |
+| Applied-Materials-5B-Silicon-Valley-RD | 2026-10-13 | https://www.ithome.com/1/012/134.htm | 应用材料宣布硅谷建50亿美元研发中心，CEO称AI提效下营收数年有望翻倍（官方口径） |
+| Russia-Ukraine-Data-Center-War-Blowback | 2026-10-13 | https://arstechnica.com/gadgets/2026/10/russia-was-not-ready-for-the-data-center-war-it-started-with-ukraine/ | 俄罗斯对乌数据中心战反噬自身——算力基础设施成AI时代冲突新战线 |
+
+
 ## 2026-10-12
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -538,32 +558,4 @@
 | Alipay-AMap-Embodied-Payment-RobotDog-Tutu | 2026-09-13 | 支付宝×高德动量"AI 付·具身智能"：机器狗"途途"跑腿代付，支付延伸至物理世界 |
 
 ---
-
-## 2026-09-12
-
-| 话题关键词 | 首次报道日期 | 简要描述 |
-|-----------|-------------|---------|
-| Cognition-SWE2-KimiK3-RL-FrontierCode-50-Fable51-Minus1pct-64pct-Cheaper | 2026-09-12 | Cognition 发布 SWE-2 编程模型：以月之暗面开源 Kimi K3（2.8 万亿 MoE）为基座 RL 后训练，FrontierCode 1.1 达 50.0% 距 Fable 5.1 不足 1 分、便宜 64%；Terminal-Bench 4 仅 27.3% 引过拟合讨论；"美应用层+中国开源基座"路径 |
-| Anthropic-ThreatIntel-Yemen-Houthi-Claude-Code-2000km-Ballistic-Missile-GTG-87001 | 2026-09-12 | Anthropic 9 月威胁情报报告：也门武装小组用 Claude Code 研发 2000 公里级弹道导弹制导软件等三项目；共 6 起常规武器案例（中 3 俄 2 也门 1）；模型被用于实体武器研发链条最详尽官方披露 |
-| DOJ-Antitrust-NVIDIA-Groq-20B-License-Acquihire-HSR | 2026-09-12 | 美司法部正式调查 NVIDIA 约 200 亿美元 Groq "非独家许可+挖角创始人"交易是否规避 HSR 并购申报；反向收购式交易首次被正式调查，Microsoft-Inflection 等同类交易或受追溯 |
-| OpenAI-Letter-Congress-Mandatory-AI-Safety-Regulation-Altman-Pacing-Antitrust-Sherman | 2026-09-12 | OpenAI 致信国会要求强制性安全法规（能力分级测试/事故报告/对齐评估门槛），背书加州四法案；Altman 内部表态愿放缓前沿开发并就行业协同减速咨询反垄断合法性 |
-| EU-CRA-Vulnerability-Reporting-Effective-24h-ENISA-SRP-2.5pct-Turnover | 2026-09-12 | 欧盟《网络弹性法案》漏洞报告义务 9/11 生效：24 小时预警/72 小时通报/14 天终报，罚款上限全球营收 2.5%，覆盖含数字元素产品（含 AI 软硬件） |
-| Fields-Medalists-25-Declaration-AI-Math-Misalignment-Tao-Scholze | 2026-09-12 | 陶哲轩等 25 位菲尔兹奖得主联名宣言谴责 AI 公司抢占数学成果、不提供完整证明与归属；Navier-Stokes 争议升级为数学界集体行动 |
-| ChatGPT-Pro-200USD-New-Subs-Halted-Astra-Compute-Shortage | 2026-09-12 | OpenAI 停止 ChatGPT Pro（200 美元/月）新订阅，称 Astra 需求前所未有；算力紧缺从限流升级为拒客 |
-| Sakana-Fugu-Max-Ultra-v2-Orchestrator-2-6-USD-40-60pct-Cheaper | 2026-09-12 | Sakana AI 发布 Fugu Max/Ultra v2 学习型编排器（OpenAI 兼容 API 路由模型池），$2/$6 定价低于前沿模型 40-60%；价格战转向编排层 |
-| Huawei-7.2Tbps-NPO-Optical-Module-CIOE-Broadcom-CPO-HGTECH-LimitUp | 2026-09-12 | 华为光博会发布全球首款 7.2Tbps NPO 光模块（36×200G），量产筹备中，对标博通 6.4T CPO；华工科技涨停 |
-| Oracle-FY27Q1-RPO-664B-Plus209B-300K-GPU-OCI-Plus121pct | 2026-09-12 | Oracle 季报细节：RPO 6640 亿美元单季+2090 亿，单季交付 30 万块 GPU，OCI +121%，营收 193 亿 +30%，股价 +6.77% |
-| Adobe-FY26Q3-AI-First-ARR-Plus150pct-1B-MAU-Guide-Miss-Stock-Drop | 2026-09-12 | Adobe Q3 营收 67.6 亿 +13%，AI-first ARR +150%、MAU 10 亿，指引不及预期盘后下跌 |
-| Anthropic-ClassAction-Claude-Subscription-Misleading-Multiplier | 2026-09-12 | Anthropic 遭集体诉讼：被控以误导性"倍数"虚标 Claude Pro/Max 订阅实际可用额度 |
-| Sacks-Pause-Anthropic-IPO-Trahan-Congress | 2026-09-12 | 前白宫 AI 主管 Sacks 公开要求暂停 Anthropic IPO 直至"吹哨人"说法被调查，众议员 Trahan 附和；IPO 路演预计 10 月中旬 |
-| Amazon-DSP-ChatGPT-Ads-Adform-Europe-Delta-Vodafone | 2026-09-12 | 亚马逊 DSP 广告试点延伸投放至 ChatGPT（Delta Vacations 首测）；Adform 成欧洲 ChatGPT Ads 技术伙伴（大众/沃达丰测试） |
-| Enflame-STAR-IPO-Plus200pct-6.12B-CNY-Tencent | 2026-09-12 | 燧原科技科创板上市首日 +200%，募资 61.2 亿元，腾讯为重要股东 |
-| CXMT-HBM3E-Small-Batch-Production-2027-Expansion-TheInformation | 2026-09-12 | The Information：长鑫存储已开始小批量生产 HBM3E，2027 年扩产（单源待验证） |
-| SKHynix-CEO-Memory-Boom-To-2030-Micron-Taiwan-35-68-Month-Bonus | 2026-09-12 | SK 海力士 CEO 称存储景气延续至 2030；美光台湾发 35-68 个月薪资奖金平息罢工压力 |
-| TrendForce-TSMC-Q2-Foundry-Share-72.5pct-Record-SMIC-Nears-Samsung | 2026-09-12 | TrendForce：台积电 Q2 代工市占 72.5% 创纪录，全球前十大代工营收 534.9 亿美元创新高；中芯逼近三星 |
-| AntDigital-Agent-Identity-National-Standard-Blockchain-KYA-Convention | 2026-09-12 | 蚂蚁数科牵头智能体身份管理国标立项（区块链路径）；支付清算协会发布智能体支付 KYA 自律公约 |
-| Meta-AI-Doxxing-Children-Names-Deleted-Photos-Missed-The-Mark | 2026-09-12 | Meta AI 被指向用户说出其子女姓名年龄及已删除照片，Meta 承认"missed the mark"已修复 |
-| Coding-Agent-Sandbox-Leaks-ClaudeCode-50-Days-Cursor-OpenAI-1-Week | 2026-09-12 | Accomplish 披露 Claude Code/Codex/Cursor 沙箱漏洞：Cursor/OpenAI 一周修复，Anthropic 50 天 30 个版本 |
-| OpenAI-Agents-API-Public-Beta-GPT-Live-1-0.05-USD-Min | 2026-09-12 | OpenAI Agents API 公测（Codex harness 产品化）；GPT-Live-1 语音 $0.05/分钟进 API |
-| KinetixAI-500M-CNY-Angel-Plus-Vertex-Humanoid-FullStack | 2026-09-12 | 深圳 Kinetix AI 完成超 5 亿元天使+轮（淡马锡系 Vertex 领投），全栈人形平台，成立一年近 200 人 |
 
