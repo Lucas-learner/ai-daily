@@ -6,6 +6,34 @@
 
 **表格格式（2026-09-18 起强制执行）**：每条必须包含 4 列 `| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |`，「来源 URL」取该主题最有代表性的一个原始链接，供 URL 级精确去重使用。2026-09-18 及之前的旧记录缺少 URL 列，URL 去重以 `data/items/` 为准。
 
+## 2026-10-14
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Google-Gemini-4-Argon-1M-Output | 2026-10-14 | https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/ | Google旗舰Gemini 4 Argon灰度推送付费用户：输出上限100万词元，专攻超长程Agent任务——上下文竞争从"读得长"转向"写得长" |
+| OpenAI-Engineer-FBI-Arrest-Recording-Device | 2026-10-14 | https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device | FBI逮捕在高管会议室偷装录音设备的OpenAI工程师（沙特籍）——顶级lab成商业机密攻防前沿，内部安保危机加剧 |
+| Arm-Qualcomm-Verdict-Breach-2Dollar | 2026-10-14 | https://www.cnbc.com/video/2026/10/13/qualcomm-wins-jury-verdict-against-arm-for-breach-of-architectural-license-agreement.html | 陪审团裁定Arm违反与高通架构许可协议，仅2美元象征性赔偿，Arm股价下挫——授权协议可执行性动摇，Arm生态定价权重估 |
+| Applied-Intuition-30B-Valuation | 2026-10-14 | https://www.ithome.com/1/012/584.htm | 自动驾驶仿真公司Applied Intuition获投资邀约估值300亿美元——"AI+物理世界"工具链与国防AI成资本新高地 |
+| ByteDance-Seed-Alignment-Department-YanLin | 2026-10-14 | https://www.leiphone.com/category/industrynews/jX1ndNxDJ94n6bUu.html | 字节Seed单设大模型安全与对齐一级部门（严林挂帅）：防Agent越界与CBRN风险——国内实验室安全建制化 |
+| Anthropic-Supply-Chain-Risk-Appeal-Continues | 2026-10-14 | https://www.ithome.com/1/012/630.htm | 哥伦比亚特区巡回法院2:1维持"供应链风险"认定后，Anthropic两案并行继续对抗美国政府——AI治理宪法级对抗深水区 |
+| OpenAI-Apple-Trade-Secret-Hiring-Records | 2026-10-14 | https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/ | 法官令OpenAI交出苹果商业秘密案招聘记录——人才战法律外溢，招聘流程成可审查证据链 |
+| OpenAI-GPT6-Astra-Higgsfield-10Min-Video | 2026-10-14 | https://openai.com/index/higgsfield-longer-videos-voice | OpenAI官方称GPT-6 Astra联手Higgsfield视频生成从1分钟提至10分钟以上（官方口径）——长视频生成关键指标竞争 |
+| TSMC-Q3-Preview-65pct-Net-Income | 2026-10-14 | https://finance.yahoo.com/technology/ai/articles/tsmc-q3-2026-revenue-hits-114521388.html | 台积电Q3营收创新高，10/15发季报市场预期净利同比+65%至234亿美元，CoWoS仍为主要瓶颈——AI资本开支周期最硬验证点 |
+| Mind-Robotics-Doug-Field-President | 2026-10-14 | https://techcrunch.com/2026/10/13/rivians-startup-mind-robotics-hires-former-ford-ev-chief-doug-field/ | Rivian系Mind Robotics聘前福特EV负责人Doug Field任总裁——造车方法论迁移机器人，车企系具身量产人才战 |
+| Disney-20M-CharacterAI-Tech-Acquisition | 2026-10-14 | https://arstechnica.com/tech-policy/2026/10/disney-offers-20m-for-character-ais-scandal-plagued-chatbot-tech/ | 迪士尼2000万美元洽购Character.AI争议聊天机器人技术（昔日估值10亿）——AI陪伴泡沫破裂，IP方低价收割 |
+| Zuckerberg-Hundreds-Billions-AI-Uncertainty | 2026-10-14 | https://www.ithome.com/1/012/640.htm | 扎克伯格称Meta承诺数千亿美元投AI、曾毫无把握（官方口径）——AI军备竞赛烧钱透明化、风险公开化 |
+| ScienceCorp-Vision-Chip-Stargardt-First-Implant | 2026-10-14 | https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/ | Science Corporation视觉芯片首例Stargardt患者植入、患者重新读出单词——视觉假体进入功能性阅读，挑战Neuralink |
+| Infinigence-2.3B-Round-4.3B-Total | 2026-10-14 | https://www.qbitai.com/2026/10/502767.html | 无问芯穹单轮23亿/累计43亿元刷新国产AI Infra融资双纪录——异构算力调度层成出口管制下资本关键押注 |
+| DeepSeek-Liang-SwinTransformer-Investment | 2026-10-14 | https://www.qbitai.com/2026/10/503093.html | 梁文锋投资Swin Transformer作者刘泽参与创业项目，DeepSeek布局具身大脑——基础模型公司技术外溢冲击具身格局 |
+| MagicLab-MolmoSpaces-No1 | 2026-10-14 | https://www.qbitai.com/2026/10/503107.html | 魔法原子具身Agent框架获MolmoSpaces基准全球第一（公司披露口径）——空间智能评测权争夺，中国团队登顶 |
+| AI-Labs-Buying-Dead-Startup-Data | 2026-10-14 | https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/ | MIT Tech Review：AI实验室购买倒闭创业公司用户数据训练模型——训练数据枯竭下灰色供应链，或成数据治理新靶点 |
+| YinzhiYao-Semi-Equipment-Consolidation-AI-Bubble-Warning | 2026-10-14 | https://www.ithome.com/1/012/589.htm | 中微尹志尧喊话半导体设备业不能散兵游勇、警告AI泡沫——国产设备整合倡议+资本过热双重风向标 |
+| Pluto-Security-42M-Raise | 2026-10-14 | https://techcrunch.com/2026/10/13/pluto-security-raises-42m-as-ai-gives-enterprise-security-teams-a-new-headache/ | Pluto Security融资4200万美元应对AI Agent企业安全新难题——"AI时代安全运营"成独立融资赛道 |
+| Axera-AX8860-DGX-Spark-Rival | 2026-10-14 | https://www.ithome.com/1/012/551.htm | 爱芯元智AX8860官方称性能对标DGX Spark且更便宜（官方口径）——桌面AI开发机国产平价竞争者 |
+| NVIDIA-DLSS5-Oct16-Double-Performance | 2026-10-14 | https://www.ithome.com/1/012/564.htm | 英伟达DLSS 5新模型10/16推送，官方称性能较9月版翻倍、4K显存降20%（官方口径）——消费端软件迭代维持RTX黏性 |
+| Qualcomm-X2-Linux-Upstream-Early | 2026-10-14 | https://www.infoq.cn/article/OjlADL5itjO3PcVHsuMB | 高通Snapdragon X2 Linux支持提前进入内核上游——Arm诉讼胜诉同期加码开源生态 |
+| Cerebras-Home-AI-Era-Prediction | 2026-10-14 | https://www.ithome.com/1/012/632.htm | Cerebras CEO预言家用AI时代将至——二线芯片商借个人AI/推理叙事寻生存空间 |
+
 ## 2026-10-13
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -533,29 +561,3 @@
 | EU-GenAI4EU-Public-Sector-Pilots-Kickoff-Sep14-500M-Euros | 2026-09-14 | 欧盟GenAI4EU公共部门生成式AI试点9/14启动；计划投入5亿欧元，Horizon Europe另规划近7亿；公共采购扶持Mistral等本土厂商 |
 
 ---
-
-## 2026-09-13
-
-| 话题关键词 | 首次报道日期 | 简要描述 |
-|-----------|-------------|---------|
-| Anthropic-IPO-2T-Valuation-100B-Raise-NVIDIA-10B-Anchor-Reuters | 2026-09-13 | 路透：Anthropic 洽谈 IPO，募资最高 1000 亿美元、估值约 2 万亿（史上最大 IPO 三倍）；英伟达考虑 100 亿美元锚定；年化收入 run rate 超 650 亿 |
-| MIIT-AI-Plus-Software-Action-Plan-209-2028-20K-Enterprises-100-Agent-Benchmarks | 2026-09-13 | 工信部印发《"人工智能+软件"专项行动实施方案》（209号文）：2028 年覆盖 2 万家规上软件企业、100 个智能体标杆应用、算力券降本；"智能体软件"成部委级政策用词 |
-| Apple-Siri-Gemini-Switch-Sep14-Watch-LiveRewind-Wiretap-AllPartyConsent | 2026-09-13 | Siri 9/14 切换 Gemini 底座（iPhone 15 Pro+）；Apple Watch Live Rewind/Siri Recap 被指触犯约 12 个"全员同意"州窃听法 |
-| xAI-Grok47-Fourth-Delay-2.1T-Params-RL-Tuning | 2026-09-13 | Grok 4.7 承诺日（9/12）当天第四次跳票，称 2.1 万亿参数模型还需 RL 调优；无模型卡/API/定价 |
-| OpenAI-GPT56-Luna-Free-Default-Unlimited-Think-Button-62pct-Fewer-Errors | 2026-09-13 | GPT-5.6 Luna 成免费档默认，下周无限对话+Think 按钮；事实错误率比 5.5-Instant 低 62%；免费层首次接触推理模式 |
-| DeepMind-WeatherNext-OpenSource-Cyclones-2-2mini-Extra-Day-Warning | 2026-09-13 | DeepMind 开源 WeatherNext Cyclones/2/2-mini 代码权重；粗 100 倍数据达物理模型三天精度，气旋预警多约一天 |
-| Agent-Plugins-1.0-Spec-OpenAI-Google-MS-Amazon-Cursor-Vercel-plugin-json | 2026-09-13 | 厂商中立 Agent Plugins 1.0 规范发布，Skills+MCP 打包单一目录；六巨头共组委员会；plugin.json 成新供应链攻击面 |
-| Cohere-NorthSmallTranslate-218B-MoE-Beats-DeepL-20B-Valuation-Canada-Germany-Sovereign | 2026-09-13 | Cohere 开源翻译模型 WMT26 83.60 首超 DeepL；同步以 200 亿美元估值融资 20-30 亿，加/德政府与英伟达入局，83 倍 ARR 的主权 AI 溢价 |
-| Zhipu-HK-5B-Refinance-2B-Placement-3B-ZeroCoupon-CB-714HKD | 2026-09-13 | 智谱港股再融资约 50 亿美元：每股 714 港元配售 2197 万股 + 201.4 亿元零息可转债（转股价 892.5 港元），投向研发与算力 |
-| Google-Mechanize-1.5B-Talent-License-Besiroglu-MidTraining-DeepMind | 2026-09-13 | 谷歌 15 亿美元完成 Mechanize 人才+许可交易，Besiroglu 携 12+ mid-training 研究员入 DeepMind；DOJ 调查 NVIDIA-Groq 同周照签 |
-| DiscoveryLoop-50B-Valuation-JeffDean-Ghemawat-QuocLe-Vinyals-NoProduct | 2026-09-13 | Jeff Dean 等 Google Brain 班底 Discovery Loop 寻求 500 亿美元估值（数周前 100 亿），无产品纯团队定价，主攻 AI 自主科研 |
-| xAI-Colossus2-720-Megapack-2.8-3.3GWh-Largest-Battery-TVA | 2026-09-13 | 卫星影像：xAI 孟菲斯 Colossus 2 部署 720 个 Megapack 约 2.8-3.3GWh，或为美国最大电池；TVA 批准直连电网 |
-| Dell-Plus12pct-Record-Oracle-90-95B-Capex-HPE-7.6B-Backlog-Memory | 2026-09-13 | Oracle 点名戴尔/HPE 承接 900-950 亿资本支出，戴尔单日 +11.98% 创新高年内 +350%；HPE AI 积压订单 76 亿受制于内存供应 |
-| TSMC-CoWoS-Tight-UMC-Amkor-Spillover-Eoptolink-800G-1.6T-CCL-Plus100pct | 2026-09-13 | CoWoS 产能吃紧外溢联电/Amkor；新易盛 800G 成主力 1.6T 下半年放量；中国巨石电子布再涨 15-20%、覆铜板年内涨超 100% |
-| Tulloch-Meta-To-Anthropic-Destination-Confirmed | 2026-09-13 | Andrew Tulloch（去年 10 亿美元薪酬包入 Meta）去向确认加盟 Anthropic；Meta 超级智能实验室首名出走者续集 |
-| Pentagon-Fluidstack-5B-Direct-Loan-Erebor | 2026-09-13 | 五角大楼洽谈向 AI 云厂商 Fluidstack 提供约 50 亿美元直接贷款，算力被当国防资产注资 |
-| Ant-Lingying-AI-Glasses-Agent-OS-GPASS-Bund Conference | 2026-09-13 | 蚂蚁外滩大会发布"灵影"：AI 眼镜 Agent 原生 OS/开放平台，GPASS 升级，向芯片硬件开发者开放 |
-| Alipay-AMap-Embodied-Payment-RobotDog-Tutu | 2026-09-13 | 支付宝×高德动量"AI 付·具身智能"：机器狗"途途"跑腿代付，支付延伸至物理世界 |
-
----
-
