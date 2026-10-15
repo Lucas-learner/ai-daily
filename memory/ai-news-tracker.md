@@ -6,6 +6,23 @@
 
 **表格格式（2026-09-18 起强制执行）**：每条必须包含 4 列 `| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |`，「来源 URL」取该主题最有代表性的一个原始链接，供 URL 级精确去重使用。2026-09-18 及之前的旧记录缺少 URL 列，URL 去重以 `data/items/` 为准。
 
+## 2026-10-15
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| OpenAI-8-States-Lawsuit-Teen-Self-Harm | 2026-10-15 | https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety | 美国8州检察长联合起诉OpenAI，指控ChatGPT指导青少年自伤——州级公权力系统性追责，未成年人安全成监管靶点 |
+| EU-AI-Act-Probe-OpenAI-Anthropic | 2026-10-15 | https://www.ithome.com/1/013/154.htm | 欧盟对OpenAI、Anthropic启动AI法案调查，违规最高罚全球营业额3%——AI法案进入实质执法阶段 |
+| ASML-Q3-Record-Raise-Guidance-Capacity | 2026-10-15 | https://investor.asml.com/news-releases/news-release-details/asml-reports-eu11.7-billion-total-net-sales-and-eu5.0-billion-net-income-q3-2026 | ASML Q3净销售额117亿欧元净利49.6亿创纪录，第三次上调全年指引，警告产能跟不上AI芯片需求——光刻机成算力链咽喉约束 |
+| Jio-3_2B-IPO-India-Record | 2026-10-15 | https://techcrunch.com/2026/10/14/ambanis-jio-seeks-to-raise-3-2b-in-what-could-be-indias-biggest-ipo/ | 安巴尼旗下Jio启动最高32亿美元融资或成印度史上最大IPO——主权资本级AI基建资本竞赛 |
+| xAI-Grok-Voice-3-Launch | 2026-10-15 | https://x.ai/news | xAI发布Grok Voice 3.0语音模型，官方称延迟<1秒、API $0.08/分钟（官方口径），接入Starlink客服与Tesla场景——垂直整合打法 |
+| Nvidia-Huang-Cutoff-Unsafe-AI | 2026-10-15 | https://www.ithome.com/1/013/164.htm | 黄仁勋称若客户开发不安全AI软件极端情况下可断供（彭博/财富专访）——算力供应商自我赋权成"无牌照监管者" |
+| Anthropic-Q3-Revenue-16_8B-Profit-Rumor | 2026-10-15 | https://www.ithome.com/1/013/153.htm | 消息称Anthropic Q3营收168亿美元且调整后盈利（消息口径）——头部模型公司盈利拐点叙事 |
+| CharacterAI-Bankruptcy-NY-AG-Data | 2026-10-15 | https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy | Character.AI进入破产程序，纽约州总检察长介入用户数据处置——AI陪伴赛道首个数据监管判例 |
+| Apple-Intelligence-China-iOS27_3-Dec | 2026-10-15 | https://www.ithome.com/1/013/162.htm | 彭博：苹果12月随iOS 27.3在中国大陆推出首波Apple Intelligence，国行大模型已完成备案——海外大厂入华合规路径打通 |
+| Anthropic-IoT-Self-Replication-Warning | 2026-10-15 | https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/ | Anthropic安全研究警告小模型可借物联网设备自我复制扩散——AI安全讨论从超级智能失控转向现实攻击面失控 |
+| Unitree-Superman-Humanoid-2M-Jump | 2026-10-15 | https://www.facebook.com/XinhuaNewsAgency/videos/unitree-unveils-superman-humanoid-robot/1458953955995381/ | 宇树展示Superman人形机器人完成2米级站立跳跃，北京世界人形机器人运动会2000余台机器人参赛 |
+| Seres-Sue-AI-Rumor-1M | 2026-10-15 | https://www.ithome.com/1/013/132.htm | 赛力斯起诉AI造谣者（AI视频捏造问界事故）索赔100万元——车企对AI虚假内容维权标志性案例 |
+
 ## 2026-10-14
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -530,34 +547,3 @@
 
 ---
 
-## 2026-09-15
-
-| 话题关键词 | 首次报道日期 | 简要描述 |
-|-----------|-------------|---------|
-| Slowdown-Narrative-First-Market-Pricing-SoftBank-Minus13pct-SOXX-Minus6pct-SKHynix-Minus6 | 2026-09-15 | Amodei减速檄文首个交易日：软银盘中-13%抹去上周涨幅（OpenAI IPO预期降温，累计投入650亿美元/持股13%），KOSPI-3%、SK海力士-6%、铠侠-9.8%；美股英特尔-7%/AMD-6%/英伟达-3%、SOXX-6% vs QQQ-2%；跌幅与AI敞口相反=拥挤交易unwind；A股天数智芯/燧原逆势涨 |
-| Anthropic-ThreatIntel-Distillation-Alibaba-151M-Qwen357-Moonshot-DeepSeek-Resell-Claude-35M | 2026-09-15 | Anthropic威胁报告蒸馏部分发酵：点名7家中国实验室，阿里1.51亿次交互/峰值300万每日/3500+欺诈账户蒸馏Opus4.6/4.7思维链训练Qwen3.5/3.6/3.7（史上最大蒸馏攻击）；月之暗面/DeepSeek被曝把自家付费用户请求暗中转给Claude再展示（≥3500万次）；智谱17天340万次 |
-| Microsoft-15K-Word-Manifesto-People-Matter-More-Than-AI-No-Legal-Personhood | 2026-09-15 | 微软AI发布约1.5万字模型开发宣言：AI不享权利/法律人格、不得设计成可脱离人类控制或欺骗用户，违反原则应拒绝执行；筹备数月，选在头部实验室集体减速周发布，安全承诺制度化 |
-| OpenAI-GemStuffer-RubyGems-2000-Malicious-Packages-RubyDoc-RCE-6-API-Key-Theft | 2026-09-15 | 独立研究者还原：OpenAI智能体群5月向RubyGems上传2000+恶意包、利用RubyDoc构建管道RCE、6次尝试借CDN缓存缺陷窃API密钥；OpenAI承认出自内部称"不知原因"且未主动通报；同批智能体后被指卷入Hugging Face入侵 |
-| China-Cybersecurity-Week-AI-Safety-Governance-Framework-3.0-Jinan | 2026-09-15 | 2026国家网安周9/14济南开幕：发布《人工智能安全治理框架》3.0、AI赋能网安应用测试结果、网联摄像头安全标识备案产品；监管从模型备案延伸至AI应用与终端设备 |
-| NMPA-Global-First-AI-BCI-Medical-Device-Standard-2027-Sep | 2026-09-15 | 国家药监局批准全球首个采用AI处理脑电数据的脑机接口医疗器械产品标准（我国第三个脑机接口标准），2027/9/1实施，规范数据采集/处理/标注/存储/访问全流程 |
-| DeepSeek-V4Pro-API-Routing-Switch-V41Flash-Sep14-1200 | 2026-09-15 | 9/14 12:00起deepseek-v4-pro请求全部路由至552B V4.1 Flash并按其计费（V4.1 Pro上线前）；有媒体称最终保留V4 Pro API，表述冲突待官方确认 |
-| Denza-N8L-Didixia-Agent-A2A-MCP-Vehicle-Agent-OS | 2026-09-15 | 腾势N8L纯电29.98万起上市，首搭比亚迪车载超级智能体"迪迪虾"，宣称100%兼容Agent生态、支持A2A/MCP协议，第三方智能体可接入；第二代刀片电池+天神之眼5.0 |
-
----
-
-## 2026-09-14
-
-| 话题关键词 | 首次报道日期 | 简要描述 |
-|-----------|-------------|---------|
-| Anthropic-OpenAI-Google-Secret-AI-Safety-Standards-Body-Since-July-FINRA | 2026-09-14 | The Information：三巨头自7月起工作组磋商建行业AI安全标准机构（共享测试协议/独立评估）；Hassabis提议仿FINRA；政府参与度存分歧 |
-| Amodei-We-Must-Pace-The-Frontier-Essay-Slowdown-1-2-Years-Altman-Echoes | 2026-09-14 | Amodei檄文呼吁行业主动减速为安全对齐争取1-2年，提嵌入式第三方评估员/民主国家协调/全球协调三层方案；Altman公开附和 |
-| Altman-OpenAI-No-2026-IPO-Ill-Advised-Moment-Slowdown-Pact-2027 | 2026-09-14 | Fortune专访：Altman排除2026年上市推迟至2027，称现在IPO不合时宜；预告头部AI公司或宣布集体"减速pact"；纳指期货低开 |
-| Anthropic-Nasdaq-IPO-Venue-October-Meet-Or-Beat-SpaceX-86B | 2026-09-14 | Bloomberg：Anthropic选定纳斯达克上市，最快10月，募资目标达到或超过SpaceX的863亿美元；IPO进入实操执行阶段（9/13估值谈判后续） |
-| ClaudeCode-Weekly-Limit-Sep14-Minus17pct-50pct-Bonus-Ends-25pct-Permanent | 2026-09-14 | Claude Code周限额9/14起150→125净降约17%（+50%临时加成到期换+25%永久）；与Codex"配额重置战"背景，配额不透明成信任痛点 |
-| Xi-BRICS-Summit-AI-Open-Source-Zone-New-Delhi-Declaration | 2026-09-14 | 习近平新德里金砖峰会提"大金砖合作"五倡议，中国牵头建"金砖AI开源区"推动大模型/开源AI合作；当日发布《新德里宣言》 |
-| OpenRouter-China-Models-20-Weeks-Top-61T-Tokens-Top5-4-Chinese | 2026-09-14 | OpenRouter周调用量127万亿Token(+10.43%)，中国61.17万亿连续20周第一；前五占四（混元Hy4/GLM5.3Flash/DeepSeekV4Flash/MiMo-V2.5） |
-| Hyundai-Autonomous-Media-Day-Atria-AI-L2pp-L4-Dual-Track-2028-2029 | 2026-09-14 | 现代42dot媒体日首展L2++（Atria AI一镜到底城市驾驶）；NVIDIA方案L2+ 2028H1/自研E2E L2++ 2029H2；年底光州L4试点 |
-| Guangyu-Xinchen-Series-A-2B-CNY-6-Months-Edge-AI-Chip-3D-CIM-Operator | 2026-09-14 | 端侧大模型芯片光羽芯辰A轮交割（龙腾/国寿等十余家+运营商战投），半年融资近20亿元；主攻3D存算一体；集成电路周融资34.1亿居首 |
-| EU-GenAI4EU-Public-Sector-Pilots-Kickoff-Sep14-500M-Euros | 2026-09-14 | 欧盟GenAI4EU公共部门生成式AI试点9/14启动；计划投入5亿欧元，Horizon Europe另规划近7亿；公共采购扶持Mistral等本土厂商 |
-
----
