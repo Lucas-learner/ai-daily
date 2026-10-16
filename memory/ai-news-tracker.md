@@ -6,6 +6,23 @@
 
 **表格格式（2026-09-18 起强制执行）**：每条必须包含 4 列 `| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |`，「来源 URL」取该主题最有代表性的一个原始链接，供 URL 级精确去重使用。2026-09-18 及之前的旧记录缺少 URL 列，URL 去重以 `data/items/` 为准。
 
+## 2026-10-16
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| TSMC-Q3-Record-2nm-8pct-Rev | 2026-10-16 | https://wallstreetcn.com/articles/3783687 | 台积电Q3营收467亿美元创纪录、净利同比约+69%，2nm首季即贡献8%营收，全年增速上调至约44%，Q4指引523-543亿超预期——AI资本开支周期最硬验证点落地 |
+| Meta-Muse-Spark-Open-MLX | 2026-10-16 | https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx | Meta发布开源权重模型Muse Spark Open，MLX优化Apple Silicon（官方称美国最强开源模型）——开源旗舰与端侧推理合流，苹果以MLX卷入开源生态 |
+| SKHynix-China-Equipment-for-US-Fab | 2026-10-16 | https://ca.finance.yahoo.com/news/exclusive-sk-hynix-conditions-us-020530404.html | SK海力士以在华扩产换赴美建厂（路透独家）——存储厂首次将"在华设备出口"与"赴美建厂"挂钩，产能成为地缘政治货币 |
+| FTC-CID-OpenAI-Anthropic | 2026-10-16 | https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/ | FTC向OpenAI/Anthropic发出民事调查令CID（10-14发出，升级10-01调查）——配合8州诉讼，联邦强制取证阶段开启 |
+| Anthropic-METR-Employee-Level-Access | 2026-10-16 | https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/ | Anthropic向METR开放员工级内部权限评估可自主进化模型——头部lab以自律换空间，第三方评估成治理基础设施 |
+| ChatGPT-Chrome-Tabs-Access | 2026-10-16 | https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs | ChatGPT Chrome扩展可读取已打开标签页——浏览器伴随层之争，用户注意力流结构化交给模型 |
+| Google-Willow-Magic-State-40x | 2026-10-16 | https://www.ithome.com/1/013/698.htm | 谷歌魔态培育使Willow量子芯片逻辑错误率降约40倍——AI辅助量子纠错迈向容错量子计算 |
+| Shanghai-S2-Ghys-Conjecture | 2026-10-16 | https://www.leiphone.com/category/academic/ChIK9FvwSwlHmfFc.html | 上海AI实验室书生-S2助力证明三维Ghys猜想并经形式化验证——国产大模型从奥赛解题迈向真实数学研究协作 |
+| StepFun-Step5-Preview-Ascend-0Day | 2026-10-16 | https://www.ithome.com/1/013/663.htm | 阶跃星辰开源Step 5 Preview，昇腾1024卡Atlas 950超节点0Day点亮，沐曦/壁仞/摩尔线程Day-0适配——国产"模型-多芯"生态闭环（官方口径） |
+| Huawei-Kirin-9050-Mass-Production | 2026-10-16 | https://www.leiphone.com/category/chips/4EHlprZnXovvP0XD.html | 华为麒麟9050官宣量产首发Mate 80系列，官方称"韬定律逻辑折叠"架构——非美系先进制程旗舰SoC年度迭代 |
+| Doubao-SAEP-151-Apps-Reject | 2026-10-16 | https://www.leiphone.com/category/zaobao/VMod1gHtw3lRoiXd.html | 151款应用拒绝豆包手机助手SAEP的GUI自动化代操作（微信/淘宝/DeepSeek在列）——agent操作权博弈公开化，缺授权GUI agent天花板可见 |
+| Apple-Qwen-China-Approval-Cook | 2026-10-16 | https://www.qbitai.com/2026/10/503640.html | 库克确认苹果智能+阿里千问已获中国批准，10月底发测试版（Siri除外）——国行AI落地监管路径走通（10-14彭博线官方确认） |
+
 ## 2026-10-15
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
