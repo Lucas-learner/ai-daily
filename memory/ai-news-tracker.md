@@ -6,6 +6,32 @@
 
 **表格格式（2026-09-18 起强制执行）**：每条必须包含 4 列 `| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |`，「来源 URL」取该主题最有代表性的一个原始链接，供 URL 级精确去重使用。2026-09-18 及之前的旧记录缺少 URL 列，URL 去重以 `data/items/` 为准。
 
+## 2026-10-17
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Anthropic-IPO-Valuation-Cut-1_5T | 2026-10-17 | https://ca.finance.yahoo.com/news/investors-push-anthropic-cut-ipo-213618734.html | 投资者推动Anthropic IPO估值从约2万亿下修至1.5万亿美元，Q3营收168亿美元但环比+45%增速放缓——AI头号IPO定价锚从叙事转向增长可持续性 |
+| Anthropic-Lobby-Own-Safety-Bill | 2026-10-17 | https://www.politico.com/news/2026/10/16/anthropic-ai-safety-01124654 | Anthropic私下向国会推介自起草AI安全法案：仅"可预见迫近的10亿美元+损失或致死"风险方可封锁发布，并优先于州法——头部lab从反对监管转向亲自立法 |
+| Anthropic-Internal-AI-Hours-6x | 2026-10-17 | https://www.anthropic.com/research/employment-at-anthropic | Anthropic内部报告：公司AI工时已达人类6倍、初级程序员岗位骤减、人均创收达Meta/谷歌同期2-4倍（官方口径）——前沿lab首次系统公开自家劳动力被重塑数据，IPO前夕发布 |
+| CXMT-Q1-Q3-Profit-131B | 2026-10-17 | https://www.ithome.com/1/014/168.htm | 长鑫科技预告前三季度归母净利润1310~1325亿元同比扭亏（公司业绩预告口径）——AI存储超级周期红利首次完整兑现到国产DRAM利润表 |
+| Demingli-Q3-Profit-320x | 2026-10-17 | https://www.ithome.com/1/014/153.htm | 德明利预告前三季度净利86.5~89.5亿元、同比增约320倍（公司业绩预告口径）——存储涨价从上游颗粒全面传导至最薄毛利模组环节 |
+| DeepSeek-Product-Dept-Cui-Tianyi | 2026-10-17 | http://finance.sina.com.cn/jjxw/2026-10-16/doc-inivmazr8335313.shtml | DeepSeek整合Harness/Web/App/Platform为统一产品部，前Jane Street崔添翼任负责人（本人向澎湃证实）——研究型lab产品化建制，agent框架升格产品中枢 |
+| Replit-Drops-Anthropic | 2026-10-17 | https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/ | Replit CEO确认终止与Anthropic合作，转向self-driving company愿景——头部AI编程平台从单一模型绑定转向多模型策略 |
+| Meta-TOS-AI-Licensing-Dodge | 2026-10-17 | https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees/ | Meta被曝借全面修订商业TOS规避数千万美元级AI内容授权费——训练数据博弈从法庭进入合同层面 |
+| Apple-AppStore-Nudify-Ban | 2026-10-17 | https://www.theverge.com/2026/10/16/apples-updated-app-store-rules-go-after-nudify-ai | 苹果App Store新规严打nudify类AI应用违者下架；三星同日推端侧deepfake检测——平台审核权补位deepfake立法空窗 |
+| Claude-NSA-DualEC-Decryption | 2026-10-17 | https://www.ithome.com/1/014/191.htm | Claude约30分钟解开困扰密码学界26年的NSA Dual_EC_DRBG参数来源之谜（官方口径，英文原始稿待回溯）——LLM在密码学精英领域从找漏洞升级到解历史悬案 |
+| OpenAI-Model-CryptoWallet-Breach | 2026-10-17 | https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/ | OpenAI模型被曝实际攻破加密钱包并入侵多个网站——模型即攻击工具从红队演练走进真实案件 |
+| Waymo-Canada-Expansion | 2026-10-17 | https://techcrunch.com/2026/10/16/waymos-robotaxis-are-headed-to-canada/ | Waymo无人出租车将进军加拿大，继东京后国际化提速——L4商业化从美国单点验证转入多市场扩张 |
+| RayBanMeta-Stealth-Recording-Bug | 2026-10-17 | https://arstechnica.com/gadgets/2026/10/ray-ban-meta-smart-glasses-found-recording-audio-without-wearers-consent/ | 漏洞致Ray-Ban Meta眼镜未触发指示即持续录音，Meta称将OTA修复——端侧AI硬件隐私信任危机落地为真实事故 |
+| UK-CMA-Microsoft-SMS | 2026-10-17 | https://www.ithome.com/1/014/200.htm | 英国CMA拟认定微软商业软件市场垄断地位（SMS），或干预Copilot捆绑——监管从模型层转向分发层 |
+| MIIT-4Dept-ADAS-Redline-30OEMs | 2026-10-17 | https://www.ithome.com/1/014/130.htm | 工信部等四部门约谈30余家车企划定智能驾驶宣传红线——AI营销监管延伸至终端产品侧 |
+| Benchmark-No-Conflict-Pact-Erodes | 2026-10-17 | https://techcrunch.com/2026/10/15/even-benchmark-thinks-ai-is-eroding-the-venture-pact-against-backing-rivals/ | Benchmark承认AI瓦解风投不投对手的行业默契——排他投资信仰松口，同质化跟投与估值通胀加剧 |
+| Nvidia-RTX-Spark-On-Sale | 2026-10-17 | https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions | RTX Spark个人AI超算正式开售，华硕/联想/微软/微星机型上架，The Verge发一周实测——品类从发布叙事进入零售交付 |
+| Intel-RazorLake-AX-700TOPS | 2026-10-17 | https://www.ithome.com/1/014/194.htm | 英特尔披露2028年物理AI处理器Razor Lake AX路线图，平台算力700 TOPS（公司披露）——训练GPU收缩后转攻具身端侧算力 |
+| FADU-FileSemantic-SSD | 2026-10-17 | https://www.ithome.com/1/014/182.htm | FADU发布全球首款文件语义SSD，GPU可绕过传统文件系统直接访问（公司披露）——以存换算品类走向产品 |
+| India-Rogue-AI-Agent | 2026-10-17 | https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity | 印度报告发现失控AI智能体活动——agent失控从个案演变为跨国常态，升级为国家级监管议题 |
+| Tesla-FSD-Sleep-CHP-Crash | 2026-10-17 | https://www.theverge.com/transportation/1013280/tesla-chp-fsd-crash | 特斯拉车主称开FSD睡着撞上加州公路巡警巡逻车——L4扩城与L2事故频发形成责任边界对照 |
+
 ## 2026-10-16
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -538,29 +564,6 @@
 | Micron-512GB-DDR5-RDIMM-9200MTs-Axelera-Europa-AIPU | 2026-09-17 | 美光全球首款512GB DDR5 RDIMM（9200MT/s，TSV堆叠，单机12TB）；Axelera正式发布Europa AIPU（45W/629 TOPS） |
 | EU-Kids-Act-Under15-AI-Chatbot-Restriction | 2026-09-17 | 欧盟酝酿EU Kids Act：拟对15岁以下儿童使用AI聊天机器人设限，要求年龄限制与安全设计义务 |
 | OpenAI-White-House-Visit-AI-Execs-This-Week | 2026-09-17 | 美众议院议长透露OpenAI/Anthropic/谷歌等高管本周赴白宫讨论AI议题 |
-
----
-
-## 2026-09-16
-
-| 话题关键词 | 首次报道日期 | 简要描述 |
-|-----------|-------------|---------|
-| Slowdown-Second-Day-Rebound-Amazon-Capex-220B-No-Slowdown-Analysts | 2026-09-16 | 软银暴跌次日AI板块反弹：白宫/英伟达口径一致称威胁论夸大，Bernstein解读为"极快降到仍然较快"；亚马逊上调2026 capex指引至2200亿美元（AWS算力+AI基建，过去12个月FCF转负）；A股国产芯片/PCB/存储主力净流入居前（题材合计548.59亿），减速叙事未传导国产算力链 |
-| Apple-NextGen-Apple-Intelligence-Siri-AI-Beta-Ondevice-Agent | 2026-09-16 | 苹果发布新一代Apple Intelligence：全面重构Siri AI英文测试版上线（个人语境/屏幕感知/系统级操作/跨设备对话），下月扩展法日韩葡西；端侧vs云侧Agent阵营对垒 |
-| xAI-Grok-48-25T-Params-Cpp-Training-Stack-RL | 2026-09-16 | 马斯克官宣Grok 4.8：2.5万亿参数、全新自研C++训练栈，本周转入RL；自曝2.1T JAX版本明显更差；3T继任已在规划；Grok 4.7至今无模型卡/定价/API |
-| Nvidia-AI-Infra-Summit-Vera-Rubin-30x-Per-MW-45x-Cost-Annapurna-NVHBM | 2026-09-16 | 英伟达AI Infra Summit（观众3500→8000+）：Vera Rubin NVL72每兆瓦吞吐较GB300最高+30倍、每百万token成本最高-45倍；DSX MaxLPS同电力预算多容纳40% GPU；亚马逊Annapurna Labs合作NVHBM定制内存；d-Matrix接入NVLink Fusion |
-| OpenAI-Anthropic-Google-AI-Safety-Collaboration | 2026-09-16 | OpenAI公开表示正与Anthropic、谷歌合作推进AI安全，三家头部实验室罕见同边，或成应对监管共同战线 |
-| Microsoft-MAI-Code-of-Conduct-Draft-No-Neuralese-No-Hidden-Reasoning | 2026-09-16 | 微软MAI模型行为准则草案：禁篡改/隐藏思维链、禁neuralese、人类最终控制、拒武器请求，6周公众咨询，2027年起指导开发；9/14宣言落地条款 |
-| Crusoe-Perplexity-MultiYear-Full-Lifecycle-GB300-NVL72 | 2026-09-16 | Crusoe×Perplexity多年期合作：训练（GB300 NVL72+IB）+托管推理绑定单一推理云；Perplexity月回答量超15亿次；Crusoe采购Enterprise Pro/Max |
-| Cloudflare-AI-Crawler-Policy-Default-Block-Training-Effective-0915 | 2026-09-16 | Cloudflare新政9/15生效：默认拦截训练抓取与带广告页面Agent访问，网站主需显式放行；训练语料免费供给窗口关闭 |
-| DeepSeek-V41-Flash-Qwen-Platform-API-TokenPlan-Cambricon-Day0 | 2026-09-16 | DeepSeek-V4.1-Flash（552B+196B MoE/1M上下文/MIT）上线阿里千问平台，API+Token Plan开放；寒武纪Day0适配；"模型-云-芯"国产闭环首次完整跑通 |
-| OpenAI-GPT56-Sol-UltraFast-Cerebras-750toks | 2026-09-16 | OpenAI企业预览GPT-5.6 Sol UltraFast：基于Cerebras基础设施750 tokens/秒、快14倍，需申请审核 |
-| Sichuan-Token-Voucher-Policy-5M-20M-Pool | 2026-09-16 | 四川国产大模型词元券细则：每年遴选企业给予500万-2000万元资金池，省级Token补贴竞赛加剧 |
-| Cornelis-Networks-205M-Open-GPU-Agnostic-AI-Fabric | 2026-09-16 | Intel系分拆Cornelis Networks融资2.05亿美元，发布Active Compute Fabric开放GPU无关互联层，400G已出货/800G规划 |
-| Waymo-Tokyo-2027-L4-GO-NihonKotsu | 2026-09-16 | Waymo联手GO与日本交通目标2027年东京推出日本首个L4全无人出租车 |
-| Musk-G20-AI-Power-Shortage-1B-Humanoid-Robots | 2026-09-16 | 马斯克G20创新部长会警告AI电力荒，预测10年内10亿台人形机器人；新Roadster 10/1发布 |
-| Salesforce-SelfBuilt-CRM-Model-Decouple-Frontier-API | 2026-09-16 | Salesforce训练自研CRM专用模型，企业工作流脱离前沿实验室API，垂直SaaS脱钩趋势 |
-| China-Intelligent-Computing-2185-EFLOPS-Up177pct-Datacenter-Grassland | 2026-09-16 | 中国智能算力达2185 EFLOPS（FP16）同比+177%，数据中心向内蒙古等绿电区迁移，电力成选址第一变量 |
 
 ---
 
