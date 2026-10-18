@@ -6,6 +6,30 @@
 
 **表格格式（2026-09-18 起强制执行）**：每条必须包含 4 列 `| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |`，「来源 URL」取该主题最有代表性的一个原始链接，供 URL 级精确去重使用。2026-09-18 及之前的旧记录缺少 URL 列，URL 去重以 `data/items/` 为准。
 
+## 2026-10-18
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Web-Blocks-AI-Agents | 2026-10-18 | https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web | Yelp仅对付费授权智能体开放、摩根大通/嘉信理财等批量封锁AI代理，Cloudflare收紧拦截——robots.txt善意默认瓦解，数据授权成智能体落地第一道门槛 |
+| Meta-Removes-Scraping-ToS-Language | 2026-10-18 | https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/ | Meta删除服务条款中允许抓取新闻网站用于AI训练的措辞（公司称仅澄清）——训练数据版权攻防从诉讼延伸到ToS文本战场 |
+| TSMC-JASM-Kumamoto2-3nm-Approved | 2026-10-18 | https://www.ithome.com/1/014/423.htm | 日本经产省批准JASM熊本二厂转产3nm，最高可获约41亿美元补贴——台积电首次将先进逻辑制程海外产能落子日本 |
+| DeepMind-Gemini4Argon-Minecraft-27h | 2026-10-18 | https://arxiv.org/abs/2610.22319 | 四个Gemini 4 Argon智能体27小时14分自主通关Minecraft：2783个JS程序、229条消息、死亡605次——长时程多智能体协作里程碑 |
+| Claude-Mythos5-Quantum-Circuits | 2026-10-18 | https://x.com/AnthropicAI/status/2111152183240511640 | Anthropic官方称Claude Mythos 5在8个量子计算基元中7个设计出超已发表最优电路、部分门数减一个数量级（官方口径）——AI for Science扩展到量子算法设计 |
+| OpenAI-NavierStokes-Backlash | 2026-10-18 | https://www.ithome.com/1/014/370.htm | 分析指出OpenAI纳维-斯托克斯证明实际方法（88小时多智能体+人机回环）与官方叙事有差距、学界验证需数年——AI证明可信度争议进入深水区 |
+| DeepSeek-V41-Flash-1017 | 2026-10-18 | https://www.ithome.com/1/014/427.htm | DeepSeek发布V4.1 Flash-1017：性能提升、耗时与调用成本下降、权重开源（官方口径）——周更节奏持续，国产开源粘性增强 |
+| Pengcheng-CloudBrain3-10000P | 2026-10-18 | https://www.ithome.com/1/014/387.htm | 鹏城云脑Ⅲ10000P级国产算力边建设边运营上线，全部依托国产AI芯片——万P国产算力转入运营期 |
+| Tesla-Samsung-PricePressure-Accusation | 2026-10-18 | https://www.ithome.com/1/014/422.htm | 韩国半导体工程师指控特斯拉施压三星压低AI芯片报价、索要敏感信息并挖角人才——买方霸权与供应链护谍冲突公开化 |
+| Tesla-ModelY-Crossover-Fatal-Crash | 2026-10-18 | https://www.ithome.com/1/014/346.htm | Model Y辅助驾驶状态下穿越高速隔离带致人死亡，本周第二起涉特斯拉辅助驾驶恶性事故——L2普及期监管与命名压力加码 |
+| Micron-EIM-Edge-Inference-Memory | 2026-10-18 | https://www.ithome.com/1/014/419.htm | 美光研发边缘推理内存EIM瞄准物理AI/端侧低延迟——存储厂商在HBM外开辟边缘推理内存新战线 |
+| Nvidia-RTX5090-No-Discontinue | 2026-10-18 | https://www.ithome.com/1/014/407.htm | 英伟达否认RTX 5090停产但承认供应链产能受限——AI服务器抢产能外溢至消费级显卡 |
+| SpaceX-Replace-US-Carriers-Bet | 2026-10-18 | https://www.theverge.com/podcast/1012416/spacex-starlink-elon-musk-cell-carrier-wireless-mobile-att-verizon-t-mobile | The Verge解析SpaceX依托星链直连+收购频谱正面对标AT&T/T-Mobile/Verizon——卫星直连升级为替代运营商豪赌（延续10-8频谱收购线） |
+| Workday-Acquires-ConductorOne | 2026-10-18 | https://explainx.ai/catch-up-on-ai/2026-10-17 | Workday收购C1.ai押注企业AI智能体权限治理，HR流程成智能体开关——SaaS并购卡位agent治理层 |
+| Amazon-Atlas-Union-Risk-Scoring | 2026-10-18 | https://explainx.ai/catch-up-on-ai/2026-10-17 | openDemocracy曝Amazon内部AI工具Atlas按工会风险给仓库打分、两英国站点列Tier 1，与官方口径矛盾——AI劳工监控成欧洲合规雷区 |
+| JAECOO-Momenta-ArcDeTriomphe-NOA | 2026-10-18 | https://www.ithome.com/1/014/343.htm | 奇瑞JAECOO联合Momenta完成巴黎凯旋门环岛无接管智驾挑战（官方口径）——中国智驾出海地标营销升级 |
+| E-Weinan-AI-Democratizes-Research | 2026-10-18 | https://www.ithome.com/1/014/371.htm | 中科院院士鄂维南称AI时代民间科研力量将成为科研主力——院士为AI平权科研背书 |
+| Edge-Commercial-Watermark-DLP | 2026-10-18 | https://www.ithome.com/1/014/425.htm | 微软Edge商业版水印防截图外泄年底全面上线——DLP从存储传输端延伸至屏幕端 |
+| PS5-Jailbreak-Local-27B-Inference | 2026-10-18 | https://www.ithome.com/1/014/372.htm | 开发者用破解版PS5跑27B模型达20.9 token/s——消费硬件本地推理社区极限玩法 |
+
 ## 2026-10-17
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
