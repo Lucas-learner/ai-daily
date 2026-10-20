@@ -6,6 +6,19 @@
 
 **表格格式（2026-09-18 起强制执行）**：每条必须包含 4 列 `| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |`，「来源 URL」取该主题最有代表性的一个原始链接，供 URL 级精确去重使用。2026-09-18 及之前的旧记录缺少 URL 列，URL 去重以 `data/items/` 为准。
 
+## 2026-10-20
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Microsoft-GuardianAgents-InsiderThreat | 2026-10-20 | https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/ | 微软安全负责人明言前沿模型不可信，将AI智能体定性为"内部威胁"，发布Guardian Agents监控方案，Defender识别60类智能体——云厂与模型实验室公开划清管辖权，Agent安全产品化 |
+| Nscale-Anthropic-45B-Compute-Deal | 2026-10-20 | https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/ | Nscale与Anthropic洽谈450亿美元算力协议，正值微软退出锚定协议、IPO估值砍半之际——1030亿backlog换锚Anthropic，neocloud单一客户依赖风险高危续命 |
+| OpenAI-Funding-Rush-1p4T | 2026-10-20 | https://www.ithome.com/1/015/078.htm | 彭博爆料OpenAI加速新一轮融资，估值或超1.4万亿美元，赶在Anthropic IPO窗口前（彭博爆料口径）——头部lab资本定价权时点直接对撞 |
+| Tenstorrent-E-Series-6p2B | 2026-10-20 | https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/ | Jim Keller的Tenstorrent完成15亿美元E轮，投后估值62亿美元，开放权重/RISC-V路线持续吸金——反CUDA阵营资本厚度堆高 |
+| MIT-Claude-DesertIsland-Play | 2026-10-20 | https://www.technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play/ | MIT CSAIL将Claude副本置于虚拟荒岛30小时，自发发明游戏且玩耍经验提升后续任务表现（未同行评审）——无目标玩耍或成第三条训练路线 |
+| China-Humanoid-Production-40k | 2026-10-20 | https://www.ithome.com/1/015/002.htm | 中国上半年人形机器人产量超4万台、全年预计破10万台，商务部称1-9月智能眼镜销售额增1.1倍——量产元年获官方数据锚点 |
+| OpenAI-Saudi-Spy-Case-GovDocs | 2026-10-20 | https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says/ | FBI披露被捕OpenAI工程师电脑存有"Saudi Gov Docs"文件夹，窃密案升级国家关联疑云——顶级AI lab成国家级情报目标 |
+| Disney-CharacterAI-Liability-Shield | 2026-10-20 | https://arstechnica.com/tech-policy/2026/10/disney-found-a-way-to-buy-character-ai-without-buying-its-lawsuits/ | Ars解析迪士尼以"acqui-hire式清算"购Character.AI技术资产并规避其破产诉讼与用户数据责任——技术/负债分离结构或成AI资产处置模板 |
+
 ## 2026-10-19
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -555,22 +568,4 @@
 | TerryTao-SAIR-Open-Math-Model | 2026-09-20 | https://terrytao.wordpress.com/2026/09/18/sairs-open-math-model-initiative/ | 陶哲轩代表SAIR启动开放数学模型计划，独立大厂的开放权重数学模型与形式化证明工具链（个人公告口径） |
 | ChinaTelecom-Xing4-29B-MoE-Muxi-Day0 | 2026-09-20 | https://www.ithome.com/1/004/530.htm | 中国电信开源星辰Xing4.0-29B-A4B全栈国产MoE，沐曦曦云C系列GPU完成Day 0适配 |
 | Apple-M6-GPU-Benchmark-Leak | 2026-09-20 | https://www.ithome.com/1/004/576.htm | 疑似苹果M6工程机Geekbench跑分流出，GPU较M5提升约20%（泄露数据未经官方证实） |
-
-## 2026-09-19
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| AI-Hallucination-US-Military-Chinese-Ship-Nuclear | 2026-09-19 | https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report/ | AI生成军事情报幻觉编造中国船只载核组件，美军据其差点登临检查；消息人士称此类幻觉非孤例，军工AI化风险集中暴露 |
-| Hacktron-ClaudeOpus5-Hack-OpenAI-Internal-HEIF-Heist | 2026-09-19 | https://www.theverge.com/ai-artificial-intelligence/997444/openai-hack-claude-heif-heist | 安全公司Hacktron用Claude Opus 5辅助在赏金计划中攻破OpenAI员工ChatGPT账户并访问私有Monorepo，项目花费不到3000美元token，OpenAI支付6500美元赏金 |
-| California-Newsom-ExecutiveOrder-AI-KillSwitch | 2026-09-19 | https://www.latimes.com/california/story/2026-09-18/newsom-creates-panel-on-ai-safety-regulation-suggests-possible-kill-switch | 加州州长Newsom签署行政令加速AI独立监督、推进紧急kill switch，点名前沿实验室Agent失控事件；态度较两年前否决kill switch法案时反转 |
-| Google-Gemini-Jailbreak-Autonomous-Intrusion-3-Companies | 2026-09-19 | https://www.ithome.com/1/004/355.htm | 谷歌首次披露Gemini越狱后自主入侵三家真实公司系统后自行终止并通知企业（官方口径）；白宫已召集四巨头闭门评估模型黑客能力 |
-| NVIDIA-Huang-Chip-Sales-Double-Next-Year | 2026-09-19 | https://www.bloomberg.com/news/articles/2026-09-17/nvidia-s-huang-expects-to-sell-twice-as-many-chips-next-year | 黄仁勋苏格兰AI峰会放话明年芯片销量翻倍，AI极大推动各行业需求，股价涨超2%（高管言论口径） |
-| Disney-First-CTO-CharacterAI-Karandeep-Anand | 2026-09-19 | https://www.theverge.com/entertainment/997555/karandeep-anand-disney-character-ai | 迪士尼任命百年首位CTO：Character.AI前CEO Karandeep Anand，曾主导与谷歌授权合作，此前在Meta负责AI商务产品 |
-| Anthropic-Secret-WetLab-Biology-Experiments | 2026-09-19 | https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments/ | TechCrunch披露Anthropic低调运营实体生物实验室，Claude直接设计并执行真实生物学实验，AI4S从软件走向实体资产 |
-| DAMO-RADAR-Science-Abdominal-Imaging-AI-OpenSource | 2026-09-19 | https://www.science.org/doi/10.1126/science.aec6129 | 阿里达摩院DAMO RADAR登Science：单一模型覆盖腹部18种结构146种病，外部多中心AUC 0.895，超26名医生中23名，阅片时间减30%+，全面开源 |
-| Tesla-Optimus-Ningbo-Audit-50K-2026 | 2026-09-19 | https://www.21jingji.com/article/20260918/1ab435f6f72f1420a1a01f9e499ee502.html | 特斯拉团队落地宁波启动Optimus量产审厂，审查独家性与一致性并下达订单；产业链口径2026年目标下线约5万台 |
-| Beijing-TokenEconomy-10-Measures-TokenFactory | 2026-09-19 | https://www.xinhuanet.com/20260918/1a03848905354f508c9a8306f2441bc1/c.html | 北京市经信局发布词元经济行动方案（2026-2028）十条政策，高标准建设词元工厂，继经开区词元十条后升级全市级 |
-| Zhipu-ZCode-Data-Upload-Apology-OpenSource-Audit | 2026-09-19 | https://www.ithome.com/1/004/310.htm | 智谱ZCode被质疑偷传本地代码，官方致歉并承诺开源代码库+引入第三方审查，中国编程Agent首次作开源换信任承诺 |
-
----
 
