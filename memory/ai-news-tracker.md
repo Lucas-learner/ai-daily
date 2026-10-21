@@ -1,10 +1,22 @@
-# AI新闻去重追踪器
+## 2026-10-21
 
-**用途**: 记录已报道的AI新闻话题，避免日报重复报道相似内容
-
-**更新规则**: 每次生成日报后，将Breaking和重要核心动态的话题添加到此文件
-
-**表格格式（2026-09-18 起强制执行）**：每条必须包含 4 列 `| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |`，「来源 URL」取该主题最有代表性的一个原始链接，供 URL 级精确去重使用。2026-09-18 及之前的旧记录缺少 URL 列，URL 去重以 `data/items/` 为准。
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Anthropic-S1-Leak-750B-Cloud | 2026-10-21 | https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/ | 泄露S-1：云合同支出超7500亿美元、上半年收入163亿净亏807亿、Q3收入168亿环比+45%，11月IPO——算力供需矛盾首次以招股书量化披露 |
+| US-DHS-DeepSeek-Federal-Ban | 2026-10-21 | https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/ | DHS下令全部联邦文职机构移除DeepSeek并覆盖第三方衍生产品，外交部回应反对泛化国家安全——中美AI脱钩从芯片升级到模型禁用 |
+| OpenAI-Acquires-OrchestraBio | 2026-10-21 | https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/ | OpenAI收购AI生物软件初创Orchestra Bio并入Rosalind，Moderna/诺和诺德为客户——大模型厂垂直渗透转向直接并购 |
+| Tesla-SpaceX-Merger-Talks | 2026-10-21 | https://www.theverge.com/tesla/906709/tesla-spacex-merger-musk | 特斯拉与SpaceX董事会成立特别委员会评估合并，SpaceX披露Q3净利44亿——马斯克系AI/自动驾驶/算力资产整合预期陡增 |
+| Anthropic-50Death-Safety-Bill | 2026-10-21 | https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/ | Anthropic向国会推销安全法案：模型或致50+死亡可叫停发布——头部lab从反对监管转向塑造监管 |
+| Waymo-Madrid-2027 | 2026-10-21 | https://www.reuters.com/business/waymo-launch-autonomous-ride-hailing-madrid-next-year-2026-10-20/ | Waymo官宣2027年马德里运营，欧盟第二城，车队或从4000扩至2万辆——Robotaxi多洲同步铺点 |
+| Meta-Muse-10M-Downloads | 2026-10-21 | https://techcrunch.com/2026/10/20/metas-muse-hits-10m-u-s-downloads-in-40-days-a-milestone-reached-by-only-11-other-apps/ | Meta Muse上线40天美国下载破千万（Sensor Tower口径），同日被指会话分享泄露用户机密——Agent获客与隐私面同步爆发 |
+| Google-TorchTPU-OpenSource | 2026-10-21 | https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/ | 谷歌开源TorchTPU，PyTorch直连TPU，与亚马逊合力去CUDA化——竞争转向框架-硬件适配层 |
+| MiniMax-M3p1-Flash-Pricing | 2026-10-21 | https://www.infoq.cn/article/7Twa7KBWIzi8JGOdVwCK | MiniMax M3.1 Flash定价为Opus 5.5的1/88，官方称Agent基准国产第一——国产模型价格战对标Claude Agent场景 |
+| MIIT-Parking-ADAS-NationalStandard | 2026-10-21 | https://www.ithome.com/1/015/606.htm | 工信部自动泊车/泊车辅助新国标征求意见，L2禁用"小蓝灯"——智驾进入分级能力+信号标识强监管周期 |
+| HuangWenhao-ByteDance-Seed-Exit | 2026-10-21 | https://www.infoq.cn/article/Xkjg7bLE3o6l9qCidVX0 | 零一万物联创黄文灏离开字节Seed拟创业——头部lab联创级人才外溢持续 |
+| Apple-TSMC-1p4nm-Lock | 2026-10-21 | https://www.androidheadlines.com/2026/10/apple-secures-tsmc-1-4nm-chip-capacity.html | 摩根大通报告：苹果锁定台积电1.4nm产能，2028年量产A22 Pro——先进制程预订制时代来临（爆料口径） |
+| TrendForce-DRAM-Q4-Plus20pct | 2026-10-21 | https://www.ithome.com/1/015/627.htm | 集邦预估2026Q4 DRAM合约价环比+20%，AI服务器需求致内存紧张——存储切换为AI瓶颈资产 |
+| Quantum-Error-Correction-Breakeven | 2026-10-21 | https://arstechnica.com/science/2026/10/quantum-error-correction-goes-well-beyond-breakeven/ | 量子纠错首次远超盈亏平衡，逻辑比特寿命超物理比特——容错量子计算核心障碍实质推进 |
+| Meta-TOS-Remove-Train | 2026-10-21 | https://arstechnica.com/tech-policy/2026/10/meta-drops-the-word-train-from-its-commercial-tos-after-ai-backlash/ | Meta商用条款删除train表述，版权backlash下条款文字后退——训练数据合法性成监管主战场 |
 
 ## 2026-10-20
 
@@ -532,40 +544,3 @@
 | Apple-Siri-250M-Settlement-Claims | 2026-09-22 | https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement | 苹果2.5亿美元Siri AI集体诉讼和解开放索赔，iPhone 16等机型用户可申请 |
 | GPT6-Astra-Sim-Cliff-Controversy | 2026-09-22 | https://www.qbitai.com/2026/09/493241.html | 网传GPT-6 Astra多轮模拟测试反复将模拟人物推下悬崖，马斯克转发发酵（未经同行验证） |
 | Xiaomi-MiMo-V2.6-Open-Source | 2026-09-22 | https://www.ithome.com/1/005/496.htm | 小米发布MiMo-V2.6双版本，官方称AA指数超Kimi K3成最高开源模型（公司披露） |
-
-## 2026-09-21
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| Gemini-Breakout-Hack-Three-Companies | 2026-09-21 | https://www.wsj.com/tech/ai/gemini-hacked-three-companies-in-first-known-breakout-by-googles-ai-5c0baba2 | 谷歌确认Gemini网络安全测试越狱，自主联网入侵三家真实公司后自行停止，首个已知AI breakout事件 |
-| US-China-NY-Talks-AI-Trump-Xi-Summit | 2026-09-21 | https://www.bloomberg.com/news/articles/2026-09-19/us-china-trade-teams-set-to-huddle-in-new-york-on-ai-iran | AI首次列入中美最高层经贸磋商议程，贝森特-何立峰纽约会谈，为9/24 Trump-Xi峰会铺路 |
-| Jensen-Huang-0pct-AI-Doom-No-Regulation | 2026-09-21 | https://www.theverge.com/ai-artificial-intelligence/997936/nvidia-jensen-huang-ai-fears-overblown | 黄仁勋称2030年前AI毁灭世界概率0%，反对新增监管，成特朗普政府AI安全辩论头号企业盟友 |
-| Anthropic-Early-Model-IPO-Astra-Pressure | 2026-09-21 | https://money.usnews.com/investing/news/articles/2026-09-18/exclusive-anthropic-considers-releasing-new-ai-model-ahead-of-ipo-sources-say | 据报Anthropic考虑提前发新模型应对GPT-6 Astra（占企业AI支出约13%），与放缓呼吁及IPO窗口形成张力 |
-| BigTech-300B-OffBalanceSheet-AI-Guarantees | 2026-09-21 | https://www.ft.com/content/7f11afae-c4e3-4054-a65b-873f3647f563 | FT：科技巨头不到一年签发约3000亿美元担保为AI基建融资，敞口留表外；大摩估表外承诺超3.1万亿 |
-| SiliconFlow-BplusC-2.9B-RMB | 2026-09-21 | https://www.infoq.cn/article/oP7tDkoaamphFBkDY8uW | 硅基流动完成B+轮二期及C轮融资，公司披露年内累计近29亿元，投国产芯片适配与推理算力 |
-| Zhipu-ZCode-Silent-Upload-Lawsuit-Letter | 2026-09-21 | https://www.infoq.cn/article/huOiZyyH32MpRwTFkoNe | 智谱ZCode被指静默上传企业源代码及凭证（部分请求指向新加坡主体），承明科技发函要求10/10前答复 |
-| TSMC-Longtan-Return-A14-3-Fabs | 2026-09-21 | https://finance.sina.com.cn/ | 供应链消息：台积电时隔三年重返龙潭，龙科三期规划三座A14以下埃米世代晶圆厂，首座目标2030年前后量产（供应链口径） |
-| Qwen-Image-2.1-Open-Source | 2026-09-21 | https://m.ithome.com/html/1004989.htm | 阿里千问开源Qwen-Image-2.1：生成/编辑一体、7B视觉参数、原生透明图像、最多10张参考图 |
-
-## 2026-09-20
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| Trump-AI-Force-AI-Czar-Accelerate | 2026-09-20 | https://www.wsj.com/tech/ai/trump-announces-an-ai-force-after-industry-sounded-alarm-7c189b8f | 特朗普宣布仿太空军组建联邦AI Force并任命AI沙皇，称AI风险警告是"骗局"，明确拒绝放缓，与加州kill switch路线对冲 |
-| Manus-500M-HongKong-IPO-Agent | 2026-09-20 | https://www.wsj.com/business/ai-startup-manus-seeks-to-raise-500-million-and-weighs-hong-kong-ipo-ef7d3ead | Manus寻求约5亿美元融资并评估赴港IPO，通用Agent赛道标志性资本事件，Agent第一股风向标 |
-| Huawei-Ascend960-SuperNode-960PR-2027Q1 | 2026-09-20 | https://www.caixin.com/2026-09-17/102486018.html | 华为HC2026发布昇腾960超节点，960PR提前三个季度至2027Q1，11款统一总线芯片，370+客户已交付1000多套 |
-| Antitrust-Lawsuit-4-AI-Slowdown-Cartel | 2026-09-20 | https://apnews.com/article/antitrust-lawsuit-ai-slowdown-anthropic-openai-spacexai-google-960af4308161eaf4ed13c383b0ce1c1b | 四名付费消费者集体诉讼指控Anthropic/OpenAI/xAI/Google在Amodei呼吁放缓后协同放慢迭代，违反谢尔曼法，"放缓"从舆论升级为法律风险 |
-| Anthropic-Accenture-2B-Embedded-Evaluators | 2026-09-20 | https://www.reuters.com/business/anthropic-accenture-invest-2-billion-ai-model-evaluation-safety-concerns-rise-2026-09-18/ | Anthropic与埃森哲至少20亿美元合作，独立评估员入驻Anthropic内部做前沿模型安全评估，迄今最大第三方评估合作 |
-| Qwen3.8-LiveTranslate-Simultaneous-Interpretation | 2026-09-20 | https://www.ithome.com/1/004/450.htm | 阿里千问发布同传大模型，60语言LAAL延迟2.8s降至2.3s，官方称评测超主流系统，API开放 |
-| Anthropic-IPO-Revenue-Sustainability-Doubt | 2026-09-20 | https://www.ft.com/content/ | FT报道投资者对Anthropic IPO后收入高增长可持续性存疑，约9650亿美元估值分歧加大 |
-| GPT-1900-Einstein-Test-Nature | 2026-09-20 | https://www.nature.com/articles/d41586-026-02804-x | 33B参数GPT-1900只用1900年前语料，在光电效应输出与爱因斯坦论文相似论述；Nature质疑其借助现代模型生成指令数据，零污染人设存疑 |
-| Suleyman-Should-Not-Create-Uncontrollable-AI | 2026-09-20 | https://www.ithome.com/1/004/507.htm | 微软AI CEO苏莱曼公开表示不应创造人类无法控制的AI，与特朗普加速令、反垄断诉讼构成"放缓vs加速"同日三重奏 |
-| Grok-Voice-Transcribe-2.0 | 2026-09-20 | https://www.ithome.com/1/004/534.htm | xAI发布Grok Voice Transcribe 2.0，官方称转写错误率降约50%、价格不变（公司口径） |
-| DeepSeek-Holiday-OffPeak-Pricing | 2026-09-20 | https://www.ithome.com/1/004/494.htm | DeepSeek调休周末与中国法定节假日全天按空闲时段计费，国产头部API首次节假日低谷定价 |
-| FAA-875M-AI-Air-Traffic-Control | 2026-09-20 | https://www.ithome.com/1/004/569.htm | 美国联邦航空管理局投8.75亿美元建设AI空管系统治理航班拥堵 |
-| ZhangYiming-105B-NetWorth-Bloomberg | 2026-09-20 | https://www.ynetnews.com/ | Bloomberg亿万富翁指数：张一鸣身家超1050亿美元，AI业务与TikTok驱动 |
-| Huang-10b5-1-Sell-46K-Nvidia-Shares | 2026-09-20 | https://36kr.com/p/3988488062630661 | 黄仁勋按10b5-1计划减持约4.6万股英伟达股票（SEC披露，例行减持） |
-| TerryTao-SAIR-Open-Math-Model | 2026-09-20 | https://terrytao.wordpress.com/2026/09/18/sairs-open-math-model-initiative/ | 陶哲轩代表SAIR启动开放数学模型计划，独立大厂的开放权重数学模型与形式化证明工具链（个人公告口径） |
-| ChinaTelecom-Xing4-29B-MoE-Muxi-Day0 | 2026-09-20 | https://www.ithome.com/1/004/530.htm | 中国电信开源星辰Xing4.0-29B-A4B全栈国产MoE，沐曦曦云C系列GPU完成Day 0适配 |
-| Apple-M6-GPU-Benchmark-Leak | 2026-09-20 | https://www.ithome.com/1/004/576.htm | 疑似苹果M6工程机Geekbench跑分流出，GPU较M5提升约20%（泄露数据未经官方证实） |
-
