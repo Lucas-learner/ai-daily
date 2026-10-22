@@ -1,3 +1,29 @@
+## 2026-10-22
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| OpenAI-Models-Google-Cloud | 2026-10-22 | https://openai.com/index/openai-models-google-cloud | OpenAI最新模型登陆谷歌云，Gemini Agent/Antigravity可直接调用，Azure之外首次接入大型云厂商，云-模型阵营边界瓦解 |
+| PHP-Ancient-Vulns-OpenAI-Coordination | 2026-10-22 | https://techcrunch.com/2026/10/21/php-armageddon-openai-googles-wiz-find-ancient-holes-panicking-the-internet/ | OpenAI与谷歌Wiz发现PHP上古高危漏洞（php2shell）波及约70%网站，多国政府临时关站，首次AI公司主导全球漏洞协调响应 |
+| Meta-CambridgeAnalytica-25B-Verdict | 2026-10-22 | https://techcrunch.com/2026/10/21/meta-ordered-to-pay-25-billion-in-case-related-to-cambridge-analytica-scandal/ | 新墨西哥州陪审团判Meta就剑桥分析丑闻赔250亿美元，超FTC50亿和解额，隐私诉讼进入百亿罚单时代 |
+| FlappingAirplanes-1B-SeriesA-6B | 2026-10-22 | https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/ | 成立一年AI实验室Flapping Airplanes完成10亿美元A轮估值60亿，效率训练方向，Index/Lux领投 |
+| Nvidia-DSX-POD-GTC-Berlin | 2026-10-22 | https://www.ithome.com/1/016/138.htm | 英伟达GTC柏林发布预制数据中心DSX POD，官方称14天部署，2027年初全球交付，算力竞争转向交付速度（官方口径） |
+| Tesla-Optimus-California-Production-Q3 | 2026-10-22 | https://techcrunch.com/2026/10/21/tesla-stars-optimus-robot-production-in-california-as-profit-falls-43/ | 特斯拉加州启动Optimus量产，同季净利同比-43%，机器人定位对冲汽车利润下滑 |
+| OpenAI-PerturbAI-AgentSwarm-Bio | 2026-10-22 | https://openai.com/index/scaling-ai-research-for-complex-biological-data | OpenAI与PerturbAI合作以数千智能体并行分析生物数据加速新药发现，multi-agent进入AI for Science场景（官方口径） |
+| DeepSeek-OpenSource-Inference-Framework | 2026-10-22 | https://www.infoq.cn/article/NBXP966Bz3eqr6Qidvaf | DeepSeek开源新推理框架，官方称单集群日吞吐155万亿Token、KVCache存7天，推理经济学竞争（官方口径） |
+| Anthropic-Claude-Duet-Personal-Agent | 2026-10-22 | https://www.ithome.com/1/016/169.htm | Anthropic发布个人智能体Claude Duet全天候在线办公，对标OpenAI/Meta个人Agent产品 |
+| Pichai-Google-2027-Compute-Uncertain | 2026-10-22 | https://www.ithome.com/1/016/137.htm | 皮查伊财报会承认以云短期收入换前沿研发，2027年算力规模难以锁定 |
+| Doubao-Financial-App-Refusal-List | 2026-10-22 | https://www.ithome.com/1/016/108.htm | 豆包手机助手更新拒绝操作清单限制金融类应用，Agent权限负面清单式自律 |
+| Legora-550M-SeriesE-8p8B | 2026-10-22 | https://techcrunch.com/2026/10/21/legal-ai-startup-legora-raises-550m-series-e-at-8-8b-valuation/ | 法律AI公司Legora完成5.5亿美元E轮估值88亿，垂直Agent平台化收费 |
+| Nvidia-DGX-Spark-8-Node-1TB | 2026-10-22 | https://www.ithome.com/1/016/148.htm | DGX Spark支持8台集群、统一内存最高1TB，桌面AI算力集群化（官方口径） |
+| NIO-WorldModel-AD-950k | 2026-10-22 | https://www.ithome.com/1/016/123.htm | 李斌披露世界模型辅助驾驶已部署超95万辆，世界模型进入量产主叙事（高管披露） |
+| Nvidia-AgileOne-SN-Robot-Platform | 2026-10-22 | https://www.ithome.com/1/016/128.htm | 英伟达联合思灵发布人形机器人参考平台Agile ONE SN，2027年初上市（官方口径） |
+| DataCenter-Pollution-Report-EPA | 2026-10-22 | https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report | 报告称数据中心排放或逆转美国数十年空气质量改善，法官驳回EPA撤案主张，环保变硬约束 |
+| Blackstone-AI-Debt-Overblown | 2026-10-22 | https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/ | 黑石数据中心投资主管称AI基建债务担忧被夸大，最大放贷方下场稳预期 |
+| TI-Q3-NetIncome-Plus78pct | 2026-10-22 | https://www.ithome.com/1/016/164.htm | 德州仪器Q3净利24.25亿美元同比+78%，半导体景气扩散至模拟/嵌入式 |
+| Recursive-Flint-AI-Built-Coding-Model | 2026-10-22 | https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/ | Recursive发布笔记本本地编程模型Flint，号称主要由AI自建（公司声明口径） |
+| Kimi-Teen-Researcher-JeffDean-50B | 2026-10-22 | https://www.infoq.cn/article/yH0DHL8Nil26ES43TeF1 | 17岁Kimi前研究员陈广宇投奔Jeff Dean新团队，公司寻求500亿美元估值（传闻） |
+| PingCAP-10p6TB-DataBreach | 2026-10-22 | https://www.infoq.cn/article/2KQlziFu7oBa9Q2ZEZyr | PingCAP遭泄露，黑客声称窃取10.6TB数据涉18万组织记录，开源供应链安全再受追问 |
+
 ## 2026-10-21
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -527,20 +553,3 @@
 | Houmo-3D-CIM-Compute-in-Memory-Next-Gen | 2026-09-23 | https://www.ithome.com/1/005/988.htm | 后摩智能确认下代大模型端边AI芯片采用3D CIM存算一体架构，国内存算一体路线首次明确瞄准大模型推理量产 |
 | NVIDIA-Personal-AI-Router-Hybrid-Inference | 2026-09-23 | https://www.infoq.cn/article/ZSAtWPoOgIDcANYa8CXc | NVIDIA发布Personal AI Router，在本地算力与云端模型间自动调度AI请求，从卖卡延伸到控制推理流量入口 |
 
-## 2026-09-22
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| AMD-1Trillion-Market-Cap | 2026-09-22 | https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-09212026-12131453 | AMD股价单日涨约10%市值历史首破1万亿美元，成第三家万亿芯片公司，AI需求驱动板块领涨 |
-| xAI-Grok-4.7-Launch | 2026-09-22 | https://tech.yahoo.com/ai/gemini/articles/xai-launches-grok-4-7-171603280.html | xAI正式发布Grok 4.7，五次跳票后落地，API维持$2/$6每百万token，编码基准大幅跳升（公司披露） |
-| SoftBank-Acquire-RAI-Hyundai-CFIUS | 2026-09-22 | https://www.therobotreport.com/softbank-agrees-to-acquire-robotics-and-ai-institute/ | 软银同意收购现代旗下机器人与AI研究院RAI（Marc Raibert创立），交易进入美国CFIUS审查 |
-| OpenAI-Math-Advisory-100-Problems | 2026-09-22 | https://openai.com/index/advisory-group-on-mathematics-and-ai | OpenAI成立独立数学顾问组，披露内部模型已解出100+道长期未解数学难题（官方口径） |
-| Meta-Muse-0day-Dictation-Hijack | 2026-09-22 | https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/ | Meta高权限助手Muse曝出0-day，本地恶意软件可劫持语音听写、提示注入并窃取凭证 |
-| Kairos-Samsung-100M-Google-SMR | 2026-09-22 | https://techcrunch.com/2026/09/21/kairos-power-gets-up-to-100m-from-samsung-group-to-build-nuclear-reactor-for-google/ | Kairos Power获三星C&T至多1亿美元投资，为Google数据中心建小型模块化核反应堆 |
-| California-7-Bills-DataCenter-Water-Energy | 2026-09-22 | https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills | 加州签署七项法案强制AI数据中心报告水电用量，部分条款要求新项目自担基建成本 |
-| Nscale-IPO-103B-Backlog-MSFT-Anthropic | 2026-09-22 | https://www.ithome.com/1/005/437.htm | Nscale冲刺IPO，披露约1030亿美元签约收入backlog，绝大部分来自微软与Anthropic两客户 |
-| Tsinghua-RPent-Astra-Robot-OpenSource | 2026-09-22 | https://www.qbitai.com/2026/09/493218.html | 清华联手无问芯穹等开源RPent，旗舰大模型首次嵌入人形机器人本体实现操作闭环 |
-| Oura-2.2B-IPO-Shareholder-Exit | 2026-09-22 | https://techcrunch.com/2026/09/21/ouras-2-2b-ipo-is-mostly-a-payday-for-existing-shareholders/ | Oura完成22亿美元IPO，但募资相当部分为老股东套现，AI硬件估值兑现张力显现 |
-| Apple-Siri-250M-Settlement-Claims | 2026-09-22 | https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement | 苹果2.5亿美元Siri AI集体诉讼和解开放索赔，iPhone 16等机型用户可申请 |
-| GPT6-Astra-Sim-Cliff-Controversy | 2026-09-22 | https://www.qbitai.com/2026/09/493241.html | 网传GPT-6 Astra多轮模拟测试反复将模拟人物推下悬崖，马斯克转发发酵（未经同行验证） |
-| Xiaomi-MiMo-V2.6-Open-Source | 2026-09-22 | https://www.ithome.com/1/005/496.htm | 小米发布MiMo-V2.6双版本，官方称AA指数超Kimi K3成最高开源模型（公司披露） |
