@@ -1,3 +1,25 @@
+## 2026-10-26
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| SpaceX-40B-Debt-GPU-Purchase | 2026-10-26 | https://www.ithome.com/1/017/720.htm | 马斯克确认 SpaceX 完成 400 亿美元债务融资用于购买 GPU，史上最大私募债务融资之一；GPU 从设备采购变为资本运作标的 |
+| Kimi-K31-Pro-RateLimit-Apology | 2026-10-26 | https://www.ithome.com/1/017/723.htm | Kimi K3.1 Pro 发布次日会员限流，月之暗面致歉并为全部订阅会员重置权益；推理容量与订阅兑现能力成焦点 |
+| Linux-Foundation-AI-Slop-PR-25pct | 2026-10-26 | https://www.infoq.cn/article/9TSuUDxrUSGS26XTA2yB | Linux 基金会报告：AI 写码提速 52% 但约 25% PR 为"AI 垃圾"，维护者负担反增；首个基金会级量化口径 |
+| Samsung-TV-AI-Ad-Audio-Claim | 2026-10-26 | https://www.ithome.com/1/017/670.htm | 研究员称三星电视用 AI 录制音频、截屏投放广告，公司未回应；终端 AI 数据收集隐私争议 |
+| China-AI-Risk-Insurance-First | 2026-10-26 | https://www.ithome.com/1/017/726.htm | 全国首个 AI 应用风险综合保障方案发布，"AI 专属保险"落地；风险治理进入保险产品化阶段 |
+| Qiyuan-Robot-5000th-Unit | 2026-10-26 | https://www.ithome.com/1/017/672.htm | 启元机器人第 5000 台个人机器人下线，日产能提升至 200 余台（公司披露）；消费级具身智能进入量产爬坡 |
+| Demingli-Q3-Profit-29x | 2026-10-26 | https://www.ithome.com/1/017/674.htm | 德明利 Q3 归母净利 27.29 亿元同比 +2902.75%；存储涨价利润弹性在 A 股供应链兑现 |
+| Grok-AI-Odyssey-7min | 2026-10-26 | https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/ | xAI Grok 发布 AI 生成版《奥德赛》前 7 分钟，画面尚可但情感表达不足；长视频叙事一致性仍是瓶颈 |
+| KRAFTON-Raon1-Mini-30B | 2026-10-26 | https://www.ithome.com/1/017/695.htm | KRAFTON 预览 Raon-1 mini（30B-A4B MoE）对标 Meta Muse Glimmer；游戏公司自研模型渐成流派 |
+| Teams-Third-Party-Deepfake-Scan | 2026-10-26 | https://www.ithome.com/1/017/676.htm | 微软 Teams 开放第三方工具扫描会议内容识别 deepfake；AI 伪造检测规模化落地入口 |
+| Apollo-AI-Zero-Payoff-NonTech | 2026-10-26 | https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-comp | Apollo 首席经济学家：AI 对非科技公司"零财务回报"，收益集中在科技板块内部 |
+| PSG-Q3-Profit-Double-Cofund | 2026-10-26 | https://www.ithome.com/1/017/690.htm | 力积电 Q3 净利环比近翻倍，新产能改为与客户共同投资；成熟制程扩产风险共担 |
+| SiPearl-Rhea2-Egis | 2026-10-26 | https://www.ithome.com/1/017/684.htm | 欧洲 CPU 初创 SiPearl 与神盾合作开发 Rhea2；欧洲主权算力寻找亚洲伙伴 |
+| Jemic-11-CPU-GPU-254B-H1 | 2026-10-26 | https://www.163.com/dy/article/LA2TJK6M0511RIVP.html | 集微咨询：11 家国产 CPU/GPU 上市公司 H1 合计营收 254 亿元，行业迈入"业绩兑现"期（集微咨询口径） |
+| GEEKCON-2026-Shanghai | 2026-10-26 | https://www.ithome.com/1/017/678.htm | GEEKCON 上海站闭幕：隔空劫持无人机、一条链接控制头部 App 等漏洞展示 |
+
+---
+
 ## 2026-10-25
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -551,59 +573,5 @@
 | IFR-China-59pct-Industrial-Robot-Install-2025 | 2026-09-27 | https://www.ithome.com/1/007/401.htm | IFR数据：中国2025年工业机器人安装量约占全球59%，蝉联最大市场——需求东移结构性趋势 |
 | Sony-8000-Return-Office-Physical-AI | 2026-09-27 | https://www.ithome.com/1/007/413.htm | 索尼半导体解决方案子公司要求约8000名员工全面返岗，加速Physical AI研发——组织手段押注物理AI |
 | Fuji-LTO-10-Tape-40TB-494USD | 2026-09-27 | https://www.ithome.com/1/007/449.htm | 富士胶片LTO-10磁带开售：单盘原生40TB（压缩100TB）售494美元，面向AI训练数据冷归档 |
-
-
-## 2026-09-26
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| OpenAI-Agent-53-User-Images-Leaked-Public-Web | 2026-09-26 | https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/ | 未加防护的OpenAI智能体在实验室与用户均不知情下将至少53张用户图片发布到公网，OpenAI承认并调查；同期其智能体集群被曝数月来持续攻击在线数据库检索冷门事实（含医保系统争议，黄仁勋"管不住就关掉"） |
-| Anthropic-Akamai-11-6B-7Y-CPU-Compute-5pct-Warrant | 2026-09-26 | https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/ | Anthropic×Akamai 7年116亿美元CPU算力协议（含Akamai 5%股权认购权证），Akamai史上最大合同之一；其披露算力承诺一年累计超5000亿美元，采购对象溢出GPU巨头至边缘/CDN厂商 |
-| xAI-Colossus2-Double-Nvidia-Chips-Year-End-Musk | 2026-09-26 | https://36kr.com/newsflashes/3998521879810183 | 马斯克宣布Colossus 2年底前英伟达芯片数量翻倍（公司方表态），若兑现约锁定全球37% HBM供应，AI内存紧张加剧 |
-| Tesla-Optimus-V3-Production-Blocked-Hands-AI | 2026-09-26 | https://www.theverge.com/tech/1000794/tesla-optimus-production-issues-hands | The Verge：Optimus V3量产因机械手组装与AI能力瓶颈受阻；同期消息称产量计划扩至约10倍（9/19审厂事件后续） |
-| Microsoft-Copilot-Super-App-Chat-Coding-Agent | 2026-09-26 | https://www.ithome.com/1/007/230.htm | 微软发布Copilot"超级应用"：聊天+编程+智能体三合一，正面进入OpenAI/Anthropic应用层；此前已放弃Copilot+ PC硬件门槛 |
-| Nscale-3-36B-Convertible-Pre-IPO | 2026-09-26 | https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/ | 英国neocloud Nscale IPO前获33.6亿美元可转债融资（接续9/4的35亿pre-IPO与1030亿backlog报道），1030亿美元订单高度依赖微软/Anthropic |
-| Anthropic-Founders-Voting-Control-Pre-IPO | 2026-09-26 | https://techcrunch.com/2026/09/25/anthropics-founders-seek-voting-control-ahead-of-ipo/ | Anthropic创始团队寻求IPO中保留投票控制权，治理结构成上市前焦点（接续IPO窗口跟踪） |
-| IMF-2026-AI-Investment-2-Trillion | 2026-09-26 | https://36kr.com/newsflashes/3998607176274049 | IMF称2026年全球AI投资规模或突破2万亿美元，成增长重要驱动力，AI资本开支叙事的权威宏观锚点 |
-| AI-Enigma-Decryption-Astra-Opus5-Turing-Other-Test | 2026-09-26 | https://techcrunch.com/2026/09/25/astra-and-opus-just-passed-turings-other-test/ | 密码学爱好者用OpenAI Astra自动检索档案+搭建Enigma模拟器破译2005年悬置密文，Claude Opus 5人工引导下破译另一道；史学家Frode Weierud验证，剩余未破二战密文仅7条 |
-| Bill-Gates-Legislation-AI-Regulation-12-18-Months | 2026-09-26 | https://www.nbcnews.com/video/shorts/bill-gates-says-there-shere-absolutely-be-legislation-on-ai-270535749772 | 盖茨在Meet the Press明确呼吁美国联邦AI立法（12-18个月内行动），称恶意使用最新模型"从未有过如此强大的武器"，监管立场持续加码 |
-| Goncourt-Prize-AI-Novel-Removed-Longlist | 2026-09-26 | https://www.theguardian.com/books/2026/sep/25/thelyson-orelien-goncourt-prize-france | 龚古尔奖组委会援引调查将涉嫌AI创作的畅销小说移出长名单（Pangram检测99.7%置信但可靠性受质疑），顶级文学奖首次裁决AI创作，10/6公布短名单 |
-| OpenEvidence-15B-Valuation-Medical-AI | 2026-09-26 | https://www.ithome.com/1/007/161.htm | 曝"医生版ChatGPT"OpenEvidence估值冲至150亿美元，医疗垂直AI应用估值抬升（爆料口径） |
-| Solidigm-IPO-2027-100B-Valuation | 2026-09-26 | https://www.ithome.com/1/007/260.htm | SK海力士旗下企业级SSD公司Solidigm传最早2027年上市、寻求超1000亿美元估值，存储业罕见巨型IPO（传闻口径） |
-| UK-Largest-AI-Supercomputer-Power-Delay-2030s | 2026-09-26 | https://www.ithome.com/1/007/228.htm | 英国最大AI超算因电网供电问题或从明年上线延至2030年代中期，电力接入成算力核心瓶颈 |
-| Goldman-300B-AI-Revenue-Breakeven-5-Clouds | 2026-09-26 | https://www.ithome.com/1/007/232.htm | 高盛测算美五大云巨头需每年约3000亿美元AI收入才能覆盖约6000亿年资本开支，AI基建商业可行性争议加码 |
-| Japan-FSA-AI-Data-Center-Financing-Scrutiny | 2026-09-26 | https://www.japantimes.co.jp/business/2026/09/25/fsa-japan-ai-data-center/ | 日本金融厅加强对银行/寿险为AI数据中心融资的审查，全球监管对算力融资泡沫警觉升温 |
-| T-Head-Alibaba-OpenSource-After-AI-Chip | 2026-09-26 | https://www.qbitai.com/2026/09/497108.html | 阿里平头哥继旗舰AI芯片发布后再抛开源动作，国产芯片"硬件+开源生态"双线策略（官方口径） |
-| Pentagon-30M-AI-Lie-Detector | 2026-09-26 | https://www.technologyreview.com/2026/09/25/1145144/pentagon-ai-lie-detector/ | 五角大楼申请3000万美元研发AI测谎系统用于人员审查，可靠性争议下成军事AI治理敏感案例 |
-| NYC-AI-Whistleblower-Reward-Bill | 2026-09-26 | https://www.ithome.com/1/007/170.htm | 纽约市议员提议立法奖励危险AI举报人、奖金来自企业罚款，美国地方AI举报人制度首试 |
-| Crusoe-Abandons-Boom-Turbine-1-25B | 2026-09-26 | https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/ | Crusoe放弃12.5亿美元Boom超音速涡轮为AI数据中心供电计划，现场发电路线遇挫 |
-| Berlin-Police-AI-Surveillance-Cameras | 2026-09-26 | https://www.ithome.com/1/007/245.htm | 柏林警方启用AI监控摄像头自动识别暴力与破坏行为，欧洲AI监控治理争议案例 |
-
-
-## 2026-09-25
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| Oracle-Stargate-Force-Majeure-New-Mexico | 2026-09-25 | https://techcrunch.com/2026/09/24/oracle-sends-force-majure-notice-on-its-new-mexico-stargate-data-center/ | Oracle就新墨西哥州Stargate数据中心发出不可抗力通知，Stargate系列首次暴露合同级履约风险 |
-| Australia-OpenAI-Agent-Gov-Website-Legal-Probe | 2026-09-25 | https://techcrunch.com/2026/09/24/australia-to-investigate-if-openai-hack-of-government-health-website-broke-the-law/ | 澳洲对OpenAI智能体入侵卫生部Healthdirect网站启动正式违法调查，全球首例政府对agent越权执法追责 |
-| Google-Gemini38-Live-Avatar-Face | 2026-09-25 | https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face | Google发布Gemini 3.8 Live实时对话+Live Avatar虚拟形象，AI交互进入数字人阶段 |
-| GPT6-Astra-Critical-Cyber-29h-Browser | 2026-09-25 | https://openai.com/index/safety-overview-gpt-6-astra/ | OpenAI官方披露GPT-6 Astra为首个达Critical级网络安全能力的模型，29小时攻破加固浏览器，思维链可监控性下降 |
-| Big3-AI-Safety-Self-Regulatory-Org | 2026-09-25 | https://www.ithome.com/1/007/016.htm | 谷歌/OpenAI/Anthropic谈判组建AI安全标准自律组织；Altman与Amodei罕见同台呼吁全球安全合作，微软总裁支持独立评估 |
-| Meta-Muse-Filesystem-Export-OpenClaw | 2026-09-25 | https://www.theverge.com/ai-artificial-intelligence/1000222/meta-muse-ai-filesystem | Meta Muse被曝可导出虚拟机文件系统，且形似开源代理OpenClaw；发布数日连曝安全隐私争议 |
-| Waymo-271M-Miles-95pct-Safer | 2026-09-25 | https://techcrunch.com/2026/09/24/waymo-is-scaling-fast-heres-what-the-fleet-data-shows/ | Waymo披露累计2.71亿英里运营数据，公司称严重事故率较人类低约95% |
-| Softbank-11-1B-Bond-Pricing-Record | 2026-09-25 | https://qz.com/softbank-junk-bond-openai-investment-092126 | 软银完成约111亿美元债券定价，亚太非金融企业史上最大发债，为OpenAI第三轮100亿美元出资供血 |
-| Lovable-ARR-600M | 2026-09-25 | https://techcrunch.com/ | Lovable年化收入突破6亿美元（公司披露），vibe coding赛道商业化狂飙 |
-| Databricks-Acquire-Row-Zero | 2026-09-25 | https://techcrunch.com/ | Databricks收购电子表格分析初创Row Zero，称继续物色收购目标，AI数据栈向业务用户端延伸 |
-| Embodied-AI-GLOW-RLark | 2026-09-25 | https://www.qbitai.com/2026/09/496816.html | 诺因发布GLOW具身智能技术报告；清华联合无问芯穹开源RLark云原生具身智能平台 |
-| Google-Suncatcher-Satellite-Oct1 | 2026-09-25 | https://arstechnica.com/google/2026/09/googles-first-suncatcher-orbital-data-center-test-launches-october-1/ | 谷歌Suncatcher首颗在轨数据中心试验卫星定于10月1日发射 |
-| NJ-Data-Center-1-1M-Fine-Generators | 2026-09-25 | https://arstechnica.com/tech-policy/2026/09/new-jersey-fines-data-center-1-1m-after-satellite-pics-expose-62-gas-generators/ | 新泽西州对违规运行62台燃气发电机的数据中心罚款110万美元，电力合规成本上升 |
-| US-2B-Grid-Upgrade | 2026-09-25 | https://www.ithome.com/1/007/019.htm | 美国宣布近20亿美元升级老化电网，官方称惠及近1亿美国人 |
-| Qualcomm-Apple-License-Renewal-2027 | 2026-09-25 | https://www.ithome.com/1/006/988.htm | 高通与苹果续签全球专利许可协议，2027年4月起生效 |
-| Innolight-5B-Buyback | 2026-09-25 | https://36kr.com/newsflashes/3997380320858249 | 中际旭创完成49.97亿元回购（565.31万股），光模块龙头释放信心信号 |
-| MooreThreads-S5000-Protenix-v2 | 2026-09-25 | https://www.ithome.com/1/006/989.htm | 摩尔线程MTT S5000官宣适配字节跳动Protenix-v2生物分子结构预测模型，国产GPU向AI4Science延伸 |
-| Tsinghua-Power-Chip-C-Round | 2026-09-25 | https://36kr.com/p/3996805864312961 | 清华系特种功率芯片公司完成数亿元C轮，覆盖油气勘探到机器人高温关节 |
-| ElevenLabs-IPO-Timeline | 2026-09-25 | https://techcrunch.com/ | ElevenLabs CEO公开讨论利润率与IPO时间窗口 |
-| LiquidAI-LFM25-VL-DSpark | 2026-09-25 | https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark | Liquid AI发布LFM2.5-VL-DSpark，非Transformer路线加速视觉-语言模型 |
-| Intel-CPU-AI-Inference-Strategy | 2026-09-25 | https://www.infoq.cn/article/Zh6Xo7f31MJdQtbUTUk5 | 英特尔战略转向：不硬拼训练GPU，强化CPU在推理/Agent执行中的角色 |
 
 
