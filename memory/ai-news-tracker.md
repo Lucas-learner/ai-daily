@@ -1,3 +1,23 @@
+## 2026-10-27
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Anthropic-IPO-Nasdaq-ANT-Filing | 2026-10-27 | https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/ | Anthropic 正式提交纳斯达克 IPO（代码 ANT），被称人类史上最大 IPO；招股书披露曾因安全顾虑暂停旗舰模型训练一个多月、数据中心能源/气候风险及高粘性企业客户生态打法 |
+| Meta-95B-Equity-Raise-Capex-1350-1450B | 2026-10-27 | https://finance.yahoo.com/markets/article/meta-announces-plans-to-raise-up-to-95-billion-for-ai-buildout-140141962.html | Meta 宣布至多 950 亿美元股权融资为 AI 基建筹资（上市公司史上纪录级），2026 资本开支上调至 1350–1450 亿美元 |
+| OpenAI-GPT-6-1-Terra-Cost-1-9th | 2026-10-27 | https://openai.com/index/introducing-gpt-6-1-terra | OpenAI 发布低成本模型 GPT-6.1 Terra，官方称任务成本仅为 Claude Opus 5.5 的 1/9 且更快更准确，computer use 能力突出（官方口径）；推理价格战打到发布会话术 |
+| OpenAI-Three-Science-Breakthroughs-Academic | 2026-10-27 | https://openai.com/index/building-scientific-understanding-with-academic-communities | OpenAI 宣布三项重大科学突破（数学猜想/计算机算法/千禧年难题方向，官方口径），并推出与学术社区合作验证新机制 |
+| Anthropic-63B-Broadcom-Chip-Syndicate-JPMorgan-Blackstone | 2026-10-27 | https://www.ithome.com/1/018/199.htm | 摩根大通、黑石牵头银团为 Anthropic 提供约 630 亿美元融资专项采购博通定制 AI 芯片（Bloomberg 报道口径），迄今最大 AI 硬件专项融资之一；非英伟达 ASIC 路线获顶级金融背书 |
+| Microsoft-60K-Voluntary-Buyouts | 2026-10-27 | https://techcrunch.com/2026/10/26/microsoft-offers-buyouts-to-around-60000-employees-reports-say/ | 微软据报向约 6 万员工（约四分之一）推自愿买断，AI 时代最大规模人力结构调整之一（媒体消息源口径） |
+| DeepSeek-DeepInfer-ForgeKernel-AI-Kernel-Dual-Top | 2026-10-27 | https://www.leiphone.com/category/industrynews/IaMw7vRrTCadlbCY.html | DeepSeek 全面开源推理框架 DeepInfer（手调 FlashMLA 达硬件极限 90%+）；AI 编写的 ForgeKernel 无人工调优同周登顶英伟达 SOL-ExecBench 与昇腾 CANNBench 双榜第一，超越 DeepSeek 自开源版本 |
+| Tencent-Hunyuan-Hy-SimulMT-OpenSource-3s | 2026-10-27 | https://www.ithome.com/1/018/168.htm | 腾讯混元开源同声传译大模型 Hy-SimulMT，官方称响应 3 秒超人类译员；国产大模型高实时场景开源卡位 |
+| Samsung-SKhynix-HBM4-8Hi-Feb2027-Nvidia | 2026-10-27 | https://wccftech.com/samsung-sk-hynix-downgraded-hbm4-q2-2027-nvidia-rubin-ultra/ | 三星、SK 海力士 8 层 HBM4 拟 2026 年 2 月起量产出货英伟达（供应链消息），牵动 Rubin 平台爬坡与 2027 算力供给 |
+| Samsung-Cut-GalaxyA-20pct-Memory-Price | 2026-10-27 | https://www.ithome.com/1/018/165.htm | 受内存涨价冲击，三星被曝拟减产 20% Galaxy A 系中低端手机，AI 抢内存溢出效应传导至消费电子终端 |
+| Cambricon-Chen-Tianshi-Deny-1M-Shipment | 2026-10-27 | https://www.ithome.com/1/018/135.htm | 寒武纪陈天石公开回应"明年出货超百万颗"传闻：公司从未进行相关沟通；国产 AI 芯片出货预期成二级市场敏感点 |
+| ZhongkeHuiling-Aplusplus-400M-Shoe-Robot-Orders | 2026-10-27 | https://www.infoq.cn/article/2svt5BbWUOHbADdo0UZo | 中科慧灵完成数亿元 A++ 轮融资，制鞋机器人订单超 4 亿元、排产数千台，具身智能进入量产交付期（公司披露口径） |
+| BostonDynamics-ICE-RobotDog-Employee-Protest | 2026-10-27 | https://arstechnica.com/ai/2026/10/boston-dynamics-employees-want-to-block-sale-of-robot-dogs-to-ice/ | ICE 拟采购 Boston Dynamics 机器狗，数百名员工联署抗议，机器人执法伦理争议升温 |
+| Intel-AMD-CEO-Talks-Potential-Coop | 2026-10-27 | https://www.ithome.com/1/018/155.htm | 英特尔 CEO 陈立武称已与 AMD 苏姿丰就潜在合作对话，x86 双雄罕见合作信号（官方口径，仅对话阶段） |
+| Tesla-Cybercab-NHTSA-Turo-FSD | 2026-10-27 | https://arstechnica.com/cars/2026/10/tesla-wants-ai-and-software-to-be-its-next-profit-engine/ | NHTSA 监管压力下特斯拉仍推进 Cybercab 交付，FSD 监督版将上架租赁平台 Turo，押注 AI 与软件为下一利润引擎 |
+
 ## 2026-10-26
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
