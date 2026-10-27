@@ -1,0 +1,20 @@
+[
+  {
+    "id": "anthropic-ipo-2026-10",
+    "title": "Anthropic 提交上市申请",
+    "reason": "招股书披露的业务、安全与算力风险，将成为观察前沿实验室资本化的参照。",
+    "first_date": "2026-10-27",
+    "updated_date": "2026-10-27",
+    "report_date": "2026-10-27",
+    "status": "active"
+  },
+  {
+    "id": "openai-google-cloud-2026-10",
+    "title": "OpenAI 模型登陆 Google Cloud",
+    "reason": "头部模型的云分发格局发生变化，后续值得关注覆盖范围与合作条款。",
+    "first_date": "2026-10-22",
+    "updated_date": "2026-10-22",
+    "report_date": "2026-10-22",
+    "status": "active"
+  }
+]
