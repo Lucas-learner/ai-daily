@@ -34,7 +34,7 @@ mkdir -p "$TARGET_DIR"
 
 # 提取首页摘要卡片内容：
 # - TL;DR：今日洞察首句（去掉行内加粗后整句加粗）
-# - 重点清单：🔥 头条全部 + 📌 核心动态补足，合计最多 5 条，链接到当日锚点，条目不加粗
+# - 重点清单：头条全部 + 核心动态补足，合计最多 5 条，链接到当日锚点，不显示分类/标题 emoji
 TMP_BODY=$(mktemp)
 awk -v date="$DATE" -v ym="$YEAR_MONTH" '
   BEGIN { in_section=0; in_insight=0; n=0; tldr="" }
@@ -52,16 +52,17 @@ awk -v date="$DATE" -v ym="$YEAR_MONTH" '
     gsub(/\*\*/, "", tldr)
     next
   }
-  in_section && /^(🔥|📌) \*\*.*\*\*[[:space:]]*$/ && n<5 {
+  # 新闻标题可能使用 🚀/💰/🤖 等不同 emoji；从独立加粗标题行提取正文，不限定 emoji 类型。
+  in_section && !in_insight && /^[^*]*\*\*.*\*\*[[:space:]]*$/ && n<5 {
     line=$0
-    emoji = (line ~ /^🔥/) ? "🔥" : "📌"
-    sub(/^(🔥|📌) \*\*/, "", line)
+    sub(/^[^*]*\*\*/, "", line)
     sub(/\*\*[[:space:]]*$/, "", line)
-    items[++n] = "- " emoji " [" line "](reports/" ym ".html#" date ")"
+    items[++n] = "- [" line "](reports/" ym ".html#" date ")"
   }
   END {
     if (tldr != "") print "**" tldr "**\n"
     for (i=1; i<=n; i++) print items[i]
+    if (n>0) print "…"
   }
 ' "$REPORT" > "$TMP_BODY"
 
