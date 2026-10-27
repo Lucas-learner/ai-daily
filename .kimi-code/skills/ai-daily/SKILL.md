@@ -182,6 +182,7 @@
    bash /Users/macmini/projects/skills/ai-daily/scripts/add-daily-items.sh YYYY-MM-DD /tmp/ai-daily-YYYY-MM-DD-items.jsonl
    ```
    脚本会校验每行 JSON 的必填字段，并剔除聚合站黑名单来源与历史重复 URL（剔除只告警不阻塞，字段格式错误则整批拒绝），再追加到 `data/items/YYYY-MM-DD.jsonl`。
+5. 检查并维护 `data/ongoing-highlights.json`，供首页“近 7 天持续关注”使用。按事件线维护，常态 3 条、最多 4 条，宁缺毋滥。必须有独立信源或可核对的一手文件，并有持续行业影响或明确后续；仅官方性能/规模宣称不入选。`grade=S` 只作为候选提示，不能自动入选。新事件填写稳定 `id`、`title`、一句 `reason`、`first_date`、`updated_date`、`report_date`、`status=active`；日期均为 YYYY-MM-DD。实质进展才更新 `updated_date` 和 `report_date`，同一事件更新原条目，不因没有新进展而续期；事实被否定则标记 `status=closed` 或删除。首页会自动隐藏 7 天未更新的条目。
 
 ### 第七步：同步到 iCloud
 

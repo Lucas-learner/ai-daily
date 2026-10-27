@@ -43,7 +43,8 @@ flowchart LR
 │   ├── index.html                        # 公开日报索引页（顶部内嵌最新摘要）
 │   └── reports/                          # 可视化日报 HTML
 ├── data/
-│   └── items/YYYY-MM-DD.jsonl           # 结构化条目池（含未入选条目，本地检索用）
+│   ├── items/YYYY-MM-DD.jsonl           # 结构化条目池（含未入选条目，本地检索用）
+│   └── ongoing-highlights.json          # 首页跨日持续关注事件线
 ├── memory/
 │   └── ai-news-tracker.md               # 去重追踪器（含来源 URL 列）
 ├── reports/
@@ -62,6 +63,7 @@ flowchart LR
     ├── aggregator-blacklist.txt         # 聚合站/内容农场域名黑名单（写入 jsonl 时剔除）
     ├── generate-daily-summary.sh        # 生成每日摘要（支持 iCloud/GitHub 输出目录）
     ├── md-to-html.py                    # Markdown 转 HTML（日期锚点 + TOC 目录）
+    ├── ongoing_highlights.py            # 跨日事件筛选与首页卡片
     ├── page_style.py                    # 站点共享样式/页面骨架（卡片式 + 暗色模式）
     ├── query-items.sh                   # 本地检索条目池（--q/--days/--month/--category/--all/--stats）
     ├── sync-to-icloud.sh                # 同步到 iCloud
@@ -93,6 +95,8 @@ flowchart LR
 ### GitHub Pages 同步
 
 `docs/` 目录作为 GitHub Pages 发布源，由 `scripts/sync-to-github.sh` 自动推送到仓库。推送成功后，GitHub Pages 会在几分钟内重新部署公开站点。
+
+首页“近 7 天持续关注”读取 `data/ongoing-highlights.json`，按事件线展示最多 4 条，并链接至对应日报日期。日报任务只在出现经核实、具有持续影响或明确后续的事件时更新该文件；距 `updated_date` 满 7 天的事件会自动从首页移除，无须手动清理。`report_date` 指向包含该事件最新实质进展的日报日期。
 
 ## 依赖
 

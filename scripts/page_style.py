@@ -143,6 +143,9 @@ th { background: var(--chip-bg); }
   border-radius: 14px; box-shadow: var(--shadow); padding: 20px; margin: 16px 0;
 }
 .card h2 { border-top: none; padding-top: 0; margin-top: 0; font-size: 1.2rem; }
+.ongoing-highlights ul { margin: 0; padding-left: 1.35em; }
+.ongoing-highlights li { margin: 0.8em 0; }
+.ongoing-highlights li div { color: var(--muted); font-size: 0.92em; }
 """
 
 # 防闪烁：渲染前先从 localStorage 恢复手动选择的主题

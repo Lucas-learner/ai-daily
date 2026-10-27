@@ -17,6 +17,7 @@ import tempfile
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import page_style
+from ongoing_highlights import render_highlights
 
 
 PROJECT_DIR = Path("/Users/macmini/projects/skills/ai-daily")
@@ -105,6 +106,7 @@ def main():
     with tempfile.TemporaryDirectory() as tmp:
         latest_date = generate_daily_summary(Path(tmp))
         summary_card = build_summary_card(Path(tmp), latest_date) if latest_date else ""
+        highlights_card = render_highlights(latest_date) if latest_date else ""
 
     months = sorted([f.stem for f in DOCS_REPORTS_DIR.glob("2*.html")], reverse=True)
 
@@ -120,7 +122,7 @@ def main():
 
     main_html = f"""<h1>📰 AI日报</h1>
 <p class="meta">每日自动生成的 AI 行业日报归档，按月汇总，逆序排列。</p>
-{summary_card}<div class="card">
+{summary_card}{highlights_card}<div class="card">
   <h2>📚 月度归档</h2>
   <table>
     <thead>

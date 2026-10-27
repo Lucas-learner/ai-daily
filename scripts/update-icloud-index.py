@@ -12,6 +12,7 @@ import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import page_style
+from ongoing_highlights import render_highlights
 
 
 def extract_main_content(raw: str) -> str:
@@ -83,10 +84,15 @@ def main():
     # 单独运行本脚本时回退到 iCloud 目录（兼容旧布局）
     summary_dir = Path(os.environ.get("SUMMARY_DIR", str(icloud_dir)))
     summary_card = build_summary_card(summary_dir)
+    latest_date = ""
+    if summary_dir.joinpath("daily-summary.md").exists():
+        match = re.search(r"^## (\d{4}-\d{2}-\d{2})$", summary_dir.joinpath("daily-summary.md").read_text(encoding="utf-8"), re.MULTILINE)
+        latest_date = match.group(1) if match else ""
+    highlights_card = render_highlights(latest_date) if latest_date else ""
 
     main_html = f"""<h1>📰 AI日报索引</h1>
 <p class="meta">按月汇总，逆序排列。HTML 为可视化版本，Markdown 为原始文本。</p>
-{summary_card}<div class="card">
+{summary_card}{highlights_card}<div class="card">
   <table>
     <thead>
       <tr><th>月份</th><th>更新时间</th><th colspan="2">查看</th></tr>

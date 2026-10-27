@@ -40,8 +40,8 @@ if [ -n "$(git status --porcelain -- reports/ memory/ data/)" ]; then
 fi
 
 # 2. 提交 docs/ 变更（如果有）
-if ! git diff --quiet -- docs/ scripts/update-github-pages.py scripts/generate-daily-summary.sh; then
-  git add docs/ scripts/update-github-pages.py scripts/generate-daily-summary.sh
+if [ -n "$(git status --porcelain -- docs/ README.md .kimi-code/skills/ai-daily/SKILL.md scripts/sync-to-github.sh scripts/update-github-pages.py scripts/update-icloud-index.py scripts/ongoing_highlights.py scripts/page_style.py scripts/generate-daily-summary.sh)" ]; then
+  git add docs/ README.md .kimi-code/skills/ai-daily/SKILL.md scripts/sync-to-github.sh scripts/update-github-pages.py scripts/update-icloud-index.py scripts/ongoing_highlights.py scripts/page_style.py scripts/generate-daily-summary.sh
   git commit -m "chore: sync daily reports to GitHub Pages ($YEAR_MONTH)"
 fi
 
