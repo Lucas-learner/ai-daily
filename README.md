@@ -1,15 +1,16 @@
-# AI日报（cron + kimi-code 版）
+# AI日报（cron + CLI agent）
 
 > 🌐 **公开日报站点**：https://lucas-learner.github.io/ai-daily/
 
-本项目是一个自动化的 AI 行业日报工作流。每天由系统 cron 定时触发，调用 kimi-code 搜索当日 AI 新闻、去重整理、生成结构化日报，并同时发布到 iCloud（个人可视化同步）和 GitHub Pages（公开网页共享）。所有底层脚本、去重追踪器和站点源码均开源，方便他人复用或 fork 改造。
+本项目是一个自动化的 AI 行业日报工作流。每天由系统 cron 定时触发 CLI agent 搜索当日 AI 新闻、去重整理、生成结构化日报，并同时发布到 iCloud（个人可视化同步）和 GitHub Pages（公开网页共享）。默认执行器为 Kimi CLI；连续失败后可配置其他支持非交互执行的 CLI agent 作为备用。所有底层脚本、去重追踪器和站点源码均开源，方便他人复用或 fork 改造。
 
 ## 日报生成流程
 
 ```mermaid
 flowchart LR
     A[系统 cron<br/>每天 08:00] --> B[cron-run.sh]
-    B --> C[kimi -p<br/>执行ai日报任务]
+    B --> C[主 CLI agent<br/>执行ai日报任务]
+    C -. 失败重试后备用 .-> C2[可配置的备用 CLI agent]
     C --> D[搜索 AI 新闻]
     D --> E[去重 & 结构化]
     E --> F[追加到 reports/YYYY-MM.md]
@@ -77,7 +78,8 @@ flowchart LR
 - 时间：每天 08:00（Asia/Shanghai）；日报时间窗为前一日 08:00 至当日 08:00
 - 主方式：系统级 `crontab`（生产兜底）
   - 入口脚本：`scripts/cron-run.sh`
-  - 触发命令：`kimi -p "执行ai日报任务"`
+  - 默认主 CLI：`kimi -p "执行ai日报任务"`，连续失败 3 次后调用备用 CLI agent
+  - 备用 CLI：默认 OpenCode + DeepSeek Flash；可在 `scripts/config.sh` 设置 `FALLBACK_AGENT_BIN` 和 `FALLBACK_AGENT_ARGS`，替换成支持非交互运行且将 prompt 作为末尾参数的 CLI。各 agent 的认证使用其自身配置
   - 同步目标：iCloud + GitHub Pages（每日自动更新）
   - 失败告警：kimi 失败 / GitHub 同步失败 / 昨日缺席 / 锁文件残留时会发 iMessage 通知（发送走本机共享通道 `~/projects/tools/macos-notify/send-imessage.sh`），需在 `scripts/config.sh` 中配置 `NOTIFY_TO`（模板：`scripts/config.example.sh`；成功简报默认关闭，`NOTIFY_ON_SUCCESS=1` 开启）
 - 备用方式：kimi-code 内置 `CronCreate`（仅当前 session 生效，7 天后过期，仅用于临时调试）

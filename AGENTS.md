@@ -2,7 +2,7 @@
 
 ## 项目目标
 
-通过 `cron + kimi-code` 定时生成 AI 行业日报，并自动归档、去重与同步。
+通过 `cron + CLI agent` 定时生成 AI 行业日报，并自动归档、去重与同步；默认使用 Kimi CLI，可配置其他备用 agent。
 
 ## 关键路径
 
@@ -20,11 +20,14 @@
 12. **通知配置**：`scripts/config.sh`（已 gitignore，含 iMessage 接收人 `NOTIFY_TO`；模板见 `scripts/config.example.sh`）；iMessage 发送走本机共享通道 `~/projects/tools/macos-notify/send-imessage.sh`，项目内不再保留发送脚本
 13. **本地检索**：`scripts/query-items.sh --q 关键词 [--days N | --month YYYY-MM] [--category 五类之一] [--all] [--stats]`
 14. **RSS 固定源采集**：`scripts/fetch-rss.py`（源清单 `scripts/rss-feeds.txt`，增删来源只改清单；聚合站黑名单 `scripts/aggregator-blacklist.txt`）
+15. **备用 CLI agent**：`scripts/cron-run.sh` 主 CLI 多次失败后调用备用 agent。默认使用 OpenCode CLI 的 `deepseek/deepseek-flash`；可在被 gitignore 的 `scripts/config.sh` 配置 `FALLBACK_AGENT_BIN` 和 `FALLBACK_AGENT_ARGS` 替换为其他支持非交互执行、并将 prompt 作为末尾参数的 CLI。各 CLI 的认证由其自身配置管理
+16. **跨日持续关注**：`data/ongoing-highlights.json` 存储首页展示的事件线；`scripts/ongoing_highlights.py` 在 GitHub Pages 与 iCloud 首页渲染时自动筛除超过 7 天未更新的事件，最多显示 4 条。
 
 ## 执行原则
 
 - 所有文件操作优先使用项目内的 helper 脚本，减少直接 Edit/Write 的出错概率。
 - 日报生成后必须同时更新两处：`memory/ai-news-tracker.md`（只保留最近 30 天主题）和 `data/items/YYYY-MM-DD.jsonl`（经 `scripts/add-daily-items.sh` 校验写入，含未入选条目）。
+- 写完日报后检查 `data/ongoing-highlights.json`：按事件线而非新闻篇数维护，常态 3 条、最多 4 条，宁缺毋滥。入选须有独立信源或可核对的一手文件，并且有持续行业影响或明确后续；仅官方性能/规模宣称不入选。`grade=S` 只作候选提示，不能自动入选。新增事件填写稳定 `id`、`title`、一句 `reason`、`first_date`、`updated_date`、`report_date`（均为 YYYY-MM-DD）、`status=active`；实质进展才更新 `updated_date` 和 `report_date`，无进展不续期；同一事件线更新原条目，事实被否定则改 `status=closed` 或删除。不要为凑数量填入普通新闻。
 - 时间窗定义：日报的"今日"= 前一日 08:00 至当日 08:00（北京时间），与 08:00 cron 对齐；采集与筛选以此窗口为准。
 - 去重分两层：URL 精确去重由 `add-daily-items.sh` 写入时强制执行（比对 `data/items/` 全量历史，命中即剔除；同时剔除聚合站黑名单来源），采集阶段仍可先用 `grep -F` 粗查 `data/items/` 与 tracker 避免无效写作；再 LLM 语义去重（同公司同事件线跳过）。
 - 每月 1 日先执行上个月归档（生成月度总结 + HTML），再开始当月日报；月度统计（分类/来源分布）用 `query-items.sh --month YYYY-MM --stats` 出数，LLM 只做解读。
@@ -32,6 +35,7 @@
 - 源文件随同步自动提交：`sync-to-github.sh` 在提交 `docs/` 前会自动 commit `reports/`、`memory/`、`data/` 的变更并一起 push，日报源数据不依赖手动提交（`backups/`、`reports/*.html` 在 .gitignore 中，不在自动提交范围内）。
 - 本机 shell 与系统代理（Clash 127.0.0.1:7897）上游可能失效，表现为所有 HTTPS 走代理报 `SSL_ERROR_SYSCALL` 但 `--noproxy '*'` 直连畅通。sync-to-github.sh 已内置「先绕代理直连、再走默认代理」的降级；手动排查网络时先用 `curl --noproxy '*' -I https://github.com` 判断是代理问题还是 GitHub 本身不可达。
 - 失败必通知：`cron-run.sh` 在 kimi 失败、GitHub 同步失败、昨日缺席、锁文件残留时会发 iMessage 告警（需配置 `scripts/config.sh` 的 `NOTIFY_TO`）；不要删除这些告警调用。
+- 备用 CLI agent 仅在主 CLI 3 次执行均失败后调用；默认执行 `opencode run --standalone --auto --model deepseek/deepseek-flash`。cron 环境中所选 agent 的用户配置和 API 认证必须已可用。
 
 ## 配额控制（199 套餐）
 

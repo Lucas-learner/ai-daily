@@ -9,3 +9,9 @@ NOTIFY_TO=""
 
 # 成功时是否也发送一行简报：1 发送 / 0 不发送
 NOTIFY_ON_SUCCESS=0
+
+# 备用 CLI agent。默认使用 OpenCode + DeepSeek Flash。
+# 可替换为其他支持非交互执行、并接受末尾 prompt 参数的 CLI；参数用空格分隔。
+# 示例：FALLBACK_AGENT_BIN="/usr/local/bin/claude"，FALLBACK_AGENT_ARGS="-p"
+FALLBACK_AGENT_BIN="/Users/macmini/.opencode/bin/opencode"
+FALLBACK_AGENT_ARGS="run --standalone --auto --model deepseek/deepseek-flash"

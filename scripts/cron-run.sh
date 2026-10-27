@@ -22,6 +22,8 @@ if [ -f "$PROJECT_DIR/scripts/config.sh" ]; then
 fi
 NOTIFY_TO="${NOTIFY_TO:-}"
 NOTIFY_ON_SUCCESS="${NOTIFY_ON_SUCCESS:-0}"
+FALLBACK_AGENT_BIN="${FALLBACK_AGENT_BIN:-/Users/macmini/.opencode/bin/opencode}"
+FALLBACK_AGENT_ARGS="${FALLBACK_AGENT_ARGS:-run --standalone --auto --model deepseek/deepseek-flash}"
 
 # 通知：始终写日志；配置了 NOTIFY_TO 时同时发 iMessage
 # 发送走本机共享通道 macos-notify（~/projects/tools/macos-notify/send-imessage.sh）
@@ -89,8 +91,20 @@ touch "$LOCK_FILE"
     fi
   done
   if [ "$RC" -ne 0 ]; then
-    notify "❌ AI日报 ${DATE} 失败：kimi 退出码 ${RC}（已重试 ${ATTEMPT} 次）。最后日志：$(tail -n 3 "$LOG_FILE" | tr '\n' ' ' | cut -c1-200)"
-    exit "$RC"
+    PRIMARY_RC="$RC"
+    if [ -x "$FALLBACK_AGENT_BIN" ]; then
+      echo "[$(date '+%Y-%m-%d %H:%M:%S')] 主 CLI 失败，切换到备用 agent：$FALLBACK_AGENT_BIN"
+      # 各 CLI 的非交互参数由 config.sh 配置；日报 prompt 始终作为最后一个参数传入。
+      read -r -a FALLBACK_AGENT_ARGV <<< "$FALLBACK_AGENT_ARGS"
+      "$FALLBACK_AGENT_BIN" "${FALLBACK_AGENT_ARGV[@]}" "$PROMPT" 2>&1 && RC=0 || RC=$?
+      if [ "$RC" -ne 0 ]; then
+        notify "❌ AI日报 ${DATE} 失败：主 CLI 与备用 agent 均失败（退出码 ${PRIMARY_RC}/${RC}，备用：${FALLBACK_AGENT_BIN}）。最后日志：$(tail -n 3 "$LOG_FILE" | tr '\n' ' ' | cut -c1-200)"
+        exit "$RC"
+      fi
+    else
+      notify "❌ AI日报 ${DATE} 失败：主 CLI 退出码 ${RC}（已重试 ${ATTEMPT} 次），未找到可执行的备用 agent（${FALLBACK_AGENT_BIN}）。最后日志：$(tail -n 3 "$LOG_FILE" | tr '\n' ' ' | cut -c1-200)"
+      exit "$RC"
+    fi
   fi
 
   # 同步到 GitHub Pages（与 iCloud 解耦，避免 iCloud 阻塞影响网页发布）
@@ -111,7 +125,7 @@ touch "$LOCK_FILE"
       in_target && /- \*\*来源\*\*/ { n++ }
       END { print n+0 }
     ' "$PROJECT_DIR/reports/$YEAR_MONTH.md" 2>/dev/null || echo "?")
-    # 提取最新有效日期区块（跳过空区块）头条小节的前 2 条标题（兼容两种格式：独立标题行 / "- **标题**" 列表行；小节标题兼容旧 Breaking 与新 头条）
+    # 提取最新有效日期区块（跳过空区块）头条小节的前 2 条标题（兼容三种格式："🔥 **标题**" emoji 前缀行 / "**标题**" 独立加粗行 / "- **标题**" 列表行；小节标题兼容旧 Breaking 与新 头条）
     BREAKING=$(REPORT="$PROJECT_DIR/reports/$YEAR_MONTH.md" python3 - <<'PYEOF'
 import os, re
 try:
@@ -122,7 +136,7 @@ try:
                for b in blocks if pat.search(b))
     titles = []
     for line in sec.splitlines():
-        m = re.match(r'^[-•]\s*\*\*(.+?)\*\*', line) or re.match(r'^\*\*(.+?)\*\*\s*$', line.strip())
+        m = re.match(r'^[-•]\s*\*\*(.+?)\*\*', line) or re.match(r'^(?:\S{1,4}\s+)?\*\*(.+?)\*\*\s*$', line.strip())
         if m and not m.group(1).startswith(('来源', '时间')):
             titles.append(m.group(1))
     print('\n'.join(f"{i}. {t}" for i, t in enumerate(titles[:2], 1)))
