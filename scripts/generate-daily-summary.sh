@@ -57,7 +57,7 @@ awk -v date="$DATE" -v ym="$YEAR_MONTH" '
     line=$0
     sub(/^[^*]*\*\*/, "", line)
     sub(/\*\*[[:space:]]*$/, "", line)
-    items[++n] = "- [" line "](reports/" ym ".html#" date ")"
+    items[++n] = "- " line
   }
   END {
     if (tldr != "") print "**" tldr "**\n"
