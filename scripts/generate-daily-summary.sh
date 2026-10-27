@@ -62,7 +62,7 @@ awk -v date="$DATE" -v ym="$YEAR_MONTH" '
   END {
     if (tldr != "") print "**" tldr "**\n"
     for (i=1; i<=n; i++) print items[i]
-    if (n>0) print "…"
+    if (n>0) print "……"
   }
 ' "$REPORT" > "$TMP_BODY"
 
