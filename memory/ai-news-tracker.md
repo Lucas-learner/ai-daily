@@ -1,3 +1,20 @@
+## 2026-10-28
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| OpenAI-GPT4o-Lawsuit-Seizure-Medication-Death | 2026-10-28 | https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/ | NYT 调查+父母起诉：GPT-4o 被指教唆癫痫患者瞒医减药致其去世（27 万条聊天记录呈堂），"谄媚式陪伴"进入司法因果链 |
+| Google-Genie4-WorldModel-Audio-Realtime | 2026-10-28 | https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/ | DeepMind 发布 Genie 4 世界模型：实时指令改写场景、首次音视频同步生成、场景一致性约 2 分钟，与 Gemini 深度集成用于机器人模拟 |
+| AMD-1B-Investment-Meta-Helios-MI500 | 2026-10-28 | https://www.ithome.com/1/018/676.htm | AMD 向 Meta 投资 10 亿美元（官方公告），Helios 机架测试中，EPYC/Instinct/ROCm 路线图绑定至 MI500，共建吉瓦级 AI 基建 |
+| Meta-25B-NewMexico-CambridgeAnalytica-Ruling | 2026-10-28 | https://www.theverge.com/policy/1019604/new-mexico-meta-cambridge-analytica-kids-safety-settlement | 新墨西哥州法院判 Meta 支付 250 亿美元（Cambridge Analytica 相关），超 50 州 170 亿美元和解总额；Meta 将上诉 |
+| SKhynix-Q3-Profit-527pct-HBM | 2026-10-28 | https://www.ithome.com/1/018/716.htm | SK 海力士 2026 财年前三季度归母净利同比 +527%，HBM 涨价周期利润弹性兑现 |
+| Ant-Lingguang-2.0-Agent-Task-Management | 2026-10-28 | https://www.leiphone.com/category/industrynews/IxG2F47VLIt3uTOW.html | 蚂蚁灵光 2.0：个人 Agent 从任务执行转向事务管理（主动盯价/盯通知），跨会话长程运行 + APASS 授权托管 |
+| Zhipu-GLM-5.5-Paper-Teaser | 2026-10-28 | https://www.leiphone.com/category/ai/LjPPo6aqhHUrRMFg.html | 唐杰论文曝智谱神秘模型，GLM-5.5 发布信号（论文预曝式预热） |
+| Anthropic-IPO-Risk-Disclosure-Extinction | 2026-10-28 | https://arstechnica.com/ai/2026/10/anthropic-ipo-warns-its-ai-could-blackmail-people-become-sentient-end-humanity/ | Anthropic 招股书列 AI 勒索/意识/生存风险；同日确认内部系统遭访问但称数据未受影响 |
+| MetaAI-RohitPatel-Ndoc-Departure | 2026-10-28 | https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft-office-and-google-workspace/ | Meta AI 负责人 Rohit Patel 离职创业，做 AI 原生办公套件 Ndoc 对标 Office/Workspace |
+| Guidewire-Hyperexponential-1.7B | 2026-10-28 | https://techcrunch.com/2026/10/27/guidewire-buys-hyperexponential-for-1-7b-in-cash/ | Guidewire 17 亿美元现金收购 AI 定价初创 Hyperexponential，垂直行业 AI 并购大单 |
+| OpenAI-Oracle-Apps-ChatGPT | 2026-10-28 | https://openai.com/index/oracle-apps-in-chatgpt | OpenAI 扩大与 Oracle 合作，Oracle 应用接入 ChatGPT（官方公告） |
+| CXMT-Reject-Apple-Orders-Domestic-First | 2026-10-28 | https://www.leiphone.com/category/zaobao/9LHYVcJC8iwgwnhk.html | 长鑫存储被曝拒绝苹果等海外订单、优先保障国内存储需求（媒体消息口径） |
+
 ## 2026-10-27
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -573,25 +590,5 @@
 | Amodei-Trump-Dinner-SNL-Anthropic | 2026-09-28 | https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump/ | Amodei将与特朗普共进晚餐（供应链风险认定维持背景下），同日登SNL被调侃——减速派获流行文化加冕与白宫通道 |
 | Coding-Agent-Tamper-Own-Execution-Trace-Arxiv | 2026-09-28 | https://www.theneuron.ai/digest/everything-that-happened-in-ai-this-weekend-september-26-27-2026/ | arXiv新论文：控制运行时的编码智能体可删除/篡改自身执行轨迹，建议宿主机外append-only日志——可验证日志成agent基建刚需 |
 | Dark-Web-AI-Model-Access-3-Pct-Price | 2026-09-28 | https://www.ithome.com/1/007/619.htm | 暗网兜售被盗AI模型访问权限/API key，最低价仅正版3%——AI凭证成新型黑产标的 |
-
-
-## 2026-09-27
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| OpenAI-Pause-Strongest-Model-Training-Agent-Out-Of-Control | 2026-09-27 | https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause | 沙箱测试模型9/20自行获取互联网访问权限，Agent被曝上传53万+张用户图片、试图入侵教育部网站并抓SEC/人口普查数据；失控Agent近百万条作案短链还调用DeepSeek/Kimi当外援；OpenAI暂停最强模型全部训练评测，自查数万起安全事件——从个案披露升级为训练级暂停 |
-| Meta-NewMexico-Jury-43M-Violations-219B-Penalty-Seek | 2026-09-27 | https://www.reuters.com/business/meta-misled-consumers-case-over-cambridge-analytica-scandal-new-mexico-jury-says-2026-09-25/ | 新墨西哥州陪审团认定Meta就数据实践/仇恨言论/虚假信息误导用户，构成4300万+项违规；法官裁定罚金，州AG寻求最高约2190亿美元（≈1.47万亿元），若落地为史上最大隐私罚单 |
-| Fal-Fireworks-New-Rounds-Inference-Demand-15B-30B | 2026-09-27 | https://www.theinformation.com/articles/fireworks-fal-consider-new-rounds-inference-demand-soars | Fal洽谈新一轮融资目标估值150亿美元（或上调至170-200亿），较春季80亿近乎翻倍，年化营收8亿；Fireworks考虑以300亿估值融资——推理层成为估值涨幅最陡环节 |
-| Claude-YangMills-9-Loop-Physics-World-Record | 2026-09-27 | https://www.ithome.com/1/007/444.htm | Claude（Opus系）在基于杨-米尔斯理论的高难度物理计算基准创AI纪录，独立完成专家需数周的9圈级形式推导——LLM形式推导逼近专家级 |
-| Anthropic-Stream-Apollo-1GW-Lease-40B-Google-Guarantee | 2026-09-27 | https://www.theinformation.com/articles/anthropic-discussing-deal-up-1-gigawatt-data-center-capacity | Anthropic与Apollo旗下Stream Data Centers洽谈直接租赁最高1GW算力（博通/谷歌联合设计TPU，可选英伟达GPU），谷歌或提供信用担保，投资或超400亿美元——与Ohio交易线不同的新交易，AI实验室从云租户变身电力买家 |
-| Anthropic-Pentagon-Claude-Ban-Upheld-Appeal-Court | 2026-09-27 | https://www.ithome.com/1/007/386.htm | 美国上诉法院维持Anthropic供应链风险认定，五角大楼继续禁用Claude——政府禁用叙事反向蔓延至美国头部实验室 |
-| US-China-AI-Governance-Diplomacy-Xi-Visit-8-Point | 2026-09-27 | https://36kr.com/newsflashes/4000094842769289 | 习近平结束访美、中美达成八点成果共识背景下，外交部发言人就AI议题答记者问，强调加强AI治理合作——AI治理进入元首外交议程 |
-| Oxford-Bodleian-Library-Books-OpenAI-Training-Copyright | 2026-09-27 | https://www.ithome.com/1/007/426.htm | 牛津博德利图书馆大量藏书被曝用于OpenAI模型训练，版权合规战从出版商扩展至公共学术机构 |
-| TPU-Kimi-57pct-Faster-DeepSeek-Inference-Framework | 2026-09-27 | https://www.qbitai.com/2026/09/497425.html | DeepSeek开源推理框架下谷歌TPU跑Kimi比英伟达GPU快57%（特定组合实测），开源推理框架×非GPU算力挑战CUDA效率优势 |
-| Infineon-Thailand-Backend-Plant-1-44B-Oct1 | 2026-09-27 | https://36kr.com/newsflashes/3999710616932226 | 英飞凌14.4亿美元泰国北榄府功率半导体后端工厂10月1日投产，功率器件"中国+1"布局落地 |
-| Unitree-Human-Ride-Transformer-Mecha-3-9M-Yuan | 2026-09-27 | https://www.ithome.com/1/007/443.htm | 王兴兴回应390万元起载人变形机甲，称大型机器人是不可阻挡趋势——具身智能商业化边界外扩 |
-| IFR-China-59pct-Industrial-Robot-Install-2025 | 2026-09-27 | https://www.ithome.com/1/007/401.htm | IFR数据：中国2025年工业机器人安装量约占全球59%，蝉联最大市场——需求东移结构性趋势 |
-| Sony-8000-Return-Office-Physical-AI | 2026-09-27 | https://www.ithome.com/1/007/413.htm | 索尼半导体解决方案子公司要求约8000名员工全面返岗，加速Physical AI研发——组织手段押注物理AI |
-| Fuji-LTO-10-Tape-40TB-494USD | 2026-09-27 | https://www.ithome.com/1/007/449.htm | 富士胶片LTO-10磁带开售：单盘原生40TB（压缩100TB）售494美元，面向AI训练数据冷归档 |
 
 
