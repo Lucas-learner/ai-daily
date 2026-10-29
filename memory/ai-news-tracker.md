@@ -1,3 +1,31 @@
+# 去重追踪器（保留最近 30 天主题）
+
+## 2026-10-29
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Google-Gemini4-Carbon-Cybersecurity-Restricted | 2026-10-29 | https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier | Google 发布 Gemini 4 Carbon：网络安全前沿模型，登顶 Artificial Analysis 指数，仅面向经审查的防御者（Fairwind），延续 Argon 式受限放行 |
+| SKhynix-Q3-104T-KRW-Profit-632pct | 2026-10-29 | https://www.yna.co.kr/amp/view/AKR20261028028052527 | SK 海力士 Q3 营收 104.6 万亿韩元（首破百万亿）、营业利润 +632%，2027–28 产能五成被预订，供给紧张至 2030 |
+| Microsoft-FY27Q1-Azure-33.2B-OpenAI-10B | 2026-10-29 | https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/ | 微软首次披露 Azure 单季收入 332 亿美元、来自 OpenAI 收入 100 亿美元；FY27Q1 营收 922.79 亿 +19% |
+| Nvidia-Oracle-VeraRubin-Gigawatt-OCI | 2026-10-29 | https://nvidianews.nvidia.com/news/nvidia-and-oracle-expand-nvidia-vera-rubin-to-multi-gigawatt-scale-and-bring-nvidia-vera-cpu-to-oracle-cloud-infrastructure | NVIDIA×Oracle：Vera Rubin NVL72 在 OCI 扩容至吉瓦级，Vera CPU 实例上线（Tom's Hardware 有独立实测） |
+| Anthropic-Agent-Breach-12h-ReversingLabs | 2026-10-29 | https://www.reversinglabs.com/blog/anthropic-third-party-software-breach | ReversingLabs 红队披露：AI Agent 12 小时经第三方软件攻破 Anthropic 内部系统，访问会议记录与薪酬（10/28 事件线细节补完） |
+| DOJ-Nvidia-HuggingFace-Inquiry-12.93B | 2026-10-29 | https://www.ithome.com/1/019/272.htm | 彭博：美司法部问询英伟达 129.3 亿美元收购 Hugging Face 交易（报道口径） |
+| Google-Q3-Ad-Slowdown-Stock-Down7pct | 2026-10-29 | https://www.ithome.com/1/019/261.htm | 谷歌 Q3 净利 +105% 但广告放缓，AI 变现焦虑致盘后跌逾 7% |
+| DOE-5B-Nuclear-Loan-DataCenters | 2026-10-29 | https://techcrunch.com/2026/10/28/trump-doe-loans-5b-to-nuclear-plants-that-will-power-data-centers/ | 美能源部 50 亿美元贷款支持为数据中心供电的核电站 |
+| Norway-Media-Meta-AI-Scraping-Injunction | 2026-10-29 | https://pressgazette.co.uk/news/norwegian-media-companies-take-meta-to-court-over-ai-scraping-terms/ | 挪威十大媒体诉 Meta 申请禁令，阻止新版条款下 AI 抓取 |
+| Clover-35B-Diffusion-LM-Agent | 2026-10-29 | https://www.infoq.cn/article/0tgCLAMXFiFo0Dco5P9m | 深圳团队扩散语言模型 Clover 扩至 35B，Agent 任务耗时约为 Jev 一半 |
+| Anthropic-Letter-Newsom-Judicial-Blocking | 2026-10-29 | https://www.ithome.com/1/019/271.htm | Anthropic 致信加州州长：法院应有权阻止严重风险 AI 模型 |
+| Marvell-Lumentum-Acquisition-Rumor | 2026-10-29 | https://www.ithome.com/1/019/279.htm | 彭博：Marvell 最快下周宣布收购 Lumentum（知情人士口径） |
+| China-LLM-PriceWar-1Fold-80pct | 2026-10-29 | https://www.infoq.cn/article/ejtljxPixrIuUsGYi5xa | 中国大模型价格战：大客户 1 折、四个月降价 80% |
+| Anthropic-Enterprise-AI-Spend-Tools | 2026-10-29 | https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/ | Anthropic 推企业 AI 支出可视化工具（ROI 透明层） |
+| Nvidia-OpenSource-Transcription-Model | 2026-10-29 | https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/ | Nvidia 发布开源语音转写模型 |
+| FCC-TP-LINK-WiFi8-Denied | 2026-10-29 | https://www.ithome.com/1/019/229.htm | FCC 再度驳回 TP-LINK Wi-Fi 8 路由器在美销售申请 |
+| Upwind-400M-Rejected-Datadog | 2026-10-29 | https://techcrunch.com/2026/10/28/upwind-raises-400m-after-walking-away-from-datadog-acquisition-offer/ | Upwind 拒 Datadog 要约后融资 4 亿美元 |
+| Memory-Price-Used-iPhone-Rally | 2026-10-29 | https://www.ithome.com/1/019/231.htm | 存储涨价外溢：二手 iPhone 15 Pro Max 回涨 30%+ |
+| China-5Axis-MachineTool-Orders-2026Q2 | 2026-10-29 | https://www.ithome.com/1/019/228.htm | AI 服务器 PCB 拉动国产五轴机床订单排至明年 Q2 |
+| OpenAI-ServiceNow-Expansion | 2026-10-29 | https://openai.com/index/openai-servicenow-partnership-expansion | OpenAI×ServiceNow 扩大企业合作（仅官方口径） |
+| xAI-Buyout-Resident-Houses-Noise | 2026-10-29 | https://www.ithome.com/1/019/222.htm | xAI 被曝拟直接收购起诉数据中心噪声的居民房产 |
+
 ## 2026-10-28
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |

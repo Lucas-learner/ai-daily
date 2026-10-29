@@ -2,19 +2,19 @@
   {
     "id": "anthropic-ipo-2026-10",
     "title": "Anthropic 提交上市申请",
-    "reason": "招股书披露的业务、安全与算力风险，将成为观察前沿实验室资本化的参照。",
+    "reason": "招股书披露的业务、安全与算力风险，将成为观察前沿实验室资本化的参照；上市进程中连续曝出安全事件与监管表态。",
     "first_date": "2026-10-27",
-    "updated_date": "2026-10-28",
-    "report_date": "2026-10-28",
+    "updated_date": "2026-10-29",
+    "report_date": "2026-10-29",
     "status": "active"
   },
   {
-    "id": "openai-google-cloud-2026-10",
-    "title": "OpenAI 模型登陆 Google Cloud",
-    "reason": "头部模型的云分发格局发生变化，后续值得关注覆盖范围与合作条款。",
-    "first_date": "2026-10-22",
-    "updated_date": "2026-10-22",
-    "report_date": "2026-10-22",
+    "id": "memory-supercycle-2026-10",
+    "title": "存储超级周期：SK 海力士盈利创纪录、供给锁定至 2028",
+    "reason": "SK 海力士 Q3 营收首破百万亿韩元、营业利润 +632%，2027–28 产能五成被预订，涨价潮已外溢至消费电子二手市场，影响整条算力成本链。",
+    "first_date": "2026-10-29",
+    "updated_date": "2026-10-29",
+    "report_date": "2026-10-29",
     "status": "active"
   }
 ]
