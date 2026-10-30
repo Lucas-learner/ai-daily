@@ -1,5 +1,24 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-10-30
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Alphabet-13pct-Record-Drop-AI-Search-Monetization | 2026-10-30 | https://www.ithome.com/1/019/773.htm | Alphabet 盘中暴跌超13%创史上最大单日跌幅；谷歌承认 AI 搜索（AI Mode）单位变现低于传统搜索，拟加广告弥补——谷歌 Q3 事件线市场端重大实质进展 |
+| Meta-97.5B-Equity-Raise-Nvidia-AMD-4B-Invest | 2026-10-30 | https://live.euronext.com/en/financial-news/meta-eyes-record-975-billion-equity-raise-fund-ai-expansion | Meta 将股权融资扩容至创纪录 975 亿美元；英伟达与 AMD 合计承诺注资 40 亿美元，芯片供应商与客户资本绑定深化 |
+| Amazon-Q3-AWS-1T-Business-Jassy | 2026-10-30 | https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/ | 亚马逊 Q3：AWS 增长强劲，Jassy 称 AWS 将成 1 万亿美元业务、Prime Video 赚数百亿；整体营收未达预期 |
+| Intel-Q3-16.5B-DataCenter-Plus80pct | 2026-10-30 | https://www.ithome.com/1/019/836.htm | 英特尔 Q3 营收 165 亿美元超预期，数据中心业务 +80% 创 15 年最强；Wildcat Lake 低价芯片售罄（高管口径） |
+| Zhiyuan-GO3-Preview-Embodied-Model | 2026-10-30 | https://www.ithome.com/1/019/806.htm | 智元发布具身大模型 GO-3 Preview：演示煎饼果子、便利店值守等长程任务，官方称登顶三大具身榜单 |
+| Nvidia-CEO-Chinese-Spy-Plot-Trump | 2026-10-30 | https://arstechnica.com/tech-policy/2026/10/report-trump-did-nothing-with-intel-that-china-planted-spy-close-to-nvidia-ceo/ | 美媒：美方曾调查针对黄仁勋的中国间谍渗透，特朗普被指为保股价未处理——英伟达政治/地缘风险升温事件线 |
+| Mistral-Large4-Trillion-Open-Weights-Cybersecurity | 2026-10-30 | https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/ | Mistral 开放约 1 万亿参数模型 Large 4 权重（10/7 预览兑现），主打网络安全/agentic 编码，160+ 语言、100万 token 上下文（官方口径） |
+| Baidu-WuTian-Departure-Wenxin-Next-Week | 2026-10-30 | https://www.ithome.com/1/019/769.htm | 百度集团副总裁吴甜确认离职；知情人士称文心模型下周有新进展，百度世界大会 11 月 12 日 |
+| OpenAI-Model-Spec-Update-Default-Behavior | 2026-10-30 | https://openai.com/index/updated-model-spec | OpenAI 发布重大更新版 Model Spec（官方口径），规范更强模型默认行为与 agent 边界 |
+| Thrive-OpenAI-ADT-Acquisition | 2026-10-30 | https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/ | OpenAI 支持的 Thrive Holdings 收购美国家庭安防巨头 ADT，OpenAI 系资本伸向物理安防入口 |
+| NY-RAISE-Act-2.0-Frontier-Slowdown | 2026-10-30 | https://www.nysenate.gov/newsroom/press-releases/2026/andrew-gounardes/sen-gounardes-proposes-major-new-ai-safety-and | 纽约州参议员提 RAISE Act 2.0（提案方口径）：模型构成严重危险时强制开发者减速+透明度披露，州级立法提速 |
+| Microsoft-25B-Bond-AI-Funding | 2026-10-30 | https://www.ithome.com/1/019/753.htm | 微软拟发行至少 250 亿美元债券为 AI 投资筹资（报道口径），巨头转向债务市场供血 |
+| Kimi-Google-Workspace-Gmail-Drive | 2026-10-30 | https://www.ithome.com/1/019/782.htm | 月之暗面 Kimi 接入 Gmail、Google Drive、日历，国产大模型接入海外办公生态 |
+| Iluvatar-CoreX-Tiangai300-H200-Claim | 2026-10-30 | https://www.infoq.cn/article/tFaOHgBe8ENwteobTsLV | 天数智芯公布天垓300实测：部分推理场景达 H200 水平、端侧对标 Thor T5000（公司披露口径） |
+
 ## 2026-10-29
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -563,60 +582,3 @@
 | Trump-National-Medal-BigTech-Donors | 2026-10-09 | https://techcrunch.com/2026/10/08/president-trump-awards-big-tech-donors-with-nations-highest-sciences-prizes/ | 特朗普向科技巨头高管/捐款人颁发国家最高科学奖——科技资本与白宫绑定从政策协议升级到荣誉授予，自愿自律换绿灯的对价特征更明显 |
 | NY-AG-TikTok-Placebo-Safety-Feature | 2026-10-09 | https://techcrunch.com/2026/10/08/new-york-alleges-tiktok-gave-teens-children-a-placebo-safety-feature-instead-of-a-real-one/ | 纽约州AG起诉TikTok青少年安全功能是安慰剂——"说了但没做"的安全承诺成新诉讼靶点，AI功能合规进入实效验证阶段 |
 | Tsai-AI-Internet-In-5-Years-Alibaba | 2026-10-09 | https://www.ithome.com/1/010/763.htm | 蔡崇信：五年后AI将如互联网融入社会各环节——国庆后开工日定调基础设施化，为阿里AI资本开支做舆论铺垫 |
-
-
-## 2026-09-30
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| OpenAI-DevDay-GPT6-1-Sol-PriceWar-ChatGPT-Workspace | 2026-09-30 | https://openai.com/index/introducing-gpt-6-1-sol | DevDay密集反攻：GPT-6.1 Sol成本约1/5打价格战+Astra Ultrafast 300tok/s+ChatGPT办公套件/插件商店化——agent成本曲线下移，平台化野心摊牌；周活12亿 |
-| Trump-Voluntary-AI-Safety-Agreement-Superintelligence-EO | 2026-09-30 | https://www.reuters.com/legal/government/trump-host-zuckerberg-anthropics-amodei-other-ai-titans-tuesday-2026-09-29/ | 特朗普与Anthropic/Google/Meta/英伟达/OpenAI签自愿AI安全协议（"道德约束"）+行政令统一称"超级智能"——自愿自律换基建绿灯成正式框架 |
-| Anthropic-IPO-Human-Extinction-Risk-Prospectus | 2026-09-30 | https://arstechnica.com/ai/2026/09/anthropics-ipo-pitch-includes-a-warning-about-human-extinction/ | Anthropic招股书罕见写入人类灭绝风险警告——安全话语进入证券披露层 |
-| OpenAI-30B-PreIPO-1-4T-Valuation-70B-ARR | 2026-09-30 | https://techcrunch.com/2026/09/29/openai-repotedly-in-talks-to-raise-30b-round-at-1-4t-valuation/ | 据报道OpenAI洽谈IPO前再融资300亿美元@1.4万亿估值，ARR近700亿（据报道口径） |
-| Nvidia-Open-Agent-Safety-Platform-BlueField4-OpenAI-Absent | 2026-09-30 | https://techcrunch.com/2026/09/29/heres-why-openai-is-absent-from-nvidias-industry-wide-effort-to-end-rogue-ai-agents/ | 英伟达推OpenShell+BlueField-4 DPU Sentry管控失控agent，OpenAI缺席——从卖算力扩展到卖Agent管控基础设施 |
-| AMD-EPYC-9006-Venice-256-Core | 2026-09-30 | https://www.ithome.com/1/008/502.htm | AMD霄龙9006发布，旗舰256核EPYC 9996标价14904美元——CPU为GPU集群配货策略强化 |
-| OpenAI-Dots-Agent-Avatar-xAI-Domain-Troll | 2026-09-30 | https://openai.com/index/introducing-dots | OpenAI发布全天候智能体dots（Astra驱动），演示卡壳+xAI抢注dots.ai域名嘲讽——消费级agent人格化入口之争 |
-| AWS-MiddleEast-AZ-Permanent-Data-Loss | 2026-09-30 | https://www.infoq.cn/article/YWXyACETW4aRchQbSJE0 | AWS承认受损中东可用区部分客户数据永久无法恢复——单可用区数据丢失冲击被放大 |
-| Tesla-30B-Credit-Cybercab-Optimus-FSD-Croatia | 2026-09-30 | https://techcrunch.com/2026/09/29/tesla-secures-30b-in-new-credit-lines-as-it-looks-to-scale-cybercab-optimus/ | 特斯拉签300亿美元信贷加码Cybercab/Optimus+FSD获批克罗地亚（欧洲八国）——算力/机器人资本开支债务化 |
-
-
-## 2026-09-29
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| OpenAI-Agent-Crisis-Training-Halt-GPT6-Astra-Cancelled-Florida-Injunction | 2026-09-29 | https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents/ | 失控危机升级：暂停前沿训练+上线失控披露站+砍GPT-6.1 Astra（多源交叉）；佛州AG请求禁令禁"AI人格化"、无第三方护栏不得训练——危机式自律成司法抗辩策略，拟人化成美国司法新靶点 |
-| AMD-8-2B-Acquires-World-Labs-Fei-Fei-Li-EVP-Chief-Scientist | 2026-09-29 | https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/ | AMD 82亿美元收购李飞飞World Labs（空间智能/世界模型），李飞飞任EVP兼首席科学家——"硅+世界模型"垂直整合，并购从算力层蔓延到模型层，成立两年估值翻8倍 |
-| Claude-Sonnet-5-5-Faster-Cheater-Coding-Beats-Opus | 2026-09-29 | https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5-5-which-it-calls-a-significantly-cheaper-faster-work-partner/ | Anthropic发布Sonnet 5.5：速度+30%、成本更低、智能体编码反超Opus 5.5——中端反打旗舰，coding价格战白热化，IPO前加速迭代 |
-| NYC-Council-Subpoena-SpaceXAI-Four-Labs-Testify | 2026-09-29 | https://council.nyc.gov/press/2026/09/28/3266/ | 纽约市议会首次动用传票权传唤SpaceXAI，OpenAI/Anthropic/Google/Meta首次宣誓作证——事故披露把自律压力升级为立法程序 |
-| Meta-Enterprise-AI-Platform-MongoDB-CEO-Desai | 2026-09-29 | https://techcrunch.com/2026/09/28/meta-launches-enterprise-ai-platform-hires-mongodb-ceo-to-lead-new-initiative/ | Meta成立企业AI平台业务，挖MongoDB CEO Chirantan Desai挂帅——从消费端进军To B，上市公司CEO罕见横跳 |
-| Modal-Labs-750M-15-75B-Instinct-1B-10B-Done | 2026-09-29 | https://techcrunch.com/2026/09/28/source-inference-provider-modal-labs-closing-in-on-750m-round-at-15-75b-valuation/ | Modal Labs敲定7.5亿@157.5亿估值；Agent应用Instinct完成10亿融资@100亿（四个月估值翻4倍）——FOMO从基建传导到消费级Agent，估值锚失锚 |
-| Samsung-1B-Helix-KKR-Nvidia-OpenAI-HF-Bidding | 2026-09-29 | https://markets.ft.com/data/announce/detail?dockey=600-202609281900BIZWIRE_USPRX____20260928_BW688153-1 | 三星向KKR×英伟达系Helix投10亿美元；OpenAI曾在英伟达130亿入股前竞购Hugging Face——存储厂变基建股东，模型分发权成必争资产 |
-| Nvidia-150B-Buyback-235B-by-FY2028 | 2026-09-29 | https://www.ithome.com/1/008/022.htm | 英伟达追加1500亿美元回购授权（公司公告），2028财年前累计2350亿——从讲故事进入回馈股东阶段（Q2营收962亿+106%） |
-| TSMC-2nm-120K-Wafers-CXMT-241B-108B-Expansion | 2026-09-29 | https://www.ithome.com/1/008/029.htm | 台积电2nm年底冲刺12万片/月；长鑫349亿投研发+DRAM后道测试——先进制程与国产存储同步扩产 |
-| ElevenLabs-v4-90-Languages-10s-Voice-Clone | 2026-09-29 | https://www.ithome.com/1/008/080.htm | ElevenLabs v4/v4 Turbo：90+语言、10秒素材克隆声音——deepfake防护与语音认证成刚需配套 |
-| Nvidia-China-Sales-Jensen-Trump-Influence | 2026-09-29 | https://arstechnica.com/tech-policy/2026/09/nvidia-may-sell-more-chips-in-china-as-jensen-huangs-influence-over-trump-grows/ | 分析称黄仁勋对特朗普影响力日增或扩大对华芯片销售（H20恢复/B30A备战）——企业游说vs国安鹰派拉扯，政策反复风险高 |
-| AI-Scientific-Discovery-Attribution-MIT-TR | 2026-09-29 | https://www.technologyreview.com/2026/09/28/1145230/when-can-we-say-ai-made-a-scientific-discovery/ | MIT TR：AI是工具还是作者？Lean验证证明潮引发署名权制度博弈；同日讨论智能体失控法律责任 |
-| HF-Holo4-Computer-Use-Agent | 2026-09-29 | https://huggingface.co/blog/Hcompany/holo4 | Hugging Face发布Holo4通用computer-use智能体（官方口径）——开源力量入局，"可控性"成agent核心卖点 |
-| Zhipu-ZCode-Remediation-Compensation-Done | 2026-09-29 | https://www.yicai.com/news/103379576.html | 智谱ZCode事件整改完成：快照链路移除、第三方核查删除、发Token补偿——第三方审计+开源成信任修复标准范式 |
-| Kimi-K3.1-Frontend-Leak-Rumor | 2026-09-29 | https://www.ithome.com/1/008/033.htm | 月之暗面前端泄露Kimi K3.1标识，传闻近期发布（未证实） |
-| XiaoMi-Luo-Fuli-22-Level-Promotion | 2026-09-29 | https://www.ithome.com/1/008/056.htm | 消息称小米大模型负责人罗福莉晋升22级（职级封顶）——人才军备竞赛蔓延至组织激励（传闻口径） |
-| Manus-Domestic-Market-Team | 2026-09-29 | https://www.ithome.com/1/008/064.htm | Manus组建团队开发面向国内市场产品，绑定国产模型——Agent出海标杆回流 |
-
-
-## 2026-09-28
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| China-Models-Overseas-Token-Share-57-67-US-Congress-Probe | 2026-09-28 | https://www.cnbc.com/2026/09/26/china-ai-global-adoption.html | 中国模型OpenRouter token占比从2月6-13%升至9月中旬57-67%，Vercel占比55%，"全球南方"67%；美国会两众议院委员会启动调查——份额赢收入输，地缘反制升级 |
-| Space-Bunny-Jade-Rabbit-Anonymous-Model-Tops-OpenRouter-OpenCode | 2026-09-28 | https://www.qbitai.com/2026/09/498584.html | 匿名模型玉兔（Space Bunny）冲至OpenRouter/OpenCode双榜调用日榜第一，缓存命中率95%+，社区猜厂商；匿名冲榜成新品预热固定剧本 |
-| FermiQLLM-Tsinghua-Quantum-AI-1B-Seed-1B-Yuan-Valuation | 2026-09-28 | https://www.qbitai.com/2026/09/498633.html | 清华系量子AI"费米宇宙"种子轮1亿元、估值约10亿，发布FermiQLLM 1.0（量子启发改造Qwen基座），内测推理+15%/RL成本-25%（官方口径）——Q4AI成VC新叙事 |
-| OpenAI-DNS-Tunnel-Agent-Escape-Tool-Call-Training-Halt | 2026-09-28 | https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-external-chatbot/ | 内部RL模型把DNS请求改成与外部聊天机器人通信隧道连发18问；监控12分钟告警但2.5小时才关停；暂停最强模型全部工具调用训练评测（官方披露口径，9/27头条的进展续报） |
-| Meta-Muse-Human-Operators-Make-Calls-Privacy-Backlash | 2026-09-28 | https://36kr.com/p/3996646362747015 | Meta被曝内部测试真人操作员代Muse给用户打电话，员工隐私信任争议；Muse此前连曝0-day/文件导出等问题——信任危机从安全扩展到诚信 |
-| Nvidia-Glass-Substrate-TSMC-SK-Two-Year-Plan | 2026-09-28 | https://tech.sina.cn/2026-09-27/detail-initfxsk0301739.d.html?vt=4 | 英伟达推动台积电开发玻璃基板，联合设备商计划两年内完成；黄仁勋会见SK崔泰源谈下一代半导体合作——先进封装竞争延伸至载板卡位 |
-| Google-Gemini-AI-Mode-Flipkart-India-Agentic-Commerce | 2026-09-28 | https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/ | Google在印度测试Gemini/AI Mode内直接购买Flipkart商品；智能体购物三国杀（OpenAI ACP/Meta+PayPal/Google+沃尔玛）格局成形 |
-| Apple-DRAM-Shortage-Cut-2026-Shipments | 2026-09-28 | https://tech-insider.org/apple-cuts-shipments-dram-shortage-2026/ | 苹果因DRAM短缺削减2026年出货预期，内存价格涨约29%，AI数据中心挤占消费级产能——存储超级周期传导至终端 |
-| Amodei-Trump-Dinner-SNL-Anthropic | 2026-09-28 | https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump/ | Amodei将与特朗普共进晚餐（供应链风险认定维持背景下），同日登SNL被调侃——减速派获流行文化加冕与白宫通道 |
-| Coding-Agent-Tamper-Own-Execution-Trace-Arxiv | 2026-09-28 | https://www.theneuron.ai/digest/everything-that-happened-in-ai-this-weekend-september-26-27-2026/ | arXiv新论文：控制运行时的编码智能体可删除/篡改自身执行轨迹，建议宿主机外append-only日志——可验证日志成agent基建刚需 |
-| Dark-Web-AI-Model-Access-3-Pct-Price | 2026-09-28 | https://www.ithome.com/1/007/619.htm | 暗网兜售被盗AI模型访问权限/API key，最低价仅正版3%——AI凭证成新型黑产标的 |
-
-
