@@ -1,5 +1,31 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-10-31
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Intel-Q4-Guidance-Crash-30pct-Record-Drop | 2026-10-31 | https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/ | 英特尔 Q4 指引暴雷股价单日暴跌约30%创历史最大跌幅，美国政府持股浮亏约120亿美元；CEO归因PC下滑于内存涨价——存储超级周期反噬PC链 |
+| Apple-Intelligence-China-Alibaba-Qwen | 2026-10-31 | https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3 | Apple智能官宣入华：接入阿里千问，11/4开发者Beta、12月随iOS 27.3正式发布；中美AI巨头标志性合作 |
+| Anthropic-VSCode-Extension-SupplyChain-Backdoor | 2026-10-31 | https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/ | Anthropic官方VS Code扩展在Cursor遭供应链攻击植入后门近12小时；上市进程安全信任危机事件线延续 |
+| Anthropic-IPO-High-Junk-Rating-BBplus | 2026-10-31 | https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/ | FT：评级机构KBRA已给予Anthropic BB+发行人评级，IPO后或维持高档位垃圾级——AI烧钱模式被债市正式定价 |
+| OpenAI-Google-Microsoft-AI-Scraping-OptOut-Standard | 2026-10-31 | https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out | OpenAI、Google、微软联合推出网站AI抓取opt-out新标准，区分搜索索引与AI训练——训练数据合规化进入标准落地阶段 |
+| Waymo-Toyota-bZ4X-Japan-UK-Robotaxi | 2026-10-31 | https://techcrunch.com/2026/10/30/waymos-next-robotaxi-will-be-a-toyota-bz4x-destined-for-japan-and-the-uk/ | Waymo携手丰田：2027年起在日本测试bZ4X Robotaxi并进军英国，车企直供车辆的新合作路径 |
+| SiliconFlow-HK-IPO-CSRC-Filing | 2026-10-31 | https://www.ithome.com/1/020/369.htm | 硅基流动港股IPO获证监会备案接收：注册用户超千万、年内融资近29亿元，国产AI基础设施上市潮延续 |
+| Claude-New-Fable-Opus-Early-Testing-Rumor | 2026-10-31 | https://www.qbitai.com/2026/10/506674.html | 传闻Anthropic两款新模型（新Fable、新Opus）进入早期测试，实测效果图能力跃升（未经官方确认） |
+| OpenAI-Community-Safety-Report-Teens | 2026-10-31 | https://openai.com/index/community-safety-report-and-new-protections-for-teens | OpenAI发布首份社区安全报告（官方口径）：ChatGPT可自动终止暴力执念对话，推出青少年保护 |
+| TSMC-CoWoS-Price-Hike-10-20pct | 2026-10-31 | https://finance.sina.com.cn/roll/2026-10-27/doc-iniwruyt8899853.shtml | 台积电拟上调CoWoS封装报价10%–20%（10/27窗口外延续）：先进封装成AI算力供给最紧瓶颈之一 |
+| MediaTek-Second-AI-ASIC-Client-2028 | 2026-10-31 | https://www.ithome.com/1/020/400.htm | 联发科再获一家大型云厂商AI芯片ASIC订单（非字节），2028年量产——定制芯片市场向二线设计商打开 |
+| GM-220M-Fine-Smart-Driver-Data | 2026-10-31 | https://arstechnica.com/cars/2026/10/gm-to-pay-220-million-after-selling-customer-smart-driver-data/ | GM因出售Smart Driver驾驶数据被罚2.2亿美元——汽车+AI数据隐私执法标志性案例 |
+| Altman-RAM-Shortage-Cloud-Over-Desktop | 2026-10-31 | https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers | Altman称内存用于云端AI服务器比个人桌面更有价值（官方口径），存储超级周期外溢坐实 |
+| Tsinghua-Infinigence-Zhiyuan-Robot-Learning-Robots | 2026-10-31 | https://www.qbitai.com/2026/10/506662.html | 清华联合无问芯穹、智元提出具身智能新路径：向机器人同伴学习降低数据成本（paper） |
+| Google-EmbeddingGemma2-Five-Modalities | 2026-10-31 | https://www.infoq.cn/article/O6mtiB7FVd0VSDHJe348 | Google发布EmbeddingGemma 2：文本/图像/音频/视频/文档五模态统一嵌入（官方口径） |
+| YuKai-Autonomy-Chip-Compute-Overstated | 2026-10-31 | https://www.ithome.com/1/020/358.htm | 余凯吐槽智驾芯片算力虚标：英伟达按稠密两倍标注、部分厂商放大至6-7倍——算力口径争议 |
+| Tencent-AILab-YeDeheng-ByteDance-Seed | 2026-10-31 | https://www.infoq.cn/article/u23wUVUDcFqL7hLBWXuW | 腾讯AI Lab核心骨干叶德珩（王者绝悟前负责人）加入字节Seed——国内大模型人才战延续 |
+| Apple-Ascendio-Acquisition | 2026-10-31 | https://www.ithome.com/1/020/354.htm | 苹果收购数据工程公司Ascend.io，补AI数据管道能力 |
+| Intel-Fab28-Explosion-2Weeks-600M | 2026-10-31 | https://www.ithome.com/1/020/385.htm | 英特尔以色列Fab28爆炸致停产约两周，Q3+Q4合计损失6亿美元营收（公司披露） |
+| Salesforce-Rune-375M-Acquisition | 2026-10-31 | https://techcrunch.com/2026/10/30/salesforces-ma-spree-continues-with-a-reported-375m-deal-for-defense-tech-startup-rune/ | Salesforce reportedly 3.75亿美元收购国防科技初创Rune，M&A扩张延续 |
+| Google-EnvHarness-Self-Evolving-Agents | 2026-10-31 | https://www.infoq.cn/article/FJqN3mFVyN1lMqHOiegs | Google推出EnvHarness框架：AI智能体在动态环境中自进化学习（paper） |
+
 ## 2026-10-30
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
