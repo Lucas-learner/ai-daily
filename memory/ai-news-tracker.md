@@ -1,5 +1,28 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-01
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| OpenAI-Funding-Target-Cut-200B-110B | 2026-11-01 | https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/ | FT：OpenAI融资目标从300亿砍至200亿美元、首批仅锁定110亿，部分大型投资者冷淡——头部lab烧钱叙事被一级市场重新定价 |
+| Memory-Five-Profit-Exceed-BigTech | 2026-11-01 | https://www.morningstar.com/news/marketwatch/2026102995/samsung-electronics-earned-nearly-as-much-as-microsoft-and-alphabet-combined-what-the-korean-giant-is-now-saying-about-the-memory-chip-outlook | 三星单季盈利接近微软+谷歌之和；存储五巨头季度利润总额首超美国科技五巨头——AI利润池迁移至硬件上游 |
+| Altman-Samsung-Memory-Meeting | 2026-11-01 | https://www.ithome.com/1/020/597.htm | 奥尔特曼赴韩与约50名三星高管会面，OpenAI直接下场锁定存储产能——算力采购细化为存储采购新战场 |
+| Meta-Fourier-Humanoid-Robot-Max | 2026-11-01 | https://uk.finance.yahoo.com/news/meta-builds-humanoid-robot-china-180010281.html | The Information：Meta联手傅利叶三个月打造人形机器人原型Max（Muse物理化身），搭载Jetson Thor；称仅内部研究（传闻口径） |
+| Anthropic-Claude-Ultra-No-Session-Limit | 2026-11-01 | https://thenewstack.io/claude-ultra-session-limit/ | Anthropic顶级套餐更名Ultra：取消Claude Code 5小时滚动限制，改账户验证+周度上限；与OpenAI放宽Pro限额交锋 |
+| OpenAI-Codex-Shared-Quota-Dec | 2026-11-01 | https://www.ithome.com/1/020/645.htm | OpenAI宣布12月起ChatGPT与Codex共享用量额度——订阅向统一算力账户演化（官方公告口径） |
+| Intel-Fab-Conversion-DC-CPU | 2026-11-01 | https://www.ithome.com/1/020/629.htm | 英特尔火速将多家CPU工厂从桌面产线改造为数据中心产线——产能战略全面倒向服务器 |
+| Nvidia-Nscale-West-Virginia-Guarantee | 2026-11-01 | https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/ | 英伟达拟为Nscale西弗吉尼亚AI数据中心提供债务担保——芯片商从卖卡下沉为做保，循环金融风险上移 |
+| FCC-Ban-Chinese-Labs-Certification | 2026-11-01 | https://www.caixingglobal.com/2026-10-30/fcc-votes-to-ban-chinese-labs-from-testing-electronics-for-us-market-102498962.html | FCC投票通过：2028年12月起不再认可中国实验室为输美电子产品认证测试（此前处理逾82%设备）——脱钩延伸至合规认证 |
+| CXMT-4F2-DRAM-Engineering-Sample | 2026-11-01 | https://www.ithome.com/1/020/599.htm | 长鑫科技第六代4F²架构DRAM完成工程样片验证（公司披露）——国产DRAM架构代际追平主线 |
+| Caixin-GEO-Poisoning-Antitrust | 2026-11-01 | https://weekly.caixin.com/2026-10-31/102499328.html | 财新周刊：规制向AI投毒，GEO操纵面临《反不正当竞争法》适用，已有AI厂商上线过滤 |
+| Oct-Market-Selloff-Intel-Reddit | 2026-11-01 | https://www.ithome.com/1/020/613.htm | 美股10月收官日：英特尔、Reddit双双暴跌近30%，华尔街对AI基建开支疑虑升温 |
+| DeepSeek-SuperAgent-Router-Worker | 2026-11-01 | https://www.ithome.com/1/020/615.htm | DeepSeek提出Super-agent架构：Router+Worker双层设计（论文口径）——多智能体范式竞争升温 |
+| NAACP-xAI-Memphis-Pollution-Lawsuit | 2026-11-01 | https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/ | 法官允许NAACP诉xAI孟菲斯数据中心污染案进入实体审理——AI基建环境成本司法判例节点 |
+| WeChatPay-Hunyuan-Store-Robot | 2026-11-01 | https://www.ithome.com/1/020/637.htm | 微信支付智慧经营机器人首次进店（基于腾讯混元）——大模型落地B端门店场景 |
+| Foxconn-Half-AI-Server-Market | 2026-11-01 | https://www.ithome.com/1/020/641.htm | 鸿海刘扬伟：预计数年攻下全球AI服务器约一半份额（高管口径） |
+| WorldModel-NPU-700TOPS | 2026-11-01 | https://www.qbitai.com/2026/10/506866.html | 世界模型首次指导芯片设计：超大核NPU宣称700 TOPS、99%算力可用（公司披露口径） |
+| Westlake-WorldModel-Center | 2026-11-01 | https://www.ithome.com/1/020/611.htm | 西湖大学成立世界模型研究中心——世界模型科研建制化 |
+
 ## 2026-10-31
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -574,19 +597,6 @@
 | Armadin-255M-B-2-5B | 2026-10-02 | https://www.reuters.com/legal/transactional/ai-cybersecurity-startup-armadin-valued-over-25-billion-after-new-funding-round-2026-10-01/ | Armadin完成2.555亿美元B轮估值超25亿（Mandia创办）——AI安全资本密度刷新 |
 | Senate-Rogue-AI-Hearing | 2026-10-02 | https://thehill.com/homenews/senate/6120658-watch-live-senate-homeland-security-panel-rogue-ai/ | 参议院国土安全委员会Rogue AI听证，与白宫自愿协议同日对擂 |
 
-
-## 2026-10-01
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| FTC-OpenAI-Anthropic-CID-Probe | 2026-10-01 | https://apnews.com/article/ftc-ai-investigation-anthropic-openai-89ac416717adbfb1d72f2d85e6ce83d1 | FTC对OpenAI/Anthropic等启动正式安全调查并将发CID传票——联邦监管第一个有牙齿的动作 |
-| Micron-FY26Q4-542M-379pct | 2026-10-01 | https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/ | 美光FY26Q4营收542亿美元同比+379%，2027年超75%产能已预订——存储成最被低估的硬瓶颈 |
-| HPE-Vultr-1-2B-AMD-Helios-First-Order | 2026-10-01 | https://www.hpe.com/us/en/newsroom/press-release/2026/09/hpe-secures-its-first-amd-helios-order-in-12-billion-deal-with-vultr.html | HPE获Vultr 12亿美元AMD Helios机架订单（72颗MI455X/架）——第二供应商拿到真金白银投票 |
-| DeepMind-SynthID-Bio-Nature | 2026-10-01 | https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synthid-bio/ | DeepMind SynthID Bio为AI设计蛋白质加水印（Nature论文，检出率>99.8%）——内容溯源扩展到生命分子 |
-| Salesforce-Listen-Labs-2B | 2026-10-01 | https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-listen-labs/ | Salesforce签约收购Listen Labs（媒体口径约20亿美元） |
-| Infineon-Thailand-Backend-Plant-1-44B | 2026-10-01 | https://www.reuters.com/world/asia-pacific/infineon-opens-thailand-plant-country-ramps-up-semiconductor-push-2026-10-01/ | 英飞凌14.4亿美元泰国北榄府后端厂投产（Reuters）——功率器件中国+1落地 |
-| California-SB574-Lawyer-AI | 2026-10-01 | https://www.hklaw.com/en/insights/publications/2026/10/california-enacts-rules-governing-lawyers-use-of-generative-ai | 加州签署全美首例律师使用生成式AI强制规范SB 574 |
-| China-GenAI-Registration-Deadline | 2026-10-01 | https://www.ai-skills.video/articles/ai-application-registration-deadline-sep-30-2026 | 中国生成式AI应用登记9/30截止（988款已备案） |
 
 ## 2026-10-09
 
