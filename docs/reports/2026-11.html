@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📰 AI日报 | 2026-11</title>
+<script>
+(function () {
+  var t = localStorage.getItem('ai-daily-theme');
+  if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+<style>
+:root {
+  --bg: #f5f6f8; --card: #ffffff; --text: #24292f; --strong: #111318;
+  --muted: #6b7280; --border: #e3e6ea; --link: #2563eb;
+  --chip-bg: #eef1f4; --code-bg: #f1f3f5;
+  --topbar-bg: rgba(255, 255, 255, 0.85);
+  --shadow: 0 1px 2px rgba(16,24,40,0.05), 0 4px 16px rgba(16,24,40,0.06);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1115; --card: #171a20; --text: #d3d7dd; --strong: #f0f2f5;
+    --muted: #9aa1ab; --border: #2a2f38; --link: #6ea8fe;
+    --chip-bg: #23272f; --code-bg: #23262d;
+    --topbar-bg: rgba(23, 26, 32, 0.85);
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.35);
+    color-scheme: dark;
+
+  }
+}
+:root[data-theme="dark"] {
+    --bg: #0f1115; --card: #171a20; --text: #d3d7dd; --strong: #f0f2f5;
+    --muted: #9aa1ab; --border: #2a2f38; --link: #6ea8fe;
+    --chip-bg: #23272f; --code-bg: #23262d;
+    --topbar-bg: rgba(23, 26, 32, 0.85);
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.35);
+    color-scheme: dark;
+
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--bg); color: var(--text); font-size: 16px; line-height: 1.8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  transition: background 0.2s, color 0.2s;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* 顶栏 */
+.topbar {
+  position: sticky; top: 0; z-index: 50;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 20px; background: var(--topbar-bg);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.site-title { font-weight: 700; color: var(--strong); }
+.site-title:hover { text-decoration: none; }
+.theme-toggle {
+  border: 1px solid var(--border); background: var(--card); color: var(--text);
+  border-radius: 999px; padding: 4px 14px; font-size: 13px; cursor: pointer;
+}
+
+/* 布局：移动端单列，桌面端带目录侧栏 */
+.layout { max-width: 860px; margin: 0 auto; padding: 20px 16px 64px; }
+@media (min-width: 1024px) {
+  .layout.with-toc {
+    max-width: 1180px; display: grid;
+    grid-template-columns: 220px minmax(0, 1fr); gap: 28px; align-items: start;
+  }
+}
+.content {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 14px; box-shadow: var(--shadow); padding: 24px 20px;
+}
+@media (min-width: 640px) { .content { padding: 36px 40px; } }
+
+/* 日期目录（TOC）：移动端折叠顶栏，桌面端 sticky 侧栏 */
+.toc { position: sticky; top: 54px; z-index: 40; margin-bottom: 16px; }
+.toc-toggle {
+  width: 100%; text-align: left; font-size: 15px; cursor: pointer;
+  color: var(--text); background: var(--card);
+  border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px;
+  box-shadow: var(--shadow);
+}
+.toc-list {
+  display: none; list-style: none; margin: 8px 0 0; padding: 8px;
+  background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+  box-shadow: var(--shadow); max-height: 55vh; overflow-y: auto;
+}
+.toc.open .toc-list { display: block; }
+.toc-list a {
+  display: block; padding: 6px 10px; border-radius: 8px;
+  color: var(--muted); font-size: 14px;
+}
+.toc-list a:hover { background: var(--chip-bg); text-decoration: none; }
+.toc-list a.active { color: var(--link); background: var(--chip-bg); font-weight: 600; }
+@media (min-width: 1024px) {
+  .toc { top: 70px; margin-bottom: 0; }
+  .toc-toggle { display: none; }
+  .toc-list {
+    display: block; border: none; background: transparent; box-shadow: none;
+    padding: 0; max-height: calc(100vh - 100px);
+  }
+}
+
+/* 返回顶部 */
+.back-to-top {
+  position: fixed; right: 20px; bottom: 24px; z-index: 60;
+  width: 44px; height: 44px; border-radius: 50%; font-size: 18px; cursor: pointer;
+  border: 1px solid var(--border); background: var(--card); color: var(--text);
+  box-shadow: var(--shadow); opacity: 0; visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.back-to-top.show { opacity: 1; visibility: visible; }
+
+/* 中文排版：标题层级对比、段落间距 */
+h1 { font-size: 1.65rem; line-height: 1.35; margin: 0 0 0.4em; color: var(--strong); }
+h2 {
+  font-size: 1.35rem; margin: 1.8em 0 0.6em; padding-top: 0.5em;
+  border-top: 1px solid var(--border); color: var(--strong); scroll-margin-top: 70px;
+}
+h3 { font-size: 1.1rem; margin: 1.4em 0 0.4em; color: var(--strong); }
+p { margin: 0.9em 0; }
+ul, ol { padding-left: 1.5em; }
+li { margin: 0.35em 0; }
+hr { border: none; border-top: 1px solid var(--border); margin: 1.6em 0; }
+strong { color: var(--strong); }
+code {
+  background: var(--code-bg); padding: 2px 6px; border-radius: 6px; font-size: 0.88em;
+  font-family: "SF Mono", Menlo, Monaco, Consolas, monospace;
+}
+pre { background: var(--code-bg); padding: 14px; border-radius: 10px; overflow-x: auto; }
+pre code { background: transparent; padding: 0; }
+blockquote { margin: 1em 0; padding: 0.2em 1em; border-left: 3px solid var(--border); color: var(--muted); }
+table { border-collapse: collapse; width: 100%; margin: 1.2em 0; }
+th, td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; }
+th { background: var(--chip-bg); }
+.meta { color: var(--muted); font-size: 0.9em; }
+
+/* 索引页卡片 */
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 14px; box-shadow: var(--shadow); padding: 20px; margin: 16px 0;
+}
+.card h2 { border-top: none; padding-top: 0; margin-top: 0; font-size: 1.2rem; }
+.ongoing-highlights ul { margin: 0; padding-left: 1.35em; }
+.ongoing-highlights li { margin: 0.8em 0; }
+.ongoing-highlights li div { color: var(--muted); font-size: 0.92em; }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="site-title" href="../index.html">📰 AI日报</a>
+  <button id="themeToggle" class="theme-toggle" type="button">🌗 自动</button>
+</header>
+<div class="layout">
+
+<main class="content">
+<h1 id="ai-2026-11">📰 AI日报 | 2026-11</h1>
+<p><em>本文件汇总 2026-11 月所有日报，按日期逆序排列。</em></p>
+<hr />
+<h2 id="2026-11-01">【2026-11-01】</h2>
+<p><em>本期覆盖 10月31日 08:00 至 11月1日 08:00（北京时间）。</em></p>
+<h3 id="_1">🔥 头条</h3>
+<p>📉 <strong>OpenAI 融资目标从 300 亿砍至 200 亿美元，首批仅锁定 110 亿、部分大型投资者反应冷淡</strong></p>
+<ul>
+<li><strong>来源</strong>：<a href="https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/">TechCrunch（援引 FT）</a> / <a href="https://www.theinformation.com/">The Information</a> | <strong>时间</strong>：10月31日</li>
+<li>FT 报道，OpenAI 将本轮融资目标从 300 亿美元下调至 200 亿美元，预计首次交割金额更低；WSJ 跟进称目前已锁定约 110 亿美元，部分大型投资者反应"冷淡"（报道口径）。本轮拟由阿联酋投资者集团牵头，后续或靠面向高净值个人的零售配售补足目标。背景是华尔街对 AI 基建巨额开支转谨慎、10 月收官日美股科技股遭广泛抛售（英特尔、Reddit 同日暴跌近 30%，见其他要闻）。</li>
+<li>信号：Anthropic 冲刺"人类史上最大 IPO"（10/26 已报）的同月，OpenAI 一级市场融资遇冷——头部双雄的资本定价权首次出现反转，"烧钱换增长"故事正在被债市和一级市场同时重新定价。</li>
+</ul>
+<hr />
+<p>💾 <strong>存储利润历史性反超：三星单季盈利接近微软+谷歌之和，"存储五巨头"季度利润总额首超美国科技五巨头</strong></p>
+<ul>
+<li><strong>来源</strong>：<a href="https://www.morningstar.com/news/marketwatch/2026102995/samsung-electronics-earned-nearly-as-much-as-microsoft-and-alphabet-combined-what-the-korean-giant-is-now-saying-about-the-memory-chip-outlook">Morningstar（MarketWatch）</a> / <a href="https://www.ithome.com/1/020/613.htm">IT之家（援引韩媒数据汇总）</a> | <strong>时间</strong>：10月31日</li>
+<li>MarketWatch 报道三星电子最新季度盈利已接近微软与谷歌母公司之和，并对存储前景给出乐观指引；韩媒数据汇总进一步显示，三星/SK海力士/美光/铠侠/闪迪"存储五巨头"最新季度营业利润与净利润总额首次超越苹果/微软/谷歌/亚马逊/Meta"科技五巨头"的对应口径。这与本期"奥尔特曼赴韩密会约 50 名三星高管"（见核心动态）互为印证：AI 算力景气的利润池已整体迁移至硬件上游。</li>
+<li>信号：存储从"周期股"变"现金牛"被利润表坐实——当卖内存的比卖广告的、卖软件的加起来还赚钱，AI 产业链的利润分配结构已经发生代际反转。</li>
+</ul>
+<h3 id="_2">📌 核心动态</h3>
+<p>🤝 <strong>存储短缺倒逼采购升级：奥尔特曼赴韩与约 50 名三星高管会面，OpenAI 直接下场锁存储产能</strong></p>
+<ul>
+<li><strong>来源</strong>：<a href="https://www.ithome.com/1/020/597.htm">IT之家</a> | <strong>时间</strong>：10月31日</li>
+<li>在存储芯片供应持续紧张背景下，OpenAI CEO 奥尔特曼到访韩国，与约 50 名三星集团高管举行会谈，被解读为锁定 HBM/DRAM 供应的直接动作。衔接本月此前报道：奥尔特曼已公开称"内存用于云端 AI 服务器比个人桌面更有价值"（10 月上旬已报）。</li>
+<li>信号：大模型公司开始绕开英伟达直接绑定存储原厂，"算力采购"正细化为"存储采购"新战场——模型公司与上游原厂的纵向绑定将进一步挤压二线买家。</li>
+</ul>
+<hr />
+<p>🤖 <strong>Meta 联手傅利叶三个月打造人形机器人原型 Max：Muse 模型的"物理化身"，搭载英伟达 Jetson Thor</strong></p>
+<ul>
+<li><strong>来源</strong>：<a href="https://uk.finance.yahoo.com/news/meta-builds-humanoid-robot-china-180010281.html">Yahoo Finance（转 The Information）</a> / <a href="https://www.ithome.com/1/020/636.htm">IT之家</a> | <strong>时间</strong>：10月31日</li>
+<li>The Information 报道，Meta 与中国傅利叶智能合作的人形机器人原型 Max 重约 48kg、高约 1.5 米，搭载英伟达 Jetson Thor，配五指灵巧手与表情显示屏，三个月内完成原型；Meta 机器人 VP Li-Chen Miller 曾驻上海工厂近两个月，9 月已启动 Max 2（改进躯干、手部与楼梯导航）。Meta 称仅内部研究、无销售计划。这是继谷歌之后美国大厂再借中国硬件供应链切入人形机器人。</li>
+<li>信号：Meta 的 AI 故事正从"买算力+开源模型"延伸到实体机器人，与此前 Muse 智能体、收购机器人团队的报道形成连续动作（传闻口径，未见官方确认）。</li>
+</ul>
+<hr />
+<p>💻 <strong>Anthropic 顶级套餐更名 Ultra 并取消 Claude Code 5 小时滚动限制，与 OpenAI 前一日放宽 Pro 限额正面交锋</strong></p>
+<ul>
+<li><strong>来源</strong>：<a href="https://thenewstack.io/claude-ultra-session-limit/">The New Stack</a> / <a href="https://www.qbitai.com/2026/10/506855.html">量子位</a> | <strong>时间</strong>：10月30日–31日</li>
+<li>Anthropic 宣布 $200/月顶级套餐（原 Max 20x）更名 Ultra，取消 Claude Code 的滚动 5 小时用量上限，改为账户验证+周度总量上限（Ultra 为 Pro 的 10 倍），套餐捆绑等额 API 额度。前一天 OpenAI 刚放宽 Pro/Business Premium 限额并放弃削减存量 $200 Pro 用户额度，且宣布 12 月起 ChatGPT 与 Codex 共享用量额度（<a href="https://www.ithome.com/1/020/645.htm">IT之家</a>）。</li>
+<li>信号：编程订阅从"时间窗限流"转向"周额度+验证"制，头部双雄在用计费制度竞争 coding 场景留存——coding 已是主力消耗场景，订阅正在向"统一算力账户"演化。</li>
+</ul>
+<hr />
+<p>🏭 <strong>英特尔火速将多家 CPU 工厂从桌面产线改造为数据中心产线</strong></p>
+<ul>
+<li><strong>来源</strong>：<a href="https://www.ithome.com/1/020/629.htm">IT之家</a> | <strong>时间</strong>：10月31日</li>
+<li>AI 需求暴涨之下，英特尔正将多家 CPU 制造工厂从桌面处理器改造为数据中心处理器产线。衔接昨日报道：英特尔 Q3 数据中心业务同比 +80% 创 15 年最强（10/30 已报），本次改造是对该需求结构的产能级响应，也与 Q4 指引暴雷中"PC 弱、DC 强"的结构互为表里。</li>
+<li>信号：x86 产能战略全面倒向服务器，PC 桌面产线成为可调用的"战备资源"——存储涨价伤 PC、AI 救数据中心的剪刀差，正在工厂层面被重新布线。</li>
+</ul>
+<hr />
+<p>💰 <strong>英伟达拟为 Nscale 西弗吉尼亚 AI 数据中心提供债务担保</strong></p>
+<ul>
+<li><strong>来源</strong>：<a href="https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/">TechCrunch</a> | <strong>时间</strong>：10月30日</li>
+<li>据报道英伟达正考虑为 Nscale 位于西弗吉尼亚的 AI 数据中心项目提供融资担保/信用增级。Nscale 此前与 Anthropic 洽谈 450 亿美元算力协议、IPO 估值目标遭砍半（10/20 已报），如今需靠芯片供应商信用背书推进项目融资。</li>
+<li>信号：芯片厂商从"卖卡"下沉为"做保"，AI 基建融资链的风险正沿供应链向上游转嫁——neocloud 信用薄弱化，"循环 AI 金融"的风险结构更紧了一圈。</li>
+</ul>
+<hr />
+<p>🏛️ <strong>FCC 投票通过：2028 年 12 月起不再认可中国实验室为输美电子产品做认证测试</strong></p>
+<ul>
+<li><strong>来源</strong>：<a href="https://www.caixinglobal.com/2026-10-30/fcc-votes-to-ban-chinese-labs-from-testing-electronics-for-us-market-102498962.html">财新 Caixin Global</a> / <a href="https://evertiq.com/news/2026-10-30-report-fcc-votes-to-ban-all-chinese-labs-from-testing-us-electronics">Evertiq</a> | <strong>时间</strong>：10月30日</li>
+<li>FCC 于 10 月 30 日投票决定，自 2028 年 12 月 1 日起停止认可中国大陆（及印度）实验室为美国市场电子设备的测试认证；FCC 称中国大陆实验室此前处理了超过 82% 的认证设备。这是 10/7 已报"FCC 拟定表决"事件线的正式落地。</li>
+<li>信号：科技脱钩从制造、算力环节延伸到合规认证环节——认证能力重建需要数年，其成本将计入每一台输美电子设备的售价。</li>
+</ul>
+<hr />
+<p>🇨🇳 <strong>长鑫科技第六代 4F² 架构 DRAM 完成工程样片验证（公司披露）</strong></p>
+<ul>
+<li><strong>来源</strong>：<a href="https://www.ithome.com/1/020/599.htm">IT之家</a> | <strong>时间</strong>：10月31日</li>
+<li>长鑫科技宣布基于 4F² 架构的第六代技术平台 DRAM 完成工程样片验证（公司披露口径）。4F² 为当前业界最紧凑的 DRAM 单元架构，此前长期由三星、SK 海力士主导；长鑫近期持续站在国产存储主线焦点（前三季度净利高增、被曝优先保国内供应，本月已报）。</li>
+<li>信号：国产 DRAM 从"能造"走向"架构代际不落后"，叠加存储超级周期，国产替代叙事再强化——但工程样片到量产仍有距离，第三方验证待观察。</li>
+</ul>
+<h3 id="_3">📎 其他要闻</h3>
+<p><strong>⚖️ 财新周刊封面：规制向 AI"投毒"——GEO 操纵面临《反不正当竞争法》适用</strong>——律师分析单个数据点真实、整体呈现引人误解也可能构成违法商业宣传，已有 AI 厂商上线 GEO 操纵过滤；AI 搜索时代的"SEO 黑帽"治理进入执法讨论区。- <strong>来源</strong>：<a href="https://weekly.caixin.com/2026-10-31/102499328.html">财新周刊</a> | <strong>时间</strong>：10月31日</p>
+<p><strong>📉 美股 10 月收官日"惨烈"：英特尔、Reddit 双双暴跌近 30%</strong>——大盘科技股遭广泛抛售，华尔街对 AI 基建开支的疑虑升温；与 OpenAI 融资遇冷、Anthropic 获高垃圾级评级（往期已报）构成同一宏观叙事。- <strong>来源</strong>：<a href="https://www.ithome.com/1/020/613.htm">IT之家</a> | <strong>时间</strong>：10月31日</p>
+<p><strong>🧮 DeepSeek 提出 Super-agent 架构：Router + Worker 双层设计</strong>——发布架构论文探索更自主的长程 Agent 系统，从单体模型转向"路由+执行"多智能体范式（论文口径）。- <strong>来源</strong>：<a href="https://www.ithome.com/1/020/615.htm">IT之家</a> | <strong>时间</strong>：10月31日</p>
+<p><strong>⚖️ 法官允许 NAACP 诉 xAI 孟菲斯数据中心污染案继续推进</strong>——联邦法院驳回驳回动议，依《清洁空气法》提起的公民诉讼进入实体审理；AI 基建环境成本开始产生司法判例。- <strong>来源</strong>：<a href="https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/">TechCrunch</a> | <strong>时间</strong>：10月31日</p>
+<p><strong>🤝 微信支付智慧经营机器人首次进店，基于腾讯混元打造</strong>——支持迎宾、导购、点单，腾讯系大模型落地从 C 端助手转向 B 端门店场景。- <strong>来源</strong>：<a href="https://www.ithome.com/1/020/637.htm">IT之家</a> | <strong>时间</strong>：11月1日</p>
+<p><strong>🏭 鸿海刘扬伟：预计数年攻下全球 AI 服务器约一半市场份额（高管口径）</strong>——鸿海为英伟达 GB 系列主力组装厂，AI 服务器组装环节集中化与竞争白热化同步。- <strong>来源</strong>：<a href="https://www.ithome.com/1/020/641.htm">IT之家</a> | <strong>时间</strong>：10月31日</p>
+<p><strong>🔬 世界模型首次指导芯片设计：超大核 NPU 宣称 700 TOPS、99% 算力可用（公司披露口径）</strong>——世界模型用于设计空间探索，"用 AI 造 AI 芯片"闭环开始产出具体指标，第三方验证待观察。- <strong>来源</strong>：<a href="https://www.qbitai.com/2026/10/506866.html">量子位</a> | <strong>时间</strong>：10月31日</p>
+<p><strong>🏫 西湖大学成立世界模型研究中心</strong>——主攻一致性、长时程、物理合理性等核心瓶颈，世界模型赛道获国内学术界建制化投入。- <strong>来源</strong>：<a href="https://www.ithome.com/1/020/611.htm">IT之家</a> | <strong>时间</strong>：10月31日</p>
+<h3 id="_4">💡 今日洞察</h3>
+<p><strong>10 月的最后一天，AI 行业的账本上同时出现了退潮与涨潮。</strong> 退潮在一级市场：OpenAI 融资目标砍三分之一、首批仅募得 110 亿美元，与英特尔、Reddit 同日暴跌近三成连成一条线——资本对"烧钱换增长"的耐心正在被精确计价。涨潮在硬件上游：三星单季盈利逼近微软+谷歌之和、"存储五巨头"季度利润首超美国科技五巨头，奥尔特曼亲自赴韩向 50 名三星高管要内存。两条线其实是同一件事：当模型层的收入叙事（OpenAI 年化营收预期差 200 亿，往期已报）撑不起估值，利润就沿着产业链向上游和基础设施迁移——内存、代工、电力成为真正的现金流所在。11 月最大的悬念也因此清晰：Anthropic IPO 若定价成功，将为整个模型层重置估值锚；若遇冷，上游的涨潮也会被重新定价。</p>
+<hr />
+<hr />
+</main>
+</div>
+<button id="backToTop" class="back-to-top" type="button" aria-label="返回顶部">↑</button>
+<script>
+(function () {
+  // 主题切换：自动 → 浅色 → 深色 循环，选择存 localStorage
+  var themeBtn = document.getElementById('themeToggle');
+  function applyTheme(t) {
+    if (t === 'auto') document.documentElement.removeAttribute('data-theme');
+    else document.documentElement.setAttribute('data-theme', t);
+    if (themeBtn) themeBtn.textContent = t === 'dark' ? '🌙 深色' : t === 'light' ? '☀️ 浅色' : '🌗 自动';
+  }
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function () {
+      var cur = localStorage.getItem('ai-daily-theme') || 'auto';
+      var next = cur === 'auto' ? 'light' : cur === 'light' ? 'dark' : 'auto';
+      localStorage.setItem('ai-daily-theme', next);
+      applyTheme(next);
+    });
+    applyTheme(localStorage.getItem('ai-daily-theme') || 'auto');
+  }
+
+  // 返回顶部
+  var backToTop = document.getElementById('backToTop');
+  if (backToTop) {
+    window.addEventListener('scroll', function () {
+      backToTop.classList.toggle('show', window.scrollY > 600);
+    }, { passive: true });
+    backToTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // 移动端目录折叠（桌面端由 CSS 强制展开）
+  var toc = document.getElementById('toc');
+  var tocToggle = document.getElementById('tocToggle');
+  if (toc && tocToggle) {
+    tocToggle.addEventListener('click', function () {
+      var open = toc.classList.toggle('open');
+      tocToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    toc.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A' && window.innerWidth < 1024) toc.classList.remove('open');
+    });
+  }
+
+  // 当前阅读位置在目录中高亮
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc-list a[href^="#"]'));
+  if (tocLinks.length && 'IntersectionObserver' in window) {
+    var linkById = {};
+    var headings = [];
+    tocLinks.forEach(function (a) {
+      var h = document.getElementById(a.getAttribute('href').slice(1));
+      if (h) { linkById[h.id] = a; headings.push(h); }
+    });
+    var visible = {};
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { visible[en.target.id] = en.isIntersecting; });
+      for (var i = 0; i < headings.length; i++) {
+        if (visible[headings[i].id]) {
+          tocLinks.forEach(function (a) { a.classList.remove('active'); });
+          linkById[headings[i].id].classList.add('active');
+          break;
+        }
+      }
+    }, { rootMargin: '-70px 0px -65% 0px', threshold: 0 });
+    headings.forEach(function (h) { observer.observe(h); });
+  }
+})();
+</script>
+</body>
+</html>
