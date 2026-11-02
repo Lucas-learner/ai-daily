@@ -1,5 +1,22 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-02
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Nvidia-Rubin-Spec-Downgrade-HBM4 | 2026-11-02 | https://www.servethehome.com/nvidia-updates-rubin-gpu-specs-as-first-production-hardware-arrives/ | NVIDIA量产爬坡期下调Rubin出货规格：HBM4带宽22→19.2TB/s（-11%）、NVLink -17%——HBM4良率爬坡不及预期，算力瓶颈上移存储 |
+| Kioxia-2027-Sold-Out-2028-Half-Locked | 2026-11-02 | https://www.ithome.com/1/020/849.htm | 铠侠披露2027年产能售罄、2028年配额锁定超50%（公司披露）——存储超级周期供给端最硬证据 |
+| Big4-AI-Optout-Standard | 2026-11-02 | https://www.ithome.com/1/020/837.htm | OpenAI/谷歌/微软/Anthropic联手推统一AI抓取退出标准——行业自律先于立法，抢占数据治理话语权 |
+| Anthropic-Claude-Harness-Reverse-Block | 2026-11-02 | https://www.qbitai.com/2026/11/507038.html | Anthropic官方确认Claude Code静默收紧Harness拦截游戏克隆/逆向——Harness层成为产品治理新抓手 |
+| OpenAI-DataCenter-Rebrand-Compute-Campus | 2026-11-02 | https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/ | OpenAI拟将数据中心 rebranding 为AI算力园区并加大游说——数据中心民意摩擦显性化 |
+| Tsinghua-Algebraic-World-Model | 2026-11-02 | https://www.qbitai.com/2026/11/507031.html | 清华姚期智团队代数世界模型：以代数结构建模物理因果，AI for Science论文进展 |
+| CMG-Robot-Mount-Tai-Contest | 2026-11-02 | https://www.ithome.com/1/020/773.htm | 首届CMG世界机器人登泰山大赛开赛——复杂地形机器人实地赛事 |
+| CCID-Inference-Surpasses-Training | 2026-11-02 | https://www.ithome.com/1/020/809.htm | 赛迪研究院：日均词元调用超175万亿，推理数据量首超训练——应用进入推理驱动阶段 |
+| CXMT-LPDDR-782B-Revenue | 2026-11-02 | https://www.ithome.com/1/020/832.htm | 长鑫科技LPDDR系列2026收入781.91亿元、占比52.02%（公司披露）——国产DRAM走向主战场 |
+| California-Prop45-DC-Loophole | 2026-11-02 | https://www.theverge.com/policy/1023877/prop-45-california-data-center | 加州Prop45被指暗藏数据中心能源豁免漏洞——数据中心电力成选举议题 |
+| Suleyman-AI-No-Consciousness | 2026-11-02 | https://www.ithome.com/1/020/848.htm | 微软AI负责人Suleyman：模型没有意识且应确保永远如此 |
+| Robot-Convenience-Store-Sim2Real | 2026-11-02 | https://www.qbitai.com/2026/11/506990.html | 便利店机器人售货折戟：实验室上万次锤炼货架前仍摔瓶子——sim-to-real鸿沟 |
+
 ## 2026-11-01
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -584,18 +601,6 @@
 | Softbank-DigitalBridge-3-1B-Close | 2026-10-03 | https://www.altassets.net/private-equity-news/by-region/global-by-region/deal-roundup-softbank-completes-3-1bn-digitalbridge-buyout-wendel-seals-e2-1bn-stahl-exit.html | 软银完成31亿美元收购DigitalBridge交割——数据中心资产被产业资本锁定 |
 | DOJ-GPU-Smuggling-China-Arrest | 2026-10-03 | https://www.thenewstribune.com/news/nation-world/national/article317463300.html | DOJ逮捕向中国走私逾3亿美元GPU服务器的加州商人——出口管制执法咬合 |
 | AMD-1T-Market-Cap | 2026-10-03 | https://www.ainvest.com/news/amd-trillion-price-built-announcements-revenue-2610/ | AMD市值触及1万亿美元，分析称靠公告而非营收支撑 |
-
-
-## 2026-10-02
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| Broadcom-Anthropic-42B-Circular-Finance | 2026-10-02 | https://www.reuters.com/business/broadcom-lend-anthropic-up-42-billion-lease-its-chips-filing-says-2026-10-01/ | 博通向Anthropic提供最高420亿美元融资买自家芯片（招股书披露），银团再募600亿——循环AI金融登台面 |
-| Google-Suncatcher-MVP-Launch | 2026-10-02 | https://www.npr.org/2026/10/01/nx-s1-5983697/project-suncatcher-google-ai-data-center-space | 谷歌Suncatcher MVP卫星入轨（4颗Trillium TPU）——太空AI数据中心进入硬件验证 |
-| arXiv-Rate-Limit-AI-Slop | 2026-10-02 | https://blog.arxiv.org/2026/10/01/updated-rate-limit-policy/ | arXiv史上最严投稿限额（每人每月2篇）——科研基础设施被AI生成内容逼到配给制 |
-| Gemini-4-Argon-Cyber-Only | 2026-10-02 | https://blog.google/intl/en-mena/company-news/technology/gemini-4-argon-our-next-era-of-frontier-intelligence/ | Gemini 4 Argon仅限审查过的网安防御者使用——分级开放成前沿模型发布范式 |
-| Armadin-255M-B-2-5B | 2026-10-02 | https://www.reuters.com/legal/transactional/ai-cybersecurity-startup-armadin-valued-over-25-billion-after-new-funding-round-2026-10-01/ | Armadin完成2.555亿美元B轮估值超25亿（Mandia创办）——AI安全资本密度刷新 |
-| Senate-Rogue-AI-Hearing | 2026-10-02 | https://thehill.com/homenews/senate/6120658-watch-live-senate-homeland-security-panel-rogue-ai/ | 参议院国土安全委员会Rogue AI听证，与白宫自愿协议同日对擂 |
 
 
 ## 2026-10-09
