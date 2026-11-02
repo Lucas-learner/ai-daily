@@ -159,15 +159,69 @@ th { background: var(--chip-bg); }
   <a class="site-title" href="../index.html">📰 AI日报</a>
   <button id="themeToggle" class="theme-toggle" type="button">🌗 自动</button>
 </header>
-<div class="layout">
-
+<div class="layout with-toc">
+<nav class="toc" id="toc" aria-label="日期目录">
+<button class="toc-toggle" id="tocToggle" type="button" aria-expanded="false">📑 日期目录（2 天）</button>
+<ul class="toc-list"><li><a href="#2026-11-02" title="2026-11-02">11-02</a></li><li><a href="#2026-11-01" title="2026-11-01">11-01</a></li></ul>
+</nav>
 <main class="content">
 <h1 id="ai-2026-11">📰 AI日报 | 2026-11</h1>
 <p><em>本文件汇总 2026-11 月所有日报，按日期逆序排列。</em></p>
 <hr />
+<h2 id="2026-11-02">【2026-11-02】</h2>
+<p><em>本期覆盖 11月1日 08:00 至 11月2日 08:00（北京时间）。</em></p>
+<h3 id="_1">🔥 头条</h3>
+<p>📉 <strong>NVIDIA Rubin GPU 量产规格缩水：HBM4 带宽下调 11%、NVLink 下调 17%，首批量产硬件已出货</strong></p>
+<ul>
+<li><strong>来源</strong>：<a href="https://www.servethehome.com/nvidia-updates-rubin-gpu-specs-as-first-production-hardware-arrives/">ServeTheHome</a> | <strong>时间</strong>：10月31日（11月1日持续发酵）</li>
+<li>ServeTheHome 报道，Vera Rubin 进入量产爬坡、首批 NVL72 平台出货之际，NVIDIA 悄然下调出货规格：单卡 HBM4 内存带宽从 22TB/s 降至 19.2TB/s（-11%），NVLink 从 3.6TB/s 降至 3.0TB/s（-17%），scale-out 网络带宽反向上调至 450GB/s；NVL8 平台 HBM4 容量从 2.3TB 砍至 2.0TB、带宽损失达 26%。多项指标缩水指向 HBM4 良率与速率爬坡不及预期（对比 AMD MI455X 已达 7.6Gbps/pin）。</li>
+<li>信号：AI 算力军备的瓶颈正从 GPU 设计转向 HBM 供给与良率——连 NVIDIA 都要为存储爬坡"减配"出货，与本期铠侠产能售罄、三星押注先进封装互为印证，上游物理约束正在重新划定算力扩张的速度上限。</li>
+</ul>
+<hr />
+<p>💾 <strong>存储供不应求再获实锤：铠侠官方披露 2027 年 NAND 产能全部售罄、2028 年配额锁定超 50%</strong></p>
+<ul>
+<li><strong>来源</strong>：<a href="https://www.ithome.com/1/020/849.htm">IT之家</a> | <strong>时间</strong>：11月1日</li>
+<li>铠侠高层披露，公司 2027 年芯片产能已全部售罄，2028 年配额锁定超过 50%（公司披露口径）。这是昨日"存储五巨头单季利润总额首超美国科技五巨头"（11-01 日报头条）之后，供给端最硬的一手证据，也解释了为何 OpenAI 掌门人亲自赴韩约见约 50 名三星高管锁产能——下游 AI 厂商正在从"竞价买芯片"转向"买断未来两年的产能配额"。</li>
+<li>信号：当存储厂的订单簿已经排到 2028 年，本轮超级周期的定价权完全倒向上游；NAND 与 HBM 同步吃紧意味着推理时代（本期赛迪数据：推理 token 量已超训练）对存储的饥渴只增不减。</li>
+</ul>
+<h3 id="_2">📌 核心动态</h3>
+<p>🤝 <strong>OpenAI、谷歌、微软、Anthropic 四巨头罕见联手：推行统一 AI 数据抓取退出（opt-out）标准</strong></p>
+<ul>
+<li><strong>来源</strong>：<a href="https://www.ithome.com/1/020/837.htm">IT之家</a> | <strong>时间</strong>：11月1日</li>
+<li>四家头部 AI 公司联合支持统一的爬虫退出技术标准，网站所有者一次声明即可同时对多个平台禁止 AI 抓取训练数据，旨在降低站方屏蔽 AI 爬虫的接入成本。此前各家 opt-out 机制各自为政、站方需逐家配置，统一标准意味着头部厂商在行业自律层面主动向监管与版权方靠拢。</li>
+<li>信号：训练数据版权诉讼压力下，"自律先于立法"成为巨头共识——当四家最可能互相竞争数据的公司选择共建规则，实质是在抢占全球 AI 数据治理标准的话语权，也为监管机构提供了现成的立法模板。</li>
+</ul>
+<hr />
+<p>🎮 <strong>Anthropic 官方确认 Claude Code 静默收紧 Harness：拦截游戏克隆与逆向工程任务</strong></p>
+<ul>
+<li><strong>来源</strong>：<a href="https://www.qbitai.com/2026/11/507038.html">量子位</a> | <strong>时间</strong>：11月1日</li>
+<li>博主 chasm 发现 Claude Code 悄然拦截游戏克隆与逆向任务，Anthropic 技术人员证实已在 Opus 5.5 上采取限制；此前社区观测到 Claude"紧急叫停"相关行为并暗改 Harness 策略。这延续了 10 月下旬以来的模型逆向能力削弱争议，官方正式确认是新进展。</li>
+<li>信号：编码助手的能力边界正从"模型能做什么"转向"厂商允许你做什么"——Harness 层策略成为新的产品治理抓手，也再次引发" agent 能力阉割是否应由用户知情同意 "的社区争论。</li>
+</ul>
+<hr />
+<p>🏢 <strong>OpenAI 拟将数据中心重新包装为"AI 算力园区"，酝酿大规模公关攻势</strong></p>
+<ul>
+<li><strong>来源</strong>：<a href="https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/">TechCrunch</a> | <strong>时间</strong>：11月1日</li>
+<li>Axios 披露，OpenAI 计划在中期选举后加大华盛顿游说力度，推动州立法，并提议将数据中心改称为"AI compute campuses"以缓和社区对能耗、选址的阻力；此前已在俄亥俄州园区试点。同一窗口内，加州 Prop 45 被 The Verge 分析暗藏数据中心能源豁免漏洞，布鲁克林数据中心抗议成为中期选举地方议题——AI 基建的民意摩擦正在美国选举政治中全面显性化。</li>
+<li>信号：当"数据中心"变成选战贬义词， rebranding 解决不了电力与用水的物理约束；OpenAI 的公关战恰恰说明，算力扩张的下一个瓶颈不是资本开支，而是社会许可。</li>
+</ul>
+<h3 id="_3">📎 其他要闻</h3>
+<ul>
+<li>🧮 <strong>清华姚期智团队发布"代数世界模型"</strong>：<a href="https://www.qbitai.com/2026/11/507031.html">量子位</a> | 11月1日 — 以代数结构建模物理与因果规律，让 AI"像牛顿一样思考"，AI for Science 方向的重要论文进展。</li>
+<li>🤖 <strong>首届 CMG 世界机器人登泰山大赛开赛</strong>：<a href="https://www.ithome.com/1/020/773.htm">IT之家</a> | 11月1日 — 人形/足式机器人实地攀爬泰山，考验复杂地形认路、探路与见招拆招能力。</li>
+<li>📊 <strong>赛迪研究院：我国 AI 推理数据量首超训练数据量</strong>：<a href="https://www.ithome.com/1/020/809.htm">IT之家</a> | 11月1日 — 截至 2026 年 6 月日均词元调用量超 175 万亿（赛迪研究院数据），标志应用落地进入推理驱动阶段。</li>
+<li>💾 <strong>长鑫科技披露 LPDDR 系列 2026 年收入 781.91 亿元、占营收 52.02%</strong>：<a href="https://www.ithome.com/1/020/832.htm">IT之家</a> | 11月1日 — 国产 DRAM 已从利基走向主战场，公司披露口径。</li>
+<li>🗳️ <strong>加州 Prop 45 被指暗藏数据中心能源豁免漏洞</strong>：<a href="https://www.theverge.com/policy/1023877/prop-45-california-data-center">The Verge</a> | 11月1日 — 数据中心电力与选址成为美国选举议题，与 OpenAI rebranding 构成同一事件线。</li>
+<li>🧠 <strong>微软 AI 负责人 Suleyman：AI 模型没有意识，应确保永远如此</strong>：<a href="https://www.ithome.com/1/020/848.htm">IT之家</a> | 11月1日 — 为愈演愈烈的模型意识讨论定调。</li>
+<li>🏪 <strong>便利店机器人售货折戟：实验室锤炼上万次，货架前仍摔瓶子</strong>：<a href="https://www.qbitai.com/2026/11/506990.html">量子位</a> | 11月1日 — sim-to-real 鸿沟的鲜活注脚，零售场景落地仍处早期。</li>
+</ul>
+<h3 id="_4">💡 今日洞察</h3>
+<p>推理时代与物理瓶颈同时到来：token 调用量首超训练，而 NVIDIA 为 HBM 良率"减配"、存储产能售罄到 2028。</p>
+<p>本日两组数据放在一起颇具戏剧性：一边是中国日均 175 万亿 token 的推理调用量首次超过训练数据量（赛迪研究院），宣告 AI 产业重心从"训练大模型"切换到"跑应用"；另一边是 NVIDIA 悄悄下调 Rubin 出货规格（HBM4 带宽 -11%）、铠侠 2027 年产能售罄——推理需求爆发的同时，供给端最上游的存储良率与产能却在卡脖子。更微妙的是社会层面的第三重约束：OpenAI 要给数据中心换"AI 算力园区"的马甲、加州公投案为数据中心电力留后门、布鲁克林抗议登上选战议题。资本开支可以一年翻倍，但 HBM 良率爬坡以季度计、电网扩容以年计、社会许可以选举周期计——未来两年 AI 产业链的胜负手，可能不在谁的模型更强，而在谁能同时搞定这三条节奏完全不同的约束曲线。</p>
+<hr />
 <h2 id="2026-11-01">【2026-11-01】</h2>
 <p><em>本期覆盖 10月31日 08:00 至 11月1日 08:00（北京时间）。</em></p>
-<h3 id="_1">🔥 头条</h3>
+<h3 id="_5">🔥 头条</h3>
 <p>📉 <strong>OpenAI 融资目标从 300 亿砍至 200 亿美元，首批仅锁定 110 亿、部分大型投资者反应冷淡</strong></p>
 <ul>
 <li><strong>来源</strong>：<a href="https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/">TechCrunch（援引 FT）</a> / <a href="https://www.theinformation.com/">The Information</a> | <strong>时间</strong>：10月31日</li>
@@ -181,7 +235,7 @@ th { background: var(--chip-bg); }
 <li>MarketWatch 报道三星电子最新季度盈利已接近微软与谷歌母公司之和，并对存储前景给出乐观指引；韩媒数据汇总进一步显示，三星/SK海力士/美光/铠侠/闪迪"存储五巨头"最新季度营业利润与净利润总额首次超越苹果/微软/谷歌/亚马逊/Meta"科技五巨头"的对应口径。这与本期"奥尔特曼赴韩密会约 50 名三星高管"（见核心动态）互为印证：AI 算力景气的利润池已整体迁移至硬件上游。</li>
 <li>信号：存储从"周期股"变"现金牛"被利润表坐实——当卖内存的比卖广告的、卖软件的加起来还赚钱，AI 产业链的利润分配结构已经发生代际反转。</li>
 </ul>
-<h3 id="_2">📌 核心动态</h3>
+<h3 id="_6">📌 核心动态</h3>
 <p>🤝 <strong>存储短缺倒逼采购升级：奥尔特曼赴韩与约 50 名三星高管会面，OpenAI 直接下场锁存储产能</strong></p>
 <ul>
 <li><strong>来源</strong>：<a href="https://www.ithome.com/1/020/597.htm">IT之家</a> | <strong>时间</strong>：10月31日</li>
@@ -230,7 +284,7 @@ th { background: var(--chip-bg); }
 <li>长鑫科技宣布基于 4F² 架构的第六代技术平台 DRAM 完成工程样片验证（公司披露口径）。4F² 为当前业界最紧凑的 DRAM 单元架构，此前长期由三星、SK 海力士主导；长鑫近期持续站在国产存储主线焦点（前三季度净利高增、被曝优先保国内供应，本月已报）。</li>
 <li>信号：国产 DRAM 从"能造"走向"架构代际不落后"，叠加存储超级周期，国产替代叙事再强化——但工程样片到量产仍有距离，第三方验证待观察。</li>
 </ul>
-<h3 id="_3">📎 其他要闻</h3>
+<h3 id="_7">📎 其他要闻</h3>
 <p><strong>⚖️ 财新周刊封面：规制向 AI"投毒"——GEO 操纵面临《反不正当竞争法》适用</strong>——律师分析单个数据点真实、整体呈现引人误解也可能构成违法商业宣传，已有 AI 厂商上线 GEO 操纵过滤；AI 搜索时代的"SEO 黑帽"治理进入执法讨论区。- <strong>来源</strong>：<a href="https://weekly.caixin.com/2026-10-31/102499328.html">财新周刊</a> | <strong>时间</strong>：10月31日</p>
 <p><strong>📉 美股 10 月收官日"惨烈"：英特尔、Reddit 双双暴跌近 30%</strong>——大盘科技股遭广泛抛售，华尔街对 AI 基建开支的疑虑升温；与 OpenAI 融资遇冷、Anthropic 获高垃圾级评级（往期已报）构成同一宏观叙事。- <strong>来源</strong>：<a href="https://www.ithome.com/1/020/613.htm">IT之家</a> | <strong>时间</strong>：10月31日</p>
 <p><strong>🧮 DeepSeek 提出 Super-agent 架构：Router + Worker 双层设计</strong>——发布架构论文探索更自主的长程 Agent 系统，从单体模型转向"路由+执行"多智能体范式（论文口径）。- <strong>来源</strong>：<a href="https://www.ithome.com/1/020/615.htm">IT之家</a> | <strong>时间</strong>：10月31日</p>
@@ -239,7 +293,7 @@ th { background: var(--chip-bg); }
 <p><strong>🏭 鸿海刘扬伟：预计数年攻下全球 AI 服务器约一半市场份额（高管口径）</strong>——鸿海为英伟达 GB 系列主力组装厂，AI 服务器组装环节集中化与竞争白热化同步。- <strong>来源</strong>：<a href="https://www.ithome.com/1/020/641.htm">IT之家</a> | <strong>时间</strong>：10月31日</p>
 <p><strong>🔬 世界模型首次指导芯片设计：超大核 NPU 宣称 700 TOPS、99% 算力可用（公司披露口径）</strong>——世界模型用于设计空间探索，"用 AI 造 AI 芯片"闭环开始产出具体指标，第三方验证待观察。- <strong>来源</strong>：<a href="https://www.qbitai.com/2026/10/506866.html">量子位</a> | <strong>时间</strong>：10月31日</p>
 <p><strong>🏫 西湖大学成立世界模型研究中心</strong>——主攻一致性、长时程、物理合理性等核心瓶颈，世界模型赛道获国内学术界建制化投入。- <strong>来源</strong>：<a href="https://www.ithome.com/1/020/611.htm">IT之家</a> | <strong>时间</strong>：10月31日</p>
-<h3 id="_4">💡 今日洞察</h3>
+<h3 id="_8">💡 今日洞察</h3>
 <p><strong>10 月的最后一天，AI 行业的账本上同时出现了退潮与涨潮。</strong> 退潮在一级市场：OpenAI 融资目标砍三分之一、首批仅募得 110 亿美元，与英特尔、Reddit 同日暴跌近三成连成一条线——资本对"烧钱换增长"的耐心正在被精确计价。涨潮在硬件上游：三星单季盈利逼近微软+谷歌之和、"存储五巨头"季度利润首超美国科技五巨头，奥尔特曼亲自赴韩向 50 名三星高管要内存。两条线其实是同一件事：当模型层的收入叙事（OpenAI 年化营收预期差 200 亿，往期已报）撑不起估值，利润就沿着产业链向上游和基础设施迁移——内存、代工、电力成为真正的现金流所在。11 月最大的悬念也因此清晰：Anthropic IPO 若定价成功，将为整个模型层重置估值锚；若遇冷，上游的涨潮也会被重新定价。</p>
 <hr />
 <hr />
