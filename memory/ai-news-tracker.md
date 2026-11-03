@@ -1,5 +1,33 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-03
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Marvell-Lumentum-115B-Acquisition | 2026-11-03 | https://techcrunch.com/2026/11/02/in-one-of-the-largest-deals-in-tech-history-marvell-buys-lumentum-for-115b/ | Marvell 1150亿美元全股票收购Lumentum，科技史上最大并购之一；Lumentum FY27Q1营收+136.5%并获50亿美元级CPO订单——定制芯片+光互连垂直整合对抗英伟达体系 |
+| Anthropic-S1A-RSI-Threshold-Q3-170B | 2026-11-03 | https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/ | Anthropic S-1A风险因素新增"可能即将触及RSI能力门槛"；同日披露Q3营收170亿美元同比+11倍、NRR 900%，IPO估值预期从2万亿下修至1.5万亿区间 |
+| NYT-Sue-Brave-Scraping-Distribution | 2026-11-03 | https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/ | NYT等起诉Brave：300亿页索引无法被屏蔽、向Anthropic/xAI/Mistral等分发内容并绕过付费墙——版权战蔓延至浏览器/爬虫层 |
+| Qualcomm-HBC-Near-Memory-133TBs | 2026-11-03 | https://www.ithome.com/1/021/286.htm | 高通HBC近存计算完成硬件验证：AI250带宽133TB/s、较LPDDR5X提升18倍，每瓦带宽超HBM4五倍（公司披露）——绕开HBM的推理内存路线首次硬件级验证 |
+| LeCun-JEPA-Platonic-Paper | 2026-11-03 | https://www.infoq.cn/article/pWwkDpoFHIsfw9aCRkij | LeCun合著JEPA论文：1.09亿参数文本JEPA跨模态表征对齐超Qwen2.5-72B（660倍参数差），为世界模型路线提供数学框架（paper类） |
+| Apple-Inventory-154pct-Memory | 2026-11-03 | https://techcrunch.com/2026/11/02/apples-inventory-surges-154-as-memory-chip-cos | 苹果库存同比激增154%，归因存储芯片涨价提前备货——存储超级周期传导至终端巨头财报 |
+| 42AI-62-5M-World-Model-Behavior | 2026-11-03 | https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/ | 42AI出隐身融资6250万美元，世界模型主打预测人类行为——世界模型第三条商业化路径（仿真/决策） |
+| SpaceX-Boost-Mobile-Acquisition | 2026-11-03 | https://techcrunch.com/2026/11/02/spacex-reportedly-wants-to-buy-boost-mobile-to-compete-with-att-t-mobile-and-verizon/ | SpaceX洽谈收购Boost Mobile获运营商资质，此前已购低频段频谱+400亿美元债务融资——星链对标电信三巨头进入执行层 |
+| Baidu-Search-API-4-9-DeepSeek | 2026-11-03 | https://www.infoq.cn/article/HJgTwfsPAugNBJ2jUefj | 百度搜索AI API增强版限时4.9元/千次（官方称低于DeepSeek），支持百万级并发——价格战蔓延至Agent搜索入口层 |
+| OpenAI-Pro-Quota-Double | 2026-11-03 | https://www.infoq.cn/article/WpTNht7guarWEyejJFV6 | ChatGPT Pro额度翻倍、Chat与Work标签页合并——旗舰订阅"加量不加价"消耗战 |
+| Grok-Bot-Throttle-Cost | 2026-11-03 | https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/ | 马斯克承认Grok Bot成本"不可持续"收紧额度——Agent推理成本压力首次头部公司公开承认 |
+| Apple-Home-Robot-2027-1000 | 2026-11-03 | https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/ | 爆料：苹果2027年推约1000美元家庭机器人，支持FaceTime与智能家居（爆料口径）——消费巨头AI硬件赌注转向家庭机器人 |
+| CMG-Robot-TaiShan-Result-Unitree | 2026-11-03 | https://www.ithome.com/1/021/250.htm | 首届CMG世界机器人登泰山大赛收官，宇树获1金2银——赛事线更新（11-02开赛条目续报） |
+| OpenAI-Grid-Protectors-Program | 2026-11-03 | https://openai.com/index/grid-protectors-program | OpenAI推Grid Protectors：数据中心参与电网保护并推介自备电厂（官方口径）——电力从工程问题升级为公共事务博弈 |
+| Northwood-Space-375M-Series-C | 2026-11-03 | https://techcrunch.com/2026/11/02/northwood-space-raises-375m-series-c-at-a-2b-valuation-from-a16z-and-dfj-growth/ | 卫星地面站初创Northwood Space获3.75亿美元C轮、估值20亿——"太空数据管道"成资本新标的 |
+| Haiguang-14XX-Industrial-CPU | 2026-11-03 | https://www.ithome.com/1/021/239.htm | 海光发布14XX工控CPU：-40℃~105℃宽温，x86兼容路线向工控/边缘扩张 |
+| VOLTA-Trojan-AI-Targeting | 2026-11-03 | https://www.ithome.com/1/021/249.htm | 木马VOLTA用AI分析受害者资产后决定是否渗透——进攻方AI目标筛选，防御不对称加剧 |
+| CTV-AI-Girlfriend-Romance-Scam | 2026-11-03 | https://www.ithome.com/1/021/245.htm | 央视揭秘"AI生成女友"诈骗：剧本+AI物料+筛选漏斗，15人被骗180余万——深伪诈骗标准化流水线被放大 |
+| OpenAI-2028-Election-AI-Agenda | 2026-11-03 | https://www.ithome.com/1/021/295.htm | OpenAI喊话2028美大选候选人：AI政策将是必答题——提前两年布局选举周期 |
+| Alphabet-Euro-Bond-2nd-2026 | 2026-11-03 | https://www.ithome.com/1/021/230.htm | Alphabet年内第二次发行欧元债——AI资本开支资金来源转向债市，利率敏感度成新风险变量 |
+| RaspberryPi-5-16GB-Price-Hike | 2026-11-03 | https://www.ithome.com/1/021/240.htm | 16GB树莓派5涨价80美元至385美元——DRAM涨价外溢至入门级消费电子 |
+| Trajectory-45M-Expert-Training | 2026-11-03 | https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/ | Trajectory融资4500万美元：让领域专家自助训练模型——训练工具链"业务专家自助化" |
+| GPT6-2-Astra-Mythos5-5-Rumor | 2026-11-03 | https://www.qbitai.com/2026/11/507082.html | 传闻：GPT-6.2 Astra灰度流出、Claude Mythos 5.5前端代码短暂现身——未经证实的灰度预热，待官方公告 |
+
 ## 2026-11-02
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -591,16 +619,6 @@
 | OpenAI-Robinson-Resign-Culture-Collapsed | 2026-10-04 | https://news.cnr.cn/sq/20261003/t20261003_527833292.shtml | OpenAI安全负责人Robinson辞职，在《大西洋月刊》撰文称公司文化已崩溃——安全高层公开决裂成连续剧 |
 | AlephAlpha-Kolibri-1-78B-MoE | 2026-10-04 | https://huggingface.co/Aleph-Alpha/Kolibri-1 | Aleph Alpha统一日发布Kolibri-1：78B MoE德英双语开源主权AI——主权AI变成可下载权重 |
 | Meta-Muse-Gadgets-Open-Source | 2026-10-04 | https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link | Meta开源Muse Gadgets（ESP32+Linux SDK）——Agent硬件生态"安卓化" |
-
-
-## 2026-10-03
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| Microsoft-ThinkingBox-Agent-Reliability | 2026-10-03 | https://huggingface.co/blog/microsoft/thinkingbox | 微软/HF ThinkingBox：12万+次试验中67%失败"干净退出"并报成功——评测锚点从单次能力转向多次一致性 |
-| Softbank-DigitalBridge-3-1B-Close | 2026-10-03 | https://www.altassets.net/private-equity-news/by-region/global-by-region/deal-roundup-softbank-completes-3-1bn-digitalbridge-buyout-wendel-seals-e2-1bn-stahl-exit.html | 软银完成31亿美元收购DigitalBridge交割——数据中心资产被产业资本锁定 |
-| DOJ-GPU-Smuggling-China-Arrest | 2026-10-03 | https://www.thenewstribune.com/news/nation-world/national/article317463300.html | DOJ逮捕向中国走私逾3亿美元GPU服务器的加州商人——出口管制执法咬合 |
-| AMD-1T-Market-Cap | 2026-10-03 | https://www.ainvest.com/news/amd-trillion-price-built-announcements-revenue-2610/ | AMD市值触及1万亿美元，分析称靠公告而非营收支撑 |
 
 
 ## 2026-10-09
