@@ -1,5 +1,25 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-04
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Fal-16B-Valuation-Inference | 2026-11-04 | https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/ | Fal E+F轮合募16.5亿美元、估值半年翻倍至160亿美元（Bessemer领投、英伟达跟投），年化收入破8亿美元但毛利偏薄——推理层成资本最热下注方向 |
+| OpenAI-GPT6-Astra-Physical-Engineering | 2026-11-04 | https://openai.com/index/accelerating-engineering-for-the-physical-world | OpenAI官宣GPT-6 Astra一周无人工编辑完成整机设计（BenchCAD 2.0得分0.875 vs 0.594），牵手马自达做空气动力/碰撞仿真——"模型做工程"成为与"模型做代码"同级叙事（官方口径） |
+| OpenAI-ChatGPT-Search-20pct-Google | 2026-11-04 | https://www.ithome.com/1/021/885.htm | OpenAI称ChatGPT搜索查询量达谷歌20%、周活12亿（官方口径，无独立验证）——AI搜索两年拿走传统搜索约五分之一查询量 |
+| AMD-EPYC-Venice-Profitable-Shipment | 2026-11-04 | https://www.ithome.com/1/021/881.htm | 苏姿丰官宣Zen6 EPYC Venice盈利性出货，OEM整机2026年底上市——对标英伟达Vera CPU的推理服务器CPU进入交付阶段 |
+| AMD-Q3-Profit-116pct | 2026-11-04 | https://www.ithome.com/1/021/871.htm | AMD前三季度归母净利61.08亿美元同比+116%，上调全年数据中心GPU指引——"第二供应商"叙事持续兑现 |
+| Anthropic-FlashProve-Model-Identity | 2026-11-04 | https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/ | Anthropic开源FlashProve：密码学证明输出来自所声称模型，防厂商降配/刷榜——模型身份与溯源成信任基础设施议题 |
+| EU-Court-Gemini-News-Copyright | 2026-11-04 | https://www.ithome.com/1/021/835.htm | 欧盟法院总顾问意见：Gemini摘要使用新闻报道或构成侵权，TDM例外不当然适用——若采纳将叠加于EU AI Act约束全欧模型厂商 |
+| NDRC-AI-Inference-Over-Training | 2026-11-04 | https://www.ithome.com/1/021/840.htm | 发改委：我国AI推理数据量首超训练数据量，世界AI合作组织38国加入（官方口径）——官方确立"推理时代"拐点叙事 |
+| DeepMind-Antigravity-Cheminformatics | 2026-11-04 | https://www.ithome.com/1/021/858.htm | DeepMind为Antigravity上线化学信息学技能：1小时完成肺癌药物化合物数天工作量，向万名科学家免费6个月——AI4S走向LLM+领域工具链智能体 |
+| Canva-Layoffs-22pct | 2026-11-04 | https://www.theverge.com/2026/11/3/canva-layoffs-ai | Canva裁员约22%——AI原生设计工具冲击下"AI工具公司被AI反噬"成SaaS新叙事 |
+| CrowdStrike-500M-AI-Security-M&A | 2026-11-04 | https://techcrunch.com/2026/11/03/crowdstrike-to-shell-out-nearly-500m-for-2-ai-security-startups-as-the-market-f/ | CrowdStrike近5亿美元收购两家AI安全初创，Ballistic Ventures募4.9亿押注AI安全——AI安全进入并购变现+资本涌入双通道 |
+| OpenAI-CCAO-Hazelbaker | 2026-11-04 | https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer | OpenAI任命首任首席企业事务官（前Snap/Uber高管，向Altman汇报）——治理架构向上市公司靠拢（官方） |
+| Baidu-Apollo-World-Model | 2026-11-04 | https://www.infoq.cn/article/tIt75FRqU2hwy4eWrOIu | 百度首次披露Apollo World世界模型，生成式世界模型教AI开车——世界模型进入头部Robotaxi量产技术栈 |
+| Datacenter-Jet-Engine-Power | 2026-11-04 | https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/ | 电网并网排队数年，数据中心采购退役航发改装发电——供电创新推向非电网路线 |
+| Supermicro-Q1-Profit-847pct | 2026-11-04 | https://www.ithome.com/1/021/873.htm | 超微电脑FY27Q1归母净利15.94亿美元同比+847%——AI服务器整机商利润率兑现（公司披露） |
+
 ## 2026-11-03
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
