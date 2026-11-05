@@ -1,5 +1,28 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-05
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Qualcomm-Data-Center-50B-150B | 2026-11-05 | https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers | 高通官宣数据中心为第一增长曲线：2027 财年收入 50 亿、2029 年 150 亿美元、终占业务 30%（亚马逊/Meta 订单打底）——Arm 阵营实质分流 x86+NVIDIA 算力预算 |
+| OpenAI-Linux-Kernel-948-Vulns | 2026-11-05 | https://openai.com/index/a-thousand-fewer-paths-to-root | OpenAI 用 AI 扫描 Linux 内核：2308 候选复现 1724、948 个可提权漏洞（官方口径+独立报道）——同日 Codex 11 天写 13.9 万行新内核跑起 Rocky Linux 10，AI"读+写内核"双线落地 |
+| Sequoia-Retrench-London-Arc-Scouts | 2026-11-05 | https://techcrunch.com/2026/11/04/sequoia-hits-rewind-undoing-20-years-of-expansion/ | 红杉关闭伦敦办、砍 Arc 加速器与 Scouts 计划，同时新募约 100 亿美元——顶级 VC 收缩集中火力，欧洲早期生态失血 |
+| Agility-Robotics-SPAC-AGLT | 2026-11-05 | https://natlawreview.com/press-releases/agility-robotics-and-churchill-capital-corp-xi-announce-expected-gross | 人形机器人 Agility Robotics 完成 SPAC 合并 11/5 纳斯达克上市（AGLT），富士康领投 2.01 亿 PIPE、Digit 5 承诺订单超 3 亿（公告口径）——具身智能二级市场定价探路 |
+| OpenAI-Acquire-Pierre-Computer | 2026-11-05 | https://openai.com/index/openai-to-acquire-pierre | OpenAI 收购 Pierre Computer Company，团队并入设备部门（官方口径）——"模型+设备+物理工程"全栈拼图再加一块 |
+| CMG-Lion-ER-35B-Embodied-Model | 2026-11-05 | https://www.qbitai.com/2026/11/507586.html | 招商局狮子山实验室发布具身推理模型 Lion-ER-35B-A3B（35B/3B MoE）——央企"国家队"入场具身智能 |
+| Stanford-AI-Natural-Ozempic | 2026-11-05 | https://www.sciencedaily.com/ | 斯坦福团队 AI 筛出天然 GLP-1 候选分子，动物实验减重且更少肌肉流失（paper 类）；同日 MIT 颁 Pritzker 奖给 AI 抗生素发现——AI 药物发现进入"找可开发分子"阶段 |
+| Google-Search-School-AI-Backlash | 2026-11-05 | https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/ | 谷歌威胁对限制 AI 的学区关闭 Search，遭反弹——巨头捆绑强推 AI 触发滥用市场地位式反弹 |
+| AI-PACs-Midterm-Elections | 2026-11-05 | https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/ | AI PACs 中期选举砸数百万美元影响国会——AI 公司直接购买政策环境 |
+| Texas-Flip-Blue-Datacenter | 2026-11-05 | https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/ | 德州翻蓝，AI 数据中心电价优惠与快速审批或被重新审视——政治变量进入算力基建估值 |
+| Arm-FY27Q2-Rev-Record-Profit-Drop | 2026-11-05 | https://www.ithome.com/1/022/475.htm | Arm FY27Q2 营收 14.4 亿美元 +27% 创新高、GAAP 净利 -45%——AI 红利兑现于收入端，利润率仍承压 |
+| ByteDance-Coze-Enterprise-Pause | 2026-11-05 | https://www.ithome.com/1/022/432.htm | 字节「扣子」暂停企业版新售，整合企业级 Agent 产品线——国内 Agent 平台进入收敛期 |
+| Meta-Acquire-Conductor | 2026-11-05 | https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/ | Meta 收购 AI 编码初创 Conductor（多智能体并行工作界面）——Coding agent 竞争转向编排层 |
+| Qualcomm-SpaceX-5G-Nationwide | 2026-11-05 | https://www.ithome.com/1/022/434.htm | 高通联合 SpaceX 建星链移动全美 5G 网络，称史上最大 5G 交易——芯片商+卫星运营商挑战传统建网模式 |
+| CXMT-Buyback-5B | 2026-11-05 | https://www.ithome.com/1/022/378.htm | 长鑫董事长提议最高 50 亿元回购创科创板纪录——国产存储进入利润兑现+资本回报阶段 |
+| Nothing-Screenless-AI-Device | 2026-11-05 | https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month/ | Nothing 无屏 AI 原生设备 12 月发布——AI 硬件第二波押注无屏+环境智能 |
+| MoWorld-2.0-Ascend-4D | 2026-11-05 | https://www.ithome.com/1/022/424.htm | 魔芯科技发布昇腾原生 4D 世界模型 MoWorld 2.0——国产算力栈原生承接世界模型训练 |
+| Waymo-Uber-2028-Restructure | 2026-11-05 | https://techcrunch.com/2026/11/04/waymo-confirms-its-shaking-up-its-uber-relationship-in-january-2028/ | Waymo 确认 2028 年 1 月调整与 Uber 合作——Robotaxi 技术方与流量平台渠道博弈公开化 |
+
 ## 2026-11-04
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
