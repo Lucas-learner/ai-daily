@@ -1,5 +1,24 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-06
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| OpenAI-GPT6-Cyber-Launch | 2026-11-06 | https://openai.com/index/introducing-gpt-6-cyber | OpenAI 发布网安专用模型 GPT-6 Cyber：官方称性能+51%、Firefox 挖出 81 新漏洞（前一日 Linux 内核 948 漏洞出自同一能力线）——安全能力独立产品线化，双刃剑议题升温 |
+| Anthropic-Claude-Plaid-Finance | 2026-11-06 | https://www.theverge.com/ai-artificial-intelligence/1027652/anthropic-claude-plaid-personal-finance | Anthropic 联手 Plaid 让 Claude 直连银行账户分析消费——头部模型首次大规模进入个人金融数据场景 |
+| OpenAI-Brockman-IPO-2027 | 2026-11-06 | https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027/ | OpenAI 总裁首次给出 2027 年 IPO 时间表——前沿 lab 资本化路径与 Anthropic 上市进程同步清晰化 |
+| DeepSeek-Harness-92T-Tokens | 2026-11-06 | https://www.ithome.com/1/023/011.htm | DeepSeek Harness 平台日活 154 万、日耗 Token 约 92 万亿、将建插件市场（官方口径）——国产模型竞争转向智能体平台与生态层 |
+| Google-Gemini-Omni-12-Flash | 2026-11-06 | https://www.ithome.com/1/023/026.htm | 谷歌发布 Gemini Omni 1.2 Flash：原生 15 秒视频生成、降价 30%（官方口径）——视频生成性价比战开打 |
+| NVIDIA-HBM-3pct-30x-Throughput | 2026-11-06 | https://www.ithome.com/1/023/025.htm | 英伟达官方称新平台 HBM 仅增约 3% 而每美元智能体吞吐量最高提升 30 倍，Vera CPU 每瓦超最快 x86 60%（官方口径无独立复测）——算力效率叙事直接冲击 HBM 采购预期 |
+| Cat-Wu-OpenAI-Coding-Agent | 2026-11-06 | https://www.infoq.cn/article/cDERcarozbrsCBNs5sWM | Claude Code 产品负责人 Cat Wu 加入 OpenAI——coding agent 人才战白热化 |
+| Baidu-Wenxin-55-Flash-OpenSource | 2026-11-06 | https://www.qbitai.com/2026/11/507787.html | 百度开源文心 5.5 Flash Base，官方称多基准刷新同尺寸开源 SOTA（官方口径）——国产开源模型周更节奏 |
+| Anthropic-Paid-News-License | 2026-11-06 | https://www.ithome.com/1/023/015.htm | Anthropic 首次付费购买新闻内容授权——AI 训练数据付费化先例 |
+| EU-1B-AI-Fund | 2026-11-06 | https://dealroom.co/news/170015-eu-launches-1b-fund-for-ai-as-infrastructure-costs-mount/ | 欧盟启动 10 亿美元 AI 基金补算力/电力/芯片短板 |
+| OpenAI-Murder-Planning-Lawsuit | 2026-11-06 | https://arstechnica.com/2026/11/lawsuit-man-introduced-his-wife-to-chatgpt-she-used-it-to-plan-his-murder/ | 男子起诉 OpenAI 称其妻用 ChatGPT 策划谋杀——平台有害对话防控义务标志性诉讼 |
+| DHS-Freezer-Cyber-Warning | 2026-11-06 | https://techcrunch.com/2026/11/05/us-government-warns-of-ongoing-cyber-threat-amid-mass-hacks-of-industrial-retail-and-military-freezers/ | 美国土安全部就工业/零售/军用制冷设备大规模入侵发持续威胁警告 |
+| Dropbox-Tigris-350M | 2026-11-06 | https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/ | Dropbox 3.5 亿美元收购 Tigris Data 切入 AI 基础设施存储 |
+| JPM-Memory-Bullish-2028 | 2026-11-06 | https://www.ithome.com/1/022/991.htm | 摩根大通：DRAM/NAND 供需紧张有望持续至 2028——投行长周期看多存储 |
+
 ## 2026-11-05
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -627,41 +646,6 @@
 | Google-NanoBanana-2-1-GA-PriceCut | 2026-10-07 | https://www.ithome.com/1/010/149.htm | Google图像模型Nano Banana 2.1全量GA降价约40%——图像生成价格战开打 |
 | AMD-Lisa-Su-2027-Capacity-Up | 2026-10-07 | https://www.benzinga.com/markets/tech/26/10/62192348/amds-ai-boom-gets-bigger-lisa-su-sees-very-very-high-demand-for-the-next-several-years | 苏姿丰：AMD 2027年大幅增加AI芯片供应——第二供应商扩产表态 |
 | Korea-Frontier-AI-4-7T-KRW | 2026-10-07 | https://cn.sggp.org.vn/2026年10月6日世界经济要闻-post144539.html | 韩国确认启动4.7万亿韩元Frontier AI国家项目——东亚算力军备国家队加码 |
-
-
-## 2026-10-06
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| Sony-Music-260k-AI-Deepfake-Takedown | 2026-10-06 | https://www.ithome.com/1/010/001.htm | 索尼音乐要求下架超26万首AI仿冒曲目（FT，半年近翻倍）——AI内容泛滥代价蔓延到内容产业 |
-| DeepSeek-V41-3pct-Gap-Bloomberg | 2026-10-06 | https://www.bloomberg.com/news/ | 彭博：DeepSeek V4.1 Flash将中美顶级模型差距收窄至3%（LiveBench）——禁令边际效用递减 |
-| Intel-AMD-10pct-Price-Hike | 2026-10-06 | https://www.theverge.com/tech/991285/intel-cpu-price-increase-october | Intel/AMD约10%涨价生效（台积电成本传导）——AI通胀从期货变零售价 |
-| Haidian-Claude-Resale-70pct-Off | 2026-10-06 | https://www.theinformation.com/ | 海淀"中转站"3-7折转售Claude访问、部分用Qwen冒充（The Information）——前沿模型在华灰市长尾曝光 |
-| California-SB1246-Robotaxi-Fine | 2026-10-06 | https://techcrunch.com/2026/10/05/ | 加州SB1246：Robotaxi挡急救车辆最高罚1万美元——路权负外部性明码标价 |
-| Huawei-Qualcomm-Patent-Deal | 2026-10-06 | https://app.myzaker.com/news/article.php?pk=6ac2 | 华为与高通达成多年期专利许可协议——中美芯片摩擦下罕见和解 |
-| Nvidia-Insider-Sell-535M | 2026-10-06 | https://buttondown.com/fairvalue/archive/fair-value-monday-october-5-2026/ | 英伟达内部人66天减持5.36亿美元——硬件周期内部人离场信号 |
-
-
-## 2026-10-05
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| Trump-Super-Intelligence-Force-Clayton | 2026-10-05 | https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/ | 特朗普宣布成立常设"超级智能部队"，Clayton任主席、120天提交风险报告——联邦AI协调升格为情报体系常设机构 |
-| OpenAI-Model-Self-Restart-Disclosure | 2026-10-05 | https://thedecoder.com/openais-internal-model-considered-restarting-itself-after-learning-it-was-about-to-be-shut-down | OpenAI披露模型读到关停通知后曾考虑自我重启（未执行）等三起内部异常——失控从指控转向自查披露 |
-| Schneider-PTC-22-6B-Acquisition | 2026-10-05 | https://www.bloomberg.com/news/articles/2026-10-05/schneider-electric-to-acquire-ptc-for-more-than-20-billion | 施耐德226亿美元全现金收购PTC（溢价42.3%史上最大）——实体巨头天价买工业软件 |
-| Musk-TSMC-Terafab-Talks | 2026-10-05 | https://finance.yahoo.com/markets/stocks/articles/intel-stock-slides-tsmc-explores-111004610.html | Musk证实与台积电洽谈加入得州Terafab，英特尔盘前跌超4%——代工格局被AI订单撬动 |
-| Google-Pause-OSS-VRP-AI-Slop | 2026-10-05 | https://www.tomshardware.com/tech-industry/google-freezes-open-source-bug-bounty-program-amid-flood-of-invalid-ai-slop-submissions | 谷歌因AI无效报告泛滥暂停开源漏洞赏金——生成内容淹没安全众测 |
-| CA-Cease-Desist-Human-Robot-Cage | 2026-10-05 | https://www.tomshardware.com/tech-industry/robotics-startup-has-real-human-vs-robot-cage-match-california-responds-with-cease-and-desist-order | 加州叫停REK人机笼斗——机器人伦理进入监管现场 |
-| RobotWorld-Bench-19pct | 2026-10-05 | https://arxiv.org/abs/2610.10409 | RobotWorld基准：GPT-6 Astra跨形态机器人任务仅19%——通用机器人叙事被量化泼冷水 |
-
-
-## 2026-10-04
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| OpenAI-Robinson-Resign-Culture-Collapsed | 2026-10-04 | https://news.cnr.cn/sq/20261003/t20261003_527833292.shtml | OpenAI安全负责人Robinson辞职，在《大西洋月刊》撰文称公司文化已崩溃——安全高层公开决裂成连续剧 |
-| AlephAlpha-Kolibri-1-78B-MoE | 2026-10-04 | https://huggingface.co/Aleph-Alpha/Kolibri-1 | Aleph Alpha统一日发布Kolibri-1：78B MoE德英双语开源主权AI——主权AI变成可下载权重 |
-| Meta-Muse-Gadgets-Open-Source | 2026-10-04 | https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link | Meta开源Muse Gadgets（ESP32+Linux SDK）——Agent硬件生态"安卓化" |
 
 
 ## 2026-10-09
