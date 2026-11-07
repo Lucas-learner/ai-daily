@@ -1,5 +1,28 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-07
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| NVIDIA-Huang-Congress-Spy-Hearing | 2026-11-07 | https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy | NYT爆料中方招募Megaspeed高管接近黄仁勋，美众议院三委员会传唤其闭门听证——芯片管制升级为CEO个人问责（美方指控口径） |
+| OpenAI-11B-FirstClose-1.25T | 2026-11-07 | https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/ | OpenAI新融资首期110亿美元到账、估值1.25万亿美元——传闻落地，与Anthropic IPO双线对撞 |
+| Microsoft-Oracle-Compute-Exit | 2026-11-07 | https://www.ithome.com/1/023/606.htm | 微软不再续签甲骨文AI算力租赁、重估超800亿美元外部云合作——GPU折旧与长约错配被定价（彭博爆料） |
+| Anthropic-Agent-Memory-Dreaming | 2026-11-07 | https://www.ithome.com/1/023/613.htm | Anthropic发智能体记忆研究：四层次+空闲期"做梦"机制，CL-Bench带记忆Opus 0.838 vs 0.655——记忆成为研究对象 |
+| OpenAI-WetLab-Benchmark-Hacktron | 2026-11-07 | https://openai.com/index/measuring-how-ai-agents-handle-everyday-wet-lab-science | OpenAI评测AI智能体湿实验能力+启动Hacktron漏洞赏金——Agent评测外溢到物理实验（官方口径） |
+| Meta-Muse-Spaces | 2026-11-07 | https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/ | Meta为Muse Agent推Spaces按需生成协作空间——Agent竞争转向生成式界面 |
+| Tau-Robotics-Housekeeping-SF | 2026-11-07 | https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/ | Tau Robotics人形机器人在旧金山上门保洁（30-100美元/单，远程操控为主）——数据即收入商业化试水 |
+| SKhynix-Hyaico-10B | 2026-11-07 | https://www.ithome.com/1/023/584.htm | SK海力士设美国AI投资子公司Hyaico最高投100亿美元——存储巨头携资嵌入美国产业链 |
+| Ramp-AI-Spend-Stalling | 2026-11-07 | https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/ | Ramp数据：企业AI支出增速停滞vs Anthropic IPO——泡沫争论新弹药 |
+| EU-TikTok-Algorithm-DSA | 2026-11-07 | https://www.ithome.com/1/023/560.htm | 欧委会认定TikTok推荐算法制造信息茧房要求整改，最高罚全球营收6%——DSA切入算法机制 |
+| Alphabet-Qualcomm-548M | 2026-11-07 | https://www.ithome.com/1/023/607.htm | Alphabet建仓5.48亿美元高通——hyperscaler给Arm阵营算力投票 |
+| NVIDIA-Brightspeed-Telco-DC | 2026-11-07 | https://www.ithome.com/1/023/543.htm | 英伟达洽谈130余座电信老楼改造约1GW小型数据中心——算力落地第三条路线 |
+| ByteDance-Moonton-6B | 2026-11-07 | https://www.ithome.com/1/023/550.htm | 字节出售沐瞳科技获批准、对价超60亿美元——大厂瘦身回笼AI弹药 |
+| Moffett-C+-Sparse-Chip | 2026-11-07 | https://www.qbitai.com/2026/11/508155.html | 墨芯近10亿元C+轮、5个月两度融资——稀疏推理芯片吃DeepSeek红利 |
+| PANW-Clutch-500M | 2026-11-07 | https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/ | Palo Alto洽谈5亿美元收购Agent安全初创Clutch——AI安全并购潮延续 |
+| MooreThreads-KimiK3-Day0 | 2026-11-07 | https://www.ithome.com/1/023/561.htm | 摩尔线程Day-0适配3万亿参数Kimi-K3.1 Pro——国产模型×国产芯片双绑定（官方口径） |
+| Google-Buyout-12Months | 2026-11-07 | https://www.infoq.cn/article/vMSj216sQUhmeDH4H0G7 | 谷歌全球自愿买断最高补12个月工资——AI支出挤占薪酬盘 |
+| Zhiyuan-LingxiX2-Refresh | 2026-11-07 | https://www.ithome.com/1/023/497.htm | 智元发灵犀X2焕新版面向商服场景——国产人形机器人产品线细分（官方口径） |
+
 ## 2026-11-06
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
