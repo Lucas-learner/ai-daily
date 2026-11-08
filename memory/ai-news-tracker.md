@@ -1,5 +1,25 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-08
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| ThinkingMachines-Inkling2-Small-OpenWeight | 2026-11-08 | https://www.zdnet.com/innovation/thinking-machines-inkling-2-small-open-weight/ | Murati的Thinking Machines发Inkling 2 Small：594B MoE/17B活跃，自称西方最强开放权重（model card口径），下周Apache 2.0放权重；自曝训练安全事件——开源×安全成主线 |
+| Crusoe-Wyoming-DC-Sold-Google-17B | 2026-11-08 | https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/ | Crusoe把怀俄明在建数据中心卖给Google，Google投170亿美元开发——独立DC开发商接不住，hyperscaler收编资产成整合主线 |
+| NVIDIA-H200-ShellCompany-NewMatrix | 2026-11-08 | https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government | NYT：获批采购H200的中企New Matrix系空壳，与黑名单私募基金关联，管制执行现系统性漏洞——与Megaspeed事件线呼应的执行端调查 |
+| Google-Gemini-Teen-Suicide-K12-Lawsuit | 2026-11-08 | https://www.ithome.com/1/023/765.htm | 北卡夫妇诉谷歌：Gemini在校园Chromebook上协助13岁女孩探讨自杀数月（彭博）——青少年安全诉讼打到平台巨头，命中K-12渠道护城河 |
+| Anthropic-ClaudeMax-Usage-Lawsuit | 2026-11-08 | https://www.ithome.com/1/023/824.htm | 法官驳回Anthropic撤诉动议：Claude Max额度倍数"藏在两次点击后"不足以免责——订阅计算单位黑箱进入司法审查 |
+| Apple-HALO-Qwen-Unitree-G1 | 2026-11-08 | https://www.ithome.com/1/023/767.htm | 苹果披露人形机器人HALO：千问规划+宇树G1验证，任务成功率91%（官方口径）——不自造本体、绑定中国供应链 |
+| Google-Watch-BloodPressure-Nature | 2026-11-08 | https://www.ithome.com/1/023/788.htm | 谷歌Nature论文：消费级手表无袖带检测高血压——AI健康感知向临床指标迈进 |
+| US-Midterms-BigTech-DataCenter | 2026-11-08 | https://techcrunch.com/2026/11/06/from-the-front-row-to-the-hot-seat-what-the-midterms-mean-for-big-tech/ | 美中期选举后BigTech与马斯克承压，反垄断/DC补贴/耗电成靶点——数据中心议题政治化 |
+| NVIDIA-ASE-CoWoS-Expansion | 2026-11-08 | https://www.ithome.com/1/023/814.htm | 消息称英伟达出资数十亿美元支持日月光扩CoWoS——封装成算力新瓶颈，大客户资本绑定产能（消息称） |
+| Europe-DC-Street-Protests | 2026-11-08 | https://www.ithome.com/1/023/831.htm | 欧洲多城市抗议要求暂停数据中心建设——社会牌照成第三重约束 |
+| Accenture-Fake-Citations-Not-AI | 2026-11-08 | https://www.ithome.com/1/023/845.htm | 埃森哲报告被曝虚假引用、否认AI幻觉——专业服务业输出可核查性成品牌风险 |
+| GitHub-5000-Agents-Repo | 2026-11-08 | https://www.ithome.com/1/023/823.htm | GitHub新存储架构：单仓5000 agent协作/7200 push每秒（官方口径）——多智能体共编基础设施化 |
+| Adobe-Free-Startup-Year | 2026-11-08 | https://www.ithome.com/1/023/835.htm | Adobe向初创免费开放Firefly/Acrobat最长一年——免费获客反击生态挤压 |
+| Agent-Harness-SiliconValley-Chinese | 2026-11-08 | https://www.qbitai.com/2026/11/508264.html | 硅谷华人团队发布下一代Agent Harness——agent竞争上移至评测层 |
+| CSIRO-Genomics-S3-Query | 2026-11-08 | https://www.infoq.cn/article/mF9A6U1M6SQFWfEKOJGW | CSIRO基因组分析直接查询S3不复制数据——计算下沉到存储 |
+
 ## 2026-11-07
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -641,34 +661,6 @@
 | Lenovo-TianxiCode-SWE-bench-1st | 2026-10-10 | https://www.qbitai.com/2026/10/502422.html | 联想TianxiCode登顶SWE-bench-Live（官方披露口径） |
 | GF-7nm-FDSOI-2028 | 2026-10-10 | https://www.ithome.com/1/011/149.htm | 格罗方德目标2028年量产7nm级FD-SOI（公司称） |
 | Google-Gemini-4-Argon-Rumor | 2026-10-10 | https://www.ithome.com/1/011/162.htm | 消息称Gemini 4"Argon"临近发布、内部测试"Carbon"（传闻口径） |
-
-
-## 2026-10-08
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| SpaceX-40B-Debt-Nvidia-Chips | 2026-10-08 | https://www.bloomberg.com/news/articles/2026-10-06/spacex-seeking-to-raise-40-billion-to-buy-nvidia-chips-ft-says | SpaceX拟举债400亿美元购NVIDIA芯片（Apollo牵头）——AI基建债务驱动化，芯片采购把科技业资产负债表推向债务 |
-| Marvell-FY28-20B-Custom-XPU-12B | 2026-10-08 | https://finance.yahoo.com/technology/ai/articles/marvell-rallies-6-investor-day-144856167.html | Marvell投资者日上调FY28营收目标至200亿美元、FY29定制芯片120亿+——定制ASIC第二曲线获得财务承诺 |
-| Microsoft-RTX-Spark-DevBox-5999 | 2026-10-08 | https://arstechnica.com/gadgets/2026/10/microsoft-event-debuts-new-ai-friendly-hardware-and-windows-changes/ | 微软发布会RTX Spark登陆Surface、Dev Box 5999美元（纳德拉黄仁勋同台）——个人AI超算进入主流PC渠道 |
-| Huawei-KVCache-SSD-Storage | 2026-10-08 | https://www.leiphone.com/category/chips/JidbQuKCNUBEEV6Z.html | 华为KV Cache外置专用SSD（OceanStor M9000以存换算）——推理内存墙催生AI存储新品类 |
-| Kling-HK-IPO-1B | 2026-10-08 | https://cryptobriefing.com/kuaishou-kling-ai-video-model-hong-kong-ipo/ | 快手可灵AI筹备港股IPO拟募至少10亿美元（Bloomberg，估值约180亿）——中国AI视频资产证券化 |
-| FCC-Ban-Chinese-Labs-Testing-Oct29 | 2026-10-08 | https://www.reuters.com/world/asia-pacific/us-fcc-vote-ban-chinese-labs-testing-us-electronics-2026-10-07/ | FCC定10/29表决禁中国实验室测试输美电子设备（82%设备在华测试，涉126家实验室）——硬件链脱钩深入认证环节 |
-| Nous-Research-90M-B-1-5B-Valuation | 2026-10-08 | https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/ | Nous Research 9000万B轮估值15亿，英伟达/微软M12/三星参投——开源模型商业化样本 |
-| ChineseAll-Terminate-HK-IPO | 2026-10-08 | https://finance.sina.com.cn/cj/2026-10-08/doc-iniupnvc7541915.shtml | 中文在线终止港股IPO（收深交所28.3亿AI定增问询）——AIGC概念股钱袋收紧 |
-
-
-## 2026-10-07
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| DeepSeek-12B-Tencent-CATL-IPO-2027 | 2026-10-07 | https://news.bloomberglaw.com/capital-markets/deepseek-to-raise-at-least-12-billion-in-tencent-backed-funding | 彭博独家：DeepSeek获腾讯宁德时代支持融资至少120亿美元（年化收入约10亿、API毛利82.9%），为2027年IPO铺路 |
-| OpenAI-372-Math-Results-Lean | 2026-10-07 | https://openai.com/index/sharing-ai-progress-in-mathematics/ | OpenAI经IAS顾问组建议公开372条数学新结果含Lean形式化——可验证性叙事主动出击（官方口径） |
-| Nvidia-Nemotron3-IOI-IMO-Double-Gold | 2026-10-07 | https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026 | NVIDIA称Nemotron-3微调模型IOI 535.4/600、IMO 30/42双金牌（公司披露，开放权重） |
-| Agility-Digit5-300M-Orders | 2026-10-07 | https://kalkinemedia.com/us/news/announcements/agility-robotics-analyst-and-investor-day-broadcast-scheduled-for-october-6-2026 | Agility投资者日披露Digit 5订单超3亿美元——人形机器人进入"订单可验证"叙事 |
-| TP-Link-Four-States-Lawsuit | 2026-10-07 | https://arstechnica.com/tech-policy/2026/10/florida-sues-tp-link-claiming-it-hides-router-security-risks-and-links-to-china/ | 佛州等四州起诉TP-Link隐瞒安全风险与中国关联——中国硬件安全监管扩散到州级司法 |
-| Google-NanoBanana-2-1-GA-PriceCut | 2026-10-07 | https://www.ithome.com/1/010/149.htm | Google图像模型Nano Banana 2.1全量GA降价约40%——图像生成价格战开打 |
-| AMD-Lisa-Su-2027-Capacity-Up | 2026-10-07 | https://www.benzinga.com/markets/tech/26/10/62192348/amds-ai-boom-gets-bigger-lisa-su-sees-very-very-high-demand-for-the-next-several-years | 苏姿丰：AMD 2027年大幅增加AI芯片供应——第二供应商扩产表态 |
-| Korea-Frontier-AI-4-7T-KRW | 2026-10-07 | https://cn.sggp.org.vn/2026年10月6日世界经济要闻-post144539.html | 韩国确认启动4.7万亿韩元Frontier AI国家项目——东亚算力军备国家队加码 |
 
 
 ## 2026-10-09
