@@ -1,5 +1,31 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-09
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Anthropic-OnePWR-1.7GW-3.4B | 2026-11-09 | https://thenextweb.com/news/anthropic-3-4bn-gas-generators-onepwr-ft | Anthropic约34亿美元买断OnePWR向Caterpillar下单的1.7GW燃气发电机订单（FT），AI公司最大单笔电力设备采购——瓶颈从芯片转向电力，自建电力成新常态 |
+| NVIDIA-Huang-Internal-Investigation | 2026-11-09 | https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy | 英伟达确认调查黄仁勋与Megaspeed高管（涉"中国间谍"指控）关系，黄仁勋发全员备忘录（The Verge全文）——延续11-07国会听证事件线，升级为CEO问责+内部调查 |
+| Apple-Ternus-Federighi-AgenticSiri | 2026-11-09 | https://www.ithome.com/1/024/013.htm | 苹果新CEO特努斯闭门施压费德里吉加速Siri agentic化，Siri工程副总裁罗克韦尔被曝考虑离职（彭博）——巨头AI战略急转弯+管理层动荡 |
+| CAISSI-WhiteHouse-Informal | 2026-11-09 | https://startupfortune.com/us-ai-safety-center-staff-now-report-informally-to-the-white-house-ap-says/ | 美AI安全中心CAISSI员工被要求向白宫非正式汇报、安全发布停摆（AP）——联邦AI安全评估独立性流失 |
+| AMD-Su-DataCenter-First | 2026-11-09 | https://www.ithome.com/1/023/934.htm | 苏姿丰：AMD是"数据中心优先"公司，Q4数据中心预计环比+50%，新品已交付OpenAI——告别PC标签 |
+| WorldModel-Capital-Flight | 2026-11-09 | https://www.qbitai.com/2026/11/508466.html | 量子位：资本撤离世界模型，10月相关融资仅5起——呼应AMD收购World Labs/宇树上市事件线，进入技术证据定价阶段 |
+| OpenAI-ChatGPT-Mass-Ban | 2026-11-09 | https://original.ifeng.com/c/8xsbjVXkRbE | ChatGPT集中封号，200美元Pro用户与安全密钥账号也中招，OpenAI未统一回应——11-05封号道歉事件后一周内再现，风控误伤付费用户 |
+| FujiTV-AI-Drama-2027 | 2026-11-09 | https://www.ithome.com/1/023/992.htm | 富士电视台2027年起用谷歌Nano Banana制作全部16部真人剧集，省70-80%特效工序——主流媒体首次全管线AI化 |
+| Amazon-Home-Robot-Relaunch | 2026-11-09 | https://www.ithome.com/1/024/012.htm | 亚马逊组建新团队重启家用机器人（CNBC析招聘信息），新聘MIT专家——Astro失败后最强玩家回归消费机器人 |
+| TSMC-NVIDIA-3nm-HBM-BaseDie | 2026-11-09 | https://driven.ai/share/tncheihtbpg0i3gv9ezewmc7 | 台积电否认3D DRAM，但与英伟达推进3nm HBM底片合作——英伟达重构HBM制造链 |
+| Europe-DC-Protests-Spread | 2026-11-09 | https://www.ithome.com/1/023/977.htm | 欧洲数据中心抗议蔓延——邻避效应成AI基建现实约束（延续11-08同主题） |
+| SJTU-AutoDNA-Nature | 2026-11-09 | https://www.ithome.com/1/024/001.htm | 上海交大AutoDNA登Nature：AI原生实验室协调25+仪器完成逾1.1万步生物实验——自主实验室扩展到分子生物学 |
+| ChinaMobile-Zhipu-Compute | 2026-11-09 | https://www.ithome.com/1/023/937.htm | 中国移动云与智谱签约国产算力+大模型服务——运营商国家队绑定头部大模型 |
+| Samsung-200T-KRW-Cash | 2026-11-09 | https://www.ithome.com/1/023/926.htm | 三星现金资产破200万亿韩元韩国首家——AI存储超级周期红利兑现 |
+| Ant-Lingguang-20M-Users | 2026-11-09 | https://www.ithome.com/1/024/010.htm | 蚂蚁灵光用户破2000万，2.0一周管理116万项事务（公司披露）——大厂个人Agent千万级数据 |
+| SMEE-New-Litho-Model | 2026-11-09 | https://www.ithome.com/1/023/924.htm | 上海微电子新一代光刻机模型亮相（展示口径）——国产前道光刻自主化观察点 |
+| ByteDance-Brazil-DC | 2026-11-09 | https://www.ithome.com/1/023/993.htm | 消息称字节扩大巴西数据中心——算力出海延至拉美 |
+| Tencent-Workbuddy-Refund | 2026-11-09 | https://www.ithome.com/1/024/025.htm | 腾讯Workbuddy就积分调整致歉、5折返还——模型聚合平台计费透明度争议 |
+| Deepfake-Exec-Scam-100M | 2026-11-09 | https://www.ithome.com/1/023/925.htm | 三人用AI冒充高管律师诈骗超1亿美元——deepfake商业诈骗亿美元级单案 |
+| Binance-CFO-Exit | 2026-11-09 | https://www.ithome.com/1/023/987.htm | 币安CFO在63亿美元比特币被盗之际离职——平台治理质疑 |
+| ClaudeCode-Engineer-Interview | 2026-11-09 | https://www.infoq.cn/article/Qs0pJ5M43c56hdozHiR0 | Claude Code离职工程师首谈"人才黑洞"——Agent编码竞争进入人才组织层面 |
+
 ## 2026-11-08
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -662,24 +688,3 @@
 | GF-7nm-FDSOI-2028 | 2026-10-10 | https://www.ithome.com/1/011/149.htm | 格罗方德目标2028年量产7nm级FD-SOI（公司称） |
 | Google-Gemini-4-Argon-Rumor | 2026-10-10 | https://www.ithome.com/1/011/162.htm | 消息称Gemini 4"Argon"临近发布、内部测试"Carbon"（传闻口径） |
 
-
-## 2026-10-09
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| Claude-Haiku-5-5-API-90pct-Price-Cut | 2026-10-09 | https://www.qbitai.com/2026/10/501832.html | Anthropic 16天内第三款Claude 5.5：Haiku 5.5 API价格较4.5低约90%（$0.10/$0.50档），对齐GPT-6 Luna定价——价格战蔓延小模型档，agent高频调用场景成新定价锚点（跑分为公司披露口径） |
-| OpenAI-ARR-50B-20B-Miss-Revenue-Downgrade | 2026-10-09 | https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/ | 据报OpenAI年化营收接近500亿美元，较约700亿预期低200亿（据报口径）——龙头收入预期首次百亿美元级下修，高估值+收入兑现放缓叙事裂缝显现 |
-| TSMC-Q3-Record-Revenue-39pct-Sept-54-6pct | 2026-10-09 | https://qz.com/tsmc-third-quarter-revenue-record-ai-chip-demand-100826 | 台积电Q3营收创纪录同比+39%，9月单月+54.6%——AI减速论未传导至代工最上游，10/15法说会盯2027资本开支与CoWoS指引 |
-| GlobalFoundries-TSMC-2B-US-Interposer-CoWoS | 2026-10-09 | https://www.stocktitan.net/news/GFS/global-foundries-reaches-agreement-to-establish-u-s-based-supply-of-7qwxjvp41ohm.html | 格芯×台积电五年20亿美元协议，纽约Malta厂扩产硅中介层——CoWoS关键部件首次美国本土生产，先进封装从独家产能演变为美日分工 |
-| OpenAI-719-Math-Proofs-Lean-Translation-Failure | 2026-10-09 | https://techcrunch.com/2026/10/08/openais-math-solutions-arent-meeting-the-fields-standards-yet/ | OpenAI发布719篇数学证明遭AGMAI/剑桥质疑：仅10篇公开思维链、42%未Lean形式化、证明与代码不一致；Tao批评无人负责——AI数学成果的形式化验证+责任归属成硬门槛 |
-| Google-Gemini-Agent-Enterprise-Workspace | 2026-10-09 | https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/ | Google向企业首推Gemini Agent（通用工作智能体），内置Workspace——agentic进入平台默认化阶段，分发入口对位ChatGPT插件商店 |
-| Waymo-5B-Blackstone-PIMCO-Robotaxi-Debt | 2026-10-09 | https://techcrunch.com/2026/10/08/waymo-locks-in-5b-loan-from-blackstone-pimco-to-fuel-robotaxi-expansion/ | Waymo获Blackstone/PIMCO 50亿美元贷款（赛道最大债务融资），扩张车队并进欧洲/日本——评估框架从技术里程碑切换到单位经济模型 |
-| Anthropic-Usage-Policy-No-Abusing-Claude-Election | 2026-10-09 | https://techcrunch.com/2026/10/08/anthropic-changes-usage-policy-to-ban-model-abuse-and-election-interference/ | Anthropic修订使用政策首次禁止"虐待Claude"及选举干预+开源项目免费安全扫描——AI人格化争议进入商业合同文本，IPO前合规加码 |
-| OpenAI-Fired-Safety-Researchers-Open-Letter-Chilling | 2026-10-09 | https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/ | 3名被解雇安全研究员发公开信反驳指控警告寒蝉效应——OpenAI内部安全监督张力公开化，与Anthropic同日安全动作形成对照 |
-| Manus-500M-Funding-Beijing-Office | 2026-10-09 | https://techxplore.com/news/2026-10-ai-startup-manus-million-meta.pdf | Manus获超5亿美元融资（博裕/IDG领投，估值目标40亿）并重启北京办公室大举招聘——Meta收购被中方叫停后"独立融资+回流国内"成出海Agent新路径 |
-| US-GreenCard-FastTrack-Excludes-MSFT-Adobe | 2026-10-09 | https://techcrunch.com/2026/10/08/us-bars-microsoft-adobe-and-major-it-firms-from-green-card-program-for-skilled-foreign-workers/ | 美国将微软/Adobe等大厂移出高技能外劳绿卡快速通道——AI人才移民杠杆收紧，或加速人才向非美雇主流动 |
-| LMArena-3-1B-Valuation-Double | 2026-10-09 | https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/ | LMArena估值10个月近翻倍至31亿美元——众测榜单成独立资本资产，评测入口争夺加剧 |
-| SpaceX-Mobile-Carrier-Spectrum-Acquisition | 2026-10-09 | https://www.theverge.com/science/1008467/spacex-announces-plan-to-become-a-major-mobile-carrier | SpaceX宣布收购低频段频谱转型主要移动运营商，三大电信股盘后跌超5%——星链从补网升级为直接竞争，频谱价值边界重定义 |
-| Trump-National-Medal-BigTech-Donors | 2026-10-09 | https://techcrunch.com/2026/10/08/president-trump-awards-big-tech-donors-with-nations-highest-sciences-prizes/ | 特朗普向科技巨头高管/捐款人颁发国家最高科学奖——科技资本与白宫绑定从政策协议升级到荣誉授予，自愿自律换绿灯的对价特征更明显 |
-| NY-AG-TikTok-Placebo-Safety-Feature | 2026-10-09 | https://techcrunch.com/2026/10/08/new-york-alleges-tiktok-gave-teens-children-a-placebo-safety-feature-instead-of-a-real-one/ | 纽约州AG起诉TikTok青少年安全功能是安慰剂——"说了但没做"的安全承诺成新诉讼靶点，AI功能合规进入实效验证阶段 |
-| Tsai-AI-Internet-In-5-Years-Alibaba | 2026-10-09 | https://www.ithome.com/1/010/763.htm | 蔡崇信：五年后AI将如互联网融入社会各环节——国庆后开工日定调基础设施化，为阿里AI资本开支做舆论铺垫 |
