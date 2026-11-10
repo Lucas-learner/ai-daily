@@ -1,5 +1,28 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-10
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| NVIDIA-Huang-Admits-Affair-Lawsuits | 2026-11-10 | https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang | 黄仁勋全员备忘录承认婚外情并道歉、英伟达内部调查；律所蜂拥发起股东集体诉讼、做空机构称六个月前已警示、退出ElevenLabs峰会——11-07国会听证事件线"承认+诉讼+政治化"四级跳 |
+| Anthropic-Fable-Mythos-5-2 | 2026-11-10 | https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fab | Anthropic发布Claude Fable 5.2/Mythos 5.2，官方称解出黑洞物理开放问题、30小时形式化证明费马大定理，Mythos仅向受审核组织开放——科研能力成旗舰模型竞争新战场 |
+| Anthropic-IPO-Date-Set | 2026-11-10 | https://www.ithome.com/1/024/576.htm | 消息称Anthropic定于11/12-13挂牌或成史上最大IPO，估值预期降至1万亿-1.25万亿美元（路透口径）——AI头号IPO定价博弈 |
+| Google-TPU-8tx-8iMax | 2026-11-10 | https://www.ithome.com/1/024/525.htm | 谷歌推TPU 8tx/8i Max对标英伟达，彭博预计TPU销售额2028年超1350亿美元、成本比英伟达GPU低约30%——云厂商自研芯片外售改写加速器市场 |
+| Waymo-NHTSA-SchoolBus | 2026-11-10 | https://techcrunch.com/2026/11/09/waymo-robotaxis-kept-illegally-passing-school- | NHTSA调查Waymo软件修复后仍违法超越校车，聚焦召回整改有效性——OTA修复不等于监管认可 |
+| DemCongress-AI-Regulation | 2026-11-10 | https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/ | 中期选举后民主党重掌国会，佩洛西继任者表态准备推动AI立法——联邦监管政治意愿增强但专业评估能力被掏空 |
+| Tencent-Hunyuan-Hy4-OpenSource | 2026-11-10 | https://www.qbitai.com/2026/11/507843.html | 腾讯混元开源Hy4，量子位实测称最强开源模型级别、Agent交付力突出——国产开源竞争转向真实任务闭环 |
+| HUMAIN-Infra-2.5B-SAR | 2026-11-10 | https://www.argaam.com/en/article/articledetail/id/1951857 | 沙特Infra与HUMAIN签最高25亿里亚尔融资支持AI算力与电力基建——主权资本"算力+电力"打包范式 |
+| Meta-Muse-Ember | 2026-11-10 | https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-mod | Meta超级智能实验室发布轻量模型Muse Ember，主打Agent高频任务与cost-per-task——执行层轻量模型成新战线 |
+| Meituan-LongCat-2.5 | 2026-11-10 | https://www.ithome.com/1/024/556.htm | 美团开源LongCat-2.5，官方称总参数1.6万亿、百万token上下文——国内最大规模开源模型之一 |
+| Baidu-ERNIE-Evolve-RSI | 2026-11-10 | https://www.qbitai.com/2026/11/508746.html | 百度披露自动研究系统ERNIE Evolve，官方称已用于文心5.5 Flash推理优化（含昆仑芯P800适配）——RSI从风险披露走向工程实践 |
+| Qwen-Office-2.0-TeamAgent | 2026-11-10 | https://www.qbitai.com/2026/11/508694.html | 阿里千问办公2.0，官方称首个多人与Agent协作Team Agent——国内Agent产品化走向多智能体协同 |
+| ClaudeCode-Secrets-Leak | 2026-11-10 | https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/ | Claude Code配置文件在GitHub公开仓库泄露数千密钥——AI工具链供应链安全风险 |
+| Meta-IG-Age-Estimation-Global | 2026-11-10 | https://techcrunch.com/2026/11/09/meta-expands-instagrams-ai-age-guessing-tech-globally/ | Meta全球推广Instagram AI年龄估算，成年用户也被估算并限制青少年模式——敏感数据实践扩至全球 |
+| Uber-SpotHero-Parking | 2026-11-10 | https://techcrunch.com/2026/11/09/uber-launches-parking-service-following-spothero-acquisition-with-an-eye-on-robotaxis/ | Uber收购SpotHero后上线停车预订服务，定位Robotaxi车队运营基础设施——向自动驾驶运营方转型 |
+| Tesla-Robotaxi-SanAntonio | 2026-11-10 | https://www.ithome.com/1/024/534.htm | 特斯拉Robotaxi落地圣安东尼奥，为迄今最大运营城市——商业化加速对照Waymo监管收紧 |
+| MITTR-DC-Backlash-Electricity | 2026-11-10 | https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity/ | MIT TR：数据中心反对浪潮实质是电力与电价焦虑，或使2027年1.4万亿美元AI基建支出缩水5-7%——电力成硬约束 |
+| OpenAI-ControlRoom | 2026-11-10 | https://openai.com/index/control-room | OpenAI披露Control Room统一追踪/中止研究基础设施模型工作负载——官方披露，模型治理工具对外公开 |
+
 ## 2026-11-09
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
