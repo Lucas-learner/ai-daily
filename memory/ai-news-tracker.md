@@ -1,5 +1,25 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-11
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Anthropic-IPO-Price-Range | 2026-11-11 | https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/ | Anthropic定价区间70-78美元/股、募资最高643.5亿、估值上限1.404万亿美元，挂牌推迟至约11/19（CNBC），披露10月底run-rate收入810亿、算力承诺9009亿——史上最大IPO定价冲刺 |
+| Anthropic-IPO-Strategic-Placement | 2026-11-11 | https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/ | Anthropic同步向AMD/博通/谷歌/美光/微软/英伟达/台积电私募配售260亿美元N类股，谷歌英伟达各100亿；七位创始人各套现约2.5亿美元——"客户+供应商+股东"三位一体结构成型 |
+| NVIDIA-Board-Probes-Huang | 2026-11-11 | https://www.cbsnews.com/news/nvidia-jensen-huang-stock-board-investigation-spy/ | 英伟达董事会聘前联邦检察官独立调查黄仁勋，股价单日跌4.3%、市值蒸发约1930亿美元，"无继任者"治理难题浮现——事件进入法律风险定价阶段 |
+| Gemini-4-Carbon-GA | 2026-11-11 | https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/ | 谷歌Gemini 4 Carbon全面开放API/AI Studio/Ultra订阅，定价$2/$10每百万token；MKA基准列第二、成本为第一名六分之一（官方称）——"发布即全量"+价格锚定 |
+| Gemini-Robotics-2-5 | 2026-11-11 | https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/ | DeepMind发布Gemini Robotics 2.5，官方称任务成功率提升30%-100%，奔驰产线分拣准确率96%，开源机器人越狱安全基准ASIMOV-Jailbreak——VLA进入产线实证 |
+| OpenAI-Businesses-ChatGPT | 2026-11-11 | https://openai.com/index/introducing-businesses-chatgpt | ChatGPT上线企业主页+认证Business Agent+广告位，资料→对话→广告→交易闭环成型——与Google搜索核心商业正面开战 |
+| NY-AI-Safety-Law-Effective | 2026-11-11 | https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/ | 纽约州AI安全法生效，OpenAI/Anthropic纳入州级安全监管框架，须履行安全评估与事件报告义务——州级监管拼图续成形 |
+| TSMC-Oct-Revenue-Record | 2026-11-11 | https://pr.tsmc.com/english/news/3349 | 台积电10月营收NT$5868.9亿创新高、同比+59.7%，归因AI芯片需求强劲（公司口径）——上游基本面未受英伟达风波动摇 |
+| MSFT-OpticalModule-Lobby | 2026-11-11 | https://www.ithome.com/1/025/218.htm | 微软游说特朗普政府放弃中国光模块进口禁令，担忧拖慢AI数据中心建设（路透）——供应链现实反向约束对华管制 |
+| GrokBuild-Data-Leak | 2026-11-11 | https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/ | xAI Grok Build编程agent泄露大量用户机密含SpaceX内部数据——编码Agent仓库级权限成新数据外泄面 |
+| Alibaba-Pingtouge-IPO | 2026-11-11 | https://www.leiphone.com/category/industrynews/dew7AYBxkGAYilZj.html | 阿里巴巴正式申请平头哥独立上市——大厂芯片分拆上市潮开启，国产AI芯片获独立融资通道 |
+| OpenAI-Odessia-Acquisition | 2026-11-11 | https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/ | OpenAI收购旅游初创Odessia（Sonder创始人创办）加码旅行智能体，金额未披露——并购补垂直场景能力 |
+| Claude-Meetings | 2026-11-11 | https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/ | Anthropic推出Claude Meetings将会议讨论转为计划与任务，紧贴IPO路演展示企业产品纵深 |
+| CoreWeave-Q3-Loss | 2026-11-11 | https://www.ithome.com/1/025/200.htm | CoreWeave前三季度归母净亏20.75亿美元同比扩大178.9%——GPU云租赁高增长高亏损模式接受实测 |
+| LingBot-Touch-OpenSource | 2026-11-11 | https://www.qbitai.com/2026/11/508996.html | 蚂蚁灵波开源触觉基础模型LingBot-Touch，官方称近5000小时触觉数据预训练、真机成功率提升14-26个百分点——触觉Token化补齐机器人感知闭环 |
+
 ## 2026-11-10
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
