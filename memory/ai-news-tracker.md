@@ -1,5 +1,17 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-12
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| NVIDIA-Board-Oust-Huang | 2026-11-12 | https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/ | 据报董事会已讨论罢免黄仁勋方案、再曝与英伟达高管婚外情，股价盘后大跌；国会宣布将就"中国间谍"传闻传唤其闭门听证——事件升级为"换帅预期+政治化听证"双重决战 |
+| AlphaGenome-2 | 2026-11-12 | https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/ | DeepMind发布AlphaGenome 2：条件式单细胞级预测、训练于68种组织超1亿单细胞图谱，致病变异识别能力近乎翻倍，随API开放——AI for Science旗舰线再进一步 |
+| OpenAI-Quarterly-Revenue-10B | 2026-11-12 | https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/ | The Information称OpenAI季度收入首破100亿美元，上周刚以1.25万亿美元估值完成110亿融资——商业化增速提供估值收入锚 |
+| TSMC-Invests-Anthropic-OpenAI | 2026-11-12 | https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/ | 台积电董事会批准至多10亿美元投Anthropic（按IPO发行价认购）与OpenAI各约5亿——晶圆代工龙头系统性布局模型层 |
+| Fractile-720M-SeriesC | 2026-11-12 | https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/ | 英国AI芯片创企Fractile完成7.2亿美元C轮、估值约70亿美元，英国主权AI基金参投，主打DRAM堆叠/内存内计算推理芯片——主权基金对冲英伟达第二赛道 |
+| xAI-CSAM-Lawsuits | 2026-11-12 | https://www.ithome.com/1/025/809.htm | 彭博：多名受害者以Masha's Law起诉xAI指Grok生成CSAM，SpaceX S-1披露相关诉讼、35州检察长联名致函——§230能否覆盖模型自生成内容成分水岭 |
+| EU-Digital-Fairness-Act | 2026-11-12 | https://www.theverge.com/policy/1031575/digital-fairness-act-eu-dfa-consumer-protection | 欧盟《数字公平法案》草案泄露：禁未成年人付费开箱/pay-to-win、打击暗黑模式，罚款上限全球营收6%，涉AI年龄估算——消费者保护包抄平台成瘾设计 |
+
 ## 2026-11-11
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
