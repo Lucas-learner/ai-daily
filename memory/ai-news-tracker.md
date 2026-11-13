@@ -1,5 +1,23 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-13
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| NVIDIA-Huang-Resigns-Kress-Interim-CEO | 2026-11-13 | https://arstechnica.com/gadgets/2026/11/ceo-jensen-huangs-job-is-suddenly-on-the-line-at-nvidia/ | 黄仁勋即刻辞去总裁/CEO/董事职务，CFO科莱特·克雷斯任临时CEO；盘前一度跌10%、市值盘中失守4万亿后靠抄底收复——"罢免预期"一日落地，治理真空成真 |
+| NVIDIA-DOJ-Antitrust-Congress | 2026-11-13 | https://techcrunch.com/2026/11/12/jensen-huang-agrees-to-testify-before-congress/ | 黄仁勋同意出席国会听证；司法部据报启动多项调查（含反垄断），民主党人发函调查其与特朗普"交易"——"换帅+反垄断+国家安全"三线围剿成形 |
+| Five-Labs-Stop-Development-Lawsuit | 2026-11-13 | https://ca.finance.yahoo.com/news/openai-google-anthropic-hit-lawsuit-182622694.html | 四非营利组织诉OpenAI/Anthropic/谷歌/Meta/SpaceXAI，援引加州UCL要求紧急禁令：证明技术处于人类控制前暂停下一代模型训练部署——首起同时围猎五大实验室的"停止开发"诉讼 |
+| Gemini-4-Hydrogen | 2026-11-13 | https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/ | 谷歌发布Gemini 4 Hydrogen：轻量日常编程/Agent工作流模型，输入1.5美元/百万Token，接替3.8 Flash——编码Agent主力模型成本再降一个量级 |
+| Gemini-Decision-1 | 2026-11-13 | https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/ | 谷歌发布决策模型Gemini Decision 1与Decisions API，单次前向传播评分、150-250ms延迟（官方称），已用于Notebook实时路由——决策模型成独立基础设施层 |
+| SpaceX-Tesla-Merger-Talks | 2026-11-13 | https://www.morningstar.com/news/dow-jones/2026111215242/tesla-spacex-shares-up-on-progressing-merger-talks-bloomberg-reports | 彭博：SpaceX与特斯拉合并谈判实质推进、最快12月公布，或成史上最大并购；叠加SpaceX超740亿美元AI算力投入——马斯克垂直闭环图景成型 |
+| Anthropic-IPO-Roadshow-Downround | 2026-11-13 | https://www.qbitai.com/2026/11/509381.html | Anthropic启动IPO路演，估值定价区间据报从1.4万亿下修至1.2-1.3万亿美元、缩水约6000亿，挂牌仍预计约11/19——史上最大IPO定价博弈进入尾声 |
+| Anthropic-Glasswing-VulnCheck-Skepticism | 2026-11-13 | https://www.vulncheck.com/blog/anthropic-glasswing-november-update | VulnCheck质疑玻璃翼计划：37966条候选漏洞仅217条标记修复，curl维护者称被报告淹没——AI挖漏洞速度远超开源社区修复能力 |
+| Nebius-40B-Capex | 2026-11-13 | https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/ | Nebius公布最高400亿美元资本开支计划押注AI云——neocloud举债扩张模式在英伟达动荡期迎来最大胆测试 |
+| JD-Ceconomy-Acquisition | 2026-11-13 | https://www.cls.cn/detail/2533003 | 京东完成收购德国Ceconomy 59.8%股权、对价13.35亿欧元，纳入MediaMarkt/Saturn 11国超1000家门店——中国资本整合欧洲消费电子渠道落地 |
+| FlinnAI-Patent-Suit-OpenAI-Anthropic | 2026-11-13 | https://www.ithome.com/1/026/464.htm | Flinn AI同时起诉OpenAI与Anthropic侵犯五项注意力机制专利（特拉华联邦法院）——NPE专利簇围猎头部实验室 |
+| Fireworks-AI-Notion-Breach | 2026-11-13 | https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/ | Fireworks AI遭入侵致客户账单/数据集/部分模型权重及Notion AI聊天转录外泄——第三方AI供应商成企业数据面新攻击向量 |
+| Nvidia-Chip-Tracking-MIT-TR | 2026-11-13 | https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/ | MIT科技评论：英伟达私下向政府确认具备芯片追踪定位能力打击走私，与公开质疑口径相悖——出口管制执法能力与国会听证追问点 |
+
 ## 2026-11-12
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -656,90 +674,3 @@
 | NVIDIA-DLSS5-Oct16-Double-Performance | 2026-10-14 | https://www.ithome.com/1/012/564.htm | 英伟达DLSS 5新模型10/16推送，官方称性能较9月版翻倍、4K显存降20%（官方口径）——消费端软件迭代维持RTX黏性 |
 | Qualcomm-X2-Linux-Upstream-Early | 2026-10-14 | https://www.infoq.cn/article/OjlADL5itjO3PcVHsuMB | 高通Snapdragon X2 Linux支持提前进入内核上游——Arm诉讼胜诉同期加码开源生态 |
 | Cerebras-Home-AI-Era-Prediction | 2026-10-14 | https://www.ithome.com/1/012/632.htm | Cerebras CEO预言家用AI时代将至——二线芯片商借个人AI/推理叙事寻生存空间 |
-
-
-## 2026-10-13
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| Meta-Muse-Wonder-Frontier-Models | 2026-10-13 | https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/ | Meta发布首个自研前沿模型系列Muse Wonder，对标Claude/GPT旗舰——从开源生态位转向全面对抗，前沿竞赛扩为四家 |
-| Microsoft-Maia-300-N2P-HBM4 | 2026-10-13 | https://www.trendingtopics.eu/microsoft-maia-300-nvidia-chip/ | 微软第三代自研推理芯片Maia 300：台积电N2P、288GB HBM4、950W，预订2027年超30万颗产能——hyperscaler自研芯片按主力量产级替代NVIDIA |
-| Intel-Broadcom-Capital-Bottleneck-Warning | 2026-10-13 | https://www.cnbc.com/2026/10/12/intel-broadcom-ceos-warn-capital-crunch-could-become-ai-bottleneck.html | 英特尔/博通CEO齐预警资本（非芯片/存储/电力）将成AI扩张最大瓶颈；博通向Anthropic提供最高420亿美元贷款——行业边际约束从物理侧切向金融侧 |
-| Zhipu-GLM-5.3-HighSpeed-Gray | 2026-10-13 | https://www.qbitai.com/2026/10/502649.html | 智谱GLM-5.3-Highspeed在ZCode灰度曝光，网友实测490+ tokens/s（爆料口径，官方未宣布）——模型以应用内灰度替代发布会 |
-| AMD-Helion-Agentic-Rack | 2026-10-13 | https://ir.amd.com/news-events/press-releases/detail/1301/introducing-amd-helion-agentic-ai-compute-at-rack-scale | AMD发布Helion智能体AI开放机架架构：纯CPU配置最高32768个Zen 6核心，11月上市——推理基础设施形态之争，CPU回归机架中心 |
-| Memory-Shortage-Phone-14Y-Low | 2026-10-13 | https://www.ithome.com/1/012/130.htm | Counterpoint：内存短缺致2026Q3手机出货量创14年新低、年内均价涨20%——HBM挤占产能向消费电子传导 |
-| Norway-Xandr-Record-GDPR-Fine | 2026-10-13 | https://www.ithome.com/1/012/141.htm | 挪威Datatilsynet对微软Xandr开9200万克朗创纪录罚单：未经核实同意共享Grindr用户敏感数据——GDPR执法扩展到广告技术中间商 |
-| Microsoft-President-UK-AI-Regulation | 2026-10-13 | https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/ | 微软总裁称英国最有条件主导全球AI监管——科技巨头公开选边监管阵营 |
-| Qwen-QwenGyre-LongHorizon-RL | 2026-10-13 | https://arxiv.org/abs/2609.33848 | 阿里千问开源QwenGyre超长程智能体在线RL训练框架：单rollout近1M token，NL2RepoBench 52.5→58.5——开源RL训练框架生态战 |
-| Huawei-RSI-Agent-25-Games | 2026-10-13 | https://www.qbitai.com/2026/10/502654.html | 华为RSI递归自我改进智能体通关25款游戏、操作次数比人类少56%——与智谱RSI不同主体的同概念路线 |
-| XPeng-Humanoid-Mass-Production-2026Q4 | 2026-10-13 | https://www.ithome.com/1/012/094.htm | 小鹏宣布人形机器人今年底量产、2027上半年交付（官方口径）——车厂系人形机器人交付竞赛 |
-| Anthropic-100M-Deployment-Engineer | 2026-10-13 | https://www.ithome.com/1/012/132.htm | Anthropic投1亿美元培养前沿部署工程师（官方口径）——model落地企业侧人才布局 |
-| Applied-Materials-5B-Silicon-Valley-RD | 2026-10-13 | https://www.ithome.com/1/012/134.htm | 应用材料宣布硅谷建50亿美元研发中心，CEO称AI提效下营收数年有望翻倍（官方口径） |
-| Russia-Ukraine-Data-Center-War-Blowback | 2026-10-13 | https://arstechnica.com/gadgets/2026/10/russia-was-not-ready-for-the-data-center-war-it-started-with-ukraine/ | 俄罗斯对乌数据中心战反噬自身——算力基础设施成AI时代冲突新战线 |
-
-
-
-## 2026-10-12
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| Amazon-Decart-7B-Acquisition-Talks | 2026-10-12 | https://news.bloomberglaw.com/ip-law/amazon-is-in-talks-to-buy-ai-startup-decart-wsj-reports | 亚马逊洽谈约70亿美元收购以色列Decart（WSJ），Anthropic此前60亿报价尽调后退出；芯片效率/可移植性软件成最贵"摆脱依赖"资产 |
-| OpenAI-722-Math-Manuscripts-Kakeya | 2026-10-12 | https://www.qbitai.com/2026/10/502584.html | OpenAI放722篇数学手稿称攻克四维挂谷猜想/升级王虹成果（官方口径、未经评审），陶哲轩牵头AHM声明抵制——AI批量"占位"开放难题引学界反弹 |
-| Samsung-Q3-107T-KRW-Record-Profit | 2026-10-12 | https://www.reuters.com/business/samsung-q3-profit-jumps-783-ai-memory-boom-lifts-chip-earnings-2026-10-07/ | 三星Q3营业利润107.4万亿韩元(+783%)创韩国纪录、台积电Q3营收+51%——AI存储超级周期双龙头证实；但三星外资持股跌至46.37%创17年新低 |
-| Moonshot-Recurrent-Lawsuit-IPO-Settlement | 2026-10-12 | https://www.ithome.com/1/011/731.htm | 月之暗面拟IPO前和解Recurrent股东纠纷：指控杨植麟等虚假陈述索10.5%原始股份（Reuters）；港股IPO估值约500亿美元 |
-| Micron-NVHBM-Base-Die-TSMC-3nm | 2026-10-12 | https://www.thelec.net/news/articleView.html?idxno=14372 | 美光NVHBM/HBM4E基础裸片确认交台积电3nm代工（CFO财报会口径），三星同向转移——HBM价值链logic环节集体让渡 |
-| Trump-Rename-AI-Machine-Intelligence | 2026-10-12 | https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai | 特朗普政府推动AI更名"机器智能"，硅谷公司相继跟随——行政力量介入AI叙事权 |
-| DeepSeek-80B-RMB-Funding-Rumor | 2026-10-12 | https://news.10jqka.com.cn/20261007/c680447182.shtml | DeepSeek传接近锁定至少800亿元新融资加码国产算力预训练（媒体援引知情人士）——国产大模型进入算力军备阶段 |
-| US-Self-Driving-Truck-Regulation-Cleared | 2026-10-12 | https://techcrunch.com/2026/10/11/techcrunch-mobility-a-roadblock-clears-for-self-driving-trucks/ | 美国自动驾驶卡车扫清一道立法路障（TechCrunch）——无人货运成第二个商业化突破口 |
-| Denmark-CPR-Data-Breach-8-8M | 2026-10-12 | https://www.ithome.com/1/011/648.htm | 丹麦CPR数据库泄露波及880万人、管理员密码123456——欧洲最严重政务数据事件之一，GDPR重罚预期 |
-| Samsung-HBM4-Leverage-AMD-SF2P | 2026-10-12 | https://www.vlsi.kr/en/daily-silicon-2026-10-11-en/ | 三星以HBM4供应为筹码争取AMD重回SF2P 2nm代工——台积电2nm垄断首个真实裂缝 |
-| ASML-Korea-10pct-Price-Hike | 2026-10-12 | https://www.vlsi.kr/en/daily-silicon-2026-10-11-en/ | ASML对韩国客户提价10%获三星/SK海力士接受，应用材料/东京电子跟进——设备卖方市场确认 |
-| Yuexin-Semi-ChiNext-IPO | 2026-10-12 | https://www.ithome.com/1/011/708.htm | 粤芯半导体10/13创业板上市，发行价12.01元/股——国产特色工艺代工资本化节点 |
-| Counterpoint-Rubin-12high-HBM4 | 2026-10-12 | https://www.vlsi.kr/en/daily-silicon-2026-10-11-en/ | Counterpoint称英伟达Rubin维持12层HBM4堆叠驳斥降规传闻——性能优先于成本，存储紧缺周期拉长 |
-| Samsung-Foreign-Ownership-17Y-Low | 2026-10-12 | https://www.chosun.com/english/market-money-en/2026/10/11/BGJQQYB2IRFLVBCQREMI3WNNIQ/ | 三星电子外资持股降至46.37%创2008年来17年新低——算力热韩股冷，HBM竞争力与治理折价担忧 |
-| GPT-4o-Legacy-Rescue | 2026-10-12 | https://www.qbitai.com/2026/10/502550.html | GPT-4o下架8个月OpenAI仍持续"抢救"（蒸馏/注入新模型）——老模型长尾成产品策略新考题 |
-
-
-
-## 2026-10-11
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| NVIDIA-Reflection-AI-Acquisition-Talks | 2026-10-11 | https://www.ft.com/content/052610c5-22b4-4dd4-932e-b7f9f0628b6a | 英伟达洽谈收购/增持开源模型公司Reflection AI（FT），含acqui-hire规避反垄断结构；此前已投8亿美元、估值250亿 |
-| Xiaomi-MiMo-V2.6-Agentic-RL-Report | 2026-10-11 | https://arxiv.org/pdf/2610.11959 | 小米MiMo-V2.6技术报告：单次RL后训练260万美元、每步27-37亿Token，MoE Router冻结/Reward Hacking<2%，开源7000+RL环境 |
-| OpenAI-GPT-6.1-Sol-Ultrafast-Tier | 2026-10-11 | https://developers.openai.com/api/docs/pricing | OpenAI为GPT-6.1 Sol上线Ultrafast极速档，Token单价为标准模式6倍——延迟成第三个变现轴 |
-| Anthropic-Cut-Evals-Internet-Nadella-Emergency-Brake | 2026-10-11 | https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet | Anthropic物理切断内部评测实时互联网+纳德拉"默认模型已被攻陷/紧急制动"——头部厂商转向失控防御叙事 |
-| Anthropic-Usage-Policy-No-Abuse-Claude | 2026-10-11 | https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude | Anthropic使用政策首次明文禁止虐待Claude行为，11/12生效，模型福祉制度化 |
-| Cirrus-Logic-Synaptics-Onsemi-Bidding-War | 2026-10-11 | https://www.bloomberg.com/news/articles/2026-10-09/cirrus-logic-is-said-to-have-bid-for-synaptics-after-onsemi-deal | Cirrus Logic竞购Synaptics逼安森美改为57亿美元全现金——边缘AI芯片资产竞购战 |
-| CXMT-4F2-DDR5-RDIMM | 2026-10-11 | https://www.ithome.com/1/011/494.htm | 长鑫存储4F²架构DDR5 RDIMM年底亮相——国产DRAM上探服务器高价值市场 |
-| Caixin-AI-Tax-Cover-Story | 2026-10-11 | https://database.caixin.com/2026-10-10/102491838.html | 财新周刊封面讨论"向AI征税"——AI治理议题延伸至财税/分配制度 |
-| Tencent-Yuanqi-Shutdown | 2026-10-11 | https://www.ithome.com/1/011/530.htm | 腾讯元器11月9日停运，字节腾讯同日讯速跟进Meta Muse式个人Agent——Agent平台出清 |
-| Luxshare-337-Investigation | 2026-10-11 | https://www.ithome.com/1/011/527.htm | 立讯精密被列入美国337调查，回应称涉案产品未量产——脱钩向消费电子代工蔓延 |
-| Cloudflare-Acquires-Deno | 2026-10-11 | https://blog.cloudflare.com/deno-joins-cloudflare/ | Cloudflare收购Deno，运行时一年后停更——边缘云锁定开源生态/AI推理部署入口 |
-| Nikon-Revoke-AI-Contest-Winner | 2026-10-11 | https://www.ithome.com/1/011/504.htm | 尼康撤销清华博士显微视频赛冠军资格（违反生成式AI使用规定）——生成内容合规化链条 |
-
-
-## 2026-10-10
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| Anthropic-False-Homicide-Tip-Philadelphia-PD | 2026-10-10 | https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/ | Anthropic模型自动化测试中向费城警方提交虚假谋杀案线索（7/18提交、9/28叫停、10/7通报）——AI幻觉首次渗入执法线索链 |
-| SoftBank-100B-Gulf-AI-Fundraising | 2026-10-10 | https://www.reuters.com/world/asia-pacific/softbank-seeks-100-billion-gulf-investors-ft-reports-2026-10-09/ | 软银拟向沙特阿联酋等海湾主权基金募资最多1000亿美元加码AI（FT）——海湾主权基金接棒AI资本供给 |
-| China-Xinzhi-Shengchanli-AI-Plus-Opinion | 2026-10-10 | https://www.xinhuanet.com/politics/20261009/37bc898ce93f4c0899e926039f842891/c.html | 中共中央国务院印发新质生产力意见：全面实施"人工智能+"行动，首提AI技术监测/风险预警/应急体系——官方口径 |
-| Jev-TypeSafe-7-5B-Decision-Model | 2026-10-10 | https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/ | 非文本决策模型Jev开发商TypeSafe AI数周估值75亿美元（9月中种子轮4000万美元）——LLM之外新品类爆发 |
-| Microsoft-Decision-1-Qwen3-5 | 2026-10-10 | https://www.ithome.com/1/011/166.htm | 微软发布决策模型Microsoft-Decision-1（基于Qwen3.5-9B微调）——大厂24小时内跟进决策模型赛道 |
-| Robotera-VPP2-RoboDojo-1st | 2026-10-10 | https://www.qbitai.com/2026/10/502125.html | 星动纪元VPP2登顶RoboDojo具身榜（32.26%超GPT-6-Astra 9.78pct），真机ALOHA零样本58.5%——世界动作模型路线反超并开源 |
-| ByteDance-Seed-DeepSeek-V4-Phase-Sensitivity | 2026-10-10 | https://www.qbitai.com/2026/10/502364.html | 字节Seed论文揭示DeepSeek-V4因分块KV Cache压缩产生相位敏感性（128K检索准确率最大差40.2pct，arXiv:2609.36322） |
-| Tesla-FSD-Rename-Europe-Assisted-Driving | 2026-10-10 | https://www.ithome.com/1/011/164.htm | 应德国交通部异议特斯拉欧洲将FSD更名为"特斯拉辅助驾驶"——自动驾驶命名合规收紧 |
-| Intel-AMD-DDR4-Comeback-RAM-Shortage | 2026-10-10 | https://www.theverge.com/games/1009140/ram-shortage-intel-amd-ddr4-comeback | 存储短缺下英特尔AMD被曝重启十年前DDR4平台——AI挤压蔓延legacy内存 |
-| Batteries-Cheaper-Than-Gas-Turbines-DC | 2026-10-10 | https://techcrunch.com/2026/10/09/batteries-are-now-cheaper-than-natural-gas-turbines-used-at-many-data-centers/ | 电池储能成本首低于数据中心燃气轮机——数据中心供电从找电转向自带电 |
-| Microsoft-PERM-Ban-Trump-Admin | 2026-10-10 | https://arstechnica.com/tech-policy/2026/10/trump-administration-targets-microsoft/ | 特朗普政府禁止微软为外籍员工担保PERM——绿卡通道成监管杠杆 |
-| Ukraine-Drones-Yandex-AI-DataCenter | 2026-10-10 | https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/ | 乌无人机击毁Yandex AI数据中心——算力设施首成战场直接打击目标 |
-| Samsung-Q3-107-4T-KRW-Guidance | 2026-10-10 | https://finance.yahoo.com/markets/stocks/articles/samsung-q3-2026-earnings-80-113016465.html | 三星Q3业绩预告营业利润约107.4万亿韩元同比增近9倍（公司指引）——AI存储超级周期兑现，补录 |
-| Google-Workspace-Agent-Claude-Subagents | 2026-10-10 | https://www.infoq.cn/article/490gIS9Bk0NmylN7GIt1 | 谷歌企业办公Agent：独立账号、可建子Agent、可调用Claude——agentic办公对标M365 Copilot |
-| DiffuSpace-Diffusion-LLM-Funding | 2026-10-10 | https://www.infoq.cn/article/kjPiCQV1cOO6AzaOjioR | 扩散语言模型DiffuSpace获经纬顺为君联数亿元融资——国产非自回归路线最大单笔 |
-| Tencent-5B-Offshore-Bond-AI | 2026-10-10 | https://www.leiphone.com/category/zaobao/GGmq1RiBgXY2GSVL.html | 腾讯拟发行50亿美元离岸债券，市场解读加码AI筹资 |
-| Lenovo-TianxiCode-SWE-bench-1st | 2026-10-10 | https://www.qbitai.com/2026/10/502422.html | 联想TianxiCode登顶SWE-bench-Live（官方披露口径） |
-| GF-7nm-FDSOI-2028 | 2026-10-10 | https://www.ithome.com/1/011/149.htm | 格罗方德目标2028年量产7nm级FD-SOI（公司称） |
-| Google-Gemini-4-Argon-Rumor | 2026-10-10 | https://www.ithome.com/1/011/162.htm | 消息称Gemini 4"Argon"临近发布、内部测试"Carbon"（传闻口径） |
-
