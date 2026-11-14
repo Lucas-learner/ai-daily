@@ -1,5 +1,25 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-14
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| OpenAI-ChatGPT-Wallet-Agent-Payments | 2026-11-14 | https://openai.com/index/introducing-chatgpt-wallet | OpenAI推出ChatGPT Wallet：智能体Dots可代用户比价、挑选、下单并完成支付，从对话入口迈向交易入口——Agent经济闭环最后一公里 |
+| Export-Banned-Nvidia-China-Models | 2026-11-14 | https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/ | TechCrunch：出口受限英伟达芯片仍大量支撑中国最强AI模型训练——芯片追踪能力与国会听证共同焦点 |
+| NVIDIA-CEO-Search-Haas-Clarification | 2026-11-14 | https://www.ithome.com/1/026/998.htm | 英伟达董事会澄清未选猎头/未接触候选人；路透：Arm CEO哈斯进入接班候选视野；韩国确认26万块GPU供应不受影响——选帅空窗期外部名单发酵 |
+| Anthropic-IPO-Pricing-Week-Nvidia-Spillover | 2026-11-14 | https://www.ithome.com/1/026/965.htm | Anthropic 11/18定价、19挂牌（每股70-78美元、最高募644亿美元），英伟达换帅震荡叠加定价簿记窗口——AI板块恐慌/贪婪指数进入读数时刻 |
+| OpenAI-Embodied-AI-Restructure | 2026-11-14 | https://www.ithome.com/1/027/004.htm | OpenAI重组具身智能团队，目标让GPT-6 Astra级通用模型直接当机器人大脑——VLA路线资源向基础模型厂集中 |
+| Microsoft-Global-Outage-AI-Chain | 2026-11-14 | https://techcrunch.com/2026/11/13/microsoft-latest-email-outage-turned-into-a-full-blown-global-cloud-crisis/ | 微软服务器健康检查故障致全球M365/云大规模中断，确认为非攻击；Anthropic承认Claude受波及——云单点故障沿AI应用链传导 |
+| DeepSeek-Fullstack-App-API | 2026-11-14 | https://www.ithome.com/1/026/960.htm | DeepSeek发布全家桶应用API，开发者可1:1复刻完整DeepSeek App（对话/搜索/文件解析）——以模型能力溢出换应用生态份额 |
+| LangChain-3B-Valuation | 2026-11-14 | https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/ | LangChain估值达30亿美元——Agent基础设施层估值持续膨胀 |
+| Nvidia-Turmoil-AI-Funding-Hole | 2026-11-14 | https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/ | VC与创始人称黄仁勋辞职在AI创投圈炸开融资缺口，GPU采购信用重估——英伟达系投资节奏成悬念 |
+| SpaceXAI-Grok-Imagine-Layoffs | 2026-11-14 | https://www.ithome.com/1/026/961.htm | SpaceXAI资源向AI编程工具与Grok Bot倾斜，裁减约60名Grok Imagine员工——生成线让位于编程/对话入口 |
+| TSMC-500M-VC-Fund | 2026-11-14 | https://www.ithome.com/1/026/953.htm | 台积电拟设5亿美元创投基金寻找下一个英伟达——代工巨头下场生态投资 |
+| China-Robots-Through-Wall-Coop | 2026-11-14 | https://www.qbitai.com/2026/11/509614.html | 中国机器人学会实现多机器人隔墙协作、成功率0→100%——非视距多机协同向集群实用化迈进 |
+| Unbounded-Fx-Bio-1031-OpenSource | 2026-11-14 | https://www.qbitai.com/2026/11/509663.html | 无界前沿开源Fx-Bio-1031，官方称高难度盲测超越GPT-6-Astra与Opus-5，RSI方法进入生命科学——待第三方复测 |
+| Kirin-9050-Lingxi-CPU | 2026-11-14 | https://www.ithome.com/1/026/993.htm | 华为麒麟9050灵犀CPU详情公开：9核16线程、支持内存压缩加速——国产旗舰微架构持续披露 |
+| Korea-Anti-AI-Cheating-Radio | 2026-11-14 | https://www.ithome.com/1/026/958.htm | 韩国拟采购无线电探测设备防国家资格考试AI作弊——AI作弊升级为国家考试安全议题 |
+
 ## 2026-11-13
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
