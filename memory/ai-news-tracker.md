@@ -1,5 +1,21 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-15
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| DeepSeek-Fullstack-App-API | 2026-11-15 | https://www.qbitai.com/2026/11/510003.html | DeepSeek开放全家桶应用API：Search/Fetch/OCR/ASR/TTS独立计费，语音五折（ASR 0.39元/小时），官方称可1:1复刻DeepSeek App并开源前端Demo——放弃自营超级应用、争夺AI应用底座定价权 |
+| Nvidia-Reinstate-Petition-120k | 2026-11-15 | https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/ | 要求恢复黄仁勋职务的请愿超12万人（含5965名在职员工、6.3万股东），马斯克/Sweeney/Garry Tan联署；副总裁Catanzaro表态支持董事会与临时CEO克雷斯——治理危机进入员工股东公开施压的拉锯阶段 |
+| SPU-Wetlab-Prediction-Benchmark | 2026-11-15 | https://www.qbitai.com/2026/11/510232.html | UniPat AI牵头湿实验预测基准SPU：116任务4207实验，Opus 5.5最高仅0.486分；GPT-6 Astra推理拉满成本翻5.3倍得分几乎不变——堆推理算力≠科研判断更好 |
+| White-House-Superintelligence-Workgroup-Liability | 2026-11-15 | https://www.ithome.com/1/027/229.htm | 白宫超级智能工作组建议12个月内限制AI企业安全事件监管责任、鼓励主动报告，立场从处罚威慑转向豁免换透明——美国AI安全治理路线转向 |
+| Cursor-Malicious-Claude-Code-Ext | 2026-11-15 | https://www.ithome.com/1/027/215.htm | Cursor披露安全事件调查：恶意Claude Code扩展最多波及5000用户——AI编程工具扩展生态成供应链攻击新面 |
+| Tesla-Cybercab-Personal-Preorder | 2026-11-15 | https://techcrunch.com/2026/11/14/tesla-opens-cybercab-pre-orders-for-personal-use-with-geo-restrictions-and-a-299-monthly-fee/ | Tesla Cybercab开放个人预购：月费299美元+地理围栏限制——Robotaxi订阅制商业化试水 |
+| Meta-Italy-GDPR-805M-Fine | 2026-11-15 | https://www.ithome.com/1/027/227.htm | Meta因Facebook擅自读取意大利用户相册被罚8.05亿欧元——欧洲数据监管对头部平台持续高压 |
+| Mercury-Research-AMD-Q3-Share-Drop | 2026-11-15 | https://www.ithome.com/1/027/185.htm | Mercury Research：AMD Q3桌面CPU份额跌破30%，Intel收复失地——消费端CPU格局阶段性 reversal |
+| Huada-Jiutian-EDA-Xinyusi | 2026-11-15 | https://www.ithome.com/1/027/230.htm | 华大九天联合大湾区基金完成国产数字前端EDA整合，新公司新禹思成立——国产EDA从点工具走向整合 |
+| Kirin-9050-Maliang-GPU | 2026-11-15 | https://www.ithome.com/1/027/181.htm | 麒麟9050新马良GPU公开：二代硬件光追、2亿像素融合拍照——国产SoC图形影像IP迭代 |
+| Cloudflare-Kitesurf-Agent-Browser | 2026-11-15 | https://www.ithome.com/1/027/197.htm | Cloudflare开源AI智能体浏览器Kitesurf，资源消耗低于Chromium——Agent基础设施轻量化开源选项 |
+
 ## 2026-11-14
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
