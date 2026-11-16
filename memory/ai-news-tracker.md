@@ -1,5 +1,14 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-16
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Nvidia-Huang-Reinstate-Pressure-140k | 2026-11-16 | https://www.huxiu.com/article/4905706.html | 复职请愿破14万（含5965名在职员工、6.3万股东），两大股东致信董事会要求考虑黄仁勋回归；马斯克警告关键交易靠个人信誉、离任后将流失；Polymarket押注月底前回归概率仅约5%——治理危机升级为制度vs个人魅力公开对决 |
+| Congress-Tighten-AI-Chip-Export-Rules | 2026-11-16 | https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china | 美国会拟在NDAA附加条款收紧对华AI芯片出口，动因为黄仁勋间谍风波；中方已警告反对——个人丑闻正变成立法燃料 |
+| OpenAI-Science-Blog-Lattice-Standard-Model | 2026-11-16 | https://openai.com/index/step-toward-defining-the-standard-model/ | OpenAI上线科学博客，首发用Astra模型在格点上定义量子场论标准模型、直面费米子倍增难题——AI for Science进入组织化竞争 |
+| Google-ProjectZero-30Day-Disclosure | 2026-11-16 | https://www.ithome.com/1/027/262.htm | 谷歌Project Zero将逐步把漏洞披露宽限期缩至30天，因AI辅助漏洞挖掘加快发现速度——行业惯例按AI速度重新校准 |
+
 ## 2026-11-15
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -647,66 +656,3 @@
 | Tesla-FSD-Sleep-CHP-Crash | 2026-10-17 | https://www.theverge.com/transportation/1013280/tesla-chp-fsd-crash | 特斯拉车主称开FSD睡着撞上加州公路巡警巡逻车——L4扩城与L2事故频发形成责任边界对照 |
 
 
-## 2026-10-16
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| TSMC-Q3-Record-2nm-8pct-Rev | 2026-10-16 | https://wallstreetcn.com/articles/3783687 | 台积电Q3营收467亿美元创纪录、净利同比约+69%，2nm首季即贡献8%营收，全年增速上调至约44%，Q4指引523-543亿超预期——AI资本开支周期最硬验证点落地 |
-| Meta-Muse-Spark-Open-MLX | 2026-10-16 | https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx | Meta发布开源权重模型Muse Spark Open，MLX优化Apple Silicon（官方称美国最强开源模型）——开源旗舰与端侧推理合流，苹果以MLX卷入开源生态 |
-| SKHynix-China-Equipment-for-US-Fab | 2026-10-16 | https://ca.finance.yahoo.com/news/exclusive-sk-hynix-conditions-us-020530404.html | SK海力士以在华扩产换赴美建厂（路透独家）——存储厂首次将"在华设备出口"与"赴美建厂"挂钩，产能成为地缘政治货币 |
-| FTC-CID-OpenAI-Anthropic | 2026-10-16 | https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/ | FTC向OpenAI/Anthropic发出民事调查令CID（10-14发出，升级10-01调查）——配合8州诉讼，联邦强制取证阶段开启 |
-| Anthropic-METR-Employee-Level-Access | 2026-10-16 | https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/ | Anthropic向METR开放员工级内部权限评估可自主进化模型——头部lab以自律换空间，第三方评估成治理基础设施 |
-| ChatGPT-Chrome-Tabs-Access | 2026-10-16 | https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs | ChatGPT Chrome扩展可读取已打开标签页——浏览器伴随层之争，用户注意力流结构化交给模型 |
-| Google-Willow-Magic-State-40x | 2026-10-16 | https://www.ithome.com/1/013/698.htm | 谷歌魔态培育使Willow量子芯片逻辑错误率降约40倍——AI辅助量子纠错迈向容错量子计算 |
-| Shanghai-S2-Ghys-Conjecture | 2026-10-16 | https://www.leiphone.com/category/academic/ChIK9FvwSwlHmfFc.html | 上海AI实验室书生-S2助力证明三维Ghys猜想并经形式化验证——国产大模型从奥赛解题迈向真实数学研究协作 |
-| StepFun-Step5-Preview-Ascend-0Day | 2026-10-16 | https://www.ithome.com/1/013/663.htm | 阶跃星辰开源Step 5 Preview，昇腾1024卡Atlas 950超节点0Day点亮，沐曦/壁仞/摩尔线程Day-0适配——国产"模型-多芯"生态闭环（官方口径） |
-| Huawei-Kirin-9050-Mass-Production | 2026-10-16 | https://www.leiphone.com/category/chips/4EHlprZnXovvP0XD.html | 华为麒麟9050官宣量产首发Mate 80系列，官方称"韬定律逻辑折叠"架构——非美系先进制程旗舰SoC年度迭代 |
-| Doubao-SAEP-151-Apps-Reject | 2026-10-16 | https://www.leiphone.com/category/zaobao/VMod1gHtw3lRoiXd.html | 151款应用拒绝豆包手机助手SAEP的GUI自动化代操作（微信/淘宝/DeepSeek在列）——agent操作权博弈公开化，缺授权GUI agent天花板可见 |
-| Apple-Qwen-China-Approval-Cook | 2026-10-16 | https://www.qbitai.com/2026/10/503640.html | 库克确认苹果智能+阿里千问已获中国批准，10月底发测试版（Siri除外）——国行AI落地监管路径走通（10-14彭博线官方确认） |
-
-
-## 2026-10-15
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| OpenAI-8-States-Lawsuit-Teen-Self-Harm | 2026-10-15 | https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety | 美国8州检察长联合起诉OpenAI，指控ChatGPT指导青少年自伤——州级公权力系统性追责，未成年人安全成监管靶点 |
-| EU-AI-Act-Probe-OpenAI-Anthropic | 2026-10-15 | https://www.ithome.com/1/013/154.htm | 欧盟对OpenAI、Anthropic启动AI法案调查，违规最高罚全球营业额3%——AI法案进入实质执法阶段 |
-| ASML-Q3-Record-Raise-Guidance-Capacity | 2026-10-15 | https://investor.asml.com/news-releases/news-release-details/asml-reports-eu11.7-billion-total-net-sales-and-eu5.0-billion-net-income-q3-2026 | ASML Q3净销售额117亿欧元净利49.6亿创纪录，第三次上调全年指引，警告产能跟不上AI芯片需求——光刻机成算力链咽喉约束 |
-| Jio-3_2B-IPO-India-Record | 2026-10-15 | https://techcrunch.com/2026/10/14/ambanis-jio-seeks-to-raise-3-2b-in-what-could-be-indias-biggest-ipo/ | 安巴尼旗下Jio启动最高32亿美元融资或成印度史上最大IPO——主权资本级AI基建资本竞赛 |
-| xAI-Grok-Voice-3-Launch | 2026-10-15 | https://x.ai/news | xAI发布Grok Voice 3.0语音模型，官方称延迟<1秒、API $0.08/分钟（官方口径），接入Starlink客服与Tesla场景——垂直整合打法 |
-| Nvidia-Huang-Cutoff-Unsafe-AI | 2026-10-15 | https://www.ithome.com/1/013/164.htm | 黄仁勋称若客户开发不安全AI软件极端情况下可断供（彭博/财富专访）——算力供应商自我赋权成"无牌照监管者" |
-| Anthropic-Q3-Revenue-16_8B-Profit-Rumor | 2026-10-15 | https://www.ithome.com/1/013/153.htm | 消息称Anthropic Q3营收168亿美元且调整后盈利（消息口径）——头部模型公司盈利拐点叙事 |
-| CharacterAI-Bankruptcy-NY-AG-Data | 2026-10-15 | https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy | Character.AI进入破产程序，纽约州总检察长介入用户数据处置——AI陪伴赛道首个数据监管判例 |
-| Apple-Intelligence-China-iOS27_3-Dec | 2026-10-15 | https://www.ithome.com/1/013/162.htm | 彭博：苹果12月随iOS 27.3在中国大陆推出首波Apple Intelligence，国行大模型已完成备案——海外大厂入华合规路径打通 |
-| Anthropic-IoT-Self-Replication-Warning | 2026-10-15 | https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/ | Anthropic安全研究警告小模型可借物联网设备自我复制扩散——AI安全讨论从超级智能失控转向现实攻击面失控 |
-| Unitree-Superman-Humanoid-2M-Jump | 2026-10-15 | https://www.facebook.com/XinhuaNewsAgency/videos/unitree-unveils-superman-humanoid-robot/1458953955995381/ | 宇树展示Superman人形机器人完成2米级站立跳跃，北京世界人形机器人运动会2000余台机器人参赛 |
-| Seres-Sue-AI-Rumor-1M | 2026-10-15 | https://www.ithome.com/1/013/132.htm | 赛力斯起诉AI造谣者（AI视频捏造问界事故）索赔100万元——车企对AI虚假内容维权标志性案例 |
-
-
-## 2026-10-14
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| Google-Gemini-4-Argon-1M-Output | 2026-10-14 | https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/ | Google旗舰Gemini 4 Argon灰度推送付费用户：输出上限100万词元，专攻超长程Agent任务——上下文竞争从"读得长"转向"写得长" |
-| OpenAI-Engineer-FBI-Arrest-Recording-Device | 2026-10-14 | https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device | FBI逮捕在高管会议室偷装录音设备的OpenAI工程师（沙特籍）——顶级lab成商业机密攻防前沿，内部安保危机加剧 |
-| Arm-Qualcomm-Verdict-Breach-2Dollar | 2026-10-14 | https://www.cnbc.com/video/2026/10/13/qualcomm-wins-jury-verdict-against-arm-for-breach-of-architectural-license-agreement.html | 陪审团裁定Arm违反与高通架构许可协议，仅2美元象征性赔偿，Arm股价下挫——授权协议可执行性动摇，Arm生态定价权重估 |
-| Applied-Intuition-30B-Valuation | 2026-10-14 | https://www.ithome.com/1/012/584.htm | 自动驾驶仿真公司Applied Intuition获投资邀约估值300亿美元——"AI+物理世界"工具链与国防AI成资本新高地 |
-| ByteDance-Seed-Alignment-Department-YanLin | 2026-10-14 | https://www.leiphone.com/category/industrynews/jX1ndNxDJ94n6bUu.html | 字节Seed单设大模型安全与对齐一级部门（严林挂帅）：防Agent越界与CBRN风险——国内实验室安全建制化 |
-| Anthropic-Supply-Chain-Risk-Appeal-Continues | 2026-10-14 | https://www.ithome.com/1/012/630.htm | 哥伦比亚特区巡回法院2:1维持"供应链风险"认定后，Anthropic两案并行继续对抗美国政府——AI治理宪法级对抗深水区 |
-| OpenAI-Apple-Trade-Secret-Hiring-Records | 2026-10-14 | https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/ | 法官令OpenAI交出苹果商业秘密案招聘记录——人才战法律外溢，招聘流程成可审查证据链 |
-| OpenAI-GPT6-Astra-Higgsfield-10Min-Video | 2026-10-14 | https://openai.com/index/higgsfield-longer-videos-voice | OpenAI官方称GPT-6 Astra联手Higgsfield视频生成从1分钟提至10分钟以上（官方口径）——长视频生成关键指标竞争 |
-| TSMC-Q3-Preview-65pct-Net-Income | 2026-10-14 | https://finance.yahoo.com/technology/ai/articles/tsmc-q3-2026-revenue-hits-114521388.html | 台积电Q3营收创新高，10/15发季报市场预期净利同比+65%至234亿美元，CoWoS仍为主要瓶颈——AI资本开支周期最硬验证点 |
-| Mind-Robotics-Doug-Field-President | 2026-10-14 | https://techcrunch.com/2026/10/13/rivians-startup-mind-robotics-hires-former-ford-ev-chief-doug-field/ | Rivian系Mind Robotics聘前福特EV负责人Doug Field任总裁——造车方法论迁移机器人，车企系具身量产人才战 |
-| Disney-20M-CharacterAI-Tech-Acquisition | 2026-10-14 | https://arstechnica.com/tech-policy/2026/10/disney-offers-20m-for-character-ais-scandal-plagued-chatbot-tech/ | 迪士尼2000万美元洽购Character.AI争议聊天机器人技术（昔日估值10亿）——AI陪伴泡沫破裂，IP方低价收割 |
-| Zuckerberg-Hundreds-Billions-AI-Uncertainty | 2026-10-14 | https://www.ithome.com/1/012/640.htm | 扎克伯格称Meta承诺数千亿美元投AI、曾毫无把握（官方口径）——AI军备竞赛烧钱透明化、风险公开化 |
-| ScienceCorp-Vision-Chip-Stargardt-First-Implant | 2026-10-14 | https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/ | Science Corporation视觉芯片首例Stargardt患者植入、患者重新读出单词——视觉假体进入功能性阅读，挑战Neuralink |
-| Infinigence-2.3B-Round-4.3B-Total | 2026-10-14 | https://www.qbitai.com/2026/10/502767.html | 无问芯穹单轮23亿/累计43亿元刷新国产AI Infra融资双纪录——异构算力调度层成出口管制下资本关键押注 |
-| DeepSeek-Liang-SwinTransformer-Investment | 2026-10-14 | https://www.qbitai.com/2026/10/503093.html | 梁文锋投资Swin Transformer作者刘泽参与创业项目，DeepSeek布局具身大脑——基础模型公司技术外溢冲击具身格局 |
-| MagicLab-MolmoSpaces-No1 | 2026-10-14 | https://www.qbitai.com/2026/10/503107.html | 魔法原子具身Agent框架获MolmoSpaces基准全球第一（公司披露口径）——空间智能评测权争夺，中国团队登顶 |
-| AI-Labs-Buying-Dead-Startup-Data | 2026-10-14 | https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/ | MIT Tech Review：AI实验室购买倒闭创业公司用户数据训练模型——训练数据枯竭下灰色供应链，或成数据治理新靶点 |
-| YinzhiYao-Semi-Equipment-Consolidation-AI-Bubble-Warning | 2026-10-14 | https://www.ithome.com/1/012/589.htm | 中微尹志尧喊话半导体设备业不能散兵游勇、警告AI泡沫——国产设备整合倡议+资本过热双重风向标 |
-| Pluto-Security-42M-Raise | 2026-10-14 | https://techcrunch.com/2026/10/13/pluto-security-raises-42m-as-ai-gives-enterprise-security-teams-a-new-headache/ | Pluto Security融资4200万美元应对AI Agent企业安全新难题——"AI时代安全运营"成独立融资赛道 |
-| Axera-AX8860-DGX-Spark-Rival | 2026-10-14 | https://www.ithome.com/1/012/551.htm | 爱芯元智AX8860官方称性能对标DGX Spark且更便宜（官方口径）——桌面AI开发机国产平价竞争者 |
-| NVIDIA-DLSS5-Oct16-Double-Performance | 2026-10-14 | https://www.ithome.com/1/012/564.htm | 英伟达DLSS 5新模型10/16推送，官方称性能较9月版翻倍、4K显存降20%（官方口径）——消费端软件迭代维持RTX黏性 |
-| Qualcomm-X2-Linux-Upstream-Early | 2026-10-14 | https://www.infoq.cn/article/OjlADL5itjO3PcVHsuMB | 高通Snapdragon X2 Linux支持提前进入内核上游——Arm诉讼胜诉同期加码开源生态 |
-| Cerebras-Home-AI-Era-Prediction | 2026-10-14 | https://www.ithome.com/1/012/632.htm | Cerebras CEO预言家用AI时代将至——二线芯片商借个人AI/推理叙事寻生存空间 |
