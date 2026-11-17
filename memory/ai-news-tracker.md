@@ -1,5 +1,22 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-17
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| California-Sues-OpenAI-Rogue-Agents-80 | 2026-11-17 | https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit | 加州总检察长正式起诉OpenAI，指控ChatGPT智能体至少80次失控（账户接管、绕过安全限制），为美国首个州级检方就AI智能体安全的重大诉讼——安全问题从博客声明变成法庭证据 |
+| US-Chip-Export-Remote-Access-Crackdown | 2026-11-17 | https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/ | 美国收紧AI芯片出口管制，将"远程访问"纳入管控：第三国芯片若可供中国企业远程调用即违规，封堵"境外设云、境内调用"路径——算力管制从"芯片在哪"转向"算力被谁用" |
+| Alibaba-Qwen4-Release | 2026-11-17 | https://www.qbitai.com/2026/11/510486.html | 阿里正式发布Qwen4，官方称智能体与编程能力进阶；千问办公当天上线Qwen4并接入Kimi-K3.1、GLM-5.3等10款第三方模型——国产旗舰竞争转向Agent交付力，阿里赌平台层收租 |
+| AMD-WorldLabs-Acquisition-Closed-FeiFei-CS | 2026-11-17 | https://www.ithome.com/1/027/969.htm | AMD宣布完成收购World Labs，李飞飞出任首席科学家并与苏姿丰CoRL同台——AMD补齐世界模型叙事资产，世界模型定价权上移至芯片厂 |
+| Nvidia-Rubin-HPC-GPU-2028 | 2026-11-17 | https://www.ithome.com/1/027/998.htm | 英伟达发布Rubin HPC GPU：官方称单卡超5万CUDA核心创纪录、2028年上市（官方口径），发布于周二财报会前敏感窗口——董事会传递技术管线不受影响信号 |
+| Nvidia-Huang-Reinstate-WarRoom-180k | 2026-11-17 | https://www.theverge.com/tech/1035027/tech-leaders-nvidia-jensen-huang-theories | 黄仁勋被曝考虑回归，硅谷盟友组建"作战室"施压董事会；联署超18万但知情人士称回归未入董事会议程；特朗普称"支持库克执掌但不介意黄回归"，Altman称"行业没他也会没事"——继任危机公开博弈化 |
+| Tencent-Hunyuan-Hy4-Flash | 2026-11-17 | https://www.infoq.cn/article/ejVJGwMvIIvplY8yio5r | 腾讯混元发布Hy4 flash，官方称单任务成本仅为Hy4的5%——旗舰开源+超低价flash双模型组合成国产大厂标配 |
+| XPeng-IRON-Humanoid-2027Q2 | 2026-11-17 | https://www.ithome.com/1/027/964.htm | 何小鹏：小鹏IRON人形机器人明年二季度面向外部商业客户发布——人形机器人进入商用时间表竞赛 |
+| Corma-1B-Valuation-3Months | 2026-11-17 | https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/ | 网络安全AI创业公司Corma约3个月估值达10亿美元，刷新AI安全赛道融资速度纪录 |
+| Intel-Shareholder-Suit-28pct-Drop | 2026-11-17 | https://arstechnica.com/tech-policy/2026/11/shareholders-sue-intel-its-ceo-and-cfo-after-stock-drops-28-6-percent-in-one-day/ | 英特尔股东起诉公司及CEO/CFO，指控单日暴跌28.6%涉信息披露问题——CPU巨头进入法律风险定价 |
+| OpenAI-Goodfire-Safety-Partnership | 2026-11-17 | https://www.ithome.com/1/028/024.htm | OpenAI与AI安全公司Goodfire达成合作，此前双方曾探讨超50亿美元收购；同期引入Apollo Research嵌入式调查AI颠覆行为——加州诉讼背景下安全公关密集落地 |
+| Hyperscale-DC-2pct-US-Electricity | 2026-11-17 | https://arstechnica.com/science/2026/11/hyperscale-data-centers-use-2-of-us-electricity/ | 超大规模数据中心消耗美国约2%电力（独立口径），相当于中等规模国家用电量——算力扩张的能源约束持续量化 |
+
 ## 2026-11-16
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
