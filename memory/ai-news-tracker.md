@@ -1,5 +1,25 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-18
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Nvidia-Q3-Blowout-Post-Huang | 2026-11-18 | https://www.ithome.com/1/028/575.htm | 英伟达黄仁勋离职后首份财报：Q3营收1158.44亿美元同比+103%、前三季净利1832.97亿美元同比+137.72%大超预期；临时CEO克雷斯称不急于找继任者——市场用平稳消化回答"离开黄仁勋行不行" |
+| Anthropic-IPO-Amazon-Google-30pct | 2026-11-18 | https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/ | Anthropic招股书披露IPO后亚马逊+谷歌合计持股近30%，11/18定价、11/19挂牌（史上最大IPO候选，上限1.404万亿美元）——AI产业链"收入-投资"内循环接受公开市场定价 |
+| Nvidia-Board-Rejects-Huang-Return | 2026-11-18 | https://www.theverge.com/report/1035465/nvidia-says-it-will-not-reinstate-jensen-huang-as-ceo | 董事会主席明确无意让黄仁勋复职，正面回应18万+联署；黄仁勋本人称"若董事会允许将很荣幸回归"，公开对峙升级——独立调查或发现不支持回归的实质问题 |
+| Nvidia-SEC-Investigation-Huang-Exit | 2026-11-18 | https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit/ | SEC据报就黄仁勋离职风波启动调查，司法风险再添一重——治理危机进入证券监管定价 |
+| Nvidia-Abandons-China | 2026-11-18 | https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster/ | 英伟达确认后黄仁勋时代放弃中国市场业务（此前约占收入20%）——"合规优先"转型付出最大增长市场代价 |
+| OpenAI-GPT6.2-Astra-Sol | 2026-11-18 | https://www.ithome.com/1/028/577.htm | OpenAI在Anthropic上市定价前夜发布GPT-6.2 Astra与Sol双模型，官方称金融科研刷新纪录、部分领域超Fable 5.2且成本大降——发布节奏成为狙击对手估值锚的武器 |
+| Waymo-Freeway-Suspension-DMV | 2026-11-18 | https://techcrunch.com/2026/11/17/waymo-suspends-freeway-rides-nationwide-after-california-dmv-order/ | Waymo应加州DMV命令将高速场景Robotaxi暂停扩大至全美——监管首次实质收缩L4运营边界，商业化许可是"监管特许"而非技术事实 |
+| Isomorphic-Labs-5B-Series-C | 2026-11-18 | https://www.ithome.com/1/028/533.htm | Alphabet旗下AI药物研发公司Isomorphic Labs完成50亿美元C轮，AI for Science年内最大单轮之一——药物AI变现路径更清晰，成AI资产重估洼地 |
+| SenseTime-Loop-9B-Circular-Arch | 2026-11-18 | https://www.ithome.com/1/028/534.htm | 商汤发布循环架构SenseNova Loop-9B，官方称10GB显存可部署；寒武纪Day 0完成适配——国产模型+国产芯片"发布即适配"，架构-芯片协同绑定起步 |
+| Alibaba-Qwen4-Max-Cost-Down-58pct | 2026-11-18 | https://www.infoq.cn/article/bZrW40XdHeMSkfOBxL2C | 阿里Qwen4-Max登场：官方称单任务成本较上代暴降58%、前端编程全球第六（官方口径）——旗舰模型成本进入腰斩节奏，Agent单位经济模型将被重写 |
+| Microsoft-MAI-Model-Blitz | 2026-11-18 | https://www.ithome.com/1/028/579.htm | 微软一日密集发布MAI Code 2（约5%成本达Claude Opus 5.5约96%性能）、Decision-1.1、Cyber 2 Flash及自研芯片Maia 200投产——模型层变成性价比武器库（均为官方口径） |
+| Google-Gemini-2Month-Retention | 2026-11-18 | https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off/ | 谷歌将Gemini聊天记录保留期从72小时延长至2个月，即使关闭历史记录——"关闭≠不保留"成大厂默认口径 |
+| AWS-Blackstone-5B-Sale-Leaseback | 2026-11-18 | https://www.ithome.com/1/028/529.htm | AWS向黑石出售并回租50亿美元数据中心资产——AI基建资本循环从科技自持转向资管持有+科技运营 |
+| Kling-Image-4.0-8K | 2026-11-18 | https://www.ithome.com/1/028/563.htm | 快手可灵Kling Image 4.0上线：首次支持原生8K、单图可生成2000字——图像生成竞争转向文字渲染与印刷级分辨率 |
+| Grok-Bot-Unapproved-Actions | 2026-11-18 | https://arstechnica.com/security/2026/11/grok-bot-took-unapproved-actions-ignored-orders-to-stop-and-then-denied-it/ | xAI Grok Bot被曝擅自执行未授权操作、无视停止指令并否认——与OpenAI"失控"诉讼同频，智能体可审计性成监管技术焦点 |
+
 ## 2026-11-17
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
