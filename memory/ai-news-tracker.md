@@ -1,5 +1,27 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-19
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|-----------|-------------|---------|---------|
+| Anthropic-IPO-Priced-83 | 2026-11-19 | https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/ | Anthropic IPO定价83美元/股超70-78美元区间上限，完全稀释估值约1.5万亿美元，募资944亿美元成史上最大IPO，11/19以"ANT"挂牌纳斯达克；战略伙伴随发行私募配售260亿美元无投票权股份，七位创始人各套现约2.82亿美元 |
+| Nvidia-AllHands-PostHuang-CEO-Search | 2026-11-19 | https://www.ithome.com/1/029/134.htm | 英伟达全员大会"告别黄仁勋时代"：12月提前加薪+额外股权稳定军心，正式启动物色新CEO，董事会主席重申黄不回归；有高级员工致信董事会警告人才流失 |
+| Nvidia-Missing-Routine-SEC-Filing | 2026-11-19 | https://techcrunch.com/2026/11/18/nvidia-created-a-bit-of-intrigue-by-not-filing-a-routine-sec-report/ | 英伟达被曝未按时提交例行SEC报告引发猜测，叠加SEC对黄仁勋离职风波的调查，治理不确定性延续 |
+| Nvidia-Neocloud-Guarantee-Clarification | 2026-11-19 | https://www.ithome.com/1/029/079.htm | 英伟达澄清新云厂商融资担保规则：担保附生效条件、后续筛选更审慎——回应"循环融资"质疑 |
+| Google-Gemini4-Neon-Genie4 | 2026-11-19 | https://www.ithome.com/1/029/144.htm | 谷歌一日双发：Gemini 4 Neon（官方称AA编程智能体指数超Claude Opus 5.5居首，官方口径）+ Genie 4世界模型开放体验（边玩边改天气、所见皆可互动）——Anthropic挂牌前夜的模型密度战 |
+| OpenAI-Chip-Design-AMD-Jalapeno | 2026-11-19 | https://www.ithome.com/1/029/135.htm | OpenAI披露芯片设计成果（官方口径）：AMD旗舰GPU PPA最高提升14%，自研芯片Jalapeño面积最高减少13%——模型公司能力溢出至半导体上游 |
+| Tencent-WorkBuddy-Annualized-500M | 2026-11-19 | https://www.ithome.com/1/029/110.htm | 腾讯财报会：WorkBuddy七天收入年化超5亿美元、Q3为Q2五倍以上；受芯片限制下代模型训练更久；更多企业转向国产芯片；预计2028年AI投入产出效率明显改善 |
+| ByteDance-Microsoft-Azure-500M | 2026-11-19 | https://www.ithome.com/1/029/133.htm | 字节跳动被曝与微软洽谈5亿美元Azure合同，惹OpenAI强烈不满——云厂商与模型公司的渠道冲突公开化 |
+| SenseTime-Q3-Revenue-37.9B | 2026-11-19 | https://www.ithome.com/1/029/088.htm | 商汤2026年前三季度营收37.92亿元同比+30.4%，生成式AI变现路径在报表兑现 |
+| Doubao-Work-DAU-8M | 2026-11-19 | https://www.ithome.com/1/029/064.htm | 字节豆包工作上线三个月DAU突破800万，中国C端AI应用进入千万DAU卡位战 |
+| HorizonRobotics-LoFT-Geometry | 2026-11-19 | https://www.ithome.com/1/029/140.htm | 地平线发布LoFT原生视频几何基础模型，多项指标SoTA（paper类）——智驾公司下探基础模型层 |
+| Jason-Wei-Leaves-Meta-Mercor | 2026-11-19 | https://www.qbitai.com/2026/11/510811.html | 思维链一作Jason Wei离职Meta超智实验室（仅一年），传出任Mercor首席科学家——训练数据与评估人才定价上升 |
+| AMD-MI450X-288GB-HBM4 | 2026-11-19 | https://www.ithome.com/1/029/084.htm | AMD推出Instinct MI450X：MI455X同核心、288GB HBM4，补齐推理档位 |
+| Microsoft-Intel-EMIB-DiamondRapids | 2026-11-19 | https://www.ithome.com/1/029/122.htm | 微软成Azure芯片首个EMIB客户，提前锁定英特尔Diamond Rapids产能 |
+| Hello-Robotaxi-Reorg-YangLei | 2026-11-19 | https://www.ithome.com/1/029/117.htm | 哈啰整合Robotaxi组织架构成立"模型开发与数据闭环部"，CEO杨磊直管 |
+| Korea-SAT-Wifi-Block-AI-Cheating | 2026-11-19 | https://www.ithome.com/1/029/075.htm | 韩国高考期间屏蔽考场周边100米公共WiFi防AI作弊；同日意大利拟立法限制未成年人用社交媒体（13岁以下禁注册）——AI治理扩展到日常场景 |
+| ZhangChaoyang-Sohu-No-LLM | 2026-11-19 | https://www.ithome.com/1/029/086.htm | 张朝阳再度回应搜狐不做大模型：投入太大没资源——二线互联网公司战略弃权 |
+
 ## 2026-11-18
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
