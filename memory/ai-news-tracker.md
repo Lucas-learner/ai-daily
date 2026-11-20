@@ -1,5 +1,27 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-20
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|---|---|---|---|
+| Anthropic-IPO-Debut-Plus17 | 2026-11-20 | https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/ | 挂牌首日开盘111美元（+33%）收盘+17%市值1.27万亿美元，1560亿美元或流向慈善，循环融资接受公开市场检验——史上最大IPO首日平稳落地 |
+| Gemini-Mac-Control | 2026-11-20 | https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/ | 谷歌Gemini可跨应用操控Mac：做PPT、填表单、浏览网页；同日AI对话上线搜索首页——computer use三强对撞 |
+| Apple-Own-AI-Agent | 2026-11-20 | https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing | 苹果招聘启事曝光自研系统级AI智能体（操控设备/浏览网页/写代码），对标OpenAI与Anthropic |
+| Meta-Muse-Conversation-Mixing | 2026-11-20 | https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/ | Muse被指对话串台、擅自读取加密消息与银行余额，距分享链接泄露不到一个月——个人Agent上下文隔离成工程底线 |
+| Alibaba-Wu-Compute-Crunch | 2026-11-20 | https://www.ithome.com/1/029/682.htm | 吴泳铭：2027-2028是中国算力最紧缺两年，千问已在平头哥芯片训练下一代模型，20GW目标或下调 |
+| Jensen-Timeline-Musk-Support | 2026-11-20 | https://techcrunch.com/2026/11/19/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/ | 黄仁勋风波完整时间线披露，马斯克"乔丹论"、卡兰尼克声援，12月提前加薪稳军心 |
+| UK-Court-Apple-Backdoor | 2026-11-20 | https://techcrunch.com/2026/11/19/u-k-government-forced-to-disclose-secret-apple-backdoor-order/ | 英国法院裁定政府必须承认曾秘密要求苹果开后门——加密后门博弈首次司法公开 |
+| Microsoft-PyPI-AgentFramework-Hijack | 2026-11-20 | https://www.ithome.com/1/029/700.htm | 微软官方PyPI包Agent Framework遭劫持植入窃取凭据恶意软件——Agent框架成供应链攻击新靶点 |
+| EU-Commission-AI-Cyberattack | 2026-11-20 | https://www.ithome.com/1/029/687.htm | 欧盟委员会证实遭AI驱动网络攻击，规模待判——AI攻防升级至欧盟机构层面 |
+| Google-BlueOrigin-AI-Satellite | 2026-11-20 | https://www.ithome.com/1/029/695.htm | 谷歌与蓝色起源合作计划2029年发射AI服务器卫星——数据中心上天进入排期 |
+| SKHynix-HBM4-Yield-70 | 2026-11-20 | https://www.ithome.com/1/029/673.htm | SK海力士对"HBM4良率突破70%"回应"商业机密"——不否认口径强化存储供给紧张预期 |
+| Tencent-Hunyuan-Hy4-Flash | 2026-11-20 | https://www.infoq.cn/article/o4edzZ1lM7CUQgcupk8H | 腾讯混元Hy4 Flash上线首日登顶OpenRouter，2毛钱跑完一个任务——开源推理价格战下探 |
+| Paradigm-Phai-Domestic-Compute | 2026-11-20 | https://www.qbitai.com/2026/11/511071.html | 范式发布Phai系列：首批国产算力全链路训练，双模型同步亮相 |
+| ChatGPT-RealTime-Dictation | 2026-11-20 | https://www.ithome.com/1/029/707.htm | ChatGPT新增实时听写，语音即时转文字——语音交互向零延迟字幕化演进 |
+| Lenovo-Best-Quarter | 2026-11-20 | https://www.qbitai.com/2026/11/511088.html | 联想交出生涯最佳财季，AI基建需求溢出至整机厂利润表 |
+| Kling4-Games-Embodied | 2026-11-20 | https://www.ithome.com/1/029/686.htm | 快手程一笑：Kling 4.0已进入游戏与具身智能场景——视频模型转向物理世界数据引擎 |
+| LLM-Climate-Misinfo-Paper | 2026-11-20 | https://arstechnica.com/science/2026/11/llms-will-provide-accurate-climate-info-except-when-they-wont/ | 研究：LLM在气候信息上系统性出错（paper类），RAG在高风险知识域必要性再验证 |
+
 ## 2026-11-19
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
