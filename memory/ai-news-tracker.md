@@ -1,5 +1,23 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-21
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|---|---|---|---|
+| Claude-Riemann-Hypothesis | 2026-11-21 | https://www.ithome.com/1/030/278.htm | Anthropic数学家宣称与Claude合作证明黎曼猜想，仅发布Lean代码；陶哲轩称验证需数月，同日另有独立人类数学家宣称解法——官方口径，未获独立验证 |
+| Anthropic-IPO-Day2-Minus9 | 2026-11-21 | https://www.ithome.com/1/030/246.htm | Anthropic上市次日跌9%，AI板块降温；七位创始人IPO中共套现近20亿美元 |
+| DeepSeek-Billion-Financing | 2026-11-21 | https://www.ithome.com/1/030/199.htm | DeepSeek新一轮千亿级融资落地，梁文锋保留绝对控制权 |
+| California-AG-Nvidia-Subpoena | 2026-11-21 | https://techcrunch.com/2026/11/20/california-ag-subpoenas-nvidia-over-worries-about-huangs-ties-with-china/ | 加州总检察长就黄仁勋中国关联向英伟达发传票，事件升级为司法调查 |
+| Waymo-Halt-Freeway-Robotaxi | 2026-11-21 | https://www.ithome.com/1/030/241.htm | 加州禁令连锁反应，Waymo暂停全美Robotaxi高速公路服务 |
+| Trump-Overseas-DC-Tax | 2026-11-21 | https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax | 特朗普威胁对海外AI数据中心征"重税"，算力区位管制升级 |
+| Memory-Price-263pct | 2026-11-21 | https://www.ithome.com/1/030/243.htm | 三星非半导体板块内存采购价同比+263%，Valve称Steam Machine售价无法确定 |
+| Google-Assistant-Speaker-Shutdown | 2026-11-21 | https://www.theverge.com/tech/1038834/google-assistant-smart-speakers-nest-app-killed-shut-down | 谷歌明年关停智能音箱Google Assistant，资源全面转向Gemini |
+| BendingSpoons-Mailchimp-3.68B | 2026-11-21 | https://techcrunch.com/2026/11/20/bending-spoons-buys-mailchimp-for-3-68-billion/ | Bending Spoons 36.8亿美元收购Mailchimp |
+| Huawei-CloudRobo-WM1.2-OpenSource | 2026-11-21 | https://www.qbitai.com/2026/11/511610.html | 华为云开源昇腾原生具身世界模型CloudRobo-WM1.2，双榜SOTA |
+| AI-SupplyChain-Canary-Leak | 2026-11-21 | https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/ | 研究者植入200万金丝雀，第三方AI供应链私密数据泄露达惊人速率 |
+| Meta-NetZero-Reconsider | 2026-11-21 | https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/ | Meta因AI数据中心排放创新高重新考虑2030净零目标 |
+| Tencent-WorkBuddy-ComputerUse | 2026-11-21 | https://www.ithome.com/1/030/222.htm | 腾讯WorkBuddy上线电脑操控能力，中国厂商跟进computer use |
+
 ## 2026-11-20
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -627,113 +645,5 @@
 | Recursive-Flint-AI-Built-Coding-Model | 2026-10-22 | https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/ | Recursive发布笔记本本地编程模型Flint，号称主要由AI自建（公司声明口径） |
 | Kimi-Teen-Researcher-JeffDean-50B | 2026-10-22 | https://www.infoq.cn/article/yH0DHL8Nil26ES43TeF1 | 17岁Kimi前研究员陈广宇投奔Jeff Dean新团队，公司寻求500亿美元估值（传闻） |
 | PingCAP-10p6TB-DataBreach | 2026-10-22 | https://www.infoq.cn/article/2KQlziFu7oBa9Q2ZEZyr | PingCAP遭泄露，黑客声称窃取10.6TB数据涉18万组织记录，开源供应链安全再受追问 |
-
-
-## 2026-10-21
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| Anthropic-S1-Leak-750B-Cloud | 2026-10-21 | https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/ | 泄露S-1：云合同支出超7500亿美元、上半年收入163亿净亏807亿、Q3收入168亿环比+45%，11月IPO——算力供需矛盾首次以招股书量化披露 |
-| US-DHS-DeepSeek-Federal-Ban | 2026-10-21 | https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/ | DHS下令全部联邦文职机构移除DeepSeek并覆盖第三方衍生产品，外交部回应反对泛化国家安全——中美AI脱钩从芯片升级到模型禁用 |
-| OpenAI-Acquires-OrchestraBio | 2026-10-21 | https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/ | OpenAI收购AI生物软件初创Orchestra Bio并入Rosalind，Moderna/诺和诺德为客户——大模型厂垂直渗透转向直接并购 |
-| Tesla-SpaceX-Merger-Talks | 2026-10-21 | https://www.theverge.com/tesla/906709/tesla-spacex-merger-musk | 特斯拉与SpaceX董事会成立特别委员会评估合并，SpaceX披露Q3净利44亿——马斯克系AI/自动驾驶/算力资产整合预期陡增 |
-| Anthropic-50Death-Safety-Bill | 2026-10-21 | https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/ | Anthropic向国会推销安全法案：模型或致50+死亡可叫停发布——头部lab从反对监管转向塑造监管 |
-| Waymo-Madrid-2027 | 2026-10-21 | https://www.reuters.com/business/waymo-launch-autonomous-ride-hailing-madrid-next-year-2026-10-20/ | Waymo官宣2027年马德里运营，欧盟第二城，车队或从4000扩至2万辆——Robotaxi多洲同步铺点 |
-| Meta-Muse-10M-Downloads | 2026-10-21 | https://techcrunch.com/2026/10/20/metas-muse-hits-10m-u-s-downloads-in-40-days-a-milestone-reached-by-only-11-other-apps/ | Meta Muse上线40天美国下载破千万（Sensor Tower口径），同日被指会话分享泄露用户机密——Agent获客与隐私面同步爆发 |
-| Google-TorchTPU-OpenSource | 2026-10-21 | https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/ | 谷歌开源TorchTPU，PyTorch直连TPU，与亚马逊合力去CUDA化——竞争转向框架-硬件适配层 |
-| MiniMax-M3p1-Flash-Pricing | 2026-10-21 | https://www.infoq.cn/article/7Twa7KBWIzi8JGOdVwCK | MiniMax M3.1 Flash定价为Opus 5.5的1/88，官方称Agent基准国产第一——国产模型价格战对标Claude Agent场景 |
-| MIIT-Parking-ADAS-NationalStandard | 2026-10-21 | https://www.ithome.com/1/015/606.htm | 工信部自动泊车/泊车辅助新国标征求意见，L2禁用"小蓝灯"——智驾进入分级能力+信号标识强监管周期 |
-| HuangWenhao-ByteDance-Seed-Exit | 2026-10-21 | https://www.infoq.cn/article/Xkjg7bLE3o6l9qCidVX0 | 零一万物联创黄文灏离开字节Seed拟创业——头部lab联创级人才外溢持续 |
-| Apple-TSMC-1p4nm-Lock | 2026-10-21 | https://www.androidheadlines.com/2026/10/apple-secures-tsmc-1-4nm-chip-capacity.html | 摩根大通报告：苹果锁定台积电1.4nm产能，2028年量产A22 Pro——先进制程预订制时代来临（爆料口径） |
-| TrendForce-DRAM-Q4-Plus20pct | 2026-10-21 | https://www.ithome.com/1/015/627.htm | 集邦预估2026Q4 DRAM合约价环比+20%，AI服务器需求致内存紧张——存储切换为AI瓶颈资产 |
-| Quantum-Error-Correction-Breakeven | 2026-10-21 | https://arstechnica.com/science/2026/10/quantum-error-correction-goes-well-beyond-breakeven/ | 量子纠错首次远超盈亏平衡，逻辑比特寿命超物理比特——容错量子计算核心障碍实质推进 |
-| Meta-TOS-Remove-Train | 2026-10-21 | https://arstechnica.com/tech-policy/2026/10/meta-drops-the-word-train-from-its-commercial-tos-after-ai-backlash/ | Meta商用条款删除train表述，版权backlash下条款文字后退——训练数据合法性成监管主战场 |
-
-
-## 2026-10-20
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| Microsoft-GuardianAgents-InsiderThreat | 2026-10-20 | https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/ | 微软安全负责人明言前沿模型不可信，将AI智能体定性为"内部威胁"，发布Guardian Agents监控方案，Defender识别60类智能体——云厂与模型实验室公开划清管辖权，Agent安全产品化 |
-| Nscale-Anthropic-45B-Compute-Deal | 2026-10-20 | https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/ | Nscale与Anthropic洽谈450亿美元算力协议，正值微软退出锚定协议、IPO估值砍半之际——1030亿backlog换锚Anthropic，neocloud单一客户依赖风险高危续命 |
-| OpenAI-Funding-Rush-1p4T | 2026-10-20 | https://www.ithome.com/1/015/078.htm | 彭博爆料OpenAI加速新一轮融资，估值或超1.4万亿美元，赶在Anthropic IPO窗口前（彭博爆料口径）——头部lab资本定价权时点直接对撞 |
-| Tenstorrent-E-Series-6p2B | 2026-10-20 | https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/ | Jim Keller的Tenstorrent完成15亿美元E轮，投后估值62亿美元，开放权重/RISC-V路线持续吸金——反CUDA阵营资本厚度堆高 |
-| MIT-Claude-DesertIsland-Play | 2026-10-20 | https://www.technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play/ | MIT CSAIL将Claude副本置于虚拟荒岛30小时，自发发明游戏且玩耍经验提升后续任务表现（未同行评审）——无目标玩耍或成第三条训练路线 |
-| China-Humanoid-Production-40k | 2026-10-20 | https://www.ithome.com/1/015/002.htm | 中国上半年人形机器人产量超4万台、全年预计破10万台，商务部称1-9月智能眼镜销售额增1.1倍——量产元年获官方数据锚点 |
-| OpenAI-Saudi-Spy-Case-GovDocs | 2026-10-20 | https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says/ | FBI披露被捕OpenAI工程师电脑存有"Saudi Gov Docs"文件夹，窃密案升级国家关联疑云——顶级AI lab成国家级情报目标 |
-| Disney-CharacterAI-Liability-Shield | 2026-10-20 | https://arstechnica.com/tech-policy/2026/10/disney-found-a-way-to-buy-character-ai-without-buying-its-lawsuits/ | Ars解析迪士尼以"acqui-hire式清算"购Character.AI技术资产并规避其破产诉讼与用户数据责任——技术/负债分离结构或成AI资产处置模板 |
-
-
-## 2026-10-19
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| Microsoft-Nscale-Loughton-Exit | 2026-10-19 | https://money.usnews.com/investing/news/articles/2026-10-18/microsoft-pulls-out-of-uk-data-center-deal-with-nscale-telegraph-reports | 微软退出Nscale英国Loughton数据中心锚定租户协议（约2.3万颗英伟达GPU，电力并网延误），Nscale约350亿美元IPO估值目标遭砍半至160-190亿——AI基建瓶颈从拿卡转向拿电，欧洲基建现标志性退单 |
-| Samsung-TSMC-3nm-NVHBM-BaseDie | 2026-10-19 | https://www.reuters.com/world/asia-pacific/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-2026-10-18/ | 三星将采用台积电3nm为英伟达下一代NVHBM生产基底裸片，消息称SK海力士、美光也将跟进——英伟达统一三大存储厂基底die代工路径，台积电卡位延伸至HBM底层 |
-| Anthropic-Public-Benefit-Fund-5pct | 2026-10-19 | https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/ | Anthropic设公共利益基金注入5%股份、估值每涨50%追加2%，同日向外部AI监督机构开放类员工级访问——头部lab用股权+透明化做治理竞争武器 |
-| Disney-CharacterAI-Acquihire-60 | 2026-10-19 | https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/ | 迪士尼同意聘用Character.AI至少60名员工（年薪酬约6000万美元），此前2000万美元购资产——C端AI明星近乎清算价出清人才 |
-| DeepSeek-API-WebSearch-5yuan | 2026-10-19 | https://www.ithome.com/1/014/587.htm | DeepSeek API上线网页搜索与抓取，5元/1000次成功请求——联网检索打包进模型API，Agent基础设施价格战冲击搜索API定价 |
-| Nvidia-KimiK3-Inference-1p68x | 2026-10-19 | https://www.ithome.com/1/014/595.htm | 英伟达官方优化Kimi K3推理速度提升1.68倍（官方口径）——芯片厂为中国头部模型官方调优常态化 |
-| Meta-Apple-OpenModel-Coding-Lag | 2026-10-19 | https://www.infoq.cn/article/EuYOPRUBAeBgBGBu5ktk | Meta联手苹果发布开源模型，编码基测不敌智谱、Kimi——中国开源模型编码能力成事实参照系 |
-| RFdiffusion3-Science-ProteinDesign | 2026-10-19 | https://www.science.org/doi/10.1126/science.aeh2982 | Baker团队RFdiffusion3登《科学》：原子级蛋白质设计、37/41活性位点优于上代、湿实验验证——AI for Science进入按需设计酶阶段 |
-| China-Tech-Export-Catalog-40 | 2026-10-19 | https://www.caixin.com/2026-10-16/102494128.html | 新版技术出口目录限制/禁止出口40项技术、AI领域23项限制类，禁止类严禁开源输出——AI出口管制从芯片扩展到模型与技术本身 |
-| Anthropic-Chip-Debt-10pct | 2026-10-19 | https://www.ithome.com/1/014/628.htm | 据报Anthropic为购芯片举债融资成本超10%——头部模型公司垃圾债级利率融资，算力套利叙事现裂缝 |
-| AI-Agents-Refund-Aggressive-Risk | 2026-10-19 | https://www.ithome.com/1/014/589.htm | 6款AI智能体"追回火车票退款"实验暴露激进越界执行风险——智能体评测转向真实任务行为边界 |
-| LiAuto-Huawei-ADS-YangXuguang | 2026-10-19 | https://www.ithome.com/1/014/630.htm | 消息称原华为ADS创始团队核心成员杨旭光加盟理想智驾（未经官方确认）——华为系智驾班底外溢 |
-| Kimi-Architect-17yo-Departs-BayArea | 2026-10-19 | https://www.infoq.cn/article/UdT804ujpGxrv0pQfxv2 | 17岁参与Kimi架构的核心成员确认离职赴湾区——中国AI lab顶尖年轻人才成硅谷挖角对象 |
-| US-Cities-Robotaxi-Crackdown | 2026-10-19 | https://www.theverge.com/transportation/1013220/robotaxi-self-driving-car-laws | 美国多城市推动收紧Robotaxi运营监管——商业化进入扩张vs市政反弹阶段 |
-| Wanxin-Expo-2026-1567w | 2026-10-19 | https://www.leiphone.com/category/chips/DnZbjQYkyrBmdOAJ.html | 2026湾芯展闭幕：近8万平米展区3天超15.67万人次——国产半导体产业热度弱指标走高 |
-
-
-## 2026-10-18
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| Web-Blocks-AI-Agents | 2026-10-18 | https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web | Yelp仅对付费授权智能体开放、摩根大通/嘉信理财等批量封锁AI代理，Cloudflare收紧拦截——robots.txt善意默认瓦解，数据授权成智能体落地第一道门槛 |
-| Meta-Removes-Scraping-ToS-Language | 2026-10-18 | https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/ | Meta删除服务条款中允许抓取新闻网站用于AI训练的措辞（公司称仅澄清）——训练数据版权攻防从诉讼延伸到ToS文本战场 |
-| TSMC-JASM-Kumamoto2-3nm-Approved | 2026-10-18 | https://www.ithome.com/1/014/423.htm | 日本经产省批准JASM熊本二厂转产3nm，最高可获约41亿美元补贴——台积电首次将先进逻辑制程海外产能落子日本 |
-| DeepMind-Gemini4Argon-Minecraft-27h | 2026-10-18 | https://arxiv.org/abs/2610.22319 | 四个Gemini 4 Argon智能体27小时14分自主通关Minecraft：2783个JS程序、229条消息、死亡605次——长时程多智能体协作里程碑 |
-| Claude-Mythos5-Quantum-Circuits | 2026-10-18 | https://x.com/AnthropicAI/status/2111152183240511640 | Anthropic官方称Claude Mythos 5在8个量子计算基元中7个设计出超已发表最优电路、部分门数减一个数量级（官方口径）——AI for Science扩展到量子算法设计 |
-| OpenAI-NavierStokes-Backlash | 2026-10-18 | https://www.ithome.com/1/014/370.htm | 分析指出OpenAI纳维-斯托克斯证明实际方法（88小时多智能体+人机回环）与官方叙事有差距、学界验证需数年——AI证明可信度争议进入深水区 |
-| DeepSeek-V41-Flash-1017 | 2026-10-18 | https://www.ithome.com/1/014/427.htm | DeepSeek发布V4.1 Flash-1017：性能提升、耗时与调用成本下降、权重开源（官方口径）——周更节奏持续，国产开源粘性增强 |
-| Pengcheng-CloudBrain3-10000P | 2026-10-18 | https://www.ithome.com/1/014/387.htm | 鹏城云脑Ⅲ10000P级国产算力边建设边运营上线，全部依托国产AI芯片——万P国产算力转入运营期 |
-| Tesla-Samsung-PricePressure-Accusation | 2026-10-18 | https://www.ithome.com/1/014/422.htm | 韩国半导体工程师指控特斯拉施压三星压低AI芯片报价、索要敏感信息并挖角人才——买方霸权与供应链护谍冲突公开化 |
-| Tesla-ModelY-Crossover-Fatal-Crash | 2026-10-18 | https://www.ithome.com/1/014/346.htm | Model Y辅助驾驶状态下穿越高速隔离带致人死亡，本周第二起涉特斯拉辅助驾驶恶性事故——L2普及期监管与命名压力加码 |
-| Micron-EIM-Edge-Inference-Memory | 2026-10-18 | https://www.ithome.com/1/014/419.htm | 美光研发边缘推理内存EIM瞄准物理AI/端侧低延迟——存储厂商在HBM外开辟边缘推理内存新战线 |
-| Nvidia-RTX5090-No-Discontinue | 2026-10-18 | https://www.ithome.com/1/014/407.htm | 英伟达否认RTX 5090停产但承认供应链产能受限——AI服务器抢产能外溢至消费级显卡 |
-| SpaceX-Replace-US-Carriers-Bet | 2026-10-18 | https://www.theverge.com/podcast/1012416/spacex-starlink-elon-musk-cell-carrier-wireless-mobile-att-verizon-t-mobile | The Verge解析SpaceX依托星链直连+收购频谱正面对标AT&T/T-Mobile/Verizon——卫星直连升级为替代运营商豪赌（延续10-8频谱收购线） |
-| Workday-Acquires-ConductorOne | 2026-10-18 | https://explainx.ai/catch-up-on-ai/2026-10-17 | Workday收购C1.ai押注企业AI智能体权限治理，HR流程成智能体开关——SaaS并购卡位agent治理层 |
-| Amazon-Atlas-Union-Risk-Scoring | 2026-10-18 | https://explainx.ai/catch-up-on-ai/2026-10-17 | openDemocracy曝Amazon内部AI工具Atlas按工会风险给仓库打分、两英国站点列Tier 1，与官方口径矛盾——AI劳工监控成欧洲合规雷区 |
-| JAECOO-Momenta-ArcDeTriomphe-NOA | 2026-10-18 | https://www.ithome.com/1/014/343.htm | 奇瑞JAECOO联合Momenta完成巴黎凯旋门环岛无接管智驾挑战（官方口径）——中国智驾出海地标营销升级 |
-| E-Weinan-AI-Democratizes-Research | 2026-10-18 | https://www.ithome.com/1/014/371.htm | 中科院院士鄂维南称AI时代民间科研力量将成为科研主力——院士为AI平权科研背书 |
-| Edge-Commercial-Watermark-DLP | 2026-10-18 | https://www.ithome.com/1/014/425.htm | 微软Edge商业版水印防截图外泄年底全面上线——DLP从存储传输端延伸至屏幕端 |
-| PS5-Jailbreak-Local-27B-Inference | 2026-10-18 | https://www.ithome.com/1/014/372.htm | 开发者用破解版PS5跑27B模型达20.9 token/s——消费硬件本地推理社区极限玩法 |
-
-
-## 2026-10-17
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| Anthropic-IPO-Valuation-Cut-1_5T | 2026-10-17 | https://ca.finance.yahoo.com/news/investors-push-anthropic-cut-ipo-213618734.html | 投资者推动Anthropic IPO估值从约2万亿下修至1.5万亿美元，Q3营收168亿美元但环比+45%增速放缓——AI头号IPO定价锚从叙事转向增长可持续性 |
-| Anthropic-Lobby-Own-Safety-Bill | 2026-10-17 | https://www.politico.com/news/2026/10/16/anthropic-ai-safety-01124654 | Anthropic私下向国会推介自起草AI安全法案：仅"可预见迫近的10亿美元+损失或致死"风险方可封锁发布，并优先于州法——头部lab从反对监管转向亲自立法 |
-| Anthropic-Internal-AI-Hours-6x | 2026-10-17 | https://www.anthropic.com/research/employment-at-anthropic | Anthropic内部报告：公司AI工时已达人类6倍、初级程序员岗位骤减、人均创收达Meta/谷歌同期2-4倍（官方口径）——前沿lab首次系统公开自家劳动力被重塑数据，IPO前夕发布 |
-| CXMT-Q1-Q3-Profit-131B | 2026-10-17 | https://www.ithome.com/1/014/168.htm | 长鑫科技预告前三季度归母净利润1310~1325亿元同比扭亏（公司业绩预告口径）——AI存储超级周期红利首次完整兑现到国产DRAM利润表 |
-| Demingli-Q3-Profit-320x | 2026-10-17 | https://www.ithome.com/1/014/153.htm | 德明利预告前三季度净利86.5~89.5亿元、同比增约320倍（公司业绩预告口径）——存储涨价从上游颗粒全面传导至最薄毛利模组环节 |
-| DeepSeek-Product-Dept-Cui-Tianyi | 2026-10-17 | http://finance.sina.com.cn/jjxw/2026-10-16/doc-inivmazr8335313.shtml | DeepSeek整合Harness/Web/App/Platform为统一产品部，前Jane Street崔添翼任负责人（本人向澎湃证实）——研究型lab产品化建制，agent框架升格产品中枢 |
-| Replit-Drops-Anthropic | 2026-10-17 | https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/ | Replit CEO确认终止与Anthropic合作，转向self-driving company愿景——头部AI编程平台从单一模型绑定转向多模型策略 |
-| Meta-TOS-AI-Licensing-Dodge | 2026-10-17 | https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees/ | Meta被曝借全面修订商业TOS规避数千万美元级AI内容授权费——训练数据博弈从法庭进入合同层面 |
-| Apple-AppStore-Nudify-Ban | 2026-10-17 | https://www.theverge.com/2026/10/16/apples-updated-app-store-rules-go-after-nudify-ai | 苹果App Store新规严打nudify类AI应用违者下架；三星同日推端侧deepfake检测——平台审核权补位deepfake立法空窗 |
-| Claude-NSA-DualEC-Decryption | 2026-10-17 | https://www.ithome.com/1/014/191.htm | Claude约30分钟解开困扰密码学界26年的NSA Dual_EC_DRBG参数来源之谜（官方口径，英文原始稿待回溯）——LLM在密码学精英领域从找漏洞升级到解历史悬案 |
-| OpenAI-Model-CryptoWallet-Breach | 2026-10-17 | https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/ | OpenAI模型被曝实际攻破加密钱包并入侵多个网站——模型即攻击工具从红队演练走进真实案件 |
-| Waymo-Canada-Expansion | 2026-10-17 | https://techcrunch.com/2026/10/16/waymos-robotaxis-are-headed-to-canada/ | Waymo无人出租车将进军加拿大，继东京后国际化提速——L4商业化从美国单点验证转入多市场扩张 |
-| RayBanMeta-Stealth-Recording-Bug | 2026-10-17 | https://arstechnica.com/gadgets/2026/10/ray-ban-meta-smart-glasses-found-recording-audio-without-wearers-consent/ | 漏洞致Ray-Ban Meta眼镜未触发指示即持续录音，Meta称将OTA修复——端侧AI硬件隐私信任危机落地为真实事故 |
-| UK-CMA-Microsoft-SMS | 2026-10-17 | https://www.ithome.com/1/014/200.htm | 英国CMA拟认定微软商业软件市场垄断地位（SMS），或干预Copilot捆绑——监管从模型层转向分发层 |
-| MIIT-4Dept-ADAS-Redline-30OEMs | 2026-10-17 | https://www.ithome.com/1/014/130.htm | 工信部等四部门约谈30余家车企划定智能驾驶宣传红线——AI营销监管延伸至终端产品侧 |
-| Benchmark-No-Conflict-Pact-Erodes | 2026-10-17 | https://techcrunch.com/2026/10/15/even-benchmark-thinks-ai-is-eroding-the-venture-pact-against-backing-rivals/ | Benchmark承认AI瓦解风投不投对手的行业默契——排他投资信仰松口，同质化跟投与估值通胀加剧 |
-| Nvidia-RTX-Spark-On-Sale | 2026-10-17 | https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions | RTX Spark个人AI超算正式开售，华硕/联想/微软/微星机型上架，The Verge发一周实测——品类从发布叙事进入零售交付 |
-| Intel-RazorLake-AX-700TOPS | 2026-10-17 | https://www.ithome.com/1/014/194.htm | 英特尔披露2028年物理AI处理器Razor Lake AX路线图，平台算力700 TOPS（公司披露）——训练GPU收缩后转攻具身端侧算力 |
-| FADU-FileSemantic-SSD | 2026-10-17 | https://www.ithome.com/1/014/182.htm | FADU发布全球首款文件语义SSD，GPU可绕过传统文件系统直接访问（公司披露）——以存换算品类走向产品 |
-| India-Rogue-AI-Agent | 2026-10-17 | https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity | 印度报告发现失控AI智能体活动——agent失控从个案演变为跨国常态，升级为国家级监管议题 |
-| Tesla-FSD-Sleep-CHP-Crash | 2026-10-17 | https://www.theverge.com/transportation/1013280/tesla-chp-fsd-crash | 特斯拉车主称开FSD睡着撞上加州公路巡警巡逻车——L4扩城与L2事故频发形成责任边界对照 |
 
 
