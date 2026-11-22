@@ -1,5 +1,22 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-22
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|---|---|---|---|
+| SEC-Nvidia-Accounting-Probe | 2026-11-22 | https://www.bjnews.com.cn/detail/1795239371129401.html | SEC据WSJ/路透消息对英伟达潜在会计问题展开调查，股价单日跌超13%较10月高点近腰斩——黄仁勋辞职后第三重监管冲击 |
+| AI-Selloff-SP500-Correction | 2026-11-22 | https://international.caixin.com/2026-11-21/102507412.html | 美股AI板块遭抛售：标普500单日跌3.7%进入回调区间、创18个月最大周跌幅，纳指年内转负，Anthropic上市第三日逼近发行价 |
+| GPT6.2-Astra-Embodied-2x | 2026-11-22 | https://www.qbitai.com/2026/11/511779.html | GPT-6.2 Astra具身任务成功率较上代翻倍（16项任务）——具身竞争进入量化阶段（官方口径） |
+| DeepSeek-V1-Author-Agent-Startup | 2026-11-22 | https://www.qbitai.com/2026/11/511570.html | DeepSeek V1核心作者创业项目曝光：开源Agent框架，获早期资本关注 |
+| Hunyuan-AMA-Hy-Small-Model | 2026-11-22 | https://www.qbitai.com/2026/11/511757.html | 姚顺雨×腾讯混元Reddit AMA，确认Hy系列小模型进入路线图 |
+| Oregon-Sues-OpenAI-2B | 2026-11-22 | https://www.techrepublic.com/article/news-oregon-openai-chatgpt-teen-safety-lawsuit/ | 俄勒冈州起诉OpenAI索赔至少20.35亿美元，指控ChatGPT危害青少年并与校园枪击案关联——州级AG以消费者保护法武器化AI安全议题 |
+| Signal-No-Screenshot-AI | 2026-11-22 | https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/ | Signal默认禁止移动端截图，称AI智能体读屏构成"生存性威胁"——隐私攻防转移到终端显示层 |
+| UN-Killer-Robots-Stalemate | 2026-11-22 | https://www.theverge.com/tech/1039554/un-regulations-killer-robots | 联合国未能就自主致命武器监管规则达成一致，谈判推迟——军工AI规则真空延续 |
+| Samsung-Memory-Locked-2031 | 2026-11-22 | https://www.ithome.com/1/030/475.htm | 消息称三星未来三年大部分存储产能已被锁定，有客户寻求供货保障至2031年——存储从周期生意变长约生意（渠道消息） |
+| Alibaba-HUST-AI-Safety-Lab | 2026-11-22 | https://www.ithome.com/1/030/423.htm | 华中科技大学与阿里巴巴联合成立AI前沿安全研究中心 |
+| US-Senators-Apple-Google-Deepfake | 2026-11-22 | https://www.ithome.com/1/030/421.htm | 美参议员痛批苹果谷歌放任AI脱衣应用"野蛮生长" |
+| NDRC-Token-Standards | 2026-11-22 | https://www.ithome.com/1/030/418.htm | 国家数据局：拓展词元服务应用场景，健全词元计量计费、质量测评标准 |
+
 ## 2026-11-21
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -619,31 +636,4 @@
 | Capcom-ID-DataBreach-11M | 2026-10-23 | https://www.ithome.com/1/016/695.htm | 卡普空CAPCOM ID遭入侵超1177万条用户信息泄露 |
 | Musk-Skydance-1B-Report | 2026-10-23 | https://techcrunch.com/2026/10/22/elon-musk-made-a-1-billion-investment-in-skydance-report-says/ | 据报道马斯克向Skydance投资10亿美元（报道口径待官方确认） |
 | Tesla-Optimus-School | 2026-10-23 | https://www.ithome.com/1/016/769.htm | 特斯拉将为Optimus建训练学校，自建数据闭环，Q3利润腰斩 |
-
-## 2026-10-22
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| OpenAI-Models-Google-Cloud | 2026-10-22 | https://openai.com/index/openai-models-google-cloud | OpenAI最新模型登陆谷歌云，Gemini Agent/Antigravity可直接调用，Azure之外首次接入大型云厂商，云-模型阵营边界瓦解 |
-| PHP-Ancient-Vulns-OpenAI-Coordination | 2026-10-22 | https://techcrunch.com/2026/10/21/php-armageddon-openai-googles-wiz-find-ancient-holes-panicking-the-internet/ | OpenAI与谷歌Wiz发现PHP上古高危漏洞（php2shell）波及约70%网站，多国政府临时关站，首次AI公司主导全球漏洞协调响应 |
-| Meta-CambridgeAnalytica-25B-Verdict | 2026-10-22 | https://techcrunch.com/2026/10/21/meta-ordered-to-pay-25-billion-in-case-related-to-cambridge-analytica-scandal/ | 新墨西哥州陪审团判Meta就剑桥分析丑闻赔250亿美元，超FTC50亿和解额，隐私诉讼进入百亿罚单时代 |
-| FlappingAirplanes-1B-SeriesA-6B | 2026-10-22 | https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/ | 成立一年AI实验室Flapping Airplanes完成10亿美元A轮估值60亿，效率训练方向，Index/Lux领投 |
-| Nvidia-DSX-POD-GTC-Berlin | 2026-10-22 | https://www.ithome.com/1/016/138.htm | 英伟达GTC柏林发布预制数据中心DSX POD，官方称14天部署，2027年初全球交付，算力竞争转向交付速度（官方口径） |
-| Tesla-Optimus-California-Production-Q3 | 2026-10-22 | https://techcrunch.com/2026/10/21/tesla-stars-optimus-robot-production-in-california-as-profit-falls-43/ | 特斯拉加州启动Optimus量产，同季净利同比-43%，机器人定位对冲汽车利润下滑 |
-| OpenAI-PerturbAI-AgentSwarm-Bio | 2026-10-22 | https://openai.com/index/scaling-ai-research-for-complex-biological-data | OpenAI与PerturbAI合作以数千智能体并行分析生物数据加速新药发现，multi-agent进入AI for Science场景（官方口径） |
-| DeepSeek-OpenSource-Inference-Framework | 2026-10-22 | https://www.infoq.cn/article/NBXP966Bz3eqr6Qidvaf | DeepSeek开源新推理框架，官方称单集群日吞吐155万亿Token、KVCache存7天，推理经济学竞争（官方口径） |
-| Anthropic-Claude-Duet-Personal-Agent | 2026-10-22 | https://www.ithome.com/1/016/169.htm | Anthropic发布个人智能体Claude Duet全天候在线办公，对标OpenAI/Meta个人Agent产品 |
-| Pichai-Google-2027-Compute-Uncertain | 2026-10-22 | https://www.ithome.com/1/016/137.htm | 皮查伊财报会承认以云短期收入换前沿研发，2027年算力规模难以锁定 |
-| Doubao-Financial-App-Refusal-List | 2026-10-22 | https://www.ithome.com/1/016/108.htm | 豆包手机助手更新拒绝操作清单限制金融类应用，Agent权限负面清单式自律 |
-| Legora-550M-SeriesE-8p8B | 2026-10-22 | https://techcrunch.com/2026/10/21/legal-ai-startup-legora-raises-550m-series-e-at-8-8b-valuation/ | 法律AI公司Legora完成5.5亿美元E轮估值88亿，垂直Agent平台化收费 |
-| Nvidia-DGX-Spark-8-Node-1TB | 2026-10-22 | https://www.ithome.com/1/016/148.htm | DGX Spark支持8台集群、统一内存最高1TB，桌面AI算力集群化（官方口径） |
-| NIO-WorldModel-AD-950k | 2026-10-22 | https://www.ithome.com/1/016/123.htm | 李斌披露世界模型辅助驾驶已部署超95万辆，世界模型进入量产主叙事（高管披露） |
-| Nvidia-AgileOne-SN-Robot-Platform | 2026-10-22 | https://www.ithome.com/1/016/128.htm | 英伟达联合思灵发布人形机器人参考平台Agile ONE SN，2027年初上市（官方口径） |
-| DataCenter-Pollution-Report-EPA | 2026-10-22 | https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report | 报告称数据中心排放或逆转美国数十年空气质量改善，法官驳回EPA撤案主张，环保变硬约束 |
-| Blackstone-AI-Debt-Overblown | 2026-10-22 | https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/ | 黑石数据中心投资主管称AI基建债务担忧被夸大，最大放贷方下场稳预期 |
-| TI-Q3-NetIncome-Plus78pct | 2026-10-22 | https://www.ithome.com/1/016/164.htm | 德州仪器Q3净利24.25亿美元同比+78%，半导体景气扩散至模拟/嵌入式 |
-| Recursive-Flint-AI-Built-Coding-Model | 2026-10-22 | https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/ | Recursive发布笔记本本地编程模型Flint，号称主要由AI自建（公司声明口径） |
-| Kimi-Teen-Researcher-JeffDean-50B | 2026-10-22 | https://www.infoq.cn/article/yH0DHL8Nil26ES43TeF1 | 17岁Kimi前研究员陈广宇投奔Jeff Dean新团队，公司寻求500亿美元估值（传闻） |
-| PingCAP-10p6TB-DataBreach | 2026-10-22 | https://www.infoq.cn/article/2KQlziFu7oBa9Q2ZEZyr | PingCAP遭泄露，黑客声称窃取10.6TB数据涉18万组织记录，开源供应链安全再受追问 |
-
 
