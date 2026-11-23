@@ -1,5 +1,26 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-23
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|---|---|---|---|
+| OpenAI-Perplexity-Limit-2027 | 2026-11-23 | https://openai.com/index/perplexity-and-intelligence | OpenAI首席科学家长文首次披露内部log-perplexity曲线，称AI最早2027年可自我加速预训练研究，提议全行业以perplexity为统一指标设限；Altman公开赞同 |
+| Apple-Siri-ClassAction-61USD | 2026-11-23 | https://www.ithome.com/1/030/729.htm | 苹果Siri AI集体诉讼和解：每台iPhone至少赔61美元——AI营销承诺被司法确认可诉 |
+| Nvidia-Worst-Week-18Y-SEC | 2026-11-23 | https://finance.yahoo.com/markets/article/nvidia-stock-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194945274.html | 英伟达创18年最差一周（全周-23%），SEC调查焦点含收入确认与地域收入新口径，市值自高点蒸发约2.7万亿美元 |
+| Oracle-OpenAI-Funding-Complete | 2026-11-23 | https://www.theinformation.com/briefings/oracle-says-completed-funding-fulfil-openai-deal | Oracle宣布完成约200亿美元收尾募资，与OpenAI五年期3000亿美元级算力合同资金全部到位 |
+| China-Margin-80pct-Rescue | 2026-11-23 | https://finance.caixin.com/2026-11-22/102507655.html | 沪深北交易所同步出手：融资保证金降至80%、深交所启动创业板做市——应对海外AI估值回调外溢 |
+| MiniMax-Crypto-Break | 2026-11-23 | https://www.ithome.com/1/030/711.htm | MiniMax官方称内部新模型破解多个密码学前沿方案刷新国际挑战赛纪录（官方口径） |
+| Claude-Second-Millennium | 2026-11-23 | https://www.qbitai.com/2026/11/511870.html | Anthropic数学家宣布与Claude合作证明又一千禧年难题，12年940页人类手稿作比对；Maynard同日表态（官方口径，待独立验证） |
+| AI-Server-Price-Hike-45pct | 2026-11-23 | https://www.ithome.com/1/030/713.htm | 消息称AI服务器厂商交付前提价最高45%——HBM/先进制程产能紧张下议价能力逆转（渠道消息） |
+| Musk-AI-Funding-Shortage | 2026-11-23 | https://www.ithome.com/1/030/628.htm | 马斯克预警AI行业2027年或面临严重资金短缺，需数千亿美元额外投入 |
+| Neuralink-GTA6-BCI | 2026-11-23 | https://www.ithome.com/1/030/625.htm | Neuralink演示瘫痪患者经脑机接口在GTA6中完成驾驶射击（官方演示） |
+| TJU-Ultrasound-BCI | 2026-11-23 | https://www.ithome.com/1/030/622.htm | 天津大学全球首次实现人体超声脑机接口高时空分辨解码 |
+| Meta-India-Office-Stormed | 2026-11-23 | https://www.theverge.com/tech/1039732/protesters-storm-meta-offices-in-india | 印度抗议者冲击Meta新德里办公室，指控配合政府审查异见——内容审查政治化升级 |
+| Samsung-Hynix-Halved | 2026-11-23 | https://shattered.io/samsung-sk-hynix-halved-kospi-8000-first-half-rebound-forecast/ | 三星、SK海力士自高点回撤近半，AI估值压力传导存储链（编译来源，待回溯原稿） |
+| BADBOX-40B-Ad-Fraud | 2026-11-23 | https://www.ithome.com/1/030/624.htm | BADBOX僵尸网络卷土重来，日伪造约400亿次广告竞价请求 |
+| Bilibili-AI-Account-Survey | 2026-11-23 | https://www.ithome.com/1/030/609.htm | B站就"AI大肥鱼"智能体账号泛滥启动治理调研 |
+
+
 ## 2026-11-22
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -608,32 +629,3 @@
 | CXMT-DRAM-Confidence-Statement | 2026-10-24 | https://www.ithome.com/1/017/262.htm | 长鑫科技表态对 DRAM 中长期前景"保持坚定信心"（公司口径，业绩预告 10-17 已报，仅补充） |
 
 ---
-
-## 2026-10-23
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| OpenAI-Decisions-API-GA-GPT6-Luna | 2026-10-23 | https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/ | OpenAI决策API全面GA，底层GPT-6 Luna定价0.10美元/百万token，迎战Jev，决策模型成可计费正式产品线 |
-| OpenAI-30B-Raise-1p25T-Valuation | 2026-10-23 | https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/ | 据报道OpenAI洽谈再融资300亿美元@1.25万亿估值（较9月1.4万亿口径下调11%），为IPO铺路 |
-| MOFCOM-AI-Consumer-Work-Plan | 2026-10-23 | https://www.ithome.com/1/016/743.htm | 商务部宣布出台加快智能产品消费应用工作方案，AI终端有望获以旧换新同级补贴通道 |
-| Microsoft-MAI-DxO-Science-83pct | 2026-10-23 | https://www.ithome.com/1/016/765.htm | 微软MAI-DxO登《科学》，官方称复杂病例准确率83%超医生平均水平（官方口径） |
-| SKHynix-Cancels-Solidigm-IPO | 2026-10-23 | https://www.ithome.com/1/016/767.htm | SK海力士取消Solidigm赴美IPO，曾估值千亿美元，AI存储景气与资本窗口脱钩 |
-| Huawei-150B-Offshore-Syndicated-Loan | 2026-10-23 | https://www.ithome.com/1/016/687.htm | 据报道华为获六家中资银行150亿元离岸银团贷款，2020年来首次，背景存储涨价现金流转负 |
-| Intel-CTO-Wafer-Cap-2x-EUV-Bottleneck | 2026-10-23 | https://www.ithome.com/1/016/761.htm | 英特尔CTO称全球前沿晶圆扩产上限约2倍，EUV年产<100台交付18个月，算力供给天花板量化 |
-| FCC-Blocks-HiVision-SoC | 2026-10-23 | https://www.theverge.com/policy/1017016/fcc-block-foreign-surveillance-chips-hivision-huaw | FCC首次行使新权力以外国监控芯片为由封锁设备，点名海思子公司HiVision Hi3516CV610 |
-| Canva-Craft-First-Image-Model | 2026-10-23 | https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/ | Canva发布首个自研图像模型Craft，先生成设计规划再出图，应用层垂直自研范式 |
-| Warp-Science-Automated-Wet-Lab | 2026-10-23 | https://techcrunch.com/2026/10/22/former-openai-science-lead-launches-warp-science-to-automate-wet-labs-with-robots/ | OpenAI前科学负责人创立Warp Science，机器人自动化湿实验室，AI for Science进入实验执行层 |
-| Rivian-WorldModel-Acquisition | 2026-10-23 | https://techcrunch.com/2026/10/22/rivian-buys-world-model-startup-to-accelerate-self-driving-ambitions/ | Rivian收购世界模型初创，整车厂再押注世界模型路线 |
-| XPeng-He-L4-2028H2 | 2026-10-23 | https://www.ithome.com/1/016/685.htm | 何小鹏称L4落地约2028H2，与长安口径收敛，激进叙事回调 |
-| Uber-30k-ChatGPT-Work | 2026-10-23 | https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/ | Uber全员3万员工部署ChatGPT Work，企业级AI订阅走向标配 |
-| Maxinsights-Embodied-Data-Supply | 2026-10-23 | https://www.qbitai.com/2026/10/504800.html | Maxinsights为OpenAI/GDM/Figure供具身数据，交付超200万小时ARR逼近1亿美元（公司披露口径） |
-| ConnectWise-SupplyChain-Breach | 2026-10-23 | https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/ | ConnectWise被入侵致数千企业被监听，美方归因中国背景组织，MSP成供应链攻击枢纽 |
-| a16z-Crypto-Renames-Frontier | 2026-10-23 | https://techcrunch.com/2026/10/22/as-blockchain-investing-falls-out-of-vogue-a16z-crypto-rebrands-as-a16z-frontier/ | a16z Crypto更名Frontier淡出区块链，一级市场资金向AI/硬科技迁移 |
-| China-Surgical-Robot-Export-272pct | 2026-10-23 | https://www.ithome.com/1/016/738.htm | 前8个月我国手术机器人出口6.72亿元同比+272.92%，医疗机器人出海放量 |
-| AMD-Medusa-HIP-RT-Linux-Zen6 | 2026-10-23 | https://www.ithome.com/1/016/702.htm | AMD HIP-RT 3.2.0新增Medusa APU目标、Linux 7.4合入Zen 6补丁，2027平台生态预研 |
-| FAW-GAC-Joint-Workgroup | 2026-10-23 | https://www.ithome.com/1/016/748.htm | 一汽-广汽联合工作组成立，国有车企智驾联盟化 |
-| NRTA-15thFiveYear-Plan | 2026-10-23 | https://www.ithome.com/1/016/704.htm | 广电十五五规划印发，2030年全面挺进互联网主战场，AIGC采编播获政策通道 |
-| Capcom-ID-DataBreach-11M | 2026-10-23 | https://www.ithome.com/1/016/695.htm | 卡普空CAPCOM ID遭入侵超1177万条用户信息泄露 |
-| Musk-Skydance-1B-Report | 2026-10-23 | https://techcrunch.com/2026/10/22/elon-musk-made-a-1-billion-investment-in-skydance-report-says/ | 据报道马斯克向Skydance投资10亿美元（报道口径待官方确认） |
-| Tesla-Optimus-School | 2026-10-23 | https://www.ithome.com/1/016/769.htm | 特斯拉将为Optimus建训练学校，自建数据闭环，Q3利润腰斩 |
-
