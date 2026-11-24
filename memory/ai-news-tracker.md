@@ -1,5 +1,27 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-24
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|---|---|---|---|
+| Nvidia-Huang-Reinstated-CEO | 2026-11-24 | https://techcrunch.com/2026/11/23/nvidia-reverses-course-and-brings-jensen-huang-back-as-ceo/ | 英伟达董事会反转恢复黄仁勋CEO兼董事长职务，复牌一度大涨32%、市值单日增逾1万亿美元；特朗普致电董事会力推并公开背书，黄仁勋下周赴参议院作证，Megaspeed据报将被列入黑名单——治理危机"个人魅力胜"，监管链条未了 |
+| CrowdStrike-Zscaler-44B | 2026-11-24 | https://techcrunch.com/2026/11/23/crowdstrike-to-acquire-zscaler-for-44-billion/ | CrowdStrike宣布以约440亿美元全股票收购Zscaler，网络安全史上最大合并，端点+云网关全栈平台化 |
+| Zhipu-GLM-5.4-Loop | 2026-11-24 | https://news.mydrivers.com/1/1167/1167847.htm | 智谱发布GLM-5.4：首款Loop Transformer架构旗舰，约7000亿参数，强化代码/长程推理/视觉，Coding Plan额度1.5倍，API待安全评估后开放（性能为官方口径） |
+| States-Sue-SpaceX-Grok-CSAM | 2026-11-24 | https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/ | 弗吉尼亚与俄勒冈两州以州法起诉SpaceX/xAI，指控Grok放任生成CSAM与复仇色情图像、安全防护陈述误导——州AG以消费者保护法追打AI安全的案例链延长 |
+| Amazon-Decart-7.5B-Trainium | 2026-11-24 | https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/ | 亚马逊75亿美元收购Decart AI优化技术，高于10月70亿洽谈口径，为对外销售Trainium芯片铺路 |
+| MetaArk-Edge0-145B-Edge | 2026-11-24 | https://www.qbitai.com/2026/11/512195.html | 无界方舟开源Edge0-145B：官方称全球首个千亿参数端侧原生基础模型，量子位实测笔记本80+Token/s断网编码（"全球首个"为官方口径） |
+| Anthropic-Claude-Ship-Beta | 2026-11-24 | https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/ | Anthropic推出Claude Ship测试版：AI agent自动审查、修复并批准代码变更，coding agent进入"管代码"阶段 |
+| OpenAI-Cisco-Shirudo | 2026-11-24 | https://openai.com/index/introducing-shirudo | OpenAI与思科联合开源Shirudo：Linux系统免重启临时应用缓解性安全补丁，AI安全能力向自动修复延伸 |
+| Google-MultiAgent-Quantum-Lean | 2026-11-24 | https://www.alphaxiv.org/abs/2611.09822 | 谷歌论文：多智能体"定期开会"协作发现形式化验证量子程序，并行搜索提速2.57倍、量子算术最高290倍，结果附Lean证明（研究口径待评议） |
+| Sierra-Valuation-30B | 2026-11-24 | https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/ | Bret Taylor的AI客服公司Sierra半年估值翻倍至300亿美元（据公司/投资方披露），企业级CX Agent需求爆发 |
+| Arm-Haas-Renewal-2033 | 2026-11-24 | https://finance.yahoo.com/markets/stocks/articles/arm-locks-ceo-rene-haas-125631742.html | Arm CEO哈斯续约至2033年并将兼任软银集团副董事长，基本终结"接棒黄仁勋"可能 |
+| Musk-xAI-Lagging-Rent-GPU | 2026-11-24 | https://www.ithome.com/1/031/246.htm | 马斯克公开承认xAI研发落后于对手，称出租SpaceX算力比自研Grok更赚钱（本人口径），呼应其AI资金短缺预警 |
+| Agent-ArXiv-936 | 2026-11-24 | https://www.qbitai.com/2026/11/512004.html | "Agent版arXiv"上线：936个智能体12周产出近千篇"论文"并自带同行评议（项目方口径），引发论文通胀讨论 |
+| Xpeng-XWorld-City | 2026-11-24 | https://www.ithome.com/1/031/212.htm | 小鹏图灵世界模型X-World升级新增构建虚拟城市能力，智驾世界模型向城市级环境生成演进（官方口径） |
+| AI-DC-Power-COP | 2026-11-24 | https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit | AI数据中心电力需求成联合国气候大会争议焦点，算力扩张与气候目标结构性冲突进入全球谈判 |
+| Dutch-AP-AI-Glasses | 2026-11-24 | https://techcrunch.com/2026/11/23/dutch-privacy-authority-urges-consumers-not-to-buy-pervert-glasses/ | 荷兰隐私局罕见喊话消费者勿购带摄像头AI眼镜（"变态眼镜"），监管转向消费端预警 |
+| AI-Toys-Amazon-eBay | 2026-11-24 | https://www.ithome.com/1/031/186.htm | 儿童权益组织致信亚马逊、eBay要求下架带生成式AI的儿童玩具 |
+
 ## 2026-11-23
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -606,26 +628,3 @@
 
 ---
 
-## 2026-10-24
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| OpenAI-Airgapped-Frontier-Training | 2026-10-24 | https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/ | OpenAI 宣布前沿模型训练与评估环境断网隔离，不再接入实时互联网，称联网行为难预测且存越狱/投毒风险；接 9 月 Agent 失控暂停训练事件，安全策略制度化 |
-| Anthropic-IPO-Backers-Exposure-2T | 2026-10-24 | https://techcrunch.com/2026/10/23/what-some-of-anthropics-backers-are-reportedly-worth-before-its-ipo/ | Anthropic IPO 前股东持仓曝光：Schmidt 持股近 100 亿美元、Spark C 轮投资膨胀超 90 倍，IPO 估值预期最高 2 万亿美元（Bloomberg 数据） |
-| DeepSeek-100B-Financing-Final-Round | 2026-10-24 | https://www.infoq.cn/article/ViOyxiOSP2ihxuUyg1rD | 媒体援引知情人士：DeepSeek 千亿融资逼近收官，募资较此前传闻翻倍，引入完美世界、中芯聚源，押注具身智能（延续 10-07/10-12 事件线新节点） |
-| Kimi-K31-Pro-Release-3T | 2026-10-24 | https://www.ithome.com/1/017/284.htm | 月之暗面发布 Kimi K3.1 Pro，3 万亿级参数，官方称编程智能体测评超 GPT-6（官方口径，无第三方复现） |
-| Cambricon-Q3-Profit-147pct | 2026-10-24 | https://www.ithome.com/1/017/265.htm | 寒武纪 Q3 归母净利 14.04 亿元同比 +147.74%，国产 AI 芯片利润兑现加速，与长鑫前三季度 1310+ 亿预告同属国产算力景气链 |
-| OpenAI-Swarm-Mouse-Brain-32min | 2026-10-24 | https://www.ithome.com/1/017/274.htm | OpenAI 联合研究机构数千智能体并行，32 分钟分析数百万小鼠脑细胞，据 OpenAI 称相当于人类数月工时；agent 编排外溢生命科学 |
-| inDrive-PonyAI-Nvidia-Kazakhstan-Robotaxi | 2026-10-24 | https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/ | inDrive×小马智行×英伟达 MOU：2027 上半年哈萨克斯坦阿斯塔纳测试 Robotaxi（Gen-7+Hyperion+Halos），中国自动驾驶整套供应链输出中亚 |
-| Intel-Waiver-Foreign-Robot-Ban | 2026-10-24 | https://arstechnica.com/ai/2026/10/intel-gets-waiver-after-worries-fuzzy-us-ban-on-foreign-made-robots-may-hit-fabs/ | 美国"外国制造机器人"模糊禁令险冲击 Intel 晶圆厂设备，Intel 获豁免；管制外溢不确定性落到晶圆厂设备层 |
-| Daytona-60M-B-1B-Agent-Cloud | 2026-10-24 | https://techcrunch.com/2026/10/23/agent-cloud-startup-daytona-hits-1b-valuation-backed-by-firstmark-and-a-whos-who-of-angels/ | Agent 云基础设施 Daytona 6000 万美元 B 轮估值 10 亿，Collison/Lütke/Srinivas/Yuan 等明星天使参投，Agent 运行时成基建新共识 |
-| Apple-5p12T-Surpass-Nvidia-MarketCap | 2026-10-24 | https://www.ithome.com/1/017/264.htm | 苹果盘初市值 5.12 万亿美元短暂超越英伟达重回全球第一（盘中时点行情），AI 终端与 AI 硬件两链定价切换 |
-| Contextual-Language-Models-Paper | 2026-10-24 | https://www.infoq.cn/article/Pwu4FNskSB2cbKV9BZKq | 论文：上下文语言模型自主管理上下文（增删/压缩/检索），论文称性能不降显著降本，指向长上下文新架构 |
-| Google-Personal-Intelligence-Ads-Privacy | 2026-10-24 | https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update | 谷歌更新隐私政策措辞，Gmail/Photos 个人数据"可能"用于广告定向，AI 个人数据使用与广告合规争议 |
-| Warhound-200M-Anduril-War-Dogs | 2026-10-24 | https://techcrunch.com/2026/10/22/ben-lamm-raises-200m-for-warhound-to-engineer-war-dogs-and-arm-them-with-anduril-gear/ | Ben Lamm 新公司 Warhound 融资 2 亿美元，研发搭载 Anduril 装备的军用机器犬，AI+国防机器人 |
-| CFS-85M-Fusion-Semiconductors | 2026-10-24 | https://techcrunch.com/2026/10/23/commonwealth-fusion-systems-gets-85m-to-build-better-fusion-ready-semiconductors/ | CFS 获 8500 万美元研发聚变适用半导体，能源×芯片交叉投资，算力竞争外溢特种半导体 |
-| Zuckerberg-CA-Billionaire-Tax-Plan | 2026-10-24 | https://techcrunch.com/2026/10/22/mark-zuckerbergs-creative-plan-to-pay-californias-proposed-billionaire-tax-without-losing-control-of-meta/ | 扎克伯格筹划财务结构应对加州拟征亿万富翁税同时保住 Meta 控制权，AI 巨头财富税议题升温 |
-| OpenAI-Storage-Scaling-1B-Part2 | 2026-10-24 | https://openai.com/index/rapidly-scaling-online-storage-to-serve-over-1-billion-chatgpt-users-part-ii/ | OpenAI 工程博客：支撑 10 亿 ChatGPT 用户的在线存储扩展 Part II（官方口径，背景条目） |
-| CXMT-DRAM-Confidence-Statement | 2026-10-24 | https://www.ithome.com/1/017/262.htm | 长鑫科技表态对 DRAM 中长期前景"保持坚定信心"（公司口径，业绩预告 10-17 已报，仅补充） |
-
----
