@@ -1,5 +1,26 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-25
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|---|---|---|---|
+| Uber-Nuro-Lucid-Driverless | 2026-11-25 | https://techcrunch.com/2026/11/24/uber-and-nuro-begin-driverless-testing-of-lucid-robotaxis-ahead-of-2027-launch/ | Uber与Nuro在湾区公开道路去安全员测试Lucid Gravity无人车，2027年Q1商业化Robotaxi；Uber对Lucid投资增至5亿美元、承诺6年采购至少2万辆 |
+| Anthropic-IPO-Below-Price | 2026-11-25 | https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/ | Anthropic上市第五日盘中跌破83美元发行价、最低76美元，较首日收盘跌近12%；同日英伟达跌超7%，AI板块承压 |
+| Huang-All-Hands-Apology | 2026-11-25 | https://www.theverge.com/tech/1041571/jensen-huang-all-hands-nvidia-apology | 黄仁勋复职后首次全员大会：道歉、自曝接受心理治疗、否认特朗普促成复职、称无需接班人计划；承认多段婚外情（TechCrunch），复职涨幅回吐单日跌超7% |
+| ShellBench-Agent-Benchmark | 2026-11-25 | https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/ | OpenClaw/Parsewave/HF/Red Hat/UC Berkeley联合发布ShellBench：最强模型日常任务失败率超1/3，15.7%触碰安全红线，GPT-6 Astra三次全对不足半数 |
+| TSMC-Texas-2nm-22.6B | 2026-11-25 | https://tech.ifeng.com/c/8yJZlIFq6XZ | 台积电子公司向得州申请参与JETI激励计划，拟在Brazos县圈地3200英亩建2nm晶圆厂，投资226亿美元 |
+| Meta-Muse-Instagram-DM-Walmart | 2026-11-25 | https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/ | Meta将Muse智能体嵌入Instagram私信（六周超1000万设置、约1/4日活），Walmart接入Muse推黑五优惠，agent首次进电商大促 |
+| DC-Self-Built-Gas-Plant | 2026-11-25 | https://www.technologyreview.com/2026/11/24/1149622/data-centers-natural-gas/ | MIT TR：AI数据中心自建配套天然气发电厂绕开电网排队成行业趋势，算力约束从芯片资本转向电力获取 |
+| Yuyao-Jailbreak-AI-Porn-Sentence | 2026-11-25 | https://www.mlex.com/mlex/technology/articles/2558991/chinese-court-jails-six-for-bypassing-ai-safeguards-to-produce-porn | 浙江余姚法院首例"绕过AI安全机制牟利"案：6人 jailbreak 大模型批量生成淫秽内容获刑3年1个月至3年10个月 |
+| OpenAI-GPT6-Protein-Design | 2026-11-25 | https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities | OpenAI官方称GPT-6无需外挂工具即可设计蛋白质，外部实验室初步验证有效（官方口径，待第三方复现） |
+| Tidal-Ban-AI-Music-27M | 2026-11-25 | https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/ | Tidal宣布全面封杀AI生成音乐、删除约2700万首曲目，首家主流平台对AI slop硬删除 |
+| OpenAI-Espionage-Bail | 2026-11-25 | https://www.ithome.com/1/031/867.htm | OpenAI窃听案沙特籍工程师100万美元保释金+电子脚镣获准保释，被指借Codex偷录核心会议 |
+| Dell-AI-Server-Profit-260 | 2026-11-25 | https://www.ithome.com/1/031/900.htm | 戴尔2027财年前三季度归母净利132.44亿美元同比+260%，AI服务器为核心驱动（公司披露口径） |
+| China-GenAI-Standard-ISO | 2026-11-25 | https://www.ithome.com/1/031/838.htm | 中国牵头全球首个生成式AI治理国际标准提案获国际共识，AI治理"中国方案"走向标准文件 |
+| Musk-AI5-Optimus-Priority | 2026-11-25 | https://www.ithome.com/1/031/915.htm | 马斯克称特斯拉AI4硬件足以实现"超人驾驶"，AI5芯片产能优先供给Optimus（本人口径） |
+| Claude-Desktop-Packaging | 2026-11-25 | https://www.ithome.com/1/031/911.htm | Anthropic推Claude桌面新功能：AI生成内容可一键打包为macOS/Windows独立软件 |
+| HarmonyOS-100M-Devices | 2026-11-25 | https://www.ithome.com/1/031/891.htm | 鸿蒙终端破亿、注册开发者超1200万、应用服务超46万，专利许可累计超69亿美元（官方口径） |
+
 ## 2026-11-24
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -603,28 +624,6 @@
 | SiPearl-Rhea2-Egis | 2026-10-26 | https://www.ithome.com/1/017/684.htm | 欧洲 CPU 初创 SiPearl 与神盾合作开发 Rhea2；欧洲主权算力寻找亚洲伙伴 |
 | Jemic-11-CPU-GPU-254B-H1 | 2026-10-26 | https://www.163.com/dy/article/LA2TJK6M0511RIVP.html | 集微咨询：11 家国产 CPU/GPU 上市公司 H1 合计营收 254 亿元，行业迈入"业绩兑现"期（集微咨询口径） |
 | GEEKCON-2026-Shanghai | 2026-10-26 | https://www.ithome.com/1/017/678.htm | GEEKCON 上海站闭幕：隔空劫持无人机、一条链接控制头部 App 等漏洞展示 |
-
----
-
-## 2026-10-25
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| Meta-Muse-Share-Link-DNS-Leak | 2026-10-25 | https://www.ithome.com/1/017/517.htm | 研究人员经被动 DNS 数据库发现数千个公开可访问的 Meta Muse 聊天分享链接，Meta 确认已修复；聊天分享成隐私新攻击面 |
-| Instacart-Sale-Talks-DoorDash-Uber | 2026-10-25 | https://techcrunch.com/2026/10/24/instacart-reportedly-discussed-selling-itself-with-doordash-and-uber/ | Instacart 与 DoorDash、Uber 分别洽谈出售，早期阶段；独立上市配送平台在巨头挤压下的退出通道 |
-| Anthropic-Claude-China-Payment-UnionPay | 2026-10-25 | https://www.ithome.com/1/017/490.htm | Claude 付款页新增中国（含港澳台）选项并支持银联，Anthropic 未回应；美国头部模型以支付本地化试探中国市场 |
-| Pennsylvania-AI-Ads-Labeling-Law | 2026-10-25 | https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act | 宾州通过《AI 欺骗性广告法案》，强制 AI 生成广告"清晰显著"标注，州级合规碎片化加深 |
-| Grok-Republican-OpenAI-Democrat-Bias-Test | 2026-10-25 | https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/ | 二选一政治倾向测试：Grok 倾向共和党、OpenAI 模型倾向民主党；中期选举前模型中立性争议重启 |
-| Terracotta-Army-AI-Fingerprint-Women-Youth | 2026-10-25 | https://www.ithome.com/1/017/448.htm | AI 图像分析兵马俑指纹，首次量化证实女性与少年工匠存在；AI+数字考古新范式 |
-| Huaqiangbei-RTX5090-60k-Rumor | 2026-10-25 | https://www.ithome.com/1/017/440.htm | 英伟达停产传闻致华强北 RTX 5090 炒至约 6 万元"一日一价"；旗舰 GPU 被当算力资产炒作 |
-| Block-Eerily-Human-Voice-Model | 2026-10-25 | https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/ | Block 发布新语音模型实测"逼真到令人不安"，拟用于支付与客服；逼真语音反欺诈新挑战 |
-| CAICT-500T-Daily-Tokens | 2026-10-25 | https://www.ithome.com/1/017/518.htm | 信通院：6 月国内词元日均消耗约 500 万亿，为 2025 年 12 月近 4 倍（信通院披露口径），推理需求爆发 |
-| CAICT-15M-Cars-NOA | 2026-10-25 | https://www.ithome.com/1/017/494.htm | 信通院：截至 8 月约 1500 万辆乘用车具备 NOA，下沉至 15 万元以下车型（信通院披露口径） |
-| Southern-Regional-Power-Market-Launch | 2026-10-25 | https://www.ithome.com/1/017/529.htm | 南方区域电力市场正式运行，全球最大区域电力现货市场，年交易超 3000 亿千瓦时，算电协同底座 |
-| ByteDance-XiaoYunQue-Merge-Jimeng | 2026-10-25 | https://www.ithome.com/1/017/480.htm | 消息称字节 AI 短剧小云雀并入即梦保留独立入口（未经官方确认）；大厂 AIGC 产品线收敛 |
-| GPU-Unlock-RTX30-Hidden-AI-Perf | 2026-10-25 | https://www.ithome.com/1/017/525.htm | 开源 GPU Unlock 解锁 RTX 30 系列隐藏算力，部分 AI 负载性能最高提升约 60% |
-| ZhouHongyi-QifeiXiangyi-Stake-Transfer | 2026-10-25 | https://www.ithome.com/1/017/437.htm | 周鸿祎拟 2.19 亿元转让奇飞翔艺 12.9% 股权，交易后不再直接持股；360 收缩非核心资产 |
-| Nvidia-621-Driver-Bug-Official | 2026-10-25 | https://www.ithome.com/1/017/453.htm | 英伟达承认 621.01 驱动视频播放卡死/黑屏 bug，建议回退（官方口径） |
 
 ---
 
