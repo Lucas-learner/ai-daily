@@ -1,5 +1,29 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-26
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|---|---|---|---|
+| METR-Anthropic-Internal-AI-RD-80pct | 2026-11-26 | https://www.qbitai.com/2026/11/512538.html | METR 入驻 Anthropic 内部调查：两款未公开模型、能力增速 1.9 倍其中 80% 归因 AI 自研、90% 核心代码由 Claude 编写，RSP 阈值触发；Dario 同日驳斥"交出控制权"指控 |
+| SP-Nvidia-Credit-Downgrade-KeyMan | 2026-11-26 | https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/ | 标普拟将英伟达评级 AA 降至 AA-，理由为治理缺陷与关键人物风险，90 天内评估；5000 亿美元担保链借贷成本承压 |
+| OpenAI-Private-Inference-ZDR | 2026-11-26 | https://www.ithome.com/1/032/543.htm | Altman 宣布开测 Private Inference，零数据留存+机密计算自动化安全审查（官方口径） |
+| Google-MassSpec-Skills-4to97 | 2026-11-26 | https://www.ithome.com/1/032/535.htm | DeepMind 质谱技能包：Gemini 识别准确率 <4%→97%，Token 降 4 倍，"通用模型+技能库"路线标杆（官方口径） |
+| FCC-SpaceX-Starmind-1M-Satellites | 2026-11-26 | https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers | FCC 首次批准 AI 卫星星座：SpaceX 最多 100 万颗、2040 年前达成，算力上天合法化 |
+| Counterpoint-Foundry-Q3-36pct-TSMC75 | 2026-11-26 | https://www.ithome.com/1/032/477.htm | Q3 纯晶圆代工营收 +36%、台积电份额 75%，AI 需求硬指标 |
+| Huawei-Guilty-10of12-TradeSecrets-Iran | 2026-11-26 | https://arstechnica.com/tech-policy/2026/11/jury-convicts-huawei-of-stealing-us-trade-secrets-evading-iran-sanctions/ | 华为被美陪审团定罪 10/12 项，含窃取商业秘密与规避伊朗制裁，出口管制升级司法背书 |
+| NY-AI-Toys-Ban-5Years | 2026-11-26 | https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/ | 纽约州立法暂停 AI 聊天玩具 5 年，日罚上限 1.5 万美元，美国首次整类禁售 |
+| CharacterAI-42AG-Auction-Chats | 2026-11-26 | https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/ | 42 州检察长阻击 Character.AI 破产拍卖 2100 万用户聊天记录，12月1日拍卖 |
+| Stripe-200B-Buyback-AgentPay | 2026-11-26 | https://www.wsj.com/business/stripes-valuation-set-to-top-200-billion-in-latest-investor-talks-122c9027 | Stripe 回购估值超 2000 亿美元，收购 OpenRouter 后切入 agent 支付 |
+| SKhynix-3D-DRAM-100layer-5yr | 2026-11-26 | https://www.ithome.com/1/032/496.htm | SK 海力士 3D DRAM 4-5 年量产、首款 100 层堆叠、远期千层（高管演讲口径） |
+| OpenAI-Merge-Chat-Work-Limits | 2026-11-26 | https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/ | OpenAI 合并 Chat/Work 产品线，重度用户更快触及限额 |
+| Amazon-Meta-Muse-Blockade-Talks | 2026-11-26 | https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/ | 亚马逊与 Meta 洽谈解除 Muse 商城封锁，agent 电商从对抗走向授权（知情人士） |
+| Flipkart-CEO-StepDown-IPO | 2026-11-26 | https://techcrunch.com/2026/11/25/flipkart-ceo-kalyan-krishnamurthy-to-step-down-next-week-amid-ipo-uncertainty/ | Flipkart CEO 12月4日卸任，CPTO（曾创办 AI 公司）临时牵头，IPO 添变数 |
+| Trump-Pardon-Huang-Option | 2026-11-26 | https://techcrunch.com/2026/11/24/trump-reportedly-says-pardoning-jensen-huang-is-an-option-but-that-he-doesnt-think-it-will-be-necessary/ | 特朗普称赦免黄仁勋是选项但认为不必要，SEC 调查政治化变量 |
+| Tesla-FSD-EU-Delay-Dec15 | 2026-11-26 | https://www.ithome.com/1/032/466.htm | FSD 欧盟审批会议推迟至 12月15日（消息称） |
+| Korea-DetectAI-Anti-Glasses-Exam | 2026-11-26 | https://www.ithome.com/1/032/542.htm | 韩国无线电波检测系统 Detect AI 反考场智能眼镜作弊，12月9日首秀 |
+| China-78-AI-Standards-ITU | 2026-11-26 | https://news.southcn.com/node_17a07e5926/0f996ef1a7.shtml | 中国牵头 78 项 AI 国际标准，工信部依托 ITU 建评测体系（官方披露） |
+| DeepMind-AGI-to-ASI-SelfOrg-Paper | 2026-11-26 | https://www.leiphone.com/category/ai/12hVnzl8xc2Hblwx.html | DeepMind 论文：AI 自主"开公司"、自我重塑组织架构迈向 ASI |
+
 ## 2026-11-25
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -604,26 +628,4 @@
 | BostonDynamics-ICE-RobotDog-Employee-Protest | 2026-10-27 | https://arstechnica.com/ai/2026/10/boston-dynamics-employees-want-to-block-sale-of-robot-dogs-to-ice/ | ICE 拟采购 Boston Dynamics 机器狗，数百名员工联署抗议，机器人执法伦理争议升温 |
 | Intel-AMD-CEO-Talks-Potential-Coop | 2026-10-27 | https://www.ithome.com/1/018/155.htm | 英特尔 CEO 陈立武称已与 AMD 苏姿丰就潜在合作对话，x86 双雄罕见合作信号（官方口径，仅对话阶段） |
 | Tesla-Cybercab-NHTSA-Turo-FSD | 2026-10-27 | https://arstechnica.com/cars/2026/10/tesla-wants-ai-and-software-to-be-its-next-profit-engine/ | NHTSA 监管压力下特斯拉仍推进 Cybercab 交付，FSD 监督版将上架租赁平台 Turo，押注 AI 与软件为下一利润引擎 |
-
-## 2026-10-26
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| SpaceX-40B-Debt-GPU-Purchase | 2026-10-26 | https://www.ithome.com/1/017/720.htm | 马斯克确认 SpaceX 完成 400 亿美元债务融资用于购买 GPU，史上最大私募债务融资之一；GPU 从设备采购变为资本运作标的 |
-| Kimi-K31-Pro-RateLimit-Apology | 2026-10-26 | https://www.ithome.com/1/017/723.htm | Kimi K3.1 Pro 发布次日会员限流，月之暗面致歉并为全部订阅会员重置权益；推理容量与订阅兑现能力成焦点 |
-| Linux-Foundation-AI-Slop-PR-25pct | 2026-10-26 | https://www.infoq.cn/article/9TSuUDxrUSGS26XTA2yB | Linux 基金会报告：AI 写码提速 52% 但约 25% PR 为"AI 垃圾"，维护者负担反增；首个基金会级量化口径 |
-| Samsung-TV-AI-Ad-Audio-Claim | 2026-10-26 | https://www.ithome.com/1/017/670.htm | 研究员称三星电视用 AI 录制音频、截屏投放广告，公司未回应；终端 AI 数据收集隐私争议 |
-| China-AI-Risk-Insurance-First | 2026-10-26 | https://www.ithome.com/1/017/726.htm | 全国首个 AI 应用风险综合保障方案发布，"AI 专属保险"落地；风险治理进入保险产品化阶段 |
-| Qiyuan-Robot-5000th-Unit | 2026-10-26 | https://www.ithome.com/1/017/672.htm | 启元机器人第 5000 台个人机器人下线，日产能提升至 200 余台（公司披露）；消费级具身智能进入量产爬坡 |
-| Demingli-Q3-Profit-29x | 2026-10-26 | https://www.ithome.com/1/017/674.htm | 德明利 Q3 归母净利 27.29 亿元同比 +2902.75%；存储涨价利润弹性在 A 股供应链兑现 |
-| Grok-AI-Odyssey-7min | 2026-10-26 | https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/ | xAI Grok 发布 AI 生成版《奥德赛》前 7 分钟，画面尚可但情感表达不足；长视频叙事一致性仍是瓶颈 |
-| KRAFTON-Raon1-Mini-30B | 2026-10-26 | https://www.ithome.com/1/017/695.htm | KRAFTON 预览 Raon-1 mini（30B-A4B MoE）对标 Meta Muse Glimmer；游戏公司自研模型渐成流派 |
-| Teams-Third-Party-Deepfake-Scan | 2026-10-26 | https://www.ithome.com/1/017/676.htm | 微软 Teams 开放第三方工具扫描会议内容识别 deepfake；AI 伪造检测规模化落地入口 |
-| Apollo-AI-Zero-Payoff-NonTech | 2026-10-26 | https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-comp | Apollo 首席经济学家：AI 对非科技公司"零财务回报"，收益集中在科技板块内部 |
-| PSG-Q3-Profit-Double-Cofund | 2026-10-26 | https://www.ithome.com/1/017/690.htm | 力积电 Q3 净利环比近翻倍，新产能改为与客户共同投资；成熟制程扩产风险共担 |
-| SiPearl-Rhea2-Egis | 2026-10-26 | https://www.ithome.com/1/017/684.htm | 欧洲 CPU 初创 SiPearl 与神盾合作开发 Rhea2；欧洲主权算力寻找亚洲伙伴 |
-| Jemic-11-CPU-GPU-254B-H1 | 2026-10-26 | https://www.163.com/dy/article/LA2TJK6M0511RIVP.html | 集微咨询：11 家国产 CPU/GPU 上市公司 H1 合计营收 254 亿元，行业迈入"业绩兑现"期（集微咨询口径） |
-| GEEKCON-2026-Shanghai | 2026-10-26 | https://www.ithome.com/1/017/678.htm | GEEKCON 上海站闭幕：隔空劫持无人机、一条链接控制头部 App 等漏洞展示 |
-
----
 
