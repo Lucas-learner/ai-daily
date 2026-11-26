@@ -11,6 +11,7 @@ HIGHLIGHTS_FILE = PROJECT_DIR / "data" / "ongoing-highlights.json"
 REPORTS_DIR = PROJECT_DIR / "reports"
 MAX_ITEMS = 4
 MAX_AGE_DAYS = 7
+MAX_REASON_LENGTH = 160
 
 
 def render_highlights(as_of: str) -> str:
@@ -43,8 +44,14 @@ def render_highlights(as_of: str) -> str:
         report = (REPORTS_DIR / f"{report_date[:7]}.md").read_text(encoding="utf-8")
         if f"## 【{report_date}】" not in report:
             continue
+        reason = event.get("reason", "")
+        if not isinstance(reason, str):
+            continue
+        reason = reason.strip()
+        if not reason or len(reason) > MAX_REASON_LENGTH or len(reason.splitlines()) != 1:
+            continue
         title = html.escape(event["title"])
-        reason = html.escape(event["reason"])
+        reason = html.escape(reason)
         href = f"reports/{report_date[:7]}.html#{report_date}"
         rows.append((updated, f'<li><a href="{href}"><strong>{title}</strong></a>'
                               f'<span class="meta"> · 更新于 {updated.isoformat()}</span>'
