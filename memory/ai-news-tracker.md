@@ -1,5 +1,30 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-27
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|---|---|---|---|
+| Nvidia-SoutheastAsia-Server-Pause-4Countries | 2026-11-27 | https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/ | 英伟达叫停对马新泰印尼四国 AI 服务器出货，出口管制从堵芯片升级为堵远程算力；智库估算境外远程算力支撑中国约 24% AI 算力（FT/WSJ 独立报道） |
+| SP-Johor-IDC-ChinaTenants-Risk | 2026-11-27 | https://companies.caixin.com/2026-11-26/102509013.html | 标普警告柔佛数据中心中资租户占比高、暴露于美国算力新规风险，评级机构首次将出口管制风险计入东南亚 IDC 评级 |
+| Musk-Samsung-Memory-FinGuarantee-Rejected | 2026-11-27 | https://www.ithome.com/1/033/116.htm | 马斯克拟为三星存储新厂提供融资担保换产能被李在镕拒绝，存储卖方市场极致化，买方筹码升级到资本仍不够（据 FT 采访） |
+| China-8Ministries-ServiceTrade-15thFYP-AI-Export | 2026-11-27 | https://www.hkcna.hk/h5/cn/content/s6b07d413e4b0f1a1d8daf434.html | 商务部等 8 部门印发《服务贸易发展"十五五"规划》，首次体系化推动大模型/云计算出海，"拓展海外"与"防范技术外流"并重 |
+| OpenAI-GPT62-Billing-Fix-Astra-Plus40pct | 2026-11-27 | https://www.ithome.com/1/033/138.htm | OpenAI 承认 GPT-6.2 计费错误并修复，修复后 Astra 额度消耗加快 40%、Sol 加快 25%，实质变相提价 |
+| SAP-Layoff-10k-AI-Restructuring | 2026-11-27 | https://m.sohu.com/a/1106933295_130887 | 彭博：SAP 拟裁员超 1 万人（约 9%），迄今最大规模 AI 驱动重组，劳资谈判后数字或变 |
+| Switzerland-AIAgent-Cyberattacks-CI | 2026-11-27 | https://www.ithome.com/1/033/131.htm | 瑞士披露五起 AI 智能体网络攻击，电力/供水/通信关键基础设施遭入侵，列为国家级威胁 |
+| NIO-WorldModel-3-Training-5x | 2026-11-27 | https://www.qbitai.com/2026/11/512897.html | 蔚来世界模型 3.0：官方称智驾训练提效 5 倍、座舱引入 RL，世界模型进入量产训练管线（官方口径） |
+| China-OpenSource-VideoModel-No1 | 2026-11-27 | https://www.qbitai.com/2026/11/512916.html | 中国开源 AI 视频模型全球评测第一，商用生成成本 0.5 元/秒，主打性价比 |
+| Netherlands-Meta-Glasses-Ban-Lawsuit | 2026-11-27 | https://www.ithome.com/1/033/126.htm | 荷兰多组织诉请法院禁售 Meta 智能眼镜，摄像头+AI 采集路人影像涉嫌违反 GDPR |
+| Ubisoft-GenAI-Default-Explain | 2026-11-27 | https://www.ithome.com/1/033/078.htm | 育碧要求新项目说明生成式 AI 用途、不用需申报理由，"默认用 AI"制度化（公司回应称未全公司强制） |
+| GooglePlay-DSA-Address-Public | 2026-11-27 | https://www.ithome.com/1/033/148.htm | 谷歌 Play 为合规 DSA 要求 2027 年 3 月起部分开发者全球公开住址电话 |
+| iFlytek-Speech-LLM-FullStack | 2026-11-27 | https://www.infoq.cn/article/h1BlHGoTKyeLgs0KmAhe | 讯飞语音大模型体系化公开：基座+方言+超拟人合成，教育/医疗/车载规模化落地 |
+| 381Agents-PNP-Livestream | 2026-11-27 | https://www.qbitai.com/2026/11/513021.html | 381 个 AI 智能体直播协作证明 P=NP，GitHub 被挤爆，多智能体协作基础设施成熟 |
+| JuxiWe-Pandora-Robot-BatterySwap-90s | 2026-11-27 | https://www.qbitai.com/2026/11/512972.html | 具微科技"潘多拉"机器人 90 秒自动换装补能，面向 7×24 无人值守（公司披露） |
+| LongQuan-EnvisionAI-SpatialFoundation | 2026-11-27 | https://www.infoq.cn/article/3rQ4aRqts2zywSBmeJvb | 前苹果空间智能首席科学家权龙创立 Envision AI，做空间物理基础模型 |
+| Goldman-DC-Power-Growth-2028 | 2026-11-27 | https://www.cls.cn/detail/2544765 | 高盛：美国数据中心电力容量强劲增长有望持续至 2028 年 |
+| China-GreenPower-NW-EC-FirstTrade | 2026-11-27 | http://finance.eastmoney.com/a/202611263940962792.html | 首笔西北—华东绿电联合交易落地，全国统一电力市场提速，利好东部算力负荷中心 |
+| Cohere-OpenWeights-Egress-Control | 2026-11-27 | https://www.infoq.cn/article/bzWoHP0FGUBSTBuP5xVJ | Cohere 研究：自托管开放权重模型仍可外泄数据，"私有化≠安全"，需出站控制与审计（paper） |
+| SingleImage-3DPrintable-Generation | 2026-11-27 | https://www.qbitai.com/2026/11/512981.html | 单图直出内部结构可控、可 3D 打印的高精度模型，3D 生成从形似转向结构可用（paper） |
+
 ## 2026-11-26
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
