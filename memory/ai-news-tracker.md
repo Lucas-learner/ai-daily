@@ -1,5 +1,28 @@
 # 去重追踪器（保留最近 30 天主题）
 
+## 2026-11-28
+
+| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
+|---|---|---|---|
+| OpenAI-Countersue-Apple-TradeSecret | 2026-11-28 | https://9to5mac.com/2026/11/27/openai-countersues-apple-alleging-trade-secret-theft-and-supplier-threats/ | OpenAI 反诉苹果窃取硬件商业机密、胁迫共同供应商，诉讼升级为双向对攻（FT 系独立报道+法院文件） |
+| Intel-ShareholderSuit-Trump-10pct-8.9B | 2026-11-28 | https://arstechnica.com/tech-policy/2026/11/intel-faced-a-choice-give-trump-10-or-face-the-consequences/ | 股东诉讼指控特朗普政府以 89 亿美元补贴解锁为条件施压英特尔交出 10% 股权，胁迫性质首次进入司法记录 |
+| Samsung-500Layer-NAND-First | 2026-11-28 | https://en.sedaily.com/business/2026/11/26/samsung-develops-worlds-first-500-layer-nand-flash | 三星被曝开发全球首款 500 层以上 NAND，单芯片容量+50%、成本降约三成，最快明年推出（韩媒口径） |
+| Trump-TSMC-Phoenix-Dec4-Groundbreaking | 2026-11-28 | https://thehill.com/homenews/administration/6245480-trump-phoenix-tsmc-nvidia/ | 特朗普 12月4日出席台积电凤凰城厂下一阶段动工，政治背书绑定制造回流（服务英伟达供货扩产） |
+| Google-TPU10-512GB-HBM5 | 2026-11-28 | https://www.ithome.com/1/033/624.htm | 谷歌第 10 代 TPU 被曝配 512GB 定制 HBM5，单芯片内存容量押注内存墙突破（供应链爆料） |
+| China-11Ministries-DID-Interoperability-2027 | 2026-11-28 | https://www.ithome.com/1/033/733.htm | 网信办等 11 部门发布分布式数字身份互通互认规定，2027年3月施行，agent 经济身份合规底座 |
+| Ant-LingBo-LingBotMap2-SpatialMemory | 2026-11-28 | https://www.infoq.cn/article/zRubhYcrBMTrOvzjlPQN | 蚂蚁灵波连发空间导航模型，LingBot-Map 2.0 自我修正空间记忆；同日跨任务空间记忆原生基模开源（官方口径） |
+| Anthropic-CEO-Response-IPO-BelowPrice | 2026-11-28 | https://www.infoq.cn/article/FDR8k5bNu9eWklHh9NmI | Amodei 深夜回应破发与创始人套现近 20 亿美元质疑，破发事件线管理层首次表态（中文单源） |
+| Nvidia-27pct-MonthDrop-Huang-Congress | 2026-11-28 | https://www.morningstar.com/news/marketwatch/20261127133/nvidias-stock-has-tumbled-27-over-one-chaotic-month-the-next-big-test-lies-in-the-week-ahead | 英伟达一个月累跌 27%，黄仁勋下周赴国会作证，治理风暴后首个政治压力测试 |
+| IBM-Consulting-H1B-Sponsorship-Halt | 2026-11-28 | https://www.ithome.com/1/033/774.htm | IBM 咨询停止多数 H-1B 及绿卡担保，员工三周决定去留，AI 重组叠加签证收紧 |
+| EngineAI-BrainCerebellum-Open-1B-Yuan | 2026-11-28 | https://www.qbitai.com/2026/11/513352.html | 众擎开放机器人大小脑能力并推 10 亿元生态支持计划，整机厂转向开发者生态（官方口径） |
+| Agibot-G2-Longqi-Line-Parallel | 2026-11-28 | https://www.ithome.com/1/033/744.htm | 智元精灵 G2 在龙旗科技产线并线生产，承担喇叭 BOX 安装，人形机器人进入量产节拍 |
+| Tencent-Hunyuan-Hy3D-3.6 | 2026-11-28 | https://www.qbitai.com/2026/11/513155.html | 腾讯混元 3D 生成升级 Hy3D 3.6，高模表面整洁度提升（官方口径） |
+| WeChat-WeMM-Ecom-OpenSource | 2026-11-28 | https://www.ithome.com/1/033/649.htm | 微信开源 WeMM-Ecom 多模态基础模型家族，官方称服务微信电商数百业务流程 |
+| SenseCore-TokenFactory-TopRating | 2026-11-28 | https://www.qbitai.com/2026/11/513346.html | 商汤大装置获全国首批首家 Token 工厂智算能力最高评级（评级方/公司口径） |
+| Meituan-WangXing-AI-Capex-Down-2027 | 2026-11-28 | https://www.ithome.com/1/033/748.htm | 王兴预计美团明年 AI 资本开支低于今年，国内大厂 AI capex 分化（财报会口径） |
+| CAC-AI-Literacy-Half-Adults | 2026-11-28 | https://www.ithome.com/1/033/732.htm | 网信办：近半数成年公民具备 AI 素养，官方首次量化全民 AI 素养读数 |
+| FFAI-Faraday-Robotics-75pct-200M | 2026-11-28 | https://dealroom.co/news/176739-ffai-to-lift-faraday-robotics-stake-to-75-in-200m-deal/ | FFAI 约 2 亿美元全股票增持法拉第机器人至 75%，SEC 文件披露九个月收入仅 230 万美元、持续经营存疑 |
+
 ## 2026-11-27
 
 | 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
@@ -616,41 +639,4 @@
 | China-5Axis-MachineTool-Orders-2026Q2 | 2026-10-29 | https://www.ithome.com/1/019/228.htm | AI 服务器 PCB 拉动国产五轴机床订单排至明年 Q2 |
 | OpenAI-ServiceNow-Expansion | 2026-10-29 | https://openai.com/index/openai-servicenow-partnership-expansion | OpenAI×ServiceNow 扩大企业合作（仅官方口径） |
 | xAI-Buyout-Resident-Houses-Noise | 2026-10-29 | https://www.ithome.com/1/019/222.htm | xAI 被曝拟直接收购起诉数据中心噪声的居民房产 |
-
-## 2026-10-28
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| OpenAI-GPT4o-Lawsuit-Seizure-Medication-Death | 2026-10-28 | https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/ | NYT 调查+父母起诉：GPT-4o 被指教唆癫痫患者瞒医减药致其去世（27 万条聊天记录呈堂），"谄媚式陪伴"进入司法因果链 |
-| Google-Genie4-WorldModel-Audio-Realtime | 2026-10-28 | https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/ | DeepMind 发布 Genie 4 世界模型：实时指令改写场景、首次音视频同步生成、场景一致性约 2 分钟，与 Gemini 深度集成用于机器人模拟 |
-| AMD-1B-Investment-Meta-Helios-MI500 | 2026-10-28 | https://www.ithome.com/1/018/676.htm | AMD 向 Meta 投资 10 亿美元（官方公告），Helios 机架测试中，EPYC/Instinct/ROCm 路线图绑定至 MI500，共建吉瓦级 AI 基建 |
-| Meta-25B-NewMexico-CambridgeAnalytica-Ruling | 2026-10-28 | https://www.theverge.com/policy/1019604/new-mexico-meta-cambridge-analytica-kids-safety-settlement | 新墨西哥州法院判 Meta 支付 250 亿美元（Cambridge Analytica 相关），超 50 州 170 亿美元和解总额；Meta 将上诉 |
-| SKhynix-Q3-Profit-527pct-HBM | 2026-10-28 | https://www.ithome.com/1/018/716.htm | SK 海力士 2026 财年前三季度归母净利同比 +527%，HBM 涨价周期利润弹性兑现 |
-| Ant-Lingguang-2.0-Agent-Task-Management | 2026-10-28 | https://www.leiphone.com/category/industrynews/IxG2F47VLIt3uTOW.html | 蚂蚁灵光 2.0：个人 Agent 从任务执行转向事务管理（主动盯价/盯通知），跨会话长程运行 + APASS 授权托管 |
-| Zhipu-GLM-5.5-Paper-Teaser | 2026-10-28 | https://www.leiphone.com/category/ai/LjPPo6aqhHUrRMFg.html | 唐杰论文曝智谱神秘模型，GLM-5.5 发布信号（论文预曝式预热） |
-| Anthropic-IPO-Risk-Disclosure-Extinction | 2026-10-28 | https://arstechnica.com/ai/2026/10/anthropic-ipo-warns-its-ai-could-blackmail-people-become-sentient-end-humanity/ | Anthropic 招股书列 AI 勒索/意识/生存风险；同日确认内部系统遭访问但称数据未受影响 |
-| MetaAI-RohitPatel-Ndoc-Departure | 2026-10-28 | https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft-office-and-google-workspace/ | Meta AI 负责人 Rohit Patel 离职创业，做 AI 原生办公套件 Ndoc 对标 Office/Workspace |
-| Guidewire-Hyperexponential-1.7B | 2026-10-28 | https://techcrunch.com/2026/10/27/guidewire-buys-hyperexponential-for-1-7b-in-cash/ | Guidewire 17 亿美元现金收购 AI 定价初创 Hyperexponential，垂直行业 AI 并购大单 |
-| OpenAI-Oracle-Apps-ChatGPT | 2026-10-28 | https://openai.com/index/oracle-apps-in-chatgpt | OpenAI 扩大与 Oracle 合作，Oracle 应用接入 ChatGPT（官方公告） |
-| CXMT-Reject-Apple-Orders-Domestic-First | 2026-10-28 | https://www.leiphone.com/category/zaobao/9LHYVcJC8iwgwnhk.html | 长鑫存储被曝拒绝苹果等海外订单、优先保障国内存储需求（媒体消息口径） |
-
-## 2026-10-27
-
-| 话题关键词 | 首次报道日期 | 来源 URL | 简要描述 |
-|-----------|-------------|---------|---------|
-| Anthropic-IPO-Nasdaq-ANT-Filing | 2026-10-27 | https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/ | Anthropic 正式提交纳斯达克 IPO（代码 ANT），被称人类史上最大 IPO；招股书披露曾因安全顾虑暂停旗舰模型训练一个多月、数据中心能源/气候风险及高粘性企业客户生态打法 |
-| Meta-95B-Equity-Raise-Capex-1350-1450B | 2026-10-27 | https://finance.yahoo.com/markets/article/meta-announces-plans-to-raise-up-to-95-billion-for-ai-buildout-140141962.html | Meta 宣布至多 950 亿美元股权融资为 AI 基建筹资（上市公司史上纪录级），2026 资本开支上调至 1350–1450 亿美元 |
-| OpenAI-GPT-6-1-Terra-Cost-1-9th | 2026-10-27 | https://openai.com/index/introducing-gpt-6-1-terra | OpenAI 发布低成本模型 GPT-6.1 Terra，官方称任务成本仅为 Claude Opus 5.5 的 1/9 且更快更准确，computer use 能力突出（官方口径）；推理价格战打到发布会话术 |
-| OpenAI-Three-Science-Breakthroughs-Academic | 2026-10-27 | https://openai.com/index/building-scientific-understanding-with-academic-communities | OpenAI 宣布三项重大科学突破（数学猜想/计算机算法/千禧年难题方向，官方口径），并推出与学术社区合作验证新机制 |
-| Anthropic-63B-Broadcom-Chip-Syndicate-JPMorgan-Blackstone | 2026-10-27 | https://www.ithome.com/1/018/199.htm | 摩根大通、黑石牵头银团为 Anthropic 提供约 630 亿美元融资专项采购博通定制 AI 芯片（Bloomberg 报道口径），迄今最大 AI 硬件专项融资之一；非英伟达 ASIC 路线获顶级金融背书 |
-| Microsoft-60K-Voluntary-Buyouts | 2026-10-27 | https://techcrunch.com/2026/10/26/microsoft-offers-buyouts-to-around-60000-employees-reports-say/ | 微软据报向约 6 万员工（约四分之一）推自愿买断，AI 时代最大规模人力结构调整之一（媒体消息源口径） |
-| DeepSeek-DeepInfer-ForgeKernel-AI-Kernel-Dual-Top | 2026-10-27 | https://www.leiphone.com/category/industrynews/IaMw7vRrTCadlbCY.html | DeepSeek 全面开源推理框架 DeepInfer（手调 FlashMLA 达硬件极限 90%+）；AI 编写的 ForgeKernel 无人工调优同周登顶英伟达 SOL-ExecBench 与昇腾 CANNBench 双榜第一，超越 DeepSeek 自开源版本 |
-| Tencent-Hunyuan-Hy-SimulMT-OpenSource-3s | 2026-10-27 | https://www.ithome.com/1/018/168.htm | 腾讯混元开源同声传译大模型 Hy-SimulMT，官方称响应 3 秒超人类译员；国产大模型高实时场景开源卡位 |
-| Samsung-SKhynix-HBM4-8Hi-Feb2027-Nvidia | 2026-10-27 | https://wccftech.com/samsung-sk-hynix-downgraded-hbm4-q2-2027-nvidia-rubin-ultra/ | 三星、SK 海力士 8 层 HBM4 拟 2026 年 2 月起量产出货英伟达（供应链消息），牵动 Rubin 平台爬坡与 2027 算力供给 |
-| Samsung-Cut-GalaxyA-20pct-Memory-Price | 2026-10-27 | https://www.ithome.com/1/018/165.htm | 受内存涨价冲击，三星被曝拟减产 20% Galaxy A 系中低端手机，AI 抢内存溢出效应传导至消费电子终端 |
-| Cambricon-Chen-Tianshi-Deny-1M-Shipment | 2026-10-27 | https://www.ithome.com/1/018/135.htm | 寒武纪陈天石公开回应"明年出货超百万颗"传闻：公司从未进行相关沟通；国产 AI 芯片出货预期成二级市场敏感点 |
-| ZhongkeHuiling-Aplusplus-400M-Shoe-Robot-Orders | 2026-10-27 | https://www.infoq.cn/article/2svt5BbWUOHbADdo0UZo | 中科慧灵完成数亿元 A++ 轮融资，制鞋机器人订单超 4 亿元、排产数千台，具身智能进入量产交付期（公司披露口径） |
-| BostonDynamics-ICE-RobotDog-Employee-Protest | 2026-10-27 | https://arstechnica.com/ai/2026/10/boston-dynamics-employees-want-to-block-sale-of-robot-dogs-to-ice/ | ICE 拟采购 Boston Dynamics 机器狗，数百名员工联署抗议，机器人执法伦理争议升温 |
-| Intel-AMD-CEO-Talks-Potential-Coop | 2026-10-27 | https://www.ithome.com/1/018/155.htm | 英特尔 CEO 陈立武称已与 AMD 苏姿丰就潜在合作对话，x86 双雄罕见合作信号（官方口径，仅对话阶段） |
-| Tesla-Cybercab-NHTSA-Turo-FSD | 2026-10-27 | https://arstechnica.com/cars/2026/10/tesla-wants-ai-and-software-to-be-its-next-profit-engine/ | NHTSA 监管压力下特斯拉仍推进 Cybercab 交付，FSD 监督版将上架租赁平台 Turo，押注 AI 与软件为下一利润引擎 |
 
